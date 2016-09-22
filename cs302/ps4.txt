@@ -1,0 +1,288 @@
+Andrew Begel
+CS302
+PS4
+Case Studies
+
+Constant propagation is an important phase of optimization. Not only
+does it remove extraneous memory references to constants, but it also
+enables other optimizations, such as common subexpression elimination, 
+to perform more effectively. This assignment asks you to design
+and implement a constant propagation algorithm for an imaginary
+intermediate representation for a Java-like imperative language. 
+
+The input to your program will be a reference to the root of an
+intermediate representation tree conforming to the following API:
+
+class BasicBlock:
+      Statement[] statements();	
+      Edge[] incomingEdges();	
+      Edge[] outgoingEdges();
+      
+class Edge:
+      BasicBlock pred();	// predecessor node
+      BasicBlock succ();	// successor node
+      BranchStatement source();	// branch statement that produced this edge
+      boolean sense();		// truth value of this branch
+
+class Statement:
+      StatementType type();
+      Object[] operands();
+
+class BranchStatement extends Statement:
+      boolean conditionalp();	// conditional branch?
+      Edge trueEdge();		// true edge of branch
+      Edge falseEdge();		// false edge of branch
+
+The output will be in the same intermedite representation, but all
+statically determinable constants will have been propagated. 
+
+Thus, the method signature of your method will be:
+
+BasicBlock constantPropagation(BasicBlock root);
+
+Here is an example of what your procedure should do:
+
+ENTRY: goto B1
+
+B1: b <- 3
+    c <- 4 * b
+    if c > b goto B3 else B2
+
+B2: d <- b + 2
+    goto B3
+
+B3: e <- a + b
+    goto EXIT
+
+EXIT:
+
+should be transformed into:
+
+ENTRY: goto B1
+
+B1: b <- 3
+    c <- 4 * 3
+    if c > 3 goto B3 else B2
+
+B2: d <- 3 + 2
+    goto B3
+
+B3: e <- a + 3
+    goto EXIT
+
+EXIT:
+
+
+Exercises:
+
+1. Why were we allowed to substitute 3 for b in block 2?
+
+2. What are the situations where we wouldn't be allowed to do so?
+   Come up with a small change to the example above that prevents
+   us from substituting 3 for b in one of the lines.
+
+3. What is the difference in control structure between the example and
+   your modification?
+
+
+This problem appears to be decomposable into several
+subproblems. First, determining when it would be ok to replace a
+variable reference by a propagated constant, and second, actually
+enacting the transformation.
+
+Determining legality
+
+1. For all variables, determine if any have a constant value.
+2. Find all of the uses of the variable.
+3. If the definition dominates the use, you can replace the use 
+   with the constant value.
+
+
+Let's work through 1.
+
+How do you determine if a variable has a constant value? Well, those
+statements look like the following:
+
+b <- 3
+
+This is an assignment operation where the destination operand is a
+variable, and the source is an immediate. 
+
+Write a function to determine whether a Statement is an assignment
+statement. 
+
+boolean assignmentp(Statement statement);
+
+Write a helper function to determine whether a Statement loads a
+constant into a variable. 
+
+boolean constantAssignmentp(Statement statement);
+
+Write a helper function to return the variable assigned in a constant
+assignment statement.
+
+VariableName constantAssignmentVariable(Statement statement);
+
+...
+
+Now we work through 2.
+
+How do you find all of the uses of a variable? Well, how do we
+determine whether two variables are the same? This involves dealing
+with scoping issues. For now, let's assume that a prior transformation
+has uniquely named each distinct variable such that if a variable name
+is the same as another, it represents the same variable.
+
+(This technique of separating hard problems into separate phases of
+work is often practiced while developing a compiler. It sometimes
+helps to assume that hard problems have been solved already, or defer
+hard problems for later.)
+
+It isn't that difficult to find the uses of a variable. We can just
+run over all of the statements in the tree and determine whether that
+variable is used as an operand in any expression.
+
+Any expression? Are all of the operands of an assignment operator the
+same? 
+
+Go into discussion of locations vs. values. 
+
+...
+
+Write a procedure that when given a variable name and a Statement,
+returns true if the variable is used as a value in the statement, and
+false if not. The function prototype will be:
+
+boolean use(VariableName var, Statement s);
+
+
+Now write a procedure that when given a variable name and a basic
+block, returns the statements that use that variable as a value.
+
+Statement[] use(VariableName var, BasicBlock b);
+
+
+Now, we put it all together and write a procedure that given a
+variable name and the root node of an expression tree, returns all of
+the statements in which the variable is used as a value.
+
+Statement[] useTree(VariableName var, BasicBlock root);
+
+
+Is this enough information to determine whether a variable may be
+substituted by its value?  We now have to determine whether the
+variable's definition dominates the uses.
+
+Go into side track on dominators and dominator trees. Assume we finish 
+with a function:
+
+boolean dom(BasicBlock dominator, BasicBlock dominatee);
+
+This function returns true if the dominator dominates the dominatee
+and false otherwise. 
+
+Write a function that filters the statements in which a variable's
+definition dominates its use and the variable's value is a known
+constant.
+
+Statement[] filter(VariableName var, Statement def, Statement[] uses);
+
+
+Now we'd like to replace the dominated uses with the constant value of 
+the variable. 
+
+Write a procedure to do this, given a variable name, constant value,
+and a statement.
+
+Statement replaceUse(VariableName var, Object value, Statement use);
+
+Now write a procedure to replace the uses for all of the dominated
+statements. 
+
+Statement[] replaceUses(VariableName var, Object value, Statement[] uses);
+
+
+Now, to put it all together, write a procedure to find all of
+the constant variable definitions, and for each one, find all of the
+dominated uses and replace them with the variable's constant value.
+
+BasicBlock constantPropagation(BasicBlock root);
+
+
+
+
+Complications:
+
+1. What happens if the variable is redefined before the particular use 
+you're looking at?
+
+This intermediate form does not tell you whether a variable is
+assigned to more than once. If there is a succeeding definition before 
+the use you're looking at, you might substitute the wrong value in for 
+the variable.
+
+1a. Use a use-def analysis to determine lifetime of a variable's
+value.
+
+(This involves looking over all uses and all defs and keeping track of 
+trees of them using a special data structure). 
+
+
+2. What if there is a loop? If there is a definition of a variable A
+above the loop and a redefinition of A inside the loop, can you
+replace any uses of A with its constant value?
+
+(This shows that dominators aren't good enough sometimes. You might
+not be able to get rid of a constant variable even though it looks
+like you should).
+
+2a. Use conditional constant propagation. Keep track of the abstract
+value of the constant at the start and end of each basic
+block. Perform real data-flow analysis (gen, kill, in and out sets). 
+
+(Introduce bitsets for a compact data structure) 
+
+
+
+
+(Using use-def trees is a pain in the butt. We want to stop, backtrack 
+and switch to a new intermediate form called SSA).
+
+3. Use a form called SSA. The primary feature of this intermediate
+form is that all variables are unique and are defined (and assigned
+to) only once throughout the entire program. In addition, when flow
+paths merge, and a variable's definition may come from multiple paths, 
+we use the phi operator to merge the values. 
+
+Show sample graph. 
+
+1. We must transform our intermediate representation into SSA form. 
+
+Show sample transformation. Have student do one by hand.
+
+Construct algorithm to transform one tree into another. Involves
+knowledge of dominators.
+
+Reflection: What do you anticipate the benefits of this SSA form to
+be? What are the disadvantages? (in algorithmic time and/or space
+complexity?) 
+
+2. We must rewrite our algorithms for constant propagation to work in
+SSA form. 
+
+Find constant definitions. Replace all uses without worrying about
+conditions. 
+
+3. Identify the advantages of SSA over use-def trees. Can we discover
+more opportunities for constant propagation? 
+
+Go over rewriting the conditional constant propagation analysis using
+SSA. Introduce the notion of sparse conditional constant propagation
+as an efficiency optimization.
+
+Final reflections and more example problems:
+
+
+
+
+

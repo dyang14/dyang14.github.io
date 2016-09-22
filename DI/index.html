@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Deep Intellisense</title>
+<style type="text/css">
+
+A:link {
+  color: #313b3f;                            /* linkVisited */
+}
+
+A
+{
+	color: #003399;
+}
+
+.box
+{
+    margin-top:10px;
+	margin-left: 20px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	border-right: #181836 1px solid;
+	border-left: #181836 1px solid;
+	border-bottom: #181836 1px solid;
+}
+
+.boxtitle
+{
+	background-color: #181836;
+	color: #FFFFFF;
+	padding-left: 15px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	font: bold 90% Verdana;
+	color: #ffffff;
+}
+.boxtext {
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+
+body {
+		font-family:Arial;
+		font-size:smaller;
+}
+
+.title {
+	margin-left:108px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.subtitle {
+	margin-top:-1em;
+	font-size:larger;
+	padding-left:110px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.bullets {
+	
+}
+</style>
+</head>
+
+<body>
+<img src="Detective.png" style="float:left" width="100" height="103" /><h1 class="title">Deep Intellisense</h1>
+<h2 class="subtitle">Dig up the dirt on your code.</h2>
+<br/>
+<br/>
+<div class="box">
+<div class="boxtitle">Summary</div>
+<div class="boxtext">
+<p>Deep Intellisense is a Visual Studio 2008 plugin that surfaces information from various silos (source control, bug tracking, mailing lists, etc.) to provide developers with instant context-sensitive feedback on any source code they are reading in the editor. 
+Deep Intellisense works with Visual Studio Team Foundation System projects (such 
+as those hosted on CodePlex), email archives (from Outlook) and Sharepoint 
+sites.</p>
+<p>Use Deep Intellisense to...</p>
+<ul class="bullets">
+	<li>Find the best person to talk to</li>
+	<li>Learn about the history of unfamiliar code</li>
+	<li>Understand the bugs afflicting a method</li>
+	<li>Discover what other people are doing to <em>your</em> code</li>
+	<li>Figure out which checkins fix which bugs</li>
+	<li>See if someone&#39;s changes could cause regressions</li>
+</ul>
+</div>
+</div>
+
+<div class="box">
+<div class="boxtitle">People</div>
+<div class="boxtext"><p>
+Deep Intellisense was designed and created by 
+<a href="http://research.microsoft.com/~abegel">Andrew Begel</a> and 
+<a href="http://pages.cpsc.ucalgary.ca/~rtholmes/">Reid Holmes</a> in the 
+<a href="http://research.microsoft.com/hip">Human Interactions in Programming</a> group at 
+<a href="http://research.microsoft.com">Microsoft Research</a>. Its base infrastructure uses the Bridge 
+database, by <a href="http://research.microsoft.com/~ginav">Gina Venolia</a>.</p>
+<p>For more information, please <a href="mailto:andrew.begel@microsoft.com">contact</a> Andrew Begel.</p>
+</div>
+</div>
+
+<div class="box">
+<div class="boxtitle">Details</div>
+<div class="boxtext">
+<p>Deep Intellisense is based on the Bridge, a graph of developers and their 
+activities like source code checkins, bug database entries, and mailing list 
+messages where each entry is linked to another when there is a relationship 
+between them. For example, a source code checkin was <em>authored</em> by a 
+particular developer. A tester <em>open</em>ed a bug report. A user <em>email</em>ed 
+a stack trace from a crash to the recipients of a mailing list. Deep 
+Intellisense presents a code-centric view of this graph: for any code entity 
+(class, method, field, property) that you click on, it shows the related 
+checkins, bugs, mailing list messages, and people discovered through transitive 
+two hop graph traversals. </p>
+<p>Deep Intellisense presents three views: Current Item, Event History, and 
+Related People.</p>
+<p>&lt;Screen shot of Current Item View&gt;</p>
+<p>The current item view shows the current code entity that is selected in the 
+Visual Studio editor. It summarizes the checkin, bug and discussion forum 
+messages that are related to the particular code entity. If you clicked on a 
+method call, or use of a class or variable, Deep Intellisense may have trouble 
+recognizing exactly what the fully qualified name of the entity is (Deep 
+Intellisense works at a parse-level, but performs no semantic analysis). In this 
+case, it will show a pulldown menu to let you pick from a set of alternatives. A 
+button allows you to search for this symbol in MSDN.</p>
+<p>&lt;Screen shot of Event History View&gt;</p>
+<p>The event history view shows a sorted list of bugs, checkins and discussion 
+forum messages that we have discovered are related to the selected code. By 
+clicking on the bug title, change set, or message title, you can bring up 
+further information. If you click on the associated person&#39;s name, you can email 
+them to ask them a question. This view also allows you to dynamically filter the 
+entries you see using a word wheel, and lets you sort the entries by date, 
+person and event type.</p>
+<p>&lt;Screen shot of Related People View&gt;</p>
+<p>The related people view pulls out all of the people related to the code and 
+lists them in alphabetical order. It shows the number of bugs, checkins and 
+forum messages each of them has created about the particular code that is 
+selected. In addition, you can click on a person&#39;s name to send him an email 
+with a question. There is a little social tagging in Deep Intellisense: if you 
+like a person&#39;s checkins or messages and want everyone to pay attention to them, 
+clicking on the green thumbs-up icon
+<img alt="Thumbs Up" src="MarkRelevant.png" width="16" height="16" /> will 
+attach the icon to all events by that person in the event history view. If the 
+person is irrelevant to your code investigation, clicking on the red thumbs-down 
+icon <img alt="Thumbs Down" src="MarkDiscarded.png" width="16" height="16" /> 
+will hide their corresponding events from the event history view. To see these 
+hidden events again (and turn off the red thumbs-down icon), click the Show All 
+button in the related people or event history view. </p>
+</div>
+</div>
+
+<div class="box">
+<div class="boxtitle">Research</div>
+<div class="boxtext">
+<p>We built Deep Intellisense to address a number of research findings:</p>
+<ol>
+	<li>Locating high-level code-related information is very important. 
+	Developers frequently want access to design-level information, but find that 
+	it is difficult to locate (Ko, DeLine, Venolia 2007)</li>
+	<li>Developers rely heavily on implicit knowledge. For example, while a bug 
+	and a checkin may both be useful, the implicit link between them (perhaps 
+	the bug was fixed by the checkin) is most important. (La Toza, Venolia, 
+	DeLine, 2006).</li>
+	<li>Developers search through bug and checkin history on a daily basis in 
+	some large companies in the Pacific Northwest.</li>
+</ol>
+<h3>Contextual Inquiry</h3>
+<p>We interviewed 3 developers and 2 testers to better understand how they 
+performed their daily tasks. We focused on specific tools and techniques that 
+enabled them to get their jobs done. </p>
+<ul>
+	<li>Tester #1: Hotfix tester. Is given a bug and a diff by a developer. As 
+	such he knows exactly what was changed and who to talk to. </li>
+	<li>Tester #2: Performance tester. Investigates a lot of code to figure out 
+	where to put tracing markers. </li>
+	<li>Developer #1: Dev lead. Spends 70% of his time looking at code written 
+	by other developers. Lots of source code control command-line work. </li>
+	<li>Developer #2: 50% of time is reading code. Lots of bug database 
+	searching, works hard to find the diffs associated with a bug. </li>
+	<li>Developer #3: Team is mostly new but working on an older product. 
+	Specifics of a change aren’t interesting but knowing there has been one is.
+	</li>
+</ul>
+<p>During these interviews several common themes emerged between the SDETs and 
+the SDEs: </p>
+<ul>
+	<li>&quot;What happened most recently?&quot; Recency was a recurring trend in the 
+	comments, both developers and tersters wanted to consider the information 
+	available to them in reverse-chronological order. </li>
+	<li>&quot;Who should I contact about this?&quot; If, after looking through bug and 
+	change history, the developer decided to follow up with someone from an 
+	external team identifying the correct contact person was important. Who they 
+	talked to depended on the type of information they wanted: it could be the 
+	person who closed the bug, opened it, made a comment in it, made the 
+	check-in, or created the spec associated with the code. </li>
+	<li>&quot;How can I filter the information available to me&quot; Both testers and 
+	developers had an overabundance of information available to them. They 
+	wanted to filter first to find that information that is relevant to the code 
+	they are investigating and then filter further to find information that is 
+	relevant to the aspect of the code they are considering. Providing a 
+	flexible way to access the information they required was very important.
+	</li>
+</ul>
+<p>Interestingly, we also found two pieces of information that was not 
+interesting to either group: </p>
+<ul>
+	<li>Burstiness: There was little interesting the density of changes. For 
+	example, if there were 4 check-ins in two days and nothing until 2 months 
+	later, that was not an interesting fact developers cared about. </li>
+	<li>Relationship to product schedule: While the strict ordering of events 
+	(this check-in before that one, or this bug opened before that check-in was 
+	made) was interesting, how these events related to the product schedule 
+	(e.g., was this check-in before milestone 3?) was not interesting to these 
+	developers. </li>
+</ul>
+<p>In addition to the commonalities between developers and testers, we also 
+found that they had some role-specific qualities: </p>
+<ul>
+	<li>Developers investigate a large amount source code they did not write 
+	themselves.
+	<ul>
+		<li>Frequently try to infer how a bug relates to a check-in (or vice 
+		versa). This is similar to the point in the background material about 
+		the value of inferred information. By relating a bug to a check-in the 
+		developer can see both <em>what</em> was changed (from the diff in the 
+		check-in) and get some idea as to <em>why</em> it was changed (by 
+		looking at the associated bug). </li>
+		<li>Developers are often trying to answer &quot;Am I wrong or are they?&quot; By 
+		this, the developer is trying to determine if external code is behaving 
+		the way it should (and they should fix their own code) or if they need 
+		to contact the owner of the external code to have them make a change to 
+		their code. </li>
+	</ul>
+	</li>
+	<li>Testers work on tasks for specific people.
+	<ul>
+		<li>Testers are often assigned a bug, and given a diff, by a specific 
+		developer. From this they have an explicit point of contact for any 
+		questions. At the same time, they are still interested in seeing if the 
+		bug they are testing (or its associated check-in) is related to any 
+		other similar bugs and check-ins for a particular piece of code. </li>
+		<li>Testers spend a lot of time looking at particular details in bugs 
+		and investigating specific diffs (to determine what exactly needs to be 
+		tested). </li>
+	</ul>
+	</li>
+</ul>
+<h3>Prototype Development</h3>
+<p>After interviewing each developer about their work practice, we provided them 
+with a series of low-fidelity mockups of Deep Intellisense. The intent of this 
+exercise was to focus our development effort on providing information that is 
+relevant to developers and testers, in a format that is usable to them, as they 
+undertake their daily activities. After seeing how they responded to the 
+mockups, we settled on three main design goals for Deep Intellisense: <!--In the scenario above, locating the right bug and change involved repeated usages and queries of both <code>sd</code> and <code>Product Studio</code>. These two tools involve different interfaces and do not talk to one and other directly even though they have common attributes between them (bugs in Product Studio are fixed by changes recorded in Source Depot (and vice versa)). After talking to developers we had three main goals while desigining Deep Intellisense: -->
+</p>
+<ol>
+	<li>Provide context-relevant historical code information. </li>
+	<li>Work with the developer&#39;s existing environment. </li>
+	<li>Link directly to tools developers are familiar with. </li>
+</ol>
+<p>By context-relevant we mean that instead of always providing file-level 
+granularity for a particular change, Deep Intellisense should provide listings 
+of only those changes that affected the class, field, or method of interest. We 
+chose to work within the developer&#39;s current environment because developers 
+already have an overwhelming number of independent tools at their fingertips; we 
+didn&#39;t want to exacerbate this situation. We chose not to try to replicate 
+existing tools (notably source code control, bug database and diff tools) as 
+developers are already familiar with these; instead we focused on making 
+interactions with these tools more effective. </p>
+</div>
+</div>
+
+
+<div class="box">
+<div class="boxtitle">Publications</div>
+<div class="boxtext">
+<p><a href="http://pages.cpsc.ucalgary.ca/~rtholmes/">Reid Holmes</a>, Andrew 
+Begel. <b>Deep Intellisense: A Tool for Rehydrating Evaporated Information</b>. 
+In the <i>5th Working Conference on Mining Software Repositories (MSR)</i>, 
+Leipzig, Germany. May 2008. [<a href="http://research.microsoft.com/~abegel/papers/deep-intellisense.pdf">pdf</a>]
+</p>
+<p>Gina Venolia. <strong>Textual Allusions to Artifacts in Software-related 
+Repositories</strong>. In the 3rd<i> Working Conference on Mining Software Repositories 
+(MSR)</i>, Shanghai, China, May 2006. [<a href="http://doitest.acm.org/10.1145/1137983.1138018">pdf</a>]
+</p>
+</div>
+</div>
+
+<div class="box">
+<div class="boxtitle">Related Work</div>
+<div class="boxtext">
+<p><strong>Developer Awareness Tools</strong></p>
+<ol>
+	<li>Anita Sarma, Zahra Noroozi, Andre van der Hoek. Palantir: <strong>
+	Raising Awareness among Configuration Management Workspaces.</strong> In the 
+	Proceedings of the 25th International Conference on Software Engineering. 
+	Portland, Oregon. May 2003. </li>
+	<li>Biehl, J. T., Czerwinski, M., Smith, G., and Robertson, G. G.&nbsp;
+	<strong>FASTDash: a visual dashboard for fostering awareness in software 
+	teams</strong>. In Proceedings of the SIGCHI Conference on Human Factors in 
+	Computing Systems. San Jose, California. April 2007.</li>
+	<li>Holmes, R. and Walker, R. J. 2008. <strong>Promoting developer-specific 
+	awareness.</strong> In Proceedings of the 2008 international Workshop on 
+	Cooperative and Human Aspects of Software Engineering. Leipzig, Germany, May 
+	2008. </li>
+	<li>Cheng, L., Hupfer, S., Ross, S., and Patterson, J.&nbsp; <strong>Jazzing 
+	up Eclipse with collaborative tools. </strong>In Proceedings of the 2003 
+	OOPSLA Workshop on Eclipse Technology Exchange. Anaheim, California, October 
+	2003. </li>
+	<li>Damian, D., Izquierdo, L., Singer, J., and Kwan, I.&nbsp; <strong>
+	Awareness in the Wild: Why Communication Breakdowns Occur</strong>. In 
+	Proceedings of the international Conference on Global Software Engineering. 
+	Washington, DC. August 2007. </li>
+	<li>Gutwin, C., Penner, R., and Schneider, K.&nbsp; <strong>Group awareness 
+	in distributed software development.</strong> In Proceedings of the 2004 ACM 
+	Conference on Computer Supported Cooperative Work. Chicago, Illinois, 
+	November 2004. </li>
+	<li>de Souza, C. R., Quirk, S., Trainer, E., and Redmiles, D. F. <strong>
+	Supporting collaborative software development through the visualization of 
+	socio-technical dependencies</strong>. In Proceedings of 
+	the 2007 international ACM Conference on Supporting Group Work. Sanibel 
+	Island, Florida, November 2007. </li>
+</ol>
+<p><strong>Mining Software Repositories</strong></p>
+<ol>
+	<li>Cubranic, D., Singer, J., and Booth, K. S. <strong>Hipikat: A Project 
+	Memory for Software Development. </strong>IEEE Trans. Softw. Eng. 31, 6. 
+	June 2005.</li>
+	<li>Śliwerski, J., Zimmermann, T., and Zeller, A. <strong>HATARI: raising 
+	risk awareness.</strong> In Proceedings of the 10th European Software 
+	Engineering Conference Held Jointly with 13th ACM SIGSOFT international 
+	Symposium on Foundations of Software Engineering. Lisbon, Portugal, 
+	September 2005.</li>
+</ol>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+Andrew Begel
+CS302 HW11
+4/12/99
+
+1. 40 hours per week means I can have two TAs each teaching two sections
+of 20-25 students each.
+
+What duties would I assign to my TAs? 
+
+For a typical TA, one that has taught at least once before and got OK
+ratings from a course evaluation, I would give them the following
+tasks: 
+
+       a. prepare one recitation per week. in each recitation, they
+       should go over the lecture material, as well as clarify
+       concepts that students should have learned that week. in
+       addition, tas should disseminate and confirm administrative
+       details for the course. tas should handle most administrative
+       issues, however, issues with test timing and grades should be
+       brought to the professor.
+
+       b. prepare one lab demo per week. in the first part of the
+       course, students will be working with new programming
+       environments. the tas should have played with the environment a
+       week beforehand and come up with example demos to show
+       students.  in the second part of the course, students will be
+       writing algorithms to implement compiler IRs and
+       optimizations. here, tas will act as lab assistants, but should
+       perhaps prepare a worksheet for students to work on for the
+       first 15 minutes of lab.
+
+       c. hold two office hours per week. tas should make themselves
+       available during each office hour for student questions on any
+       aspect of homework and tests. administrative details coming up
+       here should be handled as best the ta can, and if necessary
+       defer to the professor. 
+
+       d. conduct two "student interviews" during the term. each ta
+       will schedule an hour twice in the term to meet with each
+       student individually. this interview will be part examination,
+       where the ta will confirm students knowledge of basic facts
+       (the professor will provide a list of what to cover); part
+       gripe session, where the student may question administrative
+       issues, grading, the professor's teaching style, the ta's
+       teaching style (probably won't happen here), and ask any
+       burning questions about course content. 
+
+       it is up to the ta to notify the professor of any student who
+       appears to be having major problems in the course. if the
+       student does not perform satisfactorially in this interview, an
+       interview will be scheduled with the professor to get to the
+       root of the problem. 
+
+       e. read and respond to email queries from students. if the ta
+       feels comfortable enough, they might choose to get an
+       additional AOL instant messenger and/or ICQ acct. and publish
+       to the students for on-the-fly help sessions. in addition, the
+       ta should make an effort to read and respond to newsgroup
+       queries at least twice per week.
+
+       f. help grade exams 
+
+       g. help generate exams, by taking the class's exam one week
+       before the class takes it, and providing feedback. in addition,
+       each ta should generate one or more exam questions for each
+       exam and give them to the professor two weeks before the exam.
+ 
+       h. hold three review sessions per term before each test and
+       final. each ta should try to attend, and prepare material on a
+       topic from the class. the tas should coordinate topics amongst
+       themselves.
+
+       i. receive teaching feedback from the professor twice per
+       term. two times in the term, the professor will attend
+       recitation and lab for each ta and make observations. this will
+       enable the professor to give the ta tips and feedback on
+       teaching, style, and content.
+
+       j. if the course has no readers, the tas will grade
+       homeworks. in any case, the tas will grade any homework
+       essays. homeworks should be handed back within one week
+       (preferably) or two weeks of the students handing them in.
+
+       k. attend weekly ta meetings with the professor to discuss the
+       course, the week's progress and next week's agenda. hold a
+       "good and welfare", where each ta gets the floor and may speak
+       about teaching successes, failures, good students, bad
+       students, anecdotes, complaints, etc. in addition, the
+       professor should ascertain that no student in the class is
+       falling through the cracks.
+              
+How would you modify this for:
+
+1. an inexperienced ta:
+
+   b. the professor will provide a demo session for the tas so they
+   can get a handle on the environment. in addition, the professor
+   will give tas at least one demo to play with that they can present
+   to students.
+   
+   g. only provide one question for each exam. professor will provide
+   ta with feedback on the question and how it may be turned into a
+   proper test question.
+
+   i. the professor will spend an extra two recitations with the ta in
+   the early part of the course to give feedback on teaching style,
+   methodology and content.
+
+2. an experienced ta:
+
+   b. the above for 1 is still a good idea.
+
+   g. experienced tas should try to come up with more than one exam
+   question.
+
+   i. the professor may choose to spend only one recitation monitoring
+   the ta in each term.
+
+3. an eager but inept ta:
+
+   b. ditto.
+
+   i. the professor will do as 1, but provide special private feedback 
+sessions for the ta. ta will be encouraged to sign up for "ta
+training" seminars.
+
+4. a contrary ta
+
+   b. ditto.
+   
+   i. professor should do as 3. 
+
+   i'm not really sure what to do in this situation.
+
+
+2. What things would you do as a professor to help make your tas
+better teachers? I think the things I outlined above will cover it.
+
+Bonus. How much role should tas play in adminstering to late homeworks 
+and projects? I think that all late homeworks and late projects should 
+be brought to the professor. it may be an interesting experiment to
+consult with the tas on whether or not to grant extensions to
+particular students. even in the case where a student charges
+favoritism, it's often easy to acquiese to let them get a similar
+extension, or explain to the student how their situation is
+"completely" different. :) the tas may have additional information
+about the overall demeanor and performance of the student which may
+have an "emotional" bearing on the leniency offered by the prof.
+

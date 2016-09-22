@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Program Editor</TITLE>
+<META NAME="description" CONTENT="The Program Editor">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node22.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="qual.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html196"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html194"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html188"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html197"
+  HREF="node16.html">Program Dictation</A>
+<B> Up:</B> <A NAME="tex2html195"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html189"
+  HREF="node14.html">Manual Disambiguation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00060000000000000000">
+The Program Editor</A>
+</H1>
+
+<P>
+As part of the H-3ARMONIA project, we have added <I>harmonia-mode</I> to
+the XEmacs text editor. Harmonia-mode provides an interface between
+H-3ARMONIA's language sevices and the text editing services provided by
+XEmacs. We maintain a mapping between the XEmacs character-based
+buffer representation for a document and H-3ARMONIA's parse tree
+representation. All editing takes place using character and word
+manipulation features found in XEmacs, which are then correlated with
+the node(s) in the parse tree that are affected. A reanalysis is
+performed on each change to the buffer (if invoked via keyboard, it is
+usually per-keystroke) in order to keep all linguistic information
+up-to-date. All lexical, structural and semantic annotations are
+hidden from the user until high-level linguistic services are
+requested. XEmacs's ubiquitous <I>ad hoc</I> programming language
+services, which include syntax highlighting and proper code
+indentation, are reimplemented in terms of Harmonia's accurate
+analysis information.
+
+<P>
+As part of this dissertation, we have added speech recognition services
+(provided by IBM's ViaVoice) to XEmacs through its external module
+interface. Coordinated by XEmacs Lisp, input from the recognizer is
+sent to H-3ARMONIA for analysis and actions are taken based on its
+content.  
+
+<P>
+Next, we describe how we will implement the different programming
+tasks in our editor.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html198"
+  HREF="node16.html">Program Dictation</A>
+<LI><A NAME="tex2html199"
+  HREF="node17.html">Program Composition</A>
+<LI><A NAME="tex2html200"
+  HREF="node18.html">Program Navigation and Browsing</A>
+<LI><A NAME="tex2html201"
+  HREF="node19.html">Program Editing</A>
+<LI><A NAME="tex2html202"
+  HREF="node20.html">On-screen Representation</A>
+<LI><A NAME="tex2html203"
+  HREF="node21.html">Prototype Editors</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html196"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html194"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html188"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html197"
+  HREF="node16.html">Program Dictation</A>
+<B> Up:</B> <A NAME="tex2html195"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html189"
+  HREF="node14.html">Manual Disambiguation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

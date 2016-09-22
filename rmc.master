@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <link rel="stylesheet" href="http://research.microsoft.com/a/main.css" />
+</head>
+<body>
+    <div style="border-width: 0px; width: 993px; margin-left: auto; margin-right: auto;
+        background-color: #FFFFFF;">
+        <div id="crumbBar" style="position: relative; width: 833px; height: 19px; z-index: 1;
+            left: 30px; top: 162px">
+            <asp:ContentPlaceHolder ID="PageTemplate" runat="server" />
+            <asp:ContentPlaceHolder ID="BreadCrumb" runat="server" />
+        </div>
+        <img src="http://research.microsoft.com/a/i/uc/Head.jpg" alt="Header" style="padding:0px;
+            margin:0px; border-width:0px;" width="993" height="164" />
+        <div id="contentRegion" style="border-style: none solid none solid; padding: 0px;
+            margin: 0px; border-width: 0px 1px 0px 1px; background-color: #FFFFFF; border-right-color: #E1F6F9;
+            width: 991px; border-left-color: #E1F6F9; position: relative;">
+            <div id="contentArea">
+                <asp:ContentPlaceHolder ID="ContentArea" runat="server" />
+            </div>
+        </div>
+        <img src="http://research.microsoft.com/a/i/uc/Foot.jpg" alt="Footer" style="border-width:0px"
+            height="40" width="993" />
+    </div>
+</body>
+</html>

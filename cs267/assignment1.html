@@ -1,0 +1,136 @@
+<html>
+
+<head>
+<title>CS267: Parallel Processing Applications</title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+<h1>Modeling Complex Systems</h1>
+
+<p>I'm interested in using parallel computers to model <a
+href="http://complex.csu.edu.au/complex/">complex systems</a>. Modeling relatively static
+things like stress on bridges is nice, but I prefer systems that have easily expressible
+simple rules, instead of average calculations using differential equations. </p>
+
+<p>I'm also very interesting in biology, more from an ecology point of view than from
+molecular biology and protein folding (which for some reason is becoming all the rage).
+I'm interested in the evolution of species, ecologies and morphologies (and since a
+computer is much faster than the real thing, it's an excellent experimentation platform). </p>
+
+<h2>StarLogo</h2>
+
+<p>I think that parallel agent simulations are pretty cool. I did some work at MIT with
+the <a href="http://el.www.media.mit.edu/groups/el">Epistemology and Learning</a> group at
+the <a href="http://www.media.mit.edu">Media Lab</a> with <a
+href="http://www.media.mit.edu/~starlogo">StarLogo</a>, a parallel programming environment
+for kids. It lets kids program thousands of Logo turtles to run around the screen. We've
+had kids make simulations of ecological systems (<a
+href="http://www.media.mit.edu/~starlogo/projects/ants.html">ants</a>, <a
+href="http://www.media.mit.edu/~starlogo/projects/flocks.html">birds</a>, <a
+href="http://www.media.mit.edu/~starlogo/projects/epidemic.html">disease</a>, <a
+href="http://www.media.mit.edu/~starlogo/projects/slime.html">slime molds</a>), social
+systems (<a href="http://www.media.mit.edu/~starlogo/projects/traffic.html">traffic</a>, <a
+href="http://www.media.mit.edu/~starlogo/projects/pond.html">population segregation</a>),
+and physics (<a href="http://www.media.mit.edu/~starlogo/projects/rope.html">waves</a>, <a
+href="http://www.media.mit.edu/~starlogo/projects/molecules.html">ideal gases</a>, <a
+href="http://www.media.mit.edu/~starlogo/projects/planets.html">gravity</a>). </p>
+
+<p>This StarLogo <a href="http://www.media.mit.edu/~starlogo/information/othersites.html">page
+</a>has pointers to lots of other agent simulations on the web.</p>
+
+<h3>Commentary</h3>
+
+<p>StarLogo was originally implemented on the CM2 in *Lisp. The CM2 was a SIMD data
+parallel system, and StarLogo implemented three types of parallel models on top of it.
+Logo turtles were SPMD, Logo patches (the background was a grid of patches) were SIMD, and
+the observer was sequential. </p>
+
+<p>While the SIMD and sequential models were a match for the SIMD CM2, SPMD was a little
+constrained. On a SIMD computer, all processors execute in lockstep, which made for some
+strange turtle behavior. If turtles were looking for food, the turtle that didn't find any
+couldn't move until the turtle who had found some picked it up and ate it. </p>
+
+<p>Reimplemented on a set of virtual machines running on a sequential processor allowed us
+to make the turtle machine truly SPMD. All of the turtles were free to wander in different
+sections of the code at any time, forcing us to rewrite our example problems over again.
+:)</p>
+
+<p>StarLogo's problem is scalability. It doesn't scale past one StarLogo world running on
+one single computer. Its computing model doesn't allow for hierarchical simulation
+structure, nor does it provide the user with a cost model for execution. On a single
+computer, this doesn't matter, but implemented on something like a Clump, different worlds
+would interact with varying speeds.</p>
+
+<p>At one point I did an experiment to evolve rabbits in an ecosystem. Two computers ran
+the ecosystems in famine and plenty modes. After some time, a wormhole was opened between
+the two worlds, allowing the rabbits to directly compete with one another. After evolving
+to their own world, the invader rabbits from the famine world did better in the plenty
+world than vice versa. In addition, the rabbits from the world running on the Mac IIfx did
+much worse than the ones on the PowerMac 8100 because the faster computer bred more
+rabbits in a shorter time. This was a limited experiment, but given enough computers and
+enough power, a large variety of ecologies could be developed and explored. </p>
+
+<h2>Tierra</h2>
+<a href="http://www.hip.atr.co.jp/~ray/tierra/tierra.html">
+
+<p>This</a> is one of the most famous Artificial Life programs out there. Created by Tom
+Ray at the U. Delaware (now at HIP Research Lab in Japan), it allows people to model
+organisms living in a soup. First, you write the genome for an ancestor organism in a
+pseudo-assembly language. This organism can find food and reproduce itself by copying.
+After filling up the soup with these creatures, you let the simulation go. After some time
+and random mutation, you start seeing alternative organisms that made mistakes in copying.
+They're very similar to the ancestor. At some point, though, you start to get parasitic
+mutants who are much shorter in length, but use assembly code from other normal organisms
+to copy themselves! It's really exciting stuff. </p>
+
+<p>Tierra's been implemented on workstations, but was also ported to the CM5 and to a
+distributed computing framework. This Network Tierra is really neat because it's able to
+model a rapidly mutating distributed ecology with millions of organisms running in
+parallel and moving themselves around the network. </p>
+
+<p><a href="http://www.hip.atr.co.jp/~ray/tierra/like.html">Here's</a> some links to other
+Tierra-like systems on the net. </p>
+
+<hr>
+
+<p>Here's some other similar work that could be adapted to running on parallel computers:</p>
+
+<h2>Swarm</h2>
+
+<p>At the <a href="http://www.santafe.edu">Santa Fe Institute</a>, they've got a project
+called <a href="http://www.santafe.edu/projects/swarm">Swarm</a>. This project, from Chris
+Langton, is a grown-up version of StarLogo that provies a lot more general, flexible and
+customizable environment.</p>
+
+<h2>Sugarscape</h2>
+
+<p>Joshua Epstein and Robert Axtell has applied these types of ideas toward modeling
+social systems. &quot;<a href="http://www.brookings.org/SUGARSCAPE">Sugarscape</a>
+includes population dynamics, migration, combat, trade, cultural transmission, genetics,
+environmental effects, immunology, and epidemiology in a spatially distributed artificial
+society of heterogeneous agents with limited information, evolving preferences, and other
+recognizably human capabilities and limitations.&quot;</p>
+
+<h2>EcoLab</h2>
+
+<p>This <a href="http://parallel.acsu.unsw.edu.au/rks/ecolab.html">project</a>, by Russell
+Standish at UNSW in Australia explores Lotke-Volterra interactions between populations of
+organisms.</p>
+
+<hr>
+
+<address>
+  <a href="http://www.cs.berkeley.edu/~abegel">Andrew Begel</a> <a
+  href="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</a> 
+</address>
+<font size="-1">
+
+<address>
+  Last modified: 1/28/98
+</address>
+
+<p><br>
+</font></p>
+</body>
+</html>

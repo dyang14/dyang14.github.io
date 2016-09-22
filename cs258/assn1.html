@@ -1,0 +1,377 @@
+<html>
+
+<head>
+<title>New Page </title>
+</head>
+
+<body>
+
+<p>Andrew Begel<br>
+CS258<br>
+Assignment #1<br>
+</p>
+
+<p><strong>1.3.</strong> You have T1 sequential units of work. Fraction s is sequential,
+and (- 1 s) is perfectly parallelizable. (* s T1) is the sequential part, and (/ (* (- 1
+s) T1) P) is the parallel part. Tp = (+ (* s T1) (/ (* (- 1 s) T1) P)) = (* T1 (+ s (/ (-
+1 s) P))). The maximum theoretical speedup is (/ T1 Tp) = (/ 1 (+ s (/ (- 1 s) P))). This
+is an upper bound because the sequential part can't be made faster at all (unless you get
+a better processor or rewrite the algorithm to work in parallel), and the parallel part
+can't go faster than a perfect division of labor over processors (communication,
+load-imbalance, etc... would all contribute to a reduction in speedup). </p>
+
+<p><strong>1.4.</strong> Our speedup function for a k-issue processor looks like this: (/
+(Summation (i 0 k) (* i (normalize (f i) k))) (normalize (f 1) k)). (It's not clear
+whether zero instructions issued (8%) should count in the normalization. The graph in
+Figure 1.7 does not include it. These numbers do include it). The histogram in Figure 1.7
+says </p>
+
+<pre>(define (f number)
+    (cond   ((= number 0) 8) 
+            ((= number 1) 18)
+            ((= number 2) 19)
+            ((= number 3) 30)
+            ((= number 4) 18)
+            ((= number 5) 6)
+            ((&gt;= number 6) 2))) </pre>
+
+<pre>(define (normalize input k)
+    (let ((total (reduce + (map f (make-integer-list 0 k))))))
+      (/ input total)))</pre>
+
+<table border="1" width="100%" height="143">
+  <tr>
+    <td width="50%" height="19">Instructions issued per cycle</td>
+    <td width="50%" height="19">Speedup</td>
+  </tr>
+  <tr>
+    <td width="50%" height="19">1</td>
+    <td width="50%" height="19">1</td>
+  </tr>
+  <tr>
+    <td width="50%" height="19">2</td>
+    <td width="50%" height="19">1.2</td>
+  </tr>
+  <tr>
+    <td width="50%" height="19">3</td>
+    <td width="50%" height="19">1.95</td>
+  </tr>
+  <tr>
+    <td width="50%" height="12">4</td>
+    <td width="50%" height="12">2.3</td>
+  </tr>
+  <tr>
+    <td width="50%" height="19">5</td>
+    <td width="50%" height="19">2.5</td>
+  </tr>
+  <tr>
+    <td width="50%" height="19">6</td>
+    <td width="50%" height="19">2.6</td>
+  </tr>
+</table>
+
+<p><strong>1.5. </strong></p>
+
+<h1 align="center">Top Ten TPC-C Results by Performance</h1>
+
+<table border="1" width="788">
+<tbody>
+  <tr bgColor="#ffcc00">
+    <td align="middle" height="35" width="38"><strong>Rank</strong></td>
+    <td align="middle" width="101"><strong>Company</strong></td>
+    <td align="middle" width="209"><strong>System</strong></td>
+    <td align="middle" width="107"><strong>Number of Processors</strong></td>
+    <td align="middle" width="97"><strong>Processor</strong></td>
+    <td align="middle" width="91"><strong>tpmC&nbsp;&nbsp;</strong></td>
+    <td align="middle" width="83"><strong>tpmC/# Procs</strong></td>
+    <td align="middle" width="83"><strong>$/tpmC</strong></td>
+    <td align="middle" width="111"><strong>Date</strong></td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>1</strong></td>
+    <td align="middle" width="101"><a href="http://www.compaq.com/"><img alt="Compaq              " border="0" src="../../images/COMPAQ.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98050501">AlphaServer
+    8400 8Node 96CPU Cluster (c/s) </a></td>
+    <td width="107">96</td>
+    <td align="middle" width="97">Alpha 21164 612Mhz</td>
+    <td align="middle" width="91">102541 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">1068</td>
+    <td align="middle" width="83">139.49&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;May 5, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>2</strong></td>
+    <td align="middle" width="101"><a href="http://www.sequent.com/"><img alt="Sequent             " border="0" src="../../images/Sequent.gif" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98121801">NUMACenter
+    2000 </a></td>
+    <td width="107">64</td>
+    <td align="middle" width="97">Intel Xeon 405Mhz</td>
+    <td align="middle" width="91">93900 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">1467</td>
+    <td align="middle" width="83">131.67&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;December 18, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>3</strong></td>
+    <td align="middle" width="101"><a href="http://www.ibm.com/"><img alt="IBM                 " border="0" src="../../images/ibm.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98021801">RISC
+    System/6000 SP Model 309 (c/s) </a></td>
+    <td width="107">96</td>
+    <td align="middle" width="97">PPC 604e 200Mhz</td>
+    <td align="middle" width="91">57053 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">594</td>
+    <td align="middle" width="83">147.40&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;February 18, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>4</strong></td>
+    <td align="middle" width="101"><a href="http://www.sun.com/"><img alt="Sun                 " border="0" src="../../images/SUNW.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98102701">Enterprise
+    6500 Server </a></td>
+    <td width="107">24</td>
+    <td align="middle" width="97">UltraSPARC 336Mhz</td>
+    <td align="middle" width="91">53049 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">2210</td>
+    <td align="middle" width="83">76.00&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;October 27, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>5</strong></td>
+    <td align="middle" width="101"><a href="http://www.hp.com/"><img alt="HP                  " border="0" src="../../images/HP.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98021604">HP
+    9000 Model V2250 Enterprise Server (c/s) </a></td>
+    <td width="107">16</td>
+    <td align="middle" width="97">HP PA-RISC 8200 240 Mhz</td>
+    <td align="middle" width="91">52117 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">3257</td>
+    <td align="middle" width="83">81.17&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;February 13, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>6</strong></td>
+    <td align="middle" width="101"><a href="http://www.sun.com/"><img alt="Sun                 " border="0" src="../../images/SUNW.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=97100301">Enterprise
+    6000 Cluster </a></td>
+    <td width="107">44</td>
+    <td align="middle" width="97">UltraSPARC 250 Mhz</td>
+    <td align="middle" width="91">51871 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">1179</td>
+    <td align="middle" width="83">134.46&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;October 3, 1997</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>7</strong></td>
+    <td align="middle" width="101"><a href="http://www.sequent.com/"><img alt="Sequent             " border="0" src="../../images/Sequent.gif" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98101303">NUMACenter
+    2000 </a></td>
+    <td width="107">32</td>
+    <td align="middle" width="97">Intel Xeon 405 Mhz</td>
+    <td align="middle" width="91">48793 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">1524</td>
+    <td align="middle" width="83">127.53&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;October 13, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>8</strong></td>
+    <td align="middle" width="101"><a href="http://www.ibm.com/"><img alt="IBM                 " border="0" src="../../images/ibm.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98090101">AS/400e
+    Server Model S40 2208 </a></td>
+    <td width="107">12</td>
+    <td align="middle" width="97">PPC AS A50 262 Mhz</td>
+    <td align="middle" width="91">43169 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">3597</td>
+    <td align="middle" width="83">128.91&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;September 1, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>9</strong></td>
+    <td align="middle" width="101"><a href="http://www.hp.com/"><img alt="HP                  " border="0" src="../../images/HP.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=98110302">9000
+    V2200 Enterprise Server </a></td>
+    <td width="107">16</td>
+    <td align="middle" width="97">HP PA-RISC 8200 200 Mhz</td>
+    <td align="middle" width="91">40794 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">2550</td>
+    <td align="middle" width="83">103.43&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;November 3, 1998</td>
+  </tr>
+  <tr>
+    <td align="middle" height="40" width="38"><strong>10</strong></td>
+    <td align="middle" width="101"><a href="http://www.hp.com/"><img alt="HP                  " border="0" src="../../images/HP.GIF" WIDTH="100" HEIGHT="40"></a></td>
+    <td width="209">&nbsp;<a href="http://www.tpc.org/new_result/c-result1.idc?id=97091502">HP
+    9000 V2200 Enterprise Server c/s </a></td>
+    <td width="107">16</td>
+    <td align="middle" width="97">HP PA-RISC 8200 200 Mhz</td>
+    <td align="middle" width="91">39469 </td>
+    <td align="middle" width="83" bgcolor="#00FFFF">2467</td>
+    <td align="middle" width="83">94.18&nbsp;&nbsp;US $ </td>
+    <td width="111">&nbsp;September 15, 1997</td>
+  </tr>
+</tbody>
+</table>
+
+<p>The aqua column shows tpmC per number of processors. Note, the numbers get larger as
+they use fewer processors. That indicates they have problems with scaling. Actually,
+Sequent almost perfectly scaled from 32 Intel Xeons to 64. HP seems to be using identical
+configurations with faster and faster processors to gain their speedup. Compaq (Digital)
+seems to just throw lots of processors at the problem. It appears from the price to be a
+little wasteful. Sun's new UltraSPARC 336Mhz seems to get a lot of bang per processor.
+More than just the Mhz increased here, since they dropped the number of processors too.
+They must have tried a different configuration (Ah, from information not shown here, they
+moved from an Oracle 8 database to Sybase 11).&nbsp; </p>
+
+<p>Compared with results from Marc 1996, the speedups seem dramatic. Digital seems to have
+maintained it's tpmC/# Procs ratio, even raised it a bit. The Tandem Himalaya had been the
+only one to use a lot (&gt; 100) processors, but it's tpmC ration was only 180! All these
+processors are doing much better.&nbsp; </p>
+
+<p><strong>1.8. </strong>Given 1024x1024 64-bit values in a grid, and assign one element
+per processor, how much data communication is there per step in the equation (setf (aref A
+i j) (- (aref A i j) (* weight (+ (aref (1- i) j) (aref (i (1- j)) (aref (1+ i) j) (aref i
+(1+ j))))))?</p>
+
+<p>At each step, each processor must get 8 bytes of data from 4 processors, which is 32
+bytes / step / processor (assuming periodic boundaries). Multiplying by 1 Megaprocessors
+gives 32 Mbytes/step. </p>
+
+<p>How can we partition this onto 64 processors to minimize the data traffic? Let's divide
+it up into an 8x8 grid where each grid cell gets 128x128 entries of the original grid.
+Then there's only communication on the borders of each big cell. Thus, we get 8 bytes *
+128 cells per side * 4 sides * (8 * 8) =&nbsp; 256 Kbytes / step.</p>
+
+<p><strong>1.9. </strong>(Based on Example 1.2) The application starts an operation every
+200 ns. The component can do 1 op / 100 ns (10 million ops/second). It can be pipelined
+into 10 stages, each of 10 ns, so it can do 100 million ops/second throughput. But, if the
+app only does one operation every 200 ns, the max throughput is 5 million ops/second. 100
+million operations could take how long? If app waited for each one to finish before
+starting the next, it gets 100 million ops / 10 million ops/second = 10 seconds max. If it
+pipelines, then it can do it in 1 second. </p>
+
+<p>The application now alternates between <em>m</em> operations using the component, and T
+ns not using the component. Max execution time (no pipelining) = (+ (* m 100 ns) T ns) per
+phase. Minimum time (full pipelining) per phase = (+ (* m 10 ns) T ns). If the total
+application had 100 million operations, then we'd take (* (/ 100000000 m) phase-time). The
+slowdown is (/ 1 (+ 1 (/ T (* 100 m)))) for the non-pipelined case, and (/ 1 (+ 1 (/ T (*
+10 m)))) for the fully pipelined case. We watch as T goes from 0 ns (no slowdown) to 10 ns
+((/ (+ m 1) m) slowdown for fully pipelined) to 100ns ((/ (+ m 1) m) slowdown for no
+pipelining) to 10m (2x slowdown for fully pipelined) to 100m (2x slowdown for non
+pipelined, 20x slowdown for pipelined).&nbsp; </p>
+
+<p><strong>1.18. </strong>A bus has limited bandwidth. As more and more processors are put
+on the bus and try to use it, their performance goes down. Let's assume there's no I/O,
+and the bus is only used for processor-memory traffic. Let's assume that loads and stores
+occur about every 6 instructions for each processor. Thus, without any reordering or
+read/write queues, each processor is forced to access the bus every 6 instructions.
+Assuming that it takes one cycle to get a desired value from memory (includes the time to
+get the bus, convey the address and access the memory), six processors will be enough to
+saturate the bus without contention. Now, let's say that <em>memtime</em> is the number of
+cycles to get a value from memory. As memtime goes up, bus contention goes up. If memtime
+= 2, with three processors, each would waste 2 cycles waiting for memory. With six
+processors, they would waste 4 cycles (assuming a fair bus) for each memory access. So,
+access time = (* memtime (/ (* memtime #procs) 6)). Now, let's say a load or store comes
+along every <em>n</em> instructions. Replace 6 by <em>n</em> and we get access time = (*
+memtime (/ (* memtime #procs) <em>n</em>)). We could get more realistic with probabilistic
+distributions of loads and stores, bursty loads and stores, read/write queues, caches (to
+reduce bus traffic), instruction reordering (to release a stalled pipeline waiting for a
+memory reference), an unfair bus, extra traffic from I/O on the bus, cache coherency and
+in-order I/O instructions on the bus, other bus masters who can lock the bus, etc... All
+of these things make the average access time go up, and processor performance go down as
+the processors sit and spin, waiting for their bus transactions to complete.&nbsp; </p>
+
+<p><strong>1.12. </strong>We have a machine with 64-bit bus, running 40 Mhz. Takes 2 bus
+cycles to arbitrate for the bus and present the address. The cache line size is 32 bytes
+and the memory access time is 100 ns. What's the latency for a read miss? What's the
+bandwidth here? If we miss, we have to spend 2 cycles of 40 Mhz, so 50ns, + 100 ns to get
+the memory (which we can pipeline the access while we retrieve our 4 bus transfers) + 4
+bus cycles to get the memory back to the processor, so 100ns = 250 ns access time. We get
+32 bytes / 250 ns = 128 Mbytes/sec. </p>
+
+<hr>
+
+<h4>Micro-Research Study</h4>
+
+<p>We're supposed to report on a particular instance of the use of
+parallel computing in the real world. I checked out Pixar, and their
+use of 150 dual-processor SGI Octane workstations to act as a render
+farm for over 129,000 frames of the video &quot;A Bug's Life&quot;. Here's a
+quote from Pixar's web page:</p>
+
+<p>&quot;A movie is 24 frames per second so a 90 minute movie is 129,600
+frames. In our case, each frame was 2048 X 872 pixels by 4 bytes of
+color information. This means each frame is 7,143,424 bytes of
+data. Multiplying 129,600 X 7.1MB/frame is roughly 925GB of storage
+for the film frames.  However, there are many first attempts at frames
+and also video resolution frames that have to be stored as well. On A
+Bug's Life, we had about 2TB of storage, even though the actual final
+frames only took up .925TB.&quot;</p>
+
+<p>Each Octane has two 250 Mhz R10000 processors (the same ones used in
+the Nintendo 64 game machine), with 4-way issue, 5 execution units,
+and speculative execution, a 1.0 Gb/sec memory bandwidth, and 1.2
+Gb/sec internal network speed (ccNUMA crossbar architecture). Pixar
+writes their own Renderman software which is able to apply certain
+video effects, like lighting, shadows, motion blurs, textures, etc.,
+to each frame.</p>
+
+<p>For a more non-trivial use of parallel computers, we go to my
+roommate, Andy Frank's field of molecular and cell biology. He uses a
+system of algorithms called BLAST for protein and sequence
+matching. There are numerous databases of various genes, chromosomes,
+YACs, and cDNA libraries for all sorts of creatures, including
+humans. Whenever a scientist sequences something, they can search
+through this set of databases and find where it belongs (if it's been
+sequenced before). </p>
+
+<p>Sequence matching is a hard problem, and the specific needs of
+biologists make it even more fun. The BLAST set of algorithms were
+developed to do this sequence matching, and some people ported them to 
+parallel machines. Here's a citation from an NCBI search:
+
+<h5>Implementations of BLAST for parallel computers.</h5>
+
+<p>Julich A</p>
+
+<p>Max-Planck-Institut fur Plasmaphysik, Garching bei Munchen, Germany. </p>
+
+<p>The BLAST sequence comparison programs have been ported to a variety
+of parallel computers-the shared memory machine Cray Y-MP 8/864 and
+the distributed memory architectures Intel iPSC/860 and
+nCUBE. Additionally, the programs were ported to run on workstation
+clusters. We explain the parallelization techniques and consider the
+pros and cons of these methods. The BLAST programs are very well
+suited for parallelization for a moderate number of processors. We
+illustrate our results using the program blastp as an example. As
+input data for blastp, a 799 residue protein query sequence and the
+protein database PIR were used.</p>
+
+There's also research going on at the Yale Center for Medical
+Informatics applying parallel programming and computing to sequence
+comparison analysis. Here's a paper from 1991:
+
+<h5>Parallel computation for biological sequence comparison: comparing a
+portable model to the native model for the Intel Hypercube.</h5>
+
+<p>Nadkarni PM, Miller PL</p>
+
+<p>Department of Anesthesiology, Yale School of Medicine, New Haven, CT 06510. </p>
+
+<p>A parallel program for inter-database sequence comparison was
+developed on the Intel Hypercube using two models of parallel
+programming. One version was built using machine-specific Hypercube
+parallel programming commands. The other version was built using
+Linda, a machine-independent parallel programming language. The two
+versions of the program provide a case study comparing these two
+approaches to parallelization in an important biological application
+area. Benchmark tests with both programs gave comparable results with
+a small number of processors. As the number of processors was
+increased, the Linda version was somewhat less efficient. The Linda
+version was also run without change on Network Linda, a virtual
+parallel machine running on a network of desktop workstations.</p>
+
+<p>Luckily for me, all of these papers were published in biology
+journals which don't believe in posting papers on the web without some 
+form of monetary compensation. It'll be nice when eJournals really
+take off in the less technical fields. </p>
+
+
+</body> </html>

@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Speech Recognition</TITLE>
+<META NAME="description" CONTENT="Speech Recognition">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="qual.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html56"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html50"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node3.html">How do people naturally</A>
+<B> Up:</B> <A NAME="tex2html57"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html51"
+  HREF="node1.html">Introduction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000">
+Speech Recognition</A>
+</H1>
+
+<P>
+Fast and accurate speech recognition has been a goal in computer
+science for 50 years. Early techniques tried to model how the brain
+understands sound, speech and language, and embed this understanding
+into an audio recognizer. These approaches met with failure, both
+because understanding of how the brain understands speech was (and
+still is) largely unknown, and because the available computer
+processing power was quite small. More recent efforts have abandoned
+cognitive understanding for statistical methods, hidden Markov models,
+bayesian inference algorithms, context-free parsing, neural nets, and
+a better understanding of the first level of sound processing by the
+inner ear and the brain. Combined with massive advances in computing
+power, brute force algorithms, and incredibly large sound sample
+dictionaries, speech recognition today is a fairly accurate and
+feasible solution for average desktop computers.
+
+<P>
+Commercial speech recognition engines are constructed by first
+recording tens of thousands of words, spoken by people with all sorts
+of accents, into a large phoneme dictionary. This dictionary, combined
+with an n-gram analysis of typically spoken documents, is analyzed and
+used to form the basis of a hidden Markov model or neural net which
+does the actual recognition.  To make translation between phonemes and
+words quicker, speech recognizers use language grammars (both
+specified for the application and for the natural language) to prune
+their search.
+
+<P>
+The supported grammars are divided into two categories: <I>command
+and control</I> and <I>dictation</I>. Command and control grammars are
+fixed grammars (meaning all words, or <I>terminals</I>, are known at
+grammar compile-time) which are used to script applications. As each
+production in the grammar is recognized, an action is performed, such
+as ``Open File Menu''. Dictation grammars, on the other hand, are
+defined specifically for each natural language. IBM's
+ViaVoice&nbsp;[<A
+ HREF="node29.html#viavoice">27</A>] and Dragon's NaturallySpeaking&nbsp;[<A
+ HREF="node29.html#dragon">17</A>]
+are two examples of speech recognizers that support dictation in
+English (IBM's also supports many other languages including Spanish,
+German, French, Chinese, and Japanese). Knowledge of the grammar of
+the natural language helps the tool to disambiguate
+homophones,&nbsp;<A NAME="tex2html3"
+  HREF="footnode.html#foot50"><SUP>3</SUP></A> discern proper capitalization, and help make the speech
+recognizer run faster.
+
+<P>
+Efforts to apply speech-to-text conversion for programming tasks such
+as authoring, navigation, and modification using these conventional
+natural language processing tools have had limited success. English
+language parsing provides poor recognition of most traditional
+programming language text because the grammars are structurally very
+dissimilar. Thus, practical efforts to use speech recognition for
+program dictation have used command and control grammars. Since these
+grammars require a fixed set of terminals, and generally don't scale
+very well, complete specification of a programming language has not
+been possible (nor tried). Instead, developers apply <I>ad hoc</I>
+techniques to script the speech recognizer.
+
+<P>
+VoiceGrip&nbsp;[<A
+ HREF="node29.html#Desilets">16</A>] uses Perl and an extensive set of macros to
+match regular expressions to uttered program text and produce program
+code in the source language. Code dictation is awkward and
+over-stylized. For example, the following illustrates how you must
+speak to enter a loop to repeat a body of code ten times:
+
+<P>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT"><B>User Speech</B></TD>
+<TD ALIGN="LEFT"><B>Computer Output</B></TD>
+<TD ALIGN="LEFT"><B>Commentary</B></TD>
+</TR>
+<TR><TD ALIGN="LEFT">for statement</TD>
+<TD ALIGN="LEFT"><TT>for( ; ; ) { }</TT></TD>
+<TD ALIGN="LEFT">Inserts a for statement</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">template</TD>
+</TR>
+<TR><TD ALIGN="LEFT">next</TD>
+<TD ALIGN="LEFT"><TT>for( ; ; ) { }</TT></TD>
+<TD ALIGN="LEFT">Moves the cursor to the first</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">slot</TD>
+</TR>
+<TR><TD ALIGN="LEFT">declare variable</TD>
+<TD ALIGN="LEFT"><TT>for( i ; ; ) { }</TT></TD>
+<TD ALIGN="LEFT">Inserts
+new variable i</TD>
+</TR>
+<TR><TD ALIGN="LEFT">name india</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">variable type</TD>
+<TD ALIGN="LEFT"><TT>for( int i ; ; ) { }</TT></TD>
+<TD ALIGN="LEFT">Modifies
+variable to add type</TD>
+</TR>
+<TR><TD ALIGN="LEFT">integer</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">annotation. ``integer'' is</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">mapped to <TT>int</TT>.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">assign zero</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; ; ) { }</TT></TD>
+<TD ALIGN="LEFT">Initialize i to 0</TD>
+</TR>
+<TR><TD ALIGN="LEFT">next</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; ; ) { }</TT></TD>
+<TD ALIGN="LEFT">Moves cursor to next
+slot</TD>
+</TR>
+<TR><TD ALIGN="LEFT">recall one</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i ; ) { }</TT></TD>
+<TD ALIGN="LEFT">When first
+defined, identifiers</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">are stored in a cache pad for</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">later retrieval by number.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">less than ten</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i <IMG
+ WIDTH="16" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&lt;$"> 10; ) { }</TT></TD>
+<TD ALIGN="LEFT">Indicate
+the loop limit.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">next</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i <IMG
+ WIDTH="16" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&lt;$"> 10 ; ) { }</TT></TD>
+<TD ALIGN="LEFT">Move cursor to
+next slot.</TD>
+</TR>
+<TR><TD ALIGN="LEFT">recall one</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i <IMG
+ WIDTH="16" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&lt;$"> 10 ; i ) { }</TT></TD>
+<TD ALIGN="LEFT">Insert
+loop variable</TD>
+</TR>
+<TR><TD ALIGN="LEFT">auto-increment</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i <IMG
+ WIDTH="16" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&lt;$"> 10 ; i++ ) { }</TT></TD>
+<TD ALIGN="LEFT">Add
+in increment by one</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">operation</TD>
+</TR>
+<TR><TD ALIGN="LEFT">next</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i <IMG
+ WIDTH="16" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&lt;$"> 10 ; i++ ) { }</TT></TD>
+<TD ALIGN="LEFT">Move cursor
+to for loop body</TD>
+</TR>
+<TR><TD ALIGN="LEFT">...</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i <IMG
+ WIDTH="16" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&lt;$"> 10 ; i++ ) { ... }</TT></TD>
+<TD ALIGN="LEFT">Loop body
+code entry</TD>
+</TR>
+<TR><TD ALIGN="LEFT">end for</TD>
+<TD ALIGN="LEFT"><TT>for( int i = 0 ; i <IMG
+ WIDTH="16" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$&lt;$"> 10 ; i++ ) { ... }</TT></TD>
+<TD ALIGN="LEFT">Move
+the cursor past the end</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">of the for loop.</TD>
+</TR>
+</TABLE>
+
+<P>
+As you might guess, this kind of code entry is very slow. 
+
+<P>
+In addition, the regular expressions used by VoiceGrip are inserted
+into an editor that knows nothing of the program structure, limiting
+editing and navigation to word processing services or those based on
+<I>ad hoc</I> tokenization of the text buffer. Many users of this tool,
+mainly RSI sufferers, must resort to using the keyboard to navigate
+through and edit code with any speed. Such users often create an
+extensive set of editor macros to help spare their hands further harm.
+
+<P>
+Recently, there has been an effort to unify VoiceGrip and several
+other speech-for-programming efforts into a program by voice (PBV)
+toolkit&nbsp;[<A
+ HREF="node29.html#pbv-toolkit">59</A>]. The toolkit incorporates an English
+language voice recognition mode interface for Emacs and several
+packages of macros for easier navigation of source code by voice using
+line numbers and regular expressions. This provides some improvement,
+but is still far short of an ideal interface. In addition, new efforts
+at Drexel University&nbsp;[<A
+ HREF="node29.html#arnold00">2</A>] and Compaq SRC have started to
+work on this problem, but these projects are still in the design
+phase and have no results to show.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html56"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html50"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node3.html">How do people naturally</A>
+<B> Up:</B> <A NAME="tex2html57"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html51"
+  HREF="node1.html">Introduction</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

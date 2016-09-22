@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Faculty Docs</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/bootswatch.css">
+    
+    <script type="text/javascript" src="js/jquery.1.7.2.js"></script>
+
+  </head>
+  <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+    
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+           <div class="container">
+             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </a>
+             <a class="brand" href="../">Faculty Documentation</a>
+             <div class="nav-collapse" id="main-menu">
+              <ul class="nav" id="main-menu-left">
+                
+              </ul>
+              
+             </div>
+           </div>
+         </div>
+    </div>
+
+    <div class="container">
+      <!-- Masthead
+      ================================================== -->
+      <header class="jumbotron subhead" id="overview">
+        
+          <div class="subnav">
+            <ul class="nav nav-pills">
+              <li><a href="#mlayout">Main Layout</a></li>
+              <li><a href="#slayout">Sidebar Layout</a></li>
+              <li><a href="#playout">Pages Layout</a></li>
+              <li><a href="#howto">How to</a></li>
+              <li><a href="#miscellaneous">Miscellaneous</a></li>
+            </ul>
+          </div>
+
+      </header>
+    
+      <div class="alert alert-warning">
+        <p>This template sits on top of the <a href="http://getbootstrap.com/getting-started/">Twitter's Bootstrap v3</a>, so you might want to take a look at it.<p>
+      </div>
+      
+
+      <div class="section" id="mlayout">
+        <h1>Main Layout</h1>
+        <p>The basic layout of the page is a <code>sidebar</code> and <code>main area</code> witch are absolutley positioned to cover the page, no matter the size of the window is.</p>
+        <pre>
+
+  <div id="wrapper">
+    <div id="sidebar">
+
+      //contents of sidebar
+    
+    </div>
+    <div id="main">
+    
+      //contents of main
+    
+    </div>    
+  </div>
+
+        </pre>  
+      </div>
+
+      <div class="section" id="slayout">
+        <h1>Sidebar Layout</h1>
+        <p>Now, Sidebar itself is containig <code>main navigation</code> and the <code>social icons</code>.</p>
+        <pre>
+<div id="sidebar">        
+  <div id="main-nav">
+    
+    //profile picture and navigation menus
+
+  </div>
+  <div class="social-icons">
+    
+  </div>
+</div>
+        </pre>
+        <br/>
+        <p>Once we know about the layout of the sidebar, this is the markup for the manus that you should know in orer to change the menu text as you want.</p>
+        <pre>
+<ul id="navigation">
+  <li>
+    <a href="#biography">
+      <div class="icon icon-user"></div>
+      <div class="text">About Me</div>
+    </a>
+  </li>  
+  
+  <li>
+    <a href="#research">
+      <div class="icon icon-book"></div>
+      <div class="text">Research</div>
+    </a>
+  </li>
+  .
+  .
+  .
+</ul>
+        </pre>
+        <p>It is pretty simple to use. You need:</p>
+        <ol>
+            <li>What is your menu text?</li>
+            <li>What icon you want to use?</li>
+        </ol>
+        <p class="lead">The icons you see in the theme are called font-icons, so the code bellow represents an icon. <pre><div class="icon icon-book"></div></pre> </p>
+        
+        <p>You can find many icons you would need at <a href="http://fontawesome.io/3.2.1/icons/">Font Awesome</a> page.</p>
+
+      </div>
+
+      <div class="section" id="playout">
+        <h1>Pages Layout</h1>
+        <p>The main area is filled with pages, you can add as many pages as you want.</p>
+        <p>Each page required to have an <code>id</code> so it can be referenced within the menus and a <code>class="page"</code> whitch indicates that this div is a page. </p>
+        <p>For the Home page of the site we set two extra parameters which are class of <code>class="home"</code> and <code>data-pos="home"</code> so that when you click on the homepage at the menu, this one would act different.</p>
+        <p><span class="label label-warning">Notice</span> In order to sync the menu with the pages, the <code>href</code> attribute of the menu item should properly point to the <code>id</code> of the page. For example, if your page has an id of research like <code>id="research"</code>, the anchor at the menu should refer to <code>href="#research"</code>.</p>
+
+
+        <pre>
+<div id="main">
+  
+  <div id="biography" class="page home" data-pos="home">
+    //contents of the "about me" page  
+  </div>
+  
+  <div id="research" class="page">
+    //contents of "research" page  
+  </div>
+
+  .
+  .
+  .
+
+
+</div>
+        </pre>
+
+        <h3>Each page</h3>
+        <p>Pages have similar layout, one page has a <code>header</code> section and the resto of the page is wrapped within a div witch has a class of <code>class="pagecontents"</code></p>
+        <p>While contents of each page is consist of some <code>.section</code>s, you would wrap each section in a separate div with class of <code>class="section"</code> so that you can apply a different backgroung color to them via an extra class of <code>color-1</code>, <code>color-2</code> or <code>color-3</code></p>
+        <pre>
+<div id="research" class="page">
+  
+  <div class="pageheader">
+    //the header section of the page
+  </div>
+  
+  <div class="pagecontents">
+    //the rest of contents of the page
+    <div class="section"></div>
+    <div class="section"></div>
+    ...
+  </div>
+
+</div>
+        </pre>
+
+
+
+      </div>
+
+      <div class="section" id="howto">
+        <h1>How to?</h1>
+        In this section of documentation we will answer some of your direct question about working with this theme, mostly how to modify it.
+
+        <h3>How to change profile picture?</h3>
+        <p>Open up the files of the theme and navigate to <code>img</code> folder. Change the file named <code>personal-pic.jpg</code> with yours.</p>
+
+        <h3>How to add academic position?</h3>
+        <ul>
+            <li>Find the <code>ul-dates</code> at the contents of the first page.</li>
+            <li>Each <code>li</code> is a academic position.</li>
+            <li>add them like the code bellow:</li>
+        </ul>
+        <pre>
+<li>
+    <div class="dates">
+        <span>Present</span>
+        <span>2005</span>
+    </div>
+    <div class="content">
+        <h4>General Atlantic Professor</h4>
+        <p><em>Stanford University</em>, Graduate School of Business</p>
+    </div>
+</li>
+        </pre>
+
+        <h3>How to add "Education and training"?</h3>
+        <ul>
+            <li>Find the <code>ul-card</code> at the contents of the first page.</li>
+            <li>Each <code>li</code> is a academic degree.</li>
+            <li>Add them like the code bellow:</li>
+            <li>The markup is really expressive</li>
+        </ul>
+        <pre>
+<li>
+    <div class="dy">
+        <span class="degree">Ph.D.</span>
+        <span class="year">1995</span>
+    </div>
+    <div class="description">
+        <p class="waht">Ph.D. in Marketing</p>
+        <p class="where">Stanford University Graduate School of Business</p>
+    </div>
+</li>
+        </pre>
+
+        <h3>How to add honors, awards and grants?</h3>
+        <p>each consists of :</p>
+        <ul>
+            <li>Title</li>
+            <li>date</li>
+            <li>description</li>
+        </ul>
+        <p>you can add as many items as you want in this sectoin, they are a list actually buu styled in a way to be more interactive:</p>
+        <ul>
+            <li>Find the <code>class="timeline"</code> at the first page</li>
+            <li>Then you can add/modify the contents as :</li>
+        </ul>
+        <pre>
+<li>
+    <div class="date">2012-2013</div>
+    <div class="circle"></div>
+    <div class="data">
+        <div class="subject">Title of the honor</div>
+        <div class="text row">
+            description
+        </div>
+    </div>
+</li>
+        </pre>
+
+
+        <h3>How to add/modify lab personnels?</h3>
+        <p>This is a carousel of images and each image (of person) is related with a description</p>
+        <p>You can edit and add persons to the carousel as many as needed</p>
+        <pre>
+<div id="labp-heads-wrap">
+  <div id="lab-carousel">
+    <div><img src="img/lab/lab5.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+    <div><img src="img/lab/lab5.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+    ....
+  </div>
+  <div>
+      <a href="#" id="prev"><i class="icon-chevron-sign-left"></i></a>
+      <a href="#" id="next"><i class="icon-chevron-sign-right"></i></a>
+  </div>
+</div>
+
+<div id="lab-details">
+  <div>
+      <h3>David A. Doe</h3>
+      <h4>Postdoctoral fellow</h4>
+      <a href="#" class="btn btn-info">+ Follow</a>
+  </div>
+  <div>
+      <h3>David A. Doe</h3>
+      <h4>Postdoctoral fellow</h4>
+      <a href="#" class="btn btn-info">+ Follow</a>
+  </div>
+  ....
+</div>
+        </pre>
+        <p><span class="label label-warning">Notice</span>You should place images in the same order as you have placed corresponding divs.</p>
+
+        <h3>How to add/edit Research Projects?</h3>
+        <ul>
+            <li>Find the <code>ul</code> with class of <code>ul-withdetails</code> </li>
+            <li>Each <code>li</code> stands for a project.</li>
+            <li>Add you title and a <strong>very short</strong> description within the <code>.meta</code> div</li>
+            <li>Change and address the image,</li>
+            <li>and finally put all your descriptios about the project within the <code>.detalis</code> div, the sescription could be anything including images or videos.</li>
+        </ul>
+        <pre>
+<li>
+  <div class="row">
+      <div class="col-sm-6 col-md-3">
+          <div class="image">
+              <img src="img/projects/image-name.jpg" alt="..." class="img-responsive">
+              <div class="imageoverlay">
+                  <i class="icon icon-search"></i>
+              </div>
+
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-9">
+          <div class="meta">
+              <h3>Title of Preject</h3>
+              <p>Very short description of the project.</p>
+          </div>
+      </div>
+  </div>
+  <div class="details">
+      <p>Description and details of the project ...</p>
+  </div>
+</li>
+        </pre>
+
+
+        <h3>How to add/edit a publication to the list?</h3>
+        <p>Publication attributes are:</p>
+        <ul>
+            <li>Title</li>
+            <li>Authors</li>
+            <li>Citation</li>
+            <li>Details (i.e. abstract)</li>
+            <li>Year</li>
+            <li>Type (i.e. Journal paper, Conference paper etc.)</li>
+            <li>External link to publisher</li>
+            <li>pdf link</li>
+        </ul>
+        <p>and the layout is :</p>
+        <pre>
+<div class="item mix cpaper" data-year="2013">
+  <div class="pubmain">
+      <div class="pubassets">
+          
+          <a href="#" class="pubcollapse">
+              <i class="icon-expand-alt"></i>
+          </a>
+          <a href="http://external link" class="tooltips" title="External link" target="_blank">
+              <i class="icon-external-link"></i>
+          </a>
+          <a href="http://link.to/file.pdf" class="tooltips" title="Download" target="_blank">
+              <i class="icon-cloud-download"></i>
+          </a>
+      </div>
+
+      <h4 class="pubtitle">
+        //publication title
+      </h4>
+      <div class="pubauthor">
+        //authors
+      </div>
+      <div class="pubcite">
+        <span class="label label-warning">//publication type</span>
+        //citation
+      </div>
+      
+  </div>
+  <div class="pubdetails">
+      //description
+  </div>
+</div>
+        </pre>
+
+        <h4>Filters</h4>
+        <p>Did you noticed the class of <code>cpaper</code> at the first line? Well, that is the key to filtering. Each publication falls in a group so we can filter them by that group. You can add as many groups as you want, though.</p>
+        <pre>
+<select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+    <option class="filter" value="all" selected>All types</option>
+    <option class="filter" value="jpaper">Jounal Papers</option>
+    <option class="filter" value="cpaper">Conference Papers</option>
+    <option class="filter" value="bookchapter">Book Chapters</option>
+    <option class="filter" value="book">Books</option>
+    <option class="filter" value="report">Reports</option>
+    <option class="filter" value="tpaper">Technical Papers</option>
+    ...
+</select>
+        </pre>
+        <p>and again, there is a <code>cpaper</code> there as a value of the option. When ever a user clicks on the select element, the mixitup jquery plugin will simply hide elements except those has class of the value selected. So be carefull about this.</p>
+
+        <h4>Ordering</h4>
+        <p>Simillarly, as you might guess, that <code>data-year</code> is responsible to take care of ordering.</p>
+
+
+        <h3>How to add gallery image?</h3>
+        <p>You can add as many images as you want to the gallery. They will be shows based on where you put them in the DOM. Also, an image could come with a title and a short description.</p>
+
+        <strong>Simple image:</strong>
+        <pre>
+<li>
+    <div>
+        <img src="//thumb image file">
+        <a href="//large image file" class="popup-with-move-anim">
+            <div class="over">
+                <div class="comein">
+                    <i class="icon-search"></i>
+                    <div class="comein-bg"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+</li>
+        </pre>
+
+        <strong>Image with title:</strong>
+        <pre>
+<li>
+    <div>
+        <img src="img/gallery/02.jpg">
+        <a href="img/gallery/02.jpg" class="popup-with-move-anim">
+            <div class="over">
+                <div class="comein">
+                    <h3>Image Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="comein-bg"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+</li>
+        </pre>
+
+      </div>
+
+      <div class="section" id="miscellaneous">
+        <h1>Miscellaneous</h1>
+        <strong>File structure:</strong>
+        <ul>
+               <li>css
+                  <ul>
+                      <li><em>bootstrap.css</em></li>
+                      <li><em>font-awesome.min.css</em></li>
+                      <li><em>magnific-popup.css</em> : used for large view of gallery images</li>
+                      <li><em>perfect-scrollbar-0.4.5.min.css</em> : styles of scroll bar for sidebar</li>
+                      <li><em>style.css</em> : main theme styles</li>
+                      <li><em>styles</em>: in this folder you can find/add the color styles</li>
+                      <li><em>fonts</em></li>
+                  </ul>
+               </li>
+               <li>js
+                  <ul>
+                      <li><em>bootstrap.min.js</em></li>
+                      <li><em>custom.js</em> theme custom js file</li>
+                      <li><em>jquery.carouFredSel-6.2.1-packed.js</em></li>
+                      <li><em>jquery.dropdownit.js</em> for publications filter</li>
+                      <li><em>jquery.mixitup.min.js</em> for publications</li>
+                      <li><em>jquery.mousewheel.js</em></li>
+                      <li><em>jquery.stellar.min.js</em> for backgrounds of contanct me page</li>
+                      <li><em>jquery.touchSwipe.min.js</em> for touch support on lab carousel</li>
+                      <li><em>jquery-1.10.2.js</em></li>
+                      <li><em>magnific-popup.js</em> : for gallery popups</li>
+                      <li><em>masonry.min.js</em> : for gallery layout</li>
+                      <li><em>modernizr.custom.63321.js</em></li>
+                      <li><em>perfect-scrollbar-0.4.5.with-mousewheel.min.js</em>: custom scroll</li>
+                      <li><em>ScrollToPlugin.min.js</em></li>
+                      <li><em>TweenMax.min.js</em> : for animations</li>
+                  </ul>
+               </li>
+               <li>img</li>
+               <li>index.html</li>
+           </ul>   
+      </div>
+  <!-- Footer
+    ================================================== -->
+      <hr/>
+
+      <footer id="footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+
+    </div><!-- /container -->
+
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="js/bootswatch.js"></script>
+  </body>
+</html>

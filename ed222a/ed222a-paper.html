@@ -1,0 +1,471 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>Abstract</title>
+</head>
+
+<body LINK="#0000ff">
+<b>
+
+<h1 ALIGN="CENTER">From the Abstract to the Concrete:</h1>
+
+<h2 ALIGN="CENTER">A Study of CS61a students in CS61b </h2>
+
+<h3 ALIGN="CENTER"><br>
+Andrew Begel<br>
+abegel@cs.berkeley.edu</h3>
+
+<p>&nbsp; 
+
+<ol>
+  <font SIZE="5"><b>
+  <li>Survey</li>
+  </b></font><p></b>Programming is a fundamental skill used in the study of computer
+  science. Much of computer science stems from a certain mode of thought, a rational
+  exploration of possibilities that enables humans to gain control over the machines that
+  they build. Computer science as a discipline is understandable. Acquiring the most
+  efficient mode of thinking, however, is not as easy. Students learning to program often go
+  through many life-defining experiences -- many of them overcome adversity in the form of
+  new, unknown, hard-to-understand material, long, difficult assignments, and the struggle
+  to gain a mastery over a subject that everyone else already appears to have.</p>
+  <p>In this course, we've asked ourselves over and over what kinds of curricula, learning
+  behaviors, and thought patterns would make this introduction to computer science an easier
+  task. In the computer science department at UC Berkeley, there was a great deal of thought
+  in the creation of the first two introductory courses, CS61a and CS61b. CS61a is an
+  adaptation of Structure and Interpretation of Computer Programming, a course developed by
+  Gerry Sussman and Hal Abelson of MIT. CS61b is a Berkeley creation, a course emphasizing
+  object-oriented programming and data structures.</p>
+  <p>When I was at MIT, I took the SICP course, and while a first-year student at Cal, I TAd
+  CS61a. Thus, I have experience with this course from both sides. When I took the course, I
+  found it relatively easy to understand. I had programmed extensively prior to entering MIT
+  and found that learning Scheme held no great mystery. Since I wasn&#146;t bogged down by
+  the language, I found myself enamored of the ideals and Zen behind it. I began to notice
+  higher-level concepts behind each week's lesson, concepts that formed the core of my new
+  understanding of computer science.</p>
+  <p>As a CS61a TA, I tried to show my students a little of this Zen. I don't believe I was
+  successful with all of my students, but I think a few of them went away with the right
+  idea. What I noticed, however, was that many students had trouble understand the right way
+  to think about computer science and about programming; the inability or unwillingness to
+  generalize; the fear of the abstract; the difficulty in understanding powerful ideas that
+  might require a leap of faith to use before complete comprehension comes.</p>
+  <p>My students finished CS61a and went on to CS61b, where they undertook the study of Java
+  and data structures. Java, an object-oriented imperative language, is about as different
+  from Scheme as English is from Latin. One can be expressed in the other, but the reverse
+  expression is difficult at best, though not impossible. It is easier to express the ideas
+  of Java, object-orientation, and data abstraction in Scheme then it is to mutate Java to
+  be as general as Scheme. Thus, Java tends to be more concrete by employing types, and more
+  limited because procedures are not first-class objects. Likewise, efficiency issues come
+  up more in Java than in Scheme because Java feels like it is closer to the metal, closer
+  to an underlying machine implementation than Scheme. In Scheme, there are an infinite
+  number of ways to write something, and merit can be seen in many of them. In Java, the
+  simplest solution often eschews higher-level concepts like recursion, in favor of more
+  direct, to-the-point constructs, such as iteration.</p>
+  <p><b>&nbsp;</p>
+  <font SIZE="5"><b>
+  <li>Survey</li>
+  </b></font><p></b>I developed a survey consisting of some simple Scheme-style problems and
+  presented them in both a Java and Scheme context. I then asked questions designed to
+  elicit some personal feelings about the two languages and about the two courses. The
+  survey is attached to this report.</p>
+  <p>The survey contains several questions. The first is a study of recursion. A common
+  function in Scheme is <i>append</i>, which takes two linked lists and produces a new
+  linked list that has all of the elements of the two lists concatenated into one. CS61a
+  students learn this function about three weeks into the course. Here is the simple Scheme
+  solution:</p>
+  <font FACE="Courier New" SIZE="2"><p>(define (append list1 list2)<br>
+  &nbsp;&nbsp;&nbsp; (if (null? list1)<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list2<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (cons (car list1) (append (cdr list1) list2))))</p>
+  </font><p>The solution is recursive. It copies each element of list1 into a new list, and
+  finally attaches list2 to the end of the last new cons cell. There are other ways to write
+  the solution, but the recursive solution is generally the most elegant and the shortest.</p>
+  <p>I asked students to write append in Scheme and Java. I presented the Java version first
+  because I wanted to see what the student's current instincts were after having been
+  indoctrinated in Java for several months in CS61b. Since Java doesn't have a built-in list
+  construct, I provided them with a Cons cell abstraction and asked them to turn it into a
+  List abstraction. I then asked the Scheme version of the same question.</p>
+  <p>The next section was about data abstraction. In Scheme, data abstractions tend to be
+  figments of the programmer's imagination. There are no built-in data abstractions other
+  than the basic cons cell. Everything else must be built up by the programmer. Java is
+  object-oriented, which provides a convenient data structure representation and allows
+  programmers to organize their data by the use of types. These types allow the programmer
+  to proscribe certain ways of using the objects while at the same time providing the
+  programmer with some structure and automatic documentation. In Scheme, the programmers
+  must be careful in how they name functions in order to make the abstract types clear. In
+  Java, this comes for free.</p>
+  <p>I asked students to construct a tree abstraction. They were first asked to build a
+  binary tree. Then I asked them to modify it to a trinary and then finally to a d-ary tree,
+  where the nodes could have any number of children. I wanted to see how they would
+  construct the data abstractions, but I also wanted to see how easily they could modify
+  their abstractions. I finally asked them to highlight the differences between their
+  implementations and give me the reasoning for when they would choose one representation
+  over the other. I asked this question first in Java and then in Scheme. I then asked the
+  students to explain the differences between their Java and Scheme approaches to the same
+  problem. I wanted to see if they recognized the differences in their two approaches and
+  how they thought about abstraction in each language.</p>
+  <p>For the second to last part of the survey, I asked students which language they liked
+  better and why. I gave them some sample topics to discuss, such as programming style,
+  debugging, abstraction, and object-oriented vs. procedural programming.</p>
+  <p>Finally, I asked students about the differences between CS61a and CS61b. I asked what
+  they learned in CS61a that was useful for understanding CS61b, and asked what they learned
+  in CS61a that was irrelevant in CS61b. I also asked what they learned about in CS61b that
+  they didn't learn in CS61a and asked them to explain why it wasn't covered in CS61a. I
+  finally asked if they had any struggles in CS61a or CS61b and whether they had any ways to
+  improve the courses or to modify their content in some way. I wanted to get the students'
+  own impressions of the courses from the inside while they were in them. CS61b is only the
+  second computer science course, so I didn't expect them to understand the purpose of
+  everything they were learning, but I did want to see if they could speculate as to the
+  usefulness of certain material.</p>
+  <p>&nbsp;</p>
+  <font SIZE="5"><b>
+  <li>Experiment</li>
+  </b></font><p>I interviewed four CS61b students whom I had TAd in CS61a the term before. I
+  was hoping for a larger number, but several students cancelled at the last minute. In any
+  case, four students turned out to be a good enough number to see some trends in their
+  thought patterns.</p>
+  <p>Most of the students had a lot of trouble with the first question, creating a List
+  class in Java. They thought that they needed to reimplement the Cons class to create the
+  List. I think it might be due to CS61b implementing linked lists in a prior problem set.
+  Several students ended up with an implementation that resembled this structure, but the
+  types tended to be wrong. I expected them to create a constructor that would restrict its
+  second argument (the cdr) to be a List. This would let them use Java&#146;s type system to
+  constrain the use of List to only make proper Lists. Two of them implemented their
+  constructors this way, but the other two took an Object as the second input and downcasted
+  it to a List inside the method. One of them took another CS61b idiom and created a zero
+  argument constructor. He then wrote a cons() method that took car and cdr and mutated the
+  instance variables of the Object. </p>
+  <p>I asked the students to provide an example use of their Lists, so I could get them to
+  see if they had created the List class correctly. Three of them found bugs in their
+  solutions right away. The one with the mutating constructor accidentally overwrote the
+  same cons cell several times instead of creating a complete list. I didn&#146;t point out
+  the error, but just moved on. </p>
+  <p>After creating their List class, I asked them to write append. None of the four used
+  recursion. All used while loops to implement the method. Two students destructively
+  modified their lists. They cdr&#146;d down to the end of the first list and mutated the
+  cdr to point to the second List. This was acceptable, but I had asked for a
+  non-destructive append. Three students got screwed up when they tried to use <i>while</i>
+  to cdr down their list. As the while loop goes forward down the list, they tried to create
+  a new List from each element of the old. Unfortunately, if you do it this way, you
+  generate the new List in reverse. All of them realized their mistake, but didn&#146;t
+  rewrite their procedure to be recursive; they merely re-ran the while loop again to
+  rereverse the list. Only one student avoided the problem by using a java.util.Vector (a
+  stretchy array) to combine both Lists, and then used a new List constructor that took an
+  array to turn the Vector first into an array and then into a List. </p>
+  <p>I then asked students to write append in Scheme. Two of them remembered how to do it in
+  the Scheme style that they had learned in CS61a. One of them couldn&#146;t remember how to
+  program in procedural style, and rewrote their Java implementation in Scheme. The fourth
+  student couldn&#146;t remember how to do it. It appeared that he was trying to program in
+  the imperative programming style without using Scheme mutators. </p>
+  <p>None of the students had any trouble creating a binary tree abstraction. Two of them
+  lectured me for several minutes on the finer points of data abstraction and explained the
+  differences between a binary tree and a binary tree node. One is a container for the root
+  node of a binary tree, the other is a generic node for use anywhere in the tree. Students
+  used three instance variables for the binary tree: <i>Object key</i>,<i> Node left</i> and
+  <i>Node right</i>. Altering the binary tree to a trinary tree was as simple as adding in
+  an extra Node to be the middle node. When the students created the d-ary tree abstraction,
+  they all changed their <i>children</i> representation to an array of Nodes which was input
+  to the constructor. One of the students was going to use their List class for this, but
+  decided against it because while Java had built-in operations for getting the nth element
+  of an array, it had no built-in method for getting the nth element of a linked list. </p>
+  <p>When asked to write these abstractions in Scheme, three of the students used a data
+  structure made from cons cells. They quickly wrote constructors and accessors for the <i>key</i>
+  and <i>left</i> and <i>right </i>children. One student immediately wrote their abstraction
+  in the Scheme OOP style which was introduced as a section in CS61a. This style is very
+  similar to Java but doesn&#146;t show any types to the user. When they were asked to
+  modify their abstraction to support a d-ary tree, two students wanted to use Scheme&#146;s
+  dotted notation. This notation allows a procedure to take an arbitrary number of arguments
+  and pass them to the function as a list. After I nudged them to find a simpler way, they
+  switched to taking a list of nodes as the input for the children nodes. The third student
+  hit upon using the list from the beginning. The fourth student, who used OOP style, merely
+  changed the name of her instance variable to list-of-children and added an accessor to
+  pick out the nth child from the list. </p>
+  <p>The later questions from the survey go more toward the students&#146; comprehension and
+  understanding of CS61a, CS61b, Scheme and Java. In the next section, I&#146;ll discuss
+  some thoughts that I have about the students&#146; solutions to the survey problems and
+  give some hypotheses for where these problems have come from.</p>
+  <font SIZE="5"><b>
+  <li>Analysis</li>
+  </b></font><p>&nbsp;</p>
+  <font FACE="Arial"><i><b><p>Recursion</p>
+  </b></i></font><p ALIGN="JUSTIFY">All of the students seem to have difficulty with
+  recursion. In CS61a, they used recursion because there was no alternative. But, after
+  experiencing CS61b, Java, and the wonders of iteration, they seem very inclined to use
+  iteration, even in places where recursion would provide a much simpler solution. It was
+  illustrated in the survey when three of the students accidentally wrote <i>reverse</i>
+  instead of <i>append</i> because they used iteration. </p>
+  <p ALIGN="JUSTIFY">One student said that one of the most important things he learned from
+  CS61a was recursion, yet he still used an iterative solution. He felt that recursion was
+  more magical than iteration:</p>
+  <dir>
+    <dir>
+      <font SIZE="2"><p>J: Recursion is doing it over and over again, but it's a little
+      different because recursion is calling itself. You're just hoping it's gonna end, where in
+      a for loop, you're like, hey, I want you to go from 0 to 100. It will do exactly what you
+      tell it to do.</p>
+      <p>A: So recursion seems a little bit more big in its notions of what you can do with it?</p>
+      <p>J: Right. You gotta have faith. </p>
+    </dir>
+  </dir>
+  </font><p>One could say that the iteration is more concrete than recursion. J said that in
+  order to understand recursion, you have to have faith. This description is vaguely
+  religious, used in a way that imparts a certain mystery on recursion &#150; that it&#146;s
+  beyond human understanding. One possible explanation for the use of iteration over
+  recursion is the tendency to embrace more concrete concepts over the abstract ones. J said
+  that he could look at a loop and tell where it begins and ends, but with recursion you
+  couldn&#146;t immediately tell when it was going to end. </p>
+  <p>I asked another student why he didn&#146;t write the Scheme append in the same way that
+  he wrote the Java append.<dir>
+    <dir>
+      <font SIZE="2"><p>D: Just, I think the cons thing threw me. The way that I started writing
+      it because that was the way I thought about it at that time. Java isn't scheme.
+      &#145;cause Java is not Scheme. Java -- I&#146;ve been doing so many for loops and while
+      loops. Recursive, we haven't really done much recursive stuff, a little bit, but nothing
+      on a grand scale.</p>
+    </dir>
+  </dir>
+  </font><p>This student&#146;s feeling is that CS61b emphasizes iteration over recursion.
+  In CS61a, students learned that tail recursive processes were equivalent to iteration, but
+  still had never seen a real iterative construct. Once they get to Java, however, it seems
+  that this iterative construct is easier to understand and use than recursion. </p>
+  <font FACE="Arial"><i><b><p>Types</p>
+  </b></i></font><p ALIGN="JUSTIFY">The students say that they like Java over Scheme because
+  of its types. They describe Java objects anthropomorphically and graphically. When they
+  describe Scheme objects, it&#146;s much more vague. </p>
+  <p ALIGN="JUSTIFY">&nbsp;</p>
+  <dir>
+    <dir>
+      <font SIZE="2"><p>J: Yeah. I start using a different verbal language. &quot;Yes I have to
+      put a node into this thing.&quot; Well, we know what a node is; it has its own class.
+      It&#146;s an object. You can start drawing these things. We had this thing called table; a
+      table is this. It has a pointer to this mbfile, and this file has nodes. Node is an
+      object, file is an object, table is an object. We also had an index which was like an
+      actual tree. Everything was an object.</p>
+      <p>D: I don't know, Java is more friendly, somehow. it's not as cryptic sometimes. not so
+      many parens running around. labeled functions: get-value-at. you know what that is. you
+      know what it returns. you know what arguments it takes. where in scheme, everything is
+      loose. you can have any arguments. </p>
+    </dir>
+  </dir>
+  </font><p ALIGN="JUSTIFY">Java&#146;s types seem to give students a language in which to
+  describe their organizational structures. It makes computational objects easier to
+  visualize. Here is what a different student said about Scheme structures:</p>
+  <dir>
+    <dir>
+      <font SIZE="2"><p>D. Trees and lists were hard. Trees were hard because it was hard to
+      visualize how it came about. because everything is a list. When you're trying to draw a
+      binary tree, it's confusing especially when Prof. Harvey gave you, this is a tree, a
+      binary tree and all these tools. You just want to see what a binary tree looks like, node
+      structure-wise.</p>
+      <p>A: So you can see that in Java?</p>
+      <p>D: Prof. Hilfinger gives it to you in some notation. He doesn't give it to you in
+      scheme notation. It's not hard but nested parens are hard to read.</p>
+    </dir>
+  </dir>
+  </font><p ALIGN="JUSTIFY">This suggests that students have trouble comprehending
+  user-built abstractions. In Scheme, everything tends to be built from one structure: the
+  cons cell, and thus when something is printed, it looks like a series of nested cons
+  cells. This notation tends to confuse students because it doesn&#146;t match any mental
+  picture they may had tried to come up with. In Java, objects have a default toString()
+  method which prints a very opaque representation: <i>&lt;Object #5fa65f&gt;</i>. If
+  students want an understandable representation for a data structure, they have to
+  customize the toString() method themselves and create a printable representation that
+  matches their internal model. While it is possible to create an equivalent procedure in
+  Scheme, it doesn&#146;t force you to, and all Scheme primitives return errors in terms of
+  the underlying cons abstraction, not in terms of the user-level abstraction. </p>
+  <p ALIGN="JUSTIFY">While students like the organization in Java objects, it does seem that
+  some students like the elegance of the cons cell. It forms the basis of all data
+  structures and influences the way that you think about abstraction.</p>
+  <dir>
+    <dir>
+      <font SIZE="2"><p>D: I like the simplicity of Scheme. Since we only had one structure, you
+      have one way to think, really. This one [Java] you have a choice, so you have to think
+      more about optimization, and can you really do it like this? In Scheme, you could do it
+      this way, or you couldn't do it at all.</p>
+    </dir>
+  </dir>
+  </font><p ALIGN="JUSTIFY">My take on this is that while Scheme is as powerful as Java for
+  programming, Java gives you much more structure in your data abstractions and your
+  programming model. It gives you the object-oriented model as a scaffolding on which to
+  build more complicated structures. In Scheme, the burden is on the programmer to create
+  all structure from nothing. </p>
+  <font FACE="Arial"><i><b><p>Programming and Design</p>
+  </b></i></font><p ALIGN="JUSTIFY">One important thing to notice is that while in CS61a,
+  students never had to build a very complicated data structures. While they wrote a
+  meta-circular evaluator, the most complex piece was an <i>environment</i>, which was
+  merely a list of association lists of name-value pairs. CS61b stresses programming in the
+  large and building large amalgams of complex data structures. Their final project was to
+  create a domino game with a GUI, network play, and AI machine player. This involved so
+  much programming that students had to work in teams and divide the work up amongst all
+  team members. In CS61a, students felt that they could have handled entire projects by
+  themselves. CS61a projects outline all of the steps that you have to perform. In CS61b,
+  projects just give you a framework in which to work, and then say &quot;go.&quot;</p>
+  <dir>
+    <dir>
+      <font SIZE="2"><p>L: We didn't even get the templates. He [Hilfinger] gave us one
+      interface which we would need to implement, but you pretty much have to figure out the
+      entire design by yourself. I mean, he tells you a lot in lecture, but you still have to...
+      you have to design a program. really. In 61a, you have everything step by step, and you
+      have to say &quot;here you draw a hand&quot; and &quot;here you give this card&quot; and
+      it's kinda like first project in 61b.</p>
+      <p>A: 61b projects were more valuable then, because they relate more about what real-life
+      programming is about?</p>
+      <p>L: Well, in real life you're not gonna have the steps, right? People are not gonna tell
+      you, I want you to do this after that and the program is gonna look like this you know and
+      you have to have it in your head -- the entire picture of how it works, the entire graph
+      of whatever you or map of program about how it's gonna work. In the end. and you're not
+      gonna be given all the templates and options. You have to know how to write it without
+      stuff.</p>
+    </dir>
+  </dir>
+  </font><p ALIGN="JUSTIFY">In Scheme, the programming process is made more difficult due to
+  the lack of a debugger. All four students wished that they had some form of debugger in
+  Scheme that would tell them the line number of the error and give them a stack trace where
+  the error occurred. I asked the students to compare using Java and Scheme for testing
+  small functions. Since Scheme is interactive, I thought that the students would have an
+  easier time testing their procedures than in Java. </p>
+  <dir>
+    <dir>
+      <font SIZE="2"><p>A: What about getting something to run for the first time?</p>
+      <p>D: Well, Scheme... Well, I&#146;m trying to remember what Scheme would say if you typed
+      something bogus. Scheme will do something. It might not be right... Java is pretty good
+      because the compiler helps you catch errors.</p>
+    </dir>
+  </dir>
+  </font><p ALIGN="JUSTIFY">It seemed to me that the students cared less about the ability
+  to interactively test than getting useful and accurate feedback as a result. All students
+  expressed frustration over semantically mismatched parentheses and wished that the Scheme
+  interpreter would help them discover these errors. </p>
+  <font SIZE="5"><b>
+  <li>Conclusion</li>
+</ol>
+</b></font>
+
+<p>The analyses above have shown some student comments about their understanding of
+recursion and data abstraction, along with some of my commentary. In this section,
+I&#146;ll try to present some possible explanations for these behaviors in the hopes that
+some combination of them can help explain where the current introductory courses go wrong.
+</p>
+
+<p>Students find iteration easier than recursion. Perhaps this might be because they find
+iteration more concrete than recursion. Students might tend to shy away from abstract
+concepts, especially if they have an easier alternative that works in most of the cases.
+To be sure, the imperative style of programming used in Java lends itself to iterative
+solutions that don&#146;t cause weird bugs, like the list-reversal problem noted with <i>append</i>.
+If I had asked students to implement <i>reverse</i>, none of these problems would have
+shown up because <i>reverse</i> is easy to do with iteration.</p>
+
+<p>Another possible hypothesis is a knowledge integration approach. During CS61a students
+learn about recursive processes and iterative processes, and recursive constructs and
+tail-recursive constructs. They don&#146;t however, learn any iterative constructs. This
+could leave a hole in their mental model of programming that is filled during CS61a by
+Java iterative constructs. And, perhaps students have put the original recursive
+constructs in the back of their mind when they learn recursion, so iteration, which is the
+concept they&#146;ve learned most recently, is the first thing they think of when trying
+to program a new solution to a problem. </p>
+
+<p>I&#146;ve seen evidence that the students who took this survey are perfectly
+comfortable programming in Scheme and Java. What I haven&#146;t seen is that they truly
+understand what it means to program. To bring back the Zen metaphor from the introduction
+of this paper, another possible explanation is that students are very comfortable in
+programming in the dominant styles of whatever language they happen to be in.
+Unfortunately, they seem to be missing the forest for the trees. They don&#146;t take the
+time to think about what they&#146;re programming before they start writing it down. When
+I asked one student why his Scheme and Java programs were different for the same task, he
+said because that was &quot;the way that I started writing it, because that was the way I
+thought about it at that time.&quot; Perhaps if students spent more time understanding
+algorithm design they might have a better intuition about which construct to use.</p>
+
+<p ALIGN="JUSTIFY">Students do have a good grasp of abstraction, however. They understand
+the different rationales behind when to use a particular representation and when to use
+another. After one student modified the binary and trinary tree abstraction to a d-ary
+tree abstraction, this conversation followed. </p>
+
+<dir>
+  <dir>
+    <font SIZE="2"><p>A: Well, now that you know it exists, would you have written the binary
+    tree that way?</p>
+    <p>D: Well, depends on what I was writing it for. If I had a project that required trees
+    of different sizes... But in a project where you know you're going to use binary trees
+    there's no need to.</p>
+    </font>
+  </dir>
+</dir>
+
+<p>Another student spoke about the representation change as well. 
+
+<dir>
+  <dir>
+    <font SIZE="2"><p>Z: No, because we have different goals. If you have a goal. If you know
+    you're going to have a tree you should have as many dimensions as possible, it's obviously
+    better, you know, than having a million different constructors for a million different
+    lengths, so this is better because you just have an array for the kids. But then, you have
+    to have an accessor that check numkids for errors. But if you know you're going to have a
+    binary tree or a tree with three kids, then that way is easier because you know that
+    that's what you mean.</p>
+    </font>
+  </dir>
+</dir>
+
+<p ALIGN="JUSTIFY">A third student also understood when to use left and right for the
+child nodes of a binary tree and when to use an array. Not only was it more appropriate
+for the implementation, but when someone else read it, they would understand the more
+specific binary tree implementation faster than they could figure out the more general
+d-ary implementation.</p>
+
+<dir>
+  <dir>
+    <font SIZE="2"><p>A: Which one is better for a binary tree?</p>
+    <p>J: This one.</p>
+    <p>A: Why?</p>
+    <p>J: Because you don't have to worry about an array. </p>
+    <p>A: Are arrays hard?</p>
+    <p>J: Yeah. Besides the fact that everyone knows this one and has at least seen it. If
+    they saw this one they might get thrown off by it.</p>
+    <p>A: Oh, so if they see the first one, They'll say this is a binary tree, but if they see
+    the second they'll say, what is this?</p>
+  </dir>
+</dir>
+</font>
+
+<p ALIGN="JUSTIFY">All of the students understood the consequences of using different
+abstractions and knew the places in which they were appropriate. More study needs to be
+done to figure out if students have this kind of intuition before they take CS61b. My gut
+feeling is that students don&#146;t have a good idea of abstraction when they finish CS61a
+(just from having seen many students&#146; tests). Since one of CS61b&#146;s main emphases
+is on data abstraction and data structures, I&#146;d say that the students learn their
+lesson quite well. </p>
+
+<p ALIGN="JUSTIFY">One final conclusion we can draw from this small survey is that these
+students all wished that Scheme had better debugging facilities. The simplest desire was
+for exact error messages that told you what line the error was on and what the stack trace
+was. In addition, the students feel that they don&#146;t get good enough feedback from the
+Scheme compiler about semantic errors in their programs. Perhaps if Scheme contained a
+type-inference engine like that found in DrScheme, a Scheme implementation from Rice
+University, it could provide students with better feedback at compile-time and help
+prevent statically checkable errors. </p>
+<font FACE="Arial"><i><b>
+
+<p>Final Thoughts</p>
+</b></i></font>
+
+<p ALIGN="JUSTIFY">I think that this survey illuminates some important issues about novice
+programmers&#146; mental models of computation. Students tend to use iteration over
+recursion, they understand abstraction very well, and they want good compiler feedback
+about their code. Expert programmers are usually distinguished from novices by their
+intuitions about program structure, data abstraction and debugging skills. </p>
+
+<p ALIGN="JUSTIFY">To me, it seems like a lot of emphasis has been placed on comparing
+novice programmers to expert programmers, but very little is placed on exploring the
+transition. Is it like melting ice? Do programmers absorb information, little by little,
+until it is enough to make them expert? Or does the change happen more gradually, with
+expertise coming in different areas? I hope this survey has illuminated a little bit of
+this transition period with the study of novice programmers moving into the second
+programming course in computer science. Since this survey was so small, a larger one
+should be undertaken to ascertain whether these findings are evident of trends in the
+general population or merely noise due to the small sample size. My intuition is that the
+basic observations will be borne out by a larger survey, but I hope more time is given to
+analysis and utilization of these results.</p>
+</body>
+</html>

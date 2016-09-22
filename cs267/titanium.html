@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Titanium</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<hr>
+
+<h1 align="center">Titanium</h1>
+
+<h2 align="center"><font color="#FF0000">Andrew Begel</font></h2>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<h3>Overview</h3>
+
+<p>Overall, programming in Titanium requires some getting used to. I've programmed in
+explicitly parallel environments before, but this language takes a shared-memory
+message-passing approach to parallelism instead of a multi-threaded approach (like
+StarLogo or Cilk). </p>
+
+<p>Anyway, we designed our Fish Simulation implementation to model the fish on a
+distributed grid. Each processor would get a piece of the grid and then would compute the
+pseudo-gravity-like force on every fish contained within its own part. After computing the
+force, the fish would be moved around on the grid. We also checked for walls and made the
+fish bounce off elastically. </p>
+
+<h3>Titanium Implementation</h3>
+
+<h4>Grid</h4>
+
+<p>Titanium doesn't have spread arrays like Split-C, so laying out the grid on P
+processors took some finagling. I first implemented a simple one-level quad-tree structure
+which allowed me to run with 4 processors. Each processor took one quarter of the grid.
+Titanium is a shared-memory language, so there had to exist a globally replicated memory
+array of size P that contained pointers to each processor's grid.&nbsp; One this has been
+arranged, all grid accesses by any processor are transparently represented, even if the
+pointer goes across processors. </p>
+
+<p>However, it would be nice if Titanium supported a Partition class that automatically
+would partition a Domain (as in a set of points for the computation) across P processors.
+Right now, you may only have a 1-dimensional array of processors instead of an arbitrary
+domain. As a first attempt, I created a Split class (partition is a keyword) that could
+take in a number of processors and a RectDomain, and divide up the RectDomain evenly
+(block-style). The abstraction includes a way to find the processor that owns a particular
+point, a way to tell if a point is in a particular processor's domain, and a way to
+specify the layout properties (block, cyclic, bands, skew, etc...).</p>
+
+<h4>FishList</h4>
+
+<p>My FishList is a functional-style linked-list class that is specialized for Fish (Java
+doesn't have templates yet). This worked fine except for the cases where a read and a
+modification to the FishList (it's functional, so it is creating a new FishList and
+changing the grid's pointer to the new one) happened at the same time. It takes a few
+instructions to remove an element from a list of fish, so naturally, one would like to
+lock the data structure, so no one could read it. However, Titanium hasn't yet implemented
+the synchronized keyword, causing a few mistakes where some fish would get counted more
+than once. </p>
+
+<h4>Fish</h4>
+
+<p>The Fish are a simple class with vectors for velocity and position. They also contain
+the algorithms for moving themselves and checking for walls. </p>
+
+<h4>DoubleVector</h4>
+
+<p>This is my DoubleVector class. It's an immutable class (which means that it's
+call-by-value, not call-by-reference) that implements a simple 2-dimensional vector of
+doubles (Points would be cool to use, but they only do integers). At some point, operator
+overloading will work, and using this class will look much more normal than it currently
+does (it's functional too). </p>
+
+<h3>Optimization</h3>
+
+<p>Hah! Yeah right. I barely made this thing work in the first place. The code sure does
+look purty though. </p>
+
+<h3>Results</h3>
+
+<p>Well, I'm not such a wiz with Excel, so I'll put my numbers in here as a placeholder
+until I can get David to make me up some graphs.</p>
+
+<hr>
+
+<p>This is for 500 fish where the grid is partitioned reasonably equally among the P
+processors. </p>
+
+<p>I get linear speedup for 1 2 3 4 and 5 and then it starts going down for 6 7 and 8. <br>
+<br>
+1 processor:<br>
+Total Force Comptuation Time: 3301<br>
+Total Move Fish Time: 340<br>
+Total Time: 3661<br>
+<br>
+2:<br>
+Total Force Comptuation Time: 1823<br>
+Total Move Fish Time: 183<br>
+Total Time: 2022<br>
+<br>
+3:<br>
+Total Force Comptuation Time: 1360<br>
+Total Move Fish Time: 131<br>
+Total Time: 1507<br>
+<br>
+4: <br>
+Total Force Comptuation Time: 852<br>
+Total Move Fish Time: 96<br>
+Total Time: 1063<br>
+<br>
+5:<br>
+Total Force Comptuation Time: 657<br>
+Total Move Fish Time: 75<br>
+Total Time: 1009<br>
+<br>
+6: <br>
+Total Force Comptuation Time: 724<br>
+Total Move Fish Time: 68<br>
+Total Time: 1335<br>
+<br>
+7:<br>
+Total Force Comptuation Time: 730<br>
+Total Move Fish Time: 63<br>
+Total Time: 1895<br>
+<br>
+8:<br>
+Total Force Comptuation Time: 830<br>
+Total Move Fish Time: 378<br>
+Total Time: 3963<br>
+<br>
+<br>
+The difference between total time and the other two added up is the time spent in
+barriers. I'm also seeing some load imbalance, especially on larger numbers of processors.
+<br>
+</p>
+
+<hr>
+
+<h3>Code</h3>
+
+<p>The code is <a href="fishsim.ti">here</a>. </p>
+
+<p align="center">I've got a binary for the clumps in <a href="http://www.cs.berkeley.edu/~abegel/cs267/fishsim3">here</a>. There are no command
+line arguments, due to an annoying feature of Titanium that the argv input isn't
+guaranteed by the compiler to be the same across all processors (Even though it is). </p>
+
+<p align="center">&nbsp;<img src="../images/Rocks5012.gif" WIDTH="528" HEIGHT="30"></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</body>
+</html>

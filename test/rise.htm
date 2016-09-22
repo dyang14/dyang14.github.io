@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>RISE</title>
+<style type="text/css">
+
+/*
+Note the height element in the #header id. Change it to "auto" to see
+what happens. The float property allows the floating box to display
+above and beyond the boundries of its containing box, unless the
+floating box's boundry is explicitly defined. I accomplished this by
+setting div.header height:50px, and the class.header height:inherit,
+and added the header class to the delclaration of the left, middle,
+and right div in the html.
+*/
+
+
+#header {
+	width: auto;
+	height: 50px;
+	background-color: #181836; /*border-style: solid;*/ /*border-color: fuchsia;*/;
+	color: white;
+	font-family: "Segoe UI";
+	text-align: left;
+	vertical-align: bottom;
+	font-style: italic;
+}
+
+div.header {
+    border-style: solid;
+    border-color: lime;
+    height: inherit;
+}
+
+#leftblock {
+	width: 133px;
+	background-color: white;
+	background-image: url('Rise-LogoTransparent.png');
+	background-position: left;
+	color: white;
+	float: left;
+	height: 50px;
+}
+
+#middleblock {
+                 width: 133px;
+                 background-color:#151669;
+                 float: left;
+                 height:50px;
+}
+
+#middletext {
+	font-family: "Lucida Console";
+	font-size:15px;
+	text-align: left;
+	font-style:normal;
+	vertical-align: middle;
+	padding-left:3px;
+	padding-top:3px;
+}
+
+#main {
+     clear: both;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<div id="leftblock"></div>
+<div id= "middleblock"><p id="middletext">Human Interactions in Programming</p></div>
+<div id="rightblock"><p id="righttext"><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Development Tools as if Software Were Made by People Working Together</p></div>
+</div>
+
+<div id="body">
+Rest of page.
+
+</div>
+</body>
+
+</html>

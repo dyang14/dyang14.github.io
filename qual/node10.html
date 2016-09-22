@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Lexical Ambiguities</TITLE>
+<META NAME="description" CONTENT="Lexical Ambiguities">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html148"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html146"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html140"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html149"
+  HREF="node11.html">Syntactic Ambiguities</A>
+<B> Up:</B> <A NAME="tex2html147"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html141"
+  HREF="node9.html">Types of Ambiguities</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00051100000000000000">
+Lexical Ambiguities</A>
+</H3>
+
+<P>
+There are several lexical ambiguities found in speech. The first
+category is what I call one token, many spellings. The spoken voice
+can not convey the capitalization which is important in many
+programming languages. In addition, when the speech recognizer returns
+a word, we may have actually said any number of homophones of that
+word. For instance, if the speech recognizer returned ``one'', how can
+we know that it was not ``won'' that we said? If we enhanced the token
+data structure to allow alternate spellings, we could pass all
+alternatives to the parser.
+
+<P>
+Another category of lexical ambiguity is alternate tokens for the same
+input word. This is not due to homophones, but in fact to the language
+defining the same word in multiple lexical categories. Explicitly
+stated punctuation falls into this category. In Java, ``.'' is used to
+separate identifiers and indicate field reference. Likewise, someone
+may use ``period'' as an identifier for a variable. In a textual
+representation, these two are easily distinguishable, but in a verbal
+setting, we can't tell the difference. Thus, in order to support both
+uses, we must pass two alternate tokens to the parser for this single
+input word. This requires changing the lexer-parser interface to allow
+more than one token to be passed when the ``next'' token is requested.
+
+<P>
+A third very important category of ambiguities occurs because the
+speech recognizer can not regulate whitespace to the degree that a
+text editor can. If there is a multi-word identifier (such as
+``printLine''), we would say two words, ``print'' followed by
+``line''. However, the speech recognizer will insert whitespace
+between every word, even though in this case, that is not wanted. Our
+solution for this ambiguity involves creating every possible
+concatenation of tokens as single tokens for the parser. For example,
+``foo bar moo'' would be sent as four alternate token streams: ``foo
+bar moo'', ``foobar moo'', ``foo barmoo'', and ``foobarmoo''. Now,
+lest we accidentally force the lexer to construct the power set of
+input tokens, we can impose two constraints: first, only identifiers
+may be concatenated together (we can design the language keywords to
+eliminate multi-word tokens), and second, we can bound the number of
+adjacent concatenated tokens based on the natural language of the
+speaker. In English, there are few identifiers that consist of more
+than five words concatenated together. On the other hand, in a
+language like German, there might be a different limit. Each of these,
+combined with aggressive automatic ambiguity resolution in the parser
+and semantic analysis, will enable us to bound the amount of lexical
+ambiguity this fact causes.
+
+<P>
+The last ambiguity concerns misrecognized tokens. Speech recognizers
+have trouble with partial words and unpronounceable words, since they
+are not found in its dictionaries. However, these are important
+because legacy software often uses shorthand words for identifiers to
+ease typing. Speech recognition systems come with pronunciation
+feedback tools which recognize unpronounceable words and ask the user
+to say them. Thereafter, when the user utters that sound again, the
+speech recognizer will output the prechosen spelling of the word.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html148"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html146"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html140"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html149"
+  HREF="node11.html">Syntactic Ambiguities</A>
+<B> Up:</B> <A NAME="tex2html147"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html141"
+  HREF="node9.html">Types of Ambiguities</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

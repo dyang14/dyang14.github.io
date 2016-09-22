@@ -1,0 +1,121 @@
+<head>
+<title>Crystal Board</title>
+</head>
+
+<body bgcolor = "FFFFFF">
+
+<center><h1>Crystal Board</h1></center>
+
+<h4>by Andrew Begel<br>
+CS294-7 Project Proposal<br>
+10/30/97</h4>
+
+<h3>Problem</h3>
+
+The MASH Media Board allows people to write and draw onto a
+shared workspace that every person in a video conferencing session can
+access. However, it provides us with only a limited palette since any
+information presented must be copied into it from the application
+where we developed the material. Since the goal of presenting
+information is to prepare it once and show it to everyone, this act of
+copying inevitably degrades the quality of the information. For
+example, MB can't display multiple fonts, doesn't handle line
+wrapping, and doesn't support easy importation of graphics, which are
+all the things that make or break a presentation. As an annotation
+tool, the MB is great because anyone can write something at any time
+or illustrate a point by drawing a circle around something.<p>
+
+<h3>Analysis</h3>
+
+I'd like to combine the good qualities of annotation with a direct
+manipulation style of information presentation. I'd like to create a
+"network lens" that would ride on top of any particular display and
+would transmit its data to other people in the session. In addition,
+the tool would support annotation tools, like text writing and drawing
+on top of the display. This way, if you need to present something from
+Netscape, you can just move the lens over Netscape, and start
+talking. You could illustrate points by circling things in the lens
+and these updates would be transferred to the audience. The final
+concept is something similar to a Media Board application with a
+transparent background.<p>
+
+
+<h3>Suggested Design</h3>
+
+There have been some designs for "magic lenses" in the
+past. These lenses have been typically used to scale images (magnify
+images for people with bad vision), but they have also been used to
+filter information. A group of researchers at U. Toronto, U. Washington and Xerox PARC
+created this new style of see-through interface with
+Toolglass and Magic Lenses in 1993. They created lenses of arbitrary
+size and shape that could be used on a display to filter
+information. For example, they had a fractal lens, which fractalized
+any image it was passed over. They had a magnification lens that
+magnified what was under it. There were color shift filters, symmetry
+filters, information annotation filters, etc. <p>
+
+
+This application would be similar to these magic lenses, but
+would transmit its "vision" over an RTP multicast network to many
+people. Presumably this could use the scalable reliable multicast
+protocol created by Steve McCanne and Teck-Lee Tung. In addition,
+drawing and writing tools would be added, a la Media Board, to allow
+the user to annotate the vision.<p>
+
+
+I envision this to be a minimalist application. One would only
+need a small palette of tools, a display lens, and a context switching
+button (allowing the user to click "through" the transparency to the
+applications below). It is advantagous to let the user manipulate
+the actual computer stuff underneath the drawing surface. Toolglass
+invented transparent buttons that would allow mouse clicks to "pass"
+through to the application beneath them. While this is a nice goal, a
+more reasonable approach would be to make this system exist in two
+modes, one where you could manipulate the computer underneath the
+lens, and another where you could draw and write on top of the lens.<p>
+
+
+I would like to implement this in Tcl/Tk/X Windows (as I don't have a PC
+handy, nor do I want to figure out the entire Win32 API in a month). I
+can borrow ideas from Xeyes (which has a transparent window and draws
+stuff on top of it) and wscrawl, a program which implements a simple
+whiteboard. Once these two features are integrated, all that would
+remain would be to attach it to some network protocol (either X or
+SRM) to transmit the info to everyone's screens. <p>
+
+
+<h3>Experiment</h3>
+
+A complex user study involving hundreds of users and hetergenous
+working environments would be great, but realistically, in four weeks,
+I might be able to test this once in the CoLab during a class. I'd
+envision using the LiveBoard in BSD UNIX mode to run the app and have
+remote people running the client instead of Media Board.<p>
+
+I anticipate several UI issues which would be brought out by
+using the application. What kind of palette should be used? How can it
+be attached to the drawing layer without getting in the way? How will
+users control what is sent over the network? What happens if the
+underlying screen is undergoing animation? What will happen to any
+drawings that are on top of it? What happens when the user moves the
+underlying application (let's say Netscape) over to the left 10
+pixels. Does the drawing layer move? Perhaps it should be movable by
+the user? Or scrollable? All these design decisions could be easily
+decided with a small prototype.<p>
+
+
+<h3>Grading Contract</h3>
+
+Assurance of Feasibility: <b>B-</b><br>
+Implementation of transparent white board (non-networked): <b>B</b><br>
+Connection of transparent white board to SRM or X: <b>A-</b><br>
+Running through one design/rewrite iteration: <b>A+</b><p>
+
+<hr>
+
+Andrew Begel
+<address><a href="mailto:abegel@cs.berkeley.edu">
+abegel@cs.berkeley.edu</a></address>
+
+
+

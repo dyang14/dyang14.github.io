@@ -1,0 +1,64 @@
+Andrew Begel
+CS302 PS12
+4/19/99
+
+Find several examples of innovative technology and describe the
+potential of each one.
+
+a. COOL:
+
+Alex Aiken helped develop COOL, a small language designed for use as a 
+programming project in a compiler course. 
+
+URL: http://www.cs.berkeley.edu/~aiken/cool/
+
+Andrew Appel developed the Tiger compiler (which compiles an
+explicitly-typed ML-like language) for use with the book Modern
+Compiler Construction in Java/C/ML. 
+
+These aren't really innovations of the sort that you might find with a 
+new whiz-bang 3D graphics studio, however. 
+
+A more mundane innovation might be a semantics-based text editor These
+editors can provide semantic feedback on language errors at the edit
+stage of coding. There are a number of research projects, including
+Pan, Ensemble, and Harmonia (from Sue Graham, my advisor) which are
+working on generating language-sensitive editors from semantic
+descriptions. A more relevant one is SpotCheck from Genieworks, a
+Java-aware programming editor. 
+
+These type of tools are useful to analyze to see how they describe
+a language using syntactic and semantic specifications.
+
+In a more general sense, the invention of Java has created a
+renaissance in compiler projects. Java's simplicity (compared to C++)
+enables students to comprehend and build a compiler in an
+object-oriented framework. I have yet to see an object-oriented
+compiler written by someone else that I could look at an
+understand. Usually, the inheritance hierarchies are very full,
+leading to a proliferation of hundreds of classes. I think the area of 
+designing an object-oriented compiler is a very open area of
+research. 
+
+In language environments, Squeak and Self are two great innovations
+that expose the inner workings of the language to the programmr. These 
+environments, while embodying the ideals of Smalltalk, leverage the
+use of language-specific tools to enhance a user's experience and
+feeling of control. These environments are great tools for introducing 
+students to some good language, interface, and runtime environmental
+design which they might use when creating their own environments. 
+
+Pedagogically, I think that having all students electronically
+connected to each other on a chat/zephyr system such as AOL Instant
+Messenger (or ICQ, or a MOO) would foster a great sense of community
+and encourage collaboration in lab work. If the environment also
+includes their working environment (where they program their class
+assignments) then it gives us as professors an easy, scriptable way to
+evaluate and grade projects, and it gives them a place where they can
+explore each others' work to find out how they work. (Lots of privacy
+and cheating issues can come up here, which would be fun to work out).
+This idea I think has a lot of promise. Let's discuss it tomorrow.
+
+
+
+

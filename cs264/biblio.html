@@ -1,0 +1,514 @@
+<html>
+
+<head>
+<title>Domain Specific Languages and Systems for Network and Distributed Systems</title>
+</head>
+
+<body>
+
+<h1>Domain Specific Languages and Systems for Network and Distributed Systems</h1>
+
+<p>Distributed Systems</p>
+
+<p>Networking</p>
+
+<p>Domain Specific Languages</p>
+
+<hr>
+
+<h1><font color="#008000">Distributed Systems</font></h1>
+
+<hr>
+
+<h1><img align="middle" src="../images/globe2.gif" WIDTH="59" HEIGHT="83"> <a href="http://www.cs.vu.nl/~philip/globe/">The Globe Project</a></h1>
+
+<p><b>Globe</b> stands for <b>Gl</b>obal <b>O</b>bject <b>B</b>ased <b>E</b>nvironment.
+The goal of this project is to design and implement a system that simplifies the
+construction of wide area distributed applications. </p>
+<a href="http://www.cs.vu.nl/~philip/papers/dcs96.ps">
+
+<p>An Architecture for A Scalable Wide Area Distributed Systems</a> </p>
+
+<h5>abstract</h5>
+
+<p>Current wide area distributed systems fail to hide implementation aspects related to
+the distribution of information. Unfortunately, the solutions developed for local systems
+do not scale, so a different approach is needed. In this paper we present an architecture
+for distributed systems that scales to support a large number of users and objects. The
+architecture is based on the concept of distributed shared objects, which are used for
+sharing and exchanging information over wide area networks. Our architecture provides
+location and replication transparency, and offers the flexibility needed to cope with the
+heterogeneity inherent in wide area systems. </p>
+
+<p><b>P Homburg, M. van Steen, and A.S. Tanenbaum. &quot;An Architecture for a Scalable
+Wide Area Distributed System&quot;. Submitted for publication, October 1995. </b></p>
+
+<p><a href="http://www.cs.vu.nl/~philip/papers/iwooos95.ps.Z">Towards Object-based Wide
+Area Distributed Systems</a> </p>
+
+<h5>abstract</h5>
+
+<p>In order to facilitate the construction of wide area distributed systems, it is
+necessary that we adopt a model that simplifies application development. In this position
+paper we advocate an object-based approach. Our approach allows for flexibility because
+many of the technical details of distribution, such as communication protocols,
+consistency rules, etc. can be hidden behind the objects' interfaces. In addition, we
+allow distributed objects to offer alternative implementations for an interface. A client
+may choose the most suitable implementation. We discuss the use of distributed objects as
+the means to this end, and compare our approach to existing ones. </p>
+
+<p><b>M. van Steen, P. Homburg, L. van Doorn, A.S. Tanenbaum, and W. de Jonge.
+&quot;Towards Object-based Wide Area Distributed Systems&quot;. In L.-F. Carbrera and M.
+Theimer, (eds.), <em>Proceedings International Workshop on Object Orientation in Operating
+Systems</em>, pp. 224-227, Lund, Sweden, August 1995. </b></p>
+
+<p><a href="http://www.cs.vu.nl/~philip/papers/asci95.ps.Z">An Object Model for Flexible
+Distributed Systems</a> </p>
+
+<h5>abstract</h5>
+
+<p>Current distributed applications like E-mail, electronic news, distributed calendars,
+and network information browsers often have a complex structure. This is partly due to
+lack of suitable support from the underlying operating system, which is often too low
+level. At the same time, multi media applications, parallel programs, wide-area
+applications, and database systems have very different operating system demands. Although
+it is possible to put support for the above-mentioned systems in a single operating system
+kernel, this is generally undesirable from a software engineering point of view, as the
+resulting software may become unmanageable. </p>
+
+<p>In this paper we describe a new model for constructing operating systems and
+applications in an integrated fashion. Compared to current approaches we provide
+high-level primitives for supporting distributed and parallel applications. We also
+provide the flexibility to configure both applications and kernels to only include the
+functionality that is actually used. </p>
+
+<p><b>P. Homburg, L. van Doorn, M. van Steen, A.S. Tanenbaum, and W. de Jonge. &quot;An
+Object Model for Flexible Distributed Systems&quot;. In <em>Proceedings 1st Annual ASCI
+Conference</em>, pp 69-78, Heijen, The Netherlands, May 1995. </b></p>
+
+<hr>
+
+<h1 align="center"><a href="http://www.infospheres.caltech.edu/">Caltech Infospheres
+Project </a></h1>
+
+<p align="center"><b><i>Researching the composition of distributed active mobile objects
+that communicate using messages</i></b> </p>
+<!-- Initial strong statement to get them interested -->
+
+<p>The <strong>Caltech Infospheres Project</strong> researches <strong>compositional
+systems</strong>, which are systems built from interacting components. We are concerned
+with the theory and implementation of compositional systems that support peer-to-peer
+communication among persistent multithreaded distributed objects. Though we implement
+example systems and services in Java and Web technologies, our theories, models, and ideas
+are directly applicable to any distributed component-based system. Our group is primarily
+concerned with developing reliable distributed applications by composing existing and
+newly created software components in structured ways. <strong>
+
+<ul>
+  <li>The Specification of Dynamic Distributed Component Systems. (<a href="http://www.cs.caltech.edu/~kiniry/projects/ms_thesis/ms_thesis.ps.gz">Gzipped
+    Postscript</a> / <a href="http://www.cs.caltech.edu/~kiniry/projects/ms_thesis/ms_thesis.pdf.gz">Gzippped PDF</a>
+    / <a href="http://www.cs.caltech.edu/~kiniry/projects/ms_thesis/ms_thesis/index.html">HTML</a>).
+    Joseph R. Kiniry's M.S. Thesis, May, 1998. <br>
+  </li>
+  <li>A World-Wide Distributed System Using Java and the Internet. (<a href="http://www.infospheres.caltech.edu/papers/hpdc96.ps">postscript</a> / <a href="http://www.infospheres.caltech.edu/papers/chandy_etal/hpdc.html">html</a>). Awarded
+    best paper in HPDC software at IEEE International Symposium on High Performance
+    Distributed Computing <a href="http://www.cs.virginia.edu/~hpdc-focus/">(HPDC-5)</a>,
+    Syracuse, New York, August 1996. <br>
+  </li>
+  <li>Systematic Composition of Objects in Distributed Internet Applications: Processes and
+    Sessions. (short version in <a href="http://www.infospheres.caltech.edu/papers/hicss97.ps">postscript</a>
+    / full version in <a href="ftp://ftp.cs.caltech.edu/tr/cs-tr-96-15.ps.Z">compressed
+    postscript</a>). Awarded best paper in software technology at <a href="http://www.dsg.cs.tcd.ie/~pnixon/hicss30.html">HICSS 30</a>, Maui, Hawaii, January
+    1997. <br>
+  </li>
+  <li><a name="framework">A Framework for Structured Distributed Object Computing.</a> (<a href="http://www.infospheres.caltech.edu/papers/framework/framework.ps">postscript</a> / <a href="http://www.infospheres.caltech.edu/papers/framework/framework.ps.gz">zipped
+    postscript</a> / <a href="http://www.infospheres.caltech.edu/papers/framework/framework.html">html</a> ).
+    Parallel Computing, &quot;Metacomputing: From Ideas to Real Implementations&quot; (special
+    issue), to appear. </li>
+</ul>
+
+<hr>
+</strong>
+
+<table>
+  <tr>
+    <td width="150"><img alt="ninja logo" src="../images/logotrans.gif" WIDTH="150" HEIGHT="150"> </td>
+    <td><h1><a href="http://ninja.cs.berkeley.edu"><big><big><font face="arial,helvetica">The
+    Ninja Project</font></big></big> </a></h1>
+    <h2><font color="#ff0000" face="arial,helvetica">UC Berkeley Computer Science Division</font>
+    </h2>
+    </td>
+  </tr>
+</table>
+
+<p>The Ninja project aims to develop a software infrastructure to support the next
+generation of Internet-based applications. Central to the Ninja approach is the concept of
+a <b>service</b>, an Internet-accessible application (or set of applications) which is <em>scalable</em>
+(able to support many thousands of concurrent users), <em>fault-tolerant</em> (able to
+mask faults in the underlying server hardware), and <em>highly-available</em> (resilient
+to network and hardware outages). Examples of current and future Ninja services include an
+Internet stock-trading system; a ``universal inbox'' used to access e-mail, voice mail,
+pages, and other personal correspondence; and the <a href="http://ninja.cs.berkeley.edu/demos/demos.html">Ninja Jukebox</a>, which provides
+real-time streaming audio data served from a collection of music CDs scattered about the
+network. </p>
+
+<p>In some sense, the current World Wide Web is a service itself; Ninja intends to build
+upon and expand the notion of Web-based services by providing <em>composability</em> (the
+ability to automatically aggregate multiple services together into a single entity), <em>customizability</em>
+(the ability for users to inject code into the system to customize a service's behavior),
+and <em>accessibility</em> (the ability to access the service from a wide range of
+devices, including PCs, workstations, cellphones, and Personal Digital Assistants). The
+end goal of the Ninja project is to enable the development of a menagerie of
+Internet-based services which are interoperable and immediately accessible across the
+spectrum of user devices ranging from PCs and workstations to cellphones and Personal
+Digital Assistants. For example, one should be able to check one's e-mail simply by
+calling a special number from a cellphone, or equivalently by sitting down at any
+Internet-connected PC in the world. 
+
+<ul>
+  <li><b>Operators and Connectors - What the heck are they?</b>, by Matt Welsh. <a href="http://ninja.cs.berkeley.edu/dist/slides/98_summer_review/operators.ps.gz">(Gzipped
+    PostScript)</a> A set of <a href="http://ninja.cs.berkeley.edu/dist/slides/98_summer_review/operator-notes.txt">notes</a>
+    for this presentation are also available. <br>
+  </li>
+  <li><b>Managed NinjaRMI</b>, by Matt Welsh. <a href="http://ninja.cs.berkeley.edu/dist/slides/98_summer_review/managed-rmi.ps.gz">(Gzipped
+    PostScript)</a> <br>
+  </li>
+  <li><b>Code Transformation: Simplying the job of building Ninja services</b>, by Steven D.
+    Gribble, Eric A. Brewer, and David Culler. <i>Ninja mini-retreat presentation</i>, June
+    1998. <a href="http://ninja.cs.berkeley.edu/dist/slides/ninja_june_98/transform.ppt">(Powerpoint
+    97 - 1.079 MB)</a> <a href="http://ninja.cs.berkeley.edu/dist/slides/ninja_june_98/transform-html/index.htm">(HTML
+    - 504 KB total)</a> <br>
+  </li>
+  <li><b>ProActive Infrastructure</b>, by Eric A. Brewer. <i>This is a sanitized version of
+    the DARPA project proposal for project Ninja</i>, March 1998. <a href="http://ninja.cs.berkeley.edu/pubs/technotes/ProActive-prop.pdf">(Acrobat PDF - 181
+    KB)</a>.<!--     <li> <b>Title of Whitepaper</b>, by	  authorlist of whitepaper. <i>Some info about it</i>, Date.	  <a href="technotes/note.ps.gz">(.ps.gz, foo KB)</a>,	  <a href="technotes/note.pdf.gz">(.pdf.gz, bar KB)</a>--> </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr>
+<font color="#666699"><b>
+
+<table>
+  <tr>
+    <td width="17"></td>
+    <td align="left" vAlign="top" width="442"><a href="http://www.javasoft.com/products/jini/index.html"><img align="left" alt="Jini" border="0" src="../images/jini.gif" WIDTH="225" HEIGHT="50"></a> <br clear="all">
+<!--- What's new table --->    </td>
+  </tr>
+</table>
+
+<p>Jini<sup><font size="-2">TM</font></sup> technology lets you network anything, anytime,
+anywhere.</b></font> <br>
+Jini is a Sun R&amp;D project inspired by Bill Joy that dramatically expands the power of
+Java technology.&nbsp; Jini technology enables spontaneous networking of a wide variety of
+hardware and software - anything that can be connected. </p>
+
+<hr>
+
+<h2><a href="http://www.parc.xerox.com/spl/groups/eca/pubs/papers/PARC-AOP-D97/">D: A
+Language Framework for Distributed Programming </a></h2>
+
+<p>Cristina Videira Lopes, <a href="http://www.parc.xerox.com/spl/members/gregor/">Gregor
+Kiczales</a></p>
+
+<p>We present an object-oriented language framework for distributed programming called D.
+D uses the aspect ori-ented programming approach to allow the code for the basic
+functionality of a distributed application to be writ-ten without having to explicitly
+deal with distribution and synchronization. Separate code deals with those issues. </p>
+
+<p>The D language framework consists of: (i) Jcore, an object-oriented language used to
+express the basic function-ality and the activity of the system; (ii) Cool, a language
+used to express coordination of threads; and (iii) Ridl, a language used to express remote
+access strategies. A special tool called an Aspect Weaver&#153; takes the programs written
+in the different languages and combines them together to produce an executable program
+with the speci-fied distributed behavior. D builds on existing object-oriented languages,
+and aggressively adheres to syntactic separation of distribution concerns. D program texts
+are less tangled and therefore simpler and more reusable than their equivalents written in
+Java. </p>
+<font face="Courier" size="1">
+
+<p>© Copyright 1997 Xerox Corporation. All rights reserved.</font> </p>
+<a href="http://www.parc.xerox.com/spl/groups/eca/pubs/papers/PARC-AOP-D97/for-web.pdf">
+
+<p>Download paper</a>. </p>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<h1><font color="#008000">Networking</font></h1>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<h1 align="center"><b>Steven McCanne</b></h1>
+
+<h1><img align="left" hspace="25" src="../images/mccanne3.jpg" WIDTH="81" HEIGHT="135"></h1>
+
+<p><b>&nbsp;</p>
+
+<p>Assistant Professor</b> <br>
+<b><a href="http://HTTP.CS.Berkeley.EDU/~sequin/soda/soda.html">633 Soda Hall</a></b> <br>
+<b><a href="http://www.eecs.berkeley.edu/">Electrical Engineering and Computer Science</a></b>
+<br>
+<b><a href="http://www.berkeley.edu">University of California, Berkeley</a></b>&nbsp; </p>
+
+<p>During this year at LBNL, I worked on a number of projects, some more research-oriented
+than others, including the <a href="ftp://ftp.ee.lbl.gov/bpf.tar.Z">BSD Packet Filter
+(BPF)</a>, <a href="ftp://ftp.ee.lbl.gov/tcpdump.tar.Z">tcpdump</a>, the BSD kernel
+debugger, the BSD <i>kvm</i> library, and the Network Animator <i>nam</i>. BPF improves
+upon earlier packet capture designs and has been integrated into a number of commercial
+Unix implementations including Digital Unix and HP-UX. I refined the <i>tcpdump</i> filter
+specfication language and developed a compiler and optimizer to translate high-level
+filter specifications into virtual machine code for the BPF filtering engine. For this
+system, I developed a number of novel optimization techniques tailored specifically to
+packet filters. Eventually, I factored out the compiler and optimizer into a re-usuable
+library called <a href="ftp://ftp.ee.lbl.gov/libpcap.tar.Z">libpcap</a>. (The initial
+version of <i>libpcap</i> was intended as a rough prototype, but I never found the time to
+finish and refine it, and unfortunately, doing this now is confounded by the large number
+of applications that assume its current form.) <i>Tcpdump</i> has become a widely used
+network monitoring, debugging, and data acquistion tool. </p>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<p><img align="middle" src="../images/bridge.gif" WIDTH="185" HEIGHT="87"> </p>
+
+<h1><font color="#b00c0">The <a href="http://www.cs.arizona.edu/xkernel/"><i>x</i>-kernel</a>
+Protocol Framework</font></h1>
+
+<p>M. Abbott et al. <a href="ftp://ftp.cs.arizona.edu/xkernel/papers/ilp.ps">Increasing
+Network Throughput by Integrating Protocol Layers</a>, IEEE/ACM Transactions on
+Networking, 1(5), Oct 1993. </p>
+<a href="ftp://ftp.cs.arizona.edu/xkernel/Papers/morph.ps" alt="+">
+
+<p>[Abbo93a]</a> <a name="Abbott93ton-a">M. B. Abbott and L. L. Peterson. A language-based
+approach to protocol implementation. <em>IEEE/ACM Transactions on Networking</em>,
+1(1):4-19, Feb. 1993. </a></p>
+<a href="ftp://ftp.cs.arizona.edu/xkernel/Papers/pathfinder.ps" alt="+">
+
+<p>[Bail94]</a> <a name="Bailey94osdi">M. L. Bailey, B. Gopal, M. A. Pagels, L. L.
+Peterson, and P. Sarkar. PathFinder: A Pattern-Based Packet Classifier. In <em>Proceedings
+of the 1st Symposium on Operating System Design and Implementation</em>, Nov. 1994. </a></p>
+
+<p><a href="http://www.cs.arizona.edu/scout/Papers/osdi96.ps" alt="+">[Mosb96c]</a> D.
+Mosberger and L. Peterson. Making Paths Explicit in the Scout Operating System. <em>Proceedings
+of OSDI '96</em> (October 1996), 153-168. (<a href="http://www.cs.arizona.edu/scout/Papers/osdi96/" alt="+">HTML</a>) </p>
+
+<p><a href="http://www.cs.arizona.edu/scout/Papers/mosberger.ps" alt="+">[Mosb97]</a>
+David Mosberger. Scout: A Path-based Operating System. <em>PhD Dissertation, Department of
+Computer Science, University of Arizona</em> (July 1997). Also appears as <em>TR 97-06</em>.
+(<a href="http://www.cs.arizona.edu/scout/Papers/mosberger/" alt="+">HTML</a>).</p>
+<a href="http://www.cs.arizona.edu/scout/Papers/TR97-17.ps" alt="+">
+
+<p>[Spat97]</a> Oliver Spatscheck and Larry Peterson. Escort: A Path-Based OS Security
+Architecture. <i>Technical Report TR97-17, Department of Computer Science, University of
+Arizona</i> (November 1997). </p>
+
+<hr>
+
+<h1><a href="http://www.sds.lcs.mit.edu/activeware/">Active Networks</a></h1>
+
+<blockquote>
+  <i><p>Active networks allow individual user, or groups of users, to inject customized
+  programs into the nodes of the network. &quot;Active&quot; architectures enable a massive
+  increase in the complexity and customization of the computation that is performed within
+  the network, e.g., that is interposed between the communicating end points.</p>
+  </i>
+</blockquote>
+
+<p>E. Johnson, <a href="http://www.sds.lcs.mit.edu/publications/odin98.html">A Protocol
+for Network Level Caching</a>, MIT Master's thesis, May 1998.</p>
+
+<p>U.Legedza, D. Wetherall and J. Guttag, <a href="http://www.sds.lcs.mit.edu/publications/infocom98lwg.html">Improving The Performance
+of Distributed Applications Using Active Networks</a>, IEEE INFOCOM'98.</p>
+
+<p>D. L. Tennenhouse, J. M. Smith, W. D. Sincoskie, D. J. Wetherall, and G. J. Minden, <a href="http://www.sds.lcs.mit.edu/publications/ieeecomms97.html">A Survey of Active Network
+Research</a>, <i>IEEE Communications Magazine</i>, Vol. 35, No. 1, pp80-86. January 1997.</p>
+
+<p>D. Wetherall, J. Guttag, and D. L. Tennenhouse, <a href="http://www.sds.lcs.mit.edu/publications/openarch98.html">ANTS: A Toolkit for
+Building and Dynamically Deploying Network Protocols</a>, <i>IEEE OPENARCH'98</i>, San
+Francisco, CA, April 1998.</p>
+
+<hr>
+
+<h1><font color="#008000">Domain Specific Languages</font></h1>
+
+<hr>
+
+<p>&nbsp;</p>
+
+<table>
+  <tr>
+    <td width="600"><h2><a href="http://www.usenix.org/events/dsl99/">2nd Conference</a> on
+    Domain-Specific Languages </h2>
+    <h3>October 3-6, 1999<br>
+    Omni Hotel<br>
+    Austin, Texas</h3>
+    </td>
+  </tr>
+  <tr>
+    <td width="600"><h2><a href="http://www.usenix.org/publications/library/proceedings/dsl97/index.html">1st
+    Conference</a> on Domain-Specific Languages </h2>
+    <h3>October 15-17, 1997<br>
+    Santa Barbara, California, USA</h3>
+    <p><a href="http://www.usenix.org/publications/library/proceedings/dsl97/summaries/">Conference
+    Summary</a></td>
+  </tr>
+</table>
+
+<h2>Papers</h2>
+
+<h3>Domain-Specific Language Design</h3>
+
+<dl>
+  <dt><b><a href="http://www.usenix.org/publications/library/proceedings/dsl97/cardelli.html">Service
+    Combinators for Web Computing</a></b> </dt>
+  <dd>Luca Cardelli, <i>Digital Equipment Corporation</i> and Rowan Davies, <i>Carnegie-Mellon
+    University </i><br>
+  </dd>
+</dl>
+
+<dl>
+  <dt><b><a href="http://www.usenix.org/publications/library/proceedings/dsl97/fuchs.html">Domain
+    Specific Languages for <i>ad hoc </i>Distributed Applications</a></b> </dt>
+  <dd>Matthew Fuchs, <i>Walt Disney Imagineering </i></dd>
+</dl>
+
+<dl>
+  <dt><b><a href="http://www.usenix.org/publications/library/proceedings/dsl97/spinellis.html">Lightweight
+    Languages as Software Engineering Tools</a></b> </dt>
+  <dd>Diomidis Spinellis, <i>University of the Aegean</i> and V. Guruprasad, <i>IBM T.J.
+    Watson Research Center</i> </dd>
+  <dt>&nbsp;</dt>
+</dl>
+
+<h3>Compiler Infrastructure for Domain-Specific Languages</h3>
+
+<p><b><a href="http://www.usenix.org/publications/library/proceedings/dsl97/dinesh.html">A
+Slicing-Based Approach for Locating Type Errors</a></b> <br>
+T. B. Dinesh, <i>CWI</i> and Frank Tip,<i> IBM T. J. Watson Research Center </i></p>
+
+<p><b><a href="http://www.usenix.org/publications/library/proceedings/dsl97/shao.html">Typed
+Common Intermediate Format</a></b> <br>
+Zhong Shao, <i>Yale University</i></p>
+
+<p><b><a href="http://www.usenix.org/publications/library/proceedings/dsl97/engler.html">Incorporating
+Application Semantics and Control into Compilation</a></b> <br>
+Dawson R. Engler, <i>M.I.T. Laboratory for Computer Science </i></p>
+
+<p><b><a href="http://www.usenix.org/publications/library/proceedings/dsl97/stichnoth.html">Code
+Composition as an Implementation Language for Compilers</a></b> <br>
+James M. Stichnoth and Thomas Gross, <i>Carnegie Mellon University</i></p>
+
+<p><a href="http://www.usenix.org/publications/library/proceedings/dsl97/faith.html"><b>HEPERA:
+A System for Rapid Implementation of Domain Specific Languages</b></a><br>
+Rickard E. Faith, Lars S. Nyland, and Jan F. Prins, <i>University of North Carolina,
+Chapel Hill </i></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr>
+<font size="+2"><strong>
+
+<p><a href="http://www.research.digital.com/SRC/WebL/">WebL</a></strong></font>
+(pronounced &quot;webble&quot;) is a <font size="+1">scripting language</font> for
+automating tasks on the World-Wide Web. It is an imperative, interpreted language that has
+built-in support for common web protocols like HTTP and FTP, and popular data types like
+HTML and XML. </p>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<table border="5" cellPadding="20" cellSpacing="7">
+<tbody>
+  <tr>
+    <th><a href="http://pauillac.inria.fr/cdrom/www/esterel/index.html"><b><font size="+2">The
+    ESTEREL Language</font> </b></a></th>
+  </tr>
+</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>Esterel is both a language, dedicated to programming reactive systems, and a compiler
+which translates Esterel programs into finite-state automata. It is one of a family of
+synchronous languages which are particularly well-suited to programming reactive systems,
+including real-time systems and control automata. </p>
+
+<p>The compiler can be used to generate a hardware or software implementation of the
+reactive kernel: either C-code is generated which can then be embedded in a larger program
+that handles the interface and data manipulations, or hardware is generated in the form of
+netlists of gates, which can then be embedded in a larger system. There is a symbolic,
+graphical debugger, and support for verification in the form of bisimulation or BDD-based
+safety property checking. In addition, extensive optimization is available. </p>
+<b><a href="ftp://ftp-sop.inria.fr/meije/esterel/papers/foundations.ps.gz">
+
+<p>The Foundations of Esterel </a></b><br>
+Gérard Berry. <br>
+<i>To appear in</i> Proof, Language and Interaction: Essays in Honour of Robin Milner, <i>G.
+Plotkin, C. Stirling and M. Tofte, editors, <a href="http://mitpress.mit.edu/">MIT Press</a>,
+1998</i>. </p>
+
+<p><b><a href="ftp://ftp-sop.inria.fr/meije/esterel/papers/primer.ps.gz">The Esterel
+Primer</a></b> Gérard Berry. </p>
+
+<hr>
+
+<p><a href="http://infopad.eecs.berkeley.edu/~burd/software/maker2html/ex10/silage.html">DSP
+Specification Using the Silage Language</a></p>
+<i>
+
+<p align="center">Paul Hilfinger and Jan Rabaey</i> </p>
+
+<p><a name="756799"></a>Digital signal processing (DSP) algorithms are most easily
+described using a block diagram or schematic representation of the data flow in the
+algorithm. This can be captured in a graphical format[Lee89, Goering90], which is
+convenient if the number of blocks is relatively small and the interconnection is not
+complex. For more complex systems it is often more convenient to use a text
+representation. However, the commonly used procedural languages such as C, impose an
+ordering on the operations, and the variables actually represent memory locations, rather
+than true arithmetic values from which meaningful arithmetic equations can be written. An
+applicative (functional or single assignment) language accurately represents the
+computation which is to be performed, rather than how it is to be calculated. Silage is
+such a language with the addition of constructs (e.g. delay) that are commonly found in
+DSP applications.</p>
+
+<hr>
+
+<table border="0" cellPadding="0" cellSpacing="0">
+<tbody>
+  <tr>
+    <td><img alt="Ptolemy" border="0" src="../images/title.jpg" WIDTH="425" HEIGHT="193"></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+<p>The Ptolemy project focuses on system-level modeling, simulation, and design of
+reactive and embedded systems, providing high-level support for signal processing,
+communications, and real-time control. The key underlying principle in the project is the
+use of multiple concurrent models of computation in a hierarchical heterogeneous design
+environment. The work is conducted in the <a href="http://www.eecs.berkeley.edu/">Department
+of Electrical Engineering and Computer Sciences</a> of the <a href="http://www.berkeley.edu/">University of California at Berkeley</a>. The project is
+directed by <a href="http://ptolemy.eecs.berkeley.edu/~eal">Prof. Edward Lee</a> and <a href="http://ptolemy.eecs.berkeley.edu/~messer">Prof. David Messerschmitt</a>. The project
+is named after <a href="http://ptolemy.berkeley.edu/People/ptolemy.html">Claudius
+Ptolemaeus</a>, the second century Greek<!--<a href="http://www.ncsa.uiuc.edu/SDG/Experimental/vatican.exhibit/exhibit/d-mathematics/Greek_astro.html">--> astronomer<!--</a>-->,<!--<a href="http://sunsite.unc.edu/expo/vatican.exhibit/exhibit/d-mathematics/Greek_math2.html">--> mathematician<!--</a>-->, and<!--<a href="http://www.ncsa.uiuc.edu/SDG/Experimental/vatican.exhibit/exhibit/d-mathematics/Ptolemy_geo.html">--> geographer<!--</a>-->. </p>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<p>CS264: Language Design and Implementation<br>
+<em>Date Modified: <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%y" startspan -->12/10/98<!--webbot bot="Timestamp" endspan i-checksum="13817" --></em></p>
+
+<p><em><a href="http://www.cs.berkeley.edu/~abegel">Andrew Begel</a>&nbsp;&nbsp;&nbsp; <a href="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</a></em></p>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Program Composition</TITLE>
+<META NAME="description" CONTENT="Program Composition">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node18.html">
+<LINK REL="previous" HREF="node16.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node18.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html222"
+  HREF="node18.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html220"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html214"
+  HREF="node16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html223"
+  HREF="node18.html">Program Navigation and Browsing</A>
+<B> Up:</B> <A NAME="tex2html221"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html215"
+  HREF="node16.html">Program Dictation</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00062000000000000000">
+Program Composition</A>
+</H2>
+
+<P>
+Supported by the H-3ARMONIA analysis framework, we can provide several
+forms of program composition that will better approximate how people
+speak code today. First, we propose to support a template
+instantiation feature. Each production of the grammar can be
+associated with a spoken keyword. When this keyword is spoken, an
+instance of the grammar production can be inserted into the parse tree
+at the current cursor location, where terminals are filled in by text,
+and non-terminals are filled in by place holders. For example, the
+user might say <TT>if</TT> and get <TT>if (null_predicate) then {
+null_statement }</TT>.
+
+<P>
+Another form of code entry is to support textual macro
+expansions. Current users of voice recognition utilities rely on
+extensive macro support provided by the tools to enter text. While we
+can better implement many uses of these macros with template
+instantiation and better understanding of the words that they speak,
+we must continue to support this kind of legacy tool.
+
+<P>
+Finally, using the results of our proposed user studies, we will
+explore new ways to enable more natural expression of code. For
+example, we wish to enable a programmer to say ``repeat ten times'' to
+get a for loop in Java, or ``create an integer named foo'' to declare
+a new variable. If a company enforces coding style rules, these could
+be incorporated into the framework. For example, if Hungarian notation
+were required, when the user said ``create an integer named foo'', we
+would insert the code <TT>int iFoo</TT> to conform to the proper style. We
+feel that while at first it may seem that the programmer may be saying
+more than they would have to if dictating code directly, the shift
+towards higher-level conceptual programming will far outweigh the
+extra verbiage.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html222"
+  HREF="node18.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html220"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html214"
+  HREF="node16.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html223"
+  HREF="node18.html">Program Navigation and Browsing</A>
+<B> Up:</B> <A NAME="tex2html221"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html215"
+  HREF="node16.html">Program Dictation</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

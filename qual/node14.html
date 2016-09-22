@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Manual Disambiguation</TITLE>
+<META NAME="description" CONTENT="Manual Disambiguation">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="previous" HREF="node13.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html186"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html184"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html180"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html187"
+  HREF="node15.html">The Program Editor</A>
+<B> Up:</B> <A NAME="tex2html185"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html181"
+  HREF="node13.html">Ambiguity Resolution</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00051500000000000000">
+Manual Disambiguation</A>
+</H3>
+
+<P>
+We note that not all ambiguities can disambiguated through
+analysis. What if there were both a field and a method with the same
+name? What if two possibilities for token concatenation were both
+equally valid (e.g. <TT>print("line")</TT> vs. <TT>printLine()</TT>)?
+Capitalization affects semantics in many languages, and could have a
+big impact on program structure (e.g. in Java, <TT>Class</TT> (a type)
+vs. <TT>class</TT> (a keyword defining the beginning of a new class
+definition)).
+
+<P>
+In addition, we believe that some ambiguities should not be resolved
+automatically, even if they could. For instance, the precedence of
+the <TT>else</TT> statement as part of a nested <TT>if-then-else</TT> clause
+is typically resolved in the language grammar. Why? This is because
+programming language grammars were required to be
+unambiguous. However, this early resolution is dangerous since the
+user is unaware that there might be a problem. And, if the grammar
+specifies a different precedence than the one the user had in mind,
+choosing the unanticipated parse tree could lead to semantic bugs in
+their code. 
+
+<P>
+Since we're using a GLR parser, we preserve all parses through to the
+semantic analysis phase. After we've run our disambiguation
+algorithms, we will engage the software developer in a dialogue and
+ask them to pick the proper parses from the ambiguities that are left
+in the parse forest. The chosen resolution of each ambiguity would be
+stored in the resulting parse tree and saved with the program (so that
+the user will not be asked again each time the program is analyzed).
+
+<P>
+What form should this dialogue between the user and analysis system
+take? Interactive techniques are able to disambiguate speech and pen
+input before it arrives at the lexer&nbsp;[<A
+ HREF="node29.html#suhm96">50</A>], but this is
+undesirable because many of the ambiguities might very well be
+resolved automatically through context or semantics. Current research
+by Mankoff et. al.&nbsp;[<A
+ HREF="node29.html#burlap">37</A>,<A
+ HREF="node29.html#mankoff00-uist">36</A>] develops the
+ability to pass ambiguities through the application to modular
+mediators, which can provide a semantically-aware process for
+ambiguity resolution. We aim to incorporate these latter ideas into
+our prototype programming by voice editor. In addition, we will
+provide access to the standard speech recognition tools for improving
+spoken language recognition accuracy and for adding new words to the
+dictionary.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html186"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html184"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html180"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html187"
+  HREF="node15.html">The Program Editor</A>
+<B> Up:</B> <A NAME="tex2html185"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html181"
+  HREF="node13.html">Ambiguity Resolution</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

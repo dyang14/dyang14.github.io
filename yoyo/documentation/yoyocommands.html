@@ -1,0 +1,513 @@
+<HTML>
+<HEAD>
+   <TITLE>YoYo Language Reference</TITLE>
+</HEAD>
+<BODY bgcolor = "FFFFFF">
+<!-- TEXT="#FFFFDC" BGCOLOR="#000030" LINK="#FFFFFF"
+VLINK="#FFFF11">
+-->
+
+<H1>YoYo Language Reference</H1>
+
+This document is a reference manual for the YoYo language as of
+version 3.0 (otherwise known as Simple YoYo). The language has been
+simplified somewhat and should be a little easier to use, run faster,
+and be more compatible with existing web browsers. <p>
+
+The first section of this document will explain the different types
+that YoYo knows about. The next section will describe the syntax of
+the language (mainly, how it differs from traditional Logo). And, the
+last section will describe the commands that are supported in YoYo.<p>
+
+<HR>
+<H2>YoYo Types</H2>
+
+YoYo is dynamically typed, meaning you don't have to declare types for
+any variables you use. In fact, you never need to declare variables
+before they are used. Just use them. <p>
+
+There are several types of data that are dynamically checked by each
+YoYo primitive upon entry. These are:<p>
+
+<PRE>
+&lt;number&gt; -- 2, 2.34, -56.67
+&lt;symbol&gt; -- foo, bar, cow.moo
+&lt;string&gt; -- "foo", "bar", "I had a little teapot"
+&lt;boolean&gt; -- true, false
+&lt;list&gt; -- [ foo, bar ]
+&lt;object&gt; -- new-object
+&lt;anything&gt;  -- any type
+</PRE>
+
+These type names will be used in the commands section to identify
+which types are allowed by a particular primitive. <p>
+
+
+<hr>
+
+<h2>YoYo Syntax</h2>
+
+YoYo is very similar to Logo in its syntax, but different enough to
+make me tell you what's going on. In YoYo, all things can be divided
+into two categories, reporters and commands. Reporters -- primitives
+like +, -, first, list, and data values like 6, "hello" and [a b c] --
+return a value, where commands -- primitives like print, dotimes, if
+-- do not. At the top level, everything you run in YoYo must be a
+command or a sequence of commands.<p>
+
+<pre>
+print "hello"
+repeat 6 [forward 10]
+</pre>
+
+Reporters may only be used as inputs to commands or other
+reporters. <p>
+
+YoYo has very little syntax. All commands or reporters should be
+written with no punctuation (i.e. print, type, repeat, +, etc) and
+separated by a space. Strings are denoted by double quotes at the
+beginning and end of the string (i.e. "hello", "goodbye"). Numbers can
+be specified in decimal (3, 3.4, -0.45, -.56) format, or hexadecimal
+($AFE3, $6FFE). A list is denoted by a group of unevaluated reporters
+inside a set of brackets (i.e. [ a b c ] is a list of three symbols:
+a, b and c).<p>
+
+A procedure may be written in two ways. The traditional Logo way uses
+this syntax in a separate file:<p>
+
+<pre>
+to square
+repeat 4 [forward 10 right 90]
+end
+</pre>
+
+Here, we define a procedure named square that runs the command repeat
+4 [forward 10 right 10]. Note that repeat takes two inputs, the
+reporter 4, and the reporter list of 4 elements [forward 10 right
+90]. Note that "to" and "end" must be on their own lines.<p>
+
+<pre>
+to square size
+repeat 4 [forward size right 90]
+end
+</pre>
+
+Here, we make a square procedure that takes in one input, the size of
+the square to be made. Unlike Logo, you don't have to put dots (:)
+before the parameter name, nor do you have to put dots in front of a
+variable when you use it. A procedure can take as many inputs as will
+fit on a line. <p>
+
+You can also define a procedure using lambda, which is a more
+Scheme-like primitive. A lambda can be thought of as a function object
+that can be treated as a value, invoked as a function, passed to a
+procedure as an input, or returned from a procedure. <p>
+
+<pre>
+set square lambda [size] [repeat 4 [forward size right 90]]
+</pre>
+
+Here, we have defined the square command using set. Set is how you say
+"Make" in YoYo. Unlike make, however, you don't need to quote your
+input to set. It is a special form. To continue, we set square to the
+value of the reporter lambda. Lambda is a reporter that takes two
+input lists, a parameter list (naming the inputs to the procedure
+being defined) and a body list (containing a sequence of
+commands). <p>
+
+You may notice that YoYo evaluates all values when written down on the
+command line or used as a reporter. Well, since a procedure is usually
+a thing to run, and not a thing to use as data, there is a special way
+to make YoYo treat it as data. Using the dots (:) operator, we can
+delay evaluation of an object and just pass it around.<p>
+
+<pre>
+to map func list
+ifelse empty? list 
+  [output []]
+  [output sentence func first list 
+                   map :func butfirst list]
+end
+
+to cube x
+output x * x * x   ; output x^3
+end
+
+to go
+dolist [elt map :cube [1 2 3 4]] 
+       [print elt]
+end
+</pre>
+
+This example is a little more complicated. The map function applies a
+function to each of the elements of a list and returns the resulting
+list. Note, when we recursively call map on the fourth line, we put a
+dots operater before the function in order to pass it as a value, and
+not evaluate it on the spot.<p>
+
+Note, that map and cube both use "output" to return a value to the
+caller of a function. This is how you can make a procedure that is a
+reporter. If you call output from your code, it will return a value
+(make sure that all paths through the procedure all output a value or
+you'll get a bug). <p>
+
+Also, if you look in the cube function, we've written a comment after
+the output x * x * x. A comment-to-end-of-line can be written starting
+with a semi-colon (;). You may also write any comments outside of any
+procedure definition in a YoYo file.<p>
+
+The go function puts everything together. We use dolist to iterate
+over the elements of the result of mapping cube over the list [1 2 3
+4]. On each iteration, we print out the results of running cube. Here
+is the result:<p>
+
+<pre>
+1
+8
+27
+64
+</pre><p>
+
+We can also define temporary variables using let. Let's scope is the
+entire procedure:<p>
+
+<pre>
+to foo
+let [[a 6]]
+print a
+end
+
+foo
+6
+</pre><p>
+
+Let's syntax is similar to that used in another language called
+Scheme. The let body is surrounded by a set of []'s. For each variable
+defined in the let, another set of brackets is used. For example, we
+might define several variables at a time:<p>
+
+<pre>
+to bar
+let [[a 6] [b 7]]
+print a * b
+end
+
+bar
+42
+</pre><p>
+
+A let variable overrides any other of the same name defined above the
+let. <p>
+
+<pre>
+set a 6
+
+print a
+6
+
+to moo a
+print a 
+let [[a 7]]
+print a
+end
+
+moo 2
+2
+7
+
+print a
+6
+</pre><p>
+
+Inside moo, a initially has the value of 2, the input argument. But
+once the let happens, the new a has the value 7. This new a shadows
+the first a to the end of the procedure. However, all this only takes
+place in the procedure. None of the modifications to a have any effect
+on the global variable a.<p>
+
+That's it for syntax. As I told you, there really isn't much to
+learn.<p>
+
+<hr>
+<H2>YoYo Primitives</H2>
+
+This section describes each YoYo primitive by category. There are
+several categories: control flow, procedures and variables,
+reflection, objects, miscellaneous, system, lists, math, and files.
+This list is complete, but not entirely useful. There will soon be
+documentation on what each command does and what kinds of arguments
+and return values each has.
+
+<PRE>&nbsp;</PRE>
+
+<H3>
+<HR>
+Control Flow</H3>
+
+<PRE>&nbsp;
+repeat
+stop
+output
+if
+ifelse
+while
+loop
+carefully
+always
+run 
+ask
+dotimes
+launch
+thread-self
+throw
+error
+error-type
+system-yield
+wait
+case
+dolist
+</PRE>
+
+<H3>
+<HR>
+Procedures and Variables</H3>
+
+<PRE>&nbsp;
+set
+unset
+type-of
+value-of
+bound?
+let
+dlet
+get-properties
+get-property
+get-parameter
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Reflection</H3>
+
+<PRE>
+boolean?
+list?
+ilist?
+number?
+object?
+
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Objects</H3>
+
+<PRE>
+new-object
+copy-object
+get-fields
+get-field
+set-field
+get-fields-and-values
+self
+object?
+global-environment
+to-object
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Miscellaneous</H3>
+
+<PRE>
+ascii-to-integer
+integer-to-ascii
+load-sound
+setup-sound
+play-sound
+stop-sound
+
+print
+show
+type
+resett
+timer
+freememory
+ignore
+:
+lambda
+to-string
+unquote
+ilist-to-list
+list-to-ilist
+trace
+untrace
+get-string
+untrace-all
+
+&nbsp;</PRE>
+
+<H3>
+<HR>
+System</H3>
+
+<PRE>dload
+get-parameter
+get-properties
+get-property
+system-quit
+system-os
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Lists</H3>
+
+<PRE>
+list
+sentence, se
+fput
+lput
+butfirst, bf
+butlast, bl
+first
+last
+item
+random-item
+setitem
+nth
+setnth
+length
+word
+position
+member?
+empty?
+list?
+string?
+substring
+copy-list
+string-to-list
+list-to-string
+dolist
+to-list
+replace
+starts-with
+ends-with
+starts-with-ignore-case
+ends-with-ignore-case
+trim
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Math Operations</H3>
+
+<PRE>abs
+acos
+asin
+atan
+bitneg
+cos
+difference
+greater?
+equal?
+exp
+int
+less?
+ln
+lsh
+min
+minus
+max
+not
+number?
+power
+product
+quotient
+random
+rem
+round
+rsh
+sin
+sqrt
+string-to-number
+string-is-number?
+sum
+tan
+&nbsp;
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Infix Math Operations</H3>
+
+<PRE>+, -, *, /, ^
+=, !=, &lt;=, &gt;=, &lt;, &gt;
+and
+bitand
+bitor
+bitxor
+mod
+or
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Files</H3>
+
+<PRE>&nbsp;
+load-yoyo
+load-yoyo-verbose
+load-yoyo-from-string
+load-yoyo-from-string-verbose
+read-file-to-string
+write-string-to-file
+read-url-to-string
+home-directory
+list-files
+file?
+directory?
+file-date
+file-readable?
+file-writeable?
+file-rename
+make-directory
+url?
+file-canonical-path
+make-resource-url
+&nbsp;</PRE>
+
+<H3>
+<HR>
+Constants</H3>
+
+<pre>
+true
+false
+system-version
+shared-environment
+</pre>
+
+<H4>
+<HR>
+Math</H4>
+
+<PRE>&nbsp;
+pi
+</PRE>
+
+<H4>
+
+<ADDRESS>
+<HR>
+Andrew Begel		</ADDRESS>
+
+<ADDRESS>abegel@media.mit.edu</ADDRESS>
+
+<ADDRESS>11/28/99</ADDRESS>
+
+<P>&nbsp;</P>
+
+<P>&nbsp;</P>
+</BODY>
+</HTML>

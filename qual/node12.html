@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Semantic Ambiguities</TITLE>
+<META NAME="description" CONTENT="Semantic Ambiguities">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node11.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html168"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html166"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html160"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html169"
+  HREF="node13.html">Ambiguity Resolution</A>
+<B> Up:</B> <A NAME="tex2html167"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html161"
+  HREF="node11.html">Syntactic Ambiguities</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00051300000000000000">
+Semantic Ambiguities</A>
+</H3>
+
+<P>
+A natural language speech recognizer uses the natural language grammar
+and semantics to disambiguate homophones, parts of speech and
+capitalization. Fortunately, disambiguation of programming languages
+will be considerably easier than natural language because the context
+provided by the program will be a rich source of disambiguating
+information. 
+
+<P>
+There are two aspects to the semantic analysis of programs or similar
+linguistic documents.  The first is akin to the semantic phase of a
+compiler, namely, binding analysis, name resolution, type checking,
+and other analyses derived from the semantic definition of the
+language.  We refer to that as semantic analysis.  The second
+determines properties of the particular instance, e.g. the program.
+Examples of such analyses include data flow, alias analysis,
+complexity measures, slicing, etc. We refer to that as program
+analysis.
+
+<P>
+In the Pan system, we developed an incrementally evaluated structured
+variant of logic programming to define and maintain semantic
+consistency and constraints on formally specified language
+documents&nbsp;[<A
+ HREF="node29.html#ballance_graham:91iclp">6</A>].  That was an elegant
+solution, with built-in query support, but suffered from significant
+performance problems.
+Ensemble's implementation of semantic analysis is based on the
+Colander II system&nbsp;[<A
+ HREF="node29.html#maddox-thesis">35</A>], which transforms an attribute
+grammar-based description of the analysis into a compiled incremental
+attribute evaluator that is applied to the syntax tree whenever
+semantic information is requested.
+
+<P>
+Colander II has both strengths and weaknesses.  Among its strengths,
+the metalanguage is very expressive, while also exposing
+incrementality rather than hiding it in semantic functions.  The
+evaluators handle long-distance dependencies and aggregate attributes
+efficiently, and exhibit excellent overall incremental performance.
+The incremental evaluation methods have more general applicability
+than just for attribute grammars.  However, the formalism shares with
+most attribute grammar systems&nbsp;[<A
+ HREF="node29.html#ag-book">15</A>] the property of being
+monolithic, in the sense that all aspects of the specification
+potentially interact.  That makes the avoidance of circularity
+difficult, despite the more powerful mechanism we have
+developed&nbsp;[<A
+ HREF="node29.html#maddox-thesis">35</A>], and inhibits the ability to
+encapsulate ``chunks'' of functionality, such as symbol table
+abstractions, for re-use in other language specifications.  For
+example, the ability to specify a multi-phase analysis, instead of
+having evaluation order determined by dependencies alone, would
+simplify the design of the specifications and facilitate specification
+re-use.
+
+<P>
+When the H-3ARMONIA framework was created, we removed Colander II
+support, and only replaced it with an <I>ad hoc</I> mechanism for
+semantic analysis of a parse tree that is custom-written in C<FONT SIZE="-2">++</FONT>. This
+solution is inadequate for the kinds of disambiguation analysis we
+will need.  As part of our research we will explore a hybrid approach
+of Colander and Colander II that lets the analysis writer split the
+analysis into multiple phases, with a well-defined interface. The
+different analysis components can then use different algorithms, some
+incremental and some not, to achieve a better balance between ease of
+specification and efficient incremental evaluation. The choice of
+analysis method would be tuned to such factors as the locality of
+dependences or the utility of change-based information. At the coarser
+grain of the interaction of analyzers, the analysis would remain
+incremental.
+
+<P>
+In addition, the new analyzer must support set-based analysis of a
+parse forest with the ability to prune ``incorrect'' subtrees from the
+forest if found semantically inconsistent. In the natural language
+community, where GLR is one of many popular parsing techniques that
+produce parse forests, learning how to perform semantic disambiguation
+on the compressed parse forest data structure has become an
+increasingly important area of research&nbsp;[<A
+ HREF="node29.html#nederhof93">41</A>,<A
+ HREF="node29.html#schiehlen96">49</A>,<A
+ HREF="node29.html#dekkers92">14</A>,<A
+ HREF="node29.html#harper94">26</A>,<A
+ HREF="node29.html#visser97-disambiguation">58</A>]. Due to the much larger
+ambiguities in natural language syntax, expansion of parse forests
+prior to traditional semantic analysis on each parse tree would be
+infeasible due to the space required. We believe that a set-based
+attribute grammar would be able to operate efficiently on the parse
+forests produced by H-3ARMONIA and will adapt techniques from the
+natural language community for our uses. 
+
+<P>
+Finally, we require support for semantic queries in the H-3ARMONIA 
+framework. Semantic queries are used by program navigation services in
+order to find constructs in the user's program. In addition, queries
+are also useful for incremental disambiguation. For instance,
+when the user is up to a point in his input where he may enter an
+expression, we may wish to identify what variable and method names are
+currently in scope. We can use this information to restrict the number
+of words that the speech recognizer will accept in order to achieve
+higher accuracy rates. This will involve querying the partial parse
+tree results and semantic attributes that have been analyzed up to
+this point and ask for this information. The semantic query
+functionality that will be used by this dissertation is being
+implemented as part of the overall H-3ARMONIA project, and not as part
+of this dissertation.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html168"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html166"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html160"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html169"
+  HREF="node13.html">Ambiguity Resolution</A>
+<B> Up:</B> <A NAME="tex2html167"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html161"
+  HREF="node11.html">Syntactic Ambiguities</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

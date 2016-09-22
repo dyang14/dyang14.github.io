@@ -1,0 +1,31 @@
+The three hardest concepts in this course are 
+
+1. Language Semantics
+
+This course teaches a lot of language design through analysis of the
+choices made in several popular languages. The students will have to
+get a feel for all of the different areas of semantics without ever
+having had a language theory class. Since they're doing this from a
+practical standpoint, it may be difficult to tease out the theory from 
+the mechanics and cruft of a particular example. 
+
+2. Graph Traversal Algorithms
+
+Optimization is easy to understand, but is hard to learn how to
+implement. There's a large chunk of graph traversal that they must be
+happy with before they can move on to using it for optimization. I
+expect to hear "when are we ever gonna use this?" a lot when we
+discuss this part. 
+
+3. How to Program
+
+I hope the students have learned this by the time they get to this
+class, but if they haven't, it's going to be the biggest thing they
+take away. If they don't get this, then they won't see how to abstract 
+language design from a language and its syntax, language
+implementation from its grammar and high-level form. They also need to 
+be able to analyze a language without any "religious" bias as to which 
+one is better than the other. If they understood "how" to program,
+then they would be able to evaluate the merits of a particular
+language as suited for a particular task, and understand when to pick
+the right language for the job.

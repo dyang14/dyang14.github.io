@@ -1,0 +1,94 @@
+PicoThreaded Web Crawler
+
+We created an application to illustrate the programming and
+performance advantage of PicoThreads over Java system threads. A web
+crawler is a simple program in theory. Starting from a root web page,
+the program reads all the links and recurses on all of the new
+pages. Coding this in parallel leads to a simple implementation:
+
+public class WebCrawler {
+
+   URL url;
+
+   public WebCrawler(URL u) {
+      url = u;
+   }
+   public void run(URL u) {
+
+     URL[] links = lookupLinks(u);
+     for(i = 0; i < links.length; i++) {
+       new Thread(new WebCrawler(links[i])).start();
+     }
+   }
+
+}
+
+This implementation spawns a new thread for every URL to be
+processed. Actual processing of the data received would take place in
+the lookupLinks function. This code merely webcrawls as fast as it
+can. Given the tree-like nature of the web, this program also creates
+a large number of threads very quickly. In fact, starting from Yahoo,
+one can reach around 30,000 links in no time at all.
+
+Any experienced Java programmer will look at this program and declare
+it unrunnable. Given Java threads, they are right. Java threads are
+slow to create, and use too much memory. Object creation time is known
+to be a slow operation in many implementation of the JVM (reference to
+microbenchmarks). Creating a new thread per URL causes not just one
+object creation, but every time lookupLinks is called all of its local
+data structures must be allocated as well. A system thread on Solaris
+uses 8K of stack space. 30,000 links, at one thread per link would run
+through 240MB of real physical memory in no time. Java would be
+garbage collecting large amount of memory. In our tests, we found that
+Java would garbage collect 500K five times per second.
+
+A careful Java programmer has a keen eye for reusing objects and
+threads. This technique is also used in garbage-collected languages,
+like Lisp, when programming need to make sure that no memory is consed
+during execution. This leads to a cramped ad-hoc style of program that
+we call thread pools. We wrote a web crawler which preallocates all
+memory buffers and creates a constant number of reusable threads. Even
+the buffer size is fixed, so if too many URLs are found, they will be
+thrown away rather than searched.
+
+We ran both types of web crawlers in Java 1.1.5 under Solaris 2.5.1 to
+test their performance. We ran under two situations, one on a
+controlled set of web servers in the EECS computer cluster and the
+other on www.yahoo.com. We ran the thread pools version with varying
+numbers of Java threads.
+
+<insert graphs here>
+
+We can see here that our throughput maxes out with three Java
+threads. We get better network bandwidth for larger files, which is
+to be expected because we incur less system overhead for larger files.
+We only ran up to 32 threads because our performance was dropping
+logarhymically after 8 threads.
+
+
+<insert one thread per url graph>
+
+This graph is much more illuminating. We see how a PicoThread
+implementation of the simple multithreading web crawler does against
+an equivalent implementation that uses Java threads. For each size
+file, PicoThreads get three to fifteen times the bandwidth of the Java
+threads. We feel this is mostly due to less overhead in context
+switching, and doing this context-switching opportunistically. Since a
+PicoThread only context switches when a network call needs to wait for
+the network, once the read buffer has been filled, one thread gets to
+process a large amount of data before context switching. Java uses
+preemptive threads and more evenly distributes the execution time of
+each thread during parsing of the HTML files.
+
+PicoThread performance only achieved a maximum of 50K/sec, while our
+hyper-optimized thread pool version using Java threads went up to
+60K/s. We analyzed the execution status of our PicoThreads every time
+they did a state change. We found that our scheduler and network
+read/write/connect time was only using 5-10% of the total time. This
+means that 90% of the time was spent in Java user code, parsing
+URLs. Under a JIT or faster VM, our CPU-bound code could easily
+perform better. We also do not worry about minimizing memory
+allocation. We speculate that our web crawler would perform better if
+we took care to reuse memory structures in between thread lifetimes.
+
+

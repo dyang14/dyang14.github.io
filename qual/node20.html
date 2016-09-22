@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>On-screen Representation</TITLE>
+<META NAME="description" CONTENT="On-screen Representation">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html252"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html250"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html244"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html253"
+  HREF="node21.html">Prototype Editors</A>
+<B> Up:</B> <A NAME="tex2html251"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html245"
+  HREF="node19.html">Program Editing</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00065000000000000000">
+On-screen Representation</A>
+</H2>
+
+<P>
+If we modify an existing programming language's syntax to be more easily
+spoken than the textual one, what does the user edit on the screen? If
+we only display the traditional, textual representation, then we lose
+input transparency touted by many in the HCI community. On the
+other hand, while the modified syntax may be easier to speak, it may
+not be very easy to read. 
+
+<P>
+In the spirit of the Ensemble project, we propose to build an editor
+that displays multiple representations of the code being edited. Each
+representation can be tailored for the input mode, thus it would be
+displayed in the grammar appropriate for that input mode. In our
+editor which supports voice and keyboard entry, we can show two screens
+- one has the direct input from the user (with formatting services
+provided by H-3ARMONIA), the other shows what the code looks like in
+the traditional syntax. 
+
+<P>
+Since our modification of the programming language syntax does not
+change its abstract syntax, but merely its concrete syntax, we will be
+able to automatically map edits made in one buffer into changes for
+the other buffers. We can do this by mapping all changes through the
+abstract syntax tree kept by H-3ARMONIA. This technology will build on
+prior work done during the Pan project&nbsp;[<A
+ HREF="node29.html#butcher-ladle">10</A>].
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html252"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html250"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html244"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html253"
+  HREF="node21.html">Prototype Editors</A>
+<B> Up:</B> <A NAME="tex2html251"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html245"
+  HREF="node19.html">Program Editing</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

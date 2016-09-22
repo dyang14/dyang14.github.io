@@ -1,0 +1,165 @@
+Andrew Begel
+CS302 Review
+5/3/99
+
+
+Assignments
+
+	Assignment 1: Good. This assignment is extremely necessary for
+	getting us to realize the breadth of our course and judge the rough
+	timing. Over the course of the class, I changed my mind about the
+	specific timing of each section in addition to the amount of
+	content I wanted to cover. It would have been good to reevaluate
+	this schedule halfway through the term and revise it to be more
+	realistic.
+
+	Assignment 2: OK. The concept map was a good project to get us to
+	figure out how to relate all of the big ideas in the coarse, but
+	its node dependency breakdown doesn't easily translate actual
+	topics to cover in a section or lecture. In addition, the ordering
+	constraints implied are very loose. I think that the actual
+	scheduling of concepts is more subject to the creativity of the
+	instructor and how they want each piece to appear to the students.
+
+	Assignment 3: Good. Elaborating on specific ways to teach the hard
+	concept in the class was good, however, I'm not satisfied with my
+	result. At this point, it was too easy to be too general about what
+	I wrote down. Specific problems and exercises were harder to come
+	by. Perhaps we could have worked on this over two weeks to actually
+	come up with specific exercises to help with the concept.
+
+	Assignment 4: Loved it. I loved creating a case study, since it
+	seems to mirror how my brain works when leading a recitation. You
+	try not to say too much, but you want to ask leading questions so
+	they get the idea you're trying to have them understand. A future
+	way to do this would be to develop it as a series of web pages, so
+	you can refine the "control flow" of the reader's progress through
+	the case study.
+
+	Assignment 5: Loved it. This was also a very useful and helpful
+	assignment. It felt long, but I think I enjoyed developing the 30
+	different problems. If that categorization scheme is "correct," and
+	effective, then it does make it much easier to develop exercises
+	that appeal to a large number of students. An extension to this
+	assignment would have us develop questions for an oral interview
+	with students to gauge their knowledge. Again, it might have been
+	nice to spend another week fleshing out the situated cognition
+	exercises. Perhaps in general, you could pipeline assignments,
+	where you submit a first half and a second half, and you can be
+	working on a first half to the next assignment and the second half
+	to the previous assignment at the same time.
+
+	Assignment 6: Good. This assignment was good at forcing us to
+	design real questions. It also showed us situations where certain
+	types of questions (long, essay questions) might be bad for certain
+	types of students (ESL, dyslexia). I would have liked more in-depth
+	peer review from the other students in the class on the types of
+	these questions.
+
+	Assignment 7: Good. I liked developing group activities and exam
+	questions. I enjoyed reading the papers that explained the
+	rationale behind group activities and how to ejudicate them
+	w.r.t. other grades in the class. The discussion of this assignment
+	in class was fun.
+
+	Assignment 8: Good. It's important to develop a grading policy, but
+	I get the impression that new teachers have much more lenient
+	policies than hardened teachers. I'm not sure yet if the new
+	teachers are too naive, or the older teachers are too jaded. I
+	guess experience will tell. I did enjoy the discussion here where
+	Dan spoke about the grade prediction program that could tell the
+	students exactly what grade they had at any time in the course. I
+	still feel that ignorance is bliss. Life is much less stressful if
+	you don't feel that you're being evaluated. :)
+
+	Assignment 10: Good. It was hard for me to find a textbook that
+	covered all of the topics I wanted. I found one that covered 1/3 of
+	the class really well, but that's not fair to students to have them
+	buy a mostly useless book. I think I'd go with the course reader
+	approach and photocopy the pieces of the books that are
+	relevant. This way you can get much more diversity of source
+	material without too much extra work. I did like the 8 points of
+	evaluating a text book but feel that clarity of explanation is much
+	more important than any of the other factors (except coverage; who
+	cares if it's clear, if it's not on your topic).
+
+	Assignment 11: The TA policies were good because Dan and I were
+	both very ambitious about what we wanted TAs to do. Unfortunately,
+	I'm not sure that school policies would enable us to have as many
+	TAs as we want. Hopefully, Arnie's paid course assistants will be
+	adopted at every school we ever want to teach at in the future. :)
+
+	Assignment 12: OK. This assignment was less successful in compilers
+	than in graphics. First, the assignment didn't really distinguish
+	between pedagogical innovations vs. subject-specific
+	innovations. Compilers haven't changed much over time in terms of
+	how they work. Pedagogical tools that apply across disciplines are
+	much more interesting. I hope that it would be easy to set up these
+	community-building concept-specific virtual environments for each
+	class to participate in.
+	
+
+General Evalution
+
+I thought most of the assignments were ok, but sometimes I felt like
+they should have gone on for two weeks at a time (pipelined) instead
+of just one. Or in some circumstances, they should be revisited later
+in the class to revise/update them with better understanding of the
+resource limits of students and teachers. 
+
+In general, the way that we went over the assignments in class will
+not scale to more than 3-4 students. It would be a good idea to make
+the due date several days before class and give all the assignments to
+the other students in the class. Then they could review the
+assignments and evaluate them for the class. This way, they would
+generate some good concrete feedback for each other.
+
+I think that coming up with a lecture outline would have been a good
+assignment. So, it's more similar to things we did in CS301, but from
+the lecturer's point of view. Other than that, I think this class did
+a good job at introducing all of the different pieces of a class that
+have to be developed when preparing to teach one. 
+
+It was vitally important that each person work on their own
+class. While Dan's stuff on graphics is cool, I'm just interested
+enough in teaching that class to want to design it. It would be too
+difficult, other than designing an intro class, to make everyone do
+the same thing. 
+
+The workload of this class is fine. Compared to other classes, there
+tends to be less work, but I'm comparing it to project classes. :) 
+
+I've already made some suggestions about future changes, but in
+general, the course is run pretty well. 
+
+It would be nice to have CS302 students mentor a CS301 students while
+they learn to TA for the first time. The idea is this: Each CS302
+student could "adopt" a CS301 student who is teaching in their
+area. Some of the CS302 assignments could be to conduct a peer review
+of their adoptee's teaching. Other assignments could include helping
+the adoptee prepare a section, prepare a lab exercise, tag-team teach
+a section, prepare extra handouts to help students out with hard
+material, etc... This could be incredibly beneficial not only to the
+CS301 student who gets extra attention at TAing, but to the CS302
+student for having to develop concrete materials for students to
+use. The workload on the CS302 student is low since they don't
+actually have to teach the section; they can just add value to it from
+the sidelines.
+
+I think this class has made me more excited about teaching. It's also
+made me become more realistic about what you can cover in a term and
+how fast you can cover it. It's pretty difficult to come up with
+workable homework and exam questions. I get the feeling that
+developing a whole course is a multi-year process, and that we
+shouldn't feel bad about not quite holding up every aspect of the
+class. Over several years of development, each piece could be fleshed
+out and made to fit into the whole. However, with today's technology
+and subject material changing so fast, it feels that we wouldn't be
+able to quite keep up. Either something has to slow down, or we're
+going to need more help for course development.  
+
+
+
+
+
+	

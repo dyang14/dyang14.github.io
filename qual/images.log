@@ -1,0 +1,139 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 2000.3.7)  20 FEB 2001 19:45
+**./images.tex
+(./images.tex
+LaTeX2e <1998/12/01> patch level 1
+Babel <v3.6x> and hyphenation patterns for american, french, german, ngerman, i
+talian, nohyphenation, loaded.
+
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 1999/01/07 v1.4a Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 1999/01/07 v1.4a Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 1999/01/07 v1.1a Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf/tex/latex/misc/fullpage.sty
+Style Option FULLPAGE Version 2 as of 15 Dec 1988
+) (/usr/share/texmf/tex/latex/misc/relsize.sty
+Package: relsize 1999/01/13 ver 2.0a
+) (/usr/share/texmf/tex/latex/tools/xspace.sty
+Package: xspace 1997/10/13 v1.06 Space after command names (DPC)
+) (/usr/share/texmf/tex/generic/babel/babel.sty
+Package: babel 1999/05/05 v3.6x The Babel package
+(/usr/share/texmf/tex/generic/babel/english.ldf
+Language: english 1999/04/11 v3.3i English support from the babel system
+(/usr/share/texmf/tex/generic/babel/babel.def
+File: babel.def 1999/05/05 v3.6x Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+))) (/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+(/usr/share/texmf/tex/latex/config/color.cfg)
+Package color Info: Driver file: dvips.def on input line 125.
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+) (/usr/share/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (/usr/share/texmf/tex/latex/base/inputenc.sty beta test version
+Package: inputenc 1998/03/05 v0.97 Input encoding file (test version: still lia
+ble to change)
+(/usr/share/texmf/tex/latex/base/latin1.def
+File: latin1.def 1998/03/05 v0.97 Input encoding file (test version: still liab
+le to change)
+))
+\sizebox=\box26
+\lthtmlwrite=\write3
+(images.aux)
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=673.20255pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=0.0pt
+
+latex2htmlLength evensidemargin=0.0pt
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 148.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 148.
+l2hSize :tex2html_wrap_inline405:6.95831pt::6.95831pt::8.27783pt.
+[1
+
+
+
+]
+l2hSize :tex2html_wrap_inline419:8.0pt::8.0pt::22.18573pt.
+[2
+
+
+]
+l2hSize :tex2html_wrap_inline421:6.45831pt::0.0pt::6.50238pt.
+[3
+
+
+]
+l2hSize :tex2html_wrap_inline423:6.45831pt::0.0pt::10.50005pt.
+[4
+
+
+]
+l2hSize :tex2html_wrap_inline1819:6.88586pt::0.0pt::5.09726pt.
+[5
+
+
+]
+l2hSize :tex2html_wrap_inline1821:8.49002pt::0.0pt::9.09116pt.
+[6
+
+
+] (images.aux) ) 
+Here is how much of TeX's memory you used:
+ 964 strings out of 10898
+ 11654 string characters out of 96882
+ 55838 words of memory out of 263001
+ 3935 multiletter control sequences out of 10000+0
+ 3640 words of font info for 14 fonts, out of 400000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 23i,5n,19p,735b,217s stack positions out of 300i,100n,500p,50000b,4000s
+
+Output written on images.dvi (6 pages, 1496 bytes).

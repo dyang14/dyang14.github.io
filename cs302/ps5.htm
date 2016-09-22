@@ -1,0 +1,167 @@
+<html>
+
+<head>
+<title>Homework </title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body>
+
+<p>Homework #5</p>
+
+<p>Design five homework exercises in each category and spread them out through the course.
+
+<ul>
+  <li><strong>Recall</strong><ol>
+      <li>Write a function to append two or more lists together in Scheme.</li>
+      <li>What are the defining characteristics of SSA form?</li>
+      <li>List any two peephole optimizations and describe in English how they work.</li>
+      <li>Describe how stop and copy garbage collection works in a language like Smalltalk.</li>
+      <li>How can one integrate a program written in Lisp with one written in C? Describe 3
+        different ways.</li>
+    </ol>
+  </li>
+  <li><strong>Comprehension, translation, interpretation</strong><ol>
+      <li>What are the differences between functional programming and object-oriented programming?
+        What are the similarities? Think about issues in syntax, naming/scoping rules, data
+        structures, and anything else you think is important.</li>
+      <li>What are the major differences between traditional IRs and the SSA form IR?</li>
+      <li>How does dominator tree analysis help us with constant propagation?</li>
+      <li>How is generational garbage collection different than stop and copy or mark and sweep?
+        Does one subsume the other? What are the effects on the memory system? What about time and
+        space efficiency?</li>
+      <li>What are the issues in supporting dynamic linking in an object oriented language?</li>
+    </ol>
+  </li>
+  <li><strong>Application to concrete situations</strong><ol>
+      <li>Discuss the advantages and disadvantages of using garbage collection in these
+        environments:<ul>
+          <li>Executing a database query</li>
+          <li>Compiling a one million line source program</li>
+          <li>Implementing a thread system in the operating system</li>
+          <li>Implementing a serial device driver</li>
+          <li>Developing a user-interface for manipulating 3-D graphical objects</li>
+        </ul>
+      </li>
+      <li>Given this example procedure <em>(I haven't thought of an example yet) </em>, optimize
+        it using all of the optimizations you've learned so far. At each step, write down what
+        your optimization is, what it does, and the new intermediate form of the program. Hint: if
+        you do your optimizations in a particular order, you'll be able to make a very, very small
+        program.</li>
+      <li>Transform the following program <em>(I haven't thought of an example yet), </em>into SSA
+        form. How many phi-functions do you need? </li>
+      <li>Describe how to perform register allocation on the following piece of code. Construct a
+        graph, color it, and rewrite the result. Do it for 2 registers, 3 registers, and 4
+        registers. Try to minimize spills to memory.&nbsp; </li>
+	  <li>Decompose the following Smalltalk procedure into
+	    individual message sends. Indicate the quantity and type of
+	    message as well as the inferable type and actual type of
+	    each receiver. </li>
+	</ol>
+      </li>
+      <li>
+	<strong>Analysis via recognizing relationships, discriminating
+	  elements, or picking out forms and patterns</strong>
+	<ol>
+	  <li>How does partial redundancy elimination use the other
+	    lower-level analyses and optimizations that we have discussed? </li>
+	  <li>Take one of your lab programming assignments and discuss how to rewrite it in a different language. You pick the language -- the only requirement is that the language must be in a wholly different category than the one you wrote yours in.</li>
+	  <li>What effects does a limitation on the number of registers
+	    have in register allocation? Describe what occurs before
+	    and after the critical number of registers. Describe the
+	    local effects, if any, on data access times and instruction fetch
+	    times, and the global effects that such a restriction
+	    might have on the rest of the program being compiled.</li>
+	  <li>Why do programs use both static and dynamic linking? Why 
+	  not switch to one over the other? What effects might this
+	    have on the speed of linking, complexity of linking,
+	    and in-memory code layout?</li>
+	  <li></li>
+     </ol>
+  </li>
+  <li><strong>Synthesis that brings together elements of the material in new relationships or
+    combinations.</strong><ol>
+	  <li>What would you like to see in a programming language front-end (GUI or IDE) that would
+	    help in debugging a twenty million line program, like the space shuttle launch program, or
+	    the Solaris operating system? Is your answer dependent on the application? How? </li>
+	  <li>What would the advantages be in adding static scoping to a language with purely dynamic
+	    scope? What kinds of programs might benefit? Would there be any semantic problems? How
+	    about the other way around -- adding dynamic scoping to a purely lexical language?</li>
+	  <li>Design a form of dynamic linking that doesn't require an explicit link command either in
+	    the operating system or the language? What kinds of semantics would that imply? How would
+	    it affect compilation? optimization? the run-time system (especially the run-time system)?</li>
+	  <li>Using your knowledge of data-flow algorithms for variables, develop an algorithm to
+	    statically compute the value of the conditionals in the program. State any assumptions you
+	    may need to make. Describe how to use this algorithm to eliminate conditional branches in
+	    a piece of code. </li>
+	  <li>An important area of compiler research is in
+	    parallelization of loops. Many newer processors support a
+	    limited form of vector parallelism, where the processor
+	    may perform an instruction on many words of data in
+	    parallel. This provides compiler writers with a prime
+	    opportunity to improve the performance of mathematical
+	    applications (especially those that rely on matrix
+	    multiply) by performing several of the loop iterations in
+	    parallel. Unfortunately, there are usually hidden
+	    interdependencies between values within an array
+	    (aliasing) and
+	    values in an array in successive iterations (data dependencies). <br>
+	    
+	    You are given the following matrix multiply routine written
+	    in C. 
+	    <ol>
+	      <li>Transform it to its equivalent form as if you 
+		had infinite length vector support. Take a look at Matlab
+		for inspiration.</li>
+	      <li>Take your rewritten form and modify it to support a
+		vector length of a perfect divisor of the actual
+		length of the vector.</li>
+	      <li>Your machine now supports a vector length of 4,
+		which turns out to not be a divisor of the vector
+		length. Write some fixup code that will handle this
+		case.</li>  
+	    <li>We now modify the algorithm to produce a slightly
+		different answer <em>(this one has an interdependency
+		  between iterations)</em>:
+		Transform it to its equivalent vector form. Do you
+		see any problems in your translation? Check for
+		interdependencies between successive iterations. How
+		can you fix this? You are allowed to rewrite the
+		procedure, but make sure it retains the same I/O
+		semantics.</li>
+	    </ol>
+	  </li>
+	  
+	</ol>
+      </li>
+  <li><strong>Evaluation</strong><ol>
+      <li>Which order is better for performing constant propagation (depth-first, reverse
+        depth-first, post-order, or reverse post-order)? Why? What issues did you consider?</li>
+      <li>Write a one page paper on the success and failure of the various programming languages
+        we have learned about in this course. In particular, discuss the cultural views of the
+        programming language community and the commercial software engineering community at
+        various points in history and what effect you think they could have had on the relative
+        success of a particular language.</li>
+      <li>Surf the web and find the programming manuals for three languages that you've never
+        heard of before. Discuss their design and compare and contrast them to the languages we
+        have learned about in this class. </li>
+      <li>What kind of languages are you familiar with? What kind of coding style do you have? Do
+        your styles fit any particular language? If you had the opportunity (and the manpower) to
+        design and implement your own language, what would it look like? What semantics would it
+        have? Is it possible to efficiently compile your language or must it be interpreted?</li>
+      <li>Many people have noticed that, like the English alphabet, bytecodes in a bytecode
+        interpreter are executed with a particular frequency. Based on this, they've chosen to use
+        Huffman coding (or arithmetic coding) to compress their instructions. Discuss the merits
+        and disadvantages of this scheme. Consider space efficiency, instruction compilation and
+        decode efficiency, and any debugging issues. </li>
+    </ol>
+  </li>
+</ul>
+
+<hr>
+
+<p><em>Date Modified: <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%y" startspan -->11/24/03<!--webbot bot="Timestamp" endspan i-checksum="12671" --></em></p>
+
+<p><em>Andrew Begel&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</a></em></p>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<pre>
+PicoThreads: Light-Weight Threads in Java
+
+Andrew Begel <abegel@cs.berkeley.edu>
+Josh MacDonald <jmacd@cs.berkeley.edu>
+Michael Shilman <michaels@cs.berkeley.edu>
+
+I.	Abstract
+
+
+High-performance, I/O-intensive applications often require
+complicated, split-phase, event-based implementations. Threads appear
+to be an attractive alternative because they allow the programmer to
+write a single sequence of operations and ignore the points at which
+the execution may be blocked. Unfortunately, the typical amount of
+memory required to support this technique prevents applications from
+scaling to large numbers of threads.
+
+Rather than relying on event-based programming, we use a program
+transformation to provide a low-cost thread implementation. This
+transformation retains the advantages of user-scheduled, event-based
+programs, yet efficiently supports large numbers of threads.
+
+We replace the standard Java thread mechanism with lightweight
+PicoThreads and a cooperative, event-based, user-level scheduler. This
+is accompanied by a PicoThread-aware, asynchronous network library. To
+evaluate our implementation, we measure the performance of a simple
+web crawler running thousands of threads. 
+
+[The results show that PicoThreaded programs perform comparably or
+perform substantially better than Java threaded programs when using
+large numbers of threads. ]
+
+
+II.	Introduction
+
+Threads evolved out of the operating system community as a
+general-purpose solution for implementing concurrent systems.
+Concurrency is often used by the operating system to efficiently
+overlap computation with concurrent, blocking requests.  Threads,
+however, are not ideally suited for this purpose.  Indeed, Ousterhout
+suggests that threads are seldom a good idea and proposes event-based
+programming as a better alternative. {\cite Ouster}.
+
+Event-driven or event-based programs are those which handle these
+situations by registering handlers to respond to various events.  In
+this technique, code to handle a blocking call first initiates an
+asynchronous request, and then registers a callback method to complete
+the computation when the request has completed. This implementation
+strategy does not require threads or synchronization (on a
+uni-processor), and leads to efficient, user-schedulable programs with
+little support from the operating system. Event-based programs are
+popular for implementing graphical user interfaces and are also used
+to handle large-scale network services where events correspond to the
+completion of an I/O request or the arrival of a new connection.
+
+While the advantages seem clear, event-based programming is not always
+the right answer. Threaded programming allows the programmer to write
+a logically sequential program, whereas event-based programs require
+the programmer to carefully divide each sequence of operations into
+non-blocking handlers that maintain persistent state. What began as a
+simple block of code degenerates into a much larger body of code which
+is often difficult to read, write and maintain.
+
+System threads also provide the illusion of concurrency on a uniprocessor*. 
+
+[or actual concurrency when multiple processors are available]
+
+However, the reason that event-based programming is popular is because
+it solves a large class of problems which do not require true
+concurrency. Using threads to handle overlapping, blocking requests is
+often more complicated and costly than neccesary. In particular,
+synchronization, locking and preemptive scheduling are not always
+needed, but the thread programmer must accept all three and pay the
+cost in debugging difficulty as well. For a program running on a
+uniprocessor that expects to handle requests quickly (or yield
+cooperatively), these burdens are avoidable.
+
+
+Assuming one is prepared to deal with synchronization, threads are
+still troublesome, as their memory footprint can be quite large.  For
+instance, the default thread created by {\tt pthread_create} in
+Solaris 2.5.1 reserves one megabyte of virtual address space for its
+stack and maps a minimum of one page (eight kilobytes) of virtual
+memory.  An application which would like to use many threads suffers
+from the fact that memory is allocated for the worst case, even though
+a typical thread is not likely to use its full allotment.
+
+
+Even if there is enough memory, the application's paging behaviour is
+likely to suffer. An application with 5000 threads uses 40 megabytes
+just for stack space and requires more than 32 bits of address space!
+As a compromise, the programmer can use a smaller group of threads and
+map them onto a much larger pool of tasks to be completed. This
+approach is not ideal because it forces the programmer to compromise the
+simple programming model of one thread per task. 
+
+In this paper, we will examine the requirements of high-performance,
+network-intensive applications such as web crawlers or web servers.
+These programs attempt to execute large numbers of mostly unrelated
+tasks as quickly and as efficiently as possible.  
+
+Since a 100 Mb/s network is able to sustain 3000
+simultaneous 28.8 Kb/s connections, we would like our application to
+be capable of running 3000 threads, one thread per connection.  This
+one-thread-per-task approach is appealing because it allows each
+session to be modelled within a single flow of control. 
+
+This paper addresses the problems with large-scale threaded
+programming and the dichotomy between threaded and event-based
+techniques.  Our solution is the {\em PicoThread}, a lightweight,
+user-level Java thread that can be cooperatively-scheduled,
+dispatched and suspended.  PicoThreads are implemented with a Java
+class-to-class translation.
+
+Whereas the event-based program was forced to register a callback and
+yield control to the event loop, our translation produces threaded
+programs that yield control and a {\em continuation} sufficient to
+restart the thread where it left off. This allows the programmer to
+write in the convenient, sequential style offered by threads and
+retain the efficient, low-memory characteristics of event-based
+programs. In addition, we implemented an asynchronous,
+PicoThread-compatible network library 
+
+[and wrote a web crawler in order
+to evaluate our infrastructure. ]
+
+
+[The remainder of this paper] 
+In the next section, we decribe continuation and provide a context and
+mechanism for our Java class transformation. In the third section, we
+describe the PicoThread runtime system which is made up of the
+scheduler and the network library. Fourth, we introduce Piranha, our
+massively multithreaded web crawler and compare it to an alternative
+Java threaded version. In the fifth section, we evaluate our code
+transformation and speculate on possible future work. Finally, we
+present our conclusions.
+
+
+II. Continuations and CPS Conversion
+
+A. Continuations
+
+A continuation is a return address for a procedure. This is commonly
+passed on the stack during function calls in order for procedures to
+know where to return. Most user programs do not directly manipulate
+continuations. Rather, they are used as a simple all-purpose mechanism
+for programming language compilers to implement standard iterative and
+exceptional constructs [FWH92]. In a program that has been converted to
+explicit continuation-passing style (CPS), each code block takes a
+continuation which says where to send the return result.
+
+Continuations can also be used in more sophisticated ways to manage
+control flow. For example, multithreading can be implemented by
+substituting a scheduler continuation in every normal procedure
+call, allowing the run-time system to control the execution of
+a thread at a fine granularity. Instead of continuing normal control
+flow, the scheduler can save the continuation for rescheduling at a
+later time.
+
+
+B. Continuations in Java
+
+Java byte code can be modified to use explicit continuation-passing,
+which allows us to implement user-level multithreading. A thread's
+stack usage can be calculated statically at compile-time, so
+compiler-generated continuations need only save the active stack and
+local variables. This calculation of stack and variable usage is not
+available to Java threads because they are created at runtime. By CPS
+converting Java byte code, we are able to reduce the runtime memory
+requirement incurred by mulithreaded programs.
+
+C. Implementation of CPS Conversion 
+
+1. Continuations
+
+A PicoThread continuation is a Java object which contains a reference
+to the object and method in which it was created. Since
+Java's procedure call stacks do not have dynamic extent, continuations
+must also contain extra state to store a method's local variables. PicoThread
+continuations extend Java exceptions, so that we may take advantage of
+Java's zero-cost exception mechanism to pass continuations from method
+to method.
+
+2. CPS Conversion
+
+The traditional way to implement continuation-passing is to generate
+continuations on every procedure call. We tried this in an initial
+version but found that this style leads to an inefficient
+implementation in the JVM. On every procedure call, we had to package
+up the local state and restore it when the call returned. 
+
+As an optimization, continuations are not passed during normal
+execution.  Instead, they are constructed lazily. In the event of a
+context switch, continuations are thrown up the call tree, saving the
+state in each frame. This method has a negligible effect on the
+execution of code where continuations are not used, leaving the common
+case of procedure invocation to be just as fast as Java*.
+
+
+[* The overhead amounts to an extra argument, several local variables, two
+instructions at the beginning of the code segment, and one instruction
+to push the new argument at each call to a method. ]
+
+When a continuation is rescheduled, each method in the control pathway
+is restarted and the local state restored. Upon reaching the last
+method call, the method that caused the context switch now returns
+without exception and normal execution of Java code resumes.
+
+3. Deficiencies in CPS Conversion Algorithm
+
+The above translation has some deficiencies. Java's adherence to
+strict stack discipline causes several difficulties in our code
+translation. First, the algorithm does not save the
+stack during a context switch. Values left on the stack after the
+method invocation are not accessible from the exception region, and
+thus must be left behind. The cost of saving the stack in local
+variables has not been evaluated. However, this would slow down the
+execution of a method whether or not continuations were needed. In
+our web crawler application, this was not an issue due to its
+sequential code structure.
+
+Second, it cannot capture a continuation while control is inside
+the body of a constructor or between the {\tt new} and {\tt
+invokespecial} instructions used by the JVM to construct an object.
+This restriction means that no call whose value is used as the
+argument to a {\tt new} expression may capture a continuation. Various
+techniques can be applied to compile out these untranslatable bytecode
+sequences. 
+
+Finally, the jump-to-subroutine ({\tt jsr}) opcode pushes a
+ReturnAddress on the stack. The JVM provides a bytecode to store this
+value in a register, but no way to read it without the return (ret)
+instruction. Since this register cannot be read, our translation
+cannot capture a continuation inside a subroutine block. This
+restriction could be removed by replacing {\tt jsr} and {\tt ret} with
+equivalent {\tt goto} and {\tt tableswitch} instructions.
+
+Yet another difficulty in CPS conversion is deciding which methods and
+procedure calls to translate. Our translation does not transform any
+method in the standard Java classes. Most of these methods are not
+related to I/O and do not block execution of the thread. However, the
+standard Thread and I/O classes must be rewritten to be
+PicoThread-aware in order to be used in a PicoThreaded program. If
+not, a blocking call will suspend the sole Java thread in which all of
+the PicoThreads are running. 
+
+IV.	PicoThreads Runtime System
+
+The PicoThreads implementation includes three components: a thread class,
+a scheduler and a network library. Each piece is engineered to
+support continuation-passing and capture. The scheduler uses these
+continuations to manage control flow and poll for network events. The
+threads are used to manage groups of continuations and present a
+simple abstraction for user code. The last part of this section walks
+through a typical execution path for a networked application. 
+
+A.	PicoThreads
+
+PicoThread is a layer above continuations that presents a Java-like
+thread abstraction to the user. The user writes their code using the
+standard Java thread class. The first stage of the CPS conversion
+algorithm changes all references from java.lang.Thread to
+pico.PicoThread. All programs that wish to run threads implement Runnable
+(which is converted to PicoRunnable).
+
+B. Scheduler
+
+In our system, a round-robin scheduler processes continuations from a
+queue. When a PicoThread begins, it puts a ContinueBegin continuation
+on the queue. When the scheduler dequeues the continuation, it calls the
+run() method of the associated PicoRunnable object. The scheduler
+wraps this run() call in a top-level contination exception
+handler. Whenever a method throws a continuation it will eventually be
+caught by this handler and enqueued.  
+
+C.	Asynchronous Network Library
+
+The PicoThread network library replaces the Socket, ServerSocket,
+SocketInputStream and SocketOutputStream classes from Java. There are
+four types of blocking calls in these classes: connect, accept, read
+and write.  Each blocking call is replaced by a split-phase call. The
+first phase initiates an asynchronous request on the network and
+returns immediately by throwing a continuation to the
+caller. When the network is polled, if any of these asynchronous calls
+can be completed, the data is made available and the library enqueues
+the blocking PicoThread with the scheduler.
+
+In Java, DNS lookup is an operation that blocks the calling thread.
+In order to make this asynchronous as well, we found a non-blocking
+DNS library on the net and incorporated it into our code (BIND
+Contributed Code Asynchronous Resolver Library: Darren Reed
+ftp://ftp.isc.org/isc/bind/src/cur/bind-8/bind-contrib.tar.gz).
+
+We had to modify the structure of the user code during our translation
+in order to avoid context-switching while values were left on the
+stack. In addition, the Java Socket constructor performs a connect to
+the port before it returns. Since we cannot capture continuations
+inside constructors, we rewrite the code to include a separate call to
+connect after the new Socket call is complete. 
+
+To achieve high performance, we buffer our Socket input stream. We
+have found that varying buffer sizes between 2-50 KB does not seem to
+have any effect on network throughput. If there is no data in the
+buffer when a read call occurs, the read call throws a
+continuation. However, if the buffer has enough data in it to fulfill
+the request, then the data is returned immediately via normal function
+return.
+
+C.	Walkthrough of Network Call
+
+<insert picture here>
+
+Figure n. shows a walkthrough of a network call through our system. 
+
+
+V.	Piranha: A PicoThreaded Web Crawler
+
+Piranha is a web crawler which was written to illustrate the
+programming and performance advantage of PicoThreads over Java system
+threads. A web crawler is conceptually a simple program. Starting from
+a root web page, the program reads all the links and recurses on the
+new pages. Coding this with threads leads to a simple implementation:
+
+   import java.net.*;
+
+   public class Piranha implements Runnable {
+
+     URL url;
+
+     public Piranha(URL u) {
+       url = u;
+     }
+
+     public void run() {
+       for(Enumeration e = getLinks(url); e.hasMoreElements(); ) {
+         Piranha p = new Piranha((URL)e.nextElement());
+         new Thread(p).start();
+       }
+     }
+   }
+
+
+This implementation spawns a new thread for every URL to be processed,
+traversing web pages as fast as it can. Given the tree-like nature of
+the web, this program quickly creates a large number of threads. In
+fact, starting from Yahoo, one can reach around 30,000 links in no
+time at all.
+
+A. Thread Pools
+
+Any experienced Java programmer will look at this program and declare
+it infeasible. Given the current performance of Java threads, they are
+right. Threads are slow to create and use too much memory. Thread
+creation and context-switching are known to be slow in many
+implementations of the JVM [B97]. Creating a new thread per URL causes
+not just one object to be created, but all related local data
+structures as well. Since Java threads use both a Java stack and
+native C thread stack, each would contain at least one page of stack
+space. Crawling through 30,000 links, with one thread per link, would
+run through 240 MB of memory. Java, a garbage-collected language,
+would be forced to GC constantly. In our tests, we found that the
+garbage collector was forced to recover 500KB five times every second.
+
+A careful Java programmer has a keen eye for reusing objects and
+threads. Object reuse is popular in other garbage-collected languages,
+when programmers need to make sure that no memory is consed during
+execution. This leads to a cramped, ad-hoc style of program that we
+call thread pools. In order to evaluate this technique, we wrote a web
+crawler which preallocates all memory buffers and creates a constant
+number of reusable threads. If the URLs in the queue are consumed more
+slowly than new ones are generated, extra ones are discarded.
+
+We ran this version with varying numbers of Java threads in Java 1.1.5
+under Solaris 2.5.1 to test its performance.
+
+
+<insert graph here>
+
+We can see here that our throughput maxes out with three Java
+threads. We get better network bandwidth for larger files, which is
+to be expected because we incur less system overhead.
+We only ran up to 32 threads because our performance seemed to be dropping
+considerably with more than 8 threads.
+
+B. One Thread per URL
+
+We ran the simple web crawler with Java threads and PicoThreads in
+Java 1.1.5 under Solaris 2.5.1. We ran two experiments, one on a
+controlled set of web servers in a local cluster,
+and the other on Yahoo.
+
+<insert one thread per url graph>
+
+This graph is much more illuminating. We see how a PicoThread
+implementation of the simple multithreaded web crawler does against an
+equivalent implementation that uses Java threads. For each size file,
+PicoThreads get three to fifteen times the bandwidth of the Java
+threads. We speculate this is mostly due to our cooperative,
+user-level context-switching.
+
+Since a PicoThread only context switches when a network call needs to
+block, once the read buffer has been filled, the PicoThread gets to
+process a large amount of data before yielding control. Java uses
+preemptive scheduling and more evenly distributes the execution time of
+each thread during parsing of the HTML files. This leads to slower
+throughput overall. In addition, the Java threaded version uses more
+memory per thread than the PicoThread version, thus exhibiting bad
+paging and cache behavior.
+
+PicoThread performance only achieved a maximum of 50 Kb/sec, while our
+optimized thread pool version using Java threads achieved 60 Kb/s. We
+analyzed the execution status of our PicoThreads whenever they did a
+state change and found that our scheduler and network
+read/write/connect time was only using 5-10% of the total time. This
+means that 90% of the time was spent in Java user code parsing
+URLs. Under a JIT compiler or faster JVM, our CPU-bound code could
+easily perform better. We also do not worry about minimizing memory
+allocation. We speculate that our web crawler performance would improve if
+we took better care to reuse memory structures in between thread
+lifetimes.
+
+VI.	Results/Discussion
+
+CPS conversion is possible, straightforward and easy.
+
+JVM stack machine and security model complication the iplemnation ofn
+continaution passing.
+
+Java security implications?
+
+One important concern is whether the translation compromises the Java
+security model.  The translated code cannot allow unpriveledged access
+to private methods or its local state.  Since the translation does not
+alter the access flags of any method, field, or class, we only have to
+insure that it is impossible for an unpriveledged agent to construct
+to construct a fake continuation and local state.  Since the ability
+to construct a continuation gives the ability to enter a public or
+protected method with arbitrary state at any cps-call, this must be
+prevented for the translated class to be secure.  Continuation objects
+can be treated as private inner classes,
+
+
+Future Work:
+
+Perhaps compile Java into a register machine using locals as
+registers. Gets around stack problem.
+
+
+
+
+
+VII.	Conclusion
+
+It is possible to write highly-parallel threaded programs that are
+as efficient as custom, split-phase, event-based programs. Argument
+from Outsterhoust. Contradict the fucking idiot.
+
+
+Java's threading model and overall performance must improve before
+this approach can be used effectively.
+
+
+After suitably protecting the runtime libraries, the CPS conversion
+does not compromise the Java security model.
+
+The normal execution path is not affected by CPS
+conversion. Continuations are only creazted and p[assed during \a c
+ontext switch.
+
+
+
+
+VIII.	References
+
+[ACPN95] T. Anderson, D. Culler, D. Patterson, and the NOW Team. A
+Case for Net- works of Workstations: NOW. IEEE Micro, Feb, 1995.
+
+[ABLL92] T. Anderson, B. Bershad, E. Lazowska, H. Levy. Scheduler
+Activations: Effec- tive Kernel Support for the User-Level Management
+of Parallelism. ACM Transactions on Computer Systems, 10(1):53-79,
+February 1992.
+
+[AG97] K. Arnold and J. Gosling. The Java Programming
+Language. Addison Wesley.  1997.
+
+[B97] D. Bell. Make Java Fast: Optimize! JavaWorld, April 1997.
+http://www.javaworld.com/javaworld/jw-04-1997/jw-04-optimize.html
+
+[GB96] P. Gauthier and E. Brewer. Inktomi/Hotbot reference.
+
+[LAM82].  B. Lampson.  Hints for Computer System Design.
+Communications of the ACM XXX
+
+[LK97] T. Lindholm and F. Yellin. The Java Virtual Machine
+Specification. Addison Wes- ley. 1997.
+
+[MD97] J. Meyer and T. Downing. Java Virtual Machine. O'Reilley and
+Associates. March 1997.
+
+[VBBV95] T. von Eicken, A. Basu, V. Buch, and W. Vogels. U-Net: a
+user-level network interface for parallel and distributed
+computing. Proceedings of the Fifteenth ACM Symposium on Operating
+System Principles, pages 40-53, 1995.
+
+[WW94] C. Waldspurger and W. Weihl.  Lottery Scheduling: Flexible
+Proportional-Share Resource Mangement.  Proceedings of the First
+Symposium on Operating System Design and Implementation, November
+1994.
+
+</pre>

@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>H-3ARMONIA </TITLE>
+<META NAME="description" CONTENT="H-3ARMONIA ">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="qual.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html109"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html107"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html101"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html110"
+  HREF="node8.html">Mixing Voice and Programming</A>
+<B> Up:</B> <A NAME="tex2html108"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html102"
+  HREF="node6.html">Spoken Java</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00040000000000000000">
+H-3ARMONIA </A>
+</H1>
+
+<P>
+Our research group has conducted research on tools and development
+environments over a long period. Its research interest focuses on
+providing the underlying technology that makes integrated software
+development both possible and powerful. In our three major projects on
+interactive development technologies, our emphasis has been on the
+importance of <I>language-based support</I>, and on exploiting the
+advantages of <I>persistent</I>, <I>interactive</I>, <I>presentation-rich</I> settings. The Pan environment&nbsp;[<A
+ HREF="node29.html#BGV92">7</A>] was
+created to explore topics in language-based editing. It yielded new
+results in incremental syntax and semantic
+analysis&nbsp;[<A
+ HREF="node29.html#ballance_butcher_graham:88">5</A>,<A
+ HREF="node29.html#ballance_graham:91iclp">6</A>] and
+in user-centered language-based services&nbsp;[<A
+ HREF="node29.html#mlvdv-coherent">54</A>]. The
+Ensemble
+project&nbsp;[<A
+ HREF="node29.html#darpapi92">24</A>,<A
+ HREF="node29.html#proteus-5sde">25</A>,<A
+ HREF="node29.html#Wagner_Graham95">61</A>,<A
+ HREF="node29.html#wagner-pldi">63</A>,<A
+ HREF="node29.html#wagner-toplas">65</A>]
+studied multiple-representation language based document manipulation,
+for both formal and natural languages.
+
+<P>
+Our current project, H-3ARMONIA, is ideally suited for supporting the
+necessary programming language analysis. The H-3ARMONIA framework was
+derived by embedding some of the software built for the Ensemble
+project in a new and extensible architecture. While Ensemble's novel
+direction was to explore the combination of (improved) interactive
+language-based analysis and multi-media document structuring and
+presentation, H-3ARMONIA focuses on providing a flexible set of
+embeddable tools for applications that require <I>incremental</I>,
+language-based analysis services.
+
+<P>
+Incrementality is fundamental to the H-3ARMONIA framework because it is
+the basis for building scalable, interactive environments. The amount
+of re-analysis is proportional to the amount of change, not the size
+of the entity that has been changed. This incrementality will be
+essential to realize practical analysis for processing voice input.
+
+<P>
+The heart of the H-3ARMONIA framework is the Language Kernel, which
+provides the infrastructure for linguistic analysis and manipulation.
+The centerpiece of the Language Kernel is the annotated (or attributed),
+syntax tree abstraction, which constitutes an internal representation of
+program code or other source documents in the H-3ARMONIA 
+framework.&nbsp;<A NAME="tex2html4"
+  HREF="footnode.html#foot156"><SUP>4</SUP></A>  A distinguishing feature of the H-3ARMONIA syntax trees is
+the explicit representation of whitespace and comments. In addition to
+capturing user-provided formatting and annotations, such representation
+allows the Language Kernel to ``unparse'' the syntax tree, generating a
+textual representation of the program that may be required by some
+text-based tools&nbsp;[<A
+ HREF="node29.html#wagner-whitespace">64</A>].
+
+<P>
+H-3ARMONIA annotated syntax trees are modeled as <EM>self-versioned documents</EM>,
+constructed from versioned primitive data
+types&nbsp;[<A
+ HREF="node29.html#wagner-versioning">62</A>].  In other words, the document
+representation incorporates a fine-grained history of changes to
+it. Self-versioned documents facilitate access to previous versions by
+transparently incorporating modifications as they occur. Not only does
+that support powerful forms of undo operations, it is an underlying
+mechanism for maintaining a development history.  Because the
+versioning is organized structurally rather than temporally, changes
+to particular portions of the program can be recovered even if other
+changes were made in between.  Additionally, versioned documents
+provide an efficient change-reporting framework that can be utilized
+by various tools (for example, providing diagnostics in terms of
+differences from past versions, rather than guesses at the nature of
+misuse of language rules). The history mechanism is sufficiently
+general to capture changes made to attributes as well as to syntax.
+
+<P>
+This history mechanism will be vital to supporting the kind of
+feedback and rollback support required for processing possibly
+erroneously processed vocal input. There are many occasions for the
+users' intent to be misrecognized or misanalyzed, resulting in
+potentially harmful changes to their program. In such a noisy
+environment one must either support undo, or else ask the user to
+confirm all changes before they happen. Since asking the user prior to
+making every change will be prohibitively annoying, we will use
+H-3ARMONIA's history mechanism to support the powerful forms of undo
+which will be required.
+
+<P>
+The Language Kernel provides incremental syntax analysis that can both
+construct the syntax trees from traditional text files, and incorporate
+changes to the syntax trees incrementally as they are introduced.
+The Language Kernel includes two incremental lexer drivers and two
+incremental parser drivers.  One parser driver is based on LR-parsing
+technology&nbsp;[<A
+ HREF="node29.html#wagner-toplas">65</A>]; the other supports incremental
+Generalized LR parsing
+(GLR)&nbsp;[<A
+ HREF="node29.html#wagner-pldi">63</A>,<A
+ HREF="node29.html#rekers-thesis">47</A>,<A
+ HREF="node29.html#tomita-book">53</A>]. The descriptive
+power of GLR eliminates the need for most ``grammar-hacking'' and
+allows a syntax specification that naturally corresponds to abstract
+syntax, without the need for complex
+mappings&nbsp;[<A
+ HREF="node29.html#ballance_butcher_graham:88">5</A>,<A
+ HREF="node29.html#vandenbrand-parsing">55</A>].
+
+<P>
+GLR is a context-free parsing algorithm originally derived from
+Earley's parsing algorithm&nbsp;[<A
+ HREF="node29.html#earley68">18</A>]. Unlike a more traditional
+parsing algorithm such as LL(1) or LALR(1), GLR supports <I>ambiguous</I> context-free parsing. Originally designed for parsing
+natural languages, GLR has proven valuable in simplifying programming
+language grammars to the point where the grammar resembles the ideal
+abstract syntax. This freedom comes at the price of introducing
+ambiguities into the parsing process.  but for a language originally
+designed to be conflict-free, the conflicts can be eliminated once the
+program has been fully parsed. When the grammar is inherently
+ambiguous, the final result will not be a parse tree, but a
+parse forest. First introduced by Tomita, a shared-packed parse forest
+is a data structure capable of recording all possible parse trees
+produced by the GLR parser in only slightly larger than <IMG
+ WIDTH="39" HEIGHT="31" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.png"
+ ALT="$O(n)$"> space.
+
+<P>
+The GLR algorithm is an important part of our solution to resolving
+ambiguities in vocal expression of the various actions involved in
+software development. It can be thought of as a slightly more
+complicated variant of LR parsing. As with LR parsing, a parse table
+is constructed from LR(0) item sets. However, when multiple actions
+are found to insert into a cell in the table (indicating a
+shift-reduce, or reduce-reduce conflict), LR table construction
+algorithms choose one action to insert. In contrast, GLR table
+construction algorithms place all of the actions into the table's
+cell.
+
+<P>
+As with LR parsers, GLR parsers use a parse table, a parse stack, and
+an input token stream to produce a parse of the input. To optimize
+space during the algorithm's execution, the parse stack is actually
+represented as a graph, to better handle the multiple contexts
+necessary to record multiple parses at the same time. At runtime, GLR
+parsing acts identically to LR parsing when processing productions
+that have no inherent ambiguity. However, when both a shift and reduce
+action are called for the by the parse table, GLR forks the parsing
+process. Essentially, it splits the current parse stack into <IMG
+ WIDTH="14" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$n$"> parse
+stacks that each run one of the conflicting actions. Since the parse
+stack is really a graph, we merely add an extra edge to the graph and
+record that there are multiple active parsers. Each active parser is
+able to shift the current token, but by default, if there is an active
+parser that is able to take a reduce action, it is executed
+first. This enables all of the active parsers to follow the input
+token stream together. If a parse stack fails to parse the input
+correctly, it is declared inactive and removed from the parse
+graph. If two parse stacks ever reach the same state and are both
+ready to consume the same input token, they are merged. This allows
+the parsing algorithm to cut down on duplicated work and isolate the
+ambiguous piece of the parse tree to the portions of the input that
+are ambiguous. When the parse graph is reduced to the start state and
+all of the input has been consumed, the result is a shared-packed
+parse forest which contains all of the possible parse trees that had
+been identified by the successful active parsers.
+
+<P>
+Our GLR parser is slightly more elaborate than what I've described
+here because operates incrementally. If there are changes in the input
+token stream, at any place in the stream, the parser can reparse the
+changed tokens without deconstructing and reconstructing the entire
+parse forest. This incrementality is crucial to supporting vocal input
+in real-time. 
+
+<P>
+In addition to lexing and parsing, the Language Kernel includes the
+infrastructure for semantic analysis, which can be utilized by a
+language description writer to provide semantic analysis services.
+Our current implementation of semantic analysis support is not
+incremental and does not allow analysis across multiple translation
+units. As discussed in a subsequent section, we are extending this
+infrastructure to provide fully incremental semantic analysis through
+an attribute grammar evaluator.
+
+<P>
+In order to give the developer needed flexibility in modifying
+programs, the Language Kernel continues to provide services when
+programs are ill-formed, incomplete, or
+inconsistent&nbsp;[<A
+ HREF="node29.html#mlvdv-coherent">54</A>].  The incrementality of the
+H-3ARMONIA parsing algorithms, together with history-sensitive error
+recovery&nbsp;[<A
+ HREF="node29.html#wagner-thesis">60</A>], naturally incorporate inconsistency
+into the syntax tree by enabling syntax analysis to continue beyond
+malformed regions, and by enabling malformed regions to contain
+well-formed substructure.  This capability is required to support the
+propensity of developers to jump around their code at will while
+editing, leaving many code artifacts incomplete. Incompleteness is
+handled transparently by the framework
+
+<P>
+H-3ARMONIA's language-specific information is carried by 
+<EM>language modules</EM>.  A language module may encompass both hand-coded
+mechanisms and information that is derived from a formal
+specification. Each language specification is translated into a set of
+C<FONT SIZE="-2">++</FONT> files, which are then compiled and linked to produce a shared
+(dynamically linked) library.  This compilation is performed off-line,
+permitting optimizations that result in time- and space-efficient
+representations and algorithms. Any programming language having formal
+syntactic and semantic specifications can be easily added to the
+H-3ARMONIA framework by providing a syntactic and semantic description of
+that language. The language module architecture is open-ended, allowing
+each language to provide other kinds of analyses and services
+(e.g. control/data flow, program transformations). It is also possible
+to interface external tools as part of the analysis process.
+
+<P>
+The shared libraries representing compiled language objects are loaded
+on demand into the running environment.  This arrangement makes it
+possible to support a large number of languages simultaneously without
+the environment itself becoming unmanageably large, and precludes the
+need to specify the set of available languages when the environment is
+built.&nbsp;<A NAME="tex2html5"
+  HREF="footnode.html#foot290"><SUP>5</SUP></A>
+<P>
+Even though the H-3ARMONIA framework is written in the C<FONT SIZE="-2">++</FONT> programming
+language, it is clear that C<FONT SIZE="-2">++</FONT> is frequently not the most appropriate
+language for building interactive tools.  To facilitate rapid
+development of such tools, we have created bindings for higher-level
+programming languages including Java, Tcl, and Emacs Lisp. The latter
+lets us utilize a widely-used editor rather than creating a legacy
+editing front-end.  We have also developed an interface to
+XEmacs&nbsp;[<A
+ HREF="node29.html#xemacs-ref">12</A>] that gives the user access to H-3ARMONIA 
+services as well us the usual XEmacs services. When we are ready to do
+further work on advanced presentation and editing models, we will
+determine whether that editor can be enhanced appropriately, or
+whether we need an alternative editing interface with support for a
+different user model.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html109"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html107"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html101"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html110"
+  HREF="node8.html">Mixing Voice and Programming</A>
+<B> Up:</B> <A NAME="tex2html108"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html102"
+  HREF="node6.html">Spoken Java</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

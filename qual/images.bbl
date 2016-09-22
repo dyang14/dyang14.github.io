@@ -1,0 +1,395 @@
+\begin{thebibliography}{10}
+
+\bibitem{messagepad}
+Apple Computer, Inc.
+\newblock {\em The {Newton MessagePad (TM)}}.
+
+\bibitem{arnold00}
+Stephen~C. Arnold, Leo Mark, and John Goldthwaite.
+\newblock Programming by voice, vocal programming.
+\newblock In {\em Proceedings of ASSETS}, Arlington, VA, November 2000.
+
+\bibitem{baber93}
+C.~Baber and K.~S. Hone.
+\newblock Modelling error recovery and repair in automatic speech recognition.
+\newblock {\em International Journal of Man-Machine Studies}, 39(3):495--515,
+  1993.
+
+\bibitem{psg}
+Rolf Bahlke and Gregor Snelting.
+\newblock The {PSG} system: From formal language definitions to interactive
+  programming environments.
+\newblock {\em ACM Transactions on Programming Languages and Systems},
+  8(4):547--576, October 1986.
+
+\bibitem{ballance/butcher/graham:88}
+Robert~A. Ballance, Jacob Butcher, and Susan~L. Graham.
+\newblock Grammatical abstraction and incremental syntax analysis in a
+  language-based editor.
+\newblock In {\em Proceedings of the ACM SIGPLAN '88 Symposium on Compiler
+  Construction}, pages 185--198, Atlanta, GA, June 1988. ACM Press.
+
+\bibitem{ballance/graham:91iclp}
+Robert~A. Ballance and Susan~L. Graham.
+\newblock Incremental consistency maintenance for interactive applications.
+\newblock In K.~Furukawa, editor, {\em Proceedings of the Eighth International
+  Conference on Logic Programming}, pages 895--909. The {MIT} Press, Cambridge,
+  Massachusetts and London, England, June 1991.
+
+\bibitem{BGV92}
+Robert~A. Ballance, Susan~L. Graham, and Michael~L. {Van De Vanter}.
+\newblock The {P}an language-based editing system.
+\newblock {\em ACM Transactions on Software Engineering and Methodology},
+  1(1):95--127, January 1992.
+
+\bibitem{begel-emst222a}
+Andrew Begel.
+\newblock From the abstract to the concrete, May 1998.
+
+\bibitem{centaur}
+P.~Borras, D.~Cl\'ement, Th. Despeyroux, J.~Incerpi, G.~Kahn, B.~Lang, and
+  V.~Pascual.
+\newblock {CENTAUR}: The system.
+\newblock In {\em Proceedings of the ACM SIGSOFT/SIGPLAN Software Engineering
+  Symposium on Practical Software Development Environments}, pages 14--24,
+  November 1988.
+
+\bibitem{butcher-ladle}
+Jacob Butcher.
+\newblock Ladle.
+\newblock Technical Report CSD-89-519, University of California, Berkeley,
+  November 1989.
+
+\bibitem{linn-clancy92-sigcse}
+Michael~J. Clancy and Marcia~C. Linn.
+\newblock Case studies in the classroom.
+\newblock In {\em Proceedings of the 23rd Technical Symposium on Computer
+  Science Education}, volume 24(1) of {\em SIGSCE Bulletin}, pages 220--224,
+  New York, NY, USA, March 1992. ACM Press.
+
+\bibitem{xemacs-ref}
+XEmacs Contributors.
+\newblock {Xemacs} project home page.
+\newblock http://www.xemacs.org.
+
+\bibitem{Davis93}
+Elizabeth~A. Davis, Marcia~C. Linn, Lydia~M. Mann, and Michael~J. Clancy.
+\newblock Mind your ps and qs: Using parentheses and quotes in {LISP}.
+\newblock In {\em Empirical Studies of Programmers: Fifth Workshop}, Papers,
+  pages 62--85, 1993.
+
+\bibitem{dekkers92}
+Christ Dekkers, Mark-Jan Nederhof, and Janos~J. Sarbo.
+\newblock Coping with ambiguity in decorated parse forests.
+\newblock In {\em Coping with Linguistic Ambiguity in Typed Feature Formalisms,
+  Proceedings of a Workshop held at ECAI-92}, Vienna, Austria, August 1992.
+
+\bibitem{ag-book}
+Pierre Deransart, Martin Jourdan, and Bernard Lorho.
+\newblock {\em Attribute Grammars: Definitions, Systems and Bibliography}.
+\newblock Springer-Verlag, 1988.
+
+\bibitem{Desilets}
+Alain Desilets.
+\newblock {\em VoiceGrip 3}.
+\newblock http://ai.iit.nrc.ca/il\_public/VoiceCode.
+
+\bibitem{dragon}
+Dragon Systems, Inc.
+\newblock {\em {Dragon Dictate} Product Home Page}.
+\newblock http://www.dragonsystems.com/products/dragondictate.
+
+\bibitem{earley68}
+Jay Earley.
+\newblock {\em An Efficient Context-Free Parsing Algorithm}.
+\newblock PhD thesis, Computer Science Dept., Carnegie-Mellon University,
+  Pittsburgh, PA, 1968.
+
+\bibitem{Eisenberg87}
+Michael Eisenberg, Mitchel Resnick, and Franklyn Turbak.
+\newblock Understanding procedures as objects.
+\newblock In {\em Empirical Studies of Programmers: Second Workshop}, pages
+  14--32, 1987.
+
+\bibitem{env-proc}
+Proceedings of the fifth {ACM SIGSOFT} symposium on software development
+  environments, December 1992.
+\newblock Published as ACM SIGSOFT Software Engineering Notes, Volume 17,
+  Number 5.
+
+\bibitem{fischer84poe}
+C.~N. Fischer, G.~F. Johnson, J.~Mauney, A.~Pal, Stock, and D.~L.
+\newblock The {Poe} language-based editor project.
+\newblock {\em ACM SIG{\-}PLAN Notices}, 19(5):21--29, 1984.
+
+\bibitem{Fix93}
+Vikki Fix, Susan Wiedenbeck, and Jean Scholtz.
+\newblock Mental representations of programs by novices and experts.
+\newblock In {\em Proceedings of ACM INTERCHI'93 Conference on Human Factors in
+  Computing Systems}, Understanding Programming, pages 74--79, 1993.
+
+\bibitem{Goldenson91}
+Dennis~R. Goldenson and Bing~Jyun Wang.
+\newblock Use of structure editing tools by novice programmers.
+\newblock In {\em Empirical Studies of Programmers: Fourth Workshop}, Papers,
+  pages 99--120, 1991.
+
+\bibitem{darpapi92}
+Susan~L. Graham.
+\newblock Language and document support in software development environments.
+\newblock In {\em Proceedings of the {DARPA} '92 Software Technology
+  Conference}, Los Angeles, April 1992.
+
+\bibitem{proteus-5sde}
+Susan~L. Graham, Michael~A. Harrison, and Ethan~V. Munson.
+\newblock The {Proteus} presentation system.
+\newblock In {\em Proceedings of the Fifth {ACM SIGSOFT} Symposium on Software
+  Development Environments}, pages 130--138. ACM Press, December 1992.
+
+\bibitem{harper94}
+Mary Harper.
+\newblock Storing logical form in a shared-packed forest, 1994.
+
+\bibitem{viavoice}
+IBM, Inc.
+\newblock {\em {IBM ViaVoice} Product Home Page}.
+\newblock http://www-4.ibm.com/software/speech/.
+
+\bibitem{igarashi97}
+Takeo Igarashi, Satoshi Matsuoka, Sachiko Kawachiya, and Hidehiko Tanaka.
+\newblock Interactive beautification: {A} technique for rapid geometric design.
+\newblock In {\em Proceedings of the ACM Symposium on User Interface Software
+  and Technology}, Constraints, pages 105--114, 1997.
+
+\bibitem{janin97}
+Adam Janin.
+\newblock Speech-oriented programming language, Spring 1997.
+
+\bibitem{arcadia}
+R.~Kadia.
+\newblock {Issues Encountered in Building a Flexible Software Development
+  Environment - Lessons from the Arcadia Project}.
+\newblock In {\em Proceedings of the Fifth ACM SIGSOFT Symposium on Software
+  Development Environments}, pages 169--180, December 1992.
+\newblock Published as SIGSOFT Software Engineering Notes, Volume 17, Number 5.
+
+\bibitem{KitaKawabata89}
+K.~Kita, T.~Kawabata, and H.~Saito.
+\newblock {HMM} contunuous speech recognition using predictive {LR} parsing.
+\newblock In {\em Proceedings of the IEEE International Conference on
+  Acoustics, Speech, and Signal Processing}, 1989.
+
+\bibitem{landay95}
+James~A. Landay and Brad~A. Myers.
+\newblock Interactive sketching for the early stages of user interface design.
+\newblock In {\em Proceedings of ACM CHI'95 Conference on Human Factors in
+  Computing Systems}, volume~1 of {\em Papers: Programming by Example}, pages
+  43--50, 1995.
+
+\bibitem{tomita-lavie}
+Alon Lavie and Masaru Tomita.
+\newblock {GLR$^*$} --- an efficient noise-skipping parsing algorithm for
+  context free grammars.
+\newblock In {\em Proc.\ of the 3{\/$^{rd}$} Int.\ Workshop on Parsing
+  Technology. Tilburg, {NL} {\&} Durbuy, {BE}, 1993}, pages 123--134, 1993.
+
+\bibitem{Linn-Clancy92}
+Marcia~C. Linn and Michael~J. Clancy.
+\newblock The case for case studies of programming problems.
+\newblock {\em CACM}, 35(3):121--132, March 1992.
+
+\bibitem{maddox-thesis}
+William Maddox.
+\newblock {\em Incremental Static Semantic Analysis}.
+\newblock PhD thesis, University of California, Berkeley, January 14, 1998.
+
+\bibitem{mankoff00-uist}
+Jennifer Mankoff, Scott~E. Hudson, and Gregory~D. Abowd.
+\newblock Interaction techniques for ambiguity resolution in recognition-based
+  interfaces.
+\newblock In {\em UIST}, pages 11--20, 2000.
+
+\bibitem{burlap}
+Jennifer Mankoff, Scott~E. Hudson, and Gregory~D. Abowd.
+\newblock Providing integrated toolkit-level support for ambiguity in
+  recognition-based interfaces.
+\newblock In {\em Proceedings of ACM CHI 2000 Conference on Human Factors in
+  Computing Systems}, volume~1, pages 368--375, 2000.
+
+\bibitem{marx94}
+Matt Marx and Chris Schmandt.
+\newblock Putting people first: Specifying proper names in speech interfaces.
+\newblock In {\em Proceedings of the ACM Symposium on User Interface Software
+  and Technology}, Speech and Sound, pages 29--37, 1994.
+
+\bibitem{myers98}
+Brad Myers.
+\newblock Natural programming: Project overview and proposal.
+\newblock Technical Report CMU-CS-98-101, Carnegie Mellon University, January
+  1998.
+
+\bibitem{Neal87}
+Lisa~Rubin Neal.
+\newblock Cognition-sensitive design and user modeling for syntax-directed
+  editors.
+\newblock In {\em Proceedings of ACM CHI+GI'87 Conference on Human Factors in
+  Computing Systems and Graphics Interface}, Adaptive Interfaces, pages
+  99--102, 1987.
+
+\bibitem{nederhof93}
+M.~Nederhof and J.~Sarbo.
+\newblock Efficient decoration of parse forests, 1993.
+
+\bibitem{oviatt99}
+Sharon Oviatt.
+\newblock Mutual disambiguation of recognition errors in a multimodal
+  architecture.
+\newblock In {\em Proceedings of ACM CHI 99 Conference on Human Factors in
+  Computing Systems}, volume~1 of {\em Speech and Multimodal Interfaces}, pages
+  576--583, 1999.
+
+\bibitem{palmpilot}
+Palm, Inc.
+\newblock {\em {Palm Pilot (tm)}}.
+
+\bibitem{Petre97}
+Marian Petre and Alan~F. Blackwell.
+\newblock A glimpse of expert programmers' mental imagery.
+\newblock In {\em Empirical Studies of Programmers: Seventh Workshop}, pages
+  109--123, 1997.
+
+\bibitem{Ramalingam97}
+Vennila Ramalingam and Susan Wiedenbeck.
+\newblock An empirical study of novice program comprehension in the imperative
+  and object-oriented styles.
+\newblock In {\em Empirical Studies of Programmers: Seventh Workshop}, pages
+  124--139, 1997.
+
+\bibitem{garden86}
+Steven~P. Reiss.
+\newblock {GARDEN} tools: Support for graphical programming.
+\newblock In Tor M. Didriksen~Reidar Conradi and Dag~H. Wanvik, editors, {\em
+  Proceedings of the International Workshop on Advanced Programming
+  Environments}, volume 244 of {\em LNCS}, pages 59--85, Trondheim, Norway,
+  June 1986. Springer.
+
+\bibitem{rekers-thesis}
+Jan Rekers.
+\newblock {\em Parser Generation for Interactive Environments}.
+\newblock PhD thesis, University of Amsterdam, 1992.
+
+\bibitem{csg}
+Thomas~W. Reps and Tim Teitelbaum.
+\newblock {\em The {Synthesizer Generator}: A System for Constructing
+  Language-Based Editors}.
+\newblock Springer-Verlag, 1989.
+
+\bibitem{schiehlen96}
+M.~Schiehlen.
+\newblock Semantic construction from parse forests.
+\newblock In {\em Proceedings of the 16th International Conference on
+  Computational Linguistics (COLING'96).}, 1996.
+
+\bibitem{suhm96}
+B.~Suhm, B.~Myers, and A.~Waibel.
+\newblock Interactive recovery from speech recognition errors in speech user
+  interfaces.
+\newblock In {\em Proc. ICSLP '96}, volume~2, pages 865--868, Philadelphia, PA,
+  October 1996.
+
+\bibitem{suhm99}
+Bernhard Suhm, Alex Waibel, and Brad Myers.
+\newblock Model-based and empirical evaluation of multimodal interactive error
+  correction.
+\newblock In {\em Proceedings of ACM CHI 99 Conference on Human Factors in
+  Computing Systems}, volume~1 of {\em Speech and Multimodal Interfaces}, pages
+  584--591, 1999.
+
+\bibitem{sbee}
+Gerd Szwillus and Lisa Neal.
+\newblock {\em Structure-Based Editors and Environments}.
+\newblock Academic Press, New York, NY, USA, 1996.
+
+\bibitem{Teitelbaum79}
+T.~Teitelbaum.
+\newblock The {Cornell} program synthesizer: a syntax-directed programming
+  environment.
+\newblock {\em ACM SIG{\-}PLAN Notices}, 14(10):75--??, October 1979.
+
+\bibitem{tomita-book}
+Masaru Tomita.
+\newblock {\em Efficient Parsing for Natural Languages}.
+\newblock Kluwer Academic Publishers, 1985.
+
+\bibitem{mlvdv-coherent}
+Michael~L. {Van De Vanter}, Susan~L. Graham, and Robert~A. Ballance.
+\newblock Coherent user interfaces for language-based editing systems.
+\newblock {\em International Journal of Man-Machine Studies}, 37:431--466,
+  1992.
+
+\bibitem{vandenbrand-parsing}
+Mark {Van Den Brand}, Alex Sellink, and Chris Verhoef.
+\newblock Current parsing techniques in software renovation considered harmful.
+\newblock In {\em 6th International Workshop on Program Comprehension}, pages
+  108--117. IEEE Computer Society Press, June 1998.
+
+\bibitem{asf+sdf1}
+Mark {Van den Brand}, A.~{Van Deursen}, P.~Klint, and S.~Klusener.
+\newblock Industrial applications of {ASF+SDF}.
+\newblock {\em Lecture Notes in Computer Science}, 1101:9--??, 1996.
+
+\bibitem{asf+sdf2}
+Mark {Van den Brand} and E.~Visser.
+\newblock The {ASF+SDF} meta-environment: Documentation tools for free!
+\newblock {\em Lecture Notes in Computer Science}, 915:803--??, 1995.
+
+\bibitem{visser97-disambiguation}
+E.~Visser.
+\newblock A case study in optimizing parsing schemata by disambiguation
+  filters.
+\newblock In {\em Proceedings of the International Workshop on Parsing
+  Technology}, Boston, MA, 1997.
+
+\bibitem{pbv-toolkit}
+Voice Coders.
+\newblock {\em Program By Voice Toolkit}.
+\newblock http://www.codevox.com/pbvkit.
+
+\bibitem{wagner-thesis}
+Tim~A. Wagner.
+\newblock {\em Practical Algorithms for Incremental Software Development
+  Environment s}.
+\newblock PhD thesis, University of California, Berkeley, 1997.
+\newblock \raggedright Available as technical report~\mbox{UCB/CSD--97--946}.
+
+\bibitem{Wagner/Graham95}
+Tim~A. Wagner and Susan~L. Graham.
+\newblock Integrating incremental analysis with version management.
+\newblock In {\em Fifth European Software Engineering Conference (ESEC'95)},
+  volume 989 of {\em Lecture Notes in Computer Science}, pages 205--218.
+  Springer-Verlag, September 1995.
+
+\bibitem{wagner-versioning}
+Tim~A. Wagner and Susan~L. Graham.
+\newblock Efficient self-versioning documents.
+\newblock In {\em CompCon '97}, pages 62--67, San Jose, CA, February 1997. IEEE
+  Computer Society Press.
+
+\bibitem{wagner-pldi}
+Tim~A. Wagner and Susan~L. Graham.
+\newblock Incremental analysis of real programming languages.
+\newblock In {\em Proceedings of the ACM SIGPLAN '97 Conference on Programming
+  Language Design and Implementation}, pages 31--43, Las Vegas, NV, June 1997.
+
+\bibitem{wagner-whitespace}
+Tim~A. Wagner and Susan~L. Graham.
+\newblock Modeling explicit whitespace in an incremental {SDE}, 1997.
+\newblock Submitted to Software---Practice \& Experience.
+
+\bibitem{wagner-toplas}
+Tim~A. Wagner and Susan~L. Graham.
+\newblock Efficient and flexible incremental parsing.
+\newblock {\em ACM Transactions on Programming Languages and Systems},
+  20(5):980--1013, September 1998.
+
+\end{thebibliography}

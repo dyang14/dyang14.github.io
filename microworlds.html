@@ -1,0 +1,286 @@
+<html>
+
+<head>
+<title>Microworlds Logo Help Guide</title>
+</head>
+
+<body>
+<a href="http://www.microworlds.com/library/index.html">
+
+<h1 align="center"><img border="0" src="images/football_turtle.gif" WIDTH="92" HEIGHT="66"></a>Microworlds Logo
+Help Guide</h1>
+
+<h3 align="center"><a href="http://www.microworlds.com">(www.microworlds.com)</a></h3>
+
+<h3>Commands</h3>
+
+<table border="1" width="100%" height="862">
+  <tr>
+    <td width="25%" height="76"><strong>FORWARD <cite>number<br>
+    </cite>FD <cite>number </cite></strong></td>
+    <td width="25%" height="76">Commands the active turtle to move forward a specific number
+    of steps</td>
+    <td width="25%" height="76"><strong>BACK <cite>number<br>
+    </cite>BK <cite>number</cite></strong></td>
+    <td width="25%" height="76">Commands the active turtle to move backwards a specific number
+    of turtle steps</td>
+  </tr>
+  <tr>
+    <td width="25%" height="57"><strong>RIGHT <cite>number<br>
+    </cite>RT <cite>number </cite></strong></td>
+    <td width="25%" height="57">Commands the active turtle to turn right a specific number of
+    degrees</td>
+    <td width="25%" height="57"><strong>LEFT <cite>number <br>
+    </cite>LT <cite>number </cite></strong></td>
+    <td width="25%" height="57">Commands the active turtle to turn right a specific number of
+    degrees</td>
+  </tr>
+  <tr>
+    <td width="25%" height="114"><strong>CG </strong></td>
+    <td width="25%" height="114">Clears the graphics on the current page and returns the
+    active turtle to the center (HOME) of the page with its heading set to 0</td>
+    <td width="25%" height="114"><strong>STOPALL</strong></td>
+    <td width="25%" height="114">Makes all the turtles stop whatever they're doing. <br>
+    (<em>This is handy!</em>)</td>
+  </tr>
+  <tr>
+    <td width="25%" height="76"><strong>HOME</strong></td>
+    <td width="25%" height="76">Instructs the active turtle to move to the center of the page,
+    coordinates [0 0]</td>
+    <td width="25%" height="76"><strong>SHOW <em>item</em></strong></td>
+    <td width="25%" height="76">Prints out <em>item</em> in the command center.(<em>This is
+    also handy!</em>)<br>
+    i.e. SHOW COLOR</td>
+  </tr>
+  <tr>
+    <td width="25%" height="114"><strong>SETH <cite>number</cite> </strong></td>
+    <td width="25%" height="114">Commands the active turtle to set its heading to a specific
+    compass heading (0-360)</td>
+    <td width="25%" height="76"><strong>SETSH <cite>number<br>
+    </cite>SETSH &quot;shapename</strong></td>
+    <td width="25%" height="76">Tells the active turtle to wear a specific costume (shape)<br>
+    i.e. SETSH &quot;Bird1</td>
+  </tr>
+  <tr>
+    <td width="25%" height="114"><strong>SETC <cite>number <br>
+    </cite>SETC &quot;<cite>colorname</cite> </strong></td>
+    <td width="25%" height="114">Tells the active turtle to change its pen color to the
+    specified color by specifying the number of a color or its name ie... SETC &quot;RED</td>
+    <td width="25%" height="114"><strong>SETBG <cite>number <br>
+    </cite>SETBG &quot;<cite>colorname</cite> </strong></td>
+    <td width="25%" height="114">Tells the page to change its background color to the
+    specified color by specifying the number of a color or its name <br>
+    i.e. SETBG &quot;RED</td>
+  </tr>
+  <tr>
+    <td width="25%" height="57"><strong>PD </strong></td>
+    <td width="25%" height="57">Instructs the active turtle to put its pen down so that it may
+    draw while moving</td>
+    <td width="25%" height="57"><strong>PU </strong></td>
+    <td width="25%" height="57">Instructs the active turtle to lift its pen up so that it does
+    not draw while moving</td>
+  </tr>
+  <tr>
+    <td width="25%" height="76"><strong>SETX <cite>number</cite> </strong></td>
+    <td width="25%" height="76">Tells the active turtle to slide (left/right) along the X-axis
+    to a <br>
+    specified point</td>
+    <td width="25%" height="76"><strong>SETY <cite>number</cite> </strong></td>
+    <td width="25%" height="76">Tells the active turtle to slide (up/down) along the Y-axis to
+    a specified point</td>
+  </tr>
+  <tr>
+    <td width="25%" height="122"><strong>TALKTO <cite>&quot;object<br>
+    </cite>TTO<cite>&quot;object</cite> </strong></td>
+    <td width="25%" height="122">Makes the specified turtle or text box current. This command
+    has the same effect as typing the name of a turtle or text box followed by a comma.<br>
+    i.e. TTO &quot;T2</td>
+    <td width="25%" height="122"><strong>TOWARDS<cite>&quot;turtlename</cite></strong></td>
+    <td width="25%" height="122">Sets the heading of the current turtle to aim towards the one
+    whose <br>
+    name is given as input. <br>
+    i.e. TOWARDS &quot;T3</td>
+  </tr>
+  <tr>
+    <td width="25%" height="122"><strong>ASK <cite>[list of turtles ] [list of instructions ]</cite>
+    </strong></td>
+    <td width="25%" height="122">Asks a list of turtles to run a specific list of instructions</td>
+    <td width="25%" height="122"><strong>REPEAT <cite>number</cite> <cite>[list of
+    instructions ]</cite></strong></td>
+    <td width="25%" height="122">Asks the turtle to repeat the list of instruction several
+    times.</td>
+  </tr>
+</table>
+
+<h3>Reporters</h3>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="25%"><strong>HEADING </strong></td>
+    <td width="25%">Reports the current heading of the active turtle</td>
+    <td width="25%"><strong>POS </strong></td>
+    <td width="25%">Reports the current position of the active turtle as a list of two points</td>
+  </tr>
+  <tr>
+    <td width="25%"><strong>XCOR</strong></td>
+    <td width="25%">Reports the active turtle's position on the X-axis</td>
+    <td width="25%"><strong>YCOR </strong></td>
+    <td width="25%">Reports the active turtle's position on the Y-axis</td>
+  </tr>
+  <tr>
+    <td width="25%"><strong>DISTANCE <cite>&quot;turtlename</cite></strong></td>
+    <td width="25%">Reports the distance, in turtle steps, from the active turtle to another
+    specified turtle</td>
+    <td width="25%"><strong>WHO </strong></td>
+    <td width="25%">Reports the name or number of the active turtle</td>
+  </tr>
+  <tr>
+    <td width="25%"><strong>SHAPE </strong></td>
+    <td width="25%">Reports the name or number of the costume the active turtle is currently
+    wearing</td>
+    <td width="25%"><strong>COLORUNDER </strong></td>
+    <td width="25%">Reports the name or number of the color underneath the active turtle</td>
+  </tr>
+  <tr>
+    <td width="25%"><strong>COLOR </strong></td>
+    <td width="25%">Reports the name or number of the active turtle's pen color</td>
+    <td width="25%"><strong>BG </strong></td>
+    <td width="25%">Reports the name or number of the background color of the current page</td>
+  </tr>
+</table>
+<strong>
+
+<p>Hatching a New Turtle</strong> <br>
+<br>
+1) Click on the turtle tool in the tool palette<br>
+2) Put the cursor on the page where you want the turtle to appear<br>
+3) Click the mouse.<br>
+<br>
+Remember that in MicroWorlds the turtle's pen is up unless you change it to PE or PD.</p>
+<strong>
+
+<p>Putting a Costume (New Shape) on a Turtle</strong> <br>
+<br>
+1) Open the shapes center by clicking on the dog in the command center<br>
+2) Click once on the shape you wish to have the turtle wear. Remember that you may scroll
+through the shapes.<br>
+3) Click the hand cursor on the turtle you wish to dress</p>
+
+<p>You may also do this under program control by talking to a turtle or turtles (last one
+clicked on, created, or addressed via Talkto, Ask, or typing it's name followed by a
+comma.<br>
+<br>
+1) Type SETSH <cite>the.shape.number or the.shape.name<br>
+<br>
+</cite>SETSH 23<br>
+SETSH &quot;Bird1<br>
+<br>
+You may give SETSH a list of shapes to automatically flip between. For example:<br>
+<br>
+SETSH [bird1 bird2]<br>
+<br>
+will cause the current turtle to automatically change shapes over and over again in the
+order they appear in the list.</p>
+<strong>
+
+<p>Resizing a Turtle<br>
+</strong><br>
+1) Click on the + magnifying glass or - magnifying glass depending if you wish to enlarge
+or reduce a shape<br>
+2) Click the magnifying glass on the turtle you wish to resize until you get the desired
+size<br>
+or use the SETSIZE <cite># </cite>command to adjust the size of the current turtle</p>
+<strong>
+
+<p>Stamping a Turtle's Shape</strong> <br>
+<br>
+1) Put the desired size shape on a turtle and either:<br>
+a) Type Stamp<br>
+b) Click on the rubber stamp icon in the tool palette<br>
+Click the rubber stamp on the turtle<br>
+Repeat the process by dragging the turtle and clicking on it again </p>
+<strong>
+
+<p>Giving a Turtle a Script or Editing an Existing One</strong> <br>
+<br>
+1) Choose the turtle tool from the tool palette<br>
+2) Click on the turtle<br>
+3) Type the commands you wish the turtle to follow when clicked on into the instruction
+line<br>
+4) Decide whether you want the script to be run once or forever by clicking on one of the
+two buttons, <cite>Once </cite>or<cite> Many Times<br>
+</cite><br>
+If a turtle is running a script many times, you may stop it by clicking on it.</p>
+<strong>
+
+<p>Programming a Color</strong> <br>
+<br>
+MicroWorlds allows you to program a color to do something when a turtle is over it or the
+mouse is clicked on it.<br>
+<br>
+1) Open the drawing center by clicking on the paintbrush in the tool palette<br>
+2) Choose the color you wish to program by double-clicking on it. All shades of that color
+will carry the same instructions.<br>
+3) Enter the instructions for the turtle and/or mouse click and press OK<br>
+</p>
+
+<p align="center"><img align="bottom" height="109" src="http://moon.pepperdine.edu/~gstager/mw2/MicroWorlds_27.gif" width="292" NATURALSIZEFLAG="3"></p>
+
+<p><b>Let's paint a picture with the turtle!</b> 
+
+<ul>
+  <li>Click on the drawing centre to open the paint tools </li>
+  <li>Paint your picture </li>
+  <li>Hatch a turtle by clicking on the eye tool </li>
+  <li>Open the shapes centre to choose a &quot;stamp&quot; </li>
+  <li>Click once on the shape of your choice or double-click on a shape to edit it </li>
+  <li>Click on the turtle to change its shape </li>
+  <li>Choose the magnifying glass (+ or -) from the tool menu and then click on the turtle to
+    change the size of the turtle </li>
+  <li>Choose the stamp icon from the tool menu and then click on the turtle to leave its
+    fossil on the screen </li>
+  <li>Drag the turtle to another position and stamp it again (or change its shape) </li>
+  <li>Remember that there is still a &quot;live&quot; turtle on the screen so be sure to cut
+    it with the scissors tool or hide it with HT </li>
+</ul>
+
+<p><b>Turtle animation<br>
+</b>
+
+<ul>
+  <li>Hatch a turtle </li>
+  <li>Turn it in the desired direction by clicking and dragging its nose </li>
+  <li>Open the shapes centre and select the shape you wish for the turtle to wear </li>
+  <li>Click on the turtle </li>
+  <li>Click the eye tool on the turtle to edit its instruction </li>
+  <li>Type the command, FD 5, in the Instruction: line </li>
+  <li>Select Many Times </li>
+  <li>Click on the turtle to make it go and repeat the process for additional turtles </li>
+</ul>
+
+<p><b>Cooler turtle animation (flipbook animation)</b></p>
+
+<p>Follow the same steps as above, but add a command such as, SETSH [bird1 bird2] FD 5, in
+the Instruction: line of the turtle.</p>
+
+<hr>
+
+<p><em><small><small>All the text is gathered from Gary Stager's Logo pages at <a href="http://gsep.pepperdine.edu/~gstager/home.html">http://gsep.pepperdine.edu/~gstager/home.html</a>.</small></small></em></p>
+
+<p><small><small><em>Date Modified: <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%y" startspan -->12/10/08<!--webbot bot="Timestamp" endspan i-checksum="13241" --></em></small></small></p>
+
+<p><em>Andrew Begel&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</a></em></p>
+
+<p><br>
+</p>
+
+<p><br>
+</p>
+
+<p><br>
+</p>
+
+<p><br>
+</p>
+</body>
+</html>

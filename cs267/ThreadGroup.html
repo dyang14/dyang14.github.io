@@ -1,0 +1,775 @@
+<html>
+
+<head>
+<title>Titanium ThreadGroup API</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body>
+
+<h2>Titanium ThreadGroup API</h2>
+
+<h2>Ti.lang.ThreadGroup</h2>
+
+<h2><img src="../images/variable-index.gif" alt="Variable Index" WIDTH="207" HEIGHT="38"> </h2>
+
+<dl>
+  <dt><img src="../images/blue-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#MAX_PRIORITY"><b>MAX_PRIORITY</b></a>
+  </dt>
+  <dd>The maximum priority that a threadgroup can have. </dd>
+  <dt><img src="../images/blue-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#MIN_PRIORITY"><b>MIN_PRIORITY</b></a>
+  </dt>
+  <dd>The minimum priority that a threadgroup can have. </dd>
+  <dt><img src="../images/blue-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#NORM_PRIORITY"><b>NORM_PRIORITY</b></a>
+  </dt>
+  <dd>The default priority that is assigned to a threadgroup. </dd>
+</dl>
+
+<h2><img src="../images/constructor-index.gif" alt="Constructor Index" WIDTH="275" HEIGHT="38"> </h2>
+
+<dl>
+  <dt><img src="../images/yellow-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#Thread()"><b>ThreadGroup</b></a>()
+  </dt>
+  <dd>Allocates a new <code>ThreadGroup</code> object. </dd>
+  <dt><img src="../images/yellow-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#Thread(java.lang.Runnable)"><b>ThreadGroup</b></a>(Runnable) </dt>
+  <dd>Allocates a new <code>ThreadGroup</code> object. </dd>
+  <dt><img src="../images/yellow-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#Thread(java.lang.Runnable, java.lang.String)"><b>ThreadGroup</b></a>(Runnable,
+    String) </dt>
+  <dd>Allocates a new <code>ThreadGroup</code> object. </dd>
+  <dt><img src="../images/yellow-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#Thread(java.lang.String)"><b>ThreadGroup</b></a>(String) </dt>
+  <dd>Allocates a new <code>ThreadGroup</code> object. </dd>
+</dl>
+
+<h2><img src="../images/method-index.gif" alt="Method Index" WIDTH="207" HEIGHT="38"> </h2>
+
+<dl>
+  <dt><img src="../images/green-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#currentThread()"><b>myTeam</b></a>()
+  </dt>
+  <dd>Returns a reference to the currently executing threadgroup object. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#destroy()"><b>destroy</b></a>()
+  </dt>
+  <dd>Destroys this threadgroup, without any cleanup. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#getName()"><b>getName</b></a>()
+  </dt>
+  <dd>Returns this threadgroup's name. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#getPriority()"><b>getPriority</b></a>()
+  </dt>
+  <dd>Returns this threadgroup's priority. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#interrupt()"><b>interrupt</b></a>()
+  </dt>
+  <dd>Interrupts this threadgroup. </dd>
+  <dt><img src="../images/green-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#interrupted()"><b>interrupted</b></a>()
+  </dt>
+  <dd>Tests if the current threadgroup has been interrupted. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#isAlive()"><b>isAlive</b></a>()
+  </dt>
+  <dd>Tests if this threadgroup is alive. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#isDaemon()"><b>isDaemon</b></a>()
+  </dt>
+  <dd>Tests if this threadgroup is a daemon threadgroup. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#isInterrupted()"><b>isInterrupted</b></a>()
+  </dt>
+  <dd>Tests if the current threadgroup has been interrupted. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#join()"><b>join</b></a>() </dt>
+  <dd>Waits for this threadgroup to die. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#join(long)"><b>join</b></a>(long)
+  </dt>
+  <dd>Waits at most <code>millis</code> milliseconds for this threadgroup to die. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#join(long, int)"><b>join</b></a>(long,
+    int) </dt>
+  <dd>Waits at most <code>millis</code> milliseconds plus <code>nanos</code> nanoseconds for
+    this threadgroup to die. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#resume()"><b>resume</b></a>()
+  </dt>
+  <dd>Resumes a suspended threadgroup. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#run()"><b>run</b></a>() </dt>
+  <dd>If this threadgroup was constructed using a separate <code>Runnable</code> run object,
+    then that <code>Runnable</code> object's <code>run</code> method is called; otherwise,
+    this method does nothing and returns. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#setDaemon(boolean)"><b>setDaemon</b></a>(boolean)
+  </dt>
+  <dd>Marks this threadgroup as either a daemon threadgroup or a user threadgroup. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#setName(java.lang.String)"><b>setName</b></a>(String)
+  </dt>
+  <dd>Changes the name of this threadgroup to be equal to the argument <code>name</code>. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#setPriority(int)"><b>setPriority</b></a>(int)
+  </dt>
+  <dd>Changes the priority of this threadgroup. </dd>
+  <dt><img src="../images/green-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#sleep(long)"><b>sleep</b></a>(long)
+  </dt>
+  <dd>Causes the currently executing threadgroup to sleep (temporarily cease execution) for
+    the specified number of milliseconds. </dd>
+  <dt><img src="../images/green-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#sleep(long, int)"><b>sleep</b></a>(long,
+    int) </dt>
+  <dd>Causes the currently executing threadgroup to sleep (cease execution) for the specified
+    number of milliseconds plus the specified number of nanoseconds. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#start()"><b>start</b></a>()
+  </dt>
+  <dd>Causes this threadgroup to begin execution; Titanium calls the <code>run</code> method
+    of this threadgroup. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#stop()"><b>stop</b></a>() </dt>
+  <dd>Forces the threadgroup to stop executing. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#stop(java.lang.Throwable)"><b>stop</b></a>(Throwable)
+  </dt>
+  <dd>Forces the threadgroup to stop executing. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#suspend()"><b>suspend</b></a>()
+  </dt>
+  <dd>Suspends this threadgroup. </dd>
+  <dt><img src="../images/red-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#toString()"><b>toString</b></a>()
+  </dt>
+  <dd>Returns a string representation of this threadgroup, including the threadgroup's name,
+    priority, and threadgroup group. </dd>
+  <dt><img src="../images/green-ball-small.gif" alt=" o " WIDTH="6" HEIGHT="6"> <a href="#yield()"><b>yield</b></a>()
+  </dt>
+  <dd>Causes the currently executing threadgroup object to temporarily pause and allow other
+    threadgroups to execute. </dd>
+</dl>
+
+<p><a name="variables"></a></p>
+
+<h2><img src="../images/variables.gif" alt="Variables" WIDTH="153" HEIGHT="38"> </h2>
+<a name="MIN_PRIORITY">
+
+<p><img src="../images/blue-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <b>MIN_PRIORITY</b> </p>
+
+<pre>
+ public static final int MIN_PRIORITY
+</pre>
+
+<dl>
+  <dd>The minimum priority that a threadgroup can have.</dd>
+</dl>
+<a name="NORM_PRIORITY">
+
+<p><img src="../images/blue-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <b>NORM_PRIORITY</b> </p>
+
+<pre>
+ public static final int NORM_PRIORITY
+</pre>
+
+<dl>
+  <dd>The default priority that is assigned to a threadgroup.</dd>
+</dl>
+<a name="MAX_PRIORITY">
+
+<p><img src="../images/blue-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <b>MAX_PRIORITY</b> </p>
+
+<pre>
+ public static final int MAX_PRIORITY
+</pre>
+
+<dl>
+  <dd>The maximum priority that a threadgroup can have.</dd>
+</dl>
+
+<p><a name="constructors"></a></p>
+
+<h2><img src="../images/constructors.gif" alt="Constructors" WIDTH="231" HEIGHT="38"> </h2>
+<a name="Thread()">
+
+<p><img src="../images/yellow-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <b>ThreadGroup</b> </p>
+
+<pre>
+ public ThreadGroup()
+</pre>
+
+<dl>
+  <dd>Allocates a new <code>ThreadGroup</code> object. This constructor has the same effect as
+    <code>ThreadGroup(null, null,</code> <i>gname</i><code>)</code>, where <b><i>gname</i></b>
+    is a newly generated name. Automatically generated names are of the form <code>&quot;ThreadGroup-&quot;+</code><i>n</i>,
+    where <i>n</i> is an integer. <p>ThreadGroups created this way must have overridden their <code>run()</code>
+    method to actually do anything. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String)">ThreadGroup</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="Thread(java.lang.Runnable)">
+
+<p><img src="../images/yellow-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <b>ThreadGroup</b> </p>
+
+<pre>
+ public ThreadGroup(<a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Runnable.html#_top_">Runnable</a> target)
+</pre>
+
+<dl>
+  <dd>Allocates a new <code>ThreadGroup</code> object. This constructor has the same effect as
+    <code>ThreadGroup(null, target,</code> <i>gname</i><code>)</code>, where <i>gname</i> is a
+    newly generated name. Automatically generated names are of the form <code>&quot;ThreadGroup-&quot;+</code><i>n</i>,
+    where <i>n</i> is an integer. </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>target - the object whose <code>run</code> method is called. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String)">ThreadGroup</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="Thread(java.lang.String)">
+
+<p><img src="../images/yellow-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <b>ThreadGroup</b> </p>
+
+<pre>
+ public ThreadGroup(<a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.String.html#_top_">String</a> name)
+</pre>
+
+<dl>
+  <dd>Allocates a new <code>ThreadGroup</code> object. This constructor has the same effect as
+    <code>ThreadGroup(null, null, name)</code>. </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>name - the name of the new threadgroup. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String)">ThreadGroup</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String)">
+
+<p><img src="../images/yellow-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <b>ThreadGroup</b> </p>
+
+<pre>
+ public ThreadGroup(<a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Runnable.html#_top_">Runnable</a> target,
+               <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.String.html#_top_">String</a> name)
+</pre>
+
+<dl>
+  <dd>Allocates a new <code>ThreadGroup</code> object so that it has <code>target</code> as
+    its run object, and has the specified <code>name</code> as its name. <p>If the <code>target</code>
+    argument is not <code>null</code>, the <code>run</code> method of the <code>target</code>
+    is called when this threadgroup is started. If the target argument is <code>null</code>,
+    this threadgroup's <code>run</code> method is called when this threadgroup is started. </p>
+    <p>The priority of the newly created threadgroup is set equal to the priority of the
+    threadgroup creating it, that is, the currently running threadgroup. The method <code>setPriority</code>
+    may be used to change the priority to a new value. </p>
+    <p>The newly created threadgroup is initially marked as being a daemon threadgroup if and
+    only if the threadgroup creating it is currently marked as a daemon threadgroup. The
+    method <code>setDaemon </code>may be used to change whether or not a threadgroup is a
+    daemon. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>target - the object whose <code>run</code> method is called. </dd>
+      <dd>name - the name of the new threadgroup. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Runnable.html#run()">run</a>,
+        <a href="#run()">run</a>, <a href="#setDaemon(boolean)">setDaemon</a>, <a href="#setPriority(int)">setPriority</a></dd>
+    </dl>
+  </dd>
+</dl>
+
+<p><a name="methods"></a></p>
+
+<h2><img src="../images/methods.gif" alt="Methods" WIDTH="151" HEIGHT="38"> </h2>
+<a name="currentThread()">
+
+<p><img src="../images/green-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="currentThread"><b>myTeam</b></a>
+</p>
+
+<pre>
+ public static native <a href="#_top_">ThreadGroup</a> myTeam()
+</pre>
+
+<dl>
+  <dd>Returns a reference to the currently executing threadgroup object. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd>the currently executing threadgroup. </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="yield()">
+
+<p><img src="../images/green-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="yield"><b>yield</b></a> </p>
+
+<pre>
+ public static native void yield()
+</pre>
+
+<dl>
+  <dd>Causes the currently executing threadgroup object to temporarily pause and allow other
+    threadgroups to execute. </dd>
+</dl>
+<a name="sleep(long)">
+
+<p><img src="../images/green-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="sleep"><b>sleep</b></a> </p>
+
+<pre>
+ public static native void sleep(long millis) throws <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+</pre>
+
+<dl>
+  <dd>Causes the currently executing threadgroup to sleep (temporarily cease execution) for
+    the specified number of milliseconds. The threadgroup does not lose ownership of any
+    monitors. </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>millis - the length of time to sleep in milliseconds. </dd>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+      </dt>
+      <dd>if another threadgroup has interrupted this threadgroup. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Object.html#notify()">notify</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="sleep(long, int)">
+
+<p><img src="../images/green-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="sleep"><b>sleep</b></a> </p>
+
+<pre>
+ public static void sleep(long millis,
+                          int nanos) throws <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+</pre>
+
+<dl>
+  <dd>Causes the currently executing threadgroup to sleep (cease execution) for the specified
+    number of milliseconds plus the specified number of nanoseconds. The threadgroup does not
+    lose ownership of any monitors. </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>millis - the length of time to sleep in milliseconds. </dd>
+      <dd>nanos - 0-999999 additional nanoseconds to sleep. </dd>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.IllegalArgumentException.html#_top_">IllegalArgumentException</a>
+      </dt>
+      <dd>if the value of millis is negative or the value of nanos is not in the range 0-999999. </dd>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+      </dt>
+      <dd>if another threadgroup has interrupted this threadgroup. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Object.html#notify()">notify</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="start()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="start"><b>start</b></a> </p>
+
+<pre>
+ public native synchronized void start()
+</pre>
+
+<dl>
+  <dd>Causes this threadgroup to begin execution; Titanium calls the <code>run</code> method
+    of this threadgroup. <p>The result is that two threadgroups are running concurrently: the
+    current threadgroup (which returns from the call to the <code>start</code> method) and the
+    other threadgroup (which executes its <code>run</code> method). </p>
+  </dd>
+  <dd><dl>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.IllegalThreadStateException.html#_top_">IllegalThreadGroupStateException</a>
+      </dt>
+      <dd>if the threadgroup was already started. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#run()">run</a>, <a href="#stop()">stop</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="run()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="run"><b>run</b></a> </p>
+
+<pre>
+ public void run()
+</pre>
+
+<dl>
+  <dd>If this threadgroup was constructed using a separate <code>Runnable</code> run object,
+    then that <code>Runnable</code> object's <code>run</code> method is called; otherwise,
+    this method does nothing and returns. <p>Subclasses of <code>ThreadGroup</code> should
+    override this method. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#start()">start</a>, <a href="#stop()">stop</a>, <a href="#Thread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String)">ThreadGroup</a>,
+        <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Runnable.html#run()">run</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="stop()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="stop"><b>stop</b></a> </p>
+
+<pre>
+ public final void stop()
+</pre>
+
+<dl>
+  <dd>Forces the threadgroup to stop executing. <p>The threadgroup represented by this
+    threadgroup is forced to stop whatever it is doing abnormally and to throw a newly created
+    <code>ThreadDeath</code> object as an exception. </p>
+    <p>It is permitted to stop a threadgroup that has not yet been started. If the threadgroup
+    is eventually started, it immediately terminates. </p>
+    <p>An application should not normally try to catch <code>ThreadDeath</code> unless it must
+    do some extraordinary cleanup operation (note that the throwing of <code>ThreadDeath</code>
+    causes <code>finally</code> clauses of <code>try</code> statements to be executed before
+    the threadgroup officially dies). If a <code>catch</code> clause catches a <code>ThreadDeath</code>
+    object, it is important to rethrow the object so that the threadgroup actually dies. </p>
+    <p>The top-level error handler that reacts to otherwise uncaught exceptions does not print
+    out a message or otherwise notify the application if the uncaught exception is an instance
+    of <code>ThreadDeath</code>. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#run()">run</a>, <a href="#start()">start</a>, <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.ThreadDeath.html#_top_">ThreadDeath</a>,
+        <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.ThreadGroup.html#uncaughtException(java.lang.Thread, java.lang.Throwable)">uncaughtException</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="stop(java.lang.Throwable)">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="stop"><b>stop</b></a> </p>
+
+<pre>
+ public final synchronized void stop(<a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Throwable.html#_top_">Throwable</a> o)
+</pre>
+
+<dl>
+  <dd>Forces the threadgroup to stop executing. <p>If the argument <code>obj</code> is null, a
+    <code>NullPointerException</code> is thrown (in the current threadgroup). </p>
+    <p>The threadgroup represented by this threadgroup is forced to complete whatever it is
+    doing abnormally and to throw the <code>Throwable</code> object <code>obj</code> as an
+    exception. This is an unusual action to take; normally, the <code>stop</code> method that
+    takes no arguments should be used. </p>
+    <p>It is permitted to stop a threadgroup that has not yet been started. If the threadgroup
+    is eventually started, it immediately terminates. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>obj - the Throwable object to be thrown. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#checkAccess()">checkAccess</a>, <a href="#run()">run</a>, <a href="#start()">start</a>,
+        <a href="#stop()">stop</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="interrupt()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="interrupt"><b>interrupt</b></a>
+</p>
+
+<pre>
+ public void interrupt()
+</pre>
+
+<dl>
+  <dd>Interrupts this threadgroup. </dd>
+</dl>
+<a name="interrupted()">
+
+<p><img src="../images/green-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="interrupted"><b>interrupted</b></a>
+</p>
+
+<pre>
+ public static boolean interrupted()
+</pre>
+
+<dl>
+  <dd>Tests if the current threadgroup has been interrupted. Note that <code>interrupted</code>
+    is a static method, while <code>isInterrupted</code> is called on the current <code>ThreadGroup</code>
+    instance. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd><code>true</code> if the current threadgroup has been interrupted; <code>false</code>
+        otherwise. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#isInterrupted()">isInterrupted</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="isInterrupted()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="isInterrupted"><b>isInterrupted</b></a>
+</p>
+
+<pre>
+ public boolean isInterrupted()
+</pre>
+
+<dl>
+  <dd>Tests if the current threadgroup has been interrupted. Note that <code>isInterrupted</code>
+    is called on the current <code>ThreadGroup</code> instance; by contrast, <code>interrupted</code>
+    is a static method. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd><code>true</code> if this threadgroup has been interrupted; <code>false</code>
+        otherwise. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#interrupted()">interrupted</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="isAlive()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="isAlive"><b>isAlive</b></a> </p>
+
+<pre>
+ public final native boolean isAlive()
+</pre>
+
+<dl>
+  <dd>Tests if this threadgroup is alive. A threadgroup is alive if it has been started and
+    has not yet died. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd><code>true</code> if this threadgroup is alive; <code>false</code> otherwise. </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="suspend()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="suspend"><b>suspend</b></a> </p>
+
+<pre>
+ public final void suspend()
+</pre>
+
+<dl>
+  <dd>Suspends this threadgroup. <p>If the threadgroup is alive, it is suspended and makes no
+    further progress unless and until it is resumed. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#isAlive()">isAlive</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="resume()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="resume"><b>resume</b></a> </p>
+
+<pre>
+ public final void resume()
+</pre>
+
+<dl>
+  <dd>Resumes a suspended threadgroup. <p>If the threadgroup is alive but suspended, it is
+    resumed and is permitted to make progress in its execution. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#isAlive()">isAlive</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="setPriority(int)">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="setPriority"><b>setPriority</b></a>
+</p>
+
+<pre>
+ public final void setPriority(int newPriority)
+</pre>
+
+<dl>
+  <dd>Changes the priority of this threadgroup. <p>Otherwise, the priority of this threadgroup
+    is set to the smaller of the specified <code>newPriority</code> and the maximum permitted
+    priority of the threadgroup's threadgroup group. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.IllegalArgumentException.html#_top_">IllegalArgumentException</a>
+      </dt>
+      <dd>If the priority is not in the range <code>MIN_PRIORITY</code> to <code>MAX_PRIORITY</code>.
+      </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#getPriority()">getPriority</a>, <a href="#getThreadGroup()">getThreadGroupGroup</a>,
+        <a href="#MAX_PRIORITY">MAX_PRIORITY</a>, <a href="#MIN_PRIORITY">MIN_PRIORITY</a>, <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.ThreadGroup.html#getMaxPriority()">getMaxPriority</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="getPriority()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="getPriority"><b>getPriority</b></a>
+</p>
+
+<pre>
+ public final int getPriority()
+</pre>
+
+<dl>
+  <dd>Returns this threadgroup's priority. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd>this threadgroup's name. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#setPriority(int)">setPriority</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="setName(java.lang.String)">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="setName"><b>setName</b></a> </p>
+
+<pre>
+ public final void setName(<a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.String.html#_top_">String</a> name)
+</pre>
+
+<dl>
+  <dd>Changes the name of this threadgroup to be equal to the argument <code>name</code>. <p>&nbsp;</p>
+  </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>name - the new name for this threadgroup. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#checkAccess()">checkAccess</a>, <a href="#getName()">getName</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="getName()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="getName"><b>getName</b></a> </p>
+
+<pre>
+ public final <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.String.html#_top_">String</a> getName()
+</pre>
+
+<dl>
+  <dd>Returns this threadgroup's name. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd>this threadgroup's name. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#setName(java.lang.String)">setName</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="join(long)">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="join"><b>join</b></a> </p>
+
+<pre>
+ public final synchronized void join(long millis) throws <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+</pre>
+
+<dl>
+  <dd>Waits at most <code>millis</code> milliseconds for this threadgroup to die. A timeout of
+    <code>0</code> means to wait forever. </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>millis - the time to wait in milliseconds. </dd>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+      </dt>
+      <dd>if another threadgroup has interrupted the current threadgroup. </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="join(long, int)">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="join"><b>join</b></a> </p>
+
+<pre>
+ public final synchronized void join(long millis,
+                                     int nanos) throws <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+</pre>
+
+<dl>
+  <dd>Waits at most <code>millis</code> milliseconds plus <code>nanos</code> nanoseconds for
+    this threadgroup to die. </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>millis - the time to wait in milliseconds. </dd>
+      <dd>nanos - 0-999999 additional nanoseconds to wait. </dd>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.IllegalArgumentException.html#_top_">IllegalArgumentException</a>
+      </dt>
+      <dd>if the value of millis is negative the value of nanos is not in the range 0-999999. </dd>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+      </dt>
+      <dd>if another threadgroup has interrupted the current threadgroup. </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="join()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="join"><b>join</b></a> </p>
+
+<pre>
+ public final void join() throws <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+</pre>
+
+<dl>
+  <dd>Waits for this threadgroup to die. </dd>
+  <dd><dl>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.InterruptedException.html#_top_">InterruptedException</a>
+      </dt>
+      <dd>if another threadgroup has interrupted the current threadgroup. </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="setDaemon(boolean)">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="setDaemon"><b>setDaemon</b></a>
+</p>
+
+<pre>
+ public final void setDaemon(boolean on)
+</pre>
+
+<dl>
+  <dd>Marks this threadgroup as either a daemon threadgroup or a user threadgroup. The Java
+    Virtual Machine exits when the only threadgroups running are all daemon threadgroups. <p>This
+    method must be called before the threadgroup is started. </p>
+  </dd>
+  <dd><dl>
+      <dt><b>Parameters:</b> </dt>
+      <dd>on - if <code>true</code>, marks this threadgroup as a daemon threadgroup. </dd>
+      <dt><b>Throws:</b> <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.IllegalThreadStateException.html#_top_">IllegalThreadGroupStateException</a>
+      </dt>
+      <dd>if this threadgroup is active. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#isDaemon()">isDaemon</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="isDaemon()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="isDaemon"><b>isDaemon</b></a>
+</p>
+
+<pre>
+ public final boolean isDaemon()
+</pre>
+
+<dl>
+  <dd>Tests if this threadgroup is a daemon threadgroup. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd><code>true</code> if this threadgroup is a daemon threadgroup; <code>false</code>
+        otherwise. </dd>
+      <dt><b>See Also:</b> </dt>
+      <dd><a href="#setDaemon(boolean)">setDaemon</a> </dd>
+    </dl>
+  </dd>
+</dl>
+<a name="toString()">
+
+<p><img src="../images/red-ball.gif" alt=" o " WIDTH="12" HEIGHT="12"></a> <a name="toString"><b>toString</b></a>
+</p>
+
+<pre>
+ public <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.String.html#_top_">String</a> toString()
+</pre>
+
+<dl>
+  <dd>Returns a string representation of this threadgroup, including the threadgroup's name,
+    priority, and threadgroup group. </dd>
+  <dd><dl>
+      <dt><b>Returns:</b> </dt>
+      <dd>a string representation of this threadgroup. </dd>
+      <dt><b>Overrides:</b> </dt>
+      <dd><a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Object.html#toString()">toString</a>
+        in class <a href="http://java.sun.com/products/jdk/1.1/docs/api/java.lang.Object.html#_top_">Object</a>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+</body>
+</html>

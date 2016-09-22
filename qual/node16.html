@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Program Dictation</TITLE>
+<META NAME="description" CONTENT="Program Dictation">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html212"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html210"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html204"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html213"
+  HREF="node17.html">Program Composition</A>
+<B> Up:</B> <A NAME="tex2html211"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html205"
+  HREF="node15.html">The Program Editor</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00061000000000000000">
+Program Dictation</A>
+</H2>
+
+<P>
+Program dictation is the one area that has been explored by others
+using ad hoc techniques that require over-stylized input
+methods&nbsp;[<A
+ HREF="node29.html#janin97">29</A>,<A
+ HREF="node29.html#Desilets">16</A>,<A
+ HREF="node29.html#pbv-toolkit">59</A>]. None of these approaches
+discovers or preserves any syntactic or semantic structure other than
+any discovered by the editor itself. 
+
+<P>
+Our more natural Spoken Java grammar will make it much easier for the
+user to code using direct program dictation. We can use our
+incremental analysis framework to continuously parse what the user is
+saying and construct a parse forest to be displayed in the editor. We
+will do this by intercepting the results of dictation mode prior to
+the speech recognizer's own natural language semantic analysis phase,
+and send them to our analysis framework. Using GLR to enhance natural
+language speech recognition was explored on a research speech
+recognizer in Japan and was shown to be between 80 and 99% accurate
+on a task-specific grammar&nbsp;[<A
+ HREF="node29.html#KitaKawabata89">31</A>]. We would like to
+adapt these techniques to the ViaVoice speech recognizer, but we may
+have to switch to a research speech recognizer to gain proper access
+to the recognizer internals.
+
+<P>
+An alternate way to support direct program dictation is to
+continuously update a simple command and control grammar with all
+possible speakable lexemes at any given point in the
+program. H-3ARMONIA's query support will allow us to find this out
+using a cursor position, the current document, and the document's
+programming language grammar. For instance, in our example above, when
+the user said <TT>s p p</TT>, only identifiers were allowed there. Since
+the location involved a variable usage and not a definition, legal
+code would say that the spoken words must form a valid identifier, one
+that has already been defined. We can seed the command and control
+grammar with these identifiers when that point in the grammar is
+reached. This would not only make it feasible to do direct program
+dictation, but would also help make recognition more accurate by
+limiting what words the recognizer will accept. 
+
+<P>
+This latter technique may have two problems, however. Many programmers
+do not code in linear order; they jump around. If they try to speak a
+identifier before it has been defined, it may not get recognized. Even
+so, how do they define a new identifier? Perhaps we should switch the
+recognizer into dictation mode when an identifier is expected as part
+of a grammar production, or have the user just type it in. This
+solution's feasibility depends on the granularity of the programmer's
+coding process. Do they jump around in the middle of statements or
+only at statement or structural boundaries?
+
+<P>
+Another problem with command and control grammars is performance. In
+current speech recognizers, changing the active command and control
+grammar is an expensive operation. We hope this will improve in the
+future, but do believe that the cost is related to the size (and maybe
+the complexity) of the grammar. If we can keep the size and complexity
+down through aggressive ambiguity resolution, we should be able to avoid
+performance issues.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html212"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html210"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html204"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html213"
+  HREF="node17.html">Program Composition</A>
+<B> Up:</B> <A NAME="tex2html211"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html205"
+  HREF="node15.html">The Program Editor</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

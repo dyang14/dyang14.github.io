@@ -1,0 +1,146 @@
+Andrew Begel
+CS302 PS7
+Group Activities
+3/8/99
+
+1. The case study is a good activity for two people to work on
+together. My case study structures how to think about the problem
+which provides good scaffolding in exploring the space of constant
+propagation algorithms. In addition, questions are asked of the
+students that require some brainstorming and insight (if the case
+study were presented online in an interactive way) which a group
+generally does better on than an individual. In addition, there are
+some questions at the end which require some review of the material;
+two people would remember more about what is taught in lecture and
+recitation than one. 
+
+I'd also add an audiotape piece to the case study, where students must
+explain their reasoning to the "person behind the tape" who must gain
+enough knowledge to understand and implement constant propagation on
+their own. I think this explanatory phase (as based on Elizabeth
+Cohen's paper) of work would be able to prevent students from skipping
+over questions they don't feel like answering, as well as making it
+easier for an evaluator to gauge how much the students know.
+
+From my homework assignments: the comprehension questions are very
+well suited for group work, since they ask for understanding of the
+material. Multiple people can pool their comprehension and expertise
+on a topic to help the others learn. 
+
+Another assignment is the one where I ask them to take their lab
+programming assignments and rewrite them in a different language; this 
+could be adapted to have each person in the group write the project in 
+a different language and report back the results to each other about
+what they found. Then, we add a third component (which is sorely
+lacking from MIT's software engineering class), a code review, where
+everybody reads everyone else's code and make comments on it about
+structure, elegance, documentation, etc... While this is not strictly
+part of a compiler course, they should be getting this kind of
+engineering design background in any course where they have to build
+large projects.
+
+
+Some of the synthesis problems could be turned into group
+projects. For example, there's a question to design a new form of
+dynamic linking that doesn't require an explicit link operator. That
+sort of design and the subsequent implementation would be wonderful
+for exposing multiple students to the concepts in linking, as well as
+give them practical design and implementation experience. 
+
+Let's develop this linking project further:
+
+a. Is the language statically or dynamically typed? This form of
+linking may be too dynamic for static types. Is there a static
+interface that must be adhered to?
+
+b. How does the library publish its exported functions? Is it
+JINI-like where the library transmits an event to anyone watching when
+it is installed? Conversely, how does the application find the right
+library to use when a function is invoked? Perhaps it's more like Java
+with a CLASSPATH. Maybe there's OS help as in Multics. Maybe we have a
+CORBA-like object repository that we can search through for desired
+modules?
+
+c. If I import a function, do I get the whole library? What kind of
+tree-shaking techniques to we need to avoid this inefficiency? When do
+they happen, at compile-time or run-time? How about supporting code
+virtual page sharing across applications?
+
+d. Emacs Lisp has autoload to automatically load an unloaded module
+when a function is invoked. Is that the right abstraction? How does
+the language name the library procedure? How does the language name
+the library? Can we hide any of these naming issues in the compiler or
+must we expose it to user-level?
+
+e. How are libraries bounded? Are there explicit module boundaries?
+How are dependencies specified? How do we support mutually-recursive
+libraries?
+
+f. Given all these questions, what changes would we have to make to
+C's object file format? What extra runtime support do we need to add
+this to C? Java? Lisp?
+
+
+Other activities that might facilitate group productivity:
+
+Each lab assignment in this class should be done in a group of 2
+students. Lab assignments include:
+
+1. In Java, implement the SSA data structure and intermediate
+representation for C code.
+
+2. In Scheme and Java, implement depth-first, breadth-first,
+postorder, and reverse postorder traversals of the given DAG
+abstraction.
+
+3. Implement the sparse conditional constant propagation in Java,
+given SSA form data structures, graph traversal algorithms. 
+
+4. In Scheme, implement a register allocator using graph
+coloring. You're given a graph data structure, and graph traversal
+algorithms (that support cyclic graphs), an explicit register-using
+intermediate representation data structure. Parametrize the allocator
+on number of target registers and the input program in intermediate
+form. 
+
+
+An exam problem? 
+
+The following is a program for computing bubble sort:
+
+for i := n-1 downto 1 do
+  for j := 1 to i do
+    if A[j] > A[j+1] then
+      begin
+        temp := A[j];
+        A[j] := A[j+1];
+        A[j+1] := temp;
+      end
+    endif
+  endfor
+endfor
+
+As a group:
+
+a. Transform this program into three-address form. Remember to
+identify all temporary values. (Do not optimize the program!)
+
+b. Draw the control flow graph for this program. 
+
+Individually:
+
+c.  Optimize the program as much as you can by running various
+optimization algorithms in phases. For each phase, identify the
+optimization(s) performed, and give the resulting control flow graph.
+(Remember that many of the optimizations are not confluent; thus
+running Optimization A after B may expose more opportunties for
+optimization than running B before A.)
+
+As a group:
+
+d. Compare your optimization phases and resulting forms. Are they the
+same? If not, as a group, come up with an optimal sequence of
+optimizations combining all of those that you did in part C (Do not
+change your individual answers to part C). 
+
+

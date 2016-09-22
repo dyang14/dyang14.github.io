@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Introduction</TITLE>
+<META NAME="description" CONTENT="Introduction">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="qual.html">
+<LINK REL="up" HREF="qual.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html48"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html46"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html40"
+  HREF="qual.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html49"
+  HREF="node2.html">Speech Recognition</A>
+<B> Up:</B> <A NAME="tex2html47"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html41"
+  HREF="qual.html">Spoken Language Support for</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00010000000000000000">
+Introduction</A>
+</H1>
+
+<P>
+Virtually all software development is conducted in an interactive
+setting in which developers use relatively powerful personal computers
+or workstations, shared, networked repositories, conventionalized
+processes, and a diverse collection of tools and online services.
+There is a long history of research in support of the development
+activity, ranging from the study of particular languages, tools, and
+processes, to the design of integrated environments or tool suites.
+Examples of environments include programming
+environments&nbsp;[<A
+ HREF="node29.html#psg">4</A>,<A
+ HREF="node29.html#csg">48</A>,<A
+ HREF="node29.html#centaur">9</A>,<A
+ HREF="node29.html#asf+sdf1">56</A>,<A
+ HREF="node29.html#asf+sdf2">57</A>] (in which the
+emphasis is on the programming aspects of software development), CASE
+tools (in which tools are devised for various aspects of the software
+life-cycle), and software development
+environments&nbsp;[<A
+ HREF="node29.html#arcadia">30</A>,<A
+ HREF="node29.html#env-proc">20</A>], in which the integration of rich
+collections of tools, processes, and methodologies are envisioned
+throughout the life-cycle.
+
+<P>
+Most of these software engineering environments have an underlying
+model of a user interacting with the environment by reading software
+or natural language artifacts on the screen, and by typing text, or
+moving or drawing entities with a mouse.  The future of computing and
+programming is moving towards more capable, higher bandwidth
+interfaces, where the human has many more ways to give input to the
+computer. Not only does this future involve multiple modes of input,
+such as speech, drawing, and gesturing, but these alternate modes also
+afford higher levels of human/machine interactions, for example,
+through the expression of informal pseudocode and diagram drawing.
+
+<P>
+You might think that very few of these rich forms of input have made
+it into software developers' daily lives. And for the actual
+programming task, you'd be right. But software developers communicate
+with each other all the time using voice, diagrams, presentations,
+etc. This is the way that teachers communicate with students, and how
+students communicate with each other when they are working on a
+software project. Unfortunately, however expressive these interactions
+might be, none of them are understood by current software development
+environments. These environments support text entry into a text editor
+and batch compilation services. Some (very few) environments support
+slightly higher-level services, like online syntactic and semantic
+analysis, that developers can use to explore their source code
+artifact with more effectiveness than ``grep''. But program entry is
+still consigned to text editing.
+
+<P>
+At this point, it may seem that we're implying that editing source
+code textually is a bad thing. That isn't what we're saying. We
+believe something that's been used for fifty years has to have some
+great merit to survive this long (which is why the eBook has not
+replaced the paper book, and why the ``paperless office'' has not
+eliminated paper). Instead, what we advocate, is that <I>in
+addition</I> to plain text editing, enabling programmers to dictate,
+compose, navigate, browse and edit their software in high-level
+linguistic terms can enhance programmer productivity and make them
+more efficient. Moreover, we believe that if the programmer could
+express himself verbally, he might find it easier to speak in
+pseudocode, or in some stylized, formalized - yet informal with
+respect to an actual programming language - high-level language, and
+get his ideas down on screen more efficiently.
+
+<P>
+What do we mean by the terms program dictation, composition,
+navigation and browsing, and editing? Program dictation is the direct
+entry of program text (either by speech, keyboard, or pen) in the
+grammar of the target programming language. Program composition, which
+includes program dictation, enables programmers to express themselves
+in a form of high-level pseudocode (such as ``repeat this 10 times''
+to get a loop in the target language, or ``create an integer named
+foo'' to declare a new variable named foo of type int). Program
+navigation and browsing, which also includes program dictation, adds a
+command language for expressing structural and semantic-based searches
+through the code base (such as ``find the function that converts a
+List into a Tree'' and ``show me all of the functions that call
+method fooBar''). Finally, program editing, which includes all of the
+preceding forms of input, adds commands for modifying code, as well as
+expressing code transformations (such ``swap the first and second
+arguments in method mooCow'').
+
+<P>
+In computer science education, we think that this high-level
+verbalized approach to programming can ease learning for new
+students. Anecdotal experience suggests that when students talk about
+programs to one another, they talk in terms of constructs
+(e.g. methods, if-statements, classes) and semantic properties (scope,
+type) rather than textual entities. However, when they write programs
+down, they must translate their conceptual programming thoughts into
+the idiomatic low-level syntax of the programming language they are
+using. It is commonly known that most students learning to program for
+the first time have a lot of trouble learning syntax. It takes them
+quite a long time to sort out the square brackets from the curly
+braces and figure out exactly where the parentheses
+belong&nbsp;[<A
+ HREF="node29.html#Davis93">13</A>]. This has been such a pervasive problem that
+some educational researchers have long advocated syntax-directed
+editing to ease the pain of learning syntax&nbsp;[<A
+ HREF="node29.html#Teitelbaum79">52</A>,<A
+ HREF="node29.html#fischer84poe">21</A>,<A
+ HREF="node29.html#Goldenson91">23</A>]. This approach to high-level program entry,
+syntax-directed editing, enables students to edit a higher-level
+representation of their code, rather than edit purely in text. Since
+most of the confusing syntax of a language exists solely to allow the
+parser to recover the structure of the code, syntax-directed editing
+allows the editor to dispense with all of the now useless
+punctuation. Essentially, students pick language constructs from a
+menu to insert into their code. For example, I could pick an <TT>if
+statement</TT> template from a menu, and get <TT>if (<I>boolean
+expression</I>) then <I>statement</I> else <I>statement</I></TT>, where I could
+then click on the italicized words to fill in the
+blanks. Syntax-directed editing can be a great tool for a novice, as
+long as great care is taken to ensure that as a novice gains knowledge
+and turns into an expert, the tool does not turn from a boon into a
+burden. Early syntax-directed editors were left on the wayside because
+their advantage in making syntax easier turned out to be a
+disadvantage when the system overly prescribed how proper coding
+should be done&nbsp;[<A
+ HREF="node29.html#Neal87">40</A>,<A
+ HREF="node29.html#garden86">46</A>,].
+
+<P>
+While students have trouble learning syntax, they have a much more
+difficult time understanding semantics. One symptom of this shows that
+when students learn to program in one language, the programming skills
+they learn don't transfer well to other languages that they may learn
+afterwards&nbsp;[<A
+ HREF="node29.html#begel-emst222a">8</A>]. At MIT, we called this ``learning
+the zen of programming,'' - that any idea can be expressed in any
+programming language - and it was taught in the first computer
+science course, 6.001. Unfortunately, I think only 30 to 40 of my
+friends picked up this ``zen'' in the first course, though everyone
+got it by their junior year. This isn't taught in Berkeley's first
+course on programming, though students also seem to be able to pick it
+up by their junior or senior year.
+
+<P>
+We envision a system that allows students to not only program at a
+low-level in their source language, but enables them to directly
+express their conceptual ideas in a formalized pseudocode. This
+pseudocode could be ``translated'' by our editor into code in the
+source language, and viewed either in the original pseudocode or in
+translated form.<A NAME="tex2html1"
+  HREF="footnode.html#foot42"><SUP>1</SUP></A> This expression would ideally take place verbally (but we
+will support text-based entry as well) in order to dovetail nicely
+with the natural ways that students already express themselves to
+others when discussing software projects on which they are working.
+
+<P>
+Programming verbally can also help another community of developers,
+those with RSI (repetitive strain injury). Increasingly, reports about
+RSI in the workplace have shown that the typewriter/keyboard is
+contributing to the injury rate in the programming
+community.<A NAME="tex2html2"
+  HREF="footnode.html#foot43"><SUP>2</SUP></A> Once a developer shows signs of RSI, their productivity goes
+down due to their inability to continue to use a keyboard. Not only is
+the typing activity repetitive, but the actions that the developers
+take in their text editors is quite repetitive. We will present
+examples of these actions later on. The ergonomics community has
+developed new products to support typing without aggravation of RSI,
+but these are merely delaying the inevitable. Programmers need to
+avoid the use of the keyboard, and without an efficient alternative, a
+diagnosis of RSI can be a death knell for a programmer's career. By
+using their voice, developers can save their hands.
+
+<P>
+The main thrust of this dissertation is to build a software
+development system that can understand spoken program dictation,
+composition, navigation and browsing, and editing, which will make
+these tasks easier for the software developer. The advent of
+affordable, powerful, commercial speech recognition tools has come
+along at the right time.
+
+<P>
+First, however, one must ask the question, how easy is it to program
+verbally with speech recognition systems? If they don't provide a
+convenient and efficient solution for software engineering, no
+developer would ever use them. In order to answer these questions, we
+will conduct many user studies to discover how students and experts
+express themselves verbally during the software development process,
+both alone and with others. We have already undertaken one study
+concerning program dictation in Java, which we will discuss later in
+this document. We will use the results from these user studies to
+design a more easily spoken version of the Java programming language,
+as well as design the higher-level composition, navigation and editing
+commands that most naturally formalize how students already verbalize
+these tasks.
+
+<P>
+In order to enable the computer to understand these new formal
+languages that we will design, we will need to develop advanced
+programming language analysis techniques. We will build these analysis
+techniques on top of H-3ARMONIA, our programming language analysis
+framework which provides language-based tools and services to
+applications. We believe that we understand the extensions necessary
+and will argue subsequently that they are feasible to build and will
+be adequate to perform the task.
+
+<P>
+Finally, we will evaluate our system to see how it is used by
+students and expert programmers, and determine if it improves
+programmer efficiency and productivity.
+
+<P>
+In the following proposal, we will demonstrate the current
+state-of-the-art in speech recognition technology and show how current
+uses of these tools for programming provides inadequate support for
+efficient software development. Then, we explore how people would
+naturally dictate code (without the constraint of requiring computer
+understanding of their utterances) and discuss the consequences the
+results have on programming language design. After this, we introduce
+Spoken Java, a dialect of Java we are creating as the testbed for our
+work. We then show how H-3ARMONIA's programming language analysis
+technology can be used to handle the ambiguities arising from spoken
+software development and indicate what enhancements we need to add to
+the framework to support speech. While describing the prototype
+editing system that we will create, we discuss our vision for verbal
+ways to perform program dictation, composition, navigation and
+browsing, and editing. In the next section, we introduce some
+important cognitive issues that will affect programming by voice. We
+propose several user studies and evaluation metrics in using this
+system with college computer science students. Finally, we summarize
+the contributions of this dissertation work, present a timeline for
+its completion, speculate on future work beyond this dissertation and
+conclude.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html48"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html46"
+  HREF="qual.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html40"
+  HREF="qual.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html49"
+  HREF="node2.html">Speech Recognition</A>
+<B> Up:</B> <A NAME="tex2html47"
+  HREF="qual.html">Spoken Language Support for</A>
+<B> Previous:</B> <A NAME="tex2html41"
+  HREF="qual.html">Spoken Language Support for</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

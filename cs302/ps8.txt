@@ -1,0 +1,74 @@
+Andrew Begel
+CS302 PS8
+3/29/99
+
+1. 
+
+Exams Total: 65%
+
+Of the 65%:
+	Exam 1: 25%	90 minutes
+	Exam 2: 25%	90 minutes
+	Final:  50%	180 minutes
+
+The first two exams will cover the material for each of the first two
+sections of the course: programming language design, and compiler
+backends. The final will stress the third part of the course: runtime
+systems, but will also include questions covered by the first two
+exams. 
+
+I split up the scoring on the tests roughly by time allotted. I think
+that each part of the course will be equally difficult <grin>, so on a 
+longer final there will be more opportunity for more in-depth
+questions that require more evaluation and analysis than those on
+earlier tests. 
+
+Labs/Homework: 20%
+
+Checkoff system to ensure that the lab has been done. Then the
+students will turn in their work and get graded out of 10
+points. There are 9 labs/homeworks. Since labs/homeworks are worked on 
+in groups, the students should turn in individual write ups. 
+
+Weekly Essay: 15%
+
+This essay requirement encourages them to do the reading and asks them 
+to think critically about the material they're learning. Most will be
+based on the lecture's content and the lab work for each week. Some
+will be special topics.  
+
+
+The general distribution of grades tends to weight the exams. I think
+that it is difficult to measure an individual student's ability
+through group projects, however, since it is important that they do
+them, the checkoff process will help to encourage each student in the
+group to understand the whole lab. I make the essay almost equivalent
+to the homeworks, not because I really care about grading it, but it's 
+got to be enough to make everyone do it. The process of writing these
+is important enough to their education, howevermuch they might not
+realize. 
+
+The grades in this class will be on a curve. I don't like absolute
+grading because I'd rather have students only have a vague sense of
+their final grade during the course. I'd rather have them worry about
+the course content than their incremental grades. The vague outlines
+of the curve will be calculated for each exam to give students an idea 
+about which "bucket" they fit in (A, B, C, D, or drop the class), but
+the final determination will just probably rank every student and draw 
+lines between them to make the grade distribution. I do believe that a 
+pure curve isn't right, so if they get over 85-90%, it's an A. Even if 
+the curve is skewed, I don't want a person who has a 90% to get an F
+just because everyone had a 95%. That's silly and mean.
+
+2. 
+
+For a region of 5-10 students around each border, the TAs and I will
+discuss the merits of raising or lowering the border around a
+particular student. Relevant factors would be how much I or the TAs
+know about the people; i.e. how hard they're trying, the trend of
+their exam grades over time, how much time and energy went into their
+weekly essays no matter how good or bad. If there's no reason to make
+a student stand out in their "devotion" to the course, then the line
+stays where it is.
+
+

@@ -1,0 +1,117 @@
+I'd like to design a course on compilers, optimizations and runtime
+systems. It would be different than the normal compiler course in that 
+I don't want to spend much (any) time on lexing and parsing (partly
+because they're boring, and there's much more interesting stuff that
+comes after that most courses give short thrift to). 
+
+I'd like to concentrate the time on three areas: 
+
+1. language design/front ends (going over the 4-5 common textual
+syntaxes, plus an exploration of graphical front-ends (ala smalltalk,
+self, boxer, toontalk)
+
+2. small bits of grammars, intermediate representations, graph
+traversal algorithms and a large emphasis on optimization techniques
+
+3. language runtime systems: garbage collection/memory management,
+environments/scope, small bit on dynamic compilation, small bit on
+run-time systems for parallel languages, system libraries (linking
+with, headers). 
+
+I think that this could be a viable replacement for an undergraduate
+compiler course. I'd like students to have some basic graph knowledge, 
+algorithms, some language theory (finite automata, grammars),
+programming knowledge in at least two languages (preferably two
+different styles of languages, i.e. C vs. Scheme vs. Java vs. Prolog)
+
+Entrance exam: Write DFS and BFS in pseudo-code, Scheme and
+Java. assume you have appropriate data structures/abstractions
+(explain your assumptions).
+
+
+
+I suspect there would be about 30-40 people total in the class, so I'd
+like to have two lectures (1 hr. each) and a recitation (1 hr.) (two
+sections with 20 students each) and a lab.
+
+Here's the ten week course breakdown:
+
+1. L: intro to languages and the course
+   R: review recursion in at least two languages
+   L: language design for various popular languages (part 1)
+   B: play with Scheme
+
+2. L: language design 2
+   R: language design for another language
+   L: language design 3
+   B: play with Java
+
+3. L: graphical front ends
+   R: go over design decisions in popular languages and 
+      have the class design a new language
+   L: graphical front ends 2 (how to parse them)
+   B: play with Smalltalk/Boxer
+
+4. L: Intro to compilers. inspire them by optimizing a fibonacci
+iterative program
+   R: go over parsing/grammars
+   L: ASTs, intermediate representations (SSA)
+   B: implement one intermediate representation 
+   First Exam: cover design of languages and what implications they have
+
+5. L: Graph traversal algorithms, dominators, interval analysis.
+   R: go over graph traversal
+   L: intro to optimizations: identification of control and data flow
+   B: implement a few graph traversal algorithms (given some basic
+data structures)
+
+6. L: data flow analysis: constant propagation, SSA, copy propagation, 
+use-def, data dependencies
+   R: go over data flow
+   L: partial redundancy elimination
+   B: implement constant propagation given an intermediate rep and
+data structures and a set of sample problems.
+
+7. L: Code motion, loop optimizations
+   R: go over loops
+   L: register allocation, graph coloring
+   B: implement a register allocator
+
+   Exam 2: Simple optimization stuff
+
+8. L: Intro to runtime systems, start with GC
+   R: go over stop and copy, mark and sweep
+   L: generational garbage collection
+   B: study how GC works in one language
+
+9. L: integrating systems libraries, separate compilation, linking
+   R: go over linking
+   L: dynamic compilation
+   B: look at one language and explore its library support (logo,
+lisp, C, java). 
+
+   HW: Write a small paper on what they think about the
+success/failure of different languages in the mainstream.  
+
+10. L: runtime systems for parallel langs. (course evaluation)
+    R: go over papers and discuss.
+    L: course overview and review
+    R: (substitute extra recitation in place of last lab)
+       course review 
+
+    Final Exam.
+
+Most of the time, the labs encompass the homework. It's a place to
+"force" them to work on the homework in a controlled setting with
+people around to help them. 
+
+
+My course would be a prereq for any graduate language theory or
+compiler course. An entrance exam would give pseudo-code-like
+intermediate rep for some small program and ask them to optimize it by 
+hand, indicating the names of the optimizations they're doing and the
+order that they do it in (show all intermediate flow
+graphs). (students don't have to specify how the optimizations work,
+only identify that they can be done and what effect they have). 
+
+

@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Ambiguity Resolution</TITLE>
+<META NAME="description" CONTENT="Ambiguity Resolution">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html178"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html176"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html170"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html179"
+  HREF="node14.html">Manual Disambiguation</A>
+<B> Up:</B> <A NAME="tex2html177"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html171"
+  HREF="node12.html">Semantic Ambiguities</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00051400000000000000">
+Ambiguity Resolution</A>
+</H3>
+
+<P>
+This section aims to give a flavor of the form of automatic
+disambiguation techniques that H-3ARMONIA will be capable of. Consider
+the following example.
+
+<P>
+Suppose the array reference syntax in Spoken Java is
+
+<P>
+<DIV ALIGN="CENTER">
+ArrayReference <IMG
+ WIDTH="20" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$\rightarrow$"> ELEMENT Expression OF ARRAY Expression 
+<BR>
+</DIV>
+
+<P>
+Suppose the user says
+
+<P>
+<PRE>
+ELEMENT S P P OF ARRAY FOO PLUS PLUS
+</PRE>
+
+<P>
+The keywords ELEMENT, OF, and ARRAY serve to partially determine the
+structure of the input. The lexer and parser can recognize that
+structure, but must then parse the two expressions. There are two
+ambiguities: the first is the form of the expression entered between
+ELEMENT and OF. The second is the associativity of the PLUS PLUS
+operator.
+
+<P>
+Consider the first example. The lexer will determine that ``S P P''
+could be either three single letter identifiers or fewer but longer
+identifiers.  Using ``;'' as a list separator, the four possibilities
+are
+<PRE>
+s p p; sp p; s pp; spp
+</PRE>
+
+<P>
+Suppose that in our Spoken Java grammar, the dot between two
+identifiers may be omitted (as in <TT>foo.bar</TT> signifying the bar
+field of object foo). In addition, the parentheses demarcating the
+beginning and end of the arguments to a method call are optional in
+the grammar (because no one seems to speak them).  Then the four
+lexical sequences have a large set of potential parses, among them:
+
+<P>
+<PRE>
+s p p; s(p, p); s(p(p)); s.p p; s.p(p); s p.p; s(p.p); s.p.p; sp p;
+sp(p); sp.p; s pp; s.pp; s(pp); spp
+</PRE>
+
+<P>
+However, the parser would not generate any parse having adjacent
+identifiers (shown as separated by a space), since that is disallowed
+in expressions by Java's grammar. Hence the list of syntactically
+legal expressions includes:
+
+<P>
+<PRE>
+s(p, p); s(p(p)); s.p(p); s(p.p);s.p.p; sp(p); sp.p; s.pp; s(pp); spp
+</PRE>
+
+<P>
+Some of these expressions may not be valid semantically. The semantic
+analyzer can determine which expressions are acceptable and which ones
+should be eliminated.  For example, if there is no local variable,
+instance field or static field ``s'' defined at this point in the
+program, then the expressions that use ``s'' as a variable reference
+are eliminated: <TT>s.p(p)</TT>, <TT>s.p.p</TT>, and <TT>s.pp</TT>. If ``s'' is
+not an in-scope method, and there is no method in the current class
+named ``s'' then <TT>s(p,p)</TT>, <TT>s(p(p))</TT>, <TT>s(p.p)</TT>, and <TT>s(pp)</TT> are eliminated, leaving:
+
+<P>
+<PRE>
+sp(p); sp.p; spp
+</PRE>
+
+<P>
+If ``sp'' is neither a local variable, nor a field, nor a method, the
+first two choices will be eliminated, leaving <TT>spp</TT>. If <TT>spp</TT>
+is neither a local variable nor a field visible from this point in the
+program, then an error is reported. If all three possibilities are
+semantically valid, then the developer can be asked to disambiguate.
+
+<P>
+As for the other part of this example, we now have
+<PRE>
+ELEMENT SPP OF ARRAY FOO PLUS PLUS
+</PRE>
+
+<P>
+The possible parses either increment <TT>FOO</TT> by one, or increment
+the result of the array reference by one. In standard Java syntax,
+either
+<TT>(FOO++)[SPP]</TT> or <TT>FOO[SPP]++</TT>
+
+<P>
+The semantic analyzer can disambiguate this example. <TT>FOO</TT> is a
+Java array. In Java, you can't increment an array reference, thus the
+first option is illegal. The system therefore chooses the other
+possibility (which does type check correctly since <TT>FOO</TT>, let's
+say, is an array of numbers) as the correct one.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html178"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html176"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html170"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html179"
+  HREF="node14.html">Manual Disambiguation</A>
+<B> Up:</B> <A NAME="tex2html177"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html171"
+  HREF="node12.html">Semantic Ambiguities</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

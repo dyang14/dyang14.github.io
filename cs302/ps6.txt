@@ -1,0 +1,455 @@
+Andrew Begel
+First course exam
+
+Introduction to Programming Design and Compilation
+
+Exam 1.
+
+1. Administrivia (1 point)
+
+Please write your name and email down on this form.
+
+Goals: They better know their own name. :)
+Answer: Andrew Begel
+
+2. The following pseudo-code will produce an output when it is run.
+
+(let ((f 6))
+  (let ((g (lambda () f)))
+    (let ((f 8))
+      (g))))
+
+a. What is the output in a lexically-scoped language?
+
+6
+
+b. dynamic scoping?
+
+8
+
+(let ((f (lambda () (/ 1 0))))
+  (let ((g (lambda (a) 6)))
+    (g (f))))
+
+a. What is the output in a call-by-value language?
+
+error
+
+b. call-by-name?
+
+6
+
+
+Goal: They should understand how to interpret a set of functions
+under different scoping and parameter passing conventions. 
+
+
+3. Ben Bitdiddle is attemping to write a program that sorts a list of
+numbers, so he wrote down the following code:
+
+sort(array) =
+  for i = 0 to array.length do
+    for j = 1 to array.length do
+      if sourceArray[i] > sourceArray[j] 
+         swap(sourceArray, i, j)
+end sort
+
+swap(array, index1, index2) =
+  temp = array[index1]
+  array[index1] = array[index2]
+  array[index2] = temp
+end swap
+
+
+He attempts to compile this but gets a cryptic error saying "sort
+is not expected on line #1". While Ben is scratching his head,
+Alyssa P. Hacker wanders by and takes a look. With a smug grin on her
+face, she tells Ben that this language requires the programmer to
+write the types in the code. With a flip of her hair, Alyssa runs off
+to teach some poor fool how to fix the nozzle of his rocket engine.
+
+a. Can you help Ben put the types back in the code? Fill in the blanks
+with the right types.
+
+____  sort(_____ array) =
+  for ____ i = 0 to array.length do
+    for ____ j = 1 to array.length do
+      if sourceArray[i] > sourceArray[j] 
+         swap(sourceArray, i, j)
+end sort
+
+____ swap(____ array, ____ index1, ____ index2) =
+  ____ temp = array[index1]
+  array[index1] = array[index2]
+  array[index2] = temp
+end swap
+
+Answer:
+
+void  sort(T[] array) =
+  for int i = 0 to array.length do
+    for int j = 1 to array.length do
+      if sourceArray[i] > sourceArray[j] 
+         swap(sourceArray, i, j)
+end sort
+
+void swap(T[] array, int index1, int index2) =
+  T temp = array[index1]
+  array[index1] = array[index2]
+  array[index2] = temp
+end swap
+
+Goal: While the example is trivial (a better one might be better), the 
+idea is to be able to read a program and infer the types. Note the use 
+of T[] rather than int[] or float[]. We don't know and can't know the
+type of the elements of the array. We might make a guess because of
+the > function, but that will depend on the exact syntax of the
+example and what language it evokes).
+
+b. How does explicitly writing down the types help Ben write his
+program? What kinds of bugs can he find by writing down the types?
+Could a compiler be programmed to do what you just did in part a? If
+yes, what base knowledge would it need to know in order to start? If
+no, why not? What knowledge can't it infer?
+
+Answer: Types are useful form of documentation. They help add
+redundancy to a syntax to help the programmer identify their own
+errors or at least the bugs in the code that the compiler finds. It
+also allows the compiler to check more code statically for simple
+braino bugs, like type mismatches. Yes, a compiler could do what I did 
+in part A. It needs to know what the base types are in the language,
+and what the base operations that may be performed on them are and
+what type signatures they have.
+
+Goal: Comprehension of type checking and understanding of its place in 
+compilation.
+
+
+c. Ben tries to recompile the code. The compiler gives back another
+cryptic error: "I don't know how to swap in sort." Give a possible
+reason for the error.
+
+Answer: swap is forwardly-declared. We have a one-pass compiler. 
+
+d. Fix the error.
+
+Reorder the procedures so that swap comes first.
+
+Goal: This question is here just to see if they can catch a bug that's 
+not in the semantics, but in the makeup of the front end of the compiler.
+
+
+Bonus question: Ben was contracted to write this program for
+NASA. This subroutine is critical for sorting the landing vectors for
+the space shuttle landing program. Given that the shuttle is really
+big, there are 500,000 landing vectors to sort. Give Ben a piece of
+your mind and tell him what he's doing wrong.
+
+
+Answer: Bubble sort is O(n^2)! We can do better than that with merge
+sort or quick sort or if we know the range of values, use a counting
+sort. 
+
+Goal: It's an algorithms question but I wanted to see if they can
+remember any knowledge from that class to apply in an orthoganal way.
+
+4. (This question sucks. Be forewarned.) You are a consultant for
+Mathematica, and they ask you to design an extension to their software
+that will bring them up to speed with their competitor, Matlab. They
+ask you to design a new vector math package for high school
+students. If they adopt your design, they will give you ten million
+dollars. However, if your design flops, you'll have to slink back to
+Oracle and program another database before you're allowed out.
+
+a. What types of data do we need to support? What operators should we
+support for each data type (at least 5)?
+
+Answer: Scalar and vector and matrix data of floats and doubles. For
+scalars, we need +, -, *, /, %. For vectors, we need +, -, dot
+product, cross-product, reduce. For matrices, we need +, -,
+cross-product, matrix multiply, inverse.
+
+Goal: They should know what kinds of operations are typically found
+for particular base types. it's rather concrete knowledge that comes
+from experience with math systems.
+
+
+b. Since we have access to the best language and compiler around, we'd 
+like to design a high-level data structure to support our data types
+and operators. Write down a data structure (in pseudo-code) for each
+type you wrote down in part a, and write a function prototype for each
+operator. 
+
+Answer: 
+
+Scalar-Float extends Number =
+  float value;
+  op+: (float, float) -> float
+  op-: (float, float) -> float
+  op*: (float, float) -> float
+  op/: (float, float) -> float raises DivideByZeroError
+  op%: (float, float) -> float raises ModByZeroError
+end Scalar-Float
+
+Vector-Float extends Vector =
+  Scalar-Float[] value;
+  int length;
+  boolean row?;
+  op+: (vector, vector) -> vector raises MismatchRank
+  op-: (vector, vector) -> vector raises MismatchRank
+  op.: (vector, vector) -> float  raises MismatchRank
+  opx: (vector, vector) -> vector raises MisMatchRank
+  op-reduce: (vector, operation) -> float 
+end Vector-Float
+
+Matrix-Float extends Matrix =
+  Vector-Float[] value; 
+  int rows;
+  op+: (matrix, matrix) -> matrix raises MismatchRank
+  op-: (matrix, matrix) -> matrix raises MismatchRank
+  opx: (matrix, matrix) -> matrix raises MisMatchRank
+  op*: (matrix, matrix) -> matrix raises MisMatchRank
+  op-inverse: matrix -> matrix raises NoInverse
+end Matrix-Float
+  
+Goal: They should be able to write down some semblance of prototypes
+and data structures for this data.
+
+
+c. Darn! Our language wasn't as good as we thought. We don't have
+native vector support. Pick one of your matrix operations (not + or -)
+and write down pseudo-code to describe its implementation in terms of
+the operations defined in your scalar and vector data types. If you
+feel the need to add new operations to your scalar or vector types, go 
+ahead and write their prototypes down.
+
+Answer: Yuck. Even I don't want to do this.
+
+(define columns (matrix) matrix[0].value.length)
+
+(define transpose (matrix)
+   (let ((result new matrix(matrix.rows, (columns matrix))))
+     (foreach row in matrix
+        (foreach elt in row
+           (set! result[eltcount][rowcount] elt))))) 
+
+(define matrix-multiply (matrix1 matrix2) 
+  (let ((result new matrix(matrix1.rows, matrix2[0].value.length)))
+     (foreach row in matrix1
+        (foreach column in (transpose matrix2)
+           (set! result[rowcount][columncount] (op. row column))))
+     result))
+
+That's pretty gross. Of course, it also assumes that we have a set!
+operation that works on matrices. Yuck yuck yuck.
+
+Goal: I'd like them to use their functions that they defined to define 
+a more complex one. I suspect that matrix multiply isn't all that hard 
+when you get down to it, as long as you make appropriate
+abstractions. 
+
+
+d. Uh oh, duck! Whew, a spec change just flew by and missed us. Uh oh!
+Look out!  It's on a boomerang course and coming straight for the
+computer!  Ding! You've got mail. 
+
+This spec change says that we're only allowed to allocate 1K of
+temporary memory for each operation (not including incoming data). If
+you've allocated any memory (either explicitly or implicitly), you'd
+better get rid of it fast. Rewrite your vector operations to conserve
+as much memory as possible. Do you have to redesign the operators? Are
+vectors mutable? Does it matter?  Do we have to redesign our API? Make
+any changes necessary to meet this stringent requirement.
+
+Answer: Shit. Our matrix multiply function mallocs a new array, and
+our transpose function mallocs a new array as well. Too many. We can
+cut that down by transposing in place once at the beginning and then
+transposing again at the end to restore matrix2. As well, we can take
+in a pointer to a result matrix instead of mallocing our own. 
+
+(define swap! (matrix-ptr1 matrix-ptr2)
+  (let ((temp *matrix-ptr1))
+    (set! matrix-ptr1 *matrix-ptr2)
+    (set! matrix-ptr2 temp)))
+
+
+(define transpose! (matrix)
+   (for i = 0 to matrix.rows
+      (for j = i to (columns matrix) 
+         (swap! &matrix[i][j] &matrix[j][i]))))
+
+(define matrix-multiply (matrix1 matrix2 result) 
+  (tranpose! matrix2)
+  (foreach row in matrix1
+     (foreach column in matrix2
+        (set! result[rowcount][columncount] (op. row column))))
+  (transpose! matrix2))
+
+Goal: They should understand how to write low-level programs that
+explicitly manage memory when necessary. In C, you can't just go on
+mallocing things willy-nilly. You've got to have some discipline. The
+tradeoff is that they will do more computation or have to do more
+hairy computation.
+
+
+
+
+5. Robbie Birddoll asks you to design a new language called Cal. But,
+since UCB is a public school and has very little money for an
+implemention, he asks that the design only include the minimum
+features necessary to implement Birddoll's favorite function,
+factorial.
+
+a. Describe the minimum functionality of Cal. Include which functions
+you will support, as well as naming and scoping rules, and the memory
+storage model.
+
+Answer: We need recursion (ABB: we don't really, but I'm sure everyone 
+will see it that way since they have to write factorial). Umm, why
+don't we try writing it first and then decomposing what we've written?
+
+(define (factorial n)
+  (if (or (< 0 n) (not (integer? n))) (error "bad input"))
+  (if (zerop n) 
+      1
+      (* n (factorial (- n 1)))))
+
+According to this, we need function naming, to support recursion. We
+need an if statement to make the base case and error handling work. We 
+need some math primitives, like zerop, * and - to support the
+recursive part. We also require that if is a special form (requiring
+macros) in order that we don't accidentally recurse on factorial when
+we should just be returning 1 if n = 0. I added some type checking in
+there for safety, but we don't really need it if the person enters the 
+correct input. Scoping? It doesn't matter here. I pick lexical. Memory 
+storage model? We've got a stack and the ability to store stuff on it, 
+so that the recursion works, but I don't really care about the heap
+right now. So heap memory allocation is explicit, but stack allocation 
+is automatic.
+
+Goal: They should be able to figure out how to synthesize a new
+language from the knowledge they have. I will cover turing
+completeness in one of the lectures which they probably won't totally
+understand, but after looking through a few languages, I hope they get 
+the idea of what core concepts are in common between them. Which ones
+are allowed to be removed because they aren't important and which ones 
+they do have to pay attention to. 
+
+b. Write factorial in this new language.
+
+Just did it.
+
+Goals: It's a test of whether their design is powerful enough to
+describe factorial.
+
+c. What does it mean for a language to be Turing complete? Is a
+language that is able to express factorial necessarily Turing
+complete? Why or why not? Is your design for Cal Turing complete? (You 
+don't have to prove it).
+
+Answer: A turing complete language can be used to describe any program 
+that any turing machine could execute. Well, factorial can be
+expressed with a dedicated factorial language with one function:
+factorial. That wouldn't be turing complete. My design I think is
+turing complete. I've got a push-down stack, math primitives,
+recursion. I can make all sorts of programs with this.
+
+Goal: Did they understand Turing completeness enough to evaluate their 
+own contribution? Did they realize that special-purpose languages may
+not be turing complete? It may not even be required!
+
+6. Memory Storage
+
+a. What is the memory storage model used in Java? Describe what the
+programmer has control over and what the compiler has control
+over. Make sure to include details about allocation and deallocation
+of memory, and read and write priveledges to various parts of memory.
+
+Answer: The programmer controls when allocation happens, and may be
+informed and run something with deallocation occurs, but that's
+it. The language takes care of how much to allocate, where to allocate 
+it, and when to deallocate it. Java has garbage collection and type
+safety, so nobody can come along and read or write to another object's 
+memory without going through proper and legal type-safe channels. Java 
+also supports public and private and protected to ensure that only
+authorized entities are allowed to touch particular pieces of a class
+implementation. 
+
+b. in C?
+
+Answer: The programmer controls when and the size of each malloc'd
+block. They also control when the block is deallocated. They don't
+really even need to malloc the memory. They could keep reusing old
+memory since they can cast ints to pointers and potentially touch any
+block of memory they want.
+
+c. in Scheme?
+
+Answer: Scheme lets the user allocate memory using cons, but then
+keeps track of and deallocates memory automatically when the last
+pointer to it goes away. Scheme has garbage collection. Scheme is
+dynamically type checked, so you can't go and touch other people's
+memory unless you have a legal pointer to it and the data is mutable. 
+
+
+Goal: This question is here to find out if they understand memory
+storage and notions of memory management that relate to the
+programmer. They should know the words garbage collection and pointer, 
+and understand what they do in the abstract. 
+
+7. Compile-time vs. run-time. The following program contains several
+errors. 
+
+boolean factorial(int n) 
+   if (n = 0) return 1
+   if (n == 1) return 1
+   if (n > 2) return factorial (n * n - 1)
+end factorial
+
+a. Describe which errors may be discovered at compile-time. Fix them.
+
+Answer: (n = 0) is an error because you are returning a number, not a
+boolean to the if statement. It should be ==. 
+
+The function says that it returns a boolean, but type inference says
+it returns an int.  
+
+There is a possible execution path which does not return a value (if n
+= 2).
+
+int factorial(int n) 
+   if (n == 0) return 1
+   if (n == 1) return 1
+   if (n > 1) return factorial (n * n - 1)
+end factorial
+
+
+b. If the errors in part a were fixed, what errors could we find at
+runtime? How can we find them? Fix them.
+
+If you run this with any input n over 1, it will infinite loop. The
+last line should be n * fact(n - 1). 
+
+int factorial(int n) 
+   if (n == 0) return 1
+   if (n == 1) return 1
+   if (n > 1) return n * factorial (n - 1)
+end factorial
+
+c. If you fixed those errors, are there any errors left? If so, what
+are they?
+
+Well, we don't check for negative numbers, if we don't do that, we'll
+croak. 
+
+int factorial(int n) 
+   if (n == 0) return 1
+   if (n == 1) return 1
+   if (n > 1) return n * factorial (n - 1)
+   error "bad input"
+end factorial
+
+Goal: They should be able to spot errors, and figure out which are
+determinable by the compiler, which at runtime and which might only be 
+detected by a human. 
+

@@ -1,0 +1,90 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>SIGCSE 2002 DC Application -- Andrew Begel</title>
+	</head>
+
+	<body bgcolor="#ffffff">
+		<div align="center">
+			<table border="0" cellpadding="0" cellspacing="2" width="341" bgcolor="#663366">
+				<tr>
+					<td bgcolor="#99ff99">
+						<div align="center">
+							<h3>Andrew Begel<br>
+								University of Calfornia,&nbsp;Berkeley</h3>
+							<p><i><b>Spoken Language Support for Software Development</b></i></p>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p></p>
+		<h2>Introduction</h2>
+		<p>Software development environments have not changed very much in the past thirty years; developers are forced to use low-level text editors and program representations designed for compiler input. However, with one another, developers discuss software artifacts in terms of high-level conceptual notions. Our research enables developers to work at a more conceptual level by programming via speech. By reducing their dependence on typing and text, our approach also lowers barriers for the growing numbers of software developers that suffer from repetitive strain injuries and other related disabilities that make typing difficult or impossible.</p>
+		<h2>Background</h2>
+		<p>When not in front of the computer, software developers communicate with one other all the time using voice, diagrams, presentations, etc. This is the way that teachers communicate with students, and how students communicate with each other when they are working on a software project. Unfortunately, however expressive these interactions might be, none of them are understood by current software development environments. These environments only support text entry into a text editor and batch compilation services. Even though there has been a long history of research in support of program development [<a href = "#bahlke">Bahlke 96</a>, <a href = "#borras">Borras 88</a>, <a href = "#reps">Reps 89</a>, Van den Brand <a href = "#van95">95</a> and <a href = "#van96">96</a>], very few environments support higher-level services, such as online syntactic and semantic analysis [<a href = "#visualstudio">VisualStudio</a>, <a href = "#codeguide">CodeGuide</a>] that developers can use to explore their source code artifact with more effectiveness than &quot;grep.&quot;. Even in these environments, however, program entry is still consigned to text editing.</p>
+		<p>Text-based program editing has been used for fifty years, and of course, has earned great merit. However, what we advocate instead, is that <i>in addition</i> to plain text editing, we will enable programmers to dictate, compose, navigate, browse and edit their software in high-level linguistic terms. We feel that this can enhance programmer productivity and make them more efficient. Moreover, we believe that if the programmer could express himself verbally (through speech recognition), he might find it easier to speak in pseudocode, or in some stylized, formalized -- yet informal with respect to an actual programming language -- high-level language, and get his ideas down on screen more efficiently.</p>
+		<p>Efforts to apply speech-to-text conversion for programming tasks such as authoring, navigation, and modification using these conventional natural language processing tools [<a href = "#ibm">IBM</a>, <a href = "#dragon">Dragon</a>] have had limited success. English language parsing provides poor recognition of most traditional programming language text because the grammars are very structurally dissimilar. Some researchers have attempted to adapt speech recognizers for programming [<a href = "#desilets">Desilets</a>], but their work suffers from awkward, over-stylized code entry, and the inability to exploit the structure and semantics of the program. A few researchers [<a href = "#snell">Snell 00</a>, <a href = "#price">Price 00</a>, <a href = "#arnold">Arnold 00</a>] have applied programming language analysis technology to understand the program code being spoken, but all have their limitations.</p>
+		<h2>Goals of the Research</h2>
+		<p>The main thrust of this work is to build a software development system that can understand spoken program dictation, composition, navigation and browsing, and editing, which will make these tasks easier for the software developer. The major technical challenge is to resolve the ambiguities that the new input modes allow. For instance, if the user is programming in Java, and says <tt>FOO SUB BAR BAZ PLUS PLUS</tt>, what did he mean? It could be <tt>foo[barBaz]++</tt>, but perhaps it's <tt>foo[bar.baz]++</tt>, or even <tt>foo[bar].baz++</tt>. Not only are there lexical ambiguities (Is bar capitalized? Is it concatenated with baz?), but there are quite a few syntactic (Where does the closing bracket go? Is baz a field dereference from bar, or perhaps bar is a method that takes baz as an argument?), and semantic ambiguities (What is the element type of foo? Can it be incremented by ++? Is bar a method in the current scope?). </p>
+		<p>These kinds of ambiguity resolution require new algorithms for interacting lexical, syntactic, semantic, and program-specific analysis. New methods of accommodating lexical, syntactic, and semantic errors and inconsistencies will be created, in order to sustain language-based services when the artifacts are incomplete and incorrectly formed. We will build these analysis techniques on top of <a href="http://www.cs.berkeley.edu/~harmonia">Harmonia</a>, our programming language analysis framework which provides language-based tools and services to applications. </p>
+		<p>We also are asking questions about the cognitive issues behind spoken software development. How is code spoken? How is this different from writing code? What effect might speaking code have on our problem-solving ability? How do novices, who have an incomplete understanding of computer programming, talk about code? How is this different than an expert talking about code? How easy is it to program verbally with speech recognition systems? We hope to gain insight on these questions and contribute to the body of research of expressing oneself through code.</p>
+		<p>To answer these questions, we will conduct several user studies to discover how students and experts express themselves verbally during the software development process, both alone and with others. We will use the results from these user studies to design a more easily spoken version of the Java programming language, as well as design the higher-level composition, navigation and editing commands that most naturally formalize how students already verbalize these tasks.</p>
+		<p>Finally, we will evaluate our system to see how it is used by students and expert programmers, and determine if it improves programmer efficiency and productivity. </p>
+		<h2>Current Status</h2>
+		<p>We have conducted one user study (<a href="#Anchor-We-46919">results below</a>) related to the design of the spoken form of a programming language. In addition, we have released a first version of Harmonia, our programming language editor, as a plugin to the popular editor XEmacs. This first release illustrates the maturity of the analysis techniques we will use in developing the rest of the speech-based editing system. Finally, we've developed two prototype editors in which it is possible to use speech to activate and instantiate code templates during program composition.</p>
+		<h2>Interim Conclusions</h2>
+		<p><a name="Anchor-We-46919"></a>We conducted an experiment in which participants read a one-page pre-existing Java program out loud. The experiment showed interesting differences between spoken and written communication about code. </p>
+	<ul>
+		<li><b>Vocal expression is important</b> Whereas writers use vocabulary, punctuation and capitalization to convey meaning, speakers use volume, timbre, pitch, vernacular and pauses. 
+		<li><b>Abstraction is natural</b> People explain concepts at high-level first, and only explain details if the first explanation is not understood. People identify patterns and describe them, rather than their instantiations. When users talk about programs to one another, they talk in terms of constructs (e.g. methods, if-statements, classes) and semantic properties (scope, type) rather than textual entities. 
+		<li><b>Consistency and correctness are inferred by context</b> People repeat words, drop words, misuse words, flub pronunciation and employ their stream of consciousness when speaking, while writers revise and edit until they&#x2019;ve perfected their documents.
+	</ul>
+		<h2>Future Work</h2>
+		<p>A future prototype of our spoken programming editor will support dictation of spoken Java, as well as spoken interfaces to higher-level program templates, transformations, refactorings and design patterns. We plan to conduct several Wizard of Oz studies to help design and debug the Spoken Java language dialeect.</p>
+		<p>Afterwards, in collaboration with several other computer science and education researchers, we will use this editor in CS61B, a sophomore-level course on data structures taught in Java. First, we will observe students to explore the vocabulary -- oral, diagrammatic, and gestural -- that inexperienced programmers use to communicate solutions and designs to experts and to one anothers. We will then incorporate corresponding primitives in the programming environment, and examine their effect on productivity. Effects will not necessarily be beneficial. For example, the use of gestures is often unconscious; perhaps making students aware of their gestural communication will be distracting rather than helpful. However, we expect that some of the facilities we provide will significantly improve productivity for some users. The challenge is to invent ways to enable other students to take advantage of these features. </p>
+		<hr>
+		<h2>Current Stage of Study</h2>
+		<p>5th year Ph.D. student (beginning the second year of dissertation).</p>
+		<h2>What I hope to gain from participation in the Doctoral Consortium</h2>
+		<ul>
+			<li>Gain some feedback about the work described here.
+			<li>Meet other students who care as much as I do about good computer science education and find out what they're doing.
+			<li>Discuss techniques for conducting user studies on students in computer science classes related to introduction of research technologies. 
+		</ul>
+		<hr>
+		<h2>References</h2>
+		<p><a name = "arnold">[Arnold 00]</a></p>
+		<dl><dd>Arnold S., Mark L., and Goldthwaite J. Programming By Voice, Vocal Programming. Proceedings of the ACM 2000 Conference on Assistive Technologies. (<a href = "http://www.acm.org/pubs/articles/proceedings/assets/354324/p149-arnold/p149-arnold.pdf">pdf</a>).</dl>
+		<p><a name = "bahlke">[Bahlke 86]</a></p>
+		<dl><dd>Rolf Bahlke and Gregor Snelting. The PSG system: From formal language definitions to interactive programming environments. ACM Transactions on Programming Languages and Systems, 8(4):547-576, October 1986.</dl>
+		<p><a name = "borras">[Borras 88]</a></p>
+		<dl><dd>P. Borras, D. Clement, Th. Despeyroux, J. Incerpi, G. Kahn, B. Lang, and V. Pascual. CENTAUR: The system. In Proceedings of the ACM SIGSOFT/SIGPLAN Software Engineering Symposium on
+Practical Software Development Environments, pages 14-24, November 1988.</dl>
+		<p><a name = "desilets">[Desilets]</a></p>
+		<dl><dd>Alain Desilets. VoiceGrip 3. <a href = "http://ai.iit.nrc.ca/il_public/VoiceCode">http://ai.iit.nrc.ca/il_public/VoiceCode</a>.</dl>
+		<p><a name = "dragon">[Dragon]</a></p>
+		<dl><dd>Dragon Systems, Inc. Dragon Dictate Product Home Page.
+<a href = "http://www.dragonsystems.com/products/dragondictate">http://www.dragonsystems.com/products/dragondictate</a>.</dl>
+		<p><a name = "ibm">[IBM]</a></p>
+		<dl><dd>IBM Inc. IBM ViaVoice Product Home Page. <a href = "http://www-4.ibm.com/software/speech/">http://www-4.ibm.com/software/speech/</a>.</dl>
+		<p><a name = "codeguide">[CodeGuide]</a></p>
+		<dl><dd>Omnicore Software. CodeGuide 3.0: The Next Generation Java IDE. <a href = "http://www.omnicore.com">http://www.omnicore.com/</a>.</dl>
+		<p><a name = "price">[Price 00]</a></p>
+		<dl><dd>Price, David, Riloff, Ellen, Zachary, Joseph and Harvey, Brandon. NaturalJava: A Natural Language Interface for Programming in Java. Proceedings of the 2000 International Conference on Intelligent User Interfaces, January 2000.</dl>
+		<p><a name = "reps">[Reps 89]</a></p>
+		<dl><dd>Thomas W. Reps and Tim Teitelbaum. The Synthesizer Generator: A System for Constructing
+Language-Based Editors. Springer-Verlag, 1989.</dl>
+		<p><a name = "snell">[Snell 00]</a></p>
+		<dl><dd>Snell, Lindsey. An Investigation Into Programming By Voice and Development of a Toolkit for Writing Voice-Controlled Applications. M.Eng. Report. Imperial College of Science, Technology and Medicine, London. June, 2000.</dl>
+		<p><a name = "van95">[Van den Brand 95]</a></p>
+		<dl><dd>Mark Van den Brand and E. Visser. The ASF+SDF meta-environment: Documentation tools for free! Lecture Notes in Computer Science, 915:803-??, 1995.</dl>
+		<p><a name = "van96">[Van den Brand 96]</a></p>
+		<dl><dd>Mark Van den Brand, A. Van Deursen, P. Klint, and S. Klusener. Industrial applications of ASF+SDF. Lecture Notes in Computer Science, 1101:9-??, 1996.</dl>
+		<p><a name = "visualstudio">[VisualStudio]</a></p>
+		<dl><dd>Microsoft Corp. Visual Studio.NET. <a href = "http://msdn.microsoft.com/vstudio">http://msdn.microsoft.com/vstudio</a>.</dl>
+	</body>
+
+</html>

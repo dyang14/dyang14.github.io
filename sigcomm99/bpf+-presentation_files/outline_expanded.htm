@@ -1,0 +1,437 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 9">
+
+<script>
+<!--
+if( window.name != "PPTOtl" )
+  parent.location.href = "../bpf+-presentation.html";
+//-->
+</script>
+<meta name=Robots content=NoIndex>
+</head>
+
+<body>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0001.htm');">BPF+</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Exploiting Global Data-flow
+  Optimization in a Packet Filter Architecture</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0002.htm');">The Big Picture</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>With BPF+, we can express packet
+  filters in a high-level language and compile them into efficient code.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0039.htm');">The Packet Filter</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Definition:&#9;A tool for selecting
+  packets &#9;&#9;from a packet stream using a &#9;&#9;programmable selection
+  &#9;&#9;&#9;criterion.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Example:&#9;tcp and source net
+  128.32/16 &#9;<span style="mso-spacerun: yes">                     
+  </span>and destination host web.mit.edu and port 80</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0048.htm');">Domain-Specific Optimization</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width=20 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Tune traditional compiler optimizations
+  for the application of packet filtering.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Affords simpler analyses and much more
+  effective optimization.</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Packet filters are DAGs</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Engenders linear-time algorithms</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Combine with Just-In-Time (JIT)
+  assembly.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0045.htm');">Slide 5</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0040.htm');">Related Work</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width=20 nowrap></td>
+  <td width=20 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=3><font face=Arial size=2>Virtual Machine Models:</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>CMU/Stanford Packet Filter: MRA87</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>BPF: Berkeley Packet Filter: MJ93</font></td>
+ </tr>
+ <tr>
+  <td colspan=3></td>
+  <td colspan=1><font face=Arial size=2>tcpdump and libpcap</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>MPF: YBMEM94</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=3><font face=Arial size=2>Exploit Filter Structure:</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>PathFinder: BGPP94</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>DPF: EK96</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>Multi-dimensional Range Matching: LS98</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>Grid of Tries: SVSW98</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=3><font face=Arial size=2>High-Level Approach:</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=2><font face=Arial size=2>LR Parsing: JC96</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0044.htm');">Slide 7</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0049.htm');">Slide 8</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0003.htm');">Compiler Optimizations</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0008.htm');">Redundant Predicate
+Elimination</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0029.htm');">(src host UCB and dest host
+MIT) <br>
+or<br>
+(src host MIT and dest host UCB)</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0005.htm');">Slide 12</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0006.htm');">Slide 13</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0007.htm');">Slide 14</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0009.htm');">Partial Redundancy
+Elimination</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0030.htm');">src host UCB <br>
+or <br>
+src host MIT</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0043.htm');">Slide 17</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0042.htm');">Slide 18</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0012.htm');">Slide 19</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0020.htm');">Putting Them Both Together</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0021.htm');">Slide 21</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0022.htm');">Lookup Table Encapsulation</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0031.htm');">src host UCB <br>
+or <br>
+src host MIT <br>
+or <br>
+src host CMU</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0024.htm');">Slide 24</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0025.htm');">Slide 25</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0027.htm');">Slide 26</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0028.htm');">Slide 27</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0050.htm');">Slide 28</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0026.htm');">Filter Safety Must Be
+Verified</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>All bytecodes are valid.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Jump targets are valid.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>No loops.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>All paths terminate with a return
+  instruction.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>No out-of-bounds reads or writes.</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0051.htm');">Slide 30</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0032.htm');">Performance Tests</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width=20 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Two types of predicate expressions</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Dependent (src host (UCB or MIT or CMU)</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Independent (i.e. TCP, Port 80, dest
+  host UCB)</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Run on Ultra 10 300 MHz UltraSPARC IIi</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Four ways to run a filter</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Unoptimized, Interpreted</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Optimized, Interpreted</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Unoptimized, JIT Assembled</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Optimized, JIT Assembled</font></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0047.htm');">Slide 32</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0034.htm');">Slide 33</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0033.htm');">Slide 34</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0046.htm');">Slide 35</a></b></font></p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0037.htm');">Future Work</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width=20 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>More efficient table lookup
+  representations (LS98, SVSW98)</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Better support for packet
+  classification</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Loops</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Proof-Carrying Code, Necula 96</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2><font face=Arial size=2>Intrusion detection</font></td>
+ </tr>
+ <tr>
+  <td colspan=2></td>
+  <td colspan=1><font face=Arial size=2>Online Updates</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=2></td>
+ </tr>
+</table>
+
+</p>
+
+<p><font face=Arial size=2><b><a
+href="javascript:parent.GoToSld('slide0038.htm');">Conclusions</a></b></font>
+
+<table>
+ <tr>
+  <td width=5 nowrap></td>
+  <td width="100%"></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Packet filters can be specified at a
+  high-level and be efficiently executed.</font></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1></td>
+ </tr>
+ <tr>
+  <td colspan=1></td>
+  <td colspan=1><font face=Arial size=2>Key idea: Tune familiar global
+  data-flow compiler analyses and optimizations for packet filtering.</font></td>
+ </tr>
+</table>
+
+</p>
+
+</body>
+
+</html>

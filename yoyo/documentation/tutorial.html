@@ -1,0 +1,537 @@
+<head>
+<title>YoYo Tutorial</title>
+</head>
+
+<body bgcolor ="FFFFFF"> 
+<!-- bgcolor = "000030" text="#ffffdd" link="#ffffff" vlink="#ffff11">
+-->
+
+<h1>YoYo Tutorial</h1>		
+<i>Created 1/27/97 -- Modified 12/9/98</i>
+<hr>
+
+YoYo is a programming language built on top of Java. YoYo is
+descended from Logo. It is object oriented and
+integrates well within the Java language framework.
+<p>
+This document is intended to be an introduction to YoYo from the
+ground up. It will introduce the syntax, semantics and basic elements
+of YoYo, hopefully in a way that a person may "get up" on YoYo in
+just a short time.
+<p>
+
+<hr>
+<h2>Start</h2>
+
+Well, since we have to begin somewhere, let's start by explaining what
+you just downloaded. After you unpacked YoYo you got a yoyo.jar file,
+several .yoyo files, and several .html files. There are also batch
+files that let you easily run YoYo from the command line.  The YoYo
+files are used by YoYo when running your YoYo code.  
+
+<p> Before you begin to use the YoYo development environment, you need
+to have a copy of Java. You can either use a supported browser, or go
+to Sun's web site (<a href =
+"http://java.sun.com">http://java.sun.com</a>) and download the JDK
+1.1.x. You may also download the JRE 1.1.x if you do not need to
+program in Java.<p>
+
+To start the interactive interpreter, run the class
+<code>yoyo.Toplevel</code> (methods will be differnet
+depending on your particular Java platform. On Macs, there will be a
+YoYo CommandCenter application. Double-click it. On PCs, you can
+double-click the yoyo.html file to run the command center in IE 4.0,
+or use the command-line java runner (java, jview, or jre, depending on
+which Java you're using) to run the class yoyo.Toplevel). 
+
+<p>This will bring up a text window with the interpreter in it.  Upon
+startup, it says "Welcome to YoYo!" and blinks a prompt at you.
+
+<p>Once YoYo has started, you may type a command in the text box and
+press return to run it.
+<p>
+print 5 + 6<br>
+11<br>
+<p>
+If you say print 5 + 6, YoYo computes 11 and prints it to the
+interpreter and says ok.  Print is a command that takes one input and
+prints the value in the interpreter window.  + is an infix operator
+that takes in two numbers and returns the addition of them.
+<p>
+If you ever want to execute print 5 + 6 again, you don't need to
+retype it. Just move the cursor to anywhere on that line and press
+return. YoYo will run that line again.
+<p>
+
+<hr>
+<h2>Intro to Math</h2>
+
+YoYo supports lots of different math functions with order of operations. 
+Let's try some now:
+<p>
+print 5 + 6<br>
+11<br>
+<p>
+Notice the dot that flashes quickly at the end of the 6? That dot
+tells you that YoYo is computing something. It goes away when you're
+allowed to type again. If you hit a key while YoYo is computing, it
+will cancel the operation.
+
+<p>print 5 - 6<br>
+-1<br>
+<p>
+print 5 * 6<br>
+30<br>
+<p>
+Notice that there is a space between every word in YoYo. This is important.
+<p>
+print 6 / 5<br>
+1.2<br>
+<p>
+Also notice that YoYo supports real numbers as well as integers. In
+fact, all numbers are real (regardless of how they print out) unless
+it is necessary to coerce them to integers for some internal
+calculation.
+<p>
+print 6 mod 5<br>
+1<br>
+
+print 6 / 5 + 3<br>
+4.2<br>
+<p>
+print 6 + 5 / 3<br>
+7.6666<br>
+<p>
+So far, you've only seen infix math operators. YoYo also has prefix
+operators which act like functions.
+<p>
+print min 5 6<br>
+5<br>
+<p>
+print random 6<br>
+3<br>
+<p>
+print random 6<br>
+5<br>
+<p>
+Random is a function that takes a number and generates a random
+integer between 0 and the number. (0 <= random < x)
+<p>
+print random 5 + 7<br>
+9<br>
+
+<p>
+When a prefix function takes an argument, you may supply the result of
+another function.  5 + 7 returns 12 to random, which takes this and
+uses it make a new random number between 0 and 12.
+<p>
+If you're unsure about how YoYo is reading your prefix and infix
+calculations, you may put parentheses around each part to force YoYo
+to read things your way.
+<p>
+print (random 5 + 7) * 6<br>
+18<br>
+<br>
+<p>
+YoYo picked 3 to be a random number between 0 and 12 and then
+multiplied it by 6 to get 18.
+<p>
+There are other math functions, which are listed in the reference manual.
+<p>
+
+<hr>
+<h2>Intro to Lists</h2>
+
+YoYo is a dialect of Logo, which is a dialect of Lisp. Its basic data
+struction is a list. A list is a group of items that may contain
+anything including other lists.  Lists are mutable and may be added to
+in the front or on the back.
+<p>
+To make a list, do this:
+<p>
+print list "a" 6<br>
+[a 6]<br>
+
+<p>
+We just made a list with two elements, the string "a", and the number
+6. List is a function that takes two inputs and creates a list with
+those two elements. You might notice that the quotes are gone when the
+list was printed out. When strings are printed out, the quotes are left
+off because only words can be strings.
+<p>
+Lists are also printed with two []'s at either end. You may type a
+list in directly with these braces to avoid using a function like
+list.
+<p>
+print [a 6]<br>
+[a 6]<br>
+
+<p>
+print [a 6 4 [c d e 5] b]<br>
+[a 6 4 [c d e 5] b]<br>
+
+<p>
+You might notice that it's also more convenient when you want to
+create a list with many elements in it.
+<p>
+If you want to add elements to a list or join two lists there are
+functions to do that.
+<p>
+print fput "a" [b c d]<br>
+[a b c d]<br>
+
+<p>
+print lput "b" [z y x]<br>
+[z y x b]<br>
+
+<p>
+print sentence [a b] [c d]<br>
+[a b c d]<br>
+
+<p>
+print se "a" [c d]<br>
+[a c d]<br>
+
+<p>
+<i>Se</i> is an abbreviation for sentence. Sentence takes two inputs, a
+string or a list and joins them together. (like append in Lisp, except
+sentence will listify any string into a list before joining them)
+<p>
+Lists also come with functions to get values out of them.
+<p>
+print first [a b c]<br>
+a<br>
+
+<p>
+print last [a b c]<br>
+c<br>
+
+<p>
+print item 2 [a b c]<br>
+b<br>
+
+<p>
+First and Last are self-explanatory. Item takes in two inputs: an
+index number and a list.  The indexth element of list is pulled out
+and returned. (item counts from 1)
+<p>
+You may also do other operations on lists.
+<p>
+print length [a b c d e f [g h i]]<br>
+7<br>
+
+<p>
+print list? [a b c d]<br>
+true<br>
+
+<p>
+True and false are the booleans in YoYo. Only false is false,
+everything else is true. (3 is true, 0 is true, "foo" is true, true is
+true, not false is true; false is false, not 3 is false, not [] is
+false, etc...)
+<p>
+print position "b" [a b c d]<br>
+1<br>
+
+<p>
+print position "polly" [a b c d]<br>
+false<br>
+
+<p>
+Position tells you the position of an element in the list. It starts
+at index 0 of the list. If it does not find it, position returns
+false.
+<p>
+Notice that all of these commands take an input list and return a new
+list as output.  None of them mutate (change) the list. The only YoYo
+list mutator is set-item (which can alter an element of a list).
+<p>
+
+<hr>
+<h2>Intro to Variables</h2>
+
+In YoYo, variables
+do not have to be declared and can contain anything. There are no
+static types in YoYo. (and no static type checking!)
+<p>
+To make a new variable do,
+<p>
+set foo list "a" 6<br>
+
+<p>
+Now we have a new variable called foo that contains the value [a 6].
+<p>
+print foo<br>
+[a 6]<br>
+
+<p>
+We can refer to the value of foo by just using its name.
+<p>
+set bar list "b" 5<br>
+<br>
+set cow se foo bar<br>
+<br>
+print cow<br>
+[a 6 b 5]<br>
+
+<p>
+Even though foo contains [a 6] now, you can change it to be anything later.
+<p>
+set foo 6<br>
+<br>
+print 5 * foo<br>
+30<br>
+<br>
+set foo [polly wants a cracker]<br>
+<br>
+print item 3 foo<br>
+a<br>
+<br>
+
+<p>
+<hr>
+<h2>Intro to Functions</h2>
+
+YoYo also has procedures. There are two ways to define
+procedures. The simple way is to create a new text file with any text
+editor. In the file, type in <p> 
+
+to my-new-function<br> 
+print 5 + 6<br> 
+set foo 3<br> 
+print foo * 9<br> 
+end <p> 
+
+and then save it as test.yoyo. Go back to the YoYo interpreter and
+type in <p> 
+
+load "test"<br> 
+ <p>
+
+You don't need the add the .yoyo suffix. YoYo assumes it needs to attach it
+for you.  Test.yoyo is loaded into the current interpreter and you
+can now use your new function by typing its name.
+<p>
+my-new-function<br>
+11<br>
+27<br>
+
+<p>
+
+You can also create functions that take inputs. These inputs are
+treated as local variables and may only be used within the function.
+<p>
+to my-next-function a b c<br>
+print a * b<br>
+print first c<br>
+set a (first c) * a<br>
+print a<br>
+end
+<p>
+
+This is probably a good time to talk about commands and reporters. 
+A command is a function that doesn't return any value (void for you C
+people). Some examples are "print" and "set". A reporter is a function
+or data value that returns a value. 6 is a reporter, as well as "list 1 2". 
+<p>
+
+Now continuing with our example:
+<p>
+load "test"<br>
+
+<p>
+my-next-function 5 6 [7]<br>
+30<br>
+7<br>
+35<br>
+
+<p>
+print a<br>
+a is not defined<br>
+
+<p>
+Procedures also may output values and become reporters.
+<p>
+to my-third-function a b c<br>
+print a * b<br>
+output 0 - b + a * a - first c<br>
+end
+<p>
+
+set foo my-third-function 5 6 [7]<br>
+30<br>
+<br>
+print foo<br>
+12<br>
+
+<p>
+<hr>
+<h2>Intro to Control Structures</h2>
+
+There are several different ways to make your program data dependent. The first
+is the if statement.
+<p>
+if 5 < 6 [print "math is king!"]<br>
+math is king!<br>
+
+<p>
+if 5 = 8 [print "math is infallible"]<br>
+
+<p>
+If takes a boolean (or expression that evaluates to a boolean) and a
+list. If the boolean is not false, it will run the list.
+<p>
+ifelse 6 < 7 [print "i smell."] [print "you smell."]<br>
+i smell.<br>
+
+<p>
+Ifelse is a variant of if that can run either the consequent or
+alternative if the predicate is true or false.
+<p>
+Repeat is another control structure that you may recognize from Turtle Logo.
+<p>
+repeat 5 [print "hello"]<br>
+hello<br>
+hello<br>
+hello<br>
+hello<br>
+hello<br>
+
+<p>
+It takes a number and a list and runs the list n times. 
+<p>
+set i 0<br>
+<br>
+while [i < 5] [print i set i i + 1]<br>
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+
+<p>
+While takes two lists. The first is the predicate which is
+checked at the beginning of every loop. The second is the list to run
+when the predicate is true.
+<p>
+If you make a mistake:
+<p>
+set i 6<br>
+while [i > 5] [print i set i i + 1]<br>
+6 <br>
+7<br>
+8<br>
+9<br>
+10<br>
+.<br>
+.<br>
+.<br>
+<p>
+and the program is not stopping, press any key and it will break.
+<p>
+56666<br>
+56667<br>
+<ctrl-c><br>
+Cancelled!<br>
+
+<p>
+
+<hr>
+<h2>Intro to Objects</h2>
+
+<i>Note: Objects are an advanced topic and not suited for beginner programmers.
+YoYo's easier data structures are perfectly sufficent for kids in
+elementary school. </i><p>
+
+Since Java is an object oriented language, we felt that YoYo should
+be one too.  Besides, it makes it easier to run Java code in your
+YoYo programs.
+<p>
+Unlike Java, YoYo uses a prototype-based inheritance model. All
+objects are instances. There are no classes. When you want to subclass
+an object, find a good one laying around and copy it and then
+customize the copy.
+<p>
+There are only a few built in object commands in YoYo, all the rest are
+specific to a particular object. 
+<p>
+set foo new-object<br>
+<br>
+print foo<br>
+&ltObject #45: Object&gt<br>
+
+<p>
+foo is now a new object with nothing in it. It has type "Object."
+To add a field to foo,
+<p>
+set foo.a "bar"<br>
+<br>
+print foo.a<br>
+bar<br>
+
+<p>
+We just added the "a" field to foo. The foo.a syntax is reminiscent of Java. 
+Let's add some more.
+<p>
+set foo.b [a 5 3]<br>
+<br>
+set foo.c to-list [foo.a foo.b]<br>
+
+<p>
+foo.b is now set to the list [a 5 3]. foo.c is now set to the list
+[bar [a 5 3]].  To-list is a procedure that takes an instruction list
+and evaluates everything inside.  It then takes all the results and makes
+them into a list. It's the functional analog to [foo.a foo.b] which
+would interpret foo.a and foo.b as strings and not as variables.
+<p>
+Now, you might get the desire to have a copy of this foo object. 
+<p>
+set bar copy-object foo<br>
+<br>
+print bar<br>
+&ltObject #46: Object&gt<br>
+
+<p>
+Now bar is a complete copy of foo. (copy-object copies the pointers to
+the values inside, it doesn't copy the values.) 
+<p>
+We can then modify bar and foo will be untouched.
+<p>
+set bar.a [big man]<br>
+<br>
+print bar.a<br>
+[big man]<br>
+<br>
+print foo.a<br>
+bar<br>
+ 
+<p>
+You can consider copying an object to be the same as subclassing it.
+Copies of objects come with a built-in field called <code>parent</code>.
+<p>
+print bar.parent<br>
+&ltObject #45: Object&gt<br>
+<br>
+print foo.parent<br>
+false<br>
+
+<p>
+
+Foo doesn't have a parent since it was a new object. 
+<p>
+<hr>
+
+
+This is the end of this simple introduction to YoYo. I'll be making
+more documentation soon, but, until then, try to learn by reading
+other pieces of YoYo code for inspiration. <p>
+<hr>
+
+
+<address>
+<a href = "http://www.media.mit.edu/~abegel">Andrew Begel</a><br>
+Epistemology and Learning<br>
+MIT Media Lab
+</address>
+
+</body>

@@ -1,0 +1,769 @@
+<html>
+
+<head>
+<title>CS264 Project</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1 align="center">NinjaScript: A Dataflow Language for Composing Network Services in
+Ninja</h1>
+
+<hr>
+
+<p>An interesting project that just got started this summer is <a href="http://ninja.cs.berkeley.edu">Ninja</a>. Ninja is a distributed systems architecture
+that emphasizes highly-available, fault-tolerant services connected by efficient
+strongly-typed network pathways. The Ninja project builds on work done by Eric Brewer and
+his students on the HotBot search engine, a highly-available service employing 160
+different computers. Similar to x-Kernel in its effort to reduce the inefficiency
+introduced by network abstractions, Ninja will be able to create efficient network
+&quot;pathways&quot; which describe compositions of services provided by the
+highly-available, fault-tolerant nodes. Each pathway is, in essence, a data flow network
+which can be represented using a directed graph.</p>
+
+<p>Consider an example of a network pathway. A person is sitting in a well-lit room. The
+person picks up a cell phone, dials a number, and says &quot;Turn off the lights.&quot;
+This voice message is transmitted to a cell phone base station somewhere in the building.
+The voice is then encoded in IP packets and sent over the network to a voice-to-text
+service. The service decodes the voice and sends the translated text to an interpreter
+service. The interpreter understands the command and queries a service at the base station
+to give it the physical location of the cell phone with this particular IP address. Once
+the interpreter has the room location, it sends the &quot;OFF&quot; command to a simple
+On-Off service running on the light switch and the room goes dark.</p>
+
+<p>This example employs five services: a cell-packet to IP translator, a voice to text
+converter, a command interpreter, an IP to cell phone to physical location mapper, and a
+light switch service which knows how to turn itself on and off. Each service is connected
+to every other in a data flow pathway and can be specified in a high-level domain-specific
+way.</p>
+
+<p>Looking at this architecture design from a programming language perspective, we can
+view a data flow network as a strongly-typed functional program. The user specifies the
+inputs and outputs of each function block and connect them together via pipes. Once the
+data flow pathway is type-checked, well-known techniques like continuation-passing style
+(CPS) conversion can be used to create an efficient pipeline implementation.</p>
+
+<p>Once CPS conversion is applied to this domain-specific path language, a finite state
+machine can be generated that requires very little control. Well-understood techniques can
+be used to turn this FSM directly into machine code. We can then transform the FSM into a
+distributed FSM that can propagate itself and all of its state across service boundaries
+in the path. At each node, some work computation is performed and the next state of the
+machine is determined. This state is wrapped up in a continuation (which contains a
+closure of active state information) and passed along to the next service in the path.</p>
+
+<hr>
+
+<p>This document is organized in several sections. The <a href="ninja.html#first">first section</a>
+is a description of the path-based programming language. It describes the abstract form of
+the language and develops graph transformations to make it easier to compile. The <a href="ninja.html#second">second section</a> describes how this graph formalism can be more firmly
+situated in a distributed systems setting. (Systems people, read section 2 first. It's
+more interesting.) The <a href="ninja.html#third">third</a> (and so far, last) section discusses
+compilation and implementation strategies and gives requirements for the runtime system
+that this language will need. </p>
+
+<hr>
+<a name="first">
+
+<h1>Section 1.</h1>
+</a>
+
+<h2>NinjaScript: A Data Flow Language</h2>
+
+<p>NinjaScript is a layered language composed of several different programming metaphors.
+We base our system on untyped, mostly strict lambda calculus. We will constrain this
+initial model further with late binding, support for conditional outputs, soft state, and
+the addition of type safety.</p>
+
+<p>A NinjaScript program takes the form of a graph. A graph consists of nodes and edges.
+Each node in a NinjaScript graph corresponds to a logical service and contains a
+service-specific function implementation. (Many logical services may be implemented by the
+same physical service. This can be represented in a later optimization phase.) The edges
+that connect the nodes define the flow of control and data. Our basic model will only be
+able to show static flow, however. </p>
+
+<p>We will begin with the initial model: untyped, mostly strict lambda calculus as the
+basis of our new language. </p>
+
+<p>&nbsp;</p>
+
+<h3>Strict Mostly Functional Lambda Calculus</h3>
+
+<p>The basis of NinjaScript is lambda calculus. We can view a data flow network as a
+strict form of functional programming, where each service in the network is a lambda
+expression. Connections between the nodes of the network represent arguments and output
+pathways in the functional program. The only constraint on the flow of data through the
+graph is due to data dependencies in the function waiting for its arguments to be
+computed. </p>
+
+<p>Here is an example data flow network:</p>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="844">A and B represent input arguments to function F which upon completing its
+    computation sends its output to O. </td>
+    <td width="844"><p align="center"><img src="../images/graph3.gif" alt="graph3.gif (2579 bytes)" WIDTH="127" HEIGHT="181"></td>
+  </tr>
+</table>
+
+<p>At this point, we haven't mentioned much about evaluation order. In this version, we'd
+like to be as loose as possible in order to allow for any execution order, including
+parallel, subject only to the data dependencies. This means that F will only fire when A's
+output and B's output have reached it. </p>
+
+<p>&nbsp;</p>
+
+<h3>Multiple Output</h3>
+
+<p>We will add another wrinkle to our data flow network in order to support another
+network systems metaphor: multicasting. After a node F has performed its computation, it
+may need to broadcast its output to many nodes instead of just one (i.e. an MBONE video
+service). </p>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="403">A and B are input arguments to function F. When F completes its
+    computation, it broadcasts its answer to nodes O1, O2 and O3. </td>
+    <td width="434"><p align="center"><img src="../images/graph3-1.gif" alt="graph3-1.gif (3548 bytes)" WIDTH="199" HEIGHT="181"></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+<!-- <h3>Separation of Control from Data</h3><p>Our initial restriction on computation was that a node F will wait for all of itsinputs before it begins its computation. However, this is a little too restrictive. Thereexist several services on the Internet that exhibit a separation of control flow from dataflow. </p><p>Consider a bandwidth restriction service. This service has one data input and dataoutput. Data flows in at a certain bandwidth and flows out at a different bandwidth. Wewould like to be able to control the amount of restriction with a dial. This requires acontrol input. Our initial assumptions on the order of evaluation suggest that we won't beable to allow data to flow through this bandwidth restrictor unless we have an input onthe control link for every data packet. </p><p>We will relax our assumptions, and introduce a separation of control flow from dataflow. Control flow dependencies will now be independent of data flow dependencies. Thissmall relaxation allows the bandwidth restrictor to allow data to flow unimpeded, and alsoallows us to change the bandwidth dial setting even when there is no data passing throughthe restrictor.</p><p>We imagine that most links in NinjaScripts will be control-data links (represented byan double-lined arrow) which makes it easy to design programs. But, when the programmerneeds the flexibility, they may separate the two links and distinguish between them.</p>-->
+
+<h3>Late Binding</h3>
+
+<p>One way to achieve fault-tolerance in a networked, distributed system is to introduce
+late binding. Each node in the graph is actually the <em>abstract</em> name for the node.
+As the program transfers control from the output of one node to the input of another, it
+will query a service discovery service to discover the actual IP address and interface to
+the abstract name specified in the program. This allows for nodes to go down and
+transparently be replaced by others. It also allows for persistent object identifiers that
+may be long-lived. The identifier is actually indirected one level from the actual node
+that performs the service. </p>
+
+<p>&nbsp;</p>
+
+<h3>Conditional Outputs</h3>
+
+<p>We would like to support flexibility in choosing the path a program will go on. For
+instance, we might have a cell-phone that has the choice of several networks with varying
+latency, bandwidth and cost characteristics. Based on certain runtime data (such as
+determining whether it uses voice or data, whether the phone is inside or outside a
+building) it will choose which output port it would like to use to route its output data. </p>
+
+<p>Thus, a path becomes merely a <em>specification</em> for all of the possible paths that
+a program may actually take. While in theory, this might mean an expontential blowup in
+the size of the path specifications produced, in the common case, there are few choices
+and they are made in few places along the path.</p>
+
+<p>&nbsp;</p>
+
+<h3>Subroutines</h3>
+
+<p>While NinjaScript disallows recursion, we do allow subroutine calls. Subroutines have
+the following semantics: the calling node passes control to the subroutine which executes
+and returns control to the calling node. This subroutine is a path that may consist of one
+node or may be a full-blown complicated path. It may <em>not</em> be any subset of the
+same path as the calling operator. The start and finish node of a subroutine path is the
+calling node.</p>
+
+<p>&nbsp;</p>
+
+<h3>State</h3>
+
+<p>Operators should be allowed to keep a bounded amount of soft state on their node. This
+information is useful for monitoring and profiling tools, as well as for routing tools to
+allow the operator to keep track of network traffic and congestion. By allowing a node to
+keep state between path packets, it will enable these types of inter-packet applications
+which are important for determining and maintaining the health of a path system. </p>
+
+<p>&nbsp;</p>
+
+<h3>Type Safety</h3>
+
+<p>In a traditional distributed system, each service has a specific set of legal inputs
+and a specific set of legal outputs. We would like to formalize this by enforcing type
+safety statically.&nbsp; Each node will be characterized as a function that takes a tuple
+of types T1 X T2 X ... X Tn, and returns a set of types S1 X S2 X ... X Sm. For example,
+on the bandwidth restrictor, we have a function of one inputs, Packet Data, and one
+output, Packet Data. A cell phone may be a function of zero inputs and one output,
+Wireless Voice Data. </p>
+
+<p>When the programmer writes a program, they connect up nodes by various links. When we
+compile this graph, we will check to see that the types match. Some nodes require
+parametrized types to type check. For example, a network buffer should be able to take in
+any type T and output type T. We enable this simple form of parametric type to support
+this common use. When a program is compiled, the type will be instantiated and inserted
+into the graph. </p>
+
+<p>This type system supports a standard sort of IDL subtyping. Immediate types, like
+integers, floats, strings, etc... don't support subtyping. Unions and records support the
+appropriate type-safe subtyping. We deviate from Java and do not allow Array subtyping
+(Array[T] &lt;: Array[T'] iff T = T'). Procedures are subtyped contravariantly in their
+input types and co-variantly in their output types. </p>
+
+<p>In a future version of this type system, we will support object <em>extension</em>, a
+new form of object-oriented relationship that allows object types to evolve over time in a
+distributed anarchic fashion. See HTTP-NG documents for more details (will be elaborated
+upon later). </p>
+
+<p>&nbsp;</p>
+
+<h3>Restrictions on NinjaScript Code</h3>
+
+<ul>
+  <li>There are no cycles in the graph, and therefore no recursion. </li>
+  <li>A node may not &quot;fire&quot; until all inputs have reached it. </li>
+  <li>An operator must accept all of its inputs into the method; it may not choose to make
+    some of them optional. </li>
+  <li>Paths are not first-class and may not be manipulated as a data type. </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>Operator Programming</h2>
+
+<p>NinjaScript takes a CORBA-like model to operator programming. The operator may be
+written in any language, but must adhere to a particular interface specification.
+NinjaScript will take this interface definition (written in some IDL) and create the nodes
+that a path programmer may use in a path. What does the interface specify? It specifies
+the name of the method to invoke, the types and arity of the input arguments, the types
+and arity of the outputs, and the abstract service name in which this method is located.
+The interface also specifies what soft state exists on the node in the path. </p>
+
+<p>Conditional outputs require coordination between operator programming and path
+programming. In the simple case, when the programmer intends the output of the method to
+go out on all of the output ports, the programmer creates a method that takes the input
+arguments and returns a tuple of the output values. We need a slightly more complicated
+interface for the programmer when the operator selects a subset from its set of outputs.
+Here, the programmer must not only &quot;return&quot; the values to the transport layer,
+but must also indicate which outputs go out on which ports. </p>
+<font SIZE="2">
+
+<p></font><font size="3">The interface definition written by the service provider is used
+to make the NinjaScript wrapper. The operator methods will be written to a filter model.
+They take in arguments, compute a bit and return outputs. Those arguments come from the
+connections made in NinjaScript. The outputs are sent out to the connections made in
+NinjaScript. </font><font SIZE="2"></p>
+</font>
+
+<p>&nbsp;</p>
+
+<h2>Examples</h2>
+
+<h3>Voice-activated Light Switch</h3>
+
+<p>Let's reprise our example of a network pathway, the voice-activated light switch. A
+person is sitting in a well-lit room. The person picks up a cell phone, dials a number,
+and says &quot;Turn off the lights.&quot; This voice message is transmitted to a cell
+phone base station somewhere in the building. The voice is then encoded in IP packets and
+sent over the network to a voice-to-text service. The service decodes the voice and sends
+the translated text to an interpreter service. The interpreter understands the command and
+queries a service at the base station to give it the physical location of the cell phone
+with this particular IP address. Once the interpreter has the room location, it sends the
+&quot;OFF&quot; command to a simple On-Off service running on the light switch and the
+room goes dark.</p>
+
+<p>How can we write this service in NinjaScript? We introduce five nodes: 
+
+<ol>
+  <li>The cell phone is a service that takes a human voice and transmits over wireless link.</li>
+  <li>The base station is a service that receives wireless data from a cell phone and
+    translates it into IP packets which it forwards to a service specified by the phone number
+    that was dialed. In this case, the phone number specifies the voice to text service. The
+    base station is running another service that takes an IP address and looks it up in a IP
+    to cell phone table. Then it figures out where the cell phone is and returns it. </li>
+  <li>The voice to text service takes IP sound data, runs it through a speech recognizer and
+    outputs a text stream. </li>
+  <li>The interpreter is a service that takes in a text stream and performs various operations
+    based on it. In this case, it will be able to understand the command &quot;turn off the
+    lights.&quot; The interpreter asks the base station for the cell phone's location and then
+    sends out a command to the light switch service.</li>
+  <li>The last service is a light switch service. This service takes a command, On or Off, and
+    a room location. It forwards the command to the appropriate light switch which will turn
+    on or off. </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p align="center"><img src="../images/new.gif" alt="new.gif (4184 bytes)" WIDTH="478" HEIGHT="46"></p>
+
+<p align="center">Figure 1. The basic path. To all other nodes, the interpreter is a black
+box.</p>
+
+<p align="center">&nbsp;</p>
+
+<p align="center"><img src="../images/new2.gif" alt="new2.gif (5214 bytes)" WIDTH="239" HEIGHT="290"></p>
+
+<p align="center">Figure 2. The internals of the interpreter. It has a subroutine call to
+the base station and ultimately outputs a command to the light switch.</p>
+
+<p>&nbsp;</p>
+
+<p>In this diagram, we have the voice-activated light switch. We begin at the cell phone
+node. This node doesn't perform any computation; it is able to dial a phone number and
+connect to the base station through wireless protocols. It is connected to the base
+station by an arrow that indicates both control and data are moving across this link. </p>
+
+<p>When the signal gets to the base station, it converts the wireless voice stream into an
+IP packet stream. Based on the phone number that was dialed, it determines that the
+interpreter service was desired. In order to translate the voice packets into text
+packets, the base station sends the stream into the voice-to-text service.</p>
+
+<p>The voice-to-text service employs a new, sophisticated algorithm for voice recognition,
+and is able to perform near-flawless recognition. The text stream is outputted to the
+interpreter service.</p>
+
+<p>The interpreter is a service that takes has one input and one output. It takes in
+commands and starts to process them. In this command, it uses the base station's IP to
+cell phone location service as a subroutine. This service has a table with a reverse
+mapping from IP address to cell phone location which it is able to map to a room location
+in Soda Hall. It sends back the location to the interpreter service. </p>
+
+<p>When the interpreter invoked the base station subroutine, it formulates a new command
+which is a pair of &quot;Light Off&quot; and a room location and sends it out to the light
+switch. </p>
+
+<p>The light switch reads the incoming command and sends the Off command to the correct
+light switch and the lights go out.</p>
+
+<p>&nbsp;</p>
+
+<h3>Controlling the Flow</h3>
+
+<p>There are services in which we would like to set up clocks to fire off data at certain
+times. We could also take inspiration from signal processing networks that have time-shift
+(delay) and frequency-shift (simple filtering) operators. We would also like operators
+that can constrict the flow of data, like meting out the bandwidth for quality-of-service
+guarantees on a network.</p>
+
+<p>Let's take each one of these and add them to NinjaScript.</p>
+
+<h4>Buffering</h4>
+
+<p>We've already introduced FIFO buffers into our language. These nodes perform an untimed
+delay operation on data flow. When a request comes into a buffer to release information,
+the buffer sends out the data immediately.</p>
+
+<p>Let's introduce a timed buffer. There are two possible ways to design this. 
+
+<ol>
+  <li>The first variant is a time delay buffer. This can come in two forms. <ol>
+      <li>The first form counts a time delay from the time that the data first enters the buffer
+        to the time that it is released. Let's say that data comes in at 10:00AM and we need to
+        delay for 10 minutes. If the request comes in for the data before 10:10AM, we will wait
+        until 10:10AM to release it. If the request comes in after the time limit, we release the
+        data immediately.</li>
+      <li>The second form counts the time delay from the time that request for the data comes in.
+        Let's say the data comes in at 10:00AM and we need to delay for 10 minutes. If the request
+        comes in at 10:05AM, we wait until 10:15AM to release it.</li>
+    </ol>
+  </li>
+  <li>The second variant is a self-timed buffer. This is a buffer that releases data
+    automatically once for each time interval. This can come in three forms.<ol>
+      <li>The first form is a linear-time buffer. Every <em>n</em> minutes, if there is any
+        information in the buffer, it releases one piece of it and injects it into the network. </li>
+      <li>The second form implements a time-invariant function to control data release. This form
+        is very general and allows the operator to keep state about the release of data from the
+        buffer. This might be used to inject an exponentially increasing amount of data on the
+        network, or perhaps to distribute a constant amount of data with an exponential period
+        between releases. </li>
+      <li>The third form allows a more general <em>f(time)</em> to control release of the data.
+        This form is similar to a cron task scheduler. At certain absolute times, it can inject
+        values into the network from the buffer.&nbsp; </li>
+    </ol>
+    <p>We can use combinations of these various operators to develop more complicated
+    patterns. For instance, to release an logarithmically decreasing amount of data into the
+    network, we can create self-timed buffer of the third form that is triggered by a control
+    flow release from the cron-like buffer every weekday morning at 5:00AM.</p>
+  </li>
+</ol>
+
+<p>Can we express the self-timed nature of these operators in NinjaScript itself? Let's
+not and say we did. Any node may have an internally running thread that enables it to act
+as an autonomous operator.&nbsp; </p>
+
+<h4>Bandwidth Operators</h4>
+
+<p>We would like to monitor and control bandwidth through the network in order to meet QOS
+(quality of service) guarantees. We introduce two new types of operators. 
+
+<ol>
+  <li>The first type is a bandwidth constrictor. Data enters the operator at a certain
+    bandwidth, but leaves at some smaller bandwidth. We can imagine several forms of this:<ol>
+      <li>The first form is a simple constriction to a constant bandwidth. Any bandwidth data can
+        come in, but the output will be at most <em>n</em> bits/second.</li>
+      <li>The second form allows us to control a dial and set the bandwidth via control circuit.
+        An operator of this form may restrict output to a range from <em>n</em> to <em>m</em>
+        bits/second based on external control.</li>
+    </ol>
+  </li>
+  <li>The second type is a valve. Based on the value of an externally controlled switch, we
+    can start and stop flow through this operator.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3>Debugging and Systems Health</h3>
+
+<p>There are some useful idioms for debugging and systems health: 
+
+<ul>
+  <li>We'd like to have a simple splitter node, that takes one input and duplicates it over
+    two outputs. One of these outputs goes to the original destination, the other goes to a
+    debugging station where a human or computer operator can watch and monitor the system. </li>
+  <li>We'd like to have a diagnostic node that takes data off a splitter node and processes it
+    for information such as network congestion, throughput and latency.</li>
+  <li>Security monitoring: We would like a node that is running a form of the Berkeley Packet
+    Filter package that is able to monitor and dynamically respond to suspicious network
+    traffic. By tying this node into the bandwidth valve, we will be able to quickly isolate
+    suspect regions of the network from outside traffic. </li>
+</ul>
+
+<hr>
+<a name="second">
+
+<h1>Section 2.</h1>
+</a>
+
+<h2>Distributed Systems</h2>
+
+<p>This section will discuss NinjaScript's relationship to traditional distributed
+systems. There are quite a few distributed systems architectures such as COM, CORBA, ILU,
+JavaRMI, and others, which are being used on a daily basis to make interoperating
+high-level distributed applications. The systems are very general; there is end-user
+support for many programming languages and support for high-level network abstractions
+that use object-orientation, type-safety and OO design patterns to make large-scale
+systems easier to design and manage. </p>
+
+<p>These systems typically use a client-server interface. The client first obtains a stub
+from a directory service that abstracts the server's interface from the client. When the
+client makes a request of a stub, it may perform the request locally, on the client, or
+more often, it will forward the request to the server object. Once the server has
+completed the request, the reply is sent back to the stub which returns the answer to the
+client. </p>
+
+<p>This stub interface is hidden behind an object in an object-oriented system. The
+designer of the service develops a description of the high-level interface that is
+desired. This is then compiled into a client stub, a server stub and a set of prototypes
+for a server implementation. The author of the implementation of the service fills in the
+routines that do the work and link it together with the server stub. The client stub is
+also implemented by the author of the service and is the object that is instantiated when
+the client requests services from a particular service. This client stub acts as a proxy
+for the server object on the client machine and handles method invocations from the
+client. </p>
+
+<p>When end-users wish to employ multiple services, they find copies of the servers'
+interface descriptions and compile them into a set of interface prototypes and a
+client-side stub. This stub is typically a default-generated stub that forwards all
+requests for services to the servers themselves. If the interface description language is
+more expressive than usual, the stub may be able to implement more of the server's
+behavior locally. </p>
+
+<p>After the end-user generates the interface prototypes, they develop their application
+in their own choice of programming language and compile it into binary code. This code is
+linked with a generic library that is offered by each distributed system (COM, CORBA, ILU)
+that implements the network connections and on-the-wire protocol. This allows all services
+written to the same distributed system to interoperate. </p>
+
+<h2>NinjaScript</h2>
+
+<p>NinjaScript not just another version of COM or CORBA or JavaRMI. Ninjascript defines a
+different model for connecting services together that, we hope, will make it easier to
+express compositions of services and make it easier to compile and optimize the
+connections between them. </p>
+
+<p>What are some of the issues associated with traditional distributed systems that
+NinjaScript is going to address? 
+
+<ol>
+  <li>In a system defined by a pathway between services, standard procedure call semantics are
+    too restrictive.</li>
+<!-- <li>NinjaScript allows the path designer to abstract control flow from data flow. </li> -->
+  <li>The overhead of path traversal can be made very small.</li>
+  <li>NinjaScript's use of mobile code allows pathways to be reconfigured with zero latency.</li>
+  <li>NinjaScript will have the ability to modify pathways dynamically at runtime. </li>
+</ol>
+
+<p>Let's address each of the issues in turn. </p>
+
+<h4>Procedure call semantics are too strict</h4>
+
+<p>Systems defined by pathways are poorly described using procedure call semantics. A
+pathway is a directed acyclic graph. Control starts at the source of the DAG, passes once
+through each node and flows until it reaches the terminus of the graph. </p>
+
+<p>A procedure call has very different semantics. Control starts in a caller. When the
+procedure is invoked, control transfers to the new procedure. Upon completion, the
+procedure call returns control to the caller. </p>
+
+<p>This flow is cyclic and therefore does not describe the semantics of acyclic paths
+particularly well. Consider an example of a directed acyclic chain. We name the nodes A
+through G. Control begins at A which invokes B as a procedure call. B invokes C, and so
+on, until F invokes G. When G finishes its calculation, we would like to terminate the
+program, however, according to procedure call semantics we have to return control to F,
+G's caller. F returns control to E and so on until we've returned to A. At this point, we
+can print out the answer to the computation. </p>
+
+<p>Readers familiar with Scheme might recognize the above as a great argument for tail
+recursion. If each node has no more computation to perform, why return to it? Using a
+technique known as continuation passing, we can fix this problem, in the general case, by
+passing an additional argument to each function. This argument is the address of what to
+do next in the computation and is known as a continuation. In standard procedure call
+semantics, this argument is introduced as by the compiler and is the return address of the
+procedure. By exposing this argument, we may substitute a more appropriate address in
+place of the return address when we invoke a procedure. In the chain example, we would
+like to pass in the name of the next node to go to. For example, when A invokes B, it
+should say B(arg1, arg2, C). This tells B to send its answer to C instead of returning to
+A. When C calls D it will use D(arg1, arg2, E) and so on until we get to G. G employs a
+special continuation called the top-level continuation which returns the final answer to
+the end-user.</p>
+
+<p>In using a DAG representation for control flow, the compiler can infer what the proper
+continuation for each transfer of control should be. This removes the burden of modifying
+the service interfaces from the designer and enables the semantics of the path-wise nature
+of the program be expressed in a simple direct way. </p>
+<!-- <h4>Abstracting control flow from data flow</h4><p>There have been quite a few languages for describing signal processing filters. Eachnode of the system is a particular filter, such as a band-pass filter, or a compressionfilter, for example. These languages describe data flow by abstracting out the controlflow completely. There is an allure to this type of programming because it simplydescribes a series of processing steps that affect each data packet. </p><p>Most distributed systems use procedure-based semantics. Whenever a system like JavaRMIneeds to invoke a remote method, it copies the arguments and sends them over the wire tothe server. The server computes for a while and sends back an answer to the client. Thismodel ties control-flow inherently to data-flow. Whereever control goes, so does the data.Data cannot flow where there is no control.</p><p>NinjaScript allows us to combine these two semantics to gain flexibility in directingflow. NinjaScript usually adopts the standard distributed systems model for associatingdata flow with control flow, but allows the programmer to decouple the two and providecontrol-only and data-flow-only links between nodes. </p><p>I'm not sure right now how to say why this is good, other than that it allows forout-of-order data flows in the graph which seems to enable the programmer to be moreexpressive.</p> -->
+
+<h4>Very low overhead in path traveral</h4>
+
+<p>The minimal time required for path traversal is the transmission the data and
+invocation activation record over the wire. In systems that employ mobile code, there is a
+one-time cost for transmitting the mobile code to each node of the graph, but this can be
+cached and amortized over several invocations of the same mobile code. We can use the same
+caching/on-the-wire compression strategy to avoid sending data from the method invocation
+itself that is redundant across several invocations of the same method. </p>
+
+<p>Once the activation record makes it to the next node, there is an optional upcall into
+the service. If the pathway traversal code is in the kernel, the upcall will require at
+least one context switch. Depending on how the overlying system is implemented, it may
+also require a new application thread to be created and initialized to handle the new
+request. Various <a href="http://www.eecs.berkeley.edu/~michaels/courses/cs262">techniques</a>
+are known to make this thread overhead go away, and probably should be investigated for
+high-volume services. </p>
+
+<p>Whatever implementation strategy is chosen, the overhead of the substrate for
+NinjaScript should not exceed the description above. If it does, there are extra
+inefficiencies in the system that should be eliminated. </p>
+
+<h4>Mobile code gives path flexibility</h4>
+
+<p>Typical distributed systems are designed to be static once they are compiled. There is
+no easy way to reconfigure the pathways to accomodate slightly different usages.
+NinjaScript's use of mobile code allows the path to be compiled and stored inside the
+mobile code itself. When the user needs to change the path, they use a slightly different
+piece of mobile code and send it into the network. This path change is isolated to the
+particular instance of mobile code and will not change the path for any other instance.</p>
+
+<h4>Dynamic modification of pathways at runtime</h4>
+
+<p>In a future version of NinjaScript, it will be possible to embed explicit path-writing
+control in the pathway mechanism. Currently, there is only enough control to perform
+deterministic multiplexing of outputs. In order to make individual instances of programs
+flexible enough to adapt to a changing environment and perform tasks like exception
+handling, they will be able to &quot;write&quot; themselves on the fly. They might
+incorporate other pieces of code and pathways that are left on various service nodes (they
+might use a routing service to determine the exact order of nodes they should visit) to
+dynamically modify their own pathway. </p>
+
+<hr>
+<a name="third">
+
+<h1>Section 3.</h1>
+</a>
+
+<h2>NinjaScript Implementation</h2>
+
+<p>This section will describe the implementation of the NinjaScript system. First, I'll
+describe the computational model into which NinjaScript compiles. Then, I'll describe the
+contents of the messages that will traverse the system. Finally, I'll explain the
+low-level infrastructure required to support NinjaScript programs and describe its runtime
+system. </p>
+
+<h3>NinjaScript Model</h3>
+
+<p>A NinjaScript path program is a description of the vertices and edges of the
+NinjaScript path. Each vertex is the abstract name of a service performed by that node.
+These names are globally unique. There will always be one <em>start</em> node and at least
+one&nbsp; <em>finish</em> node in the path. The edges between each node are listed along
+with their characteristics, such as reliable/unreliable, the size of the buffer on the
+source of the edge and the size of the buffer on the sink (a size of zero means that the
+link is unbuffered), and the type of data that flows on that edge.&nbsp; </p>
+
+<p>Each &quot;run&quot; of a Ninja path is called a <em>path thread</em>. Each path thread
+consists of a tuple of four values. The first value is the description of the path itself.
+The second value is an ID unique among all path threads running on a particular path. The
+third value is the current state of execution. It contains information about what node to
+go to and what method to run when the thread reaches that node. The fourth and final piece
+is the data payload. This contains the arguments to the method that will be invoked.</p>
+
+<p>Typically, the first upcall on the start node will query the computer and/or user for
+outside inputs to the program. Once the start node upcall has finished, we exit to the
+transport layer and exit the node. A path thread ends its lifetime when it reaches any one
+of the finish states. The final thing a path thread might do is invoke one last upcall on
+the finish node in order to return results to the data consumer (either the user or
+computer program). </p>
+
+<p>&nbsp;</p>
+
+<h3>Low-Level Implementation</h3>
+
+<p>I'm taking some inspiration from David Wetherall's ANTS system for mobile code, but I'm
+taking a slightly higher level approach. Data must flow quickly through the nodes in the
+system as well as be buffered. </p>
+
+<p>I see four possible implementation choices for the bottom transport layer of
+NinjaScript. 
+
+<ol>
+  <li>I can go with an ANTS substrate for data flow, but the current released implementation
+    uses Java upcalls for all control on the router. This is too slow to manage fast
+    multimedia streams. </li>
+  <li>I can go with Active Messages for extremely fast data flow transport.</li>
+  <li>NinjaScript can use a direct Ninja substrate. This uses NinjaRMI, which supports
+    asynchronous messages and mobile code. The speed of this system, however, is not optimal.
+    Given the overhead of an OO system implemented in Java, it seems that a naive
+    implementation has to be slower than ANTS. I'll keep a watch on this one.</li>
+  <li>I can just write all of this from scratch. If I do, I'd adopt an ANTS style system where
+    the routing code is auto-generated from high-level NinjaScript and translated into a byte
+    code (pre-JITed to each supported platform's native code) or directly into C. </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3>Architecture</h3>
+
+<h4>Basic Operation</h4>
+
+<p>Each node will be running a thread that monitors all of the incoming input ports. When
+a value comes in on one of these ports, the node will read the path ID and determine which
+path thread ID to activation record map it should use. Using the appropriate map, the node
+looks up the path thread ID. If there is no activation record, it will fork off a new
+thread and pass the value to it. If there is an activation record, the node context
+switches it in and passes the value to it. </p>
+
+<p>An activation record may be in one of two states: gathering arguments and calling an
+operator. If the activation record awakens in the gathering arguments state, it examines
+the data in the packet. This data encodes the arguments to the method to call. If all of
+the arguments to the method have not yet arrived, the current thread goes to sleep. If the
+thread has received all of the arguments, it invokes the method signature identified by
+the control portion of the packet. Any argument that describes a buffer is passed by
+reference; other arguments are passed by value. </p>
+
+<p>The method, once called, computes its value. When it has finished, it returns a tuple
+of output values. The output values are packaged up into a new data payload. If an output
+describes a buffer, the buffer's contents will be packaged up. Other outputs will be
+packaged up by value. We choose to use a standard marshalling protocol, either IIOP,
+JavaRMI IIOP or Xerox PARC ILU's IIOP. </p>
+
+<p>At this point, the thread looks at the path portion of the packet to discover where to
+send the output data. For each output link, it takes the abstract name of the target node
+and looks it up in a <em>service discovery service</em>. This service returns the DNS name
+(or IP address) of another node in the network that will provide the service. We write
+this value into the current control state along with the method signature of the next
+method to invoke. We finally package up our triple of path, control state and data payload
+and send it out to each of the output links. Then this thread dies. </p>
+
+<h4>Start Node</h4>
+
+<p>On the Start node, we follow a slightly different protocol. We assume that the initial
+arguments to the path have been gathered and are accessible. We package up these values
+into a new data payload. The same rules for packaging the output of an upcall apply to
+packaging the payload, as described above. For each output link outward from the starting
+node, the thread looks up the abstract service name in a service discovery service to
+determine the actual machine that will service the call. We write this into the current
+control state along with the method signature of the next method to invoke. We package up
+this triple of the path, control state and data payload and send it out to each of the
+output links. Then this thread dies.&nbsp; </p>
+
+<h4>Finish Node</h4>
+
+<p>There are two types of Finish nodes: absolute termination of a path and termination of
+a subroutine path. Upon reaching an absolute finish node, all of the standard procedures
+apply, except for what happens after the upcall. After the upcall, we will not invoke the
+next node in the path; we simply terminate execution and the thread dies.&nbsp; </p>
+
+<h4>Subroutines</h4>
+
+<p>At some point in time, the operator may choose invoke a subroutine that runs on another
+node. This subroutine is a different path, so we invoke a special routine in the runtime
+system called <em>subroutine</em>. Subroutine will first capture the current state of the
+operator and save it in a continuation. It will package up the inputs to the subroutine as
+if they were the outputs from the operator. The thread then follows the standard routine
+for a Start node of a new path. Once the packets have been sent off this node, the thread
+goes to sleep. </p>
+
+<p>When the subroutine returns, the activation record will be awakened in the calling an
+operator state. This indicates that the thread must unpack the arguments in the
+subroutine, restore the operator's stack and restart the operator. </p>
+
+<h4>Conditional Outputs</h4>
+
+<p>When a node has conditional outputs, the operator must provide information to the
+transport layer on which outputs go out on which links. The links are identified by the
+abstract service name to which they point. When the operator returns, it outputs a tuple
+of pairs. Each pair consists of a tuple of output values and an abstract service to send
+it to. For each tuple, the transport layer will use the service discovery service to
+figure out the physical address of the service, and will package up the data part of the
+tuple into a new data payload. Then it will finish compiling its triple of path, next
+control state and data payload and send the packet off. </p>
+
+<h4>State</h4>
+
+<p>Each node may keep soft state (not backed up by disk) which will be mapped into each
+thread's activation context. There are two types of soft state: node-global and
+path-local. The node-global state and path-local state is declared by the operator and
+specified in the service interface. Node-global state exists and is mapped into all
+threads' address spaces. Path-local state is only mapped into the threads which are
+running on a particular path. Threads may read and write this data, as well as send it out
+as an output value. </p>
+
+<p>&nbsp;</p>
+
+<h3>NinjaScript Messages</h3>
+
+<p>Given a NinjaScript path definition, there may be two orthogonal directions of
+concurrency. For a given <em>path thread</em> running through the system, control may be
+active in several nodes at the same time. At each node, control may merge or split, based
+on the number of inputs and outputs on each node.&nbsp; </p>
+
+<p>The other axis of concurrency is in multiple path threads running through a given
+NinjaScript path. Each NinjaScript path thread will contain a large unique ID that
+identifies it as it moves through each node. Each node has a memory of unique IDs that
+have visited that node in the past. This table&nbsp; each unique path thread ID in its
+memory to an activation record on the service node. When a path thread enters a node for
+the first time, the node must initialize a new activation record for it to use for its
+upcall. When a path thread returns to a previously-visited node (i.e. from a subroutine
+call), the old activation record is found in the table and restored. This scheduling of
+activation records is handled by the runtime system. </p>
+
+<p>The unique ID to activation record map has a finite size and may be pruned in two ways.
+
+<ol>
+  <li>If a path thread exits the node from the output ports, it will never return to this node
+    again. The runtime system may remove the corresponding entry from its map and deactivate
+    and garbage collect its activation record. </li>
+  <li>If there is a chance that a path thread will return to a node, like during a subroutine,
+    the activation record must be kept in the map until it returns. However, since the map is
+    finite, we employ an LRU replacement strategy. This may cause problems for long latency
+    subroutines. This policy remains to be tried out, however, to see what kind of effects it
+    has on running programs.&nbsp;&nbsp; </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr>
+
+<address>
+  Andrew Begel<br>
+  <a href="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</a> 
+</address>
+
+<address>
+  <small>Last Modified: <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%y" startspan -->12/08/98<!--webbot bot="Timestamp" endspan i-checksum="13937" --></small>
+</address>
+</body>
+</html>

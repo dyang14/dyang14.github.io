@@ -1,0 +1,228 @@
+<HTML>  
+<HEAD>
+  <TITLE>CS3 Lecture 22</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+		<H2><CENTER>
+				Fractals, or Self-similar geometric
+patterns</CENTER></H2>
+		<H2><CENTER>
+				</CENTER></H2>
+		<H3><A NAME="Overview"></A>Overview</H3>
+
+<UL>
+			<LI>Fractals, like recursive procedures are defined in terms of themselves. 
+			<li>Any part is similar to the whole
+
+			<LI>The phrase &quot;Fractals&quot; was coined by Benoit Mandelbrot
+
+			<LI>They describe naturally-occurring phenomena, e.g., the path of a meandering river, a coastline, a fern leaf, snowflakes, or the explosion of a pyramid scheme.  <UL>
+				
+			</UL>
+  <LI>We look at fractal definitions just like we look at recursive
+  function definitions:
+  <UL>
+    <LI>Base case
+    <LI>Recursive case
+  </UL>
+</UL>
+
+<H3><A NAME="graphics"></A>Basic Graphics Primitives</H3>
+		<UL>
+			<LI>Logo Turtle
+			<ul>
+				<li>A creature that moves around on a grid
+				<ul>
+					<li>Center is (0, 0)
+					<li>X increases to the right
+					<li>Y&nbsp;increases up
+				</ul>
+				<li>Has built-in state:
+				<ul>
+					<li>xcor: x-coordinate (a real number)
+					<li>ycor: y-coordinate (a real number)
+					<li>heading: the turtle's current direction (a real number from 0-359.9999999)
+					<li>pen state: a turtle carries a pen which can be dragged behind to draw on the grid
+					<li>color: the color of the turtle's pen
+				</ul>
+			</ul>
+			<li>You can teach it to do new tricks by defining a procedure
+			<ul>
+				<li>
+			</ul>
+			<li>The basic primitives built into MacGambit:
+			<li><tt>(<b>clear-graphics</b>)</tt>
+			<ul>
+				<li>Clear the screen
+			</ul>
+			<li><tt>(<b>position-pen</b> <i>x y</i>)</tt>
+			<ul>
+				<li>Move the pen to position <i><tt>x,y</tt></i>
+			</ul>
+			<li><tt>(<b>draw-line-to</b><i> x y</i>)</tt>
+			<ul>
+				<li>Draw a line to position<i><tt> x,y</tt></i>
+			</ul>
+		</UL>
+		<H3><A NAME="sierpinskisquare"></A>Your First Fractal : Sierpinski
+square</H3>
+		<UL>
+  <LI>We have two cases
+</UL>
+
+<P><TABLE WIDTH="100%" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TH WIDTH="50%">&nbsp;Base Case, just draw a square</TH> 
+    <TH WIDTH="50%">Recursive case, &nbsp;place five sierpinski squares
+      on the diagonals of a 3x3 board</TH> 
+  </TR>
+  <TR>
+    <TD WIDTH="50%">
+      <P><CENTER>&nbsp;<TABLE WIDTH="90" BORDER="0" CELLPADDING="0"
+      HEIGHT="90" CELLSPACING="0">
+         
+        <TR>
+          <TD WIDTH="100%" BGCOLOR="#cccccc">&nbsp;</TD> 
+        </TR>
+      </TABLE></CENTER></TD>
+    <TD WIDTH="50%">
+      <P><CENTER>&nbsp;<TABLE WIDTH="90" BORDER="0" CELLSPACING="0"
+      CELLPADDING="0" HEIGHT="90">
+         
+        <TR>
+          <TD WIDTH="33%" BGCOLOR="#cccccc">&nbsp;</TD> 
+          <TD WIDTH="33%">&nbsp;</TD> 
+          <TD WIDTH="33%" BGCOLOR="#cccccc">&nbsp;</TD> 
+        </TR>
+        <TR>
+          <TD WIDTH="33%">&nbsp;</TD> 
+          <TD WIDTH="33%" BGCOLOR="#cccccc">&nbsp;</TD> 
+          <TD WIDTH="34%">&nbsp;</TD> 
+        </TR>
+        <TR>
+          <TD WIDTH="33%" BGCOLOR="#cccccc">&nbsp;</TD> 
+          <TD WIDTH="33%">&nbsp;</TD> 
+          <TD WIDTH="33%" BGCOLOR="#cccccc">&nbsp;</TD> 
+        </TR>
+      </TABLE></CENTER></TD>
+  </TR>
+</TABLE></P>
+
+<UL>
+  <LI>Let's look at the code which does this.
+</UL>
+
+<H3><A NAME="sierpinskitriangle"></A>Your Second Fractal : Sierpinski
+triangle</H3>
+
+<UL>
+  <LI>Similar to the square, but a little more complicated due
+  to geometry
+  <LI>Start with a triangle and remove the inner inverted triangle.
+  <LI>Base case: equilateral triangle
+  <LI>Recursive case: A sierpinski triangle is three smaller (by
+  1/2) sierpinski triangles placed in the three corners of the
+  original triangle
+</UL>
+
+<H3><A NAME="tree"></A>Binary Tree : &quot;And they tell two friends,
+and they tell two friends...&quot;</H3>
+
+<UL>
+  <LI>Want to see explosive growth of exponentials
+  <LI>A binary tree is a fork up top and two binary trees on each
+  arm
+</UL>
+
+<H3><A NAME="peano"></A>Peano Curve : Space-filling!</H3>
+
+<UL>
+  <LI>As <TT>n</TT> approaches infinity, completely fills space!
+  <LI>A peano curve is a path. If the distance from the start to
+  the finish is 3x, the peano curve is drawn as follows
+  <UL>
+    <LI>Start at the start.
+    <LI>Go 2x of the way toward the destination. (E)
+    <LI>Make a left turn, go x (N)
+    <LI>Make a left turn, go x (W)
+    <LI>Make a left turn, go 2x (S)
+    <LI>Make a left turn, go x (E)
+    <LI>Make a left turn, go x (N)
+    <LI>Make a right turn, go x (E)
+  </UL>
+</UL>
+
+<H3><A NAME="dragon"></A>Dragon &amp; C-Curve : Two interesting
+variants!</H3>
+
+<UL>
+  <LI>Start with a straight line.
+  <LI>Find a point which makes an isosceles right triangle
+  <LI>Draw a recursive version between the beginning point and
+  the new point, there are now two options:
+  <LI>C-curve
+  <UL>
+    <LI>Draw a recursive version between the new point and the end
+    point
+  </UL>
+  <LI>Dragon
+  <UL>
+    <LI>Draw a recursive version between the end point and the new
+    point
+  </UL>
+  <LI>Dragon is space-filling!
+</UL>
+
+<H3><A NAME="koch"></A>Koch Curves : Snowflakes and Anti-snowflakes</H3>
+
+<UL>
+  <LI>Start with an equilateral triangle.
+  <LI>Divide each side into thirds, delete the middle third, and
+  construct a point off that length from the deleted side that
+  forms a smaller equilateral triangle.
+  <LI>The anti-snowflake just means we push the point <B>inside</B>
+  rather than <B>outside</B>.
+</UL>
+
+<H2><HR ALIGN=LEFT><A NAME="summary"></A>Summary</H2>
+
+<UL>
+  <LI>We saw six examples of fractals; what a wonderful, beautiful
+  world is mathematics!
+</UL>
+
+<H2><A NAME="preview"></A>Next Time</H2>
+
+<UL>
+  <LI>We look at graphics with some randomness, Fibonacci, Tower
+  of Hanoi, and maybe some game theory!
+</UL>
+
+<H2><A NAME="puzzle"></A>Puzzle : Tower of Hanoi</H2>
+
+<P><CENTER><IMG SRC="towerofhanoi.gif" WIDTH="400" HEIGHT="88"
+ALIGN="BOTTOM" BORDER="0"></CENTER></P>
+
+<UL>
+  <LI>Transfer the tower of disks from peg A to peg C in the fewest
+  moves possible
+  <LI>You are only allowed to move one disk at a time
+  <LI>You may never place a disk on top of a smaller one
+</UL>
+
+<H2><A NAME="game"></A>Game : Brussels Sprouts</H2>
+
+<UL>
+  <LI>This is a game invented by John Conway and Michael Paterson
+  and played with a pencil and paper.
+  <LI>You start wtih a number of 4-arm crosses.
+  <LI>A move is to connect two arms (of the same cross or of two
+  different ones) and to make a new cross by drawing a crossbar
+  somewhere along the line, as below:
+</UL>
+
+<PRE><CENTER><IMG SRC="BrusselsSprouts.gif" WIDTH="500" HEIGHT="201"
+ALIGN="BOTTOM" BORDER="0"></CENTER></PRE>
+
+</BODY>
+</HTML>

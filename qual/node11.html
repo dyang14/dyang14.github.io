@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Syntactic Ambiguities</TITLE>
+<META NAME="description" CONTENT="Syntactic Ambiguities">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="node9.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html158"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html156"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html150"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html159"
+  HREF="node12.html">Semantic Ambiguities</A>
+<B> Up:</B> <A NAME="tex2html157"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html151"
+  HREF="node10.html">Lexical Ambiguities</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00051200000000000000">
+Syntactic Ambiguities</A>
+</H3>
+
+<P>
+As the lexer passes tokens to the GLR parser, the parser must try
+to put them into a parse tree. But, as we said before, verbalizable
+language grammars will have inherent ambiguity, especially if we
+design the grammar to minimize spoken punctuation. For example, the
+parentheses marking method invocation may not be spoken. The ``dot''
+separating field references may be omitted. Semicolons as end of
+statement indicators may be omitted as well. 
+
+<P>
+Our incremental GLR parser must first be enhanced to accept the
+various changes we've made to the lexer-parser interface. In GLR,
+whenever a conflict is detected (e.g. shift-reduce or reduce-reduce),
+the parser that faced the conflict is split into two, and each parser
+takes one of the choices. Allowing alternate lexemes for the same
+input word will introduce a additional <I>shift-shift</I> conflict for
+the given parser. The logic to handle this is easily added to the
+parser algorithm.
+
+<P>
+A more complicated solution is required to support multiple token
+streams for each parser. If all possible concatenations are generated,
+then each parser may not be at the same point in the token stream as
+each other, which would violate a precondition of the GLR
+algorithm. We need to elaborate the interface between the parser and
+token stream to give each parser its own pointer into the stream. We
+must be careful, however, not to break the parser merging component of
+GLR. This merging allows two parsers to merge if they end up in the
+same state and face the same input token. We must allow merging even
+if the parsers read two different token streams.
+
+<P>
+Spontaenous speech also contains extraneous words, which are not part
+of the language grammar. Without any filtration, these extra ``stop''
+words will confound the parser and cause it to reject otherwise
+legitimite parses. We plan to adapt a solution used in the GLR*
+algorithm that enables the GLR parser to skip words and construct a
+parse forest with the parses that have the fewest skipped
+words&nbsp;[<A
+ HREF="node29.html#tomita-lavie">33</A>]. This is done by allowing shift actions to
+be performed by inactive parse states. Heuristics must be used to
+ensure that the parser is not forced to parse the set of all subsets
+of tokens found in the input stream.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html158"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html156"
+  HREF="node9.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html150"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html159"
+  HREF="node12.html">Semantic Ambiguities</A>
+<B> Up:</B> <A NAME="tex2html157"
+  HREF="node9.html">Types of Ambiguities</A>
+<B> Previous:</B> <A NAME="tex2html151"
+  HREF="node10.html">Lexical Ambiguities</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,360 @@
+<head>
+<title>CrystalBoard</title>
+</head>
+
+<body bgcolor="FFFFFF">
+
+
+<h1><center><img align="center" src="../images/crystalboard-title.gif" WIDTH="197" HEIGHT="32"><br>
+CrystalBoard: A Transparent Shared Whiteboard</center></h1>
+
+<center>
+<b>Andrew Begel</b><br>
+Soda Hall<br>
+UC Berkeley<br>
+Berkeley, CA 94720<br>
+<i><a href="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</a></i>
+
+</center>
+
+<h3>Abstract</h3>
+
+This paper describes CrystalBoard, a transparent shared whiteboard. An
+extension of the MASH MediaBoard, CrystalBoard allows authors to
+present original source material to large audiences using IP
+multicast. In addition, the author and all participants may annotate
+and markup the presentation in real-time. This application is
+effective for presentation formats that include a moderate amount of
+whitespace, but further work will be necessary to show its
+effectiveness on densely packed formats.<p>
+
+
+
+<h3>Introduction</h3>
+
+<img align="right" src="../images/crystalboard-small.gif" WIDTH="366" HEIGHT="388">
+
+CSCW tools allow people to use computers as an aid to present
+information to a large distributed set of receivers. These tools are
+often intended for specialized uses, however, and do not suit all
+needs for all people. This paper concentrates on the whiteboard
+tool and its deficiencies in the area of pre-made content presentation. <p>
+
+A whiteboard is used to present and annotate state information
+presented in a CSCW session. Participants may draw on a computer
+representation of the board using the mouse as a pen. They may
+draw in freehand or other modes like those found in popular
+paint programs. In addition, most whiteboards accept textual input. <p>
+
+These tools allow people to write and draw onto a publicly-accessible
+shared workspace.  However, they are limited to annotation and
+creation of content in real-time. When someone wants to present
+precreated information, they must copy and paste it into the
+whiteboard, losing some content in the process. The whiteboard can not
+display the complexity of content that the specialized authoring
+application could. Formatting information may be lost, such as
+multiple fonts, line wrapping and text positioning. In addition,
+copying mixed media content can be vexing if the whiteboard does not
+support all of the media types used. <p>
+
+CrystalBoard aims to fix the problem by keeping the content in the
+application in which it was created. Presenters may show
+material by simply dragging this transparent whiteboard over their
+authoring application. All of the content will be transferred to the
+receivers who are running an unmodified MASH MediaBoard.<p>
+
+<h3>Related Work</h3>
+
+CrystalBoard is an extension of the MASH MediaBoard, developed by
+Teck-Lee Tung and Suchi Raman at UC Berkeley <a href="cs294-paper.html#RT96">[RT96]</a>. The MediaBoard allows users to share data
+using the Scalable Reliable Multicast (SRM) protocol <a href="cs294-paper.html#FJLMZ95">[FJLMZ95]</a> over IP Multicast. The MediaBoard
+itself is based on an earlier whiteboard created at LBNL <a href="cs294-paper.html#M92">[M92]</a>. <p>
+
+In addition to shared whiteboard, several OS vendors have been making
+their presentation applications shareable. Sun sells the Showme suite
+of tools, which includes a whiteboard with the ability to import
+screen snapshots. They also have a shared application tool which
+allows users to share any X application. The application's interface
+is duplicated on each person's machine, though only one person can
+interact with it at a time. Microsoft sells NetMeeting, a full video
+conferencing suite which contains a whiteboard and the ability to
+share applications. <p>
+
+CrystalBoard also inherits characteristics from the Toolglass project
+<a href="cs294-paper.html#BSPBD93">[BSPBD93]</a>. Researchers created see-through
+interface elements that could filter and enhance the background
+underneath. For instance, a fractal lens would fractalize any image it
+was passed over. Robert Wilensky of UC Berkeley implemented a similar
+sort of interface element for the Multi-Valent Document project <a href="cs294-paper.html#PW96">[PW96]</a>. Users can view documents in multiple views
+and use transparent lenses to see superimposed information from
+different layers.  <p>
+
+<h3>Goals</h3>
+
+There were several goals for this shared presentation tool:<p>
+
+<ol>
+  <li>It should allow the user to present material to any number of
+       people.
+  <li>Users should be able to present their unmodified original work
+       from any application.
+  <li>It should let all of the participants in a shared session to
+       annotate and mark up the material.  
+</ol><p>
+
+The first goal is one of scalability. Simplistic sharing tools will
+often use direct TCP connections between participants leading to a
+<i>n squared</i> web of links. More sophisticated systems use
+multicast to broadcast each data once to all listeners.<p>
+
+Another key idea in this project was to allow users to share their
+original source material with an audience. Shared application tools do
+a good job of this, allowing presenters to
+replicate their applications' windows on remote clients. For example,
+a PowerPoint session may be replicated on the remote participants'
+monitors for them to follow along. <p>
+
+The last goal is to provide good tools for online markup and
+annotation of presented material. There are many implementations of
+shared whiteboards like the MASH MediaBoard. They often provide similar
+tools to those found in popular drawing packages like Adobe
+Illustrator or CorelDraw. <p>
+
+These three goals have not yet been met in a single
+application. Microsoft's and Sun's shared application tools allow
+presenters to show original source material. MS NetMeeting even comes
+with real-time annotation tools to allow participants to draw on
+and mark up presented documents. However, both vendors' tools do not
+support large numbers of participants in a session because they use
+the point-to-point TCP/IP protocol.<p>
+
+Whiteboard utilities like the MASH MediaBoard support all of the
+real-time annotation requirements, but importation of source material
+via cut-and-paste invariably changes the content and presentation
+style. These types of utilities are more suited for on-line creation
+of content.<p>
+
+
+<h3>Design</h3>
+
+It is possible to combine the good qualities of annotation with a
+direct manipulation style of information presentation and meet the
+three goals described above. <i>CrystalBoard</i> is a &quot;network lens&quot;
+which rides on top of a display and transmits all information captured
+visible through it across the network. In addition, it supports annotation
+tools, such as freehand sketching and text input, to be displayed on a
+translucent layer above the lens.<p>
+
+<img align="right" src="../images/netscapeusage.gif" WIDTH="372" HEIGHT="418">
+
+The use of CrystalBoard is very simple. Presenters simply place
+their CrystalBoard on top of any application window, such as Netscape,
+and begin discussing their material with remote participants. When
+they feel the need to emphasize a particular point, they can underline
+words or draw circles around items that are visible through the
+lens. If an audience member wished to make a point, he could also draw
+on the lens through his client program, an unmodified MASH MediaBoard.
+While the presenter needs a CrystalBoard to present her work, the
+remote participants require only a normal whiteboard. The background
+visible through the presenter's lens is transmitted as a picture for
+the receivers' whiteboards to display with all annotations drawn
+on top.<p>
+
+
+CrystalBoard is a minimalist application consisting of an opaque
+frame surrounding a transparent middle. There is only one mode of
+operation. The user can click-drag to draw in freehand mode. She may
+also type on the keyboard, sending text to the screen whereever the
+mouse button was last released. There is one color, one font, and one
+type of line. These features may be enhanced in the future. <p>
+
+Whenever the user clicks on the frame or drags it around the screen,
+the new viewable area is sent over the network to all remote
+participants. Thus, if the presenter wishes to show a new page of work,
+she may simply drag the frame around until the new page is shown
+inside. <p>
+
+Client users can use the MASH MediaBoard to view these
+presentations. The MediaBoard receives background images from the
+presenter over the network and displays the annotations and text on
+top. Whenever a new background image comes in, the one that was
+already displayed is replaced by the new one. Since the client is an unmodified
+MediaBoard, the remote participants may annotate and draw on the
+presentation which is multicast to everyone else, including the
+presenter.<p>
+
+<h3>Implementation</h3>
+
+The CrystalBoard is implemented in X Windows under UNIX. It consists
+of an add-on module to the MASH MediaBoard that replaces the Tk
+drawing canvas with an InputOnly transparent X Window. This window
+captures the user's events and translates them into MASH MediaBoard
+commands which are then sent over the network to be displayed by
+all participants. The commands are also echoed locally to CrystalBoard,
+which draws them over the background of the screen.<p>
+
+When the presenter wishes to send the image contained within the lens to
+remote users, she clicks on the frame. This takes a snapshot of the
+background visible through the frame and saves it as a GIF. It is then sent
+over the network using the preexisting MediaBoard image protocols.
+Likewise, when the user drags the frame to a new location on the
+screen, the background in the new location is captured and sent over
+the network. Then the X display in the former location of the
+CrystalBoard is cleaned up and restored.<p>
+
+<h3>Analysis</h3>
+
+Is a shared, transparent whiteboard <i>useable</i>? Is it <i>useful?</i>
+No user tests were conducted, but I had some feelings about the
+system while it was being developed.<p>
+
+<h4>Usability</h4>
+
+<i>The whiteboard is useable, but only for simple presentations.</i> The UI
+is invisible and modeless, which leads to easy everyday use. The mouse
+only has two functions in the canvas, drawing and cursor
+placement. The keyboard is used for typing whereever the cursor was
+placed. Because of this, it is very easy to invoke simple features, but
+hard to design in more complicated tools like those found in paint
+programs and more sophisticated whiteboards.<p>
+
+<i>How is the application's usability when applied to the task of
+presentation?</i> The presenter may use any existing applications and
+tools to prepare a presentation. Once the CrystalBoard is booted, the
+mouse is only used for dragging the frame around the screen and
+sending new backgrounds to the receivers.<p>
+
+For a static presentation, this tool suffices. However, after moving
+the CrystalBoard to a new location on the screen, the background is
+updated, but the drawing layer on top is not scrolled and gets out of
+sync with the background below. As such, it would be nice to reinvent
+the CrystalBoard to be <i>more</i> than just a transparent whiteboard. The
+CrystalBoard should be just a window on a full-screen transparent
+whiteboard. This way, the CrystalBoard only defines the <i>current</i>
+area of presentation and drawing. If the presentation moves to a
+different portion of the screen, the window may be moved and leave the
+drawing behind in the old spot. The background that would now be sent to all
+recipients could be added to their MediaBoards in the correct
+relative position as it is displayed on the author's screen.<p>
+
+<i>How does CrystalBoard fare with non-static presentations?</i> If the
+content shown underneath the CrystalBoard changes asynchronously (due
+to an animated GIF or movie), it is questionable whether the
+background should be updated on a more frequent basis. Barring the
+implementation details of knowing when another window has drawn onto
+the screen, should transfer of a new background be controlled solely
+by the user clicking on the frame or should the background be sent
+whenever any change to the screen underneath the CrystalBoard occurs?
+Since the CrystalBoard is positioned solely as a static presentation
+tool, it is not designed for sending high-frequency bitmap
+updates. Other presentation tools are more suitable (video
+conferencing applications or Timbuktu-style remote control applications)
+and could be made more general to support this type of collaborative
+work. <p>
+
+
+<h4>Usefulness</h4>
+
+<i>Is the CrystalBoard useful?</i> It can be surprisingly effective in
+presentations using graphs, pictures or other formats that contain
+large amounts of whitespace. It has also been tried in Netscape with
+varying results. The more cluttered a page is, the more difficult it
+is to add additional information by drawing or typing.<p>
+
+Font type and color also have a big impact on the visibility and
+discernability of annotations to documents. Originally, CrystalBoard
+defaulted to a 9x15 non-proportional font and black color. Not
+only was information difficult to see, but since the
+majority of visual information in many programs uses black for text,
+CrystalBoard text and drawing was difficult to separate from the
+background. Consequently, the color was switched to hot pink and the
+font type to 18 point Helvetica. This improved discernability
+dramatically, but didn't help at all with the clutter. <p>
+
+Authors spend a great deal of time on layout of non-mutable
+presentations. When the opportunity arises to use CrystalBoard to
+present the material, it quickly becomes apparent that smaller amounts
+of whitespace offer less space for annotation. While it is easy to
+circle and underline items to highlight them, without extra space, it
+becomes hard to &quot;write in the margins.&quot; Graphic presentations often
+fare better than text presentations because authors leave more
+whitespace around graphics for better layout. <p>
+
+
+<h3>Future Work</h3>
+
+In the future, there might be small improvements to the UI. Additional
+UI features should include a resizable window, erase/undo,
+user-selectable color and font, and a click-through mode. <p>
+
+This last addition warrants further discussion. The authors of
+Toolglass realized the importance of a click-through mode in their
+magic lenses. They created click-through color-buttons that can change
+the shade of the object below them. Supporting click-through in
+CrystalBoard would allow the presenter access to the underlying
+presentation tool. This way, the presenter could switch to the next
+slide in PowerPoint, or scroll the window in Netscape without having
+to move the CrystalBoard out of the way.<p>
+
+Click-through, combined with the reinvention of CrystalBoard as a
+window onto a larger transparent whiteboard, would make for a more
+interesting and useful CrystalBoard. It would, however, force an
+answer to the question of how to represent low-frequency image shifts
+on the receivers' whiteboards.<p>
+
+While there are quite a few ways to enhance CrystalBoard to
+work with background animation, I feel that this simple application
+would benefit most from additional UI elements. Any radical redesign
+to support large presentations should be made to a new implementation.<p>
+
+
+<h3>Conclusion</h3>
+
+In conclusion, the CrystalBoard is an effective tool for presentations
+of original source material to a large audience. Its ability to allow
+all participants to annotate and markup presentation content is due to
+its inheritence of networking features from the MASH Media
+Board. Thus, CrystalBoard meets all three of our design goals with a
+very simple, easy-to-use user interface.
+
+
+<hr>
+
+<h3>Bibliography</h3>
+
+<a name="BSPBD93">[BSPBD93]</a> Bier, E, Stone, M., Pier, K., Buxton, W., DeRose, T.,
+<i>Toolglass and Magic Lenses: The See-Through
+Interface</i>. <b>Proceedings of Computer Graphics</b>, 1993,
+pp. 73-79<p>
+
+<a name="FJLMZ95">[FJLMZ95]</a> Floyd, S., Jacobson, V., Liu, C.,
+McCanne, S., and Zhang, L., <i>A Reliable Multicast Framework
+for Light-weight Sessions and Application Level Framing.</i> <b>ACM
+SIGCOMM 95</b>, August 95, pp. 342-356.<p>
+
+
+<a name="M92">[M92]</a> McCanne, S. <i>A Distributed Whiteboard for
+Network Conferencing</i>. CS268 Term Project, U.C. Berkeley. May 1992.<p>
+ 
+
+<a name="PW96">[PW96]</a> Phelps, T. and Wilensky, R. <i>Toward Active, Extensible, Networked
+Documents: Multivalent Architecture and Applications</i>.
+<b>Proceedings of the 1st ACM International Conference on Digital
+Libraries</b>, 1996,
+pp. 100-108.<p>
+
+
+<a name="RT96">[RT96]</a> Raman, S. and Tung, T. <i>MediaBoard Using the Scalable, Reliable
+Multicast Toolkit</i>.
+http://www.cs.berkeley.edu/~suchi/mboard/paper/paper.html, 1996.<p>
+
+
+
+<hr>
+
+
+<address><a href="http://www.cs.berkeley.edu/~abegel">Andrew Begel</a>
+<a href="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</a><br>
+
+December 16, 1997</address>
+</body>

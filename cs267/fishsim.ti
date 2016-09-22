@@ -1,0 +1,629 @@
+import java.util.Vector;
+import java.util.Enumeration;
+import java.util.Random;
+
+public class fishsim {
+  
+  static int single numfish;
+  static double single time;
+  static Grid single grid;
+  static Random rand;
+
+  public static single void main(String[] argv) {
+    time = 0;
+    rand = new Random(System.currentTimeMillis() + Ti.thisProc() * 53 + 23);
+    FishList.initialize();
+    
+    grid = new Grid(0.1, -10, 10, -10, 10);
+    grid.initialize();
+    System.out.println("Grid is initialized.");
+    for(int single i = 0; i<(numfish=500); i++) {
+      Fish f = null;
+      if (Ti.thisProc() == (i % Ti.numProcs())) {
+	f = new Fish(grid, Ti.thisProc());
+      }
+      grid.addFish(f, i % Ti.numProcs());
+    }
+    System.out.println("Created " + numfish + " fish");
+    go(grid);
+  }
+  
+  public static single void go(Grid grid) {
+    long totaltime = 0, currenttime = 0;
+    long movetime =0 , forcetime = 0;
+    long totalforcetime = 0, totalmovetime = 0;
+
+    totaltime = System.currentTimeMillis();
+    while(time < 0.01) {
+      if (Ti.thisProc() == 0) System.out.println("Time is: " + time);
+      Ti.barrier();
+      currenttime = System.currentTimeMillis();
+      computeForce(grid);
+
+      forcetime = System.currentTimeMillis() - currenttime;
+      totalforcetime += forcetime;
+      System.out.println("Force Computation Time: " + forcetime);
+
+      Ti.barrier();
+      currenttime = System.currentTimeMillis();
+      moveFish(grid);
+
+      movetime = System.currentTimeMillis() - currenttime;
+      totalmovetime += movetime;
+      System.out.println("Move Fish Time: " + movetime);
+    }
+    System.out.println("Total Force Comptuation Time: " + totalforcetime);
+    System.out.println("Total Move Fish Time: " + totalmovetime);
+    System.out.println("Total Time: " + (System.currentTimeMillis() - totaltime));
+
+  }
+
+  public static void computeForce(Grid grid) {
+    foreach (p within grid.mygrid) {
+      FishList l = grid.fishlistgrid[Ti.thisProc()][p];
+      while (!FishList.nilp(l)) {
+	Fish fish = l.car;
+	fish.force = neighborSum(p, fish, grid);
+	l = l.cdr;
+      }
+    }
+  }
+
+  public static DoubleVector neighborSum(Point<2> p, Fish fish, Grid grid) {
+    DoubleVector force = new DoubleVector(0, 0);
+
+    FishList l = grid.fishlistgrid[Ti.thisProc()][p];
+    while (!FishList.nilp(l)) {
+      Fish newfish = l.car;
+      if (fish != newfish) {
+	force.add(calculateForce(fish.position, newfish.position));
+      }
+      l = l.cdr;
+    }
+
+    force.add(neighborForce(p + [-1, -1], fish, grid));
+    force.add(neighborForce(p + [-1, 0], fish, grid));
+    force.add(neighborForce(p + [-1, 1], fish, grid));
+    force.add(neighborForce(p + [0, -1], fish, grid));
+    force.add(neighborForce(p + [0, 1], fish, grid));
+    force.add(neighborForce(p + [1, -1], fish, grid));
+    force.add(neighborForce(p + [1, 0], fish, grid));
+    force.add(neighborForce(p + [1, 1], fish, grid));
+    return force;
+
+  }
+
+  public static DoubleVector neighborForce(Point<2> p, Fish fish, Grid grid) {
+    DoubleVector force = new DoubleVector(0, 0);
+
+    if (grid.grid.contains(p)) {
+      int ownerproc = grid.split.pointToProc(p);
+      FishList l = grid.fishlistgrid[ownerproc][p];
+      while (!FishList.nilp(l)) {
+	Fish newfish = l.car;
+	force.add(calculateForce(fish.position, newfish.position));
+	l = l.cdr;
+      }
+    }
+    return force;
+  }
+
+  public static DoubleVector calculateForce(DoubleVector d1, DoubleVector d2) {
+    double dx = d2.getX() - d1.getX();
+    double dy = d2.getY() - d1.getY();
+    double distance = Math.min(d1.distance(d2), 0.0005);
+
+    if (distance > 0.1) return new DoubleVector(0, 0);
+    if (distance < 1/30) {
+      return new DoubleVector((0.1 * (2 - 1 / (30 * distance))) * dx/distance, 
+			      (0.1 * (2 - 1 / (30 * distance))) * dy/distance);
+    } 
+    else {
+      return new DoubleVector((0.1 / Math.pow(30 * distance, 5)) * dx/distance, 
+			      (0.1 / Math.pow(30 * distance, 5)) * dy/distance);
+    }
+    
+  }
+    
+  public static single void moveFish(Grid grid) {
+        
+    DoubleVector maxvel = new DoubleVector(-5, -5);
+    double single dt = 0.0005;
+    long mymovetime=0;
+    long mywalltime=0;
+    int numpoints = 0;
+    int numfish = 0;
+
+    long currenttime = System.currentTimeMillis();
+    foreach (p within grid.mygrid) {
+      numpoints++;
+      FishList l = grid.fishlistgrid[Ti.thisProc()][p];
+      while (!FishList.nilp(l)) {
+	Fish fish = l.car; 
+	numfish++;
+	fish.changeVel();
+	//maxvel = maxvel.maximum(fish.velocity);
+	fish.move(dt);
+	fish.checkForWalls(dt);
+	l = l.cdr;
+      }
+    }
+
+    time += dt;
+    mymovetime += System.currentTimeMillis() - currenttime;
+    /*
+    System.out.println("Processor #" + Ti.thisProc() + " looked at " + numpoints + 
+		       " points.");
+    */
+
+    System.out.println("Processor #" + Ti.thisProc() + " moved " + numfish +
+		       " fish.");
+    
+  }
+  
+  
+
+}
+
+class Grid {
+  
+  double single cellsize;
+  int single minx, miny;
+  int single maxx, maxy;
+
+  int myminx, myminy;
+  int mymaxx, mymaxy;
+
+  int numprocs;
+
+  RectDomain<2> grid;
+  Split split;
+  RectDomain<2> mygrid;
+  FishList [1d] single [2d] fishlistgrid;
+
+  RectDomain<1> single allProcs = [0:Ti.numProcs() - 1];
+  
+  public single Grid(double single cellsize, int single inminx, 
+		     int single inmaxx, int single inminy, int single inmaxy) {
+    this.cellsize = cellsize;
+    minx = inminx;
+    miny = inminy;
+    maxx = inmaxx - 1;
+    maxy = inmaxy - 1;
+
+    grid = [minx:maxx, miny:maxy];
+    
+    numprocs = Ti.numProcs();
+
+    split = new Split(grid, numprocs, Split.DONTCARE);
+
+    mygrid = split.getDomain(Ti.thisProc());
+
+    myminx = mygrid.min()[1]; myminy = mygrid.min()[2];
+    mymaxx = mygrid.max()[1]; mymaxy = mygrid.max()[2];
+
+    System.out.println("Proc #" + Ti.thisProc() + ": [" + myminx + ":" +
+		       mymaxx + ", " + myminy + ":" + mymaxy + "]");
+
+    fishlistgrid = new FishList[allProcs][2d];
+    Ti.barrier();
+  }
+  
+  public single void initialize() {
+    fishlistgrid.exchange(new FishList[mygrid]);
+
+    foreach (p within mygrid) {
+      fishlistgrid[Ti.thisProc()][p] = FishList.nil;
+    }
+    Ti.barrier();
+  }
+
+  public single synchronized void addFish(Fish f, int single processor) {
+   
+    Fish fish = broadcast f from processor;
+    Point<2> p = fish.gridposition.toPoint();
+    if (Ti.thisProc() == split.pointToProc(p)) {
+      fishlistgrid[Ti.thisProc()][p] = 
+	fishlistgrid[Ti.thisProc()][p].push(fish);
+    }
+  }
+
+  public synchronized void addFish(Point<2> p, Fish f) {
+    int ownerproc = split.pointToProc(p);
+    fishlistgrid[ownerproc][p] = fishlistgrid[ownerproc][p].push(f);
+  }
+
+  public synchronized void removeFish(Point<2> p, Fish f) {
+    int ownerproc = split.pointToProc(p);
+    FishList l = fishlistgrid[ownerproc][p];
+    fishlistgrid[ownerproc][p] = l.remove(f);
+  }
+  
+}
+
+public class Split {
+
+  static final int DONTCARE = 0;
+  static final int COLUMN = 1;
+  static final int ROW = 2;
+  static final int BLOCK = 4;
+  static final int CYCLIC = 8;
+  static final int SKEW = 16;
+
+  RectDomain<2> single rectdomain;
+  int single numprocs;
+  RectDomain<1> allprocs;
+  RectDomain<2>[1d] split;
+  int type = 0;
+
+  public Split(RectDomain<2> single indomain, int single num, int type) {
+    rectdomain = indomain;
+    numprocs = num;
+    allprocs = [0:numprocs-1];
+    this.type = type;
+    split = computeSplit();
+  }
+
+  RectDomain<2> getDomain(int procnum) { 
+    return split[procnum];
+  }
+
+  boolean pointInDomain(Point<2> p, int proc) {
+    return (split[proc].contains(p));
+  }
+
+  int pointToProc(Point<2> p) {
+    foreach (proc within allprocs) {
+      if (split[proc].contains(p)) return proc[1];
+    }
+    return -1;
+  }
+  
+  RectDomain<2>[1d] computeSplit() {
+    RectDomain<2>[1d] split = new RectDomain<2>[allprocs];
+
+    int minx, miny, maxx, maxy;
+    int myminx, myminy, mymaxx, mymaxy;
+    Point<2> min = rectdomain.min();
+    Point<2> max = rectdomain.max();
+    minx = min[1]; miny = min[2];
+    maxx = max[1]; maxy = max[2];
+    int width = maxx - minx; int height = maxy - miny;
+
+    switch (numprocs) {
+    case 1: split[0] = rectdomain; break;
+    case 2: {
+      int midx = (width + 1) / 2 + minx;
+      split[0] = [minx:midx-1, miny:maxy];
+      split[1] = [midx:maxx, miny:maxy];
+    } break;
+    case 3: {
+      int firstx = (width + 1) / 3 + minx;
+      int secondx = (width + 1) * 2 / 3 + minx;
+      split[0] = [minx:firstx-1, miny:maxy];
+      split[1] = [firstx:secondx-1, miny:maxy];
+      split[2] = [secondx:maxx, miny:maxy];
+    } break;
+    case 4: {
+      int midx = (width + 1) / 2 + minx;
+      int midy = (height + 1) / 2 + miny;
+      split[0] = [minx:midx-1, miny:midy-1];
+      split[1] = [midx:maxx, miny:midy-1];
+      split[2] = [minx:midx-1, midy:maxy];
+      split[3] = [midx:maxx, midy:maxy];
+    } break;
+    case 5: {
+      int firstx = (width + 1) / 3 + minx;
+      int secondx = (width + 1) * 2 / 3 + minx;
+      int firsty = (height + 1) / 5 + miny;
+      int fourthy = (height + 1) * 4 / 5 + miny;
+      split[0] = [minx:maxx, miny:firsty-1]; 
+      split[1] = [minx:firstx-1, firsty:fourthy-1];
+      split[2] = [firstx:secondx-1, firsty:fourthy-1];
+      split[3] = [secondx:maxx, firsty:fourthy-1];
+      split[4] = [minx:maxx, fourthy:maxy];
+    } break;
+    case 6: {
+      int firstx = (width + 1) / 3 + minx;
+      int secondx = (width + 1) * 2 / 3 + minx;
+      int midy = (height + 1) / 2 + miny;
+      split[0] = [minx:firstx-1, miny:midy-1];
+      split[1] = [firstx:secondx-1, miny:midy-1];
+      split[2] = [secondx:maxx, miny:midy-1];
+      split[3] = [minx:firstx-1, midy:maxy];
+      split[4] = [firstx:secondx-1, midy:maxy];
+      split[5] = [secondx:maxx, midy:maxy];
+    } break;
+    case 7: { 
+      int firstx = (width + 1) / 3 + minx;
+      int secondx = (width + 1) * 2 / 3 + minx;
+      int firsty = (height + 1) / 5 + miny;
+      int fourthy = (height + 1) * 4 / 5 + miny;
+      int midx = (width + 1) / 2 + minx;
+      split[0] = [minx:midx-1, miny:firsty-1]; 
+      split[1] = [midx:maxx, miny:firsty-1]; 
+      split[2] = [minx:firstx-1, firsty:fourthy-1];
+      split[3] = [firstx:secondx-1, firsty:fourthy-1];
+      split[4] = [secondx:maxx, firsty:fourthy-1];
+      split[5] = [minx:midx-1, fourthy:maxy];
+      split[6] = [midx:maxx, fourthy:maxy];
+    } break;
+    case 8: {
+      int firstx = (width + 1) / 4 + minx;
+      int secondx = (width + 1) * 2 / 4 + minx;
+      int thirdx = (width + 1) * 3 / 4 + minx;
+      int midy = (height + 1) / 2 + miny;
+      split[0] = [minx:firstx-1, miny:midy-1];
+      split[1] = [firstx:secondx-1, miny:midy-1];
+      split[2] = [secondx:thirdx-1, miny:midy-1];
+      split[3] = [thirdx:maxx, miny:midy-1];
+      split[4] = [minx:firstx-1, midy:maxy];
+      split[5] = [firstx:secondx-1, midy:maxy];
+      split[6] = [secondx:maxx, midy:maxy];
+      split[7] = [thirdx:maxx, midy:maxy];
+    } break;
+    }
+    return split;
+  }
+
+  /*
+    sqrtProcs = (int)Math.ceil(Math.sqrt(Ti.numProcs())); 
+    
+    xcellsPerProc = (int)Math.ceil((double)(maxx - minx + 1) / (double)sqrtProcs);
+    ycellsPerProc = (int)Math.ceil((double)(maxy - miny + 1) / (double)sqrtProcs);
+
+    myminx = xcellsPerProc * (Ti.thisProc() % sqrtProcs) + minx;
+    myminy = ycellsPerProc * (Ti.thisProc() / sqrtProcs) + miny;
+
+    mymaxx = myminx + xcellsPerProc - 1;
+    mymaxy = myminy + ycellsPerProc - 1;
+
+    System.out.println("Proc #" + Ti.thisProc() + ": [" + myminx + ":" +
+		       mymaxx + ", " + myminy + ":" + mymaxy + "]");
+
+    mygrid = [myminx:mymaxx, myminy:mymaxy];
+
+  */
+
+
+}
+
+class FishList {
+ 
+  Fish car; 
+  FishList cdr;
+  
+  static FishList nil;
+
+  static boolean nilp(FishList l) {
+    return (l == nil);  //(l.car == null && l.cdr == l);
+  }
+
+  static single void initialize() {
+    nil = broadcast new FishList() from 0;
+  }
+  
+  FishList() {
+    car = null;
+    cdr = this;
+  }
+
+  FishList(Fish f) {
+    car = f;
+    cdr = nil;
+  }
+
+  FishList(Fish f, FishList g) {
+    car = f;
+    cdr = g;
+  }
+
+  FishList push(Fish f) {
+    return new FishList(f, this);
+  }
+
+  public String toString() {
+    if (this == nil) return "<List: empty>";
+    return "<List: " + car.toString() + " " + cdr.toString() + ">";
+  }
+
+  // reverses the list
+  synchronized FishList remove(Fish f) {
+    FishList l = this;
+    FishList newlist = nil;
+
+    while (l != nil) {
+      if (l.car != f) newlist = new FishList(l.car, newlist);
+      l=l.cdr;
+    }
+
+    return newlist;
+  }
+      
+
+}
+
+class Fish {
+  
+  DoubleVector maxvel = new DoubleVector(0.1, 0.1);
+
+  DoubleVector position;
+  DoubleVector velocity;
+  DoubleVector force;
+  Grid grid;
+  DoubleVector oldgridposition;
+  DoubleVector gridposition;
+  int currentProc;
+  int timesmoved = 0;
+
+  static int numfish = 0;
+  int num;
+
+  public String toString() {
+    return "<Fish #" + (((currentProc & 0xff) << 12) + num) + ">";
+  }
+
+  Fish(Grid grid, int proc) {
+    this.grid = grid;
+
+    DoubleVector minimum = new DoubleVector(grid.grid.min());
+    minimum = minimum.times(grid.cellsize); 
+
+    DoubleVector size = new DoubleVector(grid.grid.max() - grid.grid.min());
+    position = (DoubleVector.random(size)).times(grid.cellsize).add(minimum);
+    velocity = (DoubleVector.random(maxvel.times(2))).minus(maxvel);
+    force = new DoubleVector(0, 0); 
+    
+    gridposition = position.dividedby(grid.cellsize).round();
+    currentProc = proc;
+    num = numfish++;
+
+  }
+
+  void changeVel() {
+    velocity = velocity.add(force).minimum(maxvel);
+  }
+
+  void move(double dt) {
+    timesmoved++;
+    //System.out.print(toString() + " was at " + 
+    //		       position.toString()); 
+    position = position.add(velocity.times(dt));
+
+    //System.out.println(", and is now at " + position.toString());
+
+    oldgridposition = gridposition;
+    gridposition = position.dividedby(grid.cellsize).round();
+
+    //System.out.println(toString() + " was at " + 
+    //		       oldgridposition.toString() + 
+    //		       ", and is now at " + gridposition.toString());
+
+    if (oldgridposition != gridposition) {
+      grid.removeFish(oldgridposition.toPoint(), this);
+      grid.addFish(gridposition.toPoint(), this);
+    }
+  }
+
+  void checkForWalls(double dt) {
+    double cellsize = grid.cellsize;
+
+    double xmin = grid.minx * cellsize;
+    double xmax = grid.maxx * cellsize;
+    double ymin = grid.miny * cellsize;
+    double ymax = grid.maxy * cellsize;
+    
+    while (position.getX() > xmax || position.getX() < xmin || 
+	   position.getY() > ymax || position.getY() < ymin) {
+      if (position.getX() > xmax || position.getX() < xmin) 
+	velocity = new DoubleVector(-1 * velocity.getX(), velocity.getY());
+      if (position.getY() > ymax || position.getY() < ymin) 
+	velocity = new DoubleVector(velocity.getX(), -1 * velocity.getY());
+      
+      move(dt);
+    }
+    //System.out.println(num + ", " + position.getX() + ", " + position.getY());
+
+  }
+
+  double potential(double r){
+    if (r > 0.1) { return 0; }
+    if(r==0) { return 0; }
+    /* r is exactly 0 if you have particle interacting
+       with itself, so need to skip this contirbution 
+       to the potential. r can be 0 between two particles
+       if the time step is really huge, by which time you
+       don't really care sbout energy conservation:) 
+       This is different from the gravitational potential
+       because here we have a repulsive core, which	
+       ordinarily wouldn't allow particles to overlap */
+    
+    if(r<= 1/30){
+      return(0.1* (2*r - (1/30)*Math.log(r) - 
+		   (1/30) * (9.0/4.0 - Math.log(1/30))));
+    }
+    else {
+      return(-0.1*Math.pow(1/30,5)/(4*Math.pow(r,4)));
+  }
+}
+
+
+}
+
+public immutable class DoubleVector {
+
+  private final double x;
+  private final double y;
+
+  public DoubleVector() {
+    x = 0; y = 0; 
+  }
+  
+  public DoubleVector(double xin, double yin) {
+    x = xin; y = yin; 
+  }
+  
+  public DoubleVector(Point<2> p) {
+    x = p[1];
+    y = p[2];
+  }
+
+  public final DoubleVector add (DoubleVector c) { 
+    return new DoubleVector (x + c.x, y + c.y);
+  }
+
+  public final DoubleVector minus (DoubleVector c) { 
+    return new DoubleVector (x - c.x, y - c.y);
+  }
+  
+
+  public final DoubleVector times(double d) {
+    return new DoubleVector(x*d, y*d);
+  }
+  
+  public final DoubleVector times(DoubleVector c) {
+    return new DoubleVector(x*c.x, y*c.y);
+  }
+
+  public final DoubleVector dividedby(double d) {
+    return new DoubleVector(x/d, y/d);
+  }
+
+  public final DoubleVector round() {
+    return new DoubleVector(Math.round(x), Math.round(y));
+  }
+  
+  public final Point<2> toPoint() {
+    return [(int)x, (int)y];
+  }
+
+  public static final DoubleVector random(DoubleVector c) {
+    DoubleVector temp = new DoubleVector(fishsim.rand.nextDouble(), 
+					 fishsim.rand.nextDouble());
+    return c.times(temp);
+  }
+
+  public final double distance(DoubleVector d) {
+    return Math.sqrt ( (d.x - x) * (d.x - x) + (d.y - y) * (d.y - y));
+  }
+
+  public final DoubleVector minimum(DoubleVector d) {
+    return new DoubleVector((x > d.x) ? d.x : x, (y > d.y) ? d.y : y);
+  }
+
+  public final DoubleVector maximum(DoubleVector d) {
+    return new DoubleVector((x < d.x) ? d.x : x, (y < d.y) ? d.y : y);
+  }
+
+  public final double magnitude() {
+    return Math.sqrt (x * x + y * y);
+  }
+
+  public final double getX () { return x; }
+  public final double getY () { return y; }
+
+  public String toString() {
+    return "<" + x + ", " + y + ">";
+  }
+
+}

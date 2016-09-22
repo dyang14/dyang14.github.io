@@ -1,0 +1,306 @@
+Andrew Begel
+CS302 PS10 
+4/5/99
+
+I haven't found a single book that I'd use for the entire course.I
+found one book that I like for the first part of the course. 
+
+For programming language design: I like the book "Programming
+Languages: Design and Implementation," by Terrence Pratt and Marvin
+Zelkowitz. It explores programming language design by looking at a few
+different languages: C, C++, ML, Prolog, Smalltalk, Fortran, Pascal,
+Ada, and Lisp. It takes a structure-based approach, moving through
+these topics: language history, language environments, syntax, data
+types, data structures, abstraction, storage management, control flow,
+function invocation, object orientation, exceptions and
+parallelism. The second half looks at each language individually and
+discusses specifics related to each of the above topics in more
+detail.
+
+The compiler back end of the course emphasizes semantic analysis and
+optimization. Unfortunately, the most often used book on compilers,
+the Dragon book by Aho, Sethi and Ullman, is pretty old and I don't
+like how it's written. There's a new book by Steven Muchnick called
+Advanced Compiler Design and Implementation which gives a very good
+intro to compiler optimization, but it's not very good at explaining
+the algorithms. It does get most of the overall concepts right and it
+is very up-to-date. In this section of the course, I'd go for
+a combination of the Dragon book, Muchnick and the original source
+papers on algorithms.
+
+The third part of the course is runtime support. The first book has
+some description of runtime environments but they're at a very high
+level. Aho and Ullman don't do a good job, either. I can just come up
+with my own lecture notes and handouts about this. There's a good
+survey of GC by Wilson that will come in handy.
+
+Anyway, to go over each source via the 8 points:
+
+a. completeness of coverage of your course material;
+
+P & Z: This covers the first part of the course on language design
+from a high level conceptual viewpoint. It would be perfect but for
+three flaws: no discussion of Java (that's too new for it), very few
+examples from the languages, and lack of a common syntax to ease
+moving between them.
+
+Dragon book: No coverage for the language design part. It has a poor,
+slightly outdated, but usable version for the compiler back end
+section. Spotty coverage of optimization. Not much discussion of
+runtime systems.
+
+Muchnick: Great conceptual discussion of optimizations. It uses three
+algorithmic programming languages to illustrate the algorithms it uses
+but does a very bad job explaining them, plus I don't like the
+languages.
+
+
+
+b. consistency with your approach to teaching the material and with
+the course activities you have designed;
+
+P & Z: 
+
+I like its approach to language design. It runs through different
+facets of design like data types, abstraction, function invocation and 
+the like. First it gives an idea of what the concept means, then its
+generic realization that all programming languages must obey, and then 
+the actual realization in several different languages. Not all
+languages are covered in each chapter, but the idea is right on the
+money. 
+
+Dragon book: 
+
+I dislike this book's approach to explaining how a compiler
+works. It's way too detail-oriented and is based in detailed
+code. Much of what students need to learn should be in the
+object-oriented-style. I also feel that they should be learning on the
+algorithm-level rather than the coding level. Their detailed code
+looks obsolete (however useful it still is in programming today) which
+gives the book an overall outdated feeling.
+
+Muchnick:
+
+This book is great for explaining compiler optimizations and how they
+interrelate. It might be too advanced for the students I'm targeting,
+however, the high-level concepts are totally accessible. This book
+fails in its explanatory details and algorithm coding style which I
+just don't like. Algorithms are poorly explained, often lacking a "big 
+picture" while dwelling on arbitrary details of the code.
+
+
+
+c. innovations that you might take advantage of;
+
+P & Z:
+
+I didn't see too many innovations. It gives a suggested order to
+teaching the different parts of language design, but I had kinda
+worked out my own direction. It does fill in some gaps I forgot about.
+
+Dragon book:
+
+nope.
+
+Muchnick:
+
+This book convinces me that original sources are probably worth the
+investment in teaching students how to read them. 
+
+Kamlin: Programming Languages: An interpreter-based approach.
+
+This book, which I haven't really spoken about yet, is neat because it 
+uses a single Scheme-like syntax to explain all of the concepts in
+different languages. Each language feature is introduced as a
+modification of the language detailed in the previous chapter. This
+use of a syntax requires some work to create a proper mapping, but
+makes homework assignments much easier for students, who now don't
+have to transfer syntaxes. It does have a disadvantage that students
+wouldn't get to get a feel for the real programming environments that
+come with the languages (or in some languages, are an inseparable
+piece! Smalltalk). 
+
+
+
+d. clarity of examples and explanations:
+
+P & Z:
+
+This book had a lot of small examples and illustrations but no real
+extended examples. It should have presented the examples in several
+different language styles, but those examples tended to be
+language-specific. The other illustrations were more theoretical and
+applicable to all languages. 
+
+Dragon book:
+
+It had quite a few examples presented in each chapter. These were
+generally illustrative of the issues, but they tended to be worked out
+in excruciating detail. 
+
+Muchnick: 
+
+This book's flowgraph examples were great. There were quite a few of
+them in each chapter, too. The explanations of the algorithms
+through the examples were the only thing that really saved the
+algorithm code and explanation from being a total disaster.
+
+
+Kamlin: 
+
+This book had smaller (in scope) examples than most, but worked them
+out for longer amounts of space. There was plenty of code; it could
+use some more pictures for explanations.
+
+
+e. quantity and quality of exercises:
+
+P & Z:
+
+This book had very high-level exercises. I feel the need for more
+specific extended examples that stress some programming skills. These
+exercises are great thought problems, but there isn't much to "do". 
+
+Dragon book:
+
+This book has great exercises. There's plenty of problems to work on,
+quite a few extend from discussion in the text, they're easy to
+grade. :) However, there aren't much high-level questions about
+concepts. This book isn't strong on those.
+
+Muchnick:
+
+This book has problems that are easy to forget about. What I mean is
+that they're very related to the text; none seem to really stand on
+their own at all. They're also very theoretical, which I suspect is
+due partly to the subject matter and partly because developing a full
+example for an exercise or two takes too much time and space. There
+are few synthesis questions and they seem to be quite obtuse in focus.
+
+Kamlin: 
+
+This book has good programming exercises that relate to the concepts
+learned in the chapter. Since the students use a single language, it's 
+easy to turn these into lab exercises and provide support. Some of
+their questions could be more conceptual however. 
+
+I'd like to take a cross-section of different problems from all of
+these texts.
+
+
+f. supplementary course material or software you might use;
+
+P & Z:
+
+Good bibliography. Not much else.
+
+Dragon book:
+
+It has a good bibliography, if a little dated. The book is from 1986.
+
+Muchnick: 
+
+This book has some pointers to shareware compilers, architecture
+simulation and profiling tools. It also has pretty good coverage of
+the major papers in compiler optimization.
+
+Kamlin:
+
+This book operates through interpreter building, and has
+electronically-available source code for everything in the book. 
+
+Extra papers in compiler and optimization theory:
+
+Sue Graham knows all of the most useful papers. A few come to mind:
+Cocke and Shwartz on value numbering, Tarjan on semidominators,
+Proebsting on bottom up recursive generators. 
+
+Extra software: 
+
+COOL. I think this was developed by Aiken(?) as a good intro compiler
+project.
+
+
+g. usefulness as a reference;
+
+P & Z:
+
+The first half is organized by language topic and gives some good
+overview on each piece. The second half of the book is organized
+language by language to give a great reference to the specifics of
+implementation choices made by the language.  
+
+Dragon book:
+
+This book is mostly only good for instruction, as many of its
+algorithms are dated. Sometimes, though, it's handy to remember how to 
+"move the dot" to make a parsing table.
+
+Muchnick:
+
+Great for reference material. It's got most of the algorithms you'd
+ever need in compiler optimization and they're all up to date. It's
+treatment isn't so wonderful, so you can use its references to papers
+to look up the originals.
+
+Kamlin: 
+
+I don't know that much specifically about this book. It does have good 
+knowledge but it seems more pedagogical than reference-like.
+
+
+h. usability in subsequent courses;
+
+P & Z:
+
+Not particularly.
+
+Dragon book:
+
+No. Stay away from this. It's already old. Using it in a later course
+implies that it just gets older.
+
+Muchnick:
+
+Use it. It's an advanced book that has much more than you could ever
+do in a class.
+
+Kamlin:
+
+Eh.
+
+
+
+2. 
+
+I agree that coverage is the most important quality in a
+textbook. Students have to buy something, and you can't make them buy
+10 books because each one covers 10% of the material. 
+
+Consistency with your style is also right up there, because the book
+should not "subvert" your goals in the course. If it states that
+algorithm complexity is immaterial, and you're teaching a complexity,
+this isn't your book. :) However, it could possibly take a parallel
+track that isn't quite what you wanted, but doesn't go *against* your
+goals; that should be just fine.
+
+I disagree about the innovations being next. I think clarity of the
+examples is far above innovations. I'd put innovations under e. I
+think clarity of examples is key in students' understanding of what
+the book is trying to get across. Screw it. This should be right up
+there with coverage. If the book doesn't make its point (through
+explanatory text and examples) then it's not worth, even if it does
+cover the material. Perhaps that was an implicit assumption in your
+list that you just didn't mention. The book has to be well-written.
+
+Since I haven't yet built any of my lab exercises for this course, I'd 
+put software down lower, but I'm sure that you've got more experience
+than I on this one. If a book came with source code and perhaps even a 
+compiler or two, that might be helpful. Then again, the time it takes
+to learn their software and teach it to your students and maintain it
+and fix bugs is quite large. You'd be better off spending your summer
+developing your own software and your own exercises. It might take a
+few years to perfect, but then it's all under your control and it will 
+always teach what you want it to.
+
+

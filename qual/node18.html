@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Program Navigation and Browsing</TITLE>
+<META NAME="description" CONTENT="Program Navigation and Browsing">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node19.html">
+<LINK REL="previous" HREF="node17.html">
+<LINK REL="up" HREF="node15.html">
+<LINK REL="next" HREF="node19.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html232"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html230"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html224"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html233"
+  HREF="node19.html">Program Editing</A>
+<B> Up:</B> <A NAME="tex2html231"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html225"
+  HREF="node17.html">Program Composition</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00063000000000000000">
+Program Navigation and Browsing</A>
+</H2>
+
+<P>
+Software developers that use text editors as their interface tend to
+use text-based navigation, moving to new characters, lines, buffers,
+or files. They use text-based search for character strings in
+character buffers. The maintenance by an interactive development
+environment of structural, semantically annotated, program views
+enables the user to navigate using structural and semantic targets
+(e.g. the next statement, the outer declaration of <TT>I</TT>, the use of
+<TT>J</TT> as a parameter to <TT>foo</TT>) and to search for patterns having
+certain semantics. In earlier systems, such navigation tends to be
+menu or function-key driven, with a fixed set of syntactic and
+semantic constructs, and a fixed set of actions&nbsp;[<A
+ HREF="node29.html#mlvdv-coherent">54</A>].
+
+<P>
+As part of the H-3ARMONIA project, researchers will develop methods for
+constructing patterns and for searching for them in programs. As part
+of this dissertation, we will explore using the techniques used for spoken
+authoring to enable the user to verbalize the construction of search
+patterns. Our analysis technology will translate the verbal search
+patterns into lower-level queries which will be run by the H-3ARMONIA 
+framework. 
+
+<P>
+A salient feature of a powerful navigation and modification facility
+is the ability to refer not only to commands that indicate what
+operation to perform, but also to constructs found in the programming
+language and in the program. In this manner, the user might be able to
+say ``go to method Foo in class Bar'' to move the cursor to the
+beginning of the <TT>Bar.Foo</TT> method. Likewise, we can exploit the
+language grammar to constrain program modifications. If the user says
+``replace the second if statement's predicate by x is greater than
+seven'', the phrase ``if statement's predicate'' indicates the
+predicate nonterminal of the grammar rule for an <TT>if</TT> statement,
+``the second'' says to construct a tree pattern in which there is an
+<TT>if</TT> statement followed by a second <TT>if</TT> statement, and ``x is
+greater than seven'' is a boolean expression with which to replace the
+existing predicate's leaf text terminals. We will develop the
+necessary technology to automate the construction of a grammar for
+referring to language constructs (pieces of the language dictation
+grammar) in a navigation context. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html232"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html230"
+  HREF="node15.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html224"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html233"
+  HREF="node19.html">Program Editing</A>
+<B> Up:</B> <A NAME="tex2html231"
+  HREF="node15.html">The Program Editor</A>
+<B> Previous:</B> <A NAME="tex2html225"
+  HREF="node17.html">Program Composition</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,935 @@
+<HTML>  
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 3.0 Mac">
+  <TITLE>LL(1) Parsing</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+
+<H1>LL(1) Parsing</H1>
+
+<P>Here is an introduction to all you need to know for LL(1) parsing
+correct input for CS164 at UC Berkeley.</P>
+
+<p><font size = "+2"><font color = "DF0000">Note: The following
+discussion is informal and does not cover all of the cases found in
+left factorization and LL(1) parsing grammars. To be sure you've
+covered all your bases, reread the text (Dragon book) and the lecture
+notes.</font></font></p>
+
+<P><HR ALIGN=LEFT></P>
+
+<P>The following grammar comes from Written Assignment 2.</P>
+
+<PRE>E -&gt; E + T | T
+T -&gt; T * F | F
+F -&gt; (E) | int</PRE>
+
+<P>This is a grammar for arithmetic. There are several orders
+of precedence here: ()'s beat *, and * beats +. We'd like to parse
+sentences using this grammar using a top-down, recursive descent
+algorithm.</P>
+
+<P>This algorithm traverses the grammar looking for matches between
+terminals (*, +, (, ), and int) and the input sentence. We do
+this search depth-first, which presents a problem. If we start
+at the starting production E, and derive the production E + T,
+we have E still on the left. In recursive-descent parsing, we
+can only expand the left-most non-terminal at each step! We're
+going to infinitely loop if we try to parse sentences using this
+grammar.</P>
+
+<P>How do we fix it? We use a technique known as left-recursion
+elimination to get rid of the non-terminals on the left-hand side of
+each production that cause us to infinitely loop. (Note: not all
+grammars have left recursion. You can identify the ones that have
+<i>immediate</i> left recursion by looking at all of the productions
+-- if the non-terminal on the left side of the arrow is the same as
+the non-terminal in the left-most position of any phrase on the right
+side of the arrow, then this grammar is left-recursive. There are
+other forms of left recursion that can show up if you were to
+"recurse" down multiple rules in the grammar. If you eventually will
+cause any infinite loop, the grammar is left-recursive.)</P>
+
+<P>Let's take a look at the first one:</P>
+
+<PRE>E -&gt; E + T | T</PRE>
+
+<P>What we do is this. For each production where the non-terminal
+on the left (E) of the arrow is the same as the left-side of a
+production on the right-hand side of the arrow (E + T), we take
+the part of the production without the E (+T) and move it down
+into its own new production (we'll call it E').</P>
+
+<PRE>E' -&gt; + T</PRE>
+
+<P>We're not done yet. Now, after each of the new productions,
+add E' to the end.</P>
+
+<PRE>E' -&gt; + T E'</PRE>
+
+<P>Nope, still not done yet. Now add an extra production to epsilon.</P>
+
+<PRE>E' -&gt; + T E' | epsilon</PRE>
+
+<P>Good. Now we must fix up the original E productions. Here,
+we take all of the right-hand sides that <B>didn't</B> start with
+E, and add E' to the end of them.</P>
+
+<PRE>E  -&gt; T E'</PRE>
+
+<P>If we do this for the T productions as well, we get the following
+grammar:</P>
+
+<PRE>
+E  -&gt; T E'
+E' -&gt; + T E' | epsilon
+T  -&gt; F T'
+T' -&gt; * F T' | epsilon
+F  -&gt; (E) | int</PRE>
+
+<P>Note, the F production didn't get changed at all. That's because
+F didn't appear on the leftmost position of any of the productions
+on the right-hand side of the arrow.</P>
+
+<P><HR ALIGN=LEFT></P>
+
+<P>Once we have performed left-recursion elimination on our grammar,
+we need to construct our parser. We're going to use an algorithm
+called LL(1) parsing. This is an algorithm that utilizes a lookup
+table to parse an expression. On top, we list all of the terminals,
+and on the left, we list the non-terminals (we include $ to signify
+end-of-file).</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;+</TD> 
+    <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;*</TD> 
+    <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;(</TD> 
+    <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;)</TD> 
+    <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;int</TD> 
+    <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;$</TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;E</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;E'</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T'</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+  </TR>
+  <TR>
+    <TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;F</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+    <TD WIDTH="14%">&nbsp;</TD> 
+  </TR>
+</TABLE></P>
+
+<P>Our LL(1) parser also contains a stack of non-terminals. Initially,
+we'll only put the starting state (E) on the stack. As we parse,
+we'll be putting non-terminals on and popping them off this stack.
+When they're all gone, and our stack is empty (and there is no
+more input), we're done.</P>
+
+<P>At each step, there is a grammar symbol at the top of the stack.
+When we see an input token from the lexer, we look in the table
+to see what to do. Each cell in the table is going to tell our
+LL(1) parser what to do when it sees the terminal on the top when
+the non-terminal on the left is at the top of the stack.</P>
+
+<P>Right now, our table is empty. Let's fill it up.</P>
+
+<P>We do this by computing two functions called <B>FIRST </B>and
+<B>FOLLOW</B>.</P>
+
+<P><B>FIRST</B> is a function on each non-terminal (E, E', T, T', and
+F) that tells us which terminals (tokens from the lexer) can appear as
+the first part of one of these non-terminals. Epsilon (neither a
+terminal nor a non-terminal) may also be included in this <b>FIRST</b>
+function. (<b>FIRST</b> is also defined for terminals, but its value
+is just equal to the terminal itself, so we won't talk about it more.) What
+this means is that the parser is going to invoke some of these
+productions in the grammar. We need to know which one to pick when we
+see a particular token in the input stream.</P>
+
+<P>So, let's start computing. What is the <B>FIRST</B>(E)? What are
+the terminals that can appear at the beginning of the stream when
+we're looking for an E? Well, E -&gt; T E', so whatever occurs at the
+beginning of E will be the same as what happens at the beginning of
+T.</P>
+
+<PRE><b>FIRST</b>(E) =&gt <b>FIRST</b>(T)</PRE>
+
+<P>How about <b>FIRST</b>(E')? This one is easy, we have the terminal
++, and epsilon.</P>
+
+<PRE><b>FIRST</b>(E') = { +, epsilon }</PRE>
+
+<P>And we'll continue with the others:</P>
+
+<PRE><b>FIRST</b>(T) =&gt <b>FIRST</b>(F)
+<b>FIRST</b>(T') = { *, epsilon }
+<b>FIRST</b>(F) = { (, int }</PRE>
+
+<P>See? <b>FIRST</b>(F) is just the set of terminals that are at the
+beginnings of its productions.</P>
+
+<P>So, to sum up:</P>
+
+<PRE><b>FIRST</b>(E) = { (, int }
+<b>FIRST</b>(E') = { +, epsilon }
+<b>FIRST</b>(T) = { (, int }
+<b>FIRST</b>(T') = { *, epsilon }
+<b>FIRST</b>(F) = { (, int }</PRE>
+
+<P>Now, let's do <b>FOLLOW</b>. Just as <b>FIRST</b> shows us the
+terminals that can be at the beginning of a derived non-terminal,
+<b>FOLLOW</b> shows us the terminals that can come <i>after</i> a
+derived non-terminal. Note, this does <i>not</i> mean the last
+terminal derived from a non-terminal. It's the set of terminals that
+can come after it. We define <b>FOLLOW</b> for all the non-terminals
+in the grammar.</P>
+
+<p>How do we figure out <b>FOLLOW</b>? Instead of looking at the first
+terminal for each phrase on the right side of the arrow, we find every
+place our non-terminal is located on the right side of <i>any</i> of
+the arrows. Then we look for some terminals. As we go through our
+example, you'll see almost all of the different ways we figure out the
+<b>FOLLOW</b> of a non-terminal.</p>
+
+<p>First, however, let's pretend that our grammar starts with a unique
+starting production (it's not really part of the grammar):</P>
+
+<PRE>S  -&gt; E</PRE>
+
+<P>We start our journey at S, but rewrite it a bit to reflect
+the EOF that can be at the end. In parser-land, EOF is represented
+by $. So our production is really:</P>
+
+<PRE>S -&gt; E $</PRE>
+
+<P>What is <b>FOLLOW</b>(E)? (Note: We don't really care about
+<b>FOLLOW</b>(S) because it's just imaginary.) Look on all of the
+right-hand sides (after the arrow) of all of the productions in the
+grammar. What terminals appear on the right of the E? Well, I see a $
+and a ).</P>
+
+<PRE><b>FOLLOW</b>(E) = { $, ) }</PRE>
+
+<P>How about <b>FOLLOW</b>(E')? There's nothing after either of the E's
+in the grammar. What do we do now? Well, if we had derived E'
+from E in E -&gt; TE', then whatever follows the E is the same
+as whatever follows the E'. For the other production, we get that
+whatever follows E' is the same as whatever follows E'. That's
+a tautology.</P>
+
+<PRE><b>FOLLOW</b>(E') =&gt <b>FOLLOW</b>(E)</PRE>
+
+<P>Now, let's do the rest:</P>
+
+<PRE><b>FOLLOW</b>(T) = ?</PRE>
+
+<P>T is always followed by E'. So, whatever terminals begin E' must be
+the terminals that follow T. So this means that <b>FOLLOW</b>(T) =&gt
+<b>FIRST</b>(E'). It seems a bit weird, but since when we're done,
+we'll have no more non-terminals in our stream, so only the terminals
+are important to look at. Since T will disappear into some terminals,
+those are the same that will tell us that we're starting to do E'.</P>
+
+<PRE><b>FOLLOW</b>(T) =&gt <b>FIRST</b>(E')
+<b>FOLLOW</b>(T') =&gt <b>FOLLOW</b>(T)
+<b>FOLLOW</b>(F) =&gt <b>FIRST</b>(T')</PRE>
+
+<P>If we solve this system of equations, we get:</P>
+
+<PRE><b>FOLLOW</b>(S) = { $ }
+<b>FOLLOW</b>(E) = { $, ) }
+<b>FOLLOW</b>(E') = { $, ) }
+<b>FOLLOW</b>(T) = { +, epsilon }</PRE>
+
+<P>Hold on! What's that epsilon doing there? We can't have that. Where
+did it come from? Ah, it came from including <b>FIRST</b>(E'). Well,
+if E' -&gt; epsilon, then whatever terminals follow E'
+(<b>FOLLOW</b>(E')) will be the terminals we're looking for. (These
+are not the droids you're looking for.)  These are $ and ). Let's add
+those to our list:</P>
+
+<PRE><b>FOLLOW</b>(T)  = { +, $, ) }
+<b>FOLLOW</b>(T') = { +, $, ) }
+<b>FOLLOW</b>(F)  = { *, epsilon }</PRE>
+
+<P>There's that epsilon again. If T' -&gt; epsilon, then we want
+to add <b>FOLLOW</b>(T') in there.</P>
+
+<PRE><b>FOLLOW</b>(F) = { *, +, $, ) }</PRE>
+
+<P>Good, now we're done.</P>
+
+<P><HR ALIGN=LEFT></P>
+
+<P>Now it's time to put these things back into our table. Each
+of the cells should be filled in with the production that the
+non-terminal on the left column takes when we see the terminal
+on the top in our input stream. Note: we don't have an S row in
+this table because it's not a very interesting transition. It
+just goes to E.</P>
+
+<PRE><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+<TR><TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;+</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;*</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;(</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;)</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;int</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;$</TD></TR><TR><TD WIDTH="14%"
+BGCOLOR="#00ffff">&nbsp;E</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;E'</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR> <TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T'</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;F</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR></TABLE></PRE>
+
+<P>Our <b>FIRST</b> calculations have told us exactly what we need! They
+tell us what terminals we're allowed to see on the input stream
+when we're looking for one of those non-terminals.</P>
+
+<P>We'll reprint the <b>FIRST</b> equations to remind ourselves what
+the values were:</P>
+
+<PRE><b>FIRST</b>(E)  = { (, int }
+<b>FIRST</b>(E') = { +, epsilon }
+<b>FIRST</b>(T)  = { (, int }
+<b>FIRST</b>(T') = { *, epsilon }
+<b>FIRST</b>(F)  = { (, int }</PRE>
+
+<P>So, let's fill in the first row:</P>
+
+<PRE><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+<TR><TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;+</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;*</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;(</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;)</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;int</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;$</TD></TR><TR><TD WIDTH="14%"
+BGCOLOR="#00ffff">&nbsp;E</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD
+WIDTH="14%">can't happen</TD> <TD WIDTH="14%">&nbsp;E -&gt; T
+      E'</TD> <TD WIDTH="14%">can't happen</TD> <TD WIDTH="14%">E -&gt;
+      T E'</TD> <TD WIDTH="14%">&nbsp;can't happen</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;E'</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR> <TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T'</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;F</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR></TABLE></PRE>
+
+<P>The production we put in is the only one available. Let's do
+another one.</P>
+
+<PRE><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+<TR><TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;+</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;*</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;(</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;)</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;int</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;$</TD></TR><TR><TD WIDTH="14%"
+BGCOLOR="#00ffff">&nbsp;E</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD
+WIDTH="14%">can't happen</TD> <TD WIDTH="14%">&nbsp;E -&gt; T
+      E'</TD> <TD WIDTH="14%">can't happen</TD> <TD WIDTH="14%">E -&gt;
+      T E'</TD> <TD WIDTH="14%">&nbsp;can't happen</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;E'</TD> <TD WIDTH="14%">&nbsp;+
+      T E'</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR>
+<TR><TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR> <TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T'</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;F</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR></TABLE></PRE>
+
+<P>Wait a minute. We've got that epsilon in there. There's no
+epsilon in the input stream! Remember what we did in the <b>FOLLOW</b>
+function when we found the epsilon? We took the <b>FOLLOW</b> of that
+production, <b>FOLLOW</b>(E'), which turned out to be ) and $. So, let's
+take that epsilon production whenever we see ) or $.</P>
+
+<PRE><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+<TR><TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;+</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;*</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;(</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;)</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;int</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;$</TD></TR><TR><TD WIDTH="14%"
+BGCOLOR="#00ffff">&nbsp;E</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD
+WIDTH="14%">can't happen</TD> <TD WIDTH="14%">&nbsp;E -&gt; T
+      E'</TD> <TD WIDTH="14%">can't happen</TD> <TD WIDTH="14%">E -&gt;
+      T E'</TD> <TD WIDTH="14%">&nbsp;can't happen</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;E'</TD> <TD WIDTH="14%">&nbsp;+
+      T E'</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD WIDTH="14%">&nbsp;can't
+      happen</TD> <TD WIDTH="14%">&nbsp;E' -&gt; epsilon</TD> <TD 
+WIDTH="14%">&nbsp;can't happen</TD> <TD WIDTH="14%">&nbsp;E' -&gt;
+      epsilon</TD></TR><TR><TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR> 
+<TR><TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T'</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;F</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD> <TD
+WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%">&nbsp;</TD></TR></TABLE></PRE>
+
+<P>Let's fill in the next few lines:</P>
+
+<PRE><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+<TR><TD WIDTH="14%">&nbsp;</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;+</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;*</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;(</TD> <TD
+WIDTH="14%" BGCOLOR="#ffff00">&nbsp;)</TD> <TD WIDTH="14%" BGCOLOR="#ffff00">&nbsp;int</TD> <TD
+WIDTH="16%" BGCOLOR="#ffff00">&nbsp;$</TD></TR><TR><TD WIDTH="14%"
+BGCOLOR="#00ffff">&nbsp;E</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD
+WIDTH="14%">can't happen</TD> <TD WIDTH="14%">&nbsp;E -&gt; T
+      E'</TD> <TD WIDTH="14%">can't happen</TD> <TD WIDTH="14%">E -&gt;
+      T E'</TD> <TD WIDTH="16%">&nbsp;can't happen</TD></TR><TR><TD
+WIDTH="14%" BGCOLOR="#00ffff">&nbsp;E'</TD> <TD WIDTH="14%">&nbsp;+
+      T E'</TD> <TD WIDTH="14%">&nbsp;can't happen</TD><TD WIDTH="14%">&nbsp;can't
+      happen</TD><TD WIDTH="14%">E' -&gt; epsilon</TD><TD WIDTH="14%">&nbsp;can't
+      happen</TD> <TD WIDTH="16%">&nbsp;E' -&gt; epsilon</TD></TR> 
+<TR><TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T</TD> <TD WIDTH="14%">&nbsp;can't
+      happen</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD WIDTH="14%">&nbsp;T
+      -&gt; F T'</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD 
+WIDTH="14%">T -&gt; F T'</TD> <TD WIDTH="16%">&nbsp;can't happen</TD></TR> 
+<TR><TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;T'</TD> <TD WIDTH="14%">&nbsp;T
+      -&gt; epsilon</TD> <TD WIDTH="14%">&nbsp;T' -&gt; * F T'</TD> <TD
+WIDTH="14%">&nbsp;can't happen</TD> <TD WIDTH="14%">&nbsp;T' -&gt;
+      epsilon</TD> <TD WIDTH="14%">&nbsp;can't happen</TD> <TD WIDTH="16%">&nbsp;T'
+      -&gt; epsilon</TD></TR><TR><TD WIDTH="14%" BGCOLOR="#00ffff">&nbsp;F</TD> <TD
+WIDTH="14%">&nbsp;can't happen</TD> <TD WIDTH="14%">&nbsp;can't
+      happen</TD> <TD WIDTH="14%">&nbsp;F -&gt; ( E )</TD> <TD WIDTH="14%">&nbsp;can't
+      happen</TD> <TD WIDTH="14%">&nbsp;F -&gt; int</TD> <TD WIDTH="16%">&nbsp;can't
+      happen</TD></TR></TABLE></PRE>
+
+<P>And, we're done.</P>
+
+<P><HR ALIGN=LEFT></P>
+
+<P>Now what do we do with this table? This table forms one part
+in a three part data structure. The other two parts are a stack
+of grammar symbols (E, E', T, T', F, +, *, (, ), int, and $),
+and an input stream (the expression we want to parse, already
+tokenized into lexemes by the scanner).</P>
+
+<P>We start our stack with the starting non-terminal: E. Our input
+will start with this example: <CODE>3 + 5 * 7</CODE>. </P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff"><B>Input</B></TD>
+    <TD WIDTH="50"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;<B>Stack (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E</TD>
+  </TR>
+</TABLE></P>
+
+<P>&nbsp;Now, look at the table. If we have an E on the stack,
+and our input is a 3 (an integer), we pick the transition E -&gt;
+T E'. This means, we pop E off the stack and replace it with T
+E'.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff"><B>Input</B></TD>
+    <TD WIDTH="50"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;<B>Stack (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>Note, we haven't done anything to the input yet. We're still
+only dealing with non-terminals. Now we have a T on the top of
+the stack, and an integer on the input. Yes, we go to T -&gt;
+F T'.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff"><B>Input</B></TD>
+    <TD WIDTH="50"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;<B>Stack (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;F T' E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>Let's continue another step. If we have an F on the input stack
+and see an integer, we do F -&gt; int. </P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff"><B>Input</B></TD>
+    <TD WIDTH="50"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;<B>Stack (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;4</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;int T' E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>Now we have an int at the top of the stack, and an int beginning
+the input stream. We pop both of these off.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff"><B>Input</B></TD>
+    <TD WIDTH="50"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;<B>Stack (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;4</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;5.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T' E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>Now we have a T' on the top of the stack, and a + on the input.
+T' -&gt; epsilon. This means we pop T' off our stack and do nothing
+to the input.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17"><B>Input</B></TD>
+    <TD WIDTH="50" HEIGHT="17"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;<B>Stack
+      (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;4</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;5.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="15">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="15">&nbsp;6.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="15">&nbsp;E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>We now have an E' on the top of the stack, and a + on the input.
+Now we do the production E' -&gt; + T E'.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff"><B>Input</B></TD>
+    <TD WIDTH="50"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;<B>Stack (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;4</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;5.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;6.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;7.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;+ T E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>And again, we have a terminal at the top of the stack, and
+a matching terminal on the input stream. So we pop them both,
+and continue.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff"><B>Input</B></TD>
+    <TD WIDTH="50"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;<B>Stack (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;3 + 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;4</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;5.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;6.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;7.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;+ T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff">&nbsp;5 * 7 $</TD>
+    <TD WIDTH="50">&nbsp;8. </TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18">&nbsp;T E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>At this point, we're in a pretty similar position to step 2.
+Let's do a few steps and see if you're still with us.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0"
+HEIGHT="224">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17"><B>Input</B></TD>
+    <TD WIDTH="50" HEIGHT="17"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;<B>Stack
+      (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;4</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;5.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;6.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;7.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;+ T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;8. </TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;9.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;5 * 7 $</TD>
+    <TD HEIGHT="17">&nbsp;10.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;* 7 $</TD>
+    <TD HEIGHT="17">&nbsp;11.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;* 7 $</TD>
+    <TD HEIGHT="17">&nbsp;12.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;* F T' E'</TD>
+  </TR>
+</TABLE></P>
+
+<P>Still with us? We parsed enough to pop the 5 off the input,
+and are now about to get rid of the * in another step.</P>
+
+<P><TABLE WIDTH="400" BORDER="1" CELLSPACING="0" CELLPADDING="0"
+HEIGHT="309">
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17"><B>Input</B></TD>
+    <TD WIDTH="50" HEIGHT="17"><B>Step #</B></TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;<B>Stack
+      (top is on left)</B></TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;1.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;E</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;2.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;3.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;3 + 5 * 7
+      $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;4</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;5.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;6.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;+ 5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;7.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;+ T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;8. </TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;T E'</TD>
+  </TR>
+  <TR>
+    <TD WIDTH="33%" BGCOLOR="#00ffff" HEIGHT="17">&nbsp;5 * 7 $</TD>
+    <TD WIDTH="50" HEIGHT="17">&nbsp;9.</TD>
+    <TD WIDTH="34%" BGCOLOR="#ffaf18" HEIGHT="17">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;5 * 7 $</TD>
+    <TD HEIGHT="17">&nbsp;10.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;* 7 $</TD>
+    <TD HEIGHT="17">&nbsp;11.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;* 7 $</TD>
+    <TD HEIGHT="17">&nbsp;12.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;* F T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;7 $</TD>
+    <TD HEIGHT="17">&nbsp;13.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;F T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;7 $</TD>
+    <TD HEIGHT="17">&nbsp;14.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;int T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;$</TD>
+    <TD HEIGHT="17">&nbsp;15.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;T' E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;$</TD>
+    <TD HEIGHT="17">&nbsp;16.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;E'</TD>
+  </TR>
+  <TR>
+    <TD HEIGHT="17" BGCOLOR="#00ffff">&nbsp;$</TD>
+    <TD HEIGHT="17">&nbsp;17.</TD>
+    <TD HEIGHT="17" BGCOLOR="#ffaf18">&nbsp;<B>DONE!</B></TD>
+  </TR>
+</TABLE></P>
+
+<P>Whew! Finished. We know we're done because the stack is now
+empty, and the input is at EOF ($). If there was more input and
+we ran out of stack symbols, we'd be in an error situation. And
+we'll leave that story for another time.</P>
+
+<P>That's most of all you need to know for parsing correct input
+using LL(1). You should read the Dragon book for more detailed
+(and theoretical) information to understand the complete story.
+</P>
+
+<P><HR ALIGN=LEFT></P>
+
+<P>Questions? Comments?</P>
+
+<ADDRESS>Andrew Begel <A HREF="mailto:abegel@cs.berkeley.edu">abegel@cs.berkeley.edu</A></ADDRESS>
+
+</BODY>
+</HTML>

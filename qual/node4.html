@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.48)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Experiment</TITLE>
+<META NAME="description" CONTENT="The Experiment">
+<META NAME="keywords" CONTENT="qual">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="qual.css">
+
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html81"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html79"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html73"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html82"
+  HREF="node5.html">Observations from the experiment</A>
+<B> Up:</B> <A NAME="tex2html80"
+  HREF="node3.html">How do people naturally</A>
+<B> Previous:</B> <A NAME="tex2html74"
+  HREF="node3.html">How do people naturally</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00031000000000000000">
+The Experiment</A>
+</H2>
+
+<P>
+To understand how programming dictation might change in the presence
+of vocal interaction, we designed an experiment to have
+participants read a one-page pre-existing Java program out loud. Each
+participant was told to read the code as if he were programming with a
+partner on a group project. The participant was told that his partner
+was sitting at the keyboard, and the participant had to get the gist
+of the code across to his partner by reading it out loud. His
+imaginary partner was assumed to be conversant in Java, programming,
+and the project at hand. The experiment was intended to give some
+insight into program dictation.
+
+<P>
+We carried out this experiment with ten computer science graduate
+students, five of whom were familiar with Java, and five of whom were not,
+but all of whom were programming-literate in some computer
+language. We audio-taped all ten students, and transcribed their
+recitations onto paper, keeping all utterances and performing little
+semantic transformation (e.g., numbers are written as they are
+pronounced, one fifty eight, rather than 158, but ``one'' is
+disambiguated from ``won'' and ``eight'' is disambiguated from
+``ate'').
+
+<P>
+The results of this experiment are instructive. We organize them into
+three major categories: Java language design, vocal program dictation,
+and vocal program composition.
+
+<P>
+
+<UL>
+<LI><B>Java language design</B>
+
+<P>
+
+<UL>
+<LI><B>Awkwardness by design</B>
+
+<UL>
+<LI><EM>Some Java language constructs are awkward in English.</EM> An example
+is casting objects to a type. In Java, the cast comes before the type
+- <TT>(int)foo</TT> - but in English, the noun needs to come before the
+modifying verb, so people resorted to creating pronouns - ``cast an
+object to int, that object is foo'' Some speakers reversed the order
+of the statement - ``cast foo to int''.
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI><B>Individual variability</B>
+
+<UL>
+<LI><EM>Students are inconsistent when they speak particular
+constructs</EM>. For example, <TT>System.out.println</TT> is sometimes said
+``system dot out dot print line'', and sometimes ``system out print
+line.'' Even when the same person encountered the print statement
+again, he might say it in a different form.
+
+<P>
+</LI>
+<LI><EM>Most speakers verbalize most constructs the same way, but
+there is great variability for other constructs</EM>. Examples of
+recurring verbalizations are array reference: <TT>foo of i</TT>, <TT>foo sub
+i</TT>, <TT>element i of array foo</TT>; and variable assignment: <TT>initialize foo
+to 5</TT>, <TT>set foo to 5</TT>, <TT>foo equals 5</TT>, <TT>assign 5 to foo</TT>,
+<TT>allocate a new array of length 5 to foo</TT>.
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI><B>Ambiguous words and semantics</B>
+
+<UL>
+<LI><EM>Some of the ways that people speak particular constructs are
+ambiguous, and often rely on non-verbal cues, or program context to
+disambiguate them</EM>. An example is <TT>foo[i++]</TT> vs. <TT>foo[i]++</TT>. Many people said <TT>foo of i plus plus</TT> for both
+constructs. Essentially this amounts to dropping the close bracket in
+the array reference. English speakers inserted a pause before the
+<TT>plus plus</TT> when saying the second statement; non-native English
+speakers resorted to a restatement of the entire expression
+(e.g. <TT>position i of array foo and then incremented by plus plus</TT>).
+
+<P>
+</LI>
+<LI><EM>Some words that people say are homophones, that is, words that
+sound the same</EM>. An example is <TT>to</TT> and <TT>two</TT>. The listener can
+usually resolve this kind of ambiguity from context; a computing
+system will have to do so as well.
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI><B>Native English speakers vs. non-native English speakers</B> 
+
+<UL>
+<LI><EM>There are differences between native and non-native English
+speakers</EM>.  Small non-English identifiers (like ``tur'', ``pat'',
+``spp'') were spoken as syllables (word fragments) if possible by the
+native English speakers in our sample, and spelled out otherwise. But
+the non-native English speakers always spelled out all word fragments
+even if they were pronounceable.
+
+<P>
+</LI>
+<LI><EM>Some words in Java are unpronounceable even by native English
+speakers</EM>. There were a variety of coping mechanisms: short words were
+spelled out, long words were converted into verbalizable words. Some
+programming language identifiers and keywords are shortened for ease
+of typing (for instance, <TT>println</TT>), but when readers spoke these
+words, they lengthened the words to their original long form (print
+line).
+</LI>
+</UL>
+
+<P>
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI><B>General program dictation</B>
+
+<P>
+
+<UL>
+<LI><B>Too few or two many words</B>
+
+<UL>
+<LI><EM>Students didn't say most of the punctuation
+characters</EM>. Semicolons were never spoken, open and close parens as
+part of method calls were never spoken. Sometimes the commas
+separating arguments to a method call were spoken, but this was
+inconsistent. Methods with more arguments tended to cause people to
+say the comma. Dots marking qualified identifiers were sometimes
+spoken and sometimes skipped, though it was far more common to say
+them. Close curly braces were often ``translated'' into
+context-sensitive terms (``then'' followed by ``close the if'', a
+method body followed by ``end method'', etc). Open brackets for array
+references were often translated into ``of'' or ``sub''. Close
+brackets were not spoken. Quotes surrounding strings were rarely
+spoken, even if the string had multiple words.
+
+<P>
+</LI>
+<LI><EM>Speakers use a lot of extra words that are not part of the
+programming language syntax, or even its descriptive metalanguage
+(e.g. phrase names)</EM>.  This includes a lot of English-style phrasing
+that is more comfortable for people than sticking to a very strict
+programming language grammar. For example, speakers use articles
+(``the'', ``a'', ``that'') and conjunctions (``and'', ``then'',
+``after that'').
+
+<P>
+</LI>
+<LI><EM>Speakers use lots of stop words (``uh'', ``um''), and repeated
+words</EM>. Word repetitions are caused by a person thinking a bit and
+then repeating the last few words that they said in order to form a
+complete sentence.
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI><B>Speaker Mistakes</B>
+
+<UL>
+<LI><EM>Speakers make and correct mistakes with a small, but definite
+frequency</EM>. There are usually indicator words like ``wait'', ``oh,
+shoot'', and ``stop'' that begin an error correction phase. However,
+this phase was more colloquial than something formally
+stated. Speakers also add their own out-of-band comments like ``wow,
+this is fun''.
+</LI>
+</UL>
+
+<P>
+</LI>
+</UL>
+
+<P>
+</LI>
+<LI><B>General program composition and navigation</B>
+
+<P>
+
+<UL>
+<LI><B>High-level coding</B>
+
+<UL>
+<LI><EM>People spot patterns in the code and explain the pattern rather
+than speaking the code word for word</EM>. For example, ``there's a
+comment here, and this is what's inside...'', ``declare the
+constructor'', ``now let's initialize a bunch of foo's fields'', ``we
+need to catch these exceptions, foo and bar'', ``enlarge this pool
+array by twice its length'', ``catch the exception and if that occurs
+print the stack trace'', ``this method takes no arguments''.
+
+<P>
+</LI>
+<LI><EM>Although this experiment was about sequential program dictation,
+speakers used navigation keywords to move the ``cursor''
+around</EM>. Examples include ``and the next method is'', ``close
+method'', ``close that block'', ``and then you're going to have the
+constructor'', ``start with package starlogo''.
+</LI>
+</UL>
+
+<P>
+</LI>
+</UL>
+
+<P>
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html81"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html79"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html73"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html82"
+  HREF="node5.html">Observations from the experiment</A>
+<B> Up:</B> <A NAME="tex2html80"
+  HREF="node3.html">How do people naturally</A>
+<B> Previous:</B> <A NAME="tex2html74"
+  HREF="node3.html">How do people naturally</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Andrew Begel
+2001-02-20
+</ADDRESS>
+</BODY>
+</HTML>

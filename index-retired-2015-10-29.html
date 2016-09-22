@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Andrew Begel &mdash; Home Page</title>
+        <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="author" content="owwwlab.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <meta name="description" content="A theme for faculty profile page" />
+        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
+
+        <!--<link rel="shortcut icon" href="../favicon.ico">-->
+
+        <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.5.1.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+	<style type="text/css">
+	  span.codedirection { unicode-bidi:bidi-override; direction: rtl; }
+        </style>
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        
+        <script type="text/javascript" src="js/modernizr.2.8.3.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+        <script type="text/javascript" src="js/masonry.pkgd.js"></script>
+
+        <script type="text/javascript" src="js/perfect-scrollbar-0.5.1.min.js"></script>
+
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/doT.js"></script>
+	<script type="text/javascript" src="js/Parser.js"></script>
+	<script type="text/javascript" src="js/URI.js"></script>
+
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!--/Javascript files-->
+
+	<script id="pubtemplate" type="text/x-dot-template">
+          <div class="item mix {{=it.topicCode}}" data-yearMonth="{{=it.yearMonth}}">
+            <div class="pubmain">
+              <div class="pubassets">
+                {{? it.abstract}}<a href="#" class="pubcollapse tooltips" title="Abstract">
+                  <i class="icon-info"></i>
+                </a>{{?}}
+                {{? it.url}}<a href="{{=it.url}}" class="tooltips" title="External link" target="_blank">
+                  <i class="icon-external-link"></i>
+                </a>
+                {{?? true}}
+		{{? it.doi}}<a href="http://dx.doi.org/{{=it.doi}}"
+		class="tooltips" title="DOI link" target="_blank">
+                  <i class="icon-cloud"></i>
+                </a>
+               {{?}}
+               {{?}}
+		   
+                {{? it.localurl}}<a href="{{=it.localurl}}"
+                class="tooltips" title="Local Download" target="_blank">
+                  <i class="icon-download"></i>
+                </a>
+		{{?}}
+              </div>
+	      <h4 class="pubtitle">{{=it.title}}</h4>
+              <div class="pubauthor">{{? it.author}} {{=it.author}}
+              {{?? true}} Eds. {{=it.editor}} {{?}}</div>
+              <div class="pubcite">
+		{{? it.topics}}
+		{{~it.topics :topicAndLabel:index}}
+		<span class="label {{=topicAndLabel.label}}">{{=topicAndLabel.topic}}</span>
+		{{~}}
+		{{?}}
+		{{? it.booktitle}} {{=it.booktitle}}.
+		   {{?? true}} 
+                      {{? it.journal}}
+		         {{= it.journal}}, <b>{{= it.volume}}</b>
+		             ({{=it.number}}), {{= it.pages}}. 
+                      {{?}} 
+                {{?}} 
+		{{? it.location}} {{=it.location}}. {{?}} 
+		{{? it.month}} {{=it.month}} {{?}} {{=it.year}}.</div> 
+            </div>
+            {{? it.abstract}}
+            <div class="pubdetails">
+              <h4>Abstract</h4>
+              <p>{{~it.abstract :value:index}}{{=value}}{{~}}</p>
+            </div>
+            {{?}}
+          </div>
+	</script>
+
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu"><i class="icon-reorder"></i></a>
+
+            <div id="sidebar">
+                <div id="main-nav">
+                    <div id="nav-container">
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Andrew Begel</h2>
+                                <h3>Microsoft Research</h3>
+                            </div>
+                            
+                        </div>
+                        <ul id="navigation">
+                            <li>
+                              <a href="#biography">
+                                <div class="icon icon-user"></div>
+                                <div class="text">About Me</div>
+                              </a>
+                            </li>  
+                            <li>
+			      <a href="#colleagues">
+                                <div class="icon icon-group"></div>
+                                <div class="text">Colleagues</div>
+                              </a>
+                            </li>  
+                            <li>
+                              <a href="#research">
+                                <div class="icon icon-book"></div>
+                                <div class="text">Research</div>
+                              </a>
+                            </li> 
+                            
+                            <li>
+                              <a href="#publications">
+                                <div class="icon icon-file-text"></div>
+                                <div class="text">Publications</div>
+                              </a>
+                            </li> 
+
+                            <li>
+                              <a href="#teaching">
+                                <div class="icon icon-pencil"></div>
+                                <div class="text">Teaching</div>
+                              </a>
+                            </li>
+
+                            <!--<li>
+                              <a href="#gallery">
+                                <div class="icon icon-picture"></div>
+                                <div class="text">Gallery</div>
+                              </a>
+                            </li>-->
+
+                            <li>
+                              <a href="#contact">
+                                  <div class="icon icon-calendar"></div>
+                                  <div class="text">Contact & Meet Me</div>
+                              </a>
+                            </li>
+
+                            <li class="external">
+                              <a href="cv.html">
+                                  <div class="icon icon-download"></div>
+                                  <div class="text">Download CV</div>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>        
+                </div>
+                
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="http://www.facebook.com/abegel"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/abegel"><i class="icon-twitter"></i></a></li>
+                        <li><a href="http://www.linkedin.com/in/andrewbegel/"><i class="icon-linkedin"></i></a></li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div id="main">
+            
+                <div id="biography" class="page home" data-pos="home">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <div class="row">
+                                    <div class="col-sm-2 visible-sm"></div>
+                                    <div class="col-sm-8 col-md-5">
+                                        <div class="biothumb">
+                                            <img alt="image" src="img/personal/personal-big.png" class="img-responsive">
+                                            <div class="overlay">
+                                                
+                                                <h1 class="">Andrew Begel</h1>
+                                                <ul class="list-unstyled">
+                                                    <li>Microsoft Research</li>
+                                                    <li>Redmond, WA, USA</li>
+                                                </ul>
+                                            </div> 
+                                            
+                                               
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="clearfix visible-sm visible-xs"></div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <h3 class="title">Bio</h3>
+                                        <p>I am a Senior Researcher in the <a href="http://research.microsoft.com/en-us/groups/vibe/">Visualization and Interaction in Business and Entertainment (VIBE) 
+                                        Group</a> at <a href="http://research.microsoft.com">Microsoft Research</a> in <a href="http://www.bing.com/maps/explore/#/td75yl16c7cvp7cy">Redmond, WA, USA</a>.</p> 
+                                        <p>My research applies HCI techniques to study and improve the software development process. I study collaborative software development, Agile methodologies, developer-centric 
+                                        knowledge management, flow and coordination, and K-16 and beyond programming education.</p>
+                                    
+                                    <p>I received a Ph.D. in <a href="http://www.eecs.berkeley.edu/">Computer Science</a> from the 
+														<a href="http://www.berkeley.edu/">University of California, Berkeley</a> in December 2005. I studied with
+														<a href="http://www.cs.berkeley.edu/~graham/">Susan L. Graham</a>. My 
+														dissertation was about 
+														voice-based programming, how to build a development 
+														environment that supports it, 
+														and how well programmers can 
+														use it. It is intended for 
+														programmers with repetitive 
+														strain and other injuries 
+														that make it difficult for 
+														them from using the keyboard 
+														and mouse in their daily 
+														work. For the quick 
+														punch-line, read my 
+														dissertation abstract below.</p>
+														
+														
+					<p>At MIT, I received a Master of Engineering degree in Computer Science in 1997 and a Bachelor of Science degree in Electrical Engineering and Computer Science in 1996. 
+					  I worked on <a href="http://education.mit.edu/starlogo">StarLogo</a>, a programmable 
+					  modeling environment 
+					  designed to help students 
+					  learn about science. 
+					  StarLogo runs via Java on PCs, Macs 
+					  and Unix machines. A newer 
+					  version of StarLogo, called
+					  <a href="http://education.mit.edu/starlogo-tng">
+					    					    StarLogo
+					  TNG</a>, incorporates
+					  graphical block-based
+					  programming and a 3D turtle
+					  world to teach programming
+					  by enabling kids to create
+					  their own games and
+					  simulations.</p>
+					<p>I grew up in southeastern New York, in Rockland County. I've lived
+					  in NY, Boston, San Francisco and now Seattle. The rectangle of my life
+					  is now complete. For more
+					  information (and pictures),
+					  see my <a href="http://www.andysean.com">personal
+					  home page</a>.</p>
+														
+																										
+														
+                                    </div>  
+                                    
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-5 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Employment</h3>
+                                        </div>
+                                        <ul class="ul-dates">
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Present</span>
+                                                    <span>2014</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Senior Researcher</h4>
+                                                    <p><em>Microsoft Research</em>, Redmond, WA USA</p>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="dates">
+                                                    <span>Winter</span>
+                                                    <span>2013</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Visiting Lecturer</h4>
+                                                    <p><em>University of Washington</em>, Information School</p>
+                                                </div>
+                                            </li>
+
+											<li>
+                                                <div class="dates">
+                                                    <span>2014</span>
+                                                    <span>2006</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Researcher</h4>
+                                                    <p><em>Microsoft Research</em>, Redmond, WA USA</p>
+                                                </div>
+                                            </li>                                            
+                                            <li>
+                                                <div class="dates">
+                                                    <span>1997</span>
+                                                    <span>1997</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Intern</h4>
+                                                    <p><em>Xerox PARC Computer Science Laboratory</em>, Palo Alto, CA USA<br/>
+                                                    Supervisor: Michael Spreitzer</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>2001</span>
+                                                    <span>1993</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>UROP <p style="font-size:x-small">(Undergraduate Research Opportunities Program)</p></h4>
+                                                    <p><em>MIT Media Lab</em>, Cambridge, MA USA<br/>
+                                                    Supervisor: Mitchel Resnick</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Summer</span>
+                                                    <span>1992</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Research Intern</h4>
+                                                    <p><em>NYU Medical Center: Institute for Environmental Medicine</em>, Sterling Forest, NY USA<br/>
+                                                    Supervisor: Toby G. Rossman</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Summer</span>
+                                                    <span>1990</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Intern</h4>
+                                                    <p><em>NY Medical College: Biochemistry and Molecular Biology</em>, Valhalla, NY USA<br/>
+                                                    Supervisor: Yuk-Ching Tse-Dinh</p>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="dates">
+                                                    <span>1988</span>
+                                                    <span>1992</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>SIGOp: Apple II Special Interest Group</h4>
+                                                    <p><em>Mnematics Videotex, Inc.</em>, Sparkill, NY USA</p>
+                                                </div>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="title text-center">
+                                            <h3>Education</h3>
+                                        </div>
+                                        <ul class="ul-card">
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">Ph.D.</span>
+                                                    <span class="year">2005</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Ph.D. in Computer Science</p>
+                                                    <p class="where">University of California at Berkeley</p>
+						    <p class="where">Advisor: <a href="http://www.cs.berkeley.edu/~graham">Susan L. Graham</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">M.Eng.</span><span class="year">1997</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Master of Engineering in Electrical Engineering and Computer Science</p>
+                                                    <p class="where">Massachusetts Institute of Technology</p>
+						    <p class="where">Advisor: <a href ="http://www.media.mit.edu/~mres">Mitchel Resnick</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">B.S.</span><span class="year">1996</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Bachelor of Science in Computer Science and Engineering</p>
+                                                    <p class="where">Massachusetts Institute of Technology</p>
+						    <p class="where">Advisor: <a href="http://www.media.mit.edu/~mres">Mitchel Resnick</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">High School Regents Diploma</span><span class="year">1992</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="waht">Rank: 2 out of 443, Average 102.7</p>
+                                                    <p class="where">Ramapo Senior High School, Spring Valley, NY</p>
+                                                </div>
+                                            </li>
+
+                                            
+                                        </ul>
+
+                                    </div>    
+                                </div>    
+                            </div>
+                                
+                        </div>
+
+                        <div class="section color-2">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Honors and Awards</h3>
+                                        </div>
+                                        <ul class="timeline">
+                                                    
+                                            <li class="open">
+                                                <div class="date">2005</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">Demitri Angelakos Memorial Award</div>
+                                                    <!--<div class="text row">
+                                                        <div class="col-md-2">
+                                                            <img alt="image" class="thumbnail img-responsive" src="img/personal/awards100x100.png" >
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="date">1992</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">National Merit Scholarship</div>
+                                                    <div class="subject">Salutatorian of High School Class of 1992</div>
+                                                    <div class="subject">Leo V. Dustman Award in Mathematics</div>
+                                                    <div class="subject">Mel Sobel Microscopes Scholarship Award</div>
+                                                    <div class="subject">New York State Science Supervisors Association Award</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+
+                <div id="colleagues" class="page">
+                    <div class="pageheader">
+
+                        <div class="headercontent">
+
+                            <div class="section-container">
+                                <h2 class="title">Research Colleagues</h2>
+                            
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>I have worked with many
+                                        very smart and affable
+                                        colleagues at Microsoft.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="title text-left">
+                                    <h3>Microsoft Researchers</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        
+                                        <div id="labp-heads-wrap-1">
+                                            
+                                            <div id="lab-carousel-1">
+                                                <div id="first"><img alt="image" src="img/lab/marycz.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/rdeline.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/tomz.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/cbird.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/ginav.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/kaelr.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/nachin.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                            </div>
+                                            <div id="prev-next-1">
+                                                <a href="#" id="prev-1"><i class="icon-chevron-sign-left"></i></a>
+                                                <a href="#" id="next-1"><i class="icon-chevron-sign-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="lab-details-1">
+                                            <div>
+                                                <h3><a href="http://research.microsoft.com/~marycz/">Mary Czerwinski</a></h3>
+                                                <h4>Research Manager, VIBE</h4>
+						<h4>Microsoft Research, Redmond</h4>
+                                            </div>
+<div>
+                                                <h3><a href="http://research.microsoft.com/~rdeline/">Rob DeLine</a></h3>
+                                                <h4>Principal Researcher, VIBE</h4>
+						<h4>Microsoft Research, Redmond</h4>
+                                            </div>
+<div>
+                                                <h3><a href="http://research.microsoft.com/~tzimmer/">Tom Zimmermann</a></h3>
+                                                <h4>Researcher, RiSE</h4>
+						<h4>Microsoft Research, Redmond</h4>
+                                            </div>
+<div>
+                                                <h3><a href="http://research.microsoft.com/en-us/people/cbird/">Chris Bird</a></h3>
+                                                <h4>Researcher, RiSE</h4>
+						<h4>Microsoft Research, Redmond</h4>
+                                            </div>
+<div>
+                                                <h3><a href="http://research.microsoft.com/~ginav/">Gina Venolia</a></h3>
+                                                <h4>Senior Researcher, neXus</h4>
+						<h4>Microsoft Research, Redmond</h4>
+                                            </div>
+<div>
+                                                <h3><a href="http://research.microsoft.com/~kaelr/">Kael Rowan</a></h3>
+                                                <h4>Senior Research Software Design Engineer, VIBE</h4>
+						<h4>Microsoft Research, Redmond</h4>
+                                            </div>
+<div>
+                                                <h3><a href="http://research.microsoft.com/~nachin/">Nachi Nagappan</a></h3>
+                                                <h4>Principal Researcher, RiSE</h4>
+						<h4>Microsoft Research, Redmond</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+			<div class="section color-1">
+                            <div class="section-container">
+                                <div class="title text-left">
+                                    <h3>Microsoft Interns</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        
+                                        <div id="labp-heads-wrap-2">
+                                            
+                                            <div id="lab-carousel-2">
+                                                <div id="first"><img alt="image"
+                                                src="img/lab/nicolas-bettenburg.jpg"
+                                                width="120"
+                                                height="120"
+                                                class="img-circle
+                                                lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/anja-guzzi.jpg" width="100" height="128" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/alicia-grubb.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/khoo-yit-phang.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/libby-hemphill.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/reid-holmes.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/christopher-poile.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/lucas-layman.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                            </div>
+                                            <div id="prev-next-2">
+                                                <a href="#" id="prev-2"><i class="icon-chevron-sign-left"></i></a>
+                                                <a href="#" id="next-2"><i class="icon-chevron-sign-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="lab-details-2">
+                                            <div>
+                                                <h3><a href="http://nicolas-bettenburg.com/">Nicolas Bettenburg</a></h3>
+                                                <h4>Queen's
+                                                University, Post Doc</h4>
+                                                <h4>Summer 2012</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="http://www.st.ewi.tudelft.nl/~guzzi/">Anja Guzzi</a></h3>
+                                                <h4>Delft University
+                                                of Technology, PhD Student</h4>
+                                                <h4>Summer 2011</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="http://www.cs.utoronto.ca/~amgrubb/Alicia-M-Grubb/Welcome.html">Alicia Grubb</a></h3>
+                                                <h4>University of
+                                                Toronto, PhD Student</h4>
+                                                <h4>Summer 2010</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="http://www.cs.umd.edu/~khooyp">Khoo Yit Phang</a></h3>
+                                                <h4>The Mathworks,
+                                                Senior Software Engineer</h4>
+                                                <h4>Summer 2009</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="http://libbyh.com">Libby Hemphill</a></h3>
+                                                <h4>Illinois
+                                                Institute of
+                                                Technology, Asst. Professor</h4>
+                                                <h4>Summer 2008</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="http://www.cs.uwaterloo.ca/~rtholmes/">Reid Holmes</a></h3>
+                                                <h4>University of
+                                                Waterloo, Asst. Professor</h4>
+                                                <h4>Fall 2007</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="http://www.edwards.usask.ca/faculty/Christopher%20Poile/index.html">Christopher Poile</a></h3>
+                                                <h4>University of
+                                                Saskatchewan, Asst. Professor</h4>
+                                                <h4>Summer 2006</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="http://lucas.ezzoterik.com/">Lucas Layman</a></h3>
+                                                <h4>Fraunhofer Center
+                                                for Experimental
+                                                Software Engineering,
+                                                Research Scientist</h4>
+                                                <h4>Summer 2006</h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Looking for Interns!</h3>
+                                        <p>If you are a graduate
+                                        student or US high school
+                                        student interested in doing an
+                                        internship at Microsoft
+                                        Research with me, please
+                                        send me some mail.</p>
+					<p>Send me your name, school
+					(you must be enrolled at an
+					accredited university or
+					US-based high school),
+					advisor, research interests,
+					Ph.D. topic (if you've already
+					decided on it), curriculum
+					vita, and some ideas
+					of what you'd like to investigate while
+					you're here at Microsoft
+					Research.</p>
+					<p>Click <a href="http://research.microsoft.com/en-us/jobs/intern/apply.aspx">here</a>
+					to read more (generic)
+					information on Microsoft
+					Research Internships.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <div class="section color-1">
+                            <div class="section-container">
+                                <div class="title text-left">
+                                    <h3>Visiting Researchers</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        
+                                        <div id="labp-heads-wrap-3">
+                                            
+                                            <div id="lab-carousel-3">
+                                                <div id="first"><img alt="image" src="img/lab/yvonne-dittrich.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/thomas-fritz.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/jonathan-sillito.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                                <div><img alt="image" src="img/lab/beth-simon.jpg" width="120" height="120" class="img-circle lab-img" /></div>
+                                            </div>
+                                            <div id="prev-next-3">
+                                                <a href="#" id="prev-3"><i class="icon-chevron-sign-left"></i></a>
+                                                <a href="#" id="next-3"><i class="icon-chevron-sign-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <div id="lab-details-3">
+                                            <div>
+                                                <h3><a href="http://www.itu.dk/people/ydi">Yvonne Dittrich</a></h3>
+                                                <h4>IT University of Copenhagen, Professor</h4>
+                                                <h4>Spring 2014</h4>
+                                            </div>
+					    <div>
+					      <h3><a href="http://www.ifi.uzh.ch/seal/people/fritz.html">Thomas Fritz</a></h3>
+					      <h4>University of
+					      Zurich</h4>
+					      <h4>2013</h4>
+					    </div>
+                                            <div>
+                                                <h3><a href="http://people.ucalgary.ca/~sillito/">Jonathan Sillito</a></h3>
+                                                <h4>Amazon, Software Development Manager</h4>
+                                                <h4>Summer 2013</h4>
+                                            </div>
+                                            <div>
+                                                <h3><a href="https://sites.google.com/a/eng.ucsd.edu/bsimon/home">Beth Simon</a></h3>
+                                                <h4>University of California at San Diego</h4>
+                                                <h4>Spring 2007</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="col-md-4">
+                                        <h3>Great lab Personel!</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>-->
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+
+		<div id="research" class="page">
+                    <div class="pageheader">
+
+                        <div class="headercontent">
+
+                            <div class="section-container">
+                                <h2 class="title">Research Summary</h2>
+                            
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>My research applies HCI techniques to study and improve the software development process. I study collaborative software development, Agile methodologies, developer-centric 
+                                        knowledge management, flow and coordination, and K-16 and beyond programming education.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="subtitle text-center">
+                                            <h3>Interests</h3>
+                                        </div>
+                                        <ul class="ul-boxed list-unstyled">
+                                            <li>Biometrics for
+                                            Software Developers</li>
+                                            <li>Human Aspects of
+                                            Software Development</li>
+                                            <li>Agile Methods</li>
+                                            <li>Global Software Development</li>
+                                            <li>Social Media for
+                                            Software Engineers</li>
+                                            <li>Programming by
+                                            Voice</li>
+					    <li>CS Education</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="title text-center">
+                                    <h3>Research Projects</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="ul-withdetails">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/CodebookIcon.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>Codebook</h3>
+							    <h4>Microsoft Research</h4>
+
+                                                            <p>Social Media for Software Engineers</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                    <p>We use social networking to connect people and artifacts in software development-related repositories.</p>
+                                                </div>
+                                            </li> 
+
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/Detective.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>Deep Intellisense</h3>
+							    <h4>Microsoft Research</h4>
+
+                                                            <p>Dig up the Dirt on your Code</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                    <p>Deep
+                                                    Intellisense is a
+                                                    Visual Studio 2008
+                                                    plugin that
+                                                    surfaces
+                                                    information from
+                                                    various silos
+                                                    (source control,
+                                                    bug tracking,
+                                                    mailing lists,
+                                                    etc.) to provide
+                                                    developers with
+                                                    instant
+                                                    context-sensitive
+                                                    feedback on any
+                                                    source code they
+                                                    are reading in the
+                                                    editor. Deep
+                                                    Intellisense works
+                                                    with Visual Studio
+                                                    Team Foundation
+                                                    System projects
+                                                    (such as those
+                                                    hosted on
+                                                    CodePlex), email
+                                                    archives (from
+                                                    Outlook) and
+                                                    Sharepoint
+                                                    sites.</p>
+                                                </div>
+                                            </li> 
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/agile.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>Agile Methods</h3>
+							    <h4>Microsoft Research</h4>
+
+                                                            <p>Studies of Agile Development at Microsoft</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                   
+                                                </div>
+                                            </li> 
+
+<li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/newhire.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>Onboarding New Software Engineers</h3>
+							    <h4>Microsoft Research</h4>
+
+                                                            <p>Studies of Collocated and Remote Onboarding</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                   
+                                                </div>
+                                            </li> 
+
+					    <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/coordination.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3>Software Team Coordination</h3>
+							    <h4>Microsoft Research</h4>
+                                                            <p>Studies of Inter-team Coordination</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                   
+                                                </div>
+                                            </li> 
+
+					    <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/harmoniamode-icon2.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3><a href="http://www.cs.berkeley.edu/~harmonia/harmonia/research/slssd">Programming by Voice</a></h3>
+							    <h4>University of California at Berkeley</h4>
+                                                            <p>SPEED: SPEech EDitor: Code Dictation, Editing by Voice, Commenting by Voice</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                   <p>Programmers who
+                                                   suffer from
+                                                   repetitive stress
+                                                   injuries find it
+                                                   difficult to
+                                                   program by
+                                                   typing. Speech
+                                                   interfaces can
+                                                   reduce the amount
+                                                   of typing, but
+                                                   existing
+                                                   programming-by-voice
+                                                   techniques make it
+                                                   awkward for
+                                                   programmers to
+                                                   enter and edit
+                                                   program text. We
+                                                   used a
+                                                   human-centric
+                                                   approach to address
+                                                   these problems. We
+                                                   first studied how
+                                                   programmers
+                                                   verbalize code, and
+                                                   found that spoken
+                                                   programs contain
+                                                   lexical, syntactic
+                                                   and semantic
+                                                   ambiguities that do
+                                                   not appear in
+                                                   written
+                                                   programs. Using the
+                                                   results from this
+                                                   study, we designed
+                                                   Spoken Java, a
+                                                   semantically
+                                                   identical variant
+                                                   of Java that is
+                                                   easier to
+                                                   speak. Inspired by
+                                                   a study of how
+                                                   voice recognition
+                                                   users navigate
+                                                   through documents,
+                                                   we developed a
+                                                   novel program
+                                                   navigation
+                                                   technique that can
+                                                   quickly take a
+                                                   software developer
+                                                   to a desired
+                                                   program
+                                                   position.</p>
+
+<p>Spoken Java is analyzed by extending a conventional Java
+programming language analysis engine written in our Harmonia program
+analysis framework. Our new XGLR parsing framework extends GLR parsing
+to process the input stream ambiguities that arise from spoken
+programs (and from embedded languages). XGLR parses Spoken Java
+utterances into their many possible interpretations. To semantically
+analyze these interpretations and discover which ones are legal, we
+implemented and extended the Inheritance Graph, a semantic analysis
+formalism which supports constant-time access to type and
+use-definition information for all names defined in a program. The
+legal interpretations are the ones most likely to be correct, and can
+be presented to the programmer for confirmation.</p>
+
+<p>We built an Eclipse IDE plugin called SPEED (for SPEech EDitor) to
+support the combination of Spoken Java, an associated command
+language, and a structure-based editing model called Shorthand. Our
+evaluation of this software with expert Java developers showed that
+most developers had little trouble learning to use the system, but
+found it slower than typing.</p>
+
+<p>Although programming-by-voice is still in its infancy, it has
+already proved to be a viable alternative to typing for those who rely
+on voice recognition to use a computer. In addition, by providing an
+alternative means of programming a computer, we can learn more about
+how programmers communicate about code.</p>
+
+                                                </div>
+                                            </li> 
+
+<li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/harmonia-icon.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3><a href="http://www.cs.berkeley.edu/~harmonia">Harmonia</a></h3>
+							    <h4>University of California at Berkeley</h4>
+                                                            <p>A Framework for Language-Aware Programming Tools</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+						   <p>Harmonia is an
+						   open, extensible
+						   framework for
+						   constructing
+						   interactive,
+						   language-aware
+						   programming
+						   tools. Harmonia is
+						   a descendent of our
+						   earlier projects,
+						   Pan
+						   and <a href="http://www.cs.berkeley.edu/~harmonia/harmonia/ensemble.html">Ensemble</a>
+						   and utilizes many
+						   analysis
+						   technologies
+						   developed for those
+						   projects. Harmonia
+						   includes an
+						   incremental GLR
+						   parser (which
+						   admits a more
+						   natural syntax
+						   specification than
+						   LR), a static
+						   semantic analysis
+						   engine, and other
+						   language-based
+						   facilities. Program
+						   source code is
+						   represented by
+						   annotated abstract
+						   syntax trees
+						   augmented with
+						   non-linguistic
+						   material such as
+						   whitespace and
+						   comments. The
+						   analysis engine can
+						   support any textual
+						   language that has
+						   formal syntactic
+						   and semantic
+						   specifications. The
+						   incremental nature
+						   of the analysis
+						   supports a history
+						   mechanism that is
+						   used both for
+						   history-based
+						   diagnostic
+						   information and for
+						   contextual
+						   rollback. New
+						   languages can be
+						   easily added to
+						   Harmonia by giving
+						   the system a
+						   syntactic and
+						   semantic
+						   description, which
+						   is compiled into a
+						   dynamically
+						   loadable extension
+						   for that
+						   language. Among the
+						   languages for which
+						   descriptions exist
+						   are Java, Cool (a
+						   teaching language),
+						   XML, Scheme, Cobol,
+						   C, and C++. Other
+						   languages are being
+						   added to Harmonia
+						   as resources
+						   permit. </p>
+											
+						   <p>The language
+						   technology
+						   implemented in the
+						   Harmonia framework
+						   is being used in
+						   two current
+						   research projects:
+						   support for
+						   high-level
+						   interactive
+						   transformations and
+						   programming by
+						   voice. Our research
+						   in <a href="http://www.cs.berkeley.edu/~harmonia/harmonia/research/pmit/index.html">interactive
+						   program
+						   transformations</a>
+						   focuses on the
+						   problem of
+						   programmers'
+						   expression and
+						   interaction with a
+						   programming
+						   tool. We are
+						   combining the
+						   results from
+						   psychology of
+						   programming,
+						   user-interface
+						   design, software
+						   visualization,
+						   program analysis,
+						   and program
+						   transformation to
+						   create a novel
+						   programming
+						   environment that
+						   enables the
+						   programmer to
+						   express source code
+						   manipulations in a
+						   high-level
+						   conceptual
+						   manner. <a href="http://www.cs.berkeley.edu/~harmonia/harmonia/research/slssd/index.html">Programming
+						   by voice
+						   research</a>
+						   augments
+						   traditional text
+						   editing by allowing
+						   the developer
+						   dictate chunks of
+						   program source code
+						   as well as
+						   verbalize
+						   high-level editing
+						   operations. This
+						   research helps to
+						   lower frustrating
+						   barriers for
+						   software developers
+						   that suffer from
+						   repetitive strain
+						   injuries and other
+						   related
+						   disabilities that
+						   make typing
+						   difficult or
+						   impossible.</p>
+											
+						<p>Harmonia can be
+						used to augment text
+						editors to robustly
+						support the
+						language-aware editing
+						and navigation of
+						documents, including
+						those that are
+						malformed, incomplete,
+						or inconsistent
+						(i.e. the document can
+						remain in that state
+						indefinitely). We have
+						integrated Harmonia
+						into <a href="http://www.xemacs.org">XEmacs</a>
+						by creating
+						a <a href="http://www.cs.berkeley.edu/~harmonia/harmonia/projects/harmonia-mode/doc/index.html">new
+						Emacs
+						&quot;mode&quot;</a>
+						that provides
+						interactive, on-line
+						services to the end
+						user in the program
+						composition, editing
+						and navigation
+						process.</p>
+                                                </div>
+                                            </li> 
+					    <li>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/projects/starlogo-icon.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="icon-info"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-9">
+                                                        <div class="meta">
+                                                            <h3><a href="http://education.mit.edu/starlogo/">StarLogo</a>, 
+							      <a href="http://education.mit.edu/projects/starlogo-tng">StarLogo TNG</a></h3>
+							    <h4>Massachusetts Institute of Technology</h4>
+                                                            <p>Parallel Programming for Kids!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                   <p>StarLogo is a programmable modeling environment for exploring the workings of decentralized systems -- systems that are organized without an organizer, coordinated without a coordinator. With StarLogo, you can model (and gain insights into) many real-life phenomena, such as bird flocks, traffic jams, ant colonies, and market economies.</p>
+
+<p>In decentralized systems, orderly patterns can arise without centralized control. Increasingly, researchers are choosing decentralized models for the organizations and technologies that they construct in the world, and for the theories that they construct about the world. But many people continue to resist these ideas, assuming centralized control where none exists -- for example, assuming (incorrectly) that bird flocks have leaders. StarLogo is designed to help students (as well as researchers) develop new ways of thinking about and understanding decentralized systems.</p>
+
+<p>StarLogo is a specialized version of the Logo programming language. With traditional versions of Logo, you can create drawings and animations by giving commands to graphic "turtles" on the computer screen. StarLogo extends this idea by allowing you to control thousands of graphic turtles in parallel. In addition, StarLogo makes the turtles' world computationally active: you can write programs for thousands of "patches" that make up the turtles' environment. Turtles and patches can interact with one another -- for example, you can program the turtles to "sniff" around the world, and change their behaviors based on what they sense in the patches below. StarLogo is particularly well-suited for Artificial Life projects.</p>
+
+<p>StarLogo TNG is The Next Generation of StarLogo modeling and simulation software. While this version holds true to the premise of StarLogo as a tool to create and understand simulations of complex systems, it also brings with it several advances - 3D graphics and sound, a blocks-based programming interface, and keyboard input - that make it a great tool for programming educational video games.</p>
+
+						   <p>Through TNG we hope to:</p>
+						     <ol type="1">
+						       <li>Lower the barrier to entry for programming with a graphical interface where language elements are represented by colored blocks that fit together like puzzle pieces.</li>
+						       <li>Entice more young people into programming through tools that facilitate making games.</li>
+						       <li>Use 3D graphics to make more compelling and rich games and simulation models.</li>
+						     </ol>
+						   
+                                                </div>
+                                            </li> 
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <div id="publications" class="page">
+                    <div class="page-container">
+                        <div class="pageheader">
+                            <div class="headercontent">
+                                <div class="section-container">
+                                    
+                                    <h2 class="title">Publications</h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>My publications can be found here, sortable by year and filterable by topic. I have also listed my workshops and invited talks.</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagecontents">
+                            
+                            <div class="section color-1" id="filters">
+                                <div class="section-container">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-3">
+                                            <h3>Filter by type:</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                                <option class="filter" value="all" selected>All topics</option>
+                                                <option class="filter" value="biometrics">Biometrics</option>
+                                                <option class="filter" value="hase">Human Aspects</option>
+                                                <option class="filter" value="csed">CS Education</option>
+                                                <option class="filter" value="proglang">Programming Languages</option>
+                                                <option class="filter" value="tool">Tools</option>
+                                                <option class="filter" value="agile">Agile Methods</option>
+                                                <option class="filter"
+                                                value="socialmedia">Social
+                                                Media</option>
+						<option class="filter"
+                                                value="gsd">Global
+                                                Software Development</option>
+						<option class="filter"
+                                                value="panel">Panels</option>
+                                                <option class="filter"
+                                                value="poster">Posters</option>
+			
+                                                <option class="filter" value="workshop">Workshops</option>
+                                                <option class="filter"
+                                                value="talk">Invited
+                                                Talks</option>
+
+                                                <option class="filter" value="dissertations">Dissertations</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-md-3" id="sort">
+                                            <span>Sort by year:</span>
+                                            <div class="btn-group pull-right"> 
+
+                                                <button type="button" data-sort="data-yearMonth" data-order="desc" class="sort btn btn-default"><i class="icon-sort-by-order"></i></button>
+                                                <button type="button" data-sort="data-yearMonth" data-order="asc" class="sort btn btn-default"><i class="icon-sort-by-order-alt"></i></button>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section color-2" id="pub-grid">
+                                <div class="section-container">
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                              <div id="Busjahn:2014:ETC:2632320.2632344"></div>
+                                              <div id="Begel:2014:ATQ:2568225.2568233"></div>
+                                              <div id="Fritz:2014:UPM:2568225.2568266"></div>
+                                              <div id="Begel:2013:IWU:2486788.2487083"></div>
+                                              <div id="Bettenburg:2013:DSS:2486788.2486960"></div>
+                                              <div id="Guzzi:2012:FCE:2337223.2337420"></div>
+                                              <div id="Grubb:2012:PII:2145204.2145403"></div>
+                                              <div id="Begel:2012:FCS:2141512.2141522"></div>
+                                              <div id="Treude:2011:WRW:2020976.2020977"></div>
+					      <div id="Treude:2011:SIW:1985793.1986056"></div>
+<div id="Begel:2010:SMS:1882362.1882370"></div>
+<div id="Begel:2010:WFS:1882291.1882359"></div>
+<div id="Begel:2010:KUY:1809198.1809205"></div>
+<div id="Begel:2010:CDE:1806799.1806821"></div>
+<div id="Begel:2010:TTC:1734797.1734821"></div>
+<div id="Begel:2009:CLS:1572193.1572204"></div>
+<div id="Begel:2009:TTC:1516546.1516572"></div>
+<div id="Begel:2008:PPW:1414004.1414026"></div>
+<div id="Begel:2008:NSD:1404520.1404522"></div>
+<div id="Begel:2008:ECC:1370114.1370119"></div>
+<div id="Layman:2008:MSE:1370750.1370762"></div>
+<div id="Klopfer:2004:PRE:1149126.1149203"></div>
+<div id="Holmes:2008:DIT:1370750.1370755"></div>
+<div id="Begel:2004:KLC:971300.971367"></div>
+<div id="Begel:1999:BEG:316188.316214"></div>
+<div id="Begel:2008:SNC:1352135.1352218"></div>
+<div id="5876140"></div>
+<div id="4343753"></div>
+<div id="4638666"></div>
+<div id="1372335"></div>
+<div id="1698772"></div>
+<div id="1372317"></div>
+<div id="805221"></div>
+<div id="1509493"></div>
+<div id="5970193"></div>
+<div id="5521747"></div>
+<div id="6401114"></div>
+<div id="6681340"></div>
+<div id="6401112"></div>
+<div id="6614736"></div>
+<div id="6405317"></div>
+<div id="5070997"></div>
+<div id="Begel200475"></div>
+<div id="2104852720060801"></div>
+<div id="begel2005programming"></div>
+<div id="liblit2006cognitive"></div>
+<div id="DBLP:journals.concurrency.BegelBCG02"></div>
+<div id="begel2007codifier"></div>
+<div id="klopfer2003starlogo"></div>
+<div id="begel2005starlogo"></div>
+<div id="oram2010making"></div>
+<div id="hemphill2008will"></div>
+<div id="begel-sslsd"></div>
+<div id="begel-harmonia"></div>
+<div id="hemphill-notseen"></div>
+<div id="begel-transform"></div>
+<div id="begel-bachelors-thesis"></div>
+<div id="begel-masters-thesis"></div>
+<div id="begel-phd-thesis"></div>
+<div id="begel-dc2002"></div>
+<div id="begel-enduser"></div>
+<div id="Begel:2012:2667089"></div>
+<div id="Begel:2005:csit:feb:KLC"></div>
+<div id="Begel:2005:csit:june:KLC"></div>
+<div id="Begel:2005:KLC"></div>
+<div id="Begel:2006:KLC"></div>
+<div id="deline-summer"></div>
+<div id="poile-techreport"></div>
+<div id="begel-eye-workshop"></div>
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="teaching" class="page">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <h2 class="title">Teaching</h2>
+                                
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>Education in computer 
+														science has always been 
+														important
+														to
+														me.</p>
+
+					<p>Along with
+					  <a href="http://www.cs.ubc.ca/~wolf">
+					    
+					    Steven Wolfman</a>,
+					  <a href="http://www.cs.berkeley.edu/~ddgarcia">
+														
+					Daniel D. Garcia</a>
+					and <a href="http://bates.cs.mnsu.edu/">
+					Rebecca Bates</a>, I led
+					workshops
+					on <a href="http:/www.cs.ubc.ca/~kla/">
+					Kinesthetic Learning
+					Activities</a>, physically
+					engaging classroom exercises
+					that teach computer science
+					concepts.</p>
+
+					<p>In the Winter quarter of
+					2013, I taught INFO 461:
+					Cooperative Software
+					Development at the Information
+					School of the University of
+					Washington. I taught students
+					how to work in 3-5 person
+					software development teams to
+					design, build, and market a
+					product called Psychics of the
+					Future. Loosely based on
+					web-based advertising, the
+					product had to enable psychics
+					to sign up and upload fortunes
+					which would then be posted to
+					customers' Facebook and
+					Twitter feeds. More about
+					this course will appear here.</p>
+
+				<p>I taught an after-school program to
+				four 8th grade boys to teach them
+				about complex systems and how to
+				program in StarLogo. At first it was
+				slow-going for some of the kids, but
+				by the end, all really understood
+				programming, and half of them
+				understood complex systems!</p>
+
+				<p>In the Spring semester of 2001, I
+				co-designed and
+				co-taught <a href="http://www-inst.eecs.berkeley.edu/%7ecs301/2001/spring">CS301</a>:
+				Teaching Techniques for Computer
+				Science,
+				with <a href="http://www.cs.berkeley.edu/%7eddgarcia">Dan
+				Garcia</a>. CS301 is a class to teach
+				first-time TAs in the Computer Science
+				Division how to be the greatest TAs
+				they can be. It was truly awesome.</p>
+				<p>In the Spring semester of 2000, I
+		    helped out my friend Laura Allen by being a
+		    workshop leader for the TechGyrl's '99 program. I
+		    put together a collection of ideas (that I snagged
+		    and rearranged from Gary Stager's Logo page)
+		    for <a href="http://www.microworlds.com">Microworlds</a><a href="microworlds.html">Logo</a>
+		    and <a href="http://www.lego.com">Lego</a><a href="legodacta.html">Dacta</a>. </p>
+				
+					<p>In Spring 2000,
+															I <a href="cs164/index.html">TAd</a>
+															(GSId) <a href="http://www-inst.eecs.berkeley.edu/%7ecs164">CS164</a>,
+															a
+															class
+															called
+															Introduction
+															to
+															Compilers. It's
+															for
+															junior/senior-level
+															Berkeley
+															undergrads. </p>
+															
+				<p>In Fall 1997, I
+			  TAd <a href="http://www-inst.eecs.berkeley.edu/%7ecs61a">CS61a</a>,
+			  the introductory CS course
+			  at <a href="http://www.berkeley.edu">Berkeley</a>. It's
+			  taught
+			  by <a href="http://www.cs.berkeley.edu/%7ebh">Brian
+			  Harvey</a>. CS61a is a Berkeley port
+			  of <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005">6.001</a>,
+			  which I took at MIT in 1993. It uses
+			  the <a href="http://groups.csail.mit.edu/mac/projects/scheme">Scheme</a>
+			  programming language to introduce students
+			  to the zen of programming. After this
+			  course, learning any other programming
+			  language is cake.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="title text-center">
+                                        <h3>Teaching History</h3>
+                                    </div>
+                                    <ul class="ul-dates">
+                                        <li>
+                                            <div class="dates">
+                                                <span>Winter</span>
+                                                <span>2013</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>INFO 461:
+                                                Cooperative Software
+                                                Development</h4>
+						<h4>University of
+						Washington,
+						Information School</h4>
+						<p>Course Instructor</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2001</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>CS301: Teaching
+                                                Techniques for
+                                                Computer Science</h4>
+						<h4>University of
+                                                California at Berkeley</h4>
+						<p>Co-taught with
+						Daniel D. Garcia</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Spring</span>
+                                                <span>2000</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>CS164:
+                                                Introduction to Compilers</h4>
+						<h4>University of
+						California at
+						Berkeley</h4>
+						<p>Graduate Student
+						Instructor. Course
+						taught by Alexander Aiken
+						and George Necula</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>Fall</span>
+                                                <span>1997</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>CS61a: Structure
+                                                and Interpretation of
+                                                Computer Programs</h4>
+                                                <h4>University of
+                                                California at
+                                                Berkeley</h4>
+						<p>Graduate Student
+						Instructor. Course
+						taught by Brian Harvey</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				
+                <!-- <div id="gallery" class="page"> -->
+                <!--     <div class="pagecontents"> -->
+                        
+                <!--         <div class="section color-3" id="gallery-header"> -->
+                <!--             <div class="section-container"> -->
+                <!--                 <div class="row"> -->
+                <!--                     <div class="col-md-3"> -->
+                <!--                         <h2>Gallery</h2> -->
+                <!--                     </div> -->
+                <!--                     <div class="col-md-9"> -->
+                <!--                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                <!--                     </div> -->
+                <!--                 </div> -->
+                <!--             </div> -->
+                <!--         </div> -->
+
+                <!--         <div class="section color-3" id="gallery-large"> -->
+                <!--             <div class="section-container"> -->
+                                
+                <!--                 <ul id="grid" class="grid"> -->
+                <!--                     <li> -->
+                <!--                         <div> -->
+                <!--                             <img alt="image" src="img/gallery/450x600.png"> -->
+                <!--                             <a href="img/gallery/450x600.png" class="popup-with-move-anim"> -->
+                <!--                                 <div class="over"> -->
+                <!--                                     <div class="comein"> -->
+                <!--                                         <i class="icon-search"></i> -->
+                <!--                                         <div class="comein-bg"></div> -->
+                <!--                                     </div> -->
+                <!--                                 </div> -->
+                <!--                             </a> -->
+                <!--                         </div> -->
+                <!--                     </li> -->
+                <!--                     <li> -->
+                <!--                         <div> -->
+                <!--                             <img alt="image" src="img/gallery/600x600.png"> -->
+                <!--                             <a href="img/gallery/600x500.png" class="popup-with-move-anim"> -->
+                <!--                                 <div class="over"> -->
+                <!--                                     <div class="comein"> -->
+                <!--                                         <h3>Image Title</h3> -->
+                <!--                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <!--                                         <div class="comein-bg"></div> -->
+                <!--                                     </div> -->
+                <!--                                 </div> -->
+                <!--                             </a> -->
+                <!--                         </div> -->
+                <!--                     </li> -->
+                <!--                     <li> -->
+                <!--                         <div> -->
+                <!--                             <img alt="image" src="img/gallery/900x600.png"> -->
+                <!--                             <a href="img/gallery/900x600.png" class="popup-with-move-anim"> -->
+                <!--                                 <div class="over"> -->
+                <!--                                     <div class="comein"> -->
+                <!--                                         <i class="icon-search"></i> -->
+                <!--                                         <div class="comein-bg"></div> -->
+                <!--                                     </div> -->
+                <!--                                 </div> -->
+                <!--                             </a> -->
+                <!--                         </div> -->
+                <!--                     </li> -->
+                <!--                     <li> -->
+                <!--                         <div> -->
+                <!--                             <img alt="image" src="img/gallery/400x300.png"> -->
+                <!--                             <a href="img/gallery/400x300.png" class="popup-with-move-anim">  -->
+                <!--                                 <div class="over"> -->
+                <!--                                     <div class="comein"> -->
+                <!--                                         <h3>Image Title</h3> -->
+                <!--                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <!--                                         <div class="comein-bg"></div> -->
+                <!--                                     </div> -->
+                <!--                                 </div> -->
+                <!--                             </a> -->
+                <!--                         </div> -->
+                <!--                     </li> -->
+                <!--                     <li> -->
+                <!--                         <div> -->
+                <!--                             <img alt="image" src="img/gallery/400x300.png"> -->
+                <!--                             <a href="img/gallery/400x300.png" class="popup-with-move-anim"> -->
+                <!--                                 <div class="over"> -->
+                <!--                                     <div class="comein"> -->
+                <!--                                         <i class="icon-search"></i> -->
+                <!--                                         <div class="comein-bg"></div> -->
+                <!--                                     </div> -->
+                <!--                                 </div> -->
+                <!--                             </a> -->
+                <!--                         </div> -->
+                <!--                     </li> -->
+                <!--                     <li> -->
+                <!--                         <div> -->
+                <!--                             <img alt="image" src="img/gallery/800x600.png"> -->
+                <!--                             <a href="img/gallery/800x600.png" class="popup-with-move-anim"> -->
+                <!--                                 <div class="over"> -->
+                <!--                                     <div class="comein"> -->
+                <!--                                         <h3>Image Title</h3> -->
+                <!--                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <!--                                         <div class="comein-bg"></div> -->
+                <!--                                     </div> -->
+                <!--                                 </div> -->
+                <!--                             </a> -->
+                <!--                         </div> -->
+                <!--                     </li> -->
+                                    
+                                    
+                <!--                 </ul> -->
+                                    
+                <!--             </div> -->
+                <!--         </div> -->
+                <!--     </div> -->
+                    
+                <!-- </div> -->
+                <div id="contact" class="page stellar">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <h2 class="title">Contact & Meet Me</h2>
+                            
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>I would be happy to speak
+                                        with you about my research,
+                                        Microsoft, or any questions
+                                        you have about your own work.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <strong><i class="icon-phone"></i>&nbsp;&nbsp;</strong>
+                                                <span>office: +1 (425) 705-1816</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-envelope"></i>&nbsp;&nbsp;</strong>
+                                                <span>work:</span> <span class="codedirection">moc.tfosorcim@legeb.werdna</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-envelope"></i>&nbsp;&nbsp;</strong>
+                                                <span>personal:</span> <span class="codedirection">moc.naesydna@legeba</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-skype"></i>&nbsp;&nbsp;</strong>
+                                                <span class="codedirection">moc.evil@legeba</span>
+                                            </li>
+					    <li>
+                                                <strong><i class="icon-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                                                <span>abegel</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-twitter"></i>&nbsp;&nbsp;</strong>
+                                                <span>@abegel</span>
+                                            </li>
+                                            <li>
+                                                <strong><i class="icon-linkedin-sign"></i>&nbsp;&nbsp;</strong>
+                                                <span>andrewbegel</span>
+                                            </li>
+                                        </ul>    
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagecontents">
+                        <div class="section contact-office" data-stellar-background-ratio="0.1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h2 class="title">In My Office</h2>
+                                        <p>You can find me at my
+                                        office in Building 99 on the
+                                        Microsoft Campus in Redmond,
+                                        Washington.</p>
+                                        <p>I am usually in my office every day
+                                        from 11:00am until 6:00 pm,
+                                        but please email me to make an appointment.</p>
+                                    </div>
+                                    <div class="col-md-4 text-center hidden-xs hidden-sm">
+                                        <i class="icon-coffee icon-huge"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                </div>
+                
+                <div id="overlay"></div>
+            
+            </div>
+        </div>
+    </body>
+</html>
+
