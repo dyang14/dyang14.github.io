@@ -618,7 +618,10 @@ case 'panel': return 'label-danger';
     $.ajax({
 	type: 'GET',
 	headers: { "Access-Control-Request-Headers": "Last-Modified" },
-	url: 'papers/pubs.bib', 
+	url: 'papers/pubs.bib',
+	error: function(data, response, errorString) {
+	    console.log("failed to fetch publication list");
+	},
 	success: function(data, response, xhr) {
 	    if (Modernizr.localstorage) {
 		var storageLastModified = localStorage["publicationsDate"];
@@ -722,7 +725,7 @@ case 'panel': return 'label-danger';
 });
 
 
-$(window).load(function(){
+$(window).on("load", function(){
 
 	/*++++++++++++++++++++++++++++++++++++
 		gallery masonry layout
