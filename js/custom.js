@@ -478,7 +478,8 @@ $(document).ready(function(){
 	    case 'gsd': return 'Global Software Development';
 	case 'socialmedia': return 'Social Media';
 case 'poster': return 'Poster';
-case 'panel': return 'Panel';
+	case 'panel': return 'Panel';
+	case 'accessibility': return 'Accessibility';
 	default: return 'Other';
 	}
     }
@@ -497,7 +498,8 @@ case 'panel': return 'Panel';
         case 'gsd': return 'label-danger';
 	case 'socialmedia': return 'label-info';
 case 'poster': return 'label-danger';
-case 'panel': return 'label-danger';
+	case 'panel': return 'label-danger';
+	case 'accessibility': return 'label-primary';
 	default: return 'label-default';
 	}
     }
