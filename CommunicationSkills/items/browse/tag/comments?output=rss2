@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/comments?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:26:26 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Writing Javadoc Comments for a Class]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/17</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Writing Javadoc Comments for a Class</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment combines implementing a class definition (constructors, getters, setters for a Rectangle) with using Javadoc comments to document the class.  This assignment includes background information on the Javadoc tool, including information about technical requirements (such as the @param tag) and style guidelines for javadocs (guidelines nicely summarized on Oracle&#039;s website).  The rubric includes separate items for both the technical part of the assignment (writing the class) and the Javadoc part of the assignment.  This could be easily modified to incorporate Javadocs with some other programming assignment.<br />
+<br />
+This assignment assumes that students are able to implement a basic class definition in Java, with constructors, getters, and setters.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Javadocs</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Class creation, documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text"><p>Organizations write code that must be sufficiently documented in order for other team members (current and future) to use that code. Often, such documentation must be written using a given set of requirements (as defined by an employer or by some broader community).</p>
+<p>In this assignment, you will be writing code, along with the documentation for that code. There are two kinds of standards for that documentation:</p>
+<ol>
+<li>Technical standards: the documentation you write needs to be parsable by a piece of software that turns your comments into a web page. The Javadoc standards are documented on Oracle's web page, "How to Write Doc Comments for the Javadoc Tool"</li>
+<li>Human standards: the documentation you write needs to be written in a grammatic style that is consistent with how others write similar documentation. The community style for these standards is documented on the same Oracle web page, in the "Style Guide" section.</li>
+</ol></div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/82d14752407d4b5e870de07d6f5c6175.docx">Writing Javadoc Comments for a Class.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:02:23 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/82d14752407d4b5e870de07d6f5c6175.jpg" type="application/zip" length="63573"/>
+    </item>
+  </channel>
+</rss>

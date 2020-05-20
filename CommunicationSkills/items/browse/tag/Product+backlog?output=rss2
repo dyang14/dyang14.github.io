@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/Product+backlog?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:30:32 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Planning for Elaboration Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/48</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Planning for Elaboration Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Apply a contemporary software development process to a case study.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Project management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to help your team to plan the sprints for the Elaboration phase. In Elaboration we want to build the core software architecture, resolve high-risk elements (things we are unsure about), and define most of the requirements for our projects.  In this memo to your supervisor you will recommend two use cases (or features) that you believe should be implemented in the Elaboration phase.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/e3e49f34d62396f4bce5928f2bbd4cab.docx">HW_8.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:46:55 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/e3e49f34d62396f4bce5928f2bbd4cab.jpg" type="application/zip" length="19074"/>
+    </item>
+    <item>
+      <title><![CDATA[Eliciting Requirements: Use Case Modeling Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/40</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Eliciting Requirements: Use Case Modeling Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Analyze and create a requirements specifications using scenarios or use cases.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Recommendation<br />
+Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The primary tool at our disposal for defining requirements and identifying features is Use Case Modeling. Use cases are simply scenarios, or stories, that capture the functions that the system provides for the users. The use cases will help you to create your Product Backlog.  In this memo to your supervisor, you will identify two use cases for your team’s part of the class project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/99e371848b9e4c2832a5eb6a3934e43f.docx">HW_5.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:34:56 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/99e371848b9e4c2832a5eb6a3934e43f.jpg" type="application/zip" length="17635"/>
+    </item>
+    <item>
+      <title><![CDATA[Eliciting Requirements: Preparation for Requirements Workshop with Client]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/34</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Eliciting Requirements: Preparation for Requirements Workshop with Client</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Analyze and create a requirements specifications using scenarios.  Prepare to interview a client.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements<br />
+Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The Inception Phase of our project is upon us! It’s our opportunity to work with the client to establish a common vision and scope for the project. We explore the client’s vision for the project, create an initial list of features (requirements), make a rough estimate of cost time needed to complete the features, and decide whether or not it is feasible to move ahead with the project given our resource (time and people) constraints. Note that in the spirit of agile, iterative development, we are not trying to completely define the client’s needs (requirements) or the solution at this time. A fuller understanding of the requirements will evolve as we move forward with the project. <br />
+<br />
+We will kick off the project with a Requirements Workshop with our client in our next class meeting. Oftentimes the Software Engineer must explore the client’s vision through a dialog with the client. So for this assignment, I want you to prepare for the meeting by composing a few questions to ask the client in order for you to better understand:<br />
+• The client’s vision for the product<br />
+• The opportunity/benefits of the product that the client envisions<br />
+• The primary stakeholders, such as the “owner” of the product and the “users” of the product.<br />
+• The user-level goals: What is the vision for how the users will use the product?<br />
+• A list, of potential features of the product<br />
+• Any other requirements for the product such as usability, reliability, security, performance, etc<br />
+<br />
+The information that you collect will be used to write your team’s Vision, Supplemental Specification, Use Cases, and Glossary. The features will be the basis for your teams Product Backlog.<br />
+<br />
+In this memo to your supervisor, you will recommend four questions to the client that will help you to write the project vision document.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/3daea505252c2bd1fa2ca5b330011e59.docx">HW_4.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:28:22 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/3daea505252c2bd1fa2ca5b330011e59.jpg" type="application/zip" length="22769"/>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/page/10?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:25:38-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/page/10?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/1?output=atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/9?output=atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/11?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/11?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/29</id>
+    <title><![CDATA[Inspection, Correction, and Extension]]></title>
+    <summary><![CDATA[Inspect a partially completed program that has logic, documentation, and style errors. The inspection is done as a team in-class. Then, as individuals, write a report of the inspection results, fix the errors and complete the program, and then extend the program to add new functionality (basic and extended programs are submitted as separate versions).<br />
+<br />
+This project was originally implementing the SIGCSE Nifty Assignments Scrolling Game. The description has been removed and those interested should refer to the SIGCSE nifty assignments page for details.<br />
+<br />
+This project was used as the first project of the semester to review material taught in CS1 and to give students practice reading code written by others.<br />
+<br />
+See the project overview document for more details.]]></summary>
+    <updated>2012-07-27T18:45:45-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/29"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/5f0205c695e76c38a213501c37592b33.zip" type="application/zip" length="419591"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Inspection, Correction, and Extension</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Inspect a partially completed program that has logic, documentation, and style errors. The inspection is done as a team in-class. Then, as individuals, write a report of the inspection results, fix the errors and complete the program, and then extend the program to add new functionality (basic and extended programs are submitted as separate versions).<br />
+<br />
+This project was originally implementing the SIGCSE Nifty Assignments Scrolling Game. The description has been removed and those interested should refer to the SIGCSE nifty assignments page for details.<br />
+<br />
+This project was used as the first project of the semester to review material taught in CS1 and to give students practice reading code written by others.<br />
+<br />
+See the project overview document for more details.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Janet Burge</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Dave Feinburg, Generic Scrolling Game: http://nifty.stanford.edu/2011/feinberg-generic-scrolling-game/</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">code review, inspection report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">implementation, testing, debugging, comments/documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have just started a new job where you will be designing and writing game software. You are replacing someone who left in the middle of developing a game prototype. Your first assignment is to take over the game project from them by completing the basic game prototype and then to extend the basic game to make one that is more interesting for a user. <br />
+<br />
+Because you are new to the company, and because the person you are replacing left abruptly, the first step in performing your new assignment will be to do a code inspection of the partial prototype to look for defects in both the code (logic errors and style errors) and the documentation.  It’s very important to make sure that the code you start with is correct before writing any new code and to make sure that the documentation is correct and complete.<br />
+<br />
+After the inspection you are required to write a report listing the defects found as well as identifying areas of the code that are incomplete (the previous employee left some methods empty and also marked some places with “ToDo” comments to as reminders where new code should be written). This report will be used by your manager to assess the current state of the program and by you to check items off as completed.<br />
+<br />
+Once the inspection is completed, you will then complete the basic game prototype. You will need to test this prototype to ensure that it works. The test cases and test data will need to be submitted to your manager as part of your project status report. You will also write a simple readme.txt file that gives an explanation of how to install and run your game so your manager will be able to try it out.<br />
+<br />
+Finally, once the basic game is done, you will write a new game using the basic game code as a starting point. As with the basic version, you will need to test the game to ensure that it works. The test cases and test data will need to be submitted to your manager as part of your project status report. You will also write a simple readme.txt file that gives an explanation of how to install and run your game so your manager will be able to try it out.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/28</id>
+    <title><![CDATA[Customer Requirements Report]]></title>
+    <summary><![CDATA[The Customer Requirements Report assignment directs student teams to gather and evaluate data from novice and expert users to synthesize a software development plan.  The Customer Requirements Report is second of five assignments that prepare students to develop the software they evaluated in the Program Review Report assignment over four two-week scrum cycles.   <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Teach novice to expert users how to use the software product.<br />
+2.	Gather data on user experience including demographic, experience level, and request versus observation.<br />
+3.	Analyze data to identify strengths and weaknesses of the software product.<br />
+4.	Create a development plan for the program based on analysis of customer experience.<br />
+5.	Identify the key technical information about a program that the project manger wants when deciding how to create a development plan to meet customer requirements.<br />
+]]></summary>
+    <updated>2012-07-26T10:56:23-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/28"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/9707c533560bdc0bf5aeebc8e253aff4.pdf" type="application/pdf" length="599521"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/89ccc448761e9455adaeaf50162f209b.docx" type="application/zip" length="34193"/>
+    <category term="Customer Requirements"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Customer Requirements Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Customer Requirements Report assignment directs student teams to gather and evaluate data from novice and expert users to synthesize a software development plan.  The Customer Requirements Report is second of five assignments that prepare students to develop the software they evaluated in the Program Review Report assignment over four two-week scrum cycles.   <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Teach novice to expert users how to use the software product.<br />
+2.	Gather data on user experience including demographic, experience level, and request versus observation.<br />
+3.	Analyze data to identify strengths and weaknesses of the software product.<br />
+4.	Create a development plan for the program based on analysis of customer experience.<br />
+5.	Identify the key technical information about a program that the project manger wants when deciding how to create a development plan to meet customer requirements.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development CUSTOMER REQUIREMENTS REPORT The project manager has decided to develop the product begun but not completed by an acquired company. (This is the product your team evaluated in the Product Review Report.) The product manager has assigned your development team to develop customer requirements based on customer experience using the product.  Your team needs to gather data on the experience of novices (someone who rarely used this type of product) and experts (someone who frequently uses this type of product.)  Customer experience may be influenced by factors such as age and gender; therefore, demographic data is important for the product manager.  Customers may or may not be able to articulate their experience. Your team needs to gather data directly from customers with a questionnaire, for example, and by observing customers using the product. Your team’s report needs to make recommendations for developing the product to meet customer needs. The project manager has asked your team to make a ten-minute presentation summarizing the report. Your team’s evaluation report and presentation provides the project manager with critical information to plan how to develop the product. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a three-to-five-page requirements report. 2. The project manager has asked your team to present significant findings from the requirements report in a ten-to-fifteen-minute meeting. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, the manager wants your team to answer the following technical questions: 1. How usable is the product for novice and expert users? 2. What factors affect the user’s ability to use the product? 3. What are the most significant factors that affect user’s ability to use the product? You must provide answers to these questions in a manner that helps the manager develop a plan. The manager must evaluate your team to determine whether it is capable of completing the project. The manager will use your team’s report to answer the following questions: 1. Can your team teach novice to expert users how to use the product? 2. Can your team gather useful data on user experience with the product? 3. Can your team identify significant factors that affect user experience? 4. Are you and the other team members able to work together effectively? You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project.<br />
+<br />
+1<br />
+<br />
+CSC 225 – Introduction to Software Development LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Teach novice to expert users how to use the software product. 2. Gather data on user experience including demographic, experience level, and request versus observation. 3. Analyze data to identify strengths and weaknesses of the software product. 4. Create a development plan for the program based on analysis of customer experience. 5. Identify the key technical information about a program that the project manger wants when deciding how to create a development plan to meet customer requirements. Focus also on developing your ability to perform these communication tasks: 1. Write a report that helps managers make practical decisions efficiently. [Writing] 2. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 3. Write a report that persuades mangers to accept your recommendation. [Writing] 4. Select key information from written report useful to the project manager. [Speaking] 5. Create an informative and useful presentation for the project manager. [Speaking] 6. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 7. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 8. Collaborate effectively on a software development team. [Teaming] 9. Organize and execute a meeting with the project manager and the software development team. [Teaming] 10. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Friday (8/31): Introduction to customer requirements. Wednesday (9/5): Introduction to evaluating user experience. Friday (9/7): Submit your report and make your presentation. Peer review of presentations. GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+2<br />
+<br />
+CSC 225 – Introduction to Software Development Customer Requirements Report<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Teach novice to expert users how to use a software product.<br />
+<br />
+Details<br />
+Create a plan to teaching novices<br />
+<br />
+Report Section<br />
+Instruction Section<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Plan description with specific steps for a novice Plan description is disorganized, generic, or is not appropriate for a novice Plan description is disorganized, generic, or is not appropriate for a expert Individual user descriptions, no synthesis, changes in a list, or no supporting evidence Useful demographic data missing or not useful data included, missing data, or not listed in a table Data missing or not listed in a table Missing request, corresponding data, sample question, or not in a table<br />
+<br />
+Points<br />
+<br />
+Create a plan for teaching experts<br />
+<br />
+Plan description with specific steps for a expert<br />
+<br />
+Identify changes in each plan from teaching experience<br />
+<br />
+Gather data on user experience.<br />
+<br />
+Gather demographic data for each user<br />
+<br />
+Data Section<br />
+<br />
+Synthesize experience with novices and experts, and list specific changes to each plan support by evidence Useful demographic data for all users listed in a table<br />
+<br />
+Gather experiencelevel data for each user Gather change requests by questioning users<br />
+<br />
+Experience-level data for all users listed in a table Change requests listed in a table with corresponding experience-level and demographic data.<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Include sample questions Gather change requests by observing users Observed requests listed in a table with corresponding experience-level and demographic data List of best product features with a brief and useful description with evidence from gathered data and user experience List of product poorest features with a brief and useful description with evidence from gathered data and user experience Describes accurately the nature and amount of work required to advance each of the program’s weaknesses to a level that would improve users experience Each recommendation is clearly based on issues explicitly described in the analysis section Provides enough detail about each recommendation to enable a manager to incorporate it into a project plan Missing request, corresponding data, , or not in a table<br />
+<br />
+Identify strengths and weaknesses of the software product.<br />
+<br />
+Identify and describe which product features provided the best user experience<br />
+<br />
+Analysis Section<br />
+<br />
+Best product features not in a list, not useful description, or inappropriate or missing evidence Poorest product features not in a list, not useful description, or inappropriate or missing evidence Omits or describes inaccurately the work required to advance each of the program’s weaknesses to a level that would improve users experience Recommendations are not based on issues explicitly described in the analysis section Describes recommendations vaguely so a manager would not be able to incorporate it into a project plan<br />
+<br />
+Identify and describe which product features provided the poorest user experience Create a development plan for the partially completed program. Recommend a development plan based on prioritization of product weakness and change requests Recommen dations Section<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development Customer Requirements Report<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently<br />
+<br />
+Details<br />
+Provides critical information useful to the reader Critical information is easily accessible to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Report builds project manager’s confidence in team’s technical and communicatio n abilities<br />
+<br />
+Concise and appropriate writing style for project manager Uses precise terms appropriate for the reader<br />
+<br />
+Writing<br />
+<br />
+Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence from user training to support key findings<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from user training to support key findings<br />
+<br />
+Uses credible evidence to support explanations<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Report persuades project manager to accept your recommendati on<br />
+<br />
+Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings<br />
+<br />
+Writing<br />
+<br />
+Uses correct spelling, grammar, etc. throughout report Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings<br />
+<br />
+Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features user training Select information that demonstrates significant features of the user training sample Select information that demonstrates significant factors affecting user experience Select information that recommends plans for program development Key information is presented<br />
+<br />
+Speaking<br />
+<br />
+Concisely and accurately demonstrates key features of user training Concisely and accurately demonstrates significant features of the user training sample<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant Significant features are missing, insignificant features are included, or irrelevant features<br />
+<br />
+Concisely and accurately demonstrates significant factors affecting user experience<br />
+<br />
+Significant factors are missing, insignificant factors are included, or irrelevant factors<br />
+<br />
+Create and informative and useful presentation<br />
+<br />
+Speaking<br />
+<br />
+Concise and accurate recommendations for program development Succinctly presents key information<br />
+<br />
+Significant recommendations missing Omits or inaccurately presents key information<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+for the project manager Handouts, visuals, demonstrations, etc. support and complement the presentation Uses concise, accurate, and useful support materials to support and complement the presentation Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids first-time problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and accurate understanding of questions, and accurately and respectfully answers each Teaming Each task is independent,<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting Questions are accurately, authoritatively, and respectfully answered<br />
+<br />
+Team members under dress or over dress for the meeting Demonstrates lack of understanding or the lack of ability to explain answers to questions. Lack of respect for the questioner Tasks are not<br />
+<br />
+Collaborate<br />
+<br />
+Breakdown the<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+effectively on a software development team software development project into small, independent task clearly defined, and contributes to the overall software development task independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late Omitted major topics, time not on task, not enough time to answer all questions<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+Meeting is wellorganized and executed<br />
+<br />
+All major topics are presented, no time is wasted, all questions are answered in the allotted time<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Develop knowledge of individual team member skills and trust among team members Identify skills of each team member Teaming Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+9<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Customer Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The project manager has decided to develop the product begun but not completed by an acquired company.  The product manager has assigned your development team to develop customer requirements based on customer experience using the product.  The project manager will use your requirements to advise upper management on the status of the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/27</id>
+    <title><![CDATA[Animal Guessing Game with a Binary Search Tree]]></title>
+    <summary><![CDATA[A binary search tree is a data structure that is used to handle simple decisions.  In this assignment you will use a binary search tree to store information and then search through the information for a decision.  While a binary search tree is typically for small databases, it is still a potential data structure for many applications, as well as aiding in the understanding of trees (a popular data structure) in general. Decision trees (a more specific type of tree), is commonly used in machine learning and data mining for making intelligent decisions.  The objectives of this assignment are to (1) gain experience researching for a solution to a problem, (2) design a binary search tree (BST) class, (3) design and implement the building of a BST, as well as the methods to add to and search in a BST, and (4) improve written skills through the implementation of proper coding styles and documentation.<br />
+<br />
+This assignment should be late in the semester, as the students will need to use many aspects of what they have learned over the semester to determine the proper data structures.]]></summary>
+    <updated>2012-07-25T17:01:34-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/27"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/4fbfbff0af42717b25169be67dc36d02.docx" type="application/zip" length="42487"/>
+    <category term="binary search trees"/>
+    <category term="design creation"/>
+    <category term="Testing"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Animal Guessing Game with a Binary Search Tree</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A binary search tree is a data structure that is used to handle simple decisions.  In this assignment you will use a binary search tree to store information and then search through the information for a decision.  While a binary search tree is typically for small databases, it is still a potential data structure for many applications, as well as aiding in the understanding of trees (a popular data structure) in general. Decision trees (a more specific type of tree), is commonly used in machine learning and data mining for making intelligent decisions.  The objectives of this assignment are to (1) gain experience researching for a solution to a problem, (2) design a binary search tree (BST) class, (3) design and implement the building of a BST, as well as the methods to add to and search in a BST, and (4) improve written skills through the implementation of proper coding styles and documentation.<br />
+<br />
+This assignment should be late in the semester, as the students will need to use many aspects of what they have learned over the semester to determine the proper data structures.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Michael Main and Walter Savitch’s &quot;Data Structures and Other Objects Using C++&quot;, Fourth Edition</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, test results, documentation, individual presentations, oral presentations, reflection, tech report, video</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, speaking, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, Tools, Design, Research, Trees, Comments, Documentation, Problem Solving, Searching</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">RESEARCH<br />
+Technical Task: In order to learn technical material, one must be able to decipher key concepts through reading.<br />
+Professional Setting: Student works for a software company.<br />
+Professional Role: Student works along on a task for a project.<br />
+Deliverable: Design decisions discussed in design document.<br />
+Real-world Audience: Team Lead.<br />
+How the Audience will USE the students&#039; communication: The Team Lead will use the student&#039;s design decision(s) to determine the feasibility of their proposed solution.<br />
+Additional Notes: Of course, the reading of technical material is not like reading a novel, and one must be able to transfer the pertinent information to a useful form. The two methods of communicating design to others are: speaking and writing. In order for others to digest your intentions, one must learn to effectively write their ideas so that it can be interpreted at the reader’s discretion – either due to remoteness or time.<br />
+<br />
+<br />
+ADDITIONAL SCENARIO:<br />
+When working in the real-world, many times you will be presented with a problem or instructions through dialogue with peers or management.  Often, that will be the only instructions you will receive (i.e., nothing in written form).  If you do not listen to what the other person is saying, you may miss a vital piece of information to the success of your assignment. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/26</id>
+    <title><![CDATA[Searching and Replacing Text in a Large File]]></title>
+    <summary><![CDATA[The assignment has two phases. In the first phase, students work in teams, each team doing a design document and a presentation. In the second each individual student implements one of the designs. Students use existing data structures in the Java API to solve the problem of doing global search/replace operations on a given input file.<br />
+<br />
+Students are expected to be familiar with file I/O, complexity (big-oh), and the efficiency of operations in selected Java API&#039;s]]></summary>
+    <updated>2012-07-31T11:21:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/26"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/7ea5b4efb33b43a8abf6e27a7253a7fc.html" type="text/html" length="20202"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/60087417ee606a760059232eb08a25b0.doc" type="application/msword" length="34304"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/674d3dfe0eb2a510e2433951426f0520.xlsx" type="application/zip" length="48107"/>
+    <category term="compound data structures"/>
+    <category term="lists"/>
+    <category term="search trees"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Searching and Replacing Text in a Large File</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The assignment has two phases. In the first phase, students work in teams, each team doing a design document and a presentation. In the second each individual student implements one of the designs. Students use existing data structures in the Java API to solve the problem of doing global search/replace operations on a given input file.<br />
+<br />
+Students are expected to be familiar with file I/O, complexity (big-oh), and the efficiency of operations in selected Java API&#039;s</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Matt Stallmann</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design document,<br />
+Oral presentation of design,<br />
+Interpreting oral presentation,<br />
+Peer evaluation,<br />
+Navigating an API,<br />
+Creating a test plan<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, writing, speaking, teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design creation/specification,<br />
+Research,<br />
+Linear data structures,<br />
+Program design,<br />
+Selection of algorithms and data structures,<br />
+Trees/heaps,<br />
+Testing,<br />
+Team formation and evaluation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">This assignment explores an approach to searching and replacing data in a text file motivated by the following situation. Suppose that the only strings you are allowed to replace are words, contiguous strings with no embedded spaces or punctuation.<br />
+<br />
+A situation like this might occur if you want to rename variables in a program. The other feature of this situation is that the file on which search and replace is to be done could be huge while the number of distinct words is small. And a large number of search and replace operations will be done as a single batch. Imagine a long list of updates to a large piece of software.<br />
+<br />
+The team design and presentation aspect of this assignment is typical in the project planning phase of software development. A requirements engineer might propose a new feature (in this case word search/replace). The developers and testers need to communicate about designs that will incorporate the new feature.  A test plan is a critical aspect of the communication between a requirements engineer and the designer. It ensures that each understands the expected behavior of the software under a variety of circumstances.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The three files are:<br />
+<br />
+project2.html - the actual assignment<br />
+<br />
+team-eval.doc - form used for peer evaluation of team members<br />
+<br />
+survey_analysis.xlsx - results of an attitude survey</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/25</id>
+    <title><![CDATA[Data Making]]></title>
+    <summary><![CDATA[Give students the specification for an assignment they will later have to solve. However, for the assignment, simply make students write test data. The idea is to get them thinking about testing a piece of software they have not written and making them come up with test cases based on a specification.<br />
+<br />
+]]></summary>
+    <updated>2012-07-26T10:03:27-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/25"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/fb47e57a2c70d8f710384b3ef4f58825.docx" type="application/zip" length="25587"/>
+    <category term="Continuous Quality Assurance"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Data Making</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Give students the specification for an assignment they will later have to solve. However, for the assignment, simply make students write test data. The idea is to get them thinking about testing a piece of software they have not written and making them come up with test cases based on a specification.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Writing Test Cases</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+                <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Creating testing data to find bugs in code.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/24</id>
+    <title><![CDATA[Our Software Development Methodology Technical Memo]]></title>
+    <summary><![CDATA[Describe software development life-cycle and need for associated processes: the life-cycle phases, engineering and management processes, and relationships between the phases and processes. Introduce UML as a design tool.]]></summary>
+    <updated>2012-07-25T21:52:43-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/24"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/585e6eafb4c424eece9d078bf56effdf.docx" type="application/zip" length="21608"/>
+    <category term="Agile"/>
+    <category term="Object-oriented analysis"/>
+    <category term="Object-oriented design"/>
+    <category term="unified process"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Our Software Development Methodology Technical Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe software development life-cycle and need for associated processes: the life-cycle phases, engineering and management processes, and relationships between the phases and processes. Introduce UML as a design tool.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Report<br />
+Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing<br />
+Reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Research<br />
+Project Management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">We will use an iterative software development methodology for our class project, combining elements of the Unified Process with Scrum. These are among best practices in today’s software development environment.  These practices should help us to deliver a product to our client on time and that meets the requirements. In addition, learning about these practices will help you understand the development methodology used in a future employer.  In this memo to your supervisor, you will summarize some current best practices and contrast our approach (unified process) with the older waterfall approach.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/23</id>
+    <title><![CDATA[Physical Database Design and Relational Algebra]]></title>
+    <summary><![CDATA[This assignment on converting ER diagrams to a Physical Database Design and writing Relational Algebraic expressions has the following learning outcomes:<br />
+<br />
+●Translate the conceptual representation of a database into a physical implementation on a target database management system.<br />
+<br />
+●Identify entities, constraints and relationships captured by an entity relationship diagram<br />
+<br />
+●Employ Relational Algebra to access data stored in a relational database system.<br />
+<br />
+<br />
+●Describe design choices with respect to physical database design and rationalize that in a manner that enables a software engineer to implement the design in a relational database system.<br />
+<br />
+●Apply the practice of physical data design in a situation similar to those seen in the industry.<br />
+<br />
+●Interpret a logical design of an information system to identify, label and verify the constraints imposed on the system. <br />
+<br />
+This is an individual assignment.<br />
+]]></summary>
+    <updated>2012-07-26T11:16:19-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/23"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/737d03f51ae90511d606dad9d33a2b1a.doc" type="application/msword" length="60928"/>
+    <category term="Algebraic Operators"/>
+    <category term="Design"/>
+    <category term="ER Diagram"/>
+    <category term="Logical Design"/>
+    <category term="Physical Design"/>
+    <category term="Relational Schema"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Physical Database Design and Relational Algebra</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment on converting ER diagrams to a Physical Database Design and writing Relational Algebraic expressions has the following learning outcomes:<br />
+<br />
+●Translate the conceptual representation of a database into a physical implementation on a target database management system.<br />
+<br />
+●Identify entities, constraints and relationships captured by an entity relationship diagram<br />
+<br />
+●Employ Relational Algebra to access data stored in a relational database system.<br />
+<br />
+<br />
+●Describe design choices with respect to physical database design and rationalize that in a manner that enables a software engineer to implement the design in a relational database system.<br />
+<br />
+●Apply the practice of physical data design in a situation similar to those seen in the industry.<br />
+<br />
+●Interpret a logical design of an information system to identify, label and verify the constraints imposed on the system. <br />
+<br />
+This is an individual assignment.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sriram Mohan</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">ER Diagram, Schema, Decisions</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">As a software engineer you will often be required to translate a conceptual design of an information system into a physical implementation on a target database system. It is your responsibility to ensure that the information system has the ability to store the required data in an efficient manner without any duplication. Once the system has been implemented, you will be responsible for designing efficient canned transactions that can be utilized by end-users. A working knowledge of Relational Algebra will be useful in designing queries that can be optimized and executed in an efficient manner.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">Students are expected to follow ER to Relational Schema design rules and naming conventions as prescribed in the <a href="http://www.pearsonhighered.com/educator/product/Fundamentals-of-Database-Systems-6E/9780136086208.page">Course Text</a> and as also covered in the class.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/22</id>
+    <title><![CDATA[Program Review Report]]></title>
+    <summary><![CDATA[The Program Review Report assignment directs student teams to install, run, and evaluate software from a previous iteration of the course.  The Program Review Report is first of five assignments that prepare students to develop the software they evaluate in this assignment over four two-week scrum cycles.  <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Evaluate installation of existing project software.<br />
+2.	Analyze operation of the program.<br />
+3.	Identify, describe, and test (reproduce) bugs.<br />
+4.	Analyze documentation to determine each document’s purpose, accuracy, and usefulness.<br />
+5.	Create a development plan for a program based on evaluations of its installation, operation, bugs, and documentation.<br />
+6.	Identify the key technical information about a program that the project manager wants when deciding how to create a development plan with an incomplete project.<br />
+]]></summary>
+    <updated>2012-07-26T10:57:20-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/22"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/31d28589251f2401079f09ca72e135e9.pdf" type="application/pdf" length="519106"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/16dcb6ff004d01b7bc7275fd477deada.docx" type="application/zip" length="40767"/>
+    <category term="Program installation and evaluation"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Program Review Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Program Review Report assignment directs student teams to install, run, and evaluate software from a previous iteration of the course.  The Program Review Report is first of five assignments that prepare students to develop the software they evaluate in this assignment over four two-week scrum cycles.  <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Evaluate installation of existing project software.<br />
+2.	Analyze operation of the program.<br />
+3.	Identify, describe, and test (reproduce) bugs.<br />
+4.	Analyze documentation to determine each document’s purpose, accuracy, and usefulness.<br />
+5.	Create a development plan for a program based on evaluations of its installation, operation, bugs, and documentation.<br />
+6.	Identify the key technical information about a program that the project manager wants when deciding how to create a development plan with an incomplete project.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development PROGRAM REVIEW REPORT You work for company that has bought out a smaller company that was developing several new products. The project manager has assigned your development team to evaluate one of the projects that was begun but not completed by the acquired company. Your evaluation report will include recommendations for completing the project. The project manager has asked your team to make a tenminute presentation summarizing the report. Your team’s evaluation report and presentation provides the project manager with critical information to plan how to develop the product. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a five-to-seven-page evaluation report. 2. The project manager has asked your team to present significant findings from the evaluation report in a ten-minute meeting. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, the manager wants your team to answer the following technical questions: 1. Does the program run? 2. What does the program do? 3. What is the current state of the program? 4. What is the current state of the project documentation? 5. What needs to be done to complete the project? You must provide answers to these questions in a manner that helps the manager develop a plan. The manager must evaluate your team to determine whether it is capable of completing the project. The manager will use your team’s report to answer the following questions: 1. Can your team correctly install the program? 2. Can your team identify and correct all incomplete and incorrect aspects of the program? 3. Are you and the other team members able to work together effectively? You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project. LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Evaluate installation of existing project software. 2. Analyze operation of the program. 3. Identify, describe, and test (reproduce) bugs. 4. Analyze documentation to determine each document’s purpose, accuracy, and usefulness. 5. Create a development plan for a program based on evaluations of its installation, operation, bugs, and documentation. 6. Identify the key technical information about a program that the project manger wants when deciding how to create a development plan with an incomplete project. 1<br />
+<br />
+CSC 225 – Introduction to Software Development Focus also on developing your ability to perform these communication tasks: 1. Read documentation analytically to evaluate its effectiveness. [Reading] 2. Write a report that helps managers make practical decisions efficiently. [Writing] 3. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 4. Write a report that persuades mangers to accept your recommendation. [Writing] 5. Select key information from written report useful to the project manager. [Speaking] 6. Create an informative and useful presentation for the project manager. [Speaking] 7. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 8. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 9. Collaborate effectively on a software development team. [Teaming] 10. Organize and execute a meeting with the project manager and the software development team. [Teaming] 11. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Monday (8/27): Introduction to evaluating the installation and operation of a partially completed program. Introduction to team management of program evaluation. Wednesday (8/29): Introduction to evaluating the documentation of a partially completed program. Introduction to effective report writing, presentation, and meeting skills. Friday (8/31): Submit your report and make your presentation. Peer review of presentations. GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+2<br />
+<br />
+CSC 225 – Introduction to Software Development Program Review Report<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Evaluate installation of a partially completed program<br />
+<br />
+Details<br />
+Install a program<br />
+<br />
+Report Section<br />
+Installation Section<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Describes installation process accurately Focuses on the major steps taken Describes each major problem encountered precisely; summarizes the amount and kinds of minor problems encountered Describe accurately the program’s overall purpose, major parts, and the way the parts work together to achieve the purpose Describes installation process inaccurately Provides a narrative of every step taken Omits major problems encountered or describes them imprecisely; describes in detail each minor problem encountered Omits the description of the program’s overall purpose, describes some or all of its major parts inaccurately, possibly omitting some; fails to tell how the parts work together. Describes features that are unnecessary to understanding the program’s purpose, major parts, operation, and purpose Describes a method<br />
+<br />
+Points<br />
+<br />
+Verify that the installation has worked Identify in technical terms problems with the program’s installation<br />
+<br />
+Determine the intended purpose and operation of a partially completed program<br />
+<br />
+Develop an accurate “mental model” of a program’s major parts, the way the parts operate together, and the overall purpose the program serves<br />
+<br />
+Program Overview Section<br />
+<br />
+Focuses on major features of the program<br />
+<br />
+Evaluate<br />
+<br />
+Develop and use an<br />
+<br />
+Program<br />
+<br />
+Describes an efficient,<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+operation of a program efficient, thorough method for evaluating a program’s operation Evaluation Section thorough method used to evaluate the program’s operation Describes precisely each major problem encountered that is inefficient and lacks thoroughness<br />
+<br />
+Omits major problems encountered or describes them imprecisely Describes in detail each minor problem encountered Omits many parts of the program’s documentation. Omits or inaccurately describes the purpose, accuracy and usefulness of some or all documents Omits, states inaccurately, or describes imprecisely the additions, deletions, or modifications needed to make each document sufficiently useful Omits or inaccurately identifies what must be done to make some or all of the documentation sufficiently accurate<br />
+<br />
+Evaluate a program’s documentation<br />
+<br />
+Identify all parts of the program’s documentation Accurately determine each document’s purpose, accuracy, and usefulness Determine what, if anything, must be done to make the documentation sufficiently accurate and useful<br />
+<br />
+Documentation Evaluation Section<br />
+<br />
+Summarizes the amount and kinds of minor problems encountered Identifies all parts of the program’s documentation<br />
+<br />
+Describes accurately the purpose, accuracy, and usefulness of each part<br />
+<br />
+Describes precisely the additions, deletions, or modifications needed to make each document sufficiently useful<br />
+<br />
+Succinctly presents the information in an easy-touse table that enables the reader to quickly find relevant information for each part<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+and useful. Presents Inaccurate or incomplete list of documented and undocumented bugs Omits a description of the steps used to test documented bugs, omits steps, and results missing. Omits or describes inaccurately the undocumented bugs Omits and inaccurately describe the factors that must be addressed<br />
+<br />
+Identify, describe, and test all bugs<br />
+<br />
+Develop and use a correct, complete test to repeat each documented bug Identify all undoucmented bugs and explain why they are bugs<br />
+<br />
+Bug Evaluation Section<br />
+<br />
+Lists accurately all documented and undocumented bugs<br />
+<br />
+Describes fully steps used to test bug and test results for all documented bugs<br />
+<br />
+Describes the behavior of undocumented bugs Synthesize evaluations of the various components of a program Identify and describes the critical factors that must be addressed in preparing a plan for completing the program Determine how far each factor is from an acceptable state Discussion Section Identifies and accurately describes all of the critical factors that must be addressed<br />
+<br />
+Accurately describes how close each factor is to an acceptable state<br />
+<br />
+Fails to describe how close each factor is to an acceptable state or conveys inaccurate judgments Fails to present an overall portrait of the scope and nature of the work required or presents mistaken judgments do not provides a reliable basis for formulating a plan for completing the program<br />
+<br />
+Synthesize these general judgments into an overall evaluation of the scope and nature of the work that can form the basis of a plan for completing the program<br />
+<br />
+Characterizes the overall scope and nature of the work required in a way that provides a reliable basis for formulating a plan for completing the program<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Create a development plan for a partially completed program Recommend a development plan based on a synthesis and prioritization of problems they discovered in their evaluation Recommen dations section Describes accurately the nature and amount of work required to advance each of the program’s critical factors to a level that would enable to program to perform acceptably Omits or describes inaccurately the work required to advance each of the program’s critical factors to a level that would enable to program to perform acceptably<br />
+<br />
+Each recommendation is clearly based on issues explicitly described in the evaluation and discussion sections Provides enough detail about each recommendation to enable a manager to incorporate it into a project plan<br />
+<br />
+Recommendations are not based on issues explicitly described in the evaluation and discussion sections Describes recommendations vaguely so a manager would not be able to incorporate it into a project plan<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development Program Review Report<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently.<br />
+<br />
+Details<br />
+Provides critical information useful to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Critical information is easily accessible to the reader<br />
+<br />
+Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Writing Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Concise and appropriate writing style for project manager Report builds project manager’s confidence in team’s technical and communicatio n abilities. Uses precise terms appropriate for the reader<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence from program review<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from program review to<br />
+<br />
+Uses credible evidence to support explanations<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+support key findings Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings Uses correct spelling, grammar, etc. throughout report Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings Speaking Concisely and accurately demonstrates key features of the program operation Concisely and accurately demonstrates significant problems that define the current state of the project Concisely and accurately demonstrates significant bugs that define the current state of the project Concisely and accurately synthesizes the current state of the project Concise and accurate to support key findings Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Report persuades project manager to accept your recommendati on.<br />
+<br />
+Writing<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features of program operation Select information that demonstrates significant problems encountered<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant<br />
+<br />
+Significant problems are missing, insignificant problems are included, or irrelevant problems Significant bugs are missing, insignificant bugs are included, or irrelevant bugs<br />
+<br />
+Select information that demonstrates significant bugs<br />
+<br />
+Select information that synthesizes the current project state Select information that<br />
+<br />
+Significant factors missing from the synthesis Significant<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+recommends plans for program development Key information is presented recommendations for program development Succinctly presents key information recommendations missing Omits or inaccurately presents key information Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Create and informative and useful presentation for the project manager<br />
+<br />
+Speaking<br />
+<br />
+Handouts, visuals, demonstrations, etc. support and complement the presentation<br />
+<br />
+Uses concise, accurate, and useful support materials to support and complement the presentation<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids first-time problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting Questions are<br />
+<br />
+Team members under dress or over dress for the meeting Demonstrates lack of<br />
+<br />
+9<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+accurately, authoritatively, and respectfully answered accurate understanding of questions, and accurately and respectfully answers each Teaming Each task is independent, clearly defined, and contributes to the overall software development task understanding or the lack of ability to explain answers to questions. Lack of respect for the questioner Tasks are not independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late<br />
+<br />
+Collaborate effectively on a software development team<br />
+<br />
+Breakdown the software development project into small, independent task<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+10<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Meeting is wellorganized and executed<br />
+<br />
+Develop knowledge of individual team member skills and trust among team members<br />
+<br />
+Identify skills of each team member<br />
+<br />
+Teaming<br />
+<br />
+All major topics are presented, no time is wasted, all questions are answered in the allotted time Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks<br />
+<br />
+Omitted major topics, time not on task, not enough time to answer all questions Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+11<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Program Review</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Install and deploy</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You work for company that has bought out a smaller company that was developing several new products. The project manager has assigned your development team to evaluate one of the projects that was begun but not completed by the acquired company.  Your evaluation report will include recommendations for completing the project.  The project manager will use your recommendations to advise upper management whether to develop the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/21</id>
+    <title><![CDATA[Airport Simulation Using Queues]]></title>
+    <summary><![CDATA[A queue is a popular data structure that is commonly used when attempting to process requests.  In this assignment you will use a queue to simulate the processing of airplanes landing and taking-off at an airport.  The objectives of this assignment are to (1) gain experience researching for a solution to a problem, (2) create a high-level design as a team that can be used by developers, (3) build queue methods for adding and removing elements, and (4) improve the implementation of proper coding styles and documentation.<br />
+<br />
+This is a team assignment, and students should understand basic constructs, standard I/O, and how to implement a queue.<br />
+]]></summary>
+    <updated>2012-07-25T14:38:29-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/21"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/efc4c34ef88dad1e810b14714f2a3dcb.docx" type="application/zip" length="44493"/>
+    <category term="queues"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Airport Simulation Using Queues</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A queue is a popular data structure that is commonly used when attempting to process requests.  In this assignment you will use a queue to simulate the processing of airplanes landing and taking-off at an airport.  The objectives of this assignment are to (1) gain experience researching for a solution to a problem, (2) create a high-level design as a team that can be used by developers, (3) build queue methods for adding and removing elements, and (4) improve the implementation of proper coding styles and documentation.<br />
+<br />
+This is a team assignment, and students should understand basic constructs, standard I/O, and how to implement a queue.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, test results, documentation, listening to presentations, oral presentations, reflection, team meetings, tech report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design, linear data structures, research, problem solving</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">TEAM DESIGN DOCUMENT<br />
+Technical Task: Most real-world software development projects involve working as a team.<br />
+Professional Setting: Students work for a software company.<br />
+Professional Role: Students are members<br />
+Deliverable: Design document.<br />
+Real-world Audience: A project manager.<br />
+How the Audience will USE the students&#039; communication: The project manager will use the students&#039; design document to do the following: (1) Develop a plan for completing the project, and (2) Determine whether the team is capable of completing the project.<br />
+Additional Notes: Whether it is working with other developers, business people, managers, customers, or users, you must be able to adapt to different personalities and deliver a working product that meets the customer’s requirements.<br />
+<br />
+<br />
+ADDITIONAL SCENARIO:<br />
+In addition, as a software developer in the work force, you may have to do some research to find a solution to a problem.  In this assignment, you will be given a sub-task (handling of the probability of an airplane arriving or taking off) for which there is not a solution in your textbook.  For example, this will require you to read other resources (such as the internet) to understand how to do random number generation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/20</id>
+    <title><![CDATA[Risks in Estimating and Managing Software Development Projects Technical Memo]]></title>
+    <summary><![CDATA[Issues and challenges in estimating project effort.  Examine the characteristics of software projects that make them a challenge to partition. Examine roles and responsibilities in a software team, and management issues of teams.]]></summary>
+    <updated>2012-07-25T21:51:33-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/20"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/9ed56c5a518dcc4c4aa6c9886c9e3fac.docx" type="application/zip" length="21836"/>
+    <category term="Risk"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Risks in Estimating and Managing Software Development Projects Technical Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Issues and challenges in estimating project effort.  Examine the characteristics of software projects that make them a challenge to partition. Examine roles and responsibilities in a software team, and management issues of teams.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Chapter 2 &quot;The Mythical Man-Month&quot; from Essays on Software Engineering by Fredrick P. Brooks</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing<br />
+Reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Research<br />
+Project management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Many software development projects are delivered late, or fail all together, due to mismanagement. One aspect of effective management is to make realistic estimates of the effort (or time) needed to create a software product. Another aspect is effective team management. This reading presents some rules of thumb from a leader in the software engineering community.  In this memo to your supervisor, you will identify what you consider to be the most important point in helping to reduce risks in the development process.<br />
+<br />
+In an internship or in your career you will likely be called upon to estimate the effort required for a project. This knowledge will give you a head-start in your internship or job situation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

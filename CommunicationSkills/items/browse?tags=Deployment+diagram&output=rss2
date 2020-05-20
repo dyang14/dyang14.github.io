@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=Deployment+diagram&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:16:07 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Physical Architecture and Deployment Diagrams]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/78</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Physical Architecture and Deployment Diagrams</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Sketch a deployment diagram describing the implementation of a system.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">An architecture is the set of significant decisions about the organization of a software system (section 13.4). The physical architecture is the assignment of concrete software components, such as programs, databases, webservers, and communication paths to machines like servers and desktop workstations (Chap 38). The physical architecture is the realization of the logical architecture. The purpose of this homework is to introduce deployment diagrams as a useful way to communicate the physical or deployment architecture.<br />
+<br />
+For this assignment your supervisor will review a sketch of the layered architecture and deployment diagram for your team’s project.  </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/cd86e08df2fa3e2a5e2b0b08e2a8ccd9.docx">HW_21.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:31:59 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/cd86e08df2fa3e2a5e2b0b08e2a8ccd9.jpg" type="application/zip" length="23687"/>
+    </item>
+  </channel>
+</rss>

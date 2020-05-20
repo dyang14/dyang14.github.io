@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=Domain+model&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:11:25 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Lab - Domain Model  using UML Class Diagram]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/86</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Lab - Domain Model  using UML Class Diagram</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Create UML class diagrams that represent a problem domain from a requirement specification.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Class Period</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">In this lab you will use our UML diagramming tool to create a domain model for your project. The domain model is created using class diagram notation, although we do not model methods in a domain model.  The domain model is a design tool to help bridge the gap from the real-world object to software objects in your code.  Your team can use the domain model to help guide the software design process.<br />
+<br />
+Experience with UML modeling will be applicable to potential internships or careers.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/fd7829d32509b3b1e44ee77cdfe54f8e.docx">Lab#3 UML DomainModel.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 20:38:56 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/fd7829d32509b3b1e44ee77cdfe54f8e.jpg" type="application/zip" length="68516"/>
+    </item>
+    <item>
+      <title><![CDATA[Domain Model Diagram]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/52</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Domain Model Diagram</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Create UML Class diagrams that represent a problem domain from a requirement</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to introduce an object-oriented analysis tool called the domain model. The domain model is a visual representation of the objects in the real-world problem that you are trying to solve.  These objects are called conceptual classes, not software classes, because they represent objects in the problem space, not the solution.   In this assignment you will sketch a domain model, illustrating the real-world objects for one of your project use cases.  Your supervisor will review the domain model and offer comments to help you to refine your understanding of the use case.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/9e11631a8246c1cd098c6dc70ad26291.docx">HW_9.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:50:43 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/9e11631a8246c1cd098c6dc70ad26291.jpg" type="application/zip" length="18639"/>
+    </item>
+  </channel>
+</rss>

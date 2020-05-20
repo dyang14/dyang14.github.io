@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/binary+search+trees?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:27:59 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Animal Guessing Game with a Binary Search Tree]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/27</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Animal Guessing Game with a Binary Search Tree</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A binary search tree is a data structure that is used to handle simple decisions.  In this assignment you will use a binary search tree to store information and then search through the information for a decision.  While a binary search tree is typically for small databases, it is still a potential data structure for many applications, as well as aiding in the understanding of trees (a popular data structure) in general. Decision trees (a more specific type of tree), is commonly used in machine learning and data mining for making intelligent decisions.  The objectives of this assignment are to (1) gain experience researching for a solution to a problem, (2) design a binary search tree (BST) class, (3) design and implement the building of a BST, as well as the methods to add to and search in a BST, and (4) improve written skills through the implementation of proper coding styles and documentation.<br />
+<br />
+This assignment should be late in the semester, as the students will need to use many aspects of what they have learned over the semester to determine the proper data structures.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Michael Main and Walter Savitch’s &quot;Data Structures and Other Objects Using C++&quot;, Fourth Edition</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, test results, documentation, individual presentations, oral presentations, reflection, tech report, video</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, speaking, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, Tools, Design, Research, Trees, Comments, Documentation, Problem Solving, Searching</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">RESEARCH<br />
+Technical Task: In order to learn technical material, one must be able to decipher key concepts through reading.<br />
+Professional Setting: Student works for a software company.<br />
+Professional Role: Student works along on a task for a project.<br />
+Deliverable: Design decisions discussed in design document.<br />
+Real-world Audience: Team Lead.<br />
+How the Audience will USE the students&#039; communication: The Team Lead will use the student&#039;s design decision(s) to determine the feasibility of their proposed solution.<br />
+Additional Notes: Of course, the reading of technical material is not like reading a novel, and one must be able to transfer the pertinent information to a useful form. The two methods of communicating design to others are: speaking and writing. In order for others to digest your intentions, one must learn to effectively write their ideas so that it can be interpreted at the reader’s discretion – either due to remoteness or time.<br />
+<br />
+<br />
+ADDITIONAL SCENARIO:<br />
+When working in the real-world, many times you will be presented with a problem or instructions through dialogue with peers or management.  Often, that will be the only instructions you will receive (i.e., nothing in written form).  If you do not listen to what the other person is saying, you may miss a vital piece of information to the success of your assignment. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/4fbfbff0af42717b25169be67dc36d02.docx">NSF CPATH Data Structures and Algorithms - Animal Guessing Game.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:21:57 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/4fbfbff0af42717b25169be67dc36d02.jpg" type="application/zip" length="42487"/>
+    </item>
+  </channel>
+</rss>

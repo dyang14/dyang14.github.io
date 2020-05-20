@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=Function&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:17:36 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Programming Concept Iterative White Paper]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/84</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Programming Concept Iterative White Paper</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment will give students a better understanding of fundamental software development concepts.  It will allow them to discuss these concepts with others to refine their understanding.  It will also give them practice documenting knowledge in a written form.<br />
+<br />
+There are 4 stages to this assignment.  In the first, the students research and create a report about one of a group of related programming concepts.  In the second, the bring their research into the classroom and share it with the other students that have researched the same topic.<br />
+<br />
+This assignment is a four step process.  The first step is the homework assignment given in class and to be completed by each student individually.  At the instructor discretion the concept topics available to the students can be either over material already presented in class or new material not yet covered in class.  The second step is an in-class collaborative lab.  The third step is a follow-up homework assignment.  Again, individually undertaken by each student.   The fourth step is a quiz to evaluate student concept learning.  An optional step is an interactive, in-class session to discuss effective format, writing styles, research and writing techniques.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">white paper</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, teaming, speaking, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">control structures, iteration, sequence, function, varies</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Since we have chosen a fast-paced career where technology, development environments, and device platforms frequently change, we must develop our skills to learn new material effectively.  We are not alone as we tackle these challenges.  We can rely upon knowledge that we already have and we can collaborate to assist one another to gain more expertise.  It is through the connections we make both to knowledge we have and to the people we know that will effective, productive, and valued in our careers.<br />
+<br />
+In the workplace, we will often be asked to learn something new and bring that knowledge back to our team.  How we give this knowledge back to our teams varies from informal conversation, to multi-recipient e-mails, to a very polished, published document sometimes called a white paper. <br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">This assignment can be modfied to incorporate any major course concept.  The example provided within used control stuctures as an an example.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/5f6ad0772af0784dd494f9f35625b88c.docx">NSF  CPATH Concept Writing Assignment.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:41:07 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/5f6ad0772af0784dd494f9f35625b88c.jpg" type="application/zip" length="36133"/>
+    </item>
+  </channel>
+</rss>

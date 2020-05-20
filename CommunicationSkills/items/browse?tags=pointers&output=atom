@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse?tags=pointers&amp;output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:09:58-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse?tags=pointers&amp;output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=pointers&amp;output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=pointers&amp;output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/41</id>
+    <title><![CDATA[Ciphers and the RSA Encryption Algorithm:<br />
+Introduction to C-based memory management<br />
+]]></title>
+    <summary><![CDATA[Implementation of the Caeser Cypher and RSA encryption with the goal of exposing students to C memory management issues.<br />
+<br />
+In this assignment students will implement both a simple caeser cypher, followed by an RSA encryption/decryption functions, using only constructs supported in C (malloc/free, C-style strings, and the C string.h functions; use of streams is still permitted).  Given these restrictions, the students are forced to grapple with typical memory management issues (e.g. memory allocation, pointer-based parameter passing, segmentation faults) while implementing a tool many will find interesting.<br />
+<br />
+Duration: 3 weeks<br />
+<br />
+Background: Students are assumed to have 1-2 semesters of an imperative or objected oriented language (e.g. Java) and to have seen the basic syntax of C, but are not assumed to have worked with pointers.   All required background on RSA and related number theory is explained within the lab (or hidden in provided code), but the student may need supplemental instruction on the basic C functions (e.g. malloc, strcat) and C bit-operators (by the instructor or through some written text).<br />
+]]></summary>
+    <updated>2012-07-30T13:28:58-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/41"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/d6a085118970b4d84e564ff0bb328c42.docx" type="application/zip" length="57624"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/a17b9baf968f008a642b8b940aabbb65.zip" type="application/zip" length="16488"/>
+    <category term="encryption"/>
+    <category term="malloc"/>
+    <category term="pointers"/>
+    <category term="strings"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Ciphers and the RSA Encryption Algorithm:<br />
+Introduction to C-based memory management<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Implementation of the Caeser Cypher and RSA encryption with the goal of exposing students to C memory management issues.<br />
+<br />
+In this assignment students will implement both a simple caeser cypher, followed by an RSA encryption/decryption functions, using only constructs supported in C (malloc/free, C-style strings, and the C string.h functions; use of streams is still permitted).  Given these restrictions, the students are forced to grapple with typical memory management issues (e.g. memory allocation, pointer-based parameter passing, segmentation faults) while implementing a tool many will find interesting.<br />
+<br />
+Duration: 3 weeks<br />
+<br />
+Background: Students are assumed to have 1-2 semesters of an imperative or objected oriented language (e.g. Java) and to have seen the basic syntax of C, but are not assumed to have worked with pointers.   All required background on RSA and related number theory is explained within the lab (or hidden in provided code), but the student may need supplemental instruction on the basic C functions (e.g. malloc, strcat) and C bit-operators (by the instructor or through some written text).<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John Karro</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">coding, short-answer prose</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, pointer and memory management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You are a programmer for a tech. company who has been tasked with setting up a protocol for secure communications – allowing users to exchange emails without that cannot be read by outsiders.  To do so you will implement RSA public-key encryption; because the speed of encryption/decryption is considered a priority, you will implement these in C (as opposed to C++ or Java).<br />
+<br />
+From a pedagogical perspective, the point of this assignment is to give you exposure to C-style programming, helping you to understand memory manipulation.   We will continue to use the C++ compiler (avoiding the hassle of installing a C compiler), but you will be restricted to using only C libraries.   Hence you experience working with the C programming language, and have you think about issues that C++ frequently (and Java always) hides from the programmer.  In the course of this project you will also look at both a common cipher algorithm and RSA, one of the core encryption algorithms.  RSA was the first public-key encryption algorithm, and the mathematics on which it is built is similar to many more sophisticated encryption algorithms.  You are not expected to understand the mathematical basis for RSA, but by the end of this project you should understand how public-private encryption key pairs are generated, how they are used, and why they are so useful in computer security.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

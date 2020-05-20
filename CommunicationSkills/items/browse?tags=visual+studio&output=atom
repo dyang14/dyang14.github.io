@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse?tags=visual+studio&amp;output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:08:13-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse?tags=visual+studio&amp;output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=visual+studio&amp;output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=visual+studio&amp;output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/32</id>
+    <title><![CDATA[Point-Based Fractal Generation: An introduction to C++ Programming]]></title>
+    <summary><![CDATA[Introduction to C++: basic syntax, constructs, and objects for Java programmers.  Introduction to Subversion and Visual Studios.<br />
+<br />
+This is intended as the introductory project in a sophomore-level course introducing students both basic data structures and to C++ (assuming two semesters of Java).  This project focuses on the latter: giving students their first experience with the C++ language (as well as the Visual Studios IDE and the SVN-based submission method).  <br />
+<br />
+In this assignment the student: (1) learns to use SVN; (2) writes the obligatory C++ Hello World program within the Visual Studios editor; (3) implements functionality for generating BMP files; (4) implements the method of a BMP interface class using a row-major matrix representation; and (5) generates several simple fractal images using the C++ Complex class and operators.<br />
+<br />
+Note: The provided library allows for easy generation of Windows-friendly .bmp files, but requires the Microsoft C++ compiler to work.<br />
+<br />
+Duration: 2.5 weeks.<br />
+<br />
+Background: Assume 2 semesters of Java programming.  Students are not assumed to have seen C++, Visual Studios, or Subversion.  Supplementary materials or lecture on Subversion may need to be provided.<br />
+]]></summary>
+    <updated>2012-07-30T13:30:49-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/32"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/005fcb83b39089658292d999593c1837.docx" type="application/zip" length="645985"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/7fbad3abf8a627bf5aa71f0624f5b0f1.zip" type="application/zip" length="9118"/>
+    <category term="algorithms"/>
+    <category term="C++"/>
+    <category term="fractals"/>
+    <category term="programming"/>
+    <category term="svn"/>
+    <category term="visual studio"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Point-Based Fractal Generation: An introduction to C++ Programming</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Introduction to C++: basic syntax, constructs, and objects for Java programmers.  Introduction to Subversion and Visual Studios.<br />
+<br />
+This is intended as the introductory project in a sophomore-level course introducing students both basic data structures and to C++ (assuming two semesters of Java).  This project focuses on the latter: giving students their first experience with the C++ language (as well as the Visual Studios IDE and the SVN-based submission method).  <br />
+<br />
+In this assignment the student: (1) learns to use SVN; (2) writes the obligatory C++ Hello World program within the Visual Studios editor; (3) implements functionality for generating BMP files; (4) implements the method of a BMP interface class using a row-major matrix representation; and (5) generates several simple fractal images using the C++ Complex class and operators.<br />
+<br />
+Note: The provided library allows for easy generation of Windows-friendly .bmp files, but requires the Microsoft C++ compiler to work.<br />
+<br />
+Duration: 2.5 weeks.<br />
+<br />
+Background: Assume 2 semesters of Java programming.  Students are not assumed to have seen C++, Visual Studios, or Subversion.  Supplementary materials or lecture on Subversion may need to be provided.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John E. Karro</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Based in labs and libraries developed by Dr. William Brinkman for CSE 274 (Introduction to Data Structures) at Miami University.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Code, short-answer prose</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Programming language basics, object oriented language features, tools </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have been hired as programmer at a graphics company and have discovered you need to learn C++.  Now.  Coming down the publishing pipeline is a book on Fractals – mathematically generated images that are frequently used as art, screen savers, Hollywood CGIs, etc…, hopefully displacing the classic book on the subject.  As a way to help you bootstrap yourself into the language quickly, they have assigned you to start generating Fractal figures for the book.  In order to do this, you are also going to need to use Subversion (a tool for project management), Visual Studio (an Microsoft IDE), a C++ library for generating graphics file in .bmp format, and how to generate a Fractal.<br />
+<br />
+Importance: In this assignment you are learning some fundamental skills needed to work as a programmer in Industry.  Subversion is representative of repository tools used to store, exchange, and track versions of coding projects.  Visual Studio is a useful alternative to Eclipse for writing and debugging code.  And C++ is one of the more important languages, offering superior speed to Java in an objected oriented framework.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

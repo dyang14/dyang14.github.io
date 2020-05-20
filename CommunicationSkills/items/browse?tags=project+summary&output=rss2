@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=project+summary&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:19:20 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Final Poster, Presentation & Demo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/106</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Final Poster, Presentation &amp; Demo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Capstone</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment allows presenters the opportunity to orally summarize their team’s project in a very short amount of time (2.5-3 minutes) for a diverse audience.  Within that amount of time, the presenter will need to attract the audience, sell the project idea and show technical expertise.  As a part of this event, the entire team has the opportunity to demonstrate their project using a tradeshow approach.  This gives students experience listening to and answering questions one-on-one or with small numbers of interested parties.  Students also gain experience with developing professional posters.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Margaret Heil</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">NA</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Formal short elevator speech-type presentation; informal speaking (tradeshow/demonstration); poster creation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Speaking, teaming, listening, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Deliver audience-sensitive oral project progress reports that include introductions &amp; conclusions, problem descriptions, requirements specs, design descriptions, test plans/results and task plans.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Managers often ask employees to explain a technical project to audience members (e.g., customers, potential customers, end users) with various levels of technical expertise.  This serves as an opportunity for managers to sell products and their company.  <br />
+<br />
+Preparing this type of presentation also provides the developing team a different perspective on both the project’s broad spectrum and its details.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/ab7a93a18445a587ebe48698dbb215de.docx">FinalPosterPresentation_DemoAssignment_Rubric.docx</a></div>]]></description>
+      <pubDate>Wed, 25 Jul 2012 07:43:02 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/ab7a93a18445a587ebe48698dbb215de.jpg" type="application/zip" length="36302"/>
+    </item>
+  </channel>
+</rss>

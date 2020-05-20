@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=Deployment&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:14:24 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Software Architecture Document – Architectural Decisions Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/70</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Software Architecture Document – Architectural Decisions Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Document a project&#039;s software architecture and implementation using multiple views.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+                <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Install and deploy</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to introduce the Software Architecture Document (SAD). The audience for this document is other software engineers (not the client). The Software Architecture Document describes the big ideas of the design and implementation of your software. It is written for future software engineers who need to understand the how the system is implemented. For example, next semester a new team might take over your project and will need to understand the rationale behind your design and how the software is organized. Information like this is especially important for products like ours which we hope will be used for many years to come. The SAD is a compilation of “technical” design documents. These can include:<br />
+• Text descriptions, such as technical memos, that summarize important design decisions or characteristics<br />
+• Design diagrams, such as UML class and sequence diagrams, that describe static and dynamic design of your software<br />
+<br />
+In this memo to your supervisor please document an important architectural decision made in for implementation of your team project.  Your supervisor will use this to monitor the quality of the product’s implementation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/dac23541037a34cb7a61fbc09b7b45f0.docx">HW_16.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:17:04 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/dac23541037a34cb7a61fbc09b7b45f0.jpg" type="application/zip" length="23644"/>
+    </item>
+  </channel>
+</rss>

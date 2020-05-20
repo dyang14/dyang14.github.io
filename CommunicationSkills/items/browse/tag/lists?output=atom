@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/tag/lists?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:27:52-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/tag/lists?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/lists/page/1?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/lists/page/1?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/26</id>
+    <title><![CDATA[Searching and Replacing Text in a Large File]]></title>
+    <summary><![CDATA[The assignment has two phases. In the first phase, students work in teams, each team doing a design document and a presentation. In the second each individual student implements one of the designs. Students use existing data structures in the Java API to solve the problem of doing global search/replace operations on a given input file.<br />
+<br />
+Students are expected to be familiar with file I/O, complexity (big-oh), and the efficiency of operations in selected Java API&#039;s]]></summary>
+    <updated>2012-07-31T11:21:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/26"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/7ea5b4efb33b43a8abf6e27a7253a7fc.html" type="text/html" length="20202"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/60087417ee606a760059232eb08a25b0.doc" type="application/msword" length="34304"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/674d3dfe0eb2a510e2433951426f0520.xlsx" type="application/zip" length="48107"/>
+    <category term="compound data structures"/>
+    <category term="lists"/>
+    <category term="search trees"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Searching and Replacing Text in a Large File</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The assignment has two phases. In the first phase, students work in teams, each team doing a design document and a presentation. In the second each individual student implements one of the designs. Students use existing data structures in the Java API to solve the problem of doing global search/replace operations on a given input file.<br />
+<br />
+Students are expected to be familiar with file I/O, complexity (big-oh), and the efficiency of operations in selected Java API&#039;s</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Matt Stallmann</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design document,<br />
+Oral presentation of design,<br />
+Interpreting oral presentation,<br />
+Peer evaluation,<br />
+Navigating an API,<br />
+Creating a test plan<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, writing, speaking, teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design creation/specification,<br />
+Research,<br />
+Linear data structures,<br />
+Program design,<br />
+Selection of algorithms and data structures,<br />
+Trees/heaps,<br />
+Testing,<br />
+Team formation and evaluation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">This assignment explores an approach to searching and replacing data in a text file motivated by the following situation. Suppose that the only strings you are allowed to replace are words, contiguous strings with no embedded spaces or punctuation.<br />
+<br />
+A situation like this might occur if you want to rename variables in a program. The other feature of this situation is that the file on which search and replace is to be done could be huge while the number of distinct words is small. And a large number of search and replace operations will be done as a single batch. Imagine a long list of updates to a large piece of software.<br />
+<br />
+The team design and presentation aspect of this assignment is typical in the project planning phase of software development. A requirements engineer might propose a new feature (in this case word search/replace). The developers and testers need to communicate about designs that will incorporate the new feature.  A test plan is a critical aspect of the communication between a requirements engineer and the designer. It ensures that each understands the expected behavior of the software under a variety of circumstances.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The three files are:<br />
+<br />
+project2.html - the actual assignment<br />
+<br />
+team-eval.doc - form used for peer evaluation of team members<br />
+<br />
+survey_analysis.xlsx - results of an attitude survey</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

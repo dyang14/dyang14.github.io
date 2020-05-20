@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=design+creation&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:06:56 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Design Proposal and Rationale]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/38</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Design Proposal and Rationale</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text"><p>For any set of requirements, students generate a design proposal rationale that includes a UML class diagram. The rubric evaluates how the students model the requirements and how they justify their design decisions and how the design meets the requirements.&nbsp; The objectives of this assignment are (1) to articulate a class diagram for an object-oriented system and (2) justify the decisions as modeled by the class diagram.</p>
+<p>Prereqs: Students are expected to know advanced OO concepts like composition and inheritance.&nbsp; Additionally, students should be able to model an OO system using UML and should be familiar with design patterns, such as state, strategy, singleton, MVC.</p>
+<p>The team size is flexible. &nbsp;</p>
+<p>Any set of requirements could be used with this assignment.&nbsp;&nbsp; For a CS 2 class, the requirements usually consist of 3-4 use cases and the class diagram is typically 3-7 classes with a minimum of one inheritance and composition relationship.</p>
+<p>This assignment is has been used as a deliverable in a larger programming assignment that spans multiple iterations.&nbsp; Students turn in a design document or proposal as part of an Iteration 0 along with a black box test plan.&nbsp; For an example of how the assignment has been used, please see the <a title="Somewhat Simplified Solitaire" href="http://courses.ncsu.edu/csc216/common/2011_Fall/3_Project/" target="_blank">Somewhat Simplified Solitaire</a> project.&nbsp; Please note that the project uses an older version of this assignment. &nbsp;</p></div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sarah Heckman, Ed Gehringer</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design proposal, UML diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">writing, teaming, reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">A customer has provided your management team with a set of requirements.  Your manager has requested that you and your co-workers each propose a design for the static layout of the system by identifying the objects, their state and behavior, and the relationships between the objects in the system. Your manager will then choose a design that best describes the requirements for implementation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-pdf"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/08be8d2c0379f604820e9a86cdf4d96c.pdf">DesignProposal.pdf</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/c726d9b5775ad819cf41b807070763de.docx">DesignProposal.docx</a></div><div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/ef1cac863b2ba2190bb96c6d22ad71d1.doc">DesignProposal_Template.doc</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:33:20 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/08be8d2c0379f604820e9a86cdf4d96c.jpg" type="application/pdf" length="99647"/>
+    </item>
+    <item>
+      <title><![CDATA[Animal Guessing Game with a Binary Search Tree]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/27</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Animal Guessing Game with a Binary Search Tree</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A binary search tree is a data structure that is used to handle simple decisions.  In this assignment you will use a binary search tree to store information and then search through the information for a decision.  While a binary search tree is typically for small databases, it is still a potential data structure for many applications, as well as aiding in the understanding of trees (a popular data structure) in general. Decision trees (a more specific type of tree), is commonly used in machine learning and data mining for making intelligent decisions.  The objectives of this assignment are to (1) gain experience researching for a solution to a problem, (2) design a binary search tree (BST) class, (3) design and implement the building of a BST, as well as the methods to add to and search in a BST, and (4) improve written skills through the implementation of proper coding styles and documentation.<br />
+<br />
+This assignment should be late in the semester, as the students will need to use many aspects of what they have learned over the semester to determine the proper data structures.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Michael Main and Walter Savitch’s &quot;Data Structures and Other Objects Using C++&quot;, Fourth Edition</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, test results, documentation, individual presentations, oral presentations, reflection, tech report, video</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, speaking, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, Tools, Design, Research, Trees, Comments, Documentation, Problem Solving, Searching</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">RESEARCH<br />
+Technical Task: In order to learn technical material, one must be able to decipher key concepts through reading.<br />
+Professional Setting: Student works for a software company.<br />
+Professional Role: Student works along on a task for a project.<br />
+Deliverable: Design decisions discussed in design document.<br />
+Real-world Audience: Team Lead.<br />
+How the Audience will USE the students&#039; communication: The Team Lead will use the student&#039;s design decision(s) to determine the feasibility of their proposed solution.<br />
+Additional Notes: Of course, the reading of technical material is not like reading a novel, and one must be able to transfer the pertinent information to a useful form. The two methods of communicating design to others are: speaking and writing. In order for others to digest your intentions, one must learn to effectively write their ideas so that it can be interpreted at the reader’s discretion – either due to remoteness or time.<br />
+<br />
+<br />
+ADDITIONAL SCENARIO:<br />
+When working in the real-world, many times you will be presented with a problem or instructions through dialogue with peers or management.  Often, that will be the only instructions you will receive (i.e., nothing in written form).  If you do not listen to what the other person is saying, you may miss a vital piece of information to the success of your assignment. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/4fbfbff0af42717b25169be67dc36d02.docx">NSF CPATH Data Structures and Algorithms - Animal Guessing Game.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:21:57 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/4fbfbff0af42717b25169be67dc36d02.jpg" type="application/zip" length="42487"/>
+    </item>
+  </channel>
+</rss>

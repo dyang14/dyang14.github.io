@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse?tags=experiment&amp;output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:11:50-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse?tags=experiment&amp;output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=experiment&amp;output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=experiment&amp;output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/55</id>
+    <title><![CDATA[Counting the Number of Occurrences of Each Word in a Text File - an Experimental Comparison of Implementations]]></title>
+    <summary><![CDATA[There are many different ways to count the number of distinct occurrences of each word in a text file. In this assignment students are asked to implement and compare the efficiency of several of these methods, including self-adjusting lists, dictionaries (TreeMap class), and sorting.<br />
+<br />
+The key feature of this assignment is that each student is expected to generate a report detailing and interpreting results of experiments that compare the runtime of different implementations. The result is a professional quality report with a description of the experimental design and tables/charts.<br />
+<br />
+Students are expected to know how to implement doubly-linked lists and navigate the Java API. They are also expected to know complexity (big-oh notation).]]></summary>
+    <updated>2012-07-26T13:14:09-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/55"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/e50ac90f0591b014c608aa8dcbf32a07.html" type="text/html" length="16878"/>
+    <category term="experiment"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Counting the Number of Occurrences of Each Word in a Text File - an Experimental Comparison of Implementations</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">There are many different ways to count the number of distinct occurrences of each word in a text file. In this assignment students are asked to implement and compare the efficiency of several of these methods, including self-adjusting lists, dictionaries (TreeMap class), and sorting.<br />
+<br />
+The key feature of this assignment is that each student is expected to generate a report detailing and interpreting results of experiments that compare the runtime of different implementations. The result is a professional quality report with a description of the experimental design and tables/charts.<br />
+<br />
+Students are expected to know how to implement doubly-linked lists and navigate the Java API. They are also expected to know complexity (big-oh notation).</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Matt Stallmann</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">coding,<br />
+reading design description,<br />
+experimental design,<br />
+gathering experimental data,<br />
+charting,<br />
+interpreting data,<br />
+writing a report<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">linear data structures,<br />
+program design,<br />
+object oriented language features,<br />
+standard library integration,<br />
+big-oh analysis</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">When analyzing a piece of text, it is sometimes useful to count the number of times each word appears and to identify the words that occur most often. One might, for example, process Twitter traffic or text messages among a specific group of people and, after filtering out words that are common in all English text (a, an, the, ...), figure out what the primary subject of the conversation is. In the workplace a developer may be asked to explore a variety of implementations of a frequently used system utility and write a report describing the advantages and disadvantages of each, with emphasis on efficiency.</div>
+                    </div><!-- end element -->
+                <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">This assignment can be used even if the students are not familiar with binary search tree implementations, as long as they can figure out how to use the TreeMap API.<br />
+<br />
+The assignment can be adapted to C++, which also has a map class in the STL.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/data+structure+adaptation?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:28:58 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Google Trends: Designing Data Structures
+]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/54</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Google Trends: Designing Data Structures<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Linked list creation and manipulation; simulation of card deck shuffling<br />
+<br />
+Students start with the implementation of a basic linked last class and selected functionality designed to force them to thin through the issues of modifying lists without destroying list integrity.  Following this then they use the list to model a standard deck of cards, and implement a Monte Carlo simulation to determine the required number of times the deck must be shuffled in order to ensure a random ordering.<br />
+<br />
+Duration: 2 weeks<br />
+<br />
+Background: The student must be familiar with basic C++ syntax, C++ classes, and basic C++ memory management.  There is no assumption of a statistical background: relevant statistical tools (chi-square) is explained at high-level in the documentation and is provided as a code library.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John Karro, William Brinkman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">code, runtime-analysis, short-answer prose</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, hash tables, complexity analysis, linear data structures</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Workplace Scenario<br />
+You have been hired by a major Casino chain to verify the Bayer-Diaconis theorem, which purports to prove how many times a 52-card playing deck must be riffle-shuffled in order to completely randomize it (that is, make sure that, when done, each card could be anywhere in the deck with equal probability – regardless of where it started.).  It is extremely important to the Casino that, before each deal at the Black Jack table, a deck be shuffled enough to make the order random. Failure to do so could lead to potential biases that a player might exploit.  But Bayer-Diaconis is an analytic proof – a logical deduction from first principles.  Your employer wants empirical evidence that Bayer-Diaconis is correct.  One possibility is to have you shuffle the desk for a few billion years and track where the cards end up, but that is impractical.  What is practical is to run a simulation and apply a basic statistical tool to establish the actual bound.<br />
+<br />
+Importance: Using simulation to study the behavior of complex systems is one of the primary functions of Computer Science, and this project will expose you to some of the basic principles of the area.  At a lower level, it will also require you to work with linked lists – arguably one of the two most important data structures we use.  <br />
+<br />
+You will also be asked to read investigate the linked-list data structure and discuss aspects of the reading.  In reality, you will often need to pick a data structure appropriate to your problem, frequently choosing between established structures you are unfamiliar with.  This will involve a certain degree of research: reading and understanding papers or text on the options, and possibly defending your decision to a colleague, boss, or client.  The questions in this assignment are intended both to test your understanding and to make sure you can coherently explain what you have learned to another party.  <br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/13b4fba8ba2a945cd22f56eaed7e752a.zip">materials.zip</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/f47ca0a325306fcde1e4a8f6973b5562.docx">Proj4.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:52:32 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/13b4fba8ba2a945cd22f56eaed7e752a.jpg" type="application/zip" length="73189"/>
+    </item>
+  </channel>
+</rss>

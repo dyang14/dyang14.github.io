@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 18:43:16 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Characterizing Communication Instruction in Computer Science and Engineering Programs: Methods and Applications]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/131</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Characterizing Communication Instruction in Computer Science and Engineering Programs: Methods and Applications</div>
+                    </div><!-- end element -->
+                <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">“Incorporating Communication Learning Outcomes<br />
+Across the Computer Science (CS) and Software Engineering<br />
+(SE) Curriculum” is an NSF-funded project that aims to identify<br />
+the communication skills, specifically those involving reading,<br />
+writing, speaking, and teaming, needed by CS and SE graduates<br />
+and then determine how these skills can be taught within CS and<br />
+SE curricula. This paper presents the results of our first two<br />
+years of studying the programs at Miami University and North<br />
+Carolina State University to determine the kinds of<br />
+communication utilized in our courses and how communication is<br />
+taught and assessed. When looking at student attitudes towards<br />
+communication our analyses suggest that students do not<br />
+consider technical (professional) activities such as code reading,<br />
+writing, and inspections as communication activities, and the<br />
+same applies to more complex genres such as software testing or<br />
+design. They also appear to have difficulty relating writing and<br />
+reading that may take place in the context of the courses to what<br />
+they might be doing as software engineers and computer<br />
+scientists once they start working. On the other hand, initial<br />
+results indicate that our students’ communications skills increase<br />
+steadily throughout their stay in the university. We have also<br />
+identified potential strategies for improved instruction in<br />
+communication.</div>
+                    </div><!-- end element -->
+                        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Publication Item Type Metadata</h2-->
+                <div id="publication-item-type-metadata-bibliography" class="element">
+        <h3>Bibliography        </h3>
+                                    <div class="element-text">&quot;Characterizing Communication Instruction in Computer Science and Engineering Programs: Methods and Applications&quot;, Janet E. Burge, Gerald C. Gannod, Paul V. Anderson, Kara Rosine, Mladen A. Vouk, and Michael Carter, in Proceedings of the 2012 Frontiers in Education Conference, October 2012.</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></description>
+      <pubDate>Mon, 22 Jul 2013 12:56:19 -0400</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[First Steps Toward Integration Communication Instruction Throughout Computer Science and Software Engineering Curricula]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/130</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">First Steps Toward Integration Communication Instruction Throughout Computer Science and Software Engineering Curricula</div>
+                    </div><!-- end element -->
+                                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Publication Item Type Metadata</h2-->
+                <div id="publication-item-type-metadata-bibliography" class="element">
+        <h3>Bibliography        </h3>
+                                    <div class="element-text">&quot;First Steps Toward Integration Communication Instruction Throughout Computer Science and Software Engineering Curricula&quot;, Janet E. Burge, Paul V. Anderson, Michael Carter, Gerald C. Gannod, Mladen A. Vouk, Computers in Education Journal, ASEE, April-June 2012 issue, Vol 3(2), pp. 34-48.</div>
+                    </div><!-- end element -->
+            <div id="publication-item-type-metadata-url" class="element">
+        <h3>URL        </h3>
+                                    <div class="element-text">http://www.asee.org/papers-and-publications/publications/division-publications/computers-in-education-journal/papers/BurgeFirst.pdf</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></description>
+      <pubDate>Mon, 22 Jul 2013 12:39:24 -0400</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Auto Music System Part 4 - GUI Construction]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/129</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Auto Music System Part 4 - GUI Construction</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is Part 4 of a series of assignments that have to do with an automobiles audio system. Part 1 and Part 2 must be completed before part 4 can be done.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Paul Cantonwine</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Paul Cantonwine</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-date" class="element">
+        <h3>Date        </h3>
+                                    <div class="element-text">7/30/2012</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-type" class="element">
+        <h3>Type        </h3>
+                                    <div class="element-text">Assignment</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Program code and comments. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+                <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">JAVA GUI Programming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have ben asked to create a GUI for the Car Audio Music System simulator</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/2089e0777640e82d67fcecbc4f78b25d.doc">Auto Music System Part4 Code GUI using classes coded in Part2-CPATH.doc</a></div>]]></description>
+      <pubDate>Mon, 30 Jul 2012 16:31:45 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/2089e0777640e82d67fcecbc4f78b25d.jpg" type="application/msword" length="65536"/>
+    </item>
+    <item>
+      <title><![CDATA[Make an Assignment]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/128</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Make an Assignment</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Give student groups a concept/data structure/algorithm and ask them to create an assignment that utilizes that idea. The group must generate the following:<br />
+<br />
+	a) An assignment description to be given to the student<br />
+	b) A solution to the assignment<br />
+	c) A grading criteria<br />
+	d) A set of test cases to use for grading (may be in an input file)<br />
+	e) The answers to the selected test cases (may also be stored in a file)<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Assignment Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Reading, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Could be any</div>
+                    </div><!-- end element -->
+                <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">I gave this once and most of the results were really impressive. Occasionally students made very simple assignments where I wanted for complexity, but for the most part, the creative ideas I got far outweighed the groups that minimally did the assignment.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/7eb448aa0787acd2804e997d5e9db237.doc">MakeAssignment.doc</a></div>]]></description>
+      <pubDate>Thu, 26 Jul 2012 11:49:46 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/7eb448aa0787acd2804e997d5e9db237.jpg" type="application/msword" length="22528"/>
+    </item>
+    <item>
+      <title><![CDATA[Think, Pair, Share: Learning the Java API]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/127</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Think, Pair, Share: Learning the Java API</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Have students each learn a class in the Java API and have them teach the use of that class to three other students in their group.<br />
+<br />
+Students get assigned their groups and class to learn in one class period and come back to share what they learned with their group in the next class period.<br />
+<br />
+Follow this up with an assignment that uses all the classes involved.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">One-on-one speaking, presentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Class Period</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Reading language documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Informal tutorial for other employees</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/ac0ee5d26ad1a64cb16cc66b58d3b6b5.doc">ThinkPairShare.doc</a></div>]]></description>
+      <pubDate>Thu, 26 Jul 2012 11:29:14 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/ac0ee5d26ad1a64cb16cc66b58d3b6b5.jpg" type="application/msword" length="22528"/>
+    </item>
+    <item>
+      <title><![CDATA[Computer Security Hearing]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/126</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Computer Security Hearing</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Other</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A student has launched a Denial of Service attack on the university&#039;s email server. Now, the student must appear in front of the disciplinary committee.<br />
+<br />
+This assignment is a role-play of this meeting.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Debate</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Class Period</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Listening, Speaking, Reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Computer Security</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">A boss at work must occasionally deal with disciplinary situations with employees. This role play utilizes the same type of thinking that a boss must display in these situations.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">10+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">Give the students the assignment in advance, asking them all to do research. Tell them that the specific roles will be assigned on the day of class. This forces all students to prepare. Give students web links with information on Denial of Service attacks and the University&#039;s Disciplinary Policy.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></description>
+      <pubDate>Thu, 26 Jul 2012 11:15:36 -0400</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Essay: Give a synopsis of Theory of Computation for a Computer Science II student and explain which key concepts from the course will be critical for their computer science education.]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/125</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Essay: Give a synopsis of Theory of Computation for a Computer Science II student and explain which key concepts from the course will be critical for their computer science education.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Automata</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Essay Prompt for a junior/senior level computer science course:<br />
+<br />
+Write an essay geared towards a current Computer Science II student that does the following:<br />
+<br />
+(1) Gives a brief synopsis of the course material<br />
+(2) Explains the course’s relevance within Computer Science<br />
+(3) Explains the key ideas from the course that may be helpful to students in the future<br />
+<br />
+The intention for this essay, or any similar essay is to make students reflect on their own education and to help them build an educational philosophy.<br />
+<br />
+This type of essay can be given in any junion/senior level Computer Science class.<br />
+<br />
+The idea is to come up with a question relevant to the structure of the class that forces students to contextualize the purpose of the class, and figure out the significance of what they are learning.<br />
+<br />
+This specific essay was given to a &quot;Theory of Computation&quot; course.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Essay, Peer Communication</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+                    <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">Good reflection tool which forces students to conceptualize for themselves where a class fits within the curriculum and its purpose.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/90790d702bc8e41a9d8ec73fca5535cc.doc">Essay-Sum12.doc</a></div>]]></description>
+      <pubDate>Thu, 26 Jul 2012 10:24:22 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/90790d702bc8e41a9d8ec73fca5535cc.jpg" type="application/msword" length="35328"/>
+    </item>
+    <item>
+      <title><![CDATA[Course Summary and Advice]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/124</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Course Summary and Advice</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Automata</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Essay Question: Write a summary of COT 4210 (Theory of Computation) for a current Computer Science II student. Summarize the main points of the course and explain which ideas from the course are most relevant to their computer science education as a whole.<br />
+<br />
+<br />
+The intention for this essay, or any similar essay is to make students reflect on their own education and to help them build an educational philosophy.<br />
+<br />
+This type of essay can be given in any junior/senior level Computer Science class.<br />
+<br />
+The idea is to come up with a question relevant to the structure of the class that forces students to contextualize the purpose of the class, and figure out the significance of what they are learning.<br />
+<br />
+This specific essay was given to a &quot;Theory of Computation&quot; course.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/a7a67f7315b613154394b7ca3377e1e6.doc">Essay-Sum12.doc</a></div>]]></description>
+      <pubDate>Thu, 26 Jul 2012 10:20:10 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/a7a67f7315b613154394b7ca3377e1e6.jpg" type="application/msword" length="35328"/>
+    </item>
+    <item>
+      <title><![CDATA[Creating Coherent Text]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/123</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Creating Coherent Text</div>
+                    </div><!-- end element -->
+                    <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Margaret Hundleby</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/4372c821b3f12d9f84c1e53c38683678.docx">Coherent Text Cover + Focus Sheet.docx</a></div>]]></description>
+      <pubDate>Thu, 26 Jul 2012 08:45:26 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/4372c821b3f12d9f84c1e53c38683678.jpg" type="application/zip" length="34204"/>
+    </item>
+    <item>
+      <title><![CDATA[Motivating Students]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/122</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Motivating Students</div>
+                    </div><!-- end element -->
+                    <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mike Carter</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="item-file CDF V2 Document, corrupt: Can&#039;t expand summary_info"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/e4899998c48f7780f86d847704040709.doc">Motivation.doc</a></div>]]></description>
+      <pubDate>Thu, 26 Jul 2012 00:42:44 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/e4899998c48f7780f86d847704040709.jpg" type="CDF V2 Document, corrupt: Can't expand summary_info" length="33792"/>
+    </item>
+  </channel>
+</rss>

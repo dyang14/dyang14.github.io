@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=Test+Plans&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:18:13 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Written Project Report]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/105</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Written Project Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Capstone</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A written draft of project progress report that includes sections describing: requirements, design, implementation, testing and task plans.  Student team works together to develop audience-sensitive written project progress reports.  This assignment allows students to organize and record their project progress.  Each student gains experience with writing/editing as a team; as they write, there will be many opportunities to clarify issues and ask questions.  The task plan portion of the report will clearly delineate action items and due dates.  As team writes this progress report, requirements are listed and hence a related design can be created.  Oftentimes, preliminary code is also written/tested as a result of this activity.  The entire activity of preparing this report assists team with moving forward to next phase of project.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Margaret Heil</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">NA</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Formal documentation; writing as a team</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, writing, speaking, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements, Design Creation, Implementation, Testing, Project Management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Managers and customers often require employees to provide requirements and design specifications as well as reports on implementation details and testing.  These reports are used to clarify project definition and scope and to track progress.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/73086d39741c40fd9e7496e70c52594f.docx">WrittenProjectReportAssignment_Rubric.docx</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/329944074c195b7cc02757caa48f88b1.docx">SampleTaskPlan.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 22:59:52 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/73086d39741c40fd9e7496e70c52594f.jpg" type="application/zip" length="47035"/>
+    </item>
+  </channel>
+</rss>

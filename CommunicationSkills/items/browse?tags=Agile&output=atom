@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse?tags=Agile&amp;output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:19:37-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse?tags=Agile&amp;output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=Agile&amp;output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=Agile&amp;output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/34</id>
+    <title><![CDATA[Eliciting Requirements: Preparation for Requirements Workshop with Client]]></title>
+    <summary><![CDATA[Analyze and create a requirements specifications using scenarios.  Prepare to interview a client.]]></summary>
+    <updated>2012-07-25T21:54:31-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/34"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/3daea505252c2bd1fa2ca5b330011e59.docx" type="application/zip" length="22769"/>
+    <category term="Agile"/>
+    <category term="Client Interview"/>
+    <category term="Inception"/>
+    <category term="Product backlog"/>
+    <category term="Requirements"/>
+    <category term="unified process"/>
+    <category term="Vision"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Eliciting Requirements: Preparation for Requirements Workshop with Client</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Analyze and create a requirements specifications using scenarios.  Prepare to interview a client.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements<br />
+Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The Inception Phase of our project is upon us! It’s our opportunity to work with the client to establish a common vision and scope for the project. We explore the client’s vision for the project, create an initial list of features (requirements), make a rough estimate of cost time needed to complete the features, and decide whether or not it is feasible to move ahead with the project given our resource (time and people) constraints. Note that in the spirit of agile, iterative development, we are not trying to completely define the client’s needs (requirements) or the solution at this time. A fuller understanding of the requirements will evolve as we move forward with the project. <br />
+<br />
+We will kick off the project with a Requirements Workshop with our client in our next class meeting. Oftentimes the Software Engineer must explore the client’s vision through a dialog with the client. So for this assignment, I want you to prepare for the meeting by composing a few questions to ask the client in order for you to better understand:<br />
+• The client’s vision for the product<br />
+• The opportunity/benefits of the product that the client envisions<br />
+• The primary stakeholders, such as the “owner” of the product and the “users” of the product.<br />
+• The user-level goals: What is the vision for how the users will use the product?<br />
+• A list, of potential features of the product<br />
+• Any other requirements for the product such as usability, reliability, security, performance, etc<br />
+<br />
+The information that you collect will be used to write your team’s Vision, Supplemental Specification, Use Cases, and Glossary. The features will be the basis for your teams Product Backlog.<br />
+<br />
+In this memo to your supervisor, you will recommend four questions to the client that will help you to write the project vision document.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/24</id>
+    <title><![CDATA[Our Software Development Methodology Technical Memo]]></title>
+    <summary><![CDATA[Describe software development life-cycle and need for associated processes: the life-cycle phases, engineering and management processes, and relationships between the phases and processes. Introduce UML as a design tool.]]></summary>
+    <updated>2012-07-25T21:52:43-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/24"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/585e6eafb4c424eece9d078bf56effdf.docx" type="application/zip" length="21608"/>
+    <category term="Agile"/>
+    <category term="Object-oriented analysis"/>
+    <category term="Object-oriented design"/>
+    <category term="unified process"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Our Software Development Methodology Technical Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe software development life-cycle and need for associated processes: the life-cycle phases, engineering and management processes, and relationships between the phases and processes. Introduce UML as a design tool.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Report<br />
+Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing<br />
+Reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Research<br />
+Project Management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">We will use an iterative software development methodology for our class project, combining elements of the Unified Process with Scrum. These are among best practices in today’s software development environment.  These practices should help us to deliver a product to our client on time and that meets the requirements. In addition, learning about these practices will help you understand the development methodology used in a future employer.  In this memo to your supervisor, you will summarize some current best practices and contrast our approach (unified process) with the older waterfall approach.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

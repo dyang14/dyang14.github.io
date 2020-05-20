@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=design+rationale&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:09:26 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Design Proposal and Rationale]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/38</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Design Proposal and Rationale</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text"><p>For any set of requirements, students generate a design proposal rationale that includes a UML class diagram. The rubric evaluates how the students model the requirements and how they justify their design decisions and how the design meets the requirements.&nbsp; The objectives of this assignment are (1) to articulate a class diagram for an object-oriented system and (2) justify the decisions as modeled by the class diagram.</p>
+<p>Prereqs: Students are expected to know advanced OO concepts like composition and inheritance.&nbsp; Additionally, students should be able to model an OO system using UML and should be familiar with design patterns, such as state, strategy, singleton, MVC.</p>
+<p>The team size is flexible. &nbsp;</p>
+<p>Any set of requirements could be used with this assignment.&nbsp;&nbsp; For a CS 2 class, the requirements usually consist of 3-4 use cases and the class diagram is typically 3-7 classes with a minimum of one inheritance and composition relationship.</p>
+<p>This assignment is has been used as a deliverable in a larger programming assignment that spans multiple iterations.&nbsp; Students turn in a design document or proposal as part of an Iteration 0 along with a black box test plan.&nbsp; For an example of how the assignment has been used, please see the <a title="Somewhat Simplified Solitaire" href="http://courses.ncsu.edu/csc216/common/2011_Fall/3_Project/" target="_blank">Somewhat Simplified Solitaire</a> project.&nbsp; Please note that the project uses an older version of this assignment. &nbsp;</p></div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sarah Heckman, Ed Gehringer</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design proposal, UML diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">writing, teaming, reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">A customer has provided your management team with a set of requirements.  Your manager has requested that you and your co-workers each propose a design for the static layout of the system by identifying the objects, their state and behavior, and the relationships between the objects in the system. Your manager will then choose a design that best describes the requirements for implementation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-pdf"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/08be8d2c0379f604820e9a86cdf4d96c.pdf">DesignProposal.pdf</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/c726d9b5775ad819cf41b807070763de.docx">DesignProposal.docx</a></div><div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/ef1cac863b2ba2190bb96c6d22ad71d1.doc">DesignProposal_Template.doc</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:33:20 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/08be8d2c0379f604820e9a86cdf4d96c.jpg" type="application/pdf" length="99647"/>
+    </item>
+  </channel>
+</rss>

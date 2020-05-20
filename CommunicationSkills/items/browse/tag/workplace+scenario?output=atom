@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/tag/workplace+scenario?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:26:48-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/tag/workplace+scenario?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/workplace+scenario/page/1?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/workplace+scenario/page/1?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/15</id>
+    <title><![CDATA[Bug Enhancement Report]]></title>
+    <summary><![CDATA[This is my abstract; there are many like it, but this one is mine]]></summary>
+    <updated>2012-07-24T22:18:47-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/15"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c48ebccbac091999337ef071788598e7.pdf" type="application/pdf" length="77783"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/4fd236f3a81f78cb0d96645ee96db3df.pdf" type="application/pdf" length="68171"/>
+    <category term="workplace scenario"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Bug Enhancement Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is my abstract; there are many like it, but this one is mine</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">SAMPLE SCENARIO – VERSION 1 (Presents the Elements in the Order on the Quick Guide for Scenarios) Introduction to Software Development Mark Hoffman, Quinnipiac University<br />
+<br />
+PRIORITIZED BUG/ENHANCEMENT REPORT 1. Technical Task Using a Product Review Report and the customer requirements identified in a Customer Requirements Report, your team is to create a plan for completing a project. To create this plan, you are to do the following: ● Develop criteria to facilitate and justify bug and enhancement ranking. ● Create a prioritized list of bugs and enhancements. ● Estimate time and resources needed to fix each bug and implement each enhancement. ● Recommend the order in which bugs and enhancements should be developed to meet customer needs You work for an employer that has acquired another company. The acquired company had begun a project that your employer would like to complete. You are members of development team You are to create a three-to-five-page prioritized bug/enhancement report. Your development team’s project manager Using your report, the manager must develop a plan for completing the project. Therefore, she wants your report to answer the following questions: 1. What are the critical criteria that should be used to organize the development process? 2. How critical is each bug or enhancement to the development process? 3. What are the key features of each bug or enhancement? 4. What resources are required to fix each bug or implement each enhancement? 5. Does your team have the technical and communication abilities needed to complete his project? 6. Should I accept your team’s recommendations?<br />
+<br />
+2. Professional Setting 3. Professional Role 4. Deliverable 5. Real-world Audience 6. How the Audience Will USE the Students’ Communication<br />
+<br />
+SAMPLE SCENARIO – VERSION 2 (Presents the Elements in a Different Order than in the Quick Guide for Scenarios) Introduction to Software Development Mark Hoffman, Quinnipiac University<br />
+<br />
+PRIORITIZED BUG/ENHANCEMENT REPORT Your project manager decided to continue development of a product begun but not completed by an acquired company. She has asked your development team to prepare a bug/enhancement report based on bugs identified in the Product Review Report and customer requirements identified in the Customer Requirements Report. YOUR DELIVERABLE Three-to-five-page prioritized bug/enhancement report. YOUR READER Your project manager. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, she wants your report to answer the following questions: 1. What are the critical criteria that should be used to organize the development process? 2. How critical is each bug or enhancement to the development process? 3. What are the key features of each bug or enhancement? 4. What resources are required to fix each bug or implement each enhancement? 5. Does your team have the technical and communication abilities needed to complete his project? 6. Should I accept your team’s recommendations? You must answer these questions in a manner that helps the manager develop a plan efficiently. You must prepare a communication that persuades the manager that you have the technical knowledge required to plan a complex project. YOUR TASKS You must perform the following technical tasks: ● Develop criteria to facilitate and justify bug and enhancement ranking. ● Create a prioritized list of bugs and enhancements. ● Estimate time and resources needed to fix each bug and implement each enhancement. ● Recommend the order in which bugs and enhancements should be developed to meet customer needs. You must perform the following communication tasks: ● Write a report that helps the project manager make practical decisions efficiently. ● Write a report that builds the manager’s confidence in your team’s technical and communication abilities. ● Write a report that persuades the manger to accept your recommendation<br />
+<br />
+2. Professional setting 3. Professional role for students (members of a development team 4. Deliverable 5. Real-world audience 6. How the reader will use the communication<br />
+<br />
+1. Technical task<br />
+<br />
+</div>
+                    <div class="element-text">This column defines the high level of performance for each criterion<br />
+<br />
+Usefulness to the real-world reader is SAMPLE RUBRIC consistently used Software Engineering for the Mark Hoffman, Quinnipiac University communication criteria<br />
+PRIORITIZED BUG/ENHANCEMENT REPORT Outstanding Tells the project manager that the report is a response to her request Includes all criteria from Product Review Report Includes all criteria from Customer Requirements Report 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 5 5 Weak<br />
+<br />
+This column defines the low levels of performance for each criterion<br />
+<br />
+Criteria Introduction Criteria<br />
+<br />
+Requires project manager to recall the context of the report Omits or misstates some criteria from Product Review Report Omits or misstates some criteria from Customer Requirements Report List omits some enhancements or priorities Reasons sometimes based on something other than criteria Design hinders easy comparison by project manager Recommendation does not match prioritized list Omits parallel action Omits some information project manager wants Includes unnecessary information project manager doesn’t need Uses colloquial style Several statements are unclear<br />
+<br />
+Communication criterion is usefulness to the real-world reader. Technical criterion<br />
+<br />
+Prioritized List<br />
+<br />
+List includes all enhancements and bugs identified in the reports Reasons for all priorities based directly on the criteria Design enables project manager to compare the reasons easily<br />
+<br />
+Technical criterion Communication criterion is usefulness to the real-world reader In addition to circling a level of performance, the instructor can write comments here Even selection of content is stated from the perspective of usefulness to realworld reader<br />
+<br />
+Recommendation<br />
+<br />
+Recommendation is consistent with the prioritized list Recommendation includes parallel work on different issues<br />
+<br />
+Selection of Content<br />
+<br />
+Includes all information project manager wants Includes nothing project manager doesn’t need<br />
+<br />
+Prose Style<br />
+<br />
+Uses a formal style All statements are clear<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Bug Report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Bug identification</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You work for an employer that has acquired another company. The<br />
+acquired company had begun a project that your employer would like to complete.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

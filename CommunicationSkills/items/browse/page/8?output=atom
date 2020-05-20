@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/page/8?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:25:44-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/page/8?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/1?output=atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/7?output=atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/9?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/11?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/49</id>
+    <title><![CDATA[Auto Music System Part 1 - Design ]]></title>
+    <summary><![CDATA[<p>In this assignment the student will design the classes to be used in simulating a car audio system's user interface providing such options as scan capabilities, changing from AM to FM, and storing stations for quick selection. UML diagram will pictorally describe the classes and their inheritace structure.</p>
+<p>Go to part2&nbsp;<a href="http://cs-comm.lib.muohio.edu/admin/items/show/65">http://cs-comm.lib.muohio.edu/admin/items/show/65</a></p>
+<p>Go to part 3 <a href="http://cs-comm.lib.muohio.edu/admin/items/show/73">http://cs-comm.lib.muohio.edu/admin/items/show/73</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></summary>
+    <updated>2012-07-30T16:23:40-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/49"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/785953a9c23f7f1e0e4bbb0788a80bdf.doc" type="application/msword" length="63488"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Auto Music System Part 1 - Design </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text"><p>In this assignment the student will design the classes to be used in simulating a car audio system's user interface providing such options as scan capabilities, changing from AM to FM, and storing stations for quick selection. UML diagram will pictorally describe the classes and their inheritace structure.</p>
+<p>Go to part2&nbsp;<a href="http://cs-comm.lib.muohio.edu/admin/items/show/65">http://cs-comm.lib.muohio.edu/admin/items/show/65</a></p>
+<p>Go to part 3 <a href="http://cs-comm.lib.muohio.edu/admin/items/show/73">http://cs-comm.lib.muohio.edu/admin/items/show/73</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Paul Cantonwine</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">UML Diagram, Design Document, Peer Evaluation, self-evaluation,Team Presentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">writing UML diagrams, teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design, Object Oriented Language Features</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Your company has signed a contract to develop the class structure needed to implement a car&#039;s audio system&#039;s user interface. <br />
+<br />
+Your team has been assigned to develop the design document which includes a UML diagram. You will be presenting this design document to your company&#039;s review committee which will review your work and evaluate it&#039;s completeness. Once completed your design document will be given to the programming department for implementation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">2</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/48</id>
+    <title><![CDATA[Planning for Elaboration Memo]]></title>
+    <summary><![CDATA[Apply a contemporary software development process to a case study.]]></summary>
+    <updated>2012-07-25T21:59:21-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/48"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/e3e49f34d62396f4bce5928f2bbd4cab.docx" type="application/zip" length="19074"/>
+    <category term="elaboration"/>
+    <category term="Product backlog"/>
+    <category term="unified process"/>
+    <category term="use cases"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Planning for Elaboration Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Apply a contemporary software development process to a case study.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Project management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to help your team to plan the sprints for the Elaboration phase. In Elaboration we want to build the core software architecture, resolve high-risk elements (things we are unsure about), and define most of the requirements for our projects.  In this memo to your supervisor you will recommend two use cases (or features) that you believe should be implemented in the Elaboration phase.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/47</id>
+    <title><![CDATA[How many shuffles?  Linked List Representations<br />
+]]></title>
+    <summary><![CDATA[Linked list creation and manipulation; simulation of card deck shuffling<br />
+<br />
+Students start with the implementation of a basic linked last class and selected functionality designed to force them to thin through the issues of modifying lists without destroying list integrity.  Following this then they use the list to model a standard deck of cards, and implement a Monte Carlo simulation to determine the required number of times the deck must be shuffled in order to ensure a random ordering.<br />
+<br />
+Duration: 2 weeks<br />
+<br />
+Background: The student must be familiar with basic C++ syntax, C++ classes, and basic C++ memory management.  There is no assumption of a statistical background: relevant statistical tools (chi-square) is explained at high-level in the documentation and is provided as a code library.<br />
+]]></summary>
+    <updated>2012-07-30T13:31:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/47"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/1d2972e65cc2030ff531576954600d9c.zip" type="application/zip" length="362133"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/7b28b15dc85099b6dafea7f1c111f32b.docx" type="application/zip" length="181703"/>
+    <category term="chi distribution"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">How many shuffles?  Linked List Representations<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Linked list creation and manipulation; simulation of card deck shuffling<br />
+<br />
+Students start with the implementation of a basic linked last class and selected functionality designed to force them to thin through the issues of modifying lists without destroying list integrity.  Following this then they use the list to model a standard deck of cards, and implement a Monte Carlo simulation to determine the required number of times the deck must be shuffled in order to ensure a random ordering.<br />
+<br />
+Duration: 2 weeks<br />
+<br />
+Background: The student must be familiar with basic C++ syntax, C++ classes, and basic C++ memory management.  There is no assumption of a statistical background: relevant statistical tools (chi-square) is explained at high-level in the documentation and is provided as a code library.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John Karro, William Brinkman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Coding, short-answer prose, mathematical reasoning</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, linear data structures, pointers and memory management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have been hired by a major Casino chain to verify the Bayer-Diaconis theorem, which purports to prove how many times a 52-card playing deck must be riffle-shuffled in order to completely randomize it (that is, make sure that, when done, each card could be anywhere in the deck with equal probability – regardless of where it started.).  It is extremely important to the Casino that, before each deal at the Black Jack table, a deck be shuffled enough to make the order random. Failure to do so could lead to potential biases that a player might exploit.  But Bayer-Diaconis is an analytic proof – a logical deduction from first principles.  Your employer wants empirical evidence that Bayer-Diaconis is correct.  One possibility is to have you shuffle the desk for a few billion years and track where the cards end up, but that is impractical.  What is practical is to run a simulation and apply a basic statistical tool to establish the actual bound.<br />
+<br />
+Importance: Using simulation to study the behavior of complex systems is one of the primary functions of Computer Science, and this project will expose you to some of the basic principles of the area.  At a lower level, it will also require you to work with linked lists – arguably one of the two most important data structures we use.  <br />
+<br />
+You will also be asked to read investigate the linked-list data structure and discuss aspects of the reading.  In reality, you will often need to pick a data structure appropriate to your problem, frequently choosing between established structures you are unfamiliar with.  This will involve a certain degree of research: reading and understanding papers or text on the options, and possibly defending your decision to a colleague, boss, or client.  The questions in this assignment are intended both to test your understanding and to make sure you can coherently explain what you have learned to another party.  <br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/46</id>
+    <title><![CDATA[Three Minute Lecture Critique]]></title>
+    <summary><![CDATA[This assignment will give the student the opportunity to practice providing substantive critiques in a low stake setting.   <br />
+<br />
+For this assignment, students will evaluate a three minute lecture given by one of their classmates.  The goal is for students to support their ratings with concrete examples from within the presentation and to include suggestions for improvement that are likewise specific and concrete.]]></summary>
+    <updated>2012-07-25T14:31:12-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/46"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c875a9591b0872d21ce9614628a79186.docx" type="application/zip" length="20393"/>
+    <category term="Automata"/>
+    <category term="Capstone"/>
+    <category term="CS2"/>
+    <category term="Data Structures"/>
+    <category term="Databases"/>
+    <category term="Software Engineering"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Three Minute Lecture Critique</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment will give the student the opportunity to practice providing substantive critiques in a low stake setting.   <br />
+<br />
+For this assignment, students will evaluate a three minute lecture given by one of their classmates.  The goal is for students to support their ratings with concrete examples from within the presentation and to include suggestions for improvement that are likewise specific and concrete.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Critique, Oral Presentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">speaking, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">varies</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Frequently, throughout our careers we will be asked to give feedback to others to help them improve what they are doing.  Being able to provide constructive, useful, and thorough critique improves the performance of your team, reflects positively upon you, and builds good rapport with your colleagues.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">This assignment can be scaled to larger teams with a minimum of 3 per team.<br />
+<br />
+The technical skill varies on this skill, because practically any technical skill can be demonstrated by the student lecturer.  Keep in mind that that the student presentation is only 3 minutes long so the subject matter must be scaled so that it can be presented effectively in 3 minutes or less.<br />
+<br />
+This assignment can also be used for other courses other than CS1.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/45</id>
+    <title><![CDATA[Project Management Tools Report]]></title>
+    <summary><![CDATA[The Project Management Tools Report assignment directs student teams to evaluate and select tools for process and configuration management.  The Project Management Tools Report is fourth of five assignments that prepare students to develop the software they evaluated in Program Review Report assignment over four two-week scrum cycles.  <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Evaluate key features of process management tools for a development project.<br />
+2.	Evaluate the key features of configuration management tools for a development project.<br />
+3.	Estimate resources needed to install and maintain the project management tools.<br />
+4.	Install and test project management tools for a development project.<br />
+5.	Create a plan to train a new team member to use the project management tools.<br />
+6.	Identify the key technical information about a program that the project manger wants when deciding which project management tools to use.<br />
+]]></summary>
+    <updated>2012-07-26T10:54:46-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/45"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c514e7278607dcbdce5750153be92893.pdf" type="application/pdf" length="601883"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/7c183e6bdcce6eece7196e43372ab8a2.docx" type="application/zip" length="35531"/>
+    <category term="Evaluate process and configuration management tools"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Project Management Tools Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Project Management Tools Report assignment directs student teams to evaluate and select tools for process and configuration management.  The Project Management Tools Report is fourth of five assignments that prepare students to develop the software they evaluated in Program Review Report assignment over four two-week scrum cycles.  <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Evaluate key features of process management tools for a development project.<br />
+2.	Evaluate the key features of configuration management tools for a development project.<br />
+3.	Estimate resources needed to install and maintain the project management tools.<br />
+4.	Install and test project management tools for a development project.<br />
+5.	Create a plan to train a new team member to use the project management tools.<br />
+6.	Identify the key technical information about a program that the project manger wants when deciding which project management tools to use.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development PROJECT MANAGEMENT TOOLS REPORT The project manager has decided to continue development of the product begun but not completed by an acquired company. (This is the product your team evaluated in the Product Review Report, developed customer requirements for in the Customer Requirements Report, and developed a prioritized bug/enhancement list for in the Prioritized Bug/Enhancement Report.) The product manager has assigned your development team to select and implement project management tools. Specifically, the project manager wants your team’s recommendation on the following:  Process management tool (i.e., a tool to manage the development process)  Configuration management tool (i.e., a tool to manage the product code) Your team’s report needs to recommend tools that your team will use to effectively and efficiently manage product development. The project manager has asked your team to make a ten-minute presentation summarizing the report. Your team’s report and presentation provides the project manager with critical information to plan how to develop the product. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a three-to-five-page project management tools report. 2. The project manager has asked your team to present significant findings from the project management tools report in a ten-to-fifteen-minute meeting. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, the manager wants your team to answer the following technical questions: 1. What process management tool is best suited to manage the development process? 2. What configuration management tool is best suited to manage the development process? 3. What resources are needed to implement and maintain the recommended project management tools? You must provide answers to these questions in a manner that helps the manager develop a plan. The manager must evaluate your team to determine whether it is capable of completing the project. The manager will use your team’s report to answer the following questions: 1. Can your team evaluate and select project management tools? 2. Can your team implement and maintain project management tools? 3. Can your team document tool installation and maintenance for new team members? 4. Are you and the other team members able to work together effectively? You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project. LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Evaluate key features of process management tools for a development project. 1<br />
+<br />
+CSC 225 – Introduction to Software Development 2. 3. 4. 5. 6. Evaluate the key features of configuration management tools for a development project. Estimate resources needed to install and maintain the project management tools. Install and test project management tools for a development project. Create a plan to train a new team member to use the project management tools. Identify the key technical information about a program that the project manger wants when deciding which project management tools to use.<br />
+<br />
+Focus also on developing your ability to perform these communication tasks: 1. Write a report that helps managers make practical decisions efficiently. [Writing] 2. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 3. Write a report that persuades mangers to accept your recommendation. [Writing] 4. Select key information from written report useful to the project manager. [Speaking] 5. Create an informative and useful presentation for the project manager. [Speaking] 6. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 7. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 8. Collaborate effectively on a software development team. [Teaming] 9. Organize and execute a meeting with the project manager and the software development team. [Teaming] 10. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Monday (9/17): Introduction to project management and project management tools. Friday (9/21): Submit your report and make your presentation. Peer review of presentations. GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+2<br />
+<br />
+CSC 225 – Introduction to Software Development Project Management Tools Report<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Evaluate key features of process management tools for a development project.<br />
+<br />
+Details<br />
+Analyze the features of the process management tool<br />
+<br />
+Report Section<br />
+Evaluation Section<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Lists useful features with a brief, accurate description of each Useful features not listed, or missing or inaccurate description<br />
+<br />
+Points<br />
+<br />
+Evaluate the key features of configuration management tools for a development project.<br />
+<br />
+Identify the key process management features for the development project Analyze the features of the configuration management tool<br />
+<br />
+Lists features that support the project with persuasive justification Evaluation Section Lists useful features with a brief, accurate description of each<br />
+<br />
+Project supporting features not listed or justification is not persuasive Useful features not listed, or missing or inaccurate description<br />
+<br />
+Estimate resources needed to install and maintain the project management tools.<br />
+<br />
+Identify the key configuration management features for the development project Identify the time needed to learn and maintain the project management tools<br />
+<br />
+Lists features that support the project with persuasive justification<br />
+<br />
+Project supporting features not listed or justification is not persuasive Project management task missing, missing time estimate, or missing supporting evidence. Team members not listed or relevant skills missing or inaccurate<br />
+<br />
+Resource Section<br />
+<br />
+Lists project management tasks with a time estimate with supporting evidence<br />
+<br />
+Identify team member(s) needed to maintain the project management tool<br />
+<br />
+Lists team members with description of relevant skills<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Install and test project management tools for a development project. Install the project management tools. Verify the installations has worked Identify in technical terms problems with the tool installation Installation Section Describes installation process accurately Focuses on the major steps taken Describes each major problem encountered precisely; summarizes the amount and kinds of minor problems encountered Lists tasks required to maintain project management tools; describe importance of each Plan describes specific steps for new team member Describes installation process inaccurately. Provides a narrative of every step taken Omits major problems encountered or describes them imprecisely; describes in detail each minor problem encountered Omits necessary project management tool tasks or inaccurately describes importance Plan description is disorganized, generic, or is not appropriate for a new team member Omits or describes inaccurately the key features of tools, or omits evidence to support their usefulness Omits or describes inaccurately costs of using each tool.<br />
+<br />
+Create a plan to train a new team member to use the project management tools.<br />
+<br />
+Identify the key information to maintain the project management tools<br />
+<br />
+Training Section<br />
+<br />
+Create a plan to train a new team member<br />
+<br />
+Create a project management tool recommendati on.<br />
+<br />
+Recommend a process management tool and a configuration management tool<br />
+<br />
+Recommen dation Section<br />
+<br />
+Describes accurately the key features of each tool that useful for the project supported with evidence<br />
+<br />
+Describes accurately the cost (time and people) needed to successfully use the tool Provides enough detail to enable the manager to incorporate the tools<br />
+<br />
+Describes recommendations vaguely so a manager<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+recommendation into the project plan would not be able to incorporate it into a project plan<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development Project Management Tools Report<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently<br />
+<br />
+Details<br />
+Provides critical information useful to the reader Critical information is easily accessible to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Report builds project manager’s confidence in team’s technical and communicatio n abilities<br />
+<br />
+Concise and appropriate writing style for project manager Uses precise terms appropriate for the reader<br />
+<br />
+Writing<br />
+<br />
+Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence from user training to support key findings<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from user training to support key findings<br />
+<br />
+Uses credible evidence to support explanations<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Report persuades project manager to accept your recommendati on<br />
+<br />
+Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings<br />
+<br />
+Writing<br />
+<br />
+Uses correct spelling, grammar, etc. throughout report Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings Concisely and accurately demonstrates key features of user training Concisely and accurately demonstrates significant features of the user training sample<br />
+<br />
+Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features user training Select information that demonstrates significant features of the user training sample Select information that demonstrates significant factors affecting user experience Select information that recommends plans for program development Key information is presented<br />
+<br />
+Speaking<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant Significant features are missing, insignificant features are included, or irrelevant features<br />
+<br />
+Concisely and accurately demonstrates significant factors affecting user experience<br />
+<br />
+Significant factors are missing, insignificant factors are included, or irrelevant facctors<br />
+<br />
+Create and informative and useful presentation<br />
+<br />
+Speaking<br />
+<br />
+Concise and accurate recommendations for program development Succinctly presents key information<br />
+<br />
+Significant recommendations missing Omits or inaccurately presents key information<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+for the project manager Handouts, visuals, demonstrations, etc. support and complement the presentation Uses concise, accurate, and useful support materials to support and complement the presentation Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids firsttime problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and accurate understanding of questions, and accurately and respectfully answers each<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting<br />
+<br />
+Team members under dress or over dress for the meeting<br />
+<br />
+Questions are accurately, authoritatively, and respectfully answered<br />
+<br />
+Demonstrates lack of understanding or the lack of ability to explain answers to questions. Lack of respect for the<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+questioner Tasks are not independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late Omitted major topics, time not on task, not enough time to answer<br />
+<br />
+Collaborate effectively on a software development team<br />
+<br />
+Breakdown the software development project into small, independent task<br />
+<br />
+Teaming<br />
+<br />
+Each task is independent, clearly defined, and contributes to the overall software development task<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+Meeting is wellorganized and executed<br />
+<br />
+All major topics are presented, no time is wasted, all questions are<br />
+<br />
+9<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+answered in the allotted time Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks all questions Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop knowledge of individual team member skills and trust among team members<br />
+<br />
+Identify skills of each team member<br />
+<br />
+Teaming<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+10<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Recommendation/Proposal</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Tools </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The project manager has decided to continue development of the product begun but not completed by an acquired company.  The product manager has assigned your development team to select and implement project management tools. The project manager will use your selections to advise upper management on the resources required for the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/44</id>
+    <title><![CDATA[Car Wash Simulation Using Queues]]></title>
+    <summary><![CDATA[A queue is a popular data structure that is commonly used when attempting to process requests.  In this assignment you will use a queue to simulate the processing of customer requests to wash their car.  The objectives in this assignment are to (1) gain experience researching for a solution to a problem, (2) create a high-level design as a team that can be used by developers as well as understood by non-technical people (e.g., a customer), (3) build queue methods for adding, removing, and calculating averages, and (4) improve the implementation of proper coding styles and documentation.<br />
+<br />
+This is a team assignment, and students should understand basic constructs, standard I/O, and how to implement a queue.<br />
+]]></summary>
+    <updated>2012-07-25T14:37:31-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/44"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/0a0ed2f1ed507c663b23570a00902be7.docx" type="application/zip" length="40824"/>
+    <category term="queues"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Car Wash Simulation Using Queues</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A queue is a popular data structure that is commonly used when attempting to process requests.  In this assignment you will use a queue to simulate the processing of customer requests to wash their car.  The objectives in this assignment are to (1) gain experience researching for a solution to a problem, (2) create a high-level design as a team that can be used by developers as well as understood by non-technical people (e.g., a customer), (3) build queue methods for adding, removing, and calculating averages, and (4) improve the implementation of proper coding styles and documentation.<br />
+<br />
+This is a team assignment, and students should understand basic constructs, standard I/O, and how to implement a queue.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">brainstorming, discussion, design document, code, comments, pseudo-code, test results, documentation, peer evaluation, reflection, requirements, technical report, team meetings</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">team evaluation, implementation, tools, design, linear data structures, program design, comments, documentation, programming language basics, data types and variables, tools, research, problem solving</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">TEAM DESIGN DOCUMENT<br />
+Technical Task:  Most real-world software development projects involve working as a team.  <br />
+Professional Setting:  Students work for a software company.<br />
+Professional Role:  Students are members   <br />
+Deliverable:  Design document.<br />
+Real-world Audience:  A project manager.<br />
+How the Audience will USE the students&#039; communication:  The project manager will use the students&#039; design document to do the following:  (1) Develop a plan for completing the project, and (2) Determine whether the team is capable of completing the project.<br />
+Additional Notes:  Whether it is working with other developers, business people, managers, customers, or users, you must be able to adapt to different personalities and deliver a working product that meets the customer’s requirements. <br />
+<br />
+<br />
+ADDITIONAL SCENARIO:<br />
+Also, as a software developer in the work force, you may have to do some research to find a solution to a problem.  In this assignment, you will be given a task (handling of the probability of a customer arriving) for which there is not a solution in your textbook.  For example, this will require you to read other resources (such as the internet) to understand how to do random number generation.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/43</id>
+    <title><![CDATA[Creating the Team Product Backlog Memo]]></title>
+    <summary><![CDATA[Work with a team to analyze requirements using use cases or scenarios.]]></summary>
+    <updated>2012-07-25T17:16:47-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/43"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/f9a04ee9b3bdf4b8fe41aca0c9c1e3b0.docx" type="application/zip" length="18940"/>
+    <category term="Stories"/>
+    <category term="use cases"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Creating the Team Product Backlog Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Work with a team to analyze requirements using use cases or scenarios.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing<br />
+Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to help your team to create your team’s initial product backlog (list of features). Creation of the backlog is the first step in the Scrum process.  The product backlog will be used to plan the first Elaboration sprint. Each team member will help to create the initial backlog by more fully developing a use case for the class project.  In this memo to your supervisor, you will write a more detailed use case for one of the features of your team’s project.<br />
+<br />
+Learning to write use cases, and using the Scrum process, will help you in an internship or job since many organizations use these approaches.<br />
+</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/42</id>
+    <title><![CDATA[Security and Privacy Analysis of a Database]]></title>
+    <summary><![CDATA[This is the third of many milestones associated with the project. You will be making use of the problem statement and schema design you developed in <a href="http://cs-comm.lib.muohio.edu/items/show/30">Milestone 1</a> and <a href="http://cs-comm.lib.muohio.edu/items/show/51">Milestone2</a> in this assignment. You will refer back to the security &amp; privacy concerns, business, entity and referential constraints developed in this assignment in future milestones to a) Implement the design, b) Design the software system and c) Develop and test the information system. This assignment has the following learning outcomes: ● To learn how to identify data that might have privacy implications, determine adequate access control policies and implement mechanisms to enforce said policies. ● To learn how to identify potential security vulnerabilities in an information system, implications of such vulnerabilities and actions necessary to protect the system from said vulnerabilities. ● To learn how to identify entity and referential integrity constraints on the data and define policies for handling referential integrity constraints. ● To learn how to identify business rule constraints on the information systems and determine policies for enforcing said rules. ● To learn how to describe design choices with respect to physical database design and rationalize that in a manner that enables a software engineer to implement the design in a relational database system. ● To learn how to apply the practice of physical data design in a situation similar to those seen in the industry. ● To learn how to work within a team to resolve conflicts and accommodate varied design choices. This is a team assignment and is ideally done in a team of 3-4 students.]]></summary>
+    <updated>2012-07-26T11:05:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/42"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/cf3dd9e7731b859747c8d70b163afaf3.doc" type="application/msword" length="55808"/>
+    <category term="Design Analysis"/>
+    <category term="Integrity Constraints"/>
+    <category term="Privacy"/>
+    <category term="Security"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Security and Privacy Analysis of a Database</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is the third of many milestones associated with the project. You will be making use of the problem statement and schema design you developed in <a href="http://cs-comm.lib.muohio.edu/items/show/30">Milestone 1</a> and <a href="http://cs-comm.lib.muohio.edu/items/show/51">Milestone2</a> in this assignment. You will refer back to the security &amp; privacy concerns, business, entity and referential constraints developed in this assignment in future milestones to a) Implement the design, b) Design the software system and c) Develop and test the information system. This assignment has the following learning outcomes: ● To learn how to identify data that might have privacy implications, determine adequate access control policies and implement mechanisms to enforce said policies. ● To learn how to identify potential security vulnerabilities in an information system, implications of such vulnerabilities and actions necessary to protect the system from said vulnerabilities. ● To learn how to identify entity and referential integrity constraints on the data and define policies for handling referential integrity constraints. ● To learn how to identify business rule constraints on the information systems and determine policies for enforcing said rules. ● To learn how to describe design choices with respect to physical database design and rationalize that in a manner that enables a software engineer to implement the design in a relational database system. ● To learn how to apply the practice of physical data design in a situation similar to those seen in the industry. ● To learn how to work within a team to resolve conflicts and accommodate varied design choices. This is a team assignment and is ideally done in a team of 3-4 students.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sriram Mohan</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design Tradeoffs,White paper, Data Analysis</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Teaming, Reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design Analysis, Security, Tradeoff Analysis</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">As a software engineer you will often be required to design information systems based on a client’s requirements. It is your responsibility to understand the needs behind the information system, develop a feature set based on the needs and produce a design for the information system. Once you have designed the information system, you will be often be responsible for analyzing the design to identify privacy issues, security vulnerabilities and identify and implement access control policies and mechanisms to prevent security breaches. You will also be required to enforce entity, referential and business rules to ensure that your information system provides a true representation of the real world data. <br />
+<br />
+A critical ability while working within a team is to develop an ability to manage conflicts, accommodate different design decisions, and manage conflicting client requirements. This milestone helps you learn and apply these abilities in a real life situation.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/41</id>
+    <title><![CDATA[Ciphers and the RSA Encryption Algorithm:<br />
+Introduction to C-based memory management<br />
+]]></title>
+    <summary><![CDATA[Implementation of the Caeser Cypher and RSA encryption with the goal of exposing students to C memory management issues.<br />
+<br />
+In this assignment students will implement both a simple caeser cypher, followed by an RSA encryption/decryption functions, using only constructs supported in C (malloc/free, C-style strings, and the C string.h functions; use of streams is still permitted).  Given these restrictions, the students are forced to grapple with typical memory management issues (e.g. memory allocation, pointer-based parameter passing, segmentation faults) while implementing a tool many will find interesting.<br />
+<br />
+Duration: 3 weeks<br />
+<br />
+Background: Students are assumed to have 1-2 semesters of an imperative or objected oriented language (e.g. Java) and to have seen the basic syntax of C, but are not assumed to have worked with pointers.   All required background on RSA and related number theory is explained within the lab (or hidden in provided code), but the student may need supplemental instruction on the basic C functions (e.g. malloc, strcat) and C bit-operators (by the instructor or through some written text).<br />
+]]></summary>
+    <updated>2012-07-30T13:28:58-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/41"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/d6a085118970b4d84e564ff0bb328c42.docx" type="application/zip" length="57624"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/a17b9baf968f008a642b8b940aabbb65.zip" type="application/zip" length="16488"/>
+    <category term="encryption"/>
+    <category term="malloc"/>
+    <category term="pointers"/>
+    <category term="strings"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Ciphers and the RSA Encryption Algorithm:<br />
+Introduction to C-based memory management<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Implementation of the Caeser Cypher and RSA encryption with the goal of exposing students to C memory management issues.<br />
+<br />
+In this assignment students will implement both a simple caeser cypher, followed by an RSA encryption/decryption functions, using only constructs supported in C (malloc/free, C-style strings, and the C string.h functions; use of streams is still permitted).  Given these restrictions, the students are forced to grapple with typical memory management issues (e.g. memory allocation, pointer-based parameter passing, segmentation faults) while implementing a tool many will find interesting.<br />
+<br />
+Duration: 3 weeks<br />
+<br />
+Background: Students are assumed to have 1-2 semesters of an imperative or objected oriented language (e.g. Java) and to have seen the basic syntax of C, but are not assumed to have worked with pointers.   All required background on RSA and related number theory is explained within the lab (or hidden in provided code), but the student may need supplemental instruction on the basic C functions (e.g. malloc, strcat) and C bit-operators (by the instructor or through some written text).<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John Karro</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">coding, short-answer prose</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, pointer and memory management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You are a programmer for a tech. company who has been tasked with setting up a protocol for secure communications – allowing users to exchange emails without that cannot be read by outsiders.  To do so you will implement RSA public-key encryption; because the speed of encryption/decryption is considered a priority, you will implement these in C (as opposed to C++ or Java).<br />
+<br />
+From a pedagogical perspective, the point of this assignment is to give you exposure to C-style programming, helping you to understand memory manipulation.   We will continue to use the C++ compiler (avoiding the hassle of installing a C compiler), but you will be restricted to using only C libraries.   Hence you experience working with the C programming language, and have you think about issues that C++ frequently (and Java always) hides from the programmer.  In the course of this project you will also look at both a common cipher algorithm and RSA, one of the core encryption algorithms.  RSA was the first public-key encryption algorithm, and the mathematics on which it is built is similar to many more sophisticated encryption algorithms.  You are not expected to understand the mathematical basis for RSA, but by the end of this project you should understand how public-private encryption key pairs are generated, how they are used, and why they are so useful in computer security.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/40</id>
+    <title><![CDATA[Eliciting Requirements: Use Case Modeling Memo]]></title>
+    <summary><![CDATA[Analyze and create a requirements specifications using scenarios or use cases.]]></summary>
+    <updated>2012-07-25T21:56:50-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/40"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/99e371848b9e4c2832a5eb6a3934e43f.docx" type="application/zip" length="17635"/>
+    <category term="Product backlog"/>
+    <category term="Requirements"/>
+    <category term="scenarios"/>
+    <category term="Use case"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Eliciting Requirements: Use Case Modeling Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Analyze and create a requirements specifications using scenarios or use cases.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Recommendation<br />
+Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The primary tool at our disposal for defining requirements and identifying features is Use Case Modeling. Use cases are simply scenarios, or stories, that capture the functions that the system provides for the users. The use cases will help you to create your Product Backlog.  In this memo to your supervisor, you will identify two use cases for your team’s part of the class project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

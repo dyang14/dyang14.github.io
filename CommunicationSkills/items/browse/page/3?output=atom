@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/page/3?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T18:53:03-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/page/3?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/1?output=atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/2?output=atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/4?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/11?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/110</id>
+    <title><![CDATA[Style Matters]]></title>
+    <summary><![CDATA[The goal of this assignment is to convince students that good stylistic choices in programming matters. No matter how many times you tell them this, they won&#039;t believe you until they deal with poorly written code.<br />
+<br />
+Give students a piece of poorly indented/commented code, ask them to figure out what it does, and then rewrite it with proper style and good comments. Afterwards, ask them to reflect upon the difficulties created by the poor style. This is best done as a discussion after the assignment is turned in.]]></summary>
+    <updated>2012-07-26T10:07:33-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/110"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/1c67a27575eca03f1fb1aff98a32883f.doc" type="application/msword" length="46080"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/ac98ca3d87132edf2e6ba5b8d71c7a6f.doc" type="application/msword" length="27648"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Style Matters</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The goal of this assignment is to convince students that good stylistic choices in programming matters. No matter how many times you tell them this, they won&#039;t believe you until they deal with poorly written code.<br />
+<br />
+Give students a piece of poorly indented/commented code, ask them to figure out what it does, and then rewrite it with proper style and good comments. Afterwards, ask them to reflect upon the difficulties created by the poor style. This is best done as a discussion after the assignment is turned in.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Writing Code</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Basic Programming Skills</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You are asked to clean up someone else&#039;s code.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/109</id>
+    <title><![CDATA[Program Extension: Fuel Efficiency]]></title>
+    <summary><![CDATA[This assignment can be used for most any introductory programming course. It is to be added to any typical program. After finishing the program, students are to write their boss a memo stating future enhancements that could be made to the program. The memo would contain an introduction, a number list of extra features, and a basic plan of how to extend the current code to incorporate these features.]]></summary>
+    <updated>2012-07-26T10:06:25-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/109"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/4c4eb6df1283fb84fe3c4f9c94c21c1e.doc" type="application/msword" length="45056"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Program Extension: Fuel Efficiency</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment can be used for most any introductory programming course. It is to be added to any typical program. After finishing the program, students are to write their boss a memo stating future enhancements that could be made to the program. The memo would contain an introduction, a number list of extra features, and a basic plan of how to extend the current code to incorporate these features.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Basic Programming Skill</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Memo to boss</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/108</id>
+    <title><![CDATA[Bug Report for a Car Program]]></title>
+    <summary><![CDATA[This assignment can be given in any introductory programming course. It is given in addition to the usual program. While the student is developing their solution, they must fill out a spreadsheet of bugs encountered. They must categorize their bugs (compile error, run time error, logic error) and then describe how they fixed the issue.<br />
+<br />
+Finally, after completing the programming assignment, students must write a letter to a future student, given them high level advice about how to approach the given project.]]></summary>
+    <updated>2012-07-26T10:03:05-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/108"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/8d9e52a5c9de41d9eed294285fa54d26.doc" type="application/msword" length="26624"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/6c035c4b63634fd9d0efcbf0c59639cc.doc" type="application/msword" length="42496"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Bug Report for a Car Program</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment can be given in any introductory programming course. It is given in addition to the usual program. While the student is developing their solution, they must fill out a spreadsheet of bugs encountered. They must categorize their bugs (compile error, run time error, logic error) and then describe how they fixed the issue.<br />
+<br />
+Finally, after completing the programming assignment, students must write a letter to a future student, given them high level advice about how to approach the given project.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Debugging/Testing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Basic Programming Skills</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Bug Reports are frequently given by testers, this is practice for that type of work.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/107</id>
+    <title><![CDATA[Project Review]]></title>
+    <summary><![CDATA[This assignment allows presenters the opportunity to orally summarize the state of their team&#039;s project at the time of the presentation and the report should give the audience a low-level and technical look at the details of the team&#039;s design and implementation.  Student team is required to give a copy of their team’s documentation to another team for review.  Team will critique another team&#039;s project documentation/presentation.  During the question and answer period of the formal oral presentation, each member of the critiquing team is expected to ask a probing question of the team that just presented their project.]]></summary>
+    <updated>2012-07-26T12:01:37-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/107"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/9f4936121304087850d3d85ac9c2d367.docx" type="application/zip" length="43273"/>
+    <category term="Code Review"/>
+    <category term="Design Review"/>
+    <category term="Implementation Review"/>
+    <category term="Requirements Review"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Project Review</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Capstone</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment allows presenters the opportunity to orally summarize the state of their team&#039;s project at the time of the presentation and the report should give the audience a low-level and technical look at the details of the team&#039;s design and implementation.  Student team is required to give a copy of their team’s documentation to another team for review.  Team will critique another team&#039;s project documentation/presentation.  During the question and answer period of the formal oral presentation, each member of the critiquing team is expected to ask a probing question of the team that just presented their project.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Margaret Heil</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">NA</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Formal presentation/formal documentation; informal speaking (Q/A)</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, speaking, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Product Demonstration, Requirements, Design Expression, presentation of Implementation details, Continuous Quality Assurance (Testing)</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Managers will often review design and code of development team or individual.  If team is using an iterative or agile process, this inspection will most likely focus on the details of the requirements, design, implementation &amp; testing of the most recent iteration.  For example, developers may be asked to demonstrate a crucial component of their system that is interesting or complex in terms of algorithms and/or code segments.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/106</id>
+    <title><![CDATA[Final Poster, Presentation &amp; Demo]]></title>
+    <summary><![CDATA[This assignment allows presenters the opportunity to orally summarize their team’s project in a very short amount of time (2.5-3 minutes) for a diverse audience.  Within that amount of time, the presenter will need to attract the audience, sell the project idea and show technical expertise.  As a part of this event, the entire team has the opportunity to demonstrate their project using a tradeshow approach.  This gives students experience listening to and answering questions one-on-one or with small numbers of interested parties.  Students also gain experience with developing professional posters.]]></summary>
+    <updated>2012-07-25T16:58:26-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/106"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/ab7a93a18445a587ebe48698dbb215de.docx" type="application/zip" length="36302"/>
+    <category term="exposition"/>
+    <category term="project summary"/>
+    <category term="tradeshow"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Final Poster, Presentation &amp; Demo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Capstone</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment allows presenters the opportunity to orally summarize their team’s project in a very short amount of time (2.5-3 minutes) for a diverse audience.  Within that amount of time, the presenter will need to attract the audience, sell the project idea and show technical expertise.  As a part of this event, the entire team has the opportunity to demonstrate their project using a tradeshow approach.  This gives students experience listening to and answering questions one-on-one or with small numbers of interested parties.  Students also gain experience with developing professional posters.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Margaret Heil</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">NA</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Formal short elevator speech-type presentation; informal speaking (tradeshow/demonstration); poster creation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Speaking, teaming, listening, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Deliver audience-sensitive oral project progress reports that include introductions &amp; conclusions, problem descriptions, requirements specs, design descriptions, test plans/results and task plans.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Managers often ask employees to explain a technical project to audience members (e.g., customers, potential customers, end users) with various levels of technical expertise.  This serves as an opportunity for managers to sell products and their company.  <br />
+<br />
+Preparing this type of presentation also provides the developing team a different perspective on both the project’s broad spectrum and its details.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/105</id>
+    <title><![CDATA[Written Project Report]]></title>
+    <summary><![CDATA[A written draft of project progress report that includes sections describing: requirements, design, implementation, testing and task plans.  Student team works together to develop audience-sensitive written project progress reports.  This assignment allows students to organize and record their project progress.  Each student gains experience with writing/editing as a team; as they write, there will be many opportunities to clarify issues and ask questions.  The task plan portion of the report will clearly delineate action items and due dates.  As team writes this progress report, requirements are listed and hence a related design can be created.  Oftentimes, preliminary code is also written/tested as a result of this activity.  The entire activity of preparing this report assists team with moving forward to next phase of project.<br />
+]]></summary>
+    <updated>2012-07-26T11:47:36-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/105"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/73086d39741c40fd9e7496e70c52594f.docx" type="application/zip" length="47035"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/329944074c195b7cc02757caa48f88b1.docx" type="application/zip" length="28329"/>
+    <category term="Design Specification"/>
+    <category term="Implementation"/>
+    <category term="Project Plan"/>
+    <category term="Requirements Specification"/>
+    <category term="Test Plans"/>
+    <category term="Test Results"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Written Project Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Capstone</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A written draft of project progress report that includes sections describing: requirements, design, implementation, testing and task plans.  Student team works together to develop audience-sensitive written project progress reports.  This assignment allows students to organize and record their project progress.  Each student gains experience with writing/editing as a team; as they write, there will be many opportunities to clarify issues and ask questions.  The task plan portion of the report will clearly delineate action items and due dates.  As team writes this progress report, requirements are listed and hence a related design can be created.  Oftentimes, preliminary code is also written/tested as a result of this activity.  The entire activity of preparing this report assists team with moving forward to next phase of project.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Margaret Heil</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">NA</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Formal documentation; writing as a team</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, writing, speaking, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements, Design Creation, Implementation, Testing, Project Management</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Managers and customers often require employees to provide requirements and design specifications as well as reports on implementation details and testing.  These reports are used to clarify project definition and scope and to track progress.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/104</id>
+    <title><![CDATA[Individual Student Journal]]></title>
+    <summary><![CDATA[This assignment gives students the opportunity to write a personal journal of individual project activity (on a weekly basis)  as well as summarize monthly individual contribution to their team’s project.  If students use this assignment to describe challenges, it may actually help them to problem solve.  Keeping track of their time will eventually help them to estimate time it will take them to do future tasks.<br />
+<br />
+This assignment is completed throughout the semester via the course website.]]></summary>
+    <updated>2012-07-25T15:45:21-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/104"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/6e8f18daab0bc57cdeca2ccb77827fff.docx" type="application/zip" length="22712"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Individual Student Journal</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Capstone</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment gives students the opportunity to write a personal journal of individual project activity (on a weekly basis)  as well as summarize monthly individual contribution to their team’s project.  If students use this assignment to describe challenges, it may actually help them to problem solve.  Keeping track of their time will eventually help them to estimate time it will take them to do future tasks.<br />
+<br />
+This assignment is completed throughout the semester via the course website.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Margaret Heil</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">NA</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Informal Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Semester Long</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Informal Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Project Management, Resource Management<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">One is working for a software development company as a software developer.  Managers ask employees to track the amount of time spent on various components of a software development/research project.  Managers will more easily track/analyze technical issues or solutions discovered during a project. <br />
+<br />
+Helps managers to determine individual accountability &amp; appropriate project scope; gives employee experience with estimating time to complete tasks.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/93</id>
+    <title><![CDATA[Project presentations]]></title>
+    <summary><![CDATA[This is a set of presentation assignments for the semester-long class project.  For each iteration of the project teams present their understanding of the project and demo the implementation to the client.  Teams are also expected to elicit feedback from the client.]]></summary>
+    <updated>2012-07-26T06:33:26-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/93"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/fd6d88f9750975ad502ad0d74d733baa.zip" type="application/zip" length="127478"/>
+    <category term="Feasibility"/>
+    <category term="Project Vision"/>
+    <category term="Requirements"/>
+    <category term="Scope"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Project presentations</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is a set of presentation assignments for the semester-long class project.  For each iteration of the project teams present their understanding of the project and demo the implementation to the client.  Teams are also expected to elicit feedback from the client.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig.  Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Oral presentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing<br />
+Speaking<br />
+Teaming<br />
+Listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">In this assignment your team will make an oral presentation, summarizing the results of the Inception Phase, to your client, co-workers, and supervisor. You should summarize the content of the artifacts produced in the Inception Phase (Vision, Use Case Model, Glossary, and Supplementary Specification).  You should create visual aids (such as a PowerPoint deck, handouts, etc) to supplement your presentation.<br />
+<br />
+The ability to present information orally to a variety of audiences is a very important skill to learn and practice. It probably goes without saying that you will be called upon in your internships and career to present information orally, but you will probably also want to make such presentations to social groups and a variety of other organizations with which you become a member.<br />
+<br />
+An oral presentation is a prepared, purposeful presentation designed to increase knowledge, foster understanding, or promote change in the listeners’ attitudes, values, beliefs, or behaviors. In our case we want to foster understanding within your team, your supervisor, and the client that we have a good understanding of the project’s overall goals and scope.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/91</id>
+    <title><![CDATA[Project]]></title>
+    <summary><![CDATA[This is a semester-long class project using iterative development for a sophomore-level course.  Students are assumed to have had an introduction to object-oriented programming.  The attached zip file has assignments for five iterations covering the inception, elaboration, and contruction phases.]]></summary>
+    <updated>2012-07-26T06:34:43-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/91"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/dc1ab2e14a97f89039ea3419b5cbe299.zip" type="application/zip" length="109993"/>
+    <category term="Feasibility"/>
+    <category term="Project Vision"/>
+    <category term="Requirements"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Project</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is a semester-long class project using iterative development for a sophomore-level course.  Students are assumed to have had an introduction to object-oriented programming.  The attached zip file has assignments for five iterations covering the inception, elaboration, and contruction phases.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig.  Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Report<br />
+Code</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing<br />
+Teaming<br />
+Listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The most important step in the software development process is to understand the problem to be solved. The “problem” is typically a set of “needs” of the client related to their business or organization. If you come up with a great solution that does not meet the needs of the client, your project will not be a success! <br />
+<br />
+The Vision document is one of the early documents that we create in our software development methodology. It’s our opportunity to work with the client to establish a common vision and basic scope for the project. We can explore the client’s vision for the project, its feasibility within the time and resources that we have, make a rough estimate of cost and time complete the project, and decide whether or not we can move ahead with the project. This is an essential step in any project. Note that we are not trying to completely define the client’s needs (requirements) or the solution. This will evolve as we move forward with the project. <br />
+<br />
+The Supplemental Specification and the Glossary support the Vision. The focus of the vision is primarily on functional requirements (the features seen by the user). The Supplemental Specification captures the “URPS+” non-functional requirements: Usability, Reliability, Performance, Supportability and any others (such as legal issues). The Glossary defines critical terminology, and can sometimes document the format of data.<br />
+<br />
+This is a team assignment to work with the client to create a common vision and scope for the class project, and to create the initial product backlog. This will help assure that your project is a success and meets the needs of the client. Note that these are “living documents” and will evolve as the project progresses.<br />
+<br />
+Please note that the audience for the Vision, Supplemental Specification and Glossary includes the software engineers on your team and the client. This means that these documents should be written so that the client can easily understand them (don’t overuse technical jargon or acronyms, for example).<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/90</id>
+    <title><![CDATA[Project Closure Report]]></title>
+    <summary><![CDATA[Post-mortem report for the semester-long team project. Students reflect on the software development process and recommend improvements to the process.]]></summary>
+    <updated>2012-07-26T06:38:38-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/90"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c9e56dbc09b3a59a97988ab09931402c.docx" type="application/zip" length="25183"/>
+    <category term="Project closure"/>
+    <category term="Project post-mortem"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Project Closure Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Post-mortem report for the semester-long team project. Students reflect on the software development process and recommend improvements to the process.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Deployment</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The goal of this assignment is to reflect on the overall success of our software project management approach, suggest possible improvements for future classes, and to reflect on the service-learning component of the course.  This is sometimes called the project post-mortem.  The goal is to learn from the development experience in order to improve the software development process for future projects.  Your report will be used by your supervisor to determine what, if any, further work, or enhancements, might be required for your final product.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

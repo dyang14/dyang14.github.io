@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/tag/Evaluate+process+and+configuration+management+tools?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:31:15-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Evaluate+process+and+configuration+management+tools?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Evaluate+process+and+configuration+management+tools/page/1?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Evaluate+process+and+configuration+management+tools/page/1?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/45</id>
+    <title><![CDATA[Project Management Tools Report]]></title>
+    <summary><![CDATA[The Project Management Tools Report assignment directs student teams to evaluate and select tools for process and configuration management.  The Project Management Tools Report is fourth of five assignments that prepare students to develop the software they evaluated in Program Review Report assignment over four two-week scrum cycles.  <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Evaluate key features of process management tools for a development project.<br />
+2.	Evaluate the key features of configuration management tools for a development project.<br />
+3.	Estimate resources needed to install and maintain the project management tools.<br />
+4.	Install and test project management tools for a development project.<br />
+5.	Create a plan to train a new team member to use the project management tools.<br />
+6.	Identify the key technical information about a program that the project manger wants when deciding which project management tools to use.<br />
+]]></summary>
+    <updated>2012-07-26T10:54:46-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/45"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c514e7278607dcbdce5750153be92893.pdf" type="application/pdf" length="601883"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/7c183e6bdcce6eece7196e43372ab8a2.docx" type="application/zip" length="35531"/>
+    <category term="Evaluate process and configuration management tools"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Project Management Tools Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Project Management Tools Report assignment directs student teams to evaluate and select tools for process and configuration management.  The Project Management Tools Report is fourth of five assignments that prepare students to develop the software they evaluated in Program Review Report assignment over four two-week scrum cycles.  <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Evaluate key features of process management tools for a development project.<br />
+2.	Evaluate the key features of configuration management tools for a development project.<br />
+3.	Estimate resources needed to install and maintain the project management tools.<br />
+4.	Install and test project management tools for a development project.<br />
+5.	Create a plan to train a new team member to use the project management tools.<br />
+6.	Identify the key technical information about a program that the project manger wants when deciding which project management tools to use.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development PROJECT MANAGEMENT TOOLS REPORT The project manager has decided to continue development of the product begun but not completed by an acquired company. (This is the product your team evaluated in the Product Review Report, developed customer requirements for in the Customer Requirements Report, and developed a prioritized bug/enhancement list for in the Prioritized Bug/Enhancement Report.) The product manager has assigned your development team to select and implement project management tools. Specifically, the project manager wants your team’s recommendation on the following:  Process management tool (i.e., a tool to manage the development process)  Configuration management tool (i.e., a tool to manage the product code) Your team’s report needs to recommend tools that your team will use to effectively and efficiently manage product development. The project manager has asked your team to make a ten-minute presentation summarizing the report. Your team’s report and presentation provides the project manager with critical information to plan how to develop the product. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a three-to-five-page project management tools report. 2. The project manager has asked your team to present significant findings from the project management tools report in a ten-to-fifteen-minute meeting. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, the manager wants your team to answer the following technical questions: 1. What process management tool is best suited to manage the development process? 2. What configuration management tool is best suited to manage the development process? 3. What resources are needed to implement and maintain the recommended project management tools? You must provide answers to these questions in a manner that helps the manager develop a plan. The manager must evaluate your team to determine whether it is capable of completing the project. The manager will use your team’s report to answer the following questions: 1. Can your team evaluate and select project management tools? 2. Can your team implement and maintain project management tools? 3. Can your team document tool installation and maintenance for new team members? 4. Are you and the other team members able to work together effectively? You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project. LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Evaluate key features of process management tools for a development project. 1<br />
+<br />
+CSC 225 – Introduction to Software Development 2. 3. 4. 5. 6. Evaluate the key features of configuration management tools for a development project. Estimate resources needed to install and maintain the project management tools. Install and test project management tools for a development project. Create a plan to train a new team member to use the project management tools. Identify the key technical information about a program that the project manger wants when deciding which project management tools to use.<br />
+<br />
+Focus also on developing your ability to perform these communication tasks: 1. Write a report that helps managers make practical decisions efficiently. [Writing] 2. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 3. Write a report that persuades mangers to accept your recommendation. [Writing] 4. Select key information from written report useful to the project manager. [Speaking] 5. Create an informative and useful presentation for the project manager. [Speaking] 6. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 7. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 8. Collaborate effectively on a software development team. [Teaming] 9. Organize and execute a meeting with the project manager and the software development team. [Teaming] 10. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Monday (9/17): Introduction to project management and project management tools. Friday (9/21): Submit your report and make your presentation. Peer review of presentations. GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+2<br />
+<br />
+CSC 225 – Introduction to Software Development Project Management Tools Report<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Evaluate key features of process management tools for a development project.<br />
+<br />
+Details<br />
+Analyze the features of the process management tool<br />
+<br />
+Report Section<br />
+Evaluation Section<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Lists useful features with a brief, accurate description of each Useful features not listed, or missing or inaccurate description<br />
+<br />
+Points<br />
+<br />
+Evaluate the key features of configuration management tools for a development project.<br />
+<br />
+Identify the key process management features for the development project Analyze the features of the configuration management tool<br />
+<br />
+Lists features that support the project with persuasive justification Evaluation Section Lists useful features with a brief, accurate description of each<br />
+<br />
+Project supporting features not listed or justification is not persuasive Useful features not listed, or missing or inaccurate description<br />
+<br />
+Estimate resources needed to install and maintain the project management tools.<br />
+<br />
+Identify the key configuration management features for the development project Identify the time needed to learn and maintain the project management tools<br />
+<br />
+Lists features that support the project with persuasive justification<br />
+<br />
+Project supporting features not listed or justification is not persuasive Project management task missing, missing time estimate, or missing supporting evidence. Team members not listed or relevant skills missing or inaccurate<br />
+<br />
+Resource Section<br />
+<br />
+Lists project management tasks with a time estimate with supporting evidence<br />
+<br />
+Identify team member(s) needed to maintain the project management tool<br />
+<br />
+Lists team members with description of relevant skills<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Install and test project management tools for a development project. Install the project management tools. Verify the installations has worked Identify in technical terms problems with the tool installation Installation Section Describes installation process accurately Focuses on the major steps taken Describes each major problem encountered precisely; summarizes the amount and kinds of minor problems encountered Lists tasks required to maintain project management tools; describe importance of each Plan describes specific steps for new team member Describes installation process inaccurately. Provides a narrative of every step taken Omits major problems encountered or describes them imprecisely; describes in detail each minor problem encountered Omits necessary project management tool tasks or inaccurately describes importance Plan description is disorganized, generic, or is not appropriate for a new team member Omits or describes inaccurately the key features of tools, or omits evidence to support their usefulness Omits or describes inaccurately costs of using each tool.<br />
+<br />
+Create a plan to train a new team member to use the project management tools.<br />
+<br />
+Identify the key information to maintain the project management tools<br />
+<br />
+Training Section<br />
+<br />
+Create a plan to train a new team member<br />
+<br />
+Create a project management tool recommendati on.<br />
+<br />
+Recommend a process management tool and a configuration management tool<br />
+<br />
+Recommen dation Section<br />
+<br />
+Describes accurately the key features of each tool that useful for the project supported with evidence<br />
+<br />
+Describes accurately the cost (time and people) needed to successfully use the tool Provides enough detail to enable the manager to incorporate the tools<br />
+<br />
+Describes recommendations vaguely so a manager<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+recommendation into the project plan would not be able to incorporate it into a project plan<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development Project Management Tools Report<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently<br />
+<br />
+Details<br />
+Provides critical information useful to the reader Critical information is easily accessible to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Report builds project manager’s confidence in team’s technical and communicatio n abilities<br />
+<br />
+Concise and appropriate writing style for project manager Uses precise terms appropriate for the reader<br />
+<br />
+Writing<br />
+<br />
+Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence from user training to support key findings<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from user training to support key findings<br />
+<br />
+Uses credible evidence to support explanations<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Report persuades project manager to accept your recommendati on<br />
+<br />
+Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings<br />
+<br />
+Writing<br />
+<br />
+Uses correct spelling, grammar, etc. throughout report Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings Concisely and accurately demonstrates key features of user training Concisely and accurately demonstrates significant features of the user training sample<br />
+<br />
+Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features user training Select information that demonstrates significant features of the user training sample Select information that demonstrates significant factors affecting user experience Select information that recommends plans for program development Key information is presented<br />
+<br />
+Speaking<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant Significant features are missing, insignificant features are included, or irrelevant features<br />
+<br />
+Concisely and accurately demonstrates significant factors affecting user experience<br />
+<br />
+Significant factors are missing, insignificant factors are included, or irrelevant facctors<br />
+<br />
+Create and informative and useful presentation<br />
+<br />
+Speaking<br />
+<br />
+Concise and accurate recommendations for program development Succinctly presents key information<br />
+<br />
+Significant recommendations missing Omits or inaccurately presents key information<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+for the project manager Handouts, visuals, demonstrations, etc. support and complement the presentation Uses concise, accurate, and useful support materials to support and complement the presentation Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids firsttime problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and accurate understanding of questions, and accurately and respectfully answers each<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting<br />
+<br />
+Team members under dress or over dress for the meeting<br />
+<br />
+Questions are accurately, authoritatively, and respectfully answered<br />
+<br />
+Demonstrates lack of understanding or the lack of ability to explain answers to questions. Lack of respect for the<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+questioner Tasks are not independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late Omitted major topics, time not on task, not enough time to answer<br />
+<br />
+Collaborate effectively on a software development team<br />
+<br />
+Breakdown the software development project into small, independent task<br />
+<br />
+Teaming<br />
+<br />
+Each task is independent, clearly defined, and contributes to the overall software development task<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+Meeting is wellorganized and executed<br />
+<br />
+All major topics are presented, no time is wasted, all questions are<br />
+<br />
+9<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+answered in the allotted time Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks all questions Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop knowledge of individual team member skills and trust among team members<br />
+<br />
+Identify skills of each team member<br />
+<br />
+Teaming<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+10<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Recommendation/Proposal</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Tools </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The project manager has decided to continue development of the product begun but not completed by an acquired company.  The product manager has assigned your development team to select and implement project management tools. The project manager will use your selections to advise upper management on the resources required for the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

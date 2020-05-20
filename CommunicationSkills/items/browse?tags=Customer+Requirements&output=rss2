@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=Customer+Requirements&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:07:11 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Customer Requirements Report]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/28</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Customer Requirements Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Customer Requirements Report assignment directs student teams to gather and evaluate data from novice and expert users to synthesize a software development plan.  The Customer Requirements Report is second of five assignments that prepare students to develop the software they evaluated in the Program Review Report assignment over four two-week scrum cycles.   <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Teach novice to expert users how to use the software product.<br />
+2.	Gather data on user experience including demographic, experience level, and request versus observation.<br />
+3.	Analyze data to identify strengths and weaknesses of the software product.<br />
+4.	Create a development plan for the program based on analysis of customer experience.<br />
+5.	Identify the key technical information about a program that the project manger wants when deciding how to create a development plan to meet customer requirements.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development CUSTOMER REQUIREMENTS REPORT The project manager has decided to develop the product begun but not completed by an acquired company. (This is the product your team evaluated in the Product Review Report.) The product manager has assigned your development team to develop customer requirements based on customer experience using the product.  Your team needs to gather data on the experience of novices (someone who rarely used this type of product) and experts (someone who frequently uses this type of product.)  Customer experience may be influenced by factors such as age and gender; therefore, demographic data is important for the product manager.  Customers may or may not be able to articulate their experience. Your team needs to gather data directly from customers with a questionnaire, for example, and by observing customers using the product. Your team’s report needs to make recommendations for developing the product to meet customer needs. The project manager has asked your team to make a ten-minute presentation summarizing the report. Your team’s evaluation report and presentation provides the project manager with critical information to plan how to develop the product. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a three-to-five-page requirements report. 2. The project manager has asked your team to present significant findings from the requirements report in a ten-to-fifteen-minute meeting. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, the manager wants your team to answer the following technical questions: 1. How usable is the product for novice and expert users? 2. What factors affect the user’s ability to use the product? 3. What are the most significant factors that affect user’s ability to use the product? You must provide answers to these questions in a manner that helps the manager develop a plan. The manager must evaluate your team to determine whether it is capable of completing the project. The manager will use your team’s report to answer the following questions: 1. Can your team teach novice to expert users how to use the product? 2. Can your team gather useful data on user experience with the product? 3. Can your team identify significant factors that affect user experience? 4. Are you and the other team members able to work together effectively? You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project.<br />
+<br />
+1<br />
+<br />
+CSC 225 – Introduction to Software Development LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Teach novice to expert users how to use the software product. 2. Gather data on user experience including demographic, experience level, and request versus observation. 3. Analyze data to identify strengths and weaknesses of the software product. 4. Create a development plan for the program based on analysis of customer experience. 5. Identify the key technical information about a program that the project manger wants when deciding how to create a development plan to meet customer requirements. Focus also on developing your ability to perform these communication tasks: 1. Write a report that helps managers make practical decisions efficiently. [Writing] 2. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 3. Write a report that persuades mangers to accept your recommendation. [Writing] 4. Select key information from written report useful to the project manager. [Speaking] 5. Create an informative and useful presentation for the project manager. [Speaking] 6. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 7. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 8. Collaborate effectively on a software development team. [Teaming] 9. Organize and execute a meeting with the project manager and the software development team. [Teaming] 10. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Friday (8/31): Introduction to customer requirements. Wednesday (9/5): Introduction to evaluating user experience. Friday (9/7): Submit your report and make your presentation. Peer review of presentations. GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+2<br />
+<br />
+CSC 225 – Introduction to Software Development Customer Requirements Report<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Teach novice to expert users how to use a software product.<br />
+<br />
+Details<br />
+Create a plan to teaching novices<br />
+<br />
+Report Section<br />
+Instruction Section<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Plan description with specific steps for a novice Plan description is disorganized, generic, or is not appropriate for a novice Plan description is disorganized, generic, or is not appropriate for a expert Individual user descriptions, no synthesis, changes in a list, or no supporting evidence Useful demographic data missing or not useful data included, missing data, or not listed in a table Data missing or not listed in a table Missing request, corresponding data, sample question, or not in a table<br />
+<br />
+Points<br />
+<br />
+Create a plan for teaching experts<br />
+<br />
+Plan description with specific steps for a expert<br />
+<br />
+Identify changes in each plan from teaching experience<br />
+<br />
+Gather data on user experience.<br />
+<br />
+Gather demographic data for each user<br />
+<br />
+Data Section<br />
+<br />
+Synthesize experience with novices and experts, and list specific changes to each plan support by evidence Useful demographic data for all users listed in a table<br />
+<br />
+Gather experiencelevel data for each user Gather change requests by questioning users<br />
+<br />
+Experience-level data for all users listed in a table Change requests listed in a table with corresponding experience-level and demographic data.<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Include sample questions Gather change requests by observing users Observed requests listed in a table with corresponding experience-level and demographic data List of best product features with a brief and useful description with evidence from gathered data and user experience List of product poorest features with a brief and useful description with evidence from gathered data and user experience Describes accurately the nature and amount of work required to advance each of the program’s weaknesses to a level that would improve users experience Each recommendation is clearly based on issues explicitly described in the analysis section Provides enough detail about each recommendation to enable a manager to incorporate it into a project plan Missing request, corresponding data, , or not in a table<br />
+<br />
+Identify strengths and weaknesses of the software product.<br />
+<br />
+Identify and describe which product features provided the best user experience<br />
+<br />
+Analysis Section<br />
+<br />
+Best product features not in a list, not useful description, or inappropriate or missing evidence Poorest product features not in a list, not useful description, or inappropriate or missing evidence Omits or describes inaccurately the work required to advance each of the program’s weaknesses to a level that would improve users experience Recommendations are not based on issues explicitly described in the analysis section Describes recommendations vaguely so a manager would not be able to incorporate it into a project plan<br />
+<br />
+Identify and describe which product features provided the poorest user experience Create a development plan for the partially completed program. Recommend a development plan based on prioritization of product weakness and change requests Recommen dations Section<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development Customer Requirements Report<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently<br />
+<br />
+Details<br />
+Provides critical information useful to the reader Critical information is easily accessible to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Report builds project manager’s confidence in team’s technical and communicatio n abilities<br />
+<br />
+Concise and appropriate writing style for project manager Uses precise terms appropriate for the reader<br />
+<br />
+Writing<br />
+<br />
+Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence from user training to support key findings<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from user training to support key findings<br />
+<br />
+Uses credible evidence to support explanations<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Report persuades project manager to accept your recommendati on<br />
+<br />
+Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings<br />
+<br />
+Writing<br />
+<br />
+Uses correct spelling, grammar, etc. throughout report Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings<br />
+<br />
+Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features user training Select information that demonstrates significant features of the user training sample Select information that demonstrates significant factors affecting user experience Select information that recommends plans for program development Key information is presented<br />
+<br />
+Speaking<br />
+<br />
+Concisely and accurately demonstrates key features of user training Concisely and accurately demonstrates significant features of the user training sample<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant Significant features are missing, insignificant features are included, or irrelevant features<br />
+<br />
+Concisely and accurately demonstrates significant factors affecting user experience<br />
+<br />
+Significant factors are missing, insignificant factors are included, or irrelevant factors<br />
+<br />
+Create and informative and useful presentation<br />
+<br />
+Speaking<br />
+<br />
+Concise and accurate recommendations for program development Succinctly presents key information<br />
+<br />
+Significant recommendations missing Omits or inaccurately presents key information<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+for the project manager Handouts, visuals, demonstrations, etc. support and complement the presentation Uses concise, accurate, and useful support materials to support and complement the presentation Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids first-time problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and accurate understanding of questions, and accurately and respectfully answers each Teaming Each task is independent,<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting Questions are accurately, authoritatively, and respectfully answered<br />
+<br />
+Team members under dress or over dress for the meeting Demonstrates lack of understanding or the lack of ability to explain answers to questions. Lack of respect for the questioner Tasks are not<br />
+<br />
+Collaborate<br />
+<br />
+Breakdown the<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+effectively on a software development team software development project into small, independent task clearly defined, and contributes to the overall software development task independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late Omitted major topics, time not on task, not enough time to answer all questions<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+Meeting is wellorganized and executed<br />
+<br />
+All major topics are presented, no time is wasted, all questions are answered in the allotted time<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Develop knowledge of individual team member skills and trust among team members Identify skills of each team member Teaming Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+9<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Customer Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The project manager has decided to develop the product begun but not completed by an acquired company.  The product manager has assigned your development team to develop customer requirements based on customer experience using the product.  The project manager will use your requirements to advise upper management on the status of the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-pdf"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/9707c533560bdc0bf5aeebc8e253aff4.pdf">CSC225CustomerRequirementsReport.pdf</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/89ccc448761e9455adaeaf50162f209b.docx">CSC225CustomerRequirementsReport.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:22:17 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/9707c533560bdc0bf5aeebc8e253aff4.jpg" type="application/pdf" length="599521"/>
+    </item>
+  </channel>
+</rss>

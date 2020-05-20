@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/tag/Data+Structures?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:24:19-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Data+Structures?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Data+Structures/page/1?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Data+Structures/page/1?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/76</id>
+    <title><![CDATA[Current Events]]></title>
+    <summary><![CDATA[Prior to class, students will find at least one current news article that relates to computer science.  They will be expected to have read the article and be able to summarize the contents verbally.   The article can be from any popular press or academic venue.<br />
+<br />
+This assignment requires student preparation outside the classroom as well as participation within the classroom.  This assignment is most effective when used as a regularly scheduled event (for example, in the first class of the week, every week during the semester).   ]]></summary>
+    <updated>2012-07-25T14:47:00-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/76"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/601174c9ff6545ad68e722fc78ad434e.docx" type="application/zip" length="35067"/>
+    <category term="Automata"/>
+    <category term="Capstone"/>
+    <category term="CS2"/>
+    <category term="Data Structures"/>
+    <category term="Databases"/>
+    <category term="Software Engineering"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Current Events</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Prior to class, students will find at least one current news article that relates to computer science.  They will be expected to have read the article and be able to summarize the contents verbally.   The article can be from any popular press or academic venue.<br />
+<br />
+This assignment requires student preparation outside the classroom as well as participation within the classroom.  This assignment is most effective when used as a regularly scheduled event (for example, in the first class of the week, every week during the semester).   </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">informal verbal report, listening to presentations</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, listening, speaking</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">varies</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Computer science connects to and integrates with other disciplines to solve problems.  As professionals in our discipline we want to be able to intelligently discuss these concepts with others and to refine our understanding.  In order to maximize the use of our time we need to improve their ability to read with purpose and to understand and summarize new material as well as to disseminate knowledge verbally to a group of our peers.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">Could be used in any course.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/46</id>
+    <title><![CDATA[Three Minute Lecture Critique]]></title>
+    <summary><![CDATA[This assignment will give the student the opportunity to practice providing substantive critiques in a low stake setting.   <br />
+<br />
+For this assignment, students will evaluate a three minute lecture given by one of their classmates.  The goal is for students to support their ratings with concrete examples from within the presentation and to include suggestions for improvement that are likewise specific and concrete.]]></summary>
+    <updated>2012-07-25T14:31:12-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/46"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c875a9591b0872d21ce9614628a79186.docx" type="application/zip" length="20393"/>
+    <category term="Automata"/>
+    <category term="Capstone"/>
+    <category term="CS2"/>
+    <category term="Data Structures"/>
+    <category term="Databases"/>
+    <category term="Software Engineering"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Three Minute Lecture Critique</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment will give the student the opportunity to practice providing substantive critiques in a low stake setting.   <br />
+<br />
+For this assignment, students will evaluate a three minute lecture given by one of their classmates.  The goal is for students to support their ratings with concrete examples from within the presentation and to include suggestions for improvement that are likewise specific and concrete.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Critique, Oral Presentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">speaking, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">varies</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Frequently, throughout our careers we will be asked to give feedback to others to help them improve what they are doing.  Being able to provide constructive, useful, and thorough critique improves the performance of your team, reflects positively upon you, and builds good rapport with your colleagues.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">This assignment can be scaled to larger teams with a minimum of 3 per team.<br />
+<br />
+The technical skill varies on this skill, because practically any technical skill can be demonstrated by the student lecturer.  Keep in mind that that the student presentation is only 3 minutes long so the subject matter must be scaled so that it can be presented effectively in 3 minutes or less.<br />
+<br />
+This assignment can also be used for other courses other than CS1.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

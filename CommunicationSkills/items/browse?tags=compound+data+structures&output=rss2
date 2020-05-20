@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=compound+data+structures&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:20:12 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Searching and Replacing Text in a Large File]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/26</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Searching and Replacing Text in a Large File</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The assignment has two phases. In the first phase, students work in teams, each team doing a design document and a presentation. In the second each individual student implements one of the designs. Students use existing data structures in the Java API to solve the problem of doing global search/replace operations on a given input file.<br />
+<br />
+Students are expected to be familiar with file I/O, complexity (big-oh), and the efficiency of operations in selected Java API&#039;s</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Matt Stallmann</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design document,<br />
+Oral presentation of design,<br />
+Interpreting oral presentation,<br />
+Peer evaluation,<br />
+Navigating an API,<br />
+Creating a test plan<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, writing, speaking, teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design creation/specification,<br />
+Research,<br />
+Linear data structures,<br />
+Program design,<br />
+Selection of algorithms and data structures,<br />
+Trees/heaps,<br />
+Testing,<br />
+Team formation and evaluation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">This assignment explores an approach to searching and replacing data in a text file motivated by the following situation. Suppose that the only strings you are allowed to replace are words, contiguous strings with no embedded spaces or punctuation.<br />
+<br />
+A situation like this might occur if you want to rename variables in a program. The other feature of this situation is that the file on which search and replace is to be done could be huge while the number of distinct words is small. And a large number of search and replace operations will be done as a single batch. Imagine a long list of updates to a large piece of software.<br />
+<br />
+The team design and presentation aspect of this assignment is typical in the project planning phase of software development. A requirements engineer might propose a new feature (in this case word search/replace). The developers and testers need to communicate about designs that will incorporate the new feature.  A test plan is a critical aspect of the communication between a requirements engineer and the designer. It ensures that each understands the expected behavior of the software under a variety of circumstances.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The three files are:<br />
+<br />
+project2.html - the actual assignment<br />
+<br />
+team-eval.doc - form used for peer evaluation of team members<br />
+<br />
+survey_analysis.xlsx - results of an attitude survey</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file text-html"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/7ea5b4efb33b43a8abf6e27a7253a7fc.html">project2.html</a></div><div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/60087417ee606a760059232eb08a25b0.doc">team-eval.doc</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/674d3dfe0eb2a510e2433951426f0520.xlsx">survey_analysis.xlsx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:21:56 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/7ea5b4efb33b43a8abf6e27a7253a7fc.jpg" type="text/html" length="20202"/>
+    </item>
+  </channel>
+</rss>

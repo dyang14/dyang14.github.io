@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/conference?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 18:57:58 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Characterizing Communication Instruction in Computer Science and Engineering Programs: Methods and Applications]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/131</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Characterizing Communication Instruction in Computer Science and Engineering Programs: Methods and Applications</div>
+                    </div><!-- end element -->
+                <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">“Incorporating Communication Learning Outcomes<br />
+Across the Computer Science (CS) and Software Engineering<br />
+(SE) Curriculum” is an NSF-funded project that aims to identify<br />
+the communication skills, specifically those involving reading,<br />
+writing, speaking, and teaming, needed by CS and SE graduates<br />
+and then determine how these skills can be taught within CS and<br />
+SE curricula. This paper presents the results of our first two<br />
+years of studying the programs at Miami University and North<br />
+Carolina State University to determine the kinds of<br />
+communication utilized in our courses and how communication is<br />
+taught and assessed. When looking at student attitudes towards<br />
+communication our analyses suggest that students do not<br />
+consider technical (professional) activities such as code reading,<br />
+writing, and inspections as communication activities, and the<br />
+same applies to more complex genres such as software testing or<br />
+design. They also appear to have difficulty relating writing and<br />
+reading that may take place in the context of the courses to what<br />
+they might be doing as software engineers and computer<br />
+scientists once they start working. On the other hand, initial<br />
+results indicate that our students’ communications skills increase<br />
+steadily throughout their stay in the university. We have also<br />
+identified potential strategies for improved instruction in<br />
+communication.</div>
+                    </div><!-- end element -->
+                        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Publication Item Type Metadata</h2-->
+                <div id="publication-item-type-metadata-bibliography" class="element">
+        <h3>Bibliography        </h3>
+                                    <div class="element-text">&quot;Characterizing Communication Instruction in Computer Science and Engineering Programs: Methods and Applications&quot;, Janet E. Burge, Gerald C. Gannod, Paul V. Anderson, Kara Rosine, Mladen A. Vouk, and Michael Carter, in Proceedings of the 2012 Frontiers in Education Conference, October 2012.</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></description>
+      <pubDate>Mon, 22 Jul 2013 12:56:19 -0400</pubDate>
+    </item>
+  </channel>
+</rss>

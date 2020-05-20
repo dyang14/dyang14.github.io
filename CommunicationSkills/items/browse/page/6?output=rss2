@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/page/6?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:22:26 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[The Traveling Salesman Problem: Graph Implementation
+]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/69</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">The Traveling Salesman Problem: Graph Implementation<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Implementation of a graph data structure and the Traveling Salesperson problem using the standard template library; short proofs of correctness.<br />
+<br />
+In this assignment the student will implement two graph representation structures (adjacency matrix and adjacency list), each inherited from a common abstract graph class, and use these as the bases for an implementation of an exhaustive search TSP solution.  Students will compete for fastest implementation (as measured by the amount of nodes that can be processed in a give time limit), ideally leading them to devise branch-and-bound improvements to the exhaustive search.  The students are also intended to use this as a chance to gain experience with the C++ Standard Template Library, using the Vector and List container classes as the basis for their graph representation.<br />
+<br />
+Duration: The project is split in to two parts, intended to require one week each.<br />
+<br />
+Background: Students are assumed to have had: at least 2.5 semesters of programming experience, including at least .5 semesters of C++; knowledge of the Vector and List STL templates; exposure to recursion and depth-first search.   For the assignment the instructor will need to explain the adjacency matrix and adjacency list graph representations.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John Karro</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Implementation, run-time analysis</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, Recursion, Graphs</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Suppose you are working tech. support for Starbuck’s, and have to tackle the problem of delivery truck routing.  Specifically: you need to write a program that will take the location of a supply center and a list of Starbuck locations that are resupplied from that center, and produces a route that will get a truck from the supply center to each of the stores and back while driving the minimum number of miles possible (and hence, presumably, minimizing both fuel and labor costs).  It turns out that writing a program to find these optimal route in polynomial time is a really difficult.  However, if you are not worried about runtime then the algorithm becomes straight-forward.  And really, really slow.  You need to design the best tool you can, and be prepared to explain (in writing) why it works to a colleague, boss, or even to yourself.<br />
+<br />
+This is an example of the Traveling Salesperson Problem, a problem that shows up (in some variation) in many important applications.  If you are going to address it, you probably want to model the problem with a graph: each node represents a store location, while edges represent distance.  Graphs are one of the most useful general models in Computer Science, and having the correct, efficient, implementation of the Graph ADT (along with basic functionality) is of some importance.  In this assignment you will implement the two most commonly used graph data types, and on top of that write a TSP implementation.  <br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/61af94ae8fd4352095d2e692baae7dd5.docx">Proj6.docx</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/04956bcc29a8a9515da0b25a3acced66.zip">materials.zip</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:12:02 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/61af94ae8fd4352095d2e692baae7dd5.jpg" type="application/zip" length="186905"/>
+    </item>
+    <item>
+      <title><![CDATA[Static and Dynamic Object Modeling Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/68</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Static and Dynamic Object Modeling Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Apply a contemporary analysis and design approach, such as object-oriented to a case study. Compare UML class and sequence diagrams. </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to further examine and compare two tools to support object design: Class diagrams and sequence (interaction) diagrams.  When designing the classes (objects) we need to answer the following key questions:<br />
+• What software classes should we implement to produce the product?<br />
+• What are the responsibilities of each class (what are the attributes and methods)?<br />
+• How do the classes interact with one another and the actors?<br />
+<br />
+Class diagrams and sequence diagrams are visual tools that help us to explore possible answers to the above design questions, and to document our decisions. Class and sequence diagrams are very commonly used design tools, so knowledge of these tools should be helpful to you in your future studies or career.  In addition, the two diagrams model different aspects of the software, so the two diagrams are complementary. <br />
+<br />
+In this memo to your supervisor you will summarize the purpose of static and dynamic models and give your own opinion on which type of model is most challenging and useful aid to software design.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/023ca8ed9121f49a21e673e33645cab4.docx">HW_15.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:11:22 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/023ca8ed9121f49a21e673e33645cab4.jpg" type="application/zip" length="22014"/>
+    </item>
+    <item>
+      <title><![CDATA[Reading and Using API Documentation]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/67</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Reading and Using API Documentation</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Effective programming involves being able to navigate API documentation for various packages and classes, in order to identify an appropriate class/method/constructor to solve the problem at hand.  This activity focuses on reading Java&#039;s API documentation to learn about classes that are unfamiliar to the student.  It contains questions that can only be answered by digging around in the documentation.  As they navigate the documentation, students will write short bits of code that demonstrate their understanding of that documentation.<br />
+<br />
+Many of the code-writing questions depend on using the Dr. Java to type out and test code.  Dr. Java&#039;s &quot;Interactions Pane&quot; allows quick testing of individual lines of code, without the need to write a class and method to test that code.<br />
+<br />
+Dr. Java is freely available from http://drjava.org.  Regardless of the IDE you prefer to use in your class, Dr. Java is easy to use, if only for this assignment.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Navigating API documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Laboratory</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Coding</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The software you will write almost always depends on making use of packages, classes, and methods that were developed by other programmers. In order to use software written by others, it is necessary to be able to navigate and understand the documentation for that software.<br />
+<br />
+In this assignment, you will navigate the Java API Documentation, and use it to learn about Java packages and classes you probably haven&#039;t seen before.  You will read about classes and methods, and then write short pieces of Java code that use those classes and methods.<br />
+<br />
+After completing this activity, you should be able to:<br />
+<br />
+•	Navigate through and read parts of Java&#039;s API documentation to find descriptions and specifications of classes, methods, and constructors.<br />
+<br />
+•	Solve small programming problems by using new classes, methods, and constructors that you learn about in the Java API documentation<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/8ae082baa83bcc88ed448b4fcc45aa08.docx">Reading and Using API Documentation.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:10:13 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/8ae082baa83bcc88ed448b4fcc45aa08.jpg" type="application/zip" length="66296"/>
+    </item>
+    <item>
+      <title><![CDATA[Understanding and Debugging Someone Else's Program]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/66</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Understanding and Debugging Someone Else&#039;s Program</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">In this assignment, you will be given the code.  However, it was created by someone who is no longer around to answer any questions about the program.  Plus, there are some severe issues with the code – including it won’t even compile.  The objectives for this assignment are to (1) gain experience understanding code, (2) learn proper debugging techniques, and (3) work on writing a technical report.  In this particular example, we used Conway&#039;s &quot;Game of Life&quot;.<br />
+<br />
+This is an early in the semester assignment, and students should understand basic constructs, pointers, and how to read code.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, bug report, code review, reading code, results of code inspection, documentation, reflection, tech report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">tools, continuous quality assurance, comments, documentation, research, problem solving</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">BUG/ENHANCEMENT REPORT<br />
+Technical Task:  When working in the real-world, many times you will be given an existing piece of code that you must understand before you can implement any enhancements or fixes.  And many times, the original developer of the code is no longer available – leaving you to figure out what the code is doing.<br />
+Professional Setting:  Students works for a company that has purchased another.<br />
+Professional Role:  Students are members of a project team.<br />
+Deliverable:  Bug/Enhancement report.<br />
+Real-world Audience:  A project manager.<br />
+How the Audience will USE the student&#039;s communication:  The project manager will use the students&#039; report to develop a plan for completing the project.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">In addition, a student may even have to reverse-engineer a design document from the code where no documentation existed before.  Debugging a program is something that every developer has to do.  Whether for a student or a seasoned software engineer, figuring out what is wrong in a piece of code and fixing the issue is a necessary skill.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/f9c479ebb4dbd225951a1163f528b1b0.docx">NSF CPATH Data Structures and Algorithms - Game of Life.docx</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/04c42bb3ce17712b5f180962e91884a3.zip">source_code_for_game_of_life.zip</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:10:08 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/f9c479ebb4dbd225951a1163f528b1b0.jpg" type="application/zip" length="45602"/>
+    </item>
+    <item>
+      <title><![CDATA[Auto Music System Part 2 - Simulator class implementation]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/65</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Auto Music System Part 2 - Simulator class implementation</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text"><p>In this assignment the student will develop the coding comments and program code for all of the classes designed for the Auto Music System Simulater that was designed in the previous assignment. See <a href="http://cs-comm.lib.muohio.edu/admin/items/show/49">http://cs-comm.lib.muohio.edu/admin/items/show/49</a>&nbsp;to see previous assignment</p>
+<p>Download Main.java for testing.</p></div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Paul Cantonwine</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Program comments, code, Problems encountered report, task report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing comments, code and problems report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Programming language basics, method definitions, Object Oriented Language features</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have been given a design document that includes UML diagram for all the classes needed to simulate a car audio system. You are to code and comment the classes designed so that they can be used by a programmer in developing the simulator.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file text-x-c++"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/c0384e6bf7d565b0fc49ac96285c573e.java">Main.java</a></div><div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/f5fdc6e200437c34be28e717059dbb10.doc">Auto Music System Part3 Code Main Method using classes coded in Part2-CPATH Revised.doc</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:08:23 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/c0384e6bf7d565b0fc49ac96285c573e.jpg" type="text/x-c++" length="2236"/>
+    </item>
+    <item>
+      <title><![CDATA[Testing Advocacy]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/64</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Testing Advocacy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment asks the students to research testing methods, good and bad testing results and to use this research to create a position paper.<br />
+<br />
+This assignment will confirm and solidify student understanding of the importance of testing.  It will also give them the opportunity to practice creating a position paper that explains and advocates to peers and subordinates.   </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo, Position Paper</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">writing, reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Testing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The initial impression that many people have when they enter the computer science field is that the bulk of our work, and the most important part of our work, is coding programs.  After all, practitioners within this field are oftentimes called computer programmers.  However, in most cases, coding will be a small part or what we actually do.  One specific example is testing.<br />
+<br />
+It is important for us to understand the benefits and implications of each of our responsibilities as we move forward into our career.  To do this, we must have good information to help us schedule our time and prioritize.  In addition, we must be able to communicate this information to others so that they have similar priorities.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">This assignment can extended by expanding each step with the student providing interim deliverables for each and then requiring the student to collect the interim results into a final advocacy document.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/f223b5f9f1a36f573639d07b67e63443.docx">NSF  CPATH Testing Advocate.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:08:18 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/f223b5f9f1a36f573639d07b67e63443.jpg" type="application/zip" length="23747"/>
+    </item>
+    <item>
+      <title><![CDATA[Revision Control and Introduction to Subversion Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/63</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Revision Control and Introduction to Subversion Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Explain the purpose of version control and apply it to manage software design or code artifacts.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Project management<br />
+Tools</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to introduce revision control (or version control) and the specific product called Subversion (SVN). Revision control is another tool used extensively by teams of software engineers. Knowledge of revision control tools is essential for organizations that employ teams of developers, so it will very helpful for a career in software engineering.  In this memo to your supervisor you will summarize the benefit of version control to our class project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/2cb3f56c36c712691e02a024c479203c.docx">HW_14.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:07:27 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/2cb3f56c36c712691e02a024c479203c.jpg" type="application/zip" length="20055"/>
+    </item>
+    <item>
+      <title><![CDATA[The Closest Starbucks Problem: Space Dividing Data Structures
+]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/62</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">The Closest Starbucks Problem: Space Dividing Data Structures<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Implementation of a space-partitioning data structure in order to solve the nearest neighbor problem.<br />
+<br />
+Given a static list of points, the student must design a data structure supporting an efficient nearest-neighbor search; points are awarded based on correctness and efficiency.  Students are encouraged to use a kd-tree, giving them experience in working with binary search trees and dealing with problems within the area of computational geometry.<br />
+<br />
+Duration: 2 weeks<br />
+<br />
+Background: Students are assumed to have 2.5 semesters of programming experience, including at least half a semester of C++, and to have had exposure to the concept of binary search trees.  kd-trees are not covered in the assignment; instructors should consider discussing them in class before students begin.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John Karro, William Brinkman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">code, run-time analysis</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation, Recursion, trees/heaps, selection of algorithm and data structures</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Workplace Scenario:<br />
+You have been hired to design a new Starbucks locator smart phone app.  The app will download with a list of U.S. Starbucks locations.  When activated, the app will be provide with the coordinates by the device GPS, and locate the closest Starbucks to the current position (which it can then feed to a map app that will be in charge of calculating the route).  Your problem is to figure out how to maintain the list in such a way that it can be quickly queried. You could just scan the full list – but given the size of the list, and the user’s speed expectations, that isn’t going to make for a happy client.  You need to do better for that.<br />
+<br />
+On the bright side: you can consider the list static.  New Starbucks do not open all that often.  So your data structure does not need to support an insert data structure.  (When there is an update, you can just reconstruct the entire data structure from the modified list during down time.)  So you priority is the query runtime.  The user need to find the closest Starbuck’s as fast as possible – the user needs coffee now!!!<br />
+<br />
+<br />
+Importance: In this you will gain experience with dictionary data structures by designing and implementing a data structure that support fast “nearest neighbor” queries.  The ideal data structure for the assignment is a space-dividing structure such as the kd-tree; implementations based on this will be considerably faster than any alternative without sacrificing on precision.  There are, however, many alternatives – students unable to implement such a structure will be able to make use of simpler structure, at a significant loss of time and/or precision (and, hence, length).<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/7a835dc759e87de537410099f1995f06.zip">materials.zip</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/97c9d13a1750dac22734891f6a91f4e7.docx">Proj5.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:04:59 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/7a835dc759e87de537410099f1995f06.jpg" type="application/zip" length="239368"/>
+    </item>
+    <item>
+      <title><![CDATA[First From-Scratch Design, Code, and Test]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/61</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">First From-Scratch Design, Code, and Test</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Use a problem statement as a starting point to design and implement a software project. This is intended to be the students’ first experience implementing a project without being given starter code.<br />
+<br />
+Technical details of the specific assignment have been omitted – it can be used as a framework for any assignment.<br />
+<br />
+Timeframe:	The assignment can be given at whatever point of the semester is most appropriate. The time required varies depending on the technical difficulty of the assignment but will require at least two weeks, most likely three.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Janet Burge</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">requirements, test cases, UML diagram, code, post-mortem report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">UML diagrams</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You’ve been given a problem statement from a client where they want you to build the project. In order to do this, you need to first convert that project statement into a set of testable requirements and a description of how you will verify that the requirements have been met. There are two audiences for this document: the client, who will review them to ensure that you have identified what is required, and the software testers, who will use these test cases to validate the final product.<br />
+<br />
+The next step is to design the software. This will be documented using a UML diagram. The audience is the software developers, who will use them to code the system. The resulting code will then be tested using the test procedures provided.<br />
+<br />
+After completing the task, you will write a project post-mortem report describing how long it took to implement the project, what issues you encountered, how your design changed, and why you needed to make these changes (there is also a project reflection component to this which is not intended to be true to a workplace context). The purpose of the report is to provide insight to improve the design and estimation for future projects. The main audiences are your manager, yourself, and other developers.   The project reflection will be used by your instructor to improve future projects.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/8136b2e681e359ec949ce9a0a5b74fa8.zip">DesignProject.zip</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:02:03 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/8136b2e681e359ec949ce9a0a5b74fa8.jpg" type="application/zip" length="439207"/>
+    </item>
+    <item>
+      <title><![CDATA[Test-Driven Development and Refactoring Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/60</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Test-Driven Development and Refactoring Memo</div>
+                    </div><!-- end element -->
+                <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe refactoring.  Describe test-driven design.  Describe an example of application of refactoring.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.<br />
+<br />
+http://www.refactoring.com/catalog/index.html</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading<br />
+Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Program Design<br />
+Continuous Quality Assurance<br />
+Coding</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to explore two Extreme Programming (XP) practices: test-driven development and refactoring. The practice of test-driven development calls for software developers to create tests before code is actually produced. The example in Chapter 21 is based on unit testing, but test-driven development can be applied to other tests, such as feature tests, usability tests, load tests, etc. <br />
+<br />
+Refactoring is a programming practice aimed at refining code without changing its behavior (it is not debugging). Over time about 100 named refactoring patterns have been identified. <br />
+<br />
+In this memo to your supervisor, you will summarize the key points behind test-drive development and refactoring, and you will identify an example of how refactoring can be applied.<br />
+<br />
+Test-driven development and refactoring are practices that you can apply now in your other classes, and later in an internship or in your career.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/fadfb2d61521a8a782a08547e28dcf01.docx">HW_13.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:00:55 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/fadfb2d61521a8a782a08547e28dcf01.jpg" type="application/zip" length="20387"/>
+    </item>
+  </channel>
+</rss>

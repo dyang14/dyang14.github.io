@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/Refactoring?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:31:42 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Test-Driven Development and Refactoring Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/60</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Test-Driven Development and Refactoring Memo</div>
+                    </div><!-- end element -->
+                <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe refactoring.  Describe test-driven design.  Describe an example of application of refactoring.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.<br />
+<br />
+http://www.refactoring.com/catalog/index.html</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading<br />
+Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Program Design<br />
+Continuous Quality Assurance<br />
+Coding</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to explore two Extreme Programming (XP) practices: test-driven development and refactoring. The practice of test-driven development calls for software developers to create tests before code is actually produced. The example in Chapter 21 is based on unit testing, but test-driven development can be applied to other tests, such as feature tests, usability tests, load tests, etc. <br />
+<br />
+Refactoring is a programming practice aimed at refining code without changing its behavior (it is not debugging). Over time about 100 named refactoring patterns have been identified. <br />
+<br />
+In this memo to your supervisor, you will summarize the key points behind test-drive development and refactoring, and you will identify an example of how refactoring can be applied.<br />
+<br />
+Test-driven development and refactoring are practices that you can apply now in your other classes, and later in an internship or in your career.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/fadfb2d61521a8a782a08547e28dcf01.docx">HW_13.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:00:55 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/fadfb2d61521a8a782a08547e28dcf01.jpg" type="application/zip" length="20387"/>
+    </item>
+  </channel>
+</rss>

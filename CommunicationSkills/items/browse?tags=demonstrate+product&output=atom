@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse?tags=demonstrate+product&amp;output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:12:35-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse?tags=demonstrate+product&amp;output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=demonstrate+product&amp;output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/index/index/page/1?tags=demonstrate+product&amp;output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/58</id>
+    <title><![CDATA[Scrum Process Management]]></title>
+    <summary><![CDATA[The Scrum Process Management assignment directs student teams to develop software using the Scrum process management strategy.  The Scrum Process Management assignment follows five assignments that prepare students to develop the software they evaluate in this assignment over four two-week scrum cycles.  The assignment details the process, meeting and reporting requirements, and role and responsibilities of team members.<br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Create a work plan for a scrum cycle.<br />
+2.	Breakdown backlog items (bugs and enhancements) into work units.<br />
+3.	Assign work units to team members.<br />
+4.	Estimate time needed to complete a work unit.<br />
+5.	Create short-term work unit objectives.<br />
+6.	Analyze work performed on work units.<br />
+7.	Maintain (update and adjust) work plan during a scrum cycle.<br />
+8.	Demonstrate completed work units (bug fixes and enhancements).<br />
+9.	Analyze individual and team performance.<br />
+10.	Identify the key technical information about product development that the project manger wants when reporting to upper management and the customer.<br />
+]]></summary>
+    <updated>2012-07-26T10:52:52-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/58"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c385ee4deace2a2cf67a4cf7d2c9a7ee.pdf" type="application/pdf" length="695264"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/12bfc7547ea18d61001321e0f77c3314.docx" type="application/zip" length="37594"/>
+    <category term="analyze work performance"/>
+    <category term="assign work units"/>
+    <category term="demonstrate product"/>
+    <category term="work plan"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Scrum Process Management</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Scrum Process Management assignment directs student teams to develop software using the Scrum process management strategy.  The Scrum Process Management assignment follows five assignments that prepare students to develop the software they evaluate in this assignment over four two-week scrum cycles.  The assignment details the process, meeting and reporting requirements, and role and responsibilities of team members.<br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Create a work plan for a scrum cycle.<br />
+2.	Breakdown backlog items (bugs and enhancements) into work units.<br />
+3.	Assign work units to team members.<br />
+4.	Estimate time needed to complete a work unit.<br />
+5.	Create short-term work unit objectives.<br />
+6.	Analyze work performed on work units.<br />
+7.	Maintain (update and adjust) work plan during a scrum cycle.<br />
+8.	Demonstrate completed work units (bug fixes and enhancements).<br />
+9.	Analyze individual and team performance.<br />
+10.	Identify the key technical information about product development that the project manger wants when reporting to upper management and the customer.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development SCRUM PROCESS MANAGEMENT Your project manager has received approval to develop the product that was started by not completed by an acquired company. From your past work, he has developed confidence in your team’s ability to successfully develop the product. Based on your recommendation, your project manager has decided to use Scrum Process Management to manage the project. To successfully manage the project, your team needs to do the following.  Create a work plan from the backlog (prioritized bug/enhancement list) that can be completed in one two-week scrum cycle.  Frequently give progress updates in short scrum meetings.  Demonstrate a working version of the product at the end of each scrum cycle.  Submit a work plan with work completed and resources consumed, and work not completed with an explanation.  Submit individual and team post-mortem reports. Your project manager has asked that you create effective reports and make effective presentations that he can use to keep upper management and the customer informed of progress on the project. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a work plan to manage the product development process. 2. The project manager has asked your team to update the work plan at frequent ten-minute scrum meetings. 3. The project manager has asked your team to demonstrate a working version of the product at the end of each scrum cycle. 4. The project manager has asked your team to report work completed and not completed with resources used for each. 5. The project manager has asked your team to submit a post-mortem report at the end of each scrum cycle. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The project manager must keep upper management and the customer informed of the progress of product development. Therefore, the manager wants your team to answer the following technical questions: At the start of a scrum cycle 1. What bugs or enhancements will be included in the next product release? 2. Who will work on each bug fix or enhancement implementation? 3. What resources will be required to complete the bug fix or enhancement implementation? 4. How will successful bug fixes or enhancement implementations be demonstrated? During a scrum cycle 5. What progress has been made on product development? 6. What obstacles have been encountered? 1<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+At the end of a scrum cycle 7. What bugs have been fixed or enhancements implemented? 8. What bugs have not been fixed or enhancements not implemented? 9. What resources were consumed? 10. How can the product development process be improved? You must provide answers to these questions in a manner that helps the manager keep upper management and the customer informed. The manager must evaluate your team to determine whether it is successfully completing the project. The manager will use your team’s reports to answer the following questions: 1. Can your team competently plan a scrum cycle? 2. Can your team frequently make and report progress toward completing the plan? 3. Can your team reflectively analyze the team’s process and recommend improvements? 4. Are you and the other team members able to work together effectively? You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project. LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Create a work plan for a scrum cycle. 2. Breakdown backlog items (bugs and enhancements) into work units. 3. Assign work units to team members. 4. Estimate time needed to complete a work unit. 5. Create short-term work unit objectives. 6. Analyze work performed on work units. 7. Maintain (update and adjust) work plan during a scrum cycle. 8. Demonstrate completed work units (bug fixes and enhancements). 9. Analyze individual and team performance. 10. Identify the key technical information about product development that the project manger wants when reporting to upper management and the customer. Focus also on developing your ability to perform these communication tasks: 1. Write a report that helps managers make practical decisions efficiently. [Writing] 2. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 3. Write a report that persuades mangers to accept your recommendation. [Writing] 4. Select key information from written report useful to the project manager. [Speaking] 5. Create an informative and useful presentation for the project manager. [Speaking] 6. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 7. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 8. Collaborate effectively on a software development team. [Teaming] 2<br />
+<br />
+CSC 225 – Introduction to Software Development 9. Organize and execute a meeting with the project manager and the software development team. [Teaming] 10. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Scrum Cycles: 1 – Mon, Oct 1 to Fri, Oct 12 2 – Mon, Oct 15 to Fri, Oct 26 3 – Mon, Oct 29 to Fri, Nov 9 4 – Mon, Nov 12 to Fri, Nov 30<br />
+<br />
+First Monday :<br />
+<br />
+Select Scrum Master for this cycle. Select backlog items from Prioritized Bug/Enhancement Lit for this cycle. Define work units for each backlog item. Assign work units to team members. Estimate time for each work unit. Organize work plan in easy to read and easy to update format. Team ID Cycle Number Start &amp; Stop Dates Backlog Item(s) Work Units Team Member(s) Time Estimate Preliminary Test Plan 10 minute Scrum Meeting (Stand Up) Run by Scrum Master Each team member reports on progress on assigned work unit. What did you do since the last scrum meeting? What obstacles are you encountering? What do you plan to accomplish by the next scrum meeting? 15 minute demo of product What work units were completed? What work units were not completed? Brief explanation for each work unit not completed. Submit completed Work Plan Report with individual time logs. Update backlog (Prioritized Bug/Enhancement List). Team Post Mortem on scrum cycle. Individual Post Mortems on scrum cycle.<br />
+<br />
+First Friday and Second Monday:<br />
+<br />
+Second Friday:<br />
+<br />
+Third Monday:<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development ROLES AND RESPONSIBILITIES Scrum Master Run scrum meetings Create and update work plan Work unit assignment Work unit time estimates (from team member(s) assigned work unit) Update backlog Complete and submit completed work plan Work units completed/not completed Team members’ time and time logs Team Post Mortem Report Team Members Select backlog items (with Scrum Master) Define work units for backlog items Estimate time for each work unit Develop test plan for each work unit Report at each scrum meeting Maintain time log (date worked, time worked, work unit or task) Demo completed work unit Explain not-completed work unit Individual Post Mortem Submit completed time log to Scrum Master<br />
+<br />
+GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development Scrum Process Management<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Create a work plan<br />
+<br />
+Details<br />
+Select backlog items to be completed in scrum cycle.<br />
+<br />
+Report Phase<br />
+Before Scrum Cycle<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Lists top priority backlog items that can be completed in on cycle. Omits top priority backlog items, or lists too few or too many items. Work units are not independent or do not complete backlog item.<br />
+<br />
+Points<br />
+<br />
+Break backlog items (bugs and enhancements) into work units. Assign work units to team members.<br />
+<br />
+Work units are independent and together complete a backlog item. Work units are assigned to all team members. Assigned work units can be completed in one cycle. Lists a time estimate for each work unit. Time estimate can be persuasively defended. Verifies successful bug fix or enhancement implementation.<br />
+<br />
+Some team members do not have assigned work units, or have too little or too much for on cycle. Omits time estimates for work units. Time estimate cannot be persuasively defended. Omits critical components of successful bug fix or enhancement implementation. Omits work units to be completed over time period. Objectives<br />
+<br />
+Estimate time needed to complete a work unit.<br />
+<br />
+Create a test plan for each backlog item<br />
+<br />
+Manage product development<br />
+<br />
+Create short-term work unit objectives.<br />
+<br />
+During Scrum Cycle<br />
+<br />
+Lists work units to be complete over a time period. Objective can be<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+progress persuasively defended. cannot be persuasively defended. Fails to report progress toward work unit objectives. Cannot identify obstacles impeding progress. Omits progress on work units or fails to identify obstacles on work unit objectives that have fallen behind.<br />
+<br />
+Analyze work performed on work units.<br />
+<br />
+Reports work completed on work unit objectives. Identifies obstacles that impede progress.<br />
+<br />
+Maintain (update and adjusts) work plan during a scrum cycle.<br />
+<br />
+Complete product development cycle<br />
+<br />
+Demonstrate completed work units (bug fixes and enhancements). Explain work units not completed.<br />
+<br />
+End of scrum cycle<br />
+<br />
+Lists work units with amount of progress completed toward completion and identified obstacles on work unit objectives that have fallen behind. Team member(s) demonstrate completed, assigned work units.<br />
+<br />
+Team member(s) fail to demonstrated completed assigned work units. Team member(s) fail to persuasively explain not-completed, assigned work units.<br />
+<br />
+Team member(s) persuasively explain notcompleted, assigned work units. List all completed and not-completed work units with times auditable to individual time logs.<br />
+<br />
+Submit completed Work Plan Report with individual time logs.<br />
+<br />
+Omits completed or not-completed work units or times are not auditable to individual time logs. Completed items not removed, notcompleted items not added, new items not added, or list not<br />
+<br />
+Update backlog.<br />
+<br />
+Complete items removed from Prioritized Bug/Enhancement List and not-completed items and new items added and<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+prioritized. Identifies key areas of individual performance that worked well and areas that did not work well. Proposes effective ways to improve individual performance. Identifies key areas of team performance that worked well and areas that did not work well. Proposes effective ways to improve team performance. prioritized. Omits key areas of individual performance that work well or did not work well. Fails to propose effective ways to improve individual performance. Omits key areas of team performance that work well or did not work well. Fails to propose effective ways to improve team performance.<br />
+<br />
+Evaluate product development process<br />
+<br />
+Analyze individual performance.<br />
+<br />
+End of scrum cycle<br />
+<br />
+Analyze team performance.<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development Scrum Process Management<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently.<br />
+<br />
+Details<br />
+Provides critical information useful to the reader Critical information is easily accessible to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Concise and appropriate writing style for project manager Report builds project manager’s confidence in team’s technical and communicatio n abilities. Uses precise terms appropriate for the reader Writing<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence from program review to<br />
+<br />
+Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from program review to<br />
+<br />
+Uses credible evidence to support explanations<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+support key findings Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings Uses correct spelling, grammar, etc. throughout report Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings Speaking Concisely and accurately demonstrates key features of the program operation Concisely and accurately demonstrates significant problems that define the current state of the project Concisely and accurately demonstrates significant bugs that define the current state of the project Concisely and accurately synthesizes the current state of the project Concise and accurate support key findings Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Report persuades project manager to accept your recommendati on.<br />
+<br />
+Writing<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features of program operation Select information that demonstrates significant problems encountered<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant<br />
+<br />
+Significant problems are missing, insignificant problems are included, or irrelevant problems Significant bugs are missing, insignificant bugs are included, or irrelevant bugs<br />
+<br />
+Select information that demonstrates significant bugs<br />
+<br />
+Select information that synthesizes the current project state Select information that<br />
+<br />
+Significant factors missing from the synthesis Significant<br />
+<br />
+9<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+recommends plans for program development Key information is presented recommendations for program development Succinctly presents key information recommendations missing Omits or inaccurately presents key information Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Create and informative and useful presentation for the project manager<br />
+<br />
+Speaking<br />
+<br />
+Handouts, visuals, demonstrations, etc. support and complement the presentation<br />
+<br />
+Uses concise, accurate, and useful support materials to support and complement the presentation<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids first-time problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting Questions are<br />
+<br />
+Team members under dress or over dress for the meeting Demonstrates lack of understanding or the<br />
+<br />
+10<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+accurately, authoritatively, and respectfully answered accurate understanding of questions, and accurately and respectfully answers each Teaming Each task is independent, clearly defined, and contributes to the overall software development task lack of ability to explain answers to questions. Lack of respect for the questioner Tasks are not independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late<br />
+<br />
+Collaborate effectively on a software development team<br />
+<br />
+Breakdown the software development project into small, independent task<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+11<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Meeting is wellorganized and executed<br />
+<br />
+Develop knowledge of individual team member skills and trust among team members<br />
+<br />
+Identify skills of each team member<br />
+<br />
+Teaming<br />
+<br />
+All major topics are presented, no time is wasted, all questions are answered in the allotted time Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks<br />
+<br />
+Omitted major topics, time not on task, not enough time to answer all questions Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+12<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Project Plan, Code, Test Results, Demonstration</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Project Managment</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Your project manager has received approval to develop the product that was started by not completed by an acquired company.  From your past work, he has developed confidence in your team’s ability to successfully develop the product.  Based on your recommendation, your project manager has decided to use Scrum Process Management to manage the project. The project manager will use your work plan and progress reports to advise upper management on the status of the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

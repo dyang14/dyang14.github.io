@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/tag/vouktag?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:26:58-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/tag/vouktag?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/vouktag/page/1?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/vouktag/page/1?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/12</id>
+    <title><![CDATA[Database Project Proposal]]></title>
+    <summary><![CDATA[You will be giving a 5-minute project proposal. The goals of this proposal are to explain the details of your project.  You will create a project specification and a presentation.  The specification should be a document describing your project (for example what application will you build and what features will be built), and how you meet the project’s minimal requirements.  The presentation will be a summary of the specification. The presentation should include “screenshots” of the application design.<br />
+<br />
+This assignment is the first part of the largest project in a database class.  The students are given an application domain and have to prepare the specifics of the project.  This involves teaming, writing, and speaking.  ]]></summary>
+    <updated>2012-07-24T22:21:50-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/12"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c0b3ca9e2c16c97193795d5508b64685.pdf" type="application/pdf" length="49369"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/cfc7fc1421574bb87d34b4db0cdc80d7.docx" type="application/zip" length="20363"/>
+    <category term="Databases"/>
+    <category term="proposal"/>
+    <category term="vouktag"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Database Project Proposal</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">You will be giving a 5-minute project proposal. The goals of this proposal are to explain the details of your project.  You will create a project specification and a presentation.  The specification should be a document describing your project (for example what application will you build and what features will be built), and how you meet the project’s minimal requirements.  The presentation will be a summary of the specification. The presentation should include “screenshots” of the application design.<br />
+<br />
+This assignment is the first part of the largest project in a database class.  The students are given an application domain and have to prepare the specifics of the project.  This involves teaming, writing, and speaking.  </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Keith Frikken</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">SAMPLE SCENARIO 2 Database Keith Frikken, Miami University<br />
+<br />
+WRITTEN AND ORAL PROJECT SPECIFICATION AND PROPOSAL 1. Technical Task Your team is to create a new idea for a database, including a specification for it and a high-level plan for achieving it. The specification should be a document that describes the following: • Your project (for example, what application will you build and what features will be built). • Your application design for meeting project’s minimal requirements. The application design should include “screenshots.” You work for a company in which a single project manager supervises several teams that meet together frequently to discuss new and ongoing projects. You are members of one of the teams. You have the following deliverables: 1. A written specification that includes screenshots. 2. A five-minute presentation that shows screenshots. Your project manager and the other teams. Your manager and co-workers will decide whether it is worth pursuing the project further (i.e., is it worth the organization’s time to have you prepare a detailed proposal for the project). Your co-workers will compare your application design against your specification to determine whether your proposed design meets the minimal requirements of the specification.<br />
+<br />
+2. Professional Setting 3. Professional Role 4. Deliverables<br />
+<br />
+5. Real-world Audience 6. How the Audience Will USE the Students’ Communication<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Brief formal presentation, initial project specifications</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Teaming, Writing, Speaking</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You are proposing a new idea to co-workers and your manager who are trying to consider if it is worth moving forward on the project.  For this purpose, you need to write up the high level specification for the ‘idea’ in an initial version and prepare a short presentation. Your manager and co-workers need to be able to decide whether it is worth pursuing the project further (i.e., is it worth the organization’s time to have you prepare a detailed proposal for the project). Your co-workers will be trying to determine if the project meets the minimal specification that you are given. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

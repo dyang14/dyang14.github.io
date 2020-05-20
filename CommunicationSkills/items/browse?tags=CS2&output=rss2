@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=CS2&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:03:13 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Current Events]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/76</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Current Events</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Prior to class, students will find at least one current news article that relates to computer science.  They will be expected to have read the article and be able to summarize the contents verbally.   The article can be from any popular press or academic venue.<br />
+<br />
+This assignment requires student preparation outside the classroom as well as participation within the classroom.  This assignment is most effective when used as a regularly scheduled event (for example, in the first class of the week, every week during the semester).   </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">informal verbal report, listening to presentations</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, listening, speaking</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">varies</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Computer science connects to and integrates with other disciplines to solve problems.  As professionals in our discipline we want to be able to intelligently discuss these concepts with others and to refine our understanding.  In order to maximize the use of our time we need to improve their ability to read with purpose and to understand and summarize new material as well as to disseminate knowledge verbally to a group of our peers.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">Could be used in any course.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/601174c9ff6545ad68e722fc78ad434e.docx">NSF  CPATH CurrentEvents.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 17:28:25 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/601174c9ff6545ad68e722fc78ad434e.jpg" type="application/zip" length="35067"/>
+    </item>
+    <item>
+      <title><![CDATA[Three Minute Lecture Critique]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/46</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Three Minute Lecture Critique</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment will give the student the opportunity to practice providing substantive critiques in a low stake setting.   <br />
+<br />
+For this assignment, students will evaluate a three minute lecture given by one of their classmates.  The goal is for students to support their ratings with concrete examples from within the presentation and to include suggestions for improvement that are likewise specific and concrete.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Critique, Oral Presentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">speaking, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">varies</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Frequently, throughout our careers we will be asked to give feedback to others to help them improve what they are doing.  Being able to provide constructive, useful, and thorough critique improves the performance of your team, reflects positively upon you, and builds good rapport with your colleagues.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">This assignment can be scaled to larger teams with a minimum of 3 per team.<br />
+<br />
+The technical skill varies on this skill, because practically any technical skill can be demonstrated by the student lecturer.  Keep in mind that that the student presentation is only 3 minutes long so the subject matter must be scaled so that it can be presented effectively in 3 minutes or less.<br />
+<br />
+This assignment can also be used for other courses other than CS1.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/c875a9591b0872d21ce9614628a79186.docx">NSF  CPATH ThreeMinuteLecture Critique.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:43:31 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/c875a9591b0872d21ce9614628a79186.jpg" type="application/zip" length="20393"/>
+    </item>
+  </channel>
+</rss>

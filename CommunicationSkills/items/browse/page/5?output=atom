@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/page/5?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T18:55:27-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/page/5?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/1?output=atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/4?output=atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/6?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/11?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/79</id>
+    <title><![CDATA[Memo to Project Client]]></title>
+    <summary><![CDATA[In this project, a team of students writes an e-mail memo to request a meeting with the client for their project. <br />
+<br />
+This can be used with projects other than the capstone.]]></summary>
+    <updated>2012-07-26T11:58:09-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/79"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/800bd2dc5cd6fbc6fe17ccf0fb619382.docx" type="application/zip" length="138638"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Memo to Project Client</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Capstone</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">In this project, a team of students writes an e-mail memo to request a meeting with the client for their project. <br />
+<br />
+This can be used with projects other than the capstone.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Janet Burge</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">memo, e-mail</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">project summarization</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">On your team project, you will be working with a client. Your first contact with the client will be through an e-mail memo introducing yourself and requesting an initial meeting with them and/or their project team to talk about the project.  This e-mail should give the client all the information they need to schedule and prepare for the meeting. <br />
+<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/78</id>
+    <title><![CDATA[Physical Architecture and Deployment Diagrams]]></title>
+    <summary><![CDATA[Sketch a deployment diagram describing the implementation of a system.]]></summary>
+    <updated>2012-07-25T15:39:14-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/78"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/cd86e08df2fa3e2a5e2b0b08e2a8ccd9.docx" type="application/zip" length="23687"/>
+    <category term="Deployment diagram"/>
+    <category term="UML"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Physical Architecture and Deployment Diagrams</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Sketch a deployment diagram describing the implementation of a system.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Design diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Implementation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">An architecture is the set of significant decisions about the organization of a software system (section 13.4). The physical architecture is the assignment of concrete software components, such as programs, databases, webservers, and communication paths to machines like servers and desktop workstations (Chap 38). The physical architecture is the realization of the logical architecture. The purpose of this homework is to introduce deployment diagrams as a useful way to communicate the physical or deployment architecture.<br />
+<br />
+For this assignment your supervisor will review a sketch of the layered architecture and deployment diagram for your team’s project.  </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/77</id>
+    <title><![CDATA[Logical Architecture and Layer Pattern Memo]]></title>
+    <summary><![CDATA[Describe logical architecture and the layers pattern.]]></summary>
+    <updated>2012-07-25T22:08:56-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/77"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/5ccbf87cdbe0c6d5a196e24e7c3809ba.docx" type="application/zip" length="23494"/>
+    <category term="Architecture"/>
+    <category term="Layers Pattern"/>
+    <category term="Logical Architecture"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Logical Architecture and Layer Pattern Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe logical architecture and the layers pattern.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading<br />
+Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">An architecture is the set of significant decisions about the organization of a software system (section 13.4). The logical architecture is the large-scale organization of the software classes into packages, subsystems, and layers (section 13.2). A layer is a grouping of classes, packages or subsystems that has cohesive responsibility for a major aspect of the system. Also, layers are organized such that higher layers call upon services of lower layers. If you have taken the networking course or the operating systems course, you have seen examples of layered architectures such as the layers of the TCP/IP protocol stack, or the concept of operating system layers.  The purpose of this homework is to introduce the general approach to software architecture design and to explore examples of the layer pattern. These concepts will help you in future projects where you need to create the overall design (architecture) of software systems.<br />
+<br />
+In this memo to your supervisor you will summarize the three-layer pattern and recommend how the architecture for our project could be modified to add a feature that tracks the user’s progress through your project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/76</id>
+    <title><![CDATA[Current Events]]></title>
+    <summary><![CDATA[Prior to class, students will find at least one current news article that relates to computer science.  They will be expected to have read the article and be able to summarize the contents verbally.   The article can be from any popular press or academic venue.<br />
+<br />
+This assignment requires student preparation outside the classroom as well as participation within the classroom.  This assignment is most effective when used as a regularly scheduled event (for example, in the first class of the week, every week during the semester).   ]]></summary>
+    <updated>2012-07-25T14:47:00-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/76"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/601174c9ff6545ad68e722fc78ad434e.docx" type="application/zip" length="35067"/>
+    <category term="Automata"/>
+    <category term="Capstone"/>
+    <category term="CS2"/>
+    <category term="Data Structures"/>
+    <category term="Databases"/>
+    <category term="Software Engineering"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Current Events</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Prior to class, students will find at least one current news article that relates to computer science.  They will be expected to have read the article and be able to summarize the contents verbally.   The article can be from any popular press or academic venue.<br />
+<br />
+This assignment requires student preparation outside the classroom as well as participation within the classroom.  This assignment is most effective when used as a regularly scheduled event (for example, in the first class of the week, every week during the semester).   </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Eric Luczaj</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">informal verbal report, listening to presentations</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Short Activity</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, listening, speaking</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">varies</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Computer science connects to and integrates with other disciplines to solve problems.  As professionals in our discipline we want to be able to intelligently discuss these concepts with others and to refine our understanding.  In order to maximize the use of our time we need to improve their ability to read with purpose and to understand and summarize new material as well as to disseminate knowledge verbally to a group of our peers.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">Could be used in any course.</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/75</id>
+    <title><![CDATA[GRASP Patterns and Principles Memo II]]></title>
+    <summary><![CDATA[Describe seveal design patterns.]]></summary>
+    <updated>2012-07-25T22:07:38-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/75"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/0054c5046b1bb6f15651203617691096.docx" type="application/zip" length="22982"/>
+    <category term="Design Patterns"/>
+    <category term="Indirection"/>
+    <category term="Polymorphism"/>
+    <category term="Protected Variations"/>
+    <category term="Pure Fabrication"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">GRASP Patterns and Principles Memo II</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe seveal design patterns.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading<br />
+Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to introduce four additional GRASP patterns: Polymorphism, Indirection, Pure Fabrication and Protected Variations. GRASP stands for General Responsibility Assignment Software Patterns or Principles. Recall that a pattern is a named and well-known problem/solution pair that can be applied in new contexts, with advice on how to apply it in novel situations and discussion of its trade-offs, implementations, and variations. So a pattern is not a new idea. Rather, it is a tried-and-true principle. A knowledge of patterns can help you in your future software design endeavors.  To quote the author, “The critical design tool for software development is a mind well educated in design principles.”<br />
+<br />
+In this memo to your supervisor you will summarize several design principles and patterns and you will explain an example of a time that you employed polymorphism and the concept behind the protected variations pattern.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/74</id>
+    <title><![CDATA[Continuing to Think Recursively Using a Maze]]></title>
+    <summary><![CDATA[In this assignment, you will have to use everything you have learned to choose an appropriate algorithm and data structure for traversing a maze to find an object and get out - using a recursive solution!  The objectives of this assignment are to (1) continue gaining experience with recursion, (2) improve the implementation of proper coding styles and documentation, and (3) effectively present a design in written and speaking (bonus) form.<br />
+<br />
+This assignment is typically given later in the semester, as students should understand classes and objects, I/O, and recursion.]]></summary>
+    <updated>2012-07-25T14:45:35-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/74"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/d0a4ff0cc8bf5697f96ed6800908c9ba.docx" type="application/zip" length="42171"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Continuing to Think Recursively Using a Maze</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">In this assignment, you will have to use everything you have learned to choose an appropriate algorithm and data structure for traversing a maze to find an object and get out - using a recursive solution!  The objectives of this assignment are to (1) continue gaining experience with recursion, (2) improve the implementation of proper coding styles and documentation, and (3) effectively present a design in written and speaking (bonus) form.<br />
+<br />
+This assignment is typically given later in the semester, as students should understand classes and objects, I/O, and recursion.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, test results, documentation, individual presentations, oral presentations, reflection, tech report, video</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, speaking</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">implementation, tools, design, recursion, linear data structures, program design, selection of algorithm and data structures, comments, documentation, problem solving</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">DESIGN DOCUMENT AND PRESENTATION<br />
+Technical Task:  The ability to speak in front of your peers, management, or more importantly a customer, will greatly influence your success in the real-world.  If you cannot convey your ideas to your peers, you will have difficulty convincing others of your solutions.  <br />
+Professional Setting:  Students work for a software company.<br />
+Professional Role:  Students are members of a project team.<br />
+Deliverable:  Design document and associated presentation.<br />
+Real-world Audience:  Management and peers.<br />
+How the Audience will USE the students&#039; communication:  The project manager and leaders will use the student&#039;s design and discussion to do the following:  (1)  Determine whether the team is capable of completing the project.  (2) Develop a plan for completing the project.<br />
+Notes to Student:  If you cannot present your ideas to management, you will lose their confidence in your abilities.  If you cannot effectively present your product and ideas to a customer, you will probably lose their business.<br />
+<br />
+<br />
+ADDITIONAL SCENARIO<br />
+Recursion is a design concept that is critical to becoming a solid software engineer.  In the real-world, the ability to recognize design patterns, and potential repetition, is necessary when performance of a system is critical.  Doing this just takes practice!<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/73</id>
+    <title><![CDATA[Auto Music System Part 3 - Simulator construction]]></title>
+    <summary><![CDATA[The student will design and code an application that uses the Auto Music System classes designed and coded in previous assignments to simulate an actual car audio system. Refer to <a href="http://cs-comm.lib.muohio.edu/admin/items/show/65">http://cs-comm.lib.muohio.edu/admin/items/show/65</a> &nbsp;to see previous assignment]]></summary>
+    <updated>2012-07-30T16:26:19-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/73"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/747059f85c7f9982a21f2e1a57efcc78.doc" type="application/msword" length="49664"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Auto Music System Part 3 - Simulator construction</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The student will design and code an application that uses the Auto Music System classes designed and coded in previous assignments to simulate an actual car audio system. Refer to <a href="http://cs-comm.lib.muohio.edu/admin/items/show/65">http://cs-comm.lib.muohio.edu/admin/items/show/65</a> &nbsp;to see previous assignment</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Paul Cantonwine</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Pseudo Code, Test Plan, comments, code,Problems encountered report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Programming Language Basics, Graphical Interface, OO Language Features</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have been given all the classes for the Auto Music System and you need to develop an application that uses these classes to simulate a Car Audio System.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/72</id>
+    <title><![CDATA[GRASP Patterns and Principles Memo]]></title>
+    <summary><![CDATA[Describe the purpose of design principles and patterns.  Describe some principles and patterns.]]></summary>
+    <updated>2012-07-25T22:07:12-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/72"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/484ecf49a055da817bbb2afd915c3934.docx" type="application/zip" length="22182"/>
+    <category term="cohesion"/>
+    <category term="coupling"/>
+    <category term="Design Patterns"/>
+    <category term="GRASP"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">GRASP Patterns and Principles Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe the purpose of design principles and patterns.  Describe some principles and patterns.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading,<br />
+Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to introduce the five GRASP patterns or principles: Creator, Information Expert, Controller, Low Coupling, and High Cohesion. GRASP stands for General Responsibility Assignment Software Patterns or Principles. <br />
+<br />
+The author of or text book states that a pattern is a named and well-known problem/solution pair that can be applied in new contexts, with advice on how to apply it in novel situations and discussion of its trade-offs, implementations, and variations. So a pattern is not a new idea. Rather, it is a tried-and-true principle. A knowledge of patterns can help you in your future software design endeavors.  To quote the author, “The critical design tool for software development is a mind well educated in design principles.”<br />
+<br />
+In this memo to your supervisor you will summarize several design principles and patterns and you will explain an example of a time that you employed one of the patterns.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/71</id>
+    <title><![CDATA[Implementing and documenting a class]]></title>
+    <summary><![CDATA[In this assignment, the student will implement a class and use the doxygen documentation facility to document it.  Javadocs can also be used if java is the preferred language.  The assignment is written for a specific class to be implemented in the context of a larger project and should be modified to account for using other classes or project.]]></summary>
+    <updated>2012-07-25T11:17:26-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/71"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c785c8f412cd49c4d535b26fe80ef9b6.doc" type="CDF V2 Document, corrupt: Can't expand summary_info" length="25088"/>
+    <category term="doxygen"/>
+    <category term="javadoc"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Implementing and documenting a class</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">In this assignment, the student will implement a class and use the doxygen documentation facility to document it.  Javadocs can also be used if java is the preferred language.  The assignment is written for a specific class to be implemented in the context of a larger project and should be modified to account for using other classes or project.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Gerald Gannod</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">comments, documentation, code</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">implementation, coding</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Scenario: You have been assigned the task of both writing and documenting the behavior of a class.<br />
+<br />
+Communication Audience: Other developers and potential maintainers<br />
+<br />
+Deliverables: Source code with embedded comments plus generated html documentation of the source<br />
+<br />
+How it will be used: The documentation will be used to understand how to use the code</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/70</id>
+    <title><![CDATA[Software Architecture Document – Architectural Decisions Memo]]></title>
+    <summary><![CDATA[Document a project&#039;s software architecture and implementation using multiple views.]]></summary>
+    <updated>2012-07-25T17:13:43-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/70"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/dac23541037a34cb7a61fbc09b7b45f0.docx" type="application/zip" length="23644"/>
+    <category term="Deployment"/>
+    <category term="Software Architecture"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Software Architecture Document – Architectural Decisions Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Document a project&#039;s software architecture and implementation using multiple views.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+                <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Install and deploy</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The purpose of this assignment is to introduce the Software Architecture Document (SAD). The audience for this document is other software engineers (not the client). The Software Architecture Document describes the big ideas of the design and implementation of your software. It is written for future software engineers who need to understand the how the system is implemented. For example, next semester a new team might take over your project and will need to understand the rationale behind your design and how the software is organized. Information like this is especially important for products like ours which we hope will be used for many years to come. The SAD is a compilation of “technical” design documents. These can include:<br />
+• Text descriptions, such as technical memos, that summarize important design decisions or characteristics<br />
+• Design diagrams, such as UML class and sequence diagrams, that describe static and dynamic design of your software<br />
+<br />
+In this memo to your supervisor please document an important architectural decision made in for implementation of your team project.  Your supervisor will use this to monitor the quality of the product’s implementation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

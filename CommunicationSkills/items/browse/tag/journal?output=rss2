@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/journal?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 18:58:08 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[First Steps Toward Integration Communication Instruction Throughout Computer Science and Software Engineering Curricula]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/130</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">First Steps Toward Integration Communication Instruction Throughout Computer Science and Software Engineering Curricula</div>
+                    </div><!-- end element -->
+                                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Publication Item Type Metadata</h2-->
+                <div id="publication-item-type-metadata-bibliography" class="element">
+        <h3>Bibliography        </h3>
+                                    <div class="element-text">&quot;First Steps Toward Integration Communication Instruction Throughout Computer Science and Software Engineering Curricula&quot;, Janet E. Burge, Paul V. Anderson, Michael Carter, Gerald C. Gannod, Mladen A. Vouk, Computers in Education Journal, ASEE, April-June 2012 issue, Vol 3(2), pp. 34-48.</div>
+                    </div><!-- end element -->
+            <div id="publication-item-type-metadata-url" class="element">
+        <h3>URL        </h3>
+                                    <div class="element-text">http://www.asee.org/papers-and-publications/publications/division-publications/computers-in-education-journal/papers/BurgeFirst.pdf</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></description>
+      <pubDate>Mon, 22 Jul 2013 12:39:24 -0400</pubDate>
+    </item>
+  </channel>
+</rss>

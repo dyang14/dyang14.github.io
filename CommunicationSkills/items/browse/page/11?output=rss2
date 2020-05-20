@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/page/11?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 18:56:52 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Introduction to Entity Relationship Diagrams]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/19</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Introduction to Entity Relationship Diagrams</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment on developing and interpreting Entity Relationship Diagrams has the following learning outcomes:<br />
+<br />
+●Design an Entity-Relationship diagram, given the requirements of an information system.<br />
+<br />
+●Identify entities, constraints and relationships captured by an entity relationship diagram<br />
+<br />
+<br />
+●Design an information system and rationalize said design in a manner that enables a software engineer to implement the design in a relational database system.<br />
+<br />
+●Apply the practice of information modeling in a situation similar to those seen in the industry.<br />
+<br />
+This is an individual assignment.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sriram Mohan</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">ER Diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">As a software engineer you will often be required to design information systems based on a client’s requirements. It is your responsibility to ensure that the information system has the ability to store the required data in an efficient manner without any duplication. The ER diagram is an industry standard and provides a visual representation of the database design. The ER diagram is the focal point of communication with the client and should be  easy to read, modify and capture all the constraints to be represented in the database.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/62db3a156854e9f2f50a35786f97cb7b.docx">333RHIT-Assignment1.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:08:51 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/62db3a156854e9f2f50a35786f97cb7b.jpg" type="application/zip" length="23435"/>
+    </item>
+    <item>
+      <title><![CDATA[Software Development Methodology Recommendation Memo]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/18</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Software Development Methodology Recommendation Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe software development life-cycle and need for associated processes: the life-cycle phases, engineering and management processes, and relationships between the phases and processes.  Describe and compare alternative software process standards and presses (e.g. waterfall, incremental, spiral, prototyping, empirical and agile methods)</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Researching software development methods and processes</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You will likely be involved in some aspect of software development or acquisition in your internships and your career after graduation. This assignment will engage you in thinking about the way that software development projects are organized and managed. In addition, you likely will be asked to look for alternative problem solving approaches, summarize those to your supervisor, and make a recommendation. This is also a part of this assignment.<br />
+<br />
+For small programs such as those you have done in class you can probably conceptualize the entire solution in your mind and write your code without a lot of pre-planning. But for larger computer systems that you will encounter in an internship or in your career, the solution can’t be done by a single person. These systems require teams of people who maybe be separated by distance and time. To solve large problems, in a team environment, requires a structured or organized process. We call that organized process a software development methodology. These roadmaps are called Software Development Methodologies.  This seems like a straight-forward process, but many computer-systems have failed due to flaws in the process.<br />
+<br />
+This assignment introduces contrasting software development methodologies so that you are aware that there are choices to be made and for you to think about which process you believe would be most likely help you to successfully complete the class project on time while meeting the needs of our client.<br />
+<br />
+Write a memo to your supervisor in which you compare the waterfall approach with the iterative approach, and recommend an approach to use in our class project. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/2b9d46fac3fbdc8d38fcd89aa052af5e.docx">HW_1.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:03:29 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/2b9d46fac3fbdc8d38fcd89aa052af5e.jpg" type="application/zip" length="23115"/>
+    </item>
+    <item>
+      <title><![CDATA[Writing Javadoc Comments for a Class]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/17</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Writing Javadoc Comments for a Class</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment combines implementing a class definition (constructors, getters, setters for a Rectangle) with using Javadoc comments to document the class.  This assignment includes background information on the Javadoc tool, including information about technical requirements (such as the @param tag) and style guidelines for javadocs (guidelines nicely summarized on Oracle&#039;s website).  The rubric includes separate items for both the technical part of the assignment (writing the class) and the Javadoc part of the assignment.  This could be easily modified to incorporate Javadocs with some other programming assignment.<br />
+<br />
+This assignment assumes that students are able to implement a basic class definition in Java, with constructors, getters, and setters.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Javadocs</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Class creation, documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text"><p>Organizations write code that must be sufficiently documented in order for other team members (current and future) to use that code. Often, such documentation must be written using a given set of requirements (as defined by an employer or by some broader community).</p>
+<p>In this assignment, you will be writing code, along with the documentation for that code. There are two kinds of standards for that documentation:</p>
+<ol>
+<li>Technical standards: the documentation you write needs to be parsable by a piece of software that turns your comments into a web page. The Javadoc standards are documented on Oracle's web page, "How to Write Doc Comments for the Javadoc Tool"</li>
+<li>Human standards: the documentation you write needs to be written in a grammatic style that is consistent with how others write similar documentation. The community style for these standards is documented on the same Oracle web page, in the "Style Guide" section.</li>
+</ol></div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/82d14752407d4b5e870de07d6f5c6175.docx">Writing Javadoc Comments for a Class.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:02:23 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/82d14752407d4b5e870de07d6f5c6175.jpg" type="application/zip" length="63573"/>
+    </item>
+    <item>
+      <title><![CDATA[Black Box Test Plan - Bug Hunt]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/16</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Black Box Test Plan - Bug Hunt</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment is the first in a series of black box testing assignments that can be used in CS1/CS2 level classes. The assignment is to have students write and run black box test cases for a given application.  The students are given the requirements and a compiled version of the program with seeded bugs.  The students are evaluated on the tests they write, the bugs they find, and their summary of bug information for a developer.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sarah Heckman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">black box test plan and results</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Class Period</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">verification and validation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">In industry, you may be asked to test a software product before customer delivery.  Black box testing is typically done late in the development lifecycle, after a large portion of the functionality of a product is to be delivered.  To ensure product quality, you will want to test your product using the product’s requirements as a guide.  Additionally, you will want to report the results of your testing to the development team.<br />
+<br />
+You may not always be in the same position as product tester, so you will want to ensure that your test cases can be run by your co-workers on future versions of the product.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/d92f1714f2c9b93312dec630c29ed44d.docx">BBTP_Assignment1.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 15:58:12 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/d92f1714f2c9b93312dec630c29ed44d.jpg" type="application/zip" length="41476"/>
+    </item>
+    <item>
+      <title><![CDATA[Bug Enhancement Report]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/15</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Bug Enhancement Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is my abstract; there are many like it, but this one is mine</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">SAMPLE SCENARIO – VERSION 1 (Presents the Elements in the Order on the Quick Guide for Scenarios) Introduction to Software Development Mark Hoffman, Quinnipiac University<br />
+<br />
+PRIORITIZED BUG/ENHANCEMENT REPORT 1. Technical Task Using a Product Review Report and the customer requirements identified in a Customer Requirements Report, your team is to create a plan for completing a project. To create this plan, you are to do the following: ● Develop criteria to facilitate and justify bug and enhancement ranking. ● Create a prioritized list of bugs and enhancements. ● Estimate time and resources needed to fix each bug and implement each enhancement. ● Recommend the order in which bugs and enhancements should be developed to meet customer needs You work for an employer that has acquired another company. The acquired company had begun a project that your employer would like to complete. You are members of development team You are to create a three-to-five-page prioritized bug/enhancement report. Your development team’s project manager Using your report, the manager must develop a plan for completing the project. Therefore, she wants your report to answer the following questions: 1. What are the critical criteria that should be used to organize the development process? 2. How critical is each bug or enhancement to the development process? 3. What are the key features of each bug or enhancement? 4. What resources are required to fix each bug or implement each enhancement? 5. Does your team have the technical and communication abilities needed to complete his project? 6. Should I accept your team’s recommendations?<br />
+<br />
+2. Professional Setting 3. Professional Role 4. Deliverable 5. Real-world Audience 6. How the Audience Will USE the Students’ Communication<br />
+<br />
+SAMPLE SCENARIO – VERSION 2 (Presents the Elements in a Different Order than in the Quick Guide for Scenarios) Introduction to Software Development Mark Hoffman, Quinnipiac University<br />
+<br />
+PRIORITIZED BUG/ENHANCEMENT REPORT Your project manager decided to continue development of a product begun but not completed by an acquired company. She has asked your development team to prepare a bug/enhancement report based on bugs identified in the Product Review Report and customer requirements identified in the Customer Requirements Report. YOUR DELIVERABLE Three-to-five-page prioritized bug/enhancement report. YOUR READER Your project manager. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, she wants your report to answer the following questions: 1. What are the critical criteria that should be used to organize the development process? 2. How critical is each bug or enhancement to the development process? 3. What are the key features of each bug or enhancement? 4. What resources are required to fix each bug or implement each enhancement? 5. Does your team have the technical and communication abilities needed to complete his project? 6. Should I accept your team’s recommendations? You must answer these questions in a manner that helps the manager develop a plan efficiently. You must prepare a communication that persuades the manager that you have the technical knowledge required to plan a complex project. YOUR TASKS You must perform the following technical tasks: ● Develop criteria to facilitate and justify bug and enhancement ranking. ● Create a prioritized list of bugs and enhancements. ● Estimate time and resources needed to fix each bug and implement each enhancement. ● Recommend the order in which bugs and enhancements should be developed to meet customer needs. You must perform the following communication tasks: ● Write a report that helps the project manager make practical decisions efficiently. ● Write a report that builds the manager’s confidence in your team’s technical and communication abilities. ● Write a report that persuades the manger to accept your recommendation<br />
+<br />
+2. Professional setting 3. Professional role for students (members of a development team 4. Deliverable 5. Real-world audience 6. How the reader will use the communication<br />
+<br />
+1. Technical task<br />
+<br />
+</div>
+                    <div class="element-text">This column defines the high level of performance for each criterion<br />
+<br />
+Usefulness to the real-world reader is SAMPLE RUBRIC consistently used Software Engineering for the Mark Hoffman, Quinnipiac University communication criteria<br />
+PRIORITIZED BUG/ENHANCEMENT REPORT Outstanding Tells the project manager that the report is a response to her request Includes all criteria from Product Review Report Includes all criteria from Customer Requirements Report 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 5 5 Weak<br />
+<br />
+This column defines the low levels of performance for each criterion<br />
+<br />
+Criteria Introduction Criteria<br />
+<br />
+Requires project manager to recall the context of the report Omits or misstates some criteria from Product Review Report Omits or misstates some criteria from Customer Requirements Report List omits some enhancements or priorities Reasons sometimes based on something other than criteria Design hinders easy comparison by project manager Recommendation does not match prioritized list Omits parallel action Omits some information project manager wants Includes unnecessary information project manager doesn’t need Uses colloquial style Several statements are unclear<br />
+<br />
+Communication criterion is usefulness to the real-world reader. Technical criterion<br />
+<br />
+Prioritized List<br />
+<br />
+List includes all enhancements and bugs identified in the reports Reasons for all priorities based directly on the criteria Design enables project manager to compare the reasons easily<br />
+<br />
+Technical criterion Communication criterion is usefulness to the real-world reader In addition to circling a level of performance, the instructor can write comments here Even selection of content is stated from the perspective of usefulness to realworld reader<br />
+<br />
+Recommendation<br />
+<br />
+Recommendation is consistent with the prioritized list Recommendation includes parallel work on different issues<br />
+<br />
+Selection of Content<br />
+<br />
+Includes all information project manager wants Includes nothing project manager doesn’t need<br />
+<br />
+Prose Style<br />
+<br />
+Uses a formal style All statements are clear<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Bug Report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Bug identification</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You work for an employer that has acquired another company. The<br />
+acquired company had begun a project that your employer would like to complete.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-pdf"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/c48ebccbac091999337ef071788598e7.pdf">CPATH Sample Scenario 1-BugEnhancement Report-2 versions.pdf</a></div><div class="item-file application-pdf"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/4fd236f3a81f78cb0d96645ee96db3df.pdf">CPATH Sample Rubric 1-BugEnhancement Report.pdf</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 09:44:25 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/c48ebccbac091999337ef071788598e7.jpg" type="application/pdf" length="77783"/>
+    </item>
+    <item>
+      <title><![CDATA[Database Project Proposal]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/12</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Database Project Proposal</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">You will be giving a 5-minute project proposal. The goals of this proposal are to explain the details of your project.  You will create a project specification and a presentation.  The specification should be a document describing your project (for example what application will you build and what features will be built), and how you meet the project’s minimal requirements.  The presentation will be a summary of the specification. The presentation should include “screenshots” of the application design.<br />
+<br />
+This assignment is the first part of the largest project in a database class.  The students are given an application domain and have to prepare the specifics of the project.  This involves teaming, writing, and speaking.  </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Keith Frikken</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">SAMPLE SCENARIO 2 Database Keith Frikken, Miami University<br />
+<br />
+WRITTEN AND ORAL PROJECT SPECIFICATION AND PROPOSAL 1. Technical Task Your team is to create a new idea for a database, including a specification for it and a high-level plan for achieving it. The specification should be a document that describes the following: • Your project (for example, what application will you build and what features will be built). • Your application design for meeting project’s minimal requirements. The application design should include “screenshots.” You work for a company in which a single project manager supervises several teams that meet together frequently to discuss new and ongoing projects. You are members of one of the teams. You have the following deliverables: 1. A written specification that includes screenshots. 2. A five-minute presentation that shows screenshots. Your project manager and the other teams. Your manager and co-workers will decide whether it is worth pursuing the project further (i.e., is it worth the organization’s time to have you prepare a detailed proposal for the project). Your co-workers will compare your application design against your specification to determine whether your proposed design meets the minimal requirements of the specification.<br />
+<br />
+2. Professional Setting 3. Professional Role 4. Deliverables<br />
+<br />
+5. Real-world Audience 6. How the Audience Will USE the Students’ Communication<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Brief formal presentation, initial project specifications</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Teaming, Writing, Speaking</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You are proposing a new idea to co-workers and your manager who are trying to consider if it is worth moving forward on the project.  For this purpose, you need to write up the high level specification for the ‘idea’ in an initial version and prepare a short presentation. Your manager and co-workers need to be able to decide whether it is worth pursuing the project further (i.e., is it worth the organization’s time to have you prepare a detailed proposal for the project). Your co-workers will be trying to determine if the project meets the minimal specification that you are given. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-pdf"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/c0b3ca9e2c16c97193795d5508b64685.pdf">CPATH Sample Scenario 2-Database Project Proposal.pdf</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/cfc7fc1421574bb87d34b4db0cdc80d7.docx">CPATH Keith Frikken Assignment 2 Original.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 08:40:06 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/c0b3ca9e2c16c97193795d5508b64685.jpg" type="application/pdf" length="49369"/>
+    </item>
+    <item>
+      <title><![CDATA[Test cases for data structures]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/6</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Test cases for data structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Students develop test cases using CppUnit.  They begin with specifying the testcases and then writing the code for CppUnit</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Gerald Gannod</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Test specification</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Class Period</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">software testing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Testing organization must write a test spec prior to testing a system</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></description>
+      <pubDate>Tue, 03 Jul 2012 16:16:58 -0400</pubDate>
+    </item>
+  </channel>
+</rss>

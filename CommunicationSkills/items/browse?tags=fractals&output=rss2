@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=fractals&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:08:18 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Point-Based Fractal Generation: An introduction to C++ Programming]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/32</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Point-Based Fractal Generation: An introduction to C++ Programming</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Introduction to C++: basic syntax, constructs, and objects for Java programmers.  Introduction to Subversion and Visual Studios.<br />
+<br />
+This is intended as the introductory project in a sophomore-level course introducing students both basic data structures and to C++ (assuming two semesters of Java).  This project focuses on the latter: giving students their first experience with the C++ language (as well as the Visual Studios IDE and the SVN-based submission method).  <br />
+<br />
+In this assignment the student: (1) learns to use SVN; (2) writes the obligatory C++ Hello World program within the Visual Studios editor; (3) implements functionality for generating BMP files; (4) implements the method of a BMP interface class using a row-major matrix representation; and (5) generates several simple fractal images using the C++ Complex class and operators.<br />
+<br />
+Note: The provided library allows for easy generation of Windows-friendly .bmp files, but requires the Microsoft C++ compiler to work.<br />
+<br />
+Duration: 2.5 weeks.<br />
+<br />
+Background: Assume 2 semesters of Java programming.  Students are not assumed to have seen C++, Visual Studios, or Subversion.  Supplementary materials or lecture on Subversion may need to be provided.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John E. Karro</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Based in labs and libraries developed by Dr. William Brinkman for CSE 274 (Introduction to Data Structures) at Miami University.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Code, short-answer prose</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Programming language basics, object oriented language features, tools </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have been hired as programmer at a graphics company and have discovered you need to learn C++.  Now.  Coming down the publishing pipeline is a book on Fractals – mathematically generated images that are frequently used as art, screen savers, Hollywood CGIs, etc…, hopefully displacing the classic book on the subject.  As a way to help you bootstrap yourself into the language quickly, they have assigned you to start generating Fractal figures for the book.  In order to do this, you are also going to need to use Subversion (a tool for project management), Visual Studio (an Microsoft IDE), a C++ library for generating graphics file in .bmp format, and how to generate a Fractal.<br />
+<br />
+Importance: In this assignment you are learning some fundamental skills needed to work as a programmer in Industry.  Subversion is representative of repository tools used to store, exchange, and track versions of coding projects.  Visual Studio is a useful alternative to Eclipse for writing and debugging code.  And C++ is one of the more important languages, offering superior speed to Java in an objected oriented framework.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/005fcb83b39089658292d999593c1837.docx">Proj1.docx</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/7fbad3abf8a627bf5aa71f0624f5b0f1.zip">materials.zip</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:26:59 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/005fcb83b39089658292d999593c1837.jpg" type="application/zip" length="645985"/>
+    </item>
+  </channel>
+</rss>

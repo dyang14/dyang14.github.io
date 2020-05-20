@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=error+interpretation&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:09:19 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Code Review and Report to Programmer]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/37</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Code Review and Report to Programmer</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Programmers should be able to read code from other programmers in order to determine whether it contains errors.  This includes compiler errors, runtime errors, and logic errors.  When they identify those errors, they should be able to provide feedback to the programmer who wrote the code in a way that is professional and productive.  In this assignment, students read a program, identify and classify the errors it contains, and write a summary to the programmer.  <br />
+<br />
+This could be easily modified to include code related to whatever content is being taught.  </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Code report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Other</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Code review, error identification</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">At work, you will often be asked to read someone else’s code (either entire programs, or portions of programs) in order to identify errors and suggest ways to fix them. The other person may be a colleague working on another project or a member of a project team on which you serve. In these situations, you will be responsible not only for telling the person who programmed the code how to correct the problems but also for helping the programmer avoid those mistakes in the future.<br />
+<br />
+A critical professional ability is the ability to build rather than destroy positive interpersonal relationships when telling others about mistakes they’ve made and how to fix those mistakes. This ability will be especially important when you are working on a team.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/3f0977e0670c892c2a113126394583dd.docx">Code Review and Report to Programmer.docx</a></div><div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/e6b99e68746bb96908aabea1a7758e64.pptx">Writing to a programmer about programming.pptx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:33:11 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/3f0977e0670c892c2a113126394583dd.jpg" type="application/zip" length="305878"/>
+    </item>
+  </channel>
+</rss>

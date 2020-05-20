@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/page/9?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:25:49-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/page/9?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/1?output=atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/8?output=atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/10?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/page/11?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/39</id>
+    <title><![CDATA[Blackjack Using Objects and Dynamic Memory Allocation]]></title>
+    <summary><![CDATA[The purpose of the assignment is to create a black-jack game where the user is the “player” and your program is the “dealer” (or “house”).  The objectives of this assignment are to (1) gain experience with dynamic memory allocation, (2) gain experience with creating appropriate data structures (including objects), (3) gain experience with “looking up” and using external functions, and (4) learn proper coding styles and how to properly document code.<br />
+<br />
+This assignment can be used early on in the semester, but students should understand basic constructs, standard I/O, and how to perform dynamic memory allocation.<br />
+]]></summary>
+    <updated>2012-07-25T14:36:38-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/39"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/e5d3bd3563b15a3d5361d68b435244a9.docx" type="application/zip" length="44256"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Blackjack Using Objects and Dynamic Memory Allocation</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The purpose of the assignment is to create a black-jack game where the user is the “player” and your program is the “dealer” (or “house”).  The objectives of this assignment are to (1) gain experience with dynamic memory allocation, (2) gain experience with creating appropriate data structures (including objects), (3) gain experience with “looking up” and using external functions, and (4) learn proper coding styles and how to properly document code.<br />
+<br />
+This assignment can be used early on in the semester, but students should understand basic constructs, standard I/O, and how to perform dynamic memory allocation.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, documentation, reflection, tech report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Two Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">implementation, tools, design, research, linear data structures, program design, comments, documentation, programming language basics, data types and variables, pointers and memory management, standard library integration, research, problem solving</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">RESEARCH<br />
+Technical Task:  As a software developer in the work force, you may be faced with developing code using techniques or third-party APIs that you did not develop or are unfamiliar.  This may require some research to not only discover potential source code or libraries, but also understand how they work and the advantages and disadvantages of using them.  <br />
+Professional Setting:  Student works for a software company.<br />
+Professional Role:  Software Engineer.<br />
+Deliverable:  Design document (with design decisions)<br />
+Real-world Audience:  Team Lead and peers.<br />
+How the Audience will USE the student&#039;s communication:  The team lead and peers will use the student&#039;s design (decisions) document to do the following:  (1) make suggestions as to possible design alternatives, and (2) determine the feasibility of the design choices.<br />
+Additional Notes:  In this assignment, you will need to research and read about functions that will provide appropriate string I/O capabilities.  In addition, you will need to look up how to use the external function random_shuffle.  In a real-time environment, the ability to dynamically allocate and de-allocate memory is a vital concept. The ability to allocate and de-allocate memory (as well as directly access memory) makes C/C++ a powerful language – one of the primary reasons that most operating systems are developed in C.  Thoroughly understanding how to handle memory is important to mastering C/C++, and thus key to developing solid data structures and algorithms that efficiently use system memory.  <br />
+<br />
+<br />
+ADDITIONAL SCENARIO<br />
+In the real-world, the customer is usually more familiar with their domain than the software engineer.  Sometimes, the software engineer may need to research their customer’s domain so that they can further understand the problem.  In this assignment, if you do not understand the game of Blackjack, you must research how it is played<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/38</id>
+    <title><![CDATA[Design Proposal and Rationale]]></title>
+    <summary><![CDATA[<p>For any set of requirements, students generate a design proposal rationale that includes a UML class diagram. The rubric evaluates how the students model the requirements and how they justify their design decisions and how the design meets the requirements.&nbsp; The objectives of this assignment are (1) to articulate a class diagram for an object-oriented system and (2) justify the decisions as modeled by the class diagram.</p>
+<p>Prereqs: Students are expected to know advanced OO concepts like composition and inheritance.&nbsp; Additionally, students should be able to model an OO system using UML and should be familiar with design patterns, such as state, strategy, singleton, MVC.</p>
+<p>The team size is flexible. &nbsp;</p>
+<p>Any set of requirements could be used with this assignment.&nbsp;&nbsp; For a CS 2 class, the requirements usually consist of 3-4 use cases and the class diagram is typically 3-7 classes with a minimum of one inheritance and composition relationship.</p>
+<p>This assignment is has been used as a deliverable in a larger programming assignment that spans multiple iterations.&nbsp; Students turn in a design document or proposal as part of an Iteration 0 along with a black box test plan.&nbsp; For an example of how the assignment has been used, please see the <a title="Somewhat Simplified Solitaire" href="http://courses.ncsu.edu/csc216/common/2011_Fall/3_Project/" target="_blank">Somewhat Simplified Solitaire</a> project.&nbsp; Please note that the project uses an older version of this assignment. &nbsp;</p>]]></summary>
+    <updated>2012-07-27T14:16:47-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/38"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/08be8d2c0379f604820e9a86cdf4d96c.pdf" type="application/pdf" length="99647"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/c726d9b5775ad819cf41b807070763de.docx" type="application/zip" length="24310"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/ef1cac863b2ba2190bb96c6d22ad71d1.doc" type="application/msword" length="29696"/>
+    <category term="Class diagram"/>
+    <category term="design creation"/>
+    <category term="design rationale"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Design Proposal and Rationale</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text"><p>For any set of requirements, students generate a design proposal rationale that includes a UML class diagram. The rubric evaluates how the students model the requirements and how they justify their design decisions and how the design meets the requirements.&nbsp; The objectives of this assignment are (1) to articulate a class diagram for an object-oriented system and (2) justify the decisions as modeled by the class diagram.</p>
+<p>Prereqs: Students are expected to know advanced OO concepts like composition and inheritance.&nbsp; Additionally, students should be able to model an OO system using UML and should be familiar with design patterns, such as state, strategy, singleton, MVC.</p>
+<p>The team size is flexible. &nbsp;</p>
+<p>Any set of requirements could be used with this assignment.&nbsp;&nbsp; For a CS 2 class, the requirements usually consist of 3-4 use cases and the class diagram is typically 3-7 classes with a minimum of one inheritance and composition relationship.</p>
+<p>This assignment is has been used as a deliverable in a larger programming assignment that spans multiple iterations.&nbsp; Students turn in a design document or proposal as part of an Iteration 0 along with a black box test plan.&nbsp; For an example of how the assignment has been used, please see the <a title="Somewhat Simplified Solitaire" href="http://courses.ncsu.edu/csc216/common/2011_Fall/3_Project/" target="_blank">Somewhat Simplified Solitaire</a> project.&nbsp; Please note that the project uses an older version of this assignment. &nbsp;</p></div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sarah Heckman, Ed Gehringer</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design proposal, UML diagram</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">writing, teaming, reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">A customer has provided your management team with a set of requirements.  Your manager has requested that you and your co-workers each propose a design for the static layout of the system by identifying the objects, their state and behavior, and the relationships between the objects in the system. Your manager will then choose a design that best describes the requirements for implementation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/37</id>
+    <title><![CDATA[Code Review and Report to Programmer]]></title>
+    <summary><![CDATA[Programmers should be able to read code from other programmers in order to determine whether it contains errors.  This includes compiler errors, runtime errors, and logic errors.  When they identify those errors, they should be able to provide feedback to the programmer who wrote the code in a way that is professional and productive.  In this assignment, students read a program, identify and classify the errors it contains, and write a summary to the programmer.  <br />
+<br />
+This could be easily modified to include code related to whatever content is being taught.  ]]></summary>
+    <updated>2012-07-24T22:19:28-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/37"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/3f0977e0670c892c2a113126394583dd.docx" type="application/zip" length="305878"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/e6b99e68746bb96908aabea1a7758e64.pptx" type="application/zip" length="51676"/>
+    <category term="error interpretation"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Code Review and Report to Programmer</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Programmers should be able to read code from other programmers in order to determine whether it contains errors.  This includes compiler errors, runtime errors, and logic errors.  When they identify those errors, they should be able to provide feedback to the programmer who wrote the code in a way that is professional and productive.  In this assignment, students read a program, identify and classify the errors it contains, and write a summary to the programmer.  <br />
+<br />
+This could be easily modified to include code related to whatever content is being taught.  </div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Code report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Other</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Code review, error identification</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">At work, you will often be asked to read someone else’s code (either entire programs, or portions of programs) in order to identify errors and suggest ways to fix them. The other person may be a colleague working on another project or a member of a project team on which you serve. In these situations, you will be responsible not only for telling the person who programmed the code how to correct the problems but also for helping the programmer avoid those mistakes in the future.<br />
+<br />
+A critical professional ability is the ability to build rather than destroy positive interpersonal relationships when telling others about mistakes they’ve made and how to fix those mistakes. This ability will be especially important when you are working on a team.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/36</id>
+    <title><![CDATA[Prioritized Bug/Enhancement Report]]></title>
+    <summary><![CDATA[The Prioritized Bug/Enhancement Report assignment directs student teams to development criteria to rank bugs and enhancements, create a prioritized list of bugs and enhancements, and to estimate time and resources for each item.  The Prioritized Bug/Enhancement Report is third of five assignments that prepare students to develop the software they evaluated in the Program Review Report assignment over four two-week scrum cycles. <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Synthesize results from the Product Review Report and the Customer Requirements Report to develop critical criteria to organize the development process.<br />
+2.	Prioritize bug fixes and enhancements using the critical organizing criteria.<br />
+3.	Identify the key features of each bug fix and enhancement.<br />
+4.	Estimate resources needed to implement each bug fix or enhancement.<br />
+]]></summary>
+    <updated>2012-07-26T10:55:37-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/36"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/2c0a74997cd5c69e59e12435c34bc54a.docx" type="application/zip" length="34265"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/d88c522ae8eb1c707e9e39b1fa43b8cd.pdf" type="application/pdf" length="681507"/>
+    <category term="estimate time and resources"/>
+    <category term="Prioritize development items"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Prioritized Bug/Enhancement Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Prioritized Bug/Enhancement Report assignment directs student teams to development criteria to rank bugs and enhancements, create a prioritized list of bugs and enhancements, and to estimate time and resources for each item.  The Prioritized Bug/Enhancement Report is third of five assignments that prepare students to develop the software they evaluated in the Program Review Report assignment over four two-week scrum cycles. <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Synthesize results from the Product Review Report and the Customer Requirements Report to develop critical criteria to organize the development process.<br />
+2.	Prioritize bug fixes and enhancements using the critical organizing criteria.<br />
+3.	Identify the key features of each bug fix and enhancement.<br />
+4.	Estimate resources needed to implement each bug fix or enhancement.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development PRIORITIZED BUG/ENHANCEMENT REPORT The project manager has decided to continue development of the product begun but not completed by an acquired company. (This is the product your team evaluated in the Product Review Report and developed customer requirements for in the Customer Requirements Report.) The product manager has assigned your development team to develop a prioritized bug/enhancement list based on bugs identified in the Product Review Report and customer requirements identified in the Customer Requirements Report.  Your team needs to develop criteria to facilitate and justify bug and enhancement ranking.  Your team needs to create a prioritized list of bugs and enhancements.  Your team needs to estimate time and resources needed to fix each bug and implement each enhancement. Your team’s report needs to recommendation the order in which bugs and enhancements should be developed to meet customer needs. The project manager has asked your team to make a ten-minute presentation summarizing the report. Your team’s report and presentation provides the project manager with critical information to plan how to develop the product. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a three-to-five-page prioritized bug/enhancement report. 2. The project manager has asked your team to present significant findings from the prioritized bug/enhancement report in a ten-to-fifteen-minute meeting. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, the manager wants your team to answer the following technical questions: 1. What are the critical criteria that organize the development process? 2. How critical is each bug or enhancement to the development process? 3. What are the key features of each bug or enhancement? 4. What resources are required to fix each bug or implement each enhancement? You must provide answers to these questions in a manner that helps the manager develop a plan. The manager must evaluate your team to determine whether it is capable of completing the project. The manager will use your team’s report to answer the following questions: 1. Can your team synthesize the results of the Program Review Report and Customer Requirements Report to identify product development critical criteria? 2. Can your team organize a list of bug fixes and enhancements organized by the product development criteria? 3. Can your team estimate time and people needed to complete each bug fix and enhancement? 4. Are you and the other team members able to work together effectively?<br />
+<br />
+1<br />
+<br />
+CSC 225 – Introduction to Software Development You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project. LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Synthesize results from the Product Review Report and the Customer Requirements Report to develop critical criteria to organize the development process. 2. Prioritize bug fixes and enhancements using the critical organizing criteria. 3. Identify the key features of each bug fix and enhancement. 4. Estimate resources needed to implement each bug fix or enhancement. Focus also on developing your ability to perform these communication tasks: 1. Write a report that helps managers make practical decisions efficiently. [Writing] 2. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 3. Write a report that persuades mangers to accept your recommendation. [Writing] 4. Select key information from written report useful to the project manager. [Speaking] 5. Create an informative and useful presentation for the project manager. [Speaking] 6. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 7. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 8. Collaborate effectively on a software development team. [Teaming] 9. Organize and execute a meeting with the project manager and the software development team. [Teaming] 10. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Monday (9/10): Introduction to critical criteria, prioritization, and estimation. Friday (9/14): Submit your report and make your presentation. Peer review of presentations. GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+2<br />
+<br />
+CSC 225 – Introduction to Software Development Prioritized Bug/Enhancement Report<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Synthesize critical criteria to organize the development process.<br />
+<br />
+Details<br />
+Identify key results from the Product Review Report<br />
+<br />
+Report Section<br />
+Overview Section<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+List key results and each is clearly and concisely justified. Key features are not in a list or missing, or justification is missing or unclear. Key features are not listed or missing, or justification is missing or unclear. . List of results from each report with no synthesis or not supported by evidence. Bugs or enhancements in a list or missing<br />
+<br />
+Points<br />
+<br />
+Identify key results from the Customer Requirements Report<br />
+<br />
+List key results and each is clearly and concisely justified.<br />
+<br />
+Identify critical criteria for the development process<br />
+<br />
+Prioritize bug fixes and enhancements using the critical organizing criteria<br />
+<br />
+Create a list of bugs and enhancements from previous reports Prioritize list using the critical criteria for the development process<br />
+<br />
+Prioritized List Section<br />
+<br />
+Synthesize key results into a small list of critical criteria supported by evidence from supporting reports List bugs and enhancements<br />
+<br />
+Each item assigned a priority with clear and concise explanation using critical criteria<br />
+<br />
+Not all items are assigned a priority, or explanation is missing or unclear or too long, or explanation does not use critical criteria<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Identify the key features of each bug fix and enhancement Identify key features of each bug Prioritized List Section Clear and concise description of each bug with key features highlighted Clear and concise description of each enhancement with key features highlighted List an amount of time to fix each bug and a persuasive argument for its accuracy Key features missing or not highlighted, description is unclear or too long Key features missing or not highlighted, description is unclear or too long Time are not listed for each bug, or argument is missing or not persuasive Time are not listed for each enhancement, or argument is missing or not persuasive<br />
+<br />
+Identify key features of each enhancement<br />
+<br />
+Estimate resources needed to implement each bug fix or enhancement<br />
+<br />
+Estimate the amount of time needed to fix each bug<br />
+<br />
+Prioritized List Section<br />
+<br />
+Estimate the amount of time needed to fix implement each enhancement<br />
+<br />
+List an amount of time to implement each enhancement and a persuasive argument for its accuracy List the team members needed for each bug or enhancement and a persuasive argument for each.<br />
+<br />
+Estimate team members needed for each bug or enhancement<br />
+<br />
+Team members not listed for each bug or enhancement or argument is missing or not persuasive<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Prioritized Bug/Enhancement Report<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently<br />
+<br />
+Details<br />
+Provides critical information useful to the reader Critical information is easily accessible to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Report builds project manager’s confidence in team’s technical and communicatio n abilities<br />
+<br />
+Concise and appropriate writing style for project manager Uses precise terms appropriate for the reader<br />
+<br />
+Writing<br />
+<br />
+Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from user<br />
+<br />
+Uses credible evidence<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+to support explanations training to support key findings Uses correct spelling, grammar, etc. throughout report Writing Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings Speaking Concisely and accurately demonstrates key features of user training Concisely and accurately demonstrates significant features of the user training sample from user training to support key findings Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Report persuades project manager to accept your recommendati on<br />
+<br />
+Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features user training Select information that demonstrates significant features of the user training sample Select information that demonstrates significant factors affecting user experience Select information that recommends plans for program development Key information is<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant Significant features are missing, insignificant features are included, or irrelevant features<br />
+<br />
+Concisely and accurately demonstrates significant factors affecting user experience<br />
+<br />
+Significant factors are missing, insignificant factors are included, or irrelevant facctors<br />
+<br />
+Create and<br />
+<br />
+Speaking<br />
+<br />
+Concise and accurate recommendations for program development Succinctly presents key<br />
+<br />
+Significant recommendations missing Omits or inaccurately<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+informative and useful presentation for the project manager presented information presents key information Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Handouts, visuals, demonstrations, etc. support and complement the presentation<br />
+<br />
+Uses concise, accurate, and useful support materials to support and complement the presentation<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids firsttime problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and accurate understanding of<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting Questions are accurately, authoritatively, and respectfully answered<br />
+<br />
+Team members under dress or over dress for the meeting Demonstrates lack of understanding or the lack of ability to explain answers to<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+questions, and accurately and respectfully answers each Each task is independent, clearly defined, and contributes to the overall software development task questions. Lack of respect for the questioner Tasks are not independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late Omitted major topics,<br />
+<br />
+Collaborate effectively on a software development team<br />
+<br />
+Breakdown the software development project into small, independent task<br />
+<br />
+Teaming<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+Meeting is well-<br />
+<br />
+All major topics are<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+organized and executed presented, no time is wasted, all questions are answered in the allotted time Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks time not on task, not enough time to answer all questions Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop knowledge of individual team member skills and trust among team members<br />
+<br />
+Identify skills of each team member<br />
+<br />
+Teaming<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+9<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Bug Report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Project Management, Continuous Quality Assurance </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The project manager has decided to continue development of the product begun but not completed by an acquired company.  The product manager has assigned your development team to develop a prioritized bug/enhancement list based on bugs identified in the Product Review Report and customer requirements identified in the Customer Requirements Report.   The project manager will use your list to advise upper management on the status of the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/35</id>
+    <title><![CDATA[Teach Class]]></title>
+    <summary><![CDATA[If you have a unit to teach that can be easily subdivided into separate parts that isn&#039;t too difficult, then this assignment can be used.<br />
+<br />
+Create groups of students (probably 2-4) who are interested in teaching the class. Give them a handout or reading from the text that they are supposed to teach in advance. The students will then prepare a lesson based on the reading. Each student group will teach the class in a single class period. Then, the class will take a quiz based on the material. For the students teaching, their grade will be based upon the average grades on their section of the quiz. For students not teaching, their grade will be based on their own quiz.]]></summary>
+    <updated>2012-07-26T10:12:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/35"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/03b6792aaf33bada3b458d750ab1451d.docx" type="application/zip" length="21728"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Teach Class</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">If you have a unit to teach that can be easily subdivided into separate parts that isn&#039;t too difficult, then this assignment can be used.<br />
+<br />
+Create groups of students (probably 2-4) who are interested in teaching the class. Give them a handout or reading from the text that they are supposed to teach in advance. The students will then prepare a lesson based on the reading. Each student group will teach the class in a single class period. Then, the class will take a quiz based on the material. For the students teaching, their grade will be based upon the average grades on their section of the quiz. For students not teaching, their grade will be based on their own quiz.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Presentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Class Period</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Speaking, Writing, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Sorting, but could be anything</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Team Training</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/34</id>
+    <title><![CDATA[Eliciting Requirements: Preparation for Requirements Workshop with Client]]></title>
+    <summary><![CDATA[Analyze and create a requirements specifications using scenarios.  Prepare to interview a client.]]></summary>
+    <updated>2012-07-25T21:54:31-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/34"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/3daea505252c2bd1fa2ca5b330011e59.docx" type="application/zip" length="22769"/>
+    <category term="Agile"/>
+    <category term="Client Interview"/>
+    <category term="Inception"/>
+    <category term="Product backlog"/>
+    <category term="Requirements"/>
+    <category term="unified process"/>
+    <category term="Vision"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Eliciting Requirements: Preparation for Requirements Workshop with Client</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Analyze and create a requirements specifications using scenarios.  Prepare to interview a client.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Larman, Craig. Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development (3rd Edition), 2004.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Requirements<br />
+Design</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The Inception Phase of our project is upon us! It’s our opportunity to work with the client to establish a common vision and scope for the project. We explore the client’s vision for the project, create an initial list of features (requirements), make a rough estimate of cost time needed to complete the features, and decide whether or not it is feasible to move ahead with the project given our resource (time and people) constraints. Note that in the spirit of agile, iterative development, we are not trying to completely define the client’s needs (requirements) or the solution at this time. A fuller understanding of the requirements will evolve as we move forward with the project. <br />
+<br />
+We will kick off the project with a Requirements Workshop with our client in our next class meeting. Oftentimes the Software Engineer must explore the client’s vision through a dialog with the client. So for this assignment, I want you to prepare for the meeting by composing a few questions to ask the client in order for you to better understand:<br />
+• The client’s vision for the product<br />
+• The opportunity/benefits of the product that the client envisions<br />
+• The primary stakeholders, such as the “owner” of the product and the “users” of the product.<br />
+• The user-level goals: What is the vision for how the users will use the product?<br />
+• A list, of potential features of the product<br />
+• Any other requirements for the product such as usability, reliability, security, performance, etc<br />
+<br />
+The information that you collect will be used to write your team’s Vision, Supplemental Specification, Use Cases, and Glossary. The features will be the basis for your teams Product Backlog.<br />
+<br />
+In this memo to your supervisor, you will recommend four questions to the client that will help you to write the project vision document.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/33</id>
+    <title><![CDATA[Program Design]]></title>
+    <summary><![CDATA[This assignment can be used in lieu of a programming assignment. Give students the specification for one of your usual programming assignments and have students come up with two possible program designs. They then have to argue (orally) to you in favor of one of the two designs.]]></summary>
+    <updated>2012-07-26T10:05:58-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/33"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/ac221d7fdaf9ab625f7044d1d439cbe4.docx" type="application/zip" length="26019"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Program Design</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS2</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment can be used in lieu of a programming assignment. Give students the specification for one of your usual programming assignments and have students come up with two possible program designs. They then have to argue (orally) to you in favor of one of the two designs.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Elevator pitch</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Speaking</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Applicable to Any</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Giving advice to a colleague</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/32</id>
+    <title><![CDATA[Point-Based Fractal Generation: An introduction to C++ Programming]]></title>
+    <summary><![CDATA[Introduction to C++: basic syntax, constructs, and objects for Java programmers.  Introduction to Subversion and Visual Studios.<br />
+<br />
+This is intended as the introductory project in a sophomore-level course introducing students both basic data structures and to C++ (assuming two semesters of Java).  This project focuses on the latter: giving students their first experience with the C++ language (as well as the Visual Studios IDE and the SVN-based submission method).  <br />
+<br />
+In this assignment the student: (1) learns to use SVN; (2) writes the obligatory C++ Hello World program within the Visual Studios editor; (3) implements functionality for generating BMP files; (4) implements the method of a BMP interface class using a row-major matrix representation; and (5) generates several simple fractal images using the C++ Complex class and operators.<br />
+<br />
+Note: The provided library allows for easy generation of Windows-friendly .bmp files, but requires the Microsoft C++ compiler to work.<br />
+<br />
+Duration: 2.5 weeks.<br />
+<br />
+Background: Assume 2 semesters of Java programming.  Students are not assumed to have seen C++, Visual Studios, or Subversion.  Supplementary materials or lecture on Subversion may need to be provided.<br />
+]]></summary>
+    <updated>2012-07-30T13:30:49-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/32"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/005fcb83b39089658292d999593c1837.docx" type="application/zip" length="645985"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/7fbad3abf8a627bf5aa71f0624f5b0f1.zip" type="application/zip" length="9118"/>
+    <category term="algorithms"/>
+    <category term="C++"/>
+    <category term="fractals"/>
+    <category term="programming"/>
+    <category term="svn"/>
+    <category term="visual studio"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Point-Based Fractal Generation: An introduction to C++ Programming</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Introduction to C++: basic syntax, constructs, and objects for Java programmers.  Introduction to Subversion and Visual Studios.<br />
+<br />
+This is intended as the introductory project in a sophomore-level course introducing students both basic data structures and to C++ (assuming two semesters of Java).  This project focuses on the latter: giving students their first experience with the C++ language (as well as the Visual Studios IDE and the SVN-based submission method).  <br />
+<br />
+In this assignment the student: (1) learns to use SVN; (2) writes the obligatory C++ Hello World program within the Visual Studios editor; (3) implements functionality for generating BMP files; (4) implements the method of a BMP interface class using a row-major matrix representation; and (5) generates several simple fractal images using the C++ Complex class and operators.<br />
+<br />
+Note: The provided library allows for easy generation of Windows-friendly .bmp files, but requires the Microsoft C++ compiler to work.<br />
+<br />
+Duration: 2.5 weeks.<br />
+<br />
+Background: Assume 2 semesters of Java programming.  Students are not assumed to have seen C++, Visual Studios, or Subversion.  Supplementary materials or lecture on Subversion may need to be provided.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">John E. Karro</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-source" class="element">
+        <h3>Source        </h3>
+                                    <div class="element-text">Based in labs and libraries developed by Dr. William Brinkman for CSE 274 (Introduction to Data Structures) at Miami University.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Code, short-answer prose</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Programming language basics, object oriented language features, tools </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You have been hired as programmer at a graphics company and have discovered you need to learn C++.  Now.  Coming down the publishing pipeline is a book on Fractals – mathematically generated images that are frequently used as art, screen savers, Hollywood CGIs, etc…, hopefully displacing the classic book on the subject.  As a way to help you bootstrap yourself into the language quickly, they have assigned you to start generating Fractal figures for the book.  In order to do this, you are also going to need to use Subversion (a tool for project management), Visual Studio (an Microsoft IDE), a C++ library for generating graphics file in .bmp format, and how to generate a Fractal.<br />
+<br />
+Importance: In this assignment you are learning some fundamental skills needed to work as a programmer in Industry.  Subversion is representative of repository tools used to store, exchange, and track versions of coding projects.  Visual Studio is a useful alternative to Eclipse for writing and debugging code.  And C++ is one of the more important languages, offering superior speed to Java in an objected oriented framework.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/31</id>
+    <title><![CDATA[Game Manual Rewrite]]></title>
+    <summary><![CDATA[This project can be used for introductory students. The specific code attached here is applicable to students who are learning Java and have learned how to use 2D arrays and write their own classes. But, one can write their own &quot;poorly styled&quot; code for this assignment as well.<br />
+<br />
+Students are given a piece of code that works, but is poorly written with no documentation. They must first experiment with the program to figure out what it does. Once they do, they have to redesign the code, use good style and comment the code so that it solves the same problem, but is easier to read. In addition, the students must produce a user&#039;s manual for the finished product, so that someone can easily use the program.<br />
+]]></summary>
+    <updated>2012-07-26T10:04:59-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/31"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/b358074696132be080f1d74e18a899f6.docx" type="application/zip" length="20443"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/b6a71fd1d7166a4469d1360ef15cebdb.java" type="text/x-java" length="3384"/>
+    <category term="Arrays"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Game Manual Rewrite</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This project can be used for introductory students. The specific code attached here is applicable to students who are learning Java and have learned how to use 2D arrays and write their own classes. But, one can write their own &quot;poorly styled&quot; code for this assignment as well.<br />
+<br />
+Students are given a piece of code that works, but is poorly written with no documentation. They must first experiment with the program to figure out what it does. Once they do, they have to redesign the code, use good style and comment the code so that it solves the same problem, but is easier to read. In addition, the students must produce a user&#039;s manual for the finished product, so that someone can easily use the program.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Arup Guha</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">User Manual</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Programming Language Basics, Object Oriented Language Features</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">Practice in cleaning up and documenting someone else&#039;s code.</div>
+                    </div><!-- end element -->
+                </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/30</id>
+    <title><![CDATA[Problem Statement &amp; Entity Relationship Diagram]]></title>
+    <summary><![CDATA[This is the first of many milestones associated with a 6 week project. You will refer back to the requirements and design developed in this assignment in future milestones to a) <a href="http://cs-comm.lib.muohio.edu/items/show/51"> Implement the design</a>, b) <a href="http://cs-comm.lib.muohio.edu/items/show/42">Analyze the design for privacy and security issues</a>, c) Design the software system and d) Develop and test the information system. This assignment has the following learning outcomes: ●To learn how to draft the requirements of an information system project using a problem statement. ●To learn how to draft a problem statement using the Function- Form&ndash;Economy-Time Model (FFET) ●To learn how to design an Entity-Relationship diagram, given the requirements of an information system. ●To learn how to explain the requirements of an information system, in a model that enables a software engineer to understand the capabilities of the system. ●To learn how to design an information system and rationalize said design in a manner that enables a software engineer to implement the design in a relational database system. ●To learn how to apply the practice of information modeling in a situation similar to those seen in the industry. ●To learn how to work within a team to resolve conflicts and accommodate varied design choices This is a team assignment and is ideally done in a team of 3 or 4 students.]]></summary>
+    <updated>2012-07-26T11:00:07-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/30"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/ad6e2aff03dcd12f7ac4a4001f897fd2.doc" type="application/msword" length="61440"/>
+    <category term="Constraints"/>
+    <category term="Design"/>
+    <category term="Design Specification"/>
+    <category term="Entities"/>
+    <category term="ER Diagram"/>
+    <category term="Normalization"/>
+    <category term="Relationships"/>
+    <category term="Requirements Specification"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Problem Statement &amp; Entity Relationship Diagram</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is the first of many milestones associated with a 6 week project. You will refer back to the requirements and design developed in this assignment in future milestones to a) <a href="http://cs-comm.lib.muohio.edu/items/show/51"> Implement the design</a>, b) <a href="http://cs-comm.lib.muohio.edu/items/show/42">Analyze the design for privacy and security issues</a>, c) Design the software system and d) Develop and test the information system. This assignment has the following learning outcomes: ●To learn how to draft the requirements of an information system project using a problem statement. ●To learn how to draft a problem statement using the Function- Form&ndash;Economy-Time Model (FFET) ●To learn how to design an Entity-Relationship diagram, given the requirements of an information system. ●To learn how to explain the requirements of an information system, in a model that enables a software engineer to understand the capabilities of the system. ●To learn how to design an information system and rationalize said design in a manner that enables a software engineer to implement the design in a relational database system. ●To learn how to apply the practice of information modeling in a situation similar to those seen in the industry. ●To learn how to work within a team to resolve conflicts and accommodate varied design choices This is a team assignment and is ideally done in a team of 3 or 4 students.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sriram Mohan</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">ER Diagram, Problem Statement, Requirements Specification</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design,Requirements Specification, Normalization</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">As a software engineer, you will often be required to design information systems based on a client’s requirements. It is your responsibility to understand the needs behind the information system and develop a feature set based on the needs. Once you have captured the feature set, you will often be responsible for designing an information system that has the ability to store the required data in an efficient manner without any duplication.<br />
+<br />
+ The ER diagram is an industry standard and provides a visual representation of the database design. The ER diagram is the focal point of communication with the client and should be  easy to read, modify and capture all the constraints to be represented in the database.<br />
+<br />
+A critical ability while working within a team is to develop an ability to manage conflicts, accommodate different design decisions, and manage conflicting client requirements. This milestone helps you learn and apply these abilities in a real life situation.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

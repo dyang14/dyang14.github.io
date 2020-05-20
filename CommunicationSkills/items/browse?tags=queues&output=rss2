@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse?tags=queues&amp;output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:05:42 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Car Wash Simulation Using Queues]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/44</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Car Wash Simulation Using Queues</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A queue is a popular data structure that is commonly used when attempting to process requests.  In this assignment you will use a queue to simulate the processing of customer requests to wash their car.  The objectives in this assignment are to (1) gain experience researching for a solution to a problem, (2) create a high-level design as a team that can be used by developers as well as understood by non-technical people (e.g., a customer), (3) build queue methods for adding, removing, and calculating averages, and (4) improve the implementation of proper coding styles and documentation.<br />
+<br />
+This is a team assignment, and students should understand basic constructs, standard I/O, and how to implement a queue.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">brainstorming, discussion, design document, code, comments, pseudo-code, test results, documentation, peer evaluation, reflection, requirements, technical report, team meetings</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing, teaming, listening</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">team evaluation, implementation, tools, design, linear data structures, program design, comments, documentation, programming language basics, data types and variables, tools, research, problem solving</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">TEAM DESIGN DOCUMENT<br />
+Technical Task:  Most real-world software development projects involve working as a team.  <br />
+Professional Setting:  Students work for a software company.<br />
+Professional Role:  Students are members   <br />
+Deliverable:  Design document.<br />
+Real-world Audience:  A project manager.<br />
+How the Audience will USE the students&#039; communication:  The project manager will use the students&#039; design document to do the following:  (1) Develop a plan for completing the project, and (2) Determine whether the team is capable of completing the project.<br />
+Additional Notes:  Whether it is working with other developers, business people, managers, customers, or users, you must be able to adapt to different personalities and deliver a working product that meets the customer’s requirements. <br />
+<br />
+<br />
+ADDITIONAL SCENARIO:<br />
+Also, as a software developer in the work force, you may have to do some research to find a solution to a problem.  In this assignment, you will be given a task (handling of the probability of a customer arriving) for which there is not a solution in your textbook.  For example, this will require you to read other resources (such as the internet) to understand how to do random number generation.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/0a0ed2f1ed507c663b23570a00902be7.docx">NSF CPATH Data Structures and Algorithms - Car Wash Simulation.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:42:53 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/0a0ed2f1ed507c663b23570a00902be7.jpg" type="application/zip" length="40824"/>
+    </item>
+    <item>
+      <title><![CDATA[Airport Simulation Using Queues]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/21</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Airport Simulation Using Queues</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Data Structures</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">A queue is a popular data structure that is commonly used when attempting to process requests.  In this assignment you will use a queue to simulate the processing of airplanes landing and taking-off at an airport.  The objectives of this assignment are to (1) gain experience researching for a solution to a problem, (2) create a high-level design as a team that can be used by developers, (3) build queue methods for adding and removing elements, and (4) improve the implementation of proper coding styles and documentation.<br />
+<br />
+This is a team assignment, and students should understand basic constructs, standard I/O, and how to implement a queue.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Bill Eberle</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">design document, code, comments, pseudo-code, test results, documentation, listening to presentations, oral presentations, reflection, team meetings, tech report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Several Weeks</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Reading, Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design, linear data structures, research, problem solving</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">TEAM DESIGN DOCUMENT<br />
+Technical Task: Most real-world software development projects involve working as a team.<br />
+Professional Setting: Students work for a software company.<br />
+Professional Role: Students are members<br />
+Deliverable: Design document.<br />
+Real-world Audience: A project manager.<br />
+How the Audience will USE the students&#039; communication: The project manager will use the students&#039; design document to do the following: (1) Develop a plan for completing the project, and (2) Determine whether the team is capable of completing the project.<br />
+Additional Notes: Whether it is working with other developers, business people, managers, customers, or users, you must be able to adapt to different personalities and deliver a working product that meets the customer’s requirements.<br />
+<br />
+<br />
+ADDITIONAL SCENARIO:<br />
+In addition, as a software developer in the work force, you may have to do some research to find a solution to a problem.  In this assignment, you will be given a sub-task (handling of the probability of an airplane arriving or taking off) for which there is not a solution in your textbook.  For example, this will require you to read other resources (such as the internet) to understand how to do random number generation.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/efc4c34ef88dad1e810b14714f2a3dcb.docx">NSF CPATH Data Structures and Algorithms - Airport Simulation Using Queues.docx</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:10:30 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/efc4c34ef88dad1e810b14714f2a3dcb.jpg" type="application/zip" length="44493"/>
+    </item>
+  </channel>
+</rss>

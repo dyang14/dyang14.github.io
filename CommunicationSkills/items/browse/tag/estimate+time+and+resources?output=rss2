@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/estimate+time+and+resources?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:30:42 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Prioritized Bug/Enhancement Report]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/36</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Prioritized Bug/Enhancement Report</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">The Prioritized Bug/Enhancement Report assignment directs student teams to development criteria to rank bugs and enhancements, create a prioritized list of bugs and enhancements, and to estimate time and resources for each item.  The Prioritized Bug/Enhancement Report is third of five assignments that prepare students to develop the software they evaluated in the Program Review Report assignment over four two-week scrum cycles. <br />
+<br />
+Students perform the following technical tasks: <br />
+1.	Synthesize results from the Product Review Report and the Customer Requirements Report to develop critical criteria to organize the development process.<br />
+2.	Prioritize bug fixes and enhancements using the critical organizing criteria.<br />
+3.	Identify the key features of each bug fix and enhancement.<br />
+4.	Estimate resources needed to implement each bug fix or enhancement.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Mark Hoffman</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>PDF Search</h2-->
+        <div id="pdf-search-text" class="element">
+        <h3>Text        </h3>
+                                    <div class="element-text">CSC 225 – Introduction to Software Development PRIORITIZED BUG/ENHANCEMENT REPORT The project manager has decided to continue development of the product begun but not completed by an acquired company. (This is the product your team evaluated in the Product Review Report and developed customer requirements for in the Customer Requirements Report.) The product manager has assigned your development team to develop a prioritized bug/enhancement list based on bugs identified in the Product Review Report and customer requirements identified in the Customer Requirements Report.  Your team needs to develop criteria to facilitate and justify bug and enhancement ranking.  Your team needs to create a prioritized list of bugs and enhancements.  Your team needs to estimate time and resources needed to fix each bug and implement each enhancement. Your team’s report needs to recommendation the order in which bugs and enhancements should be developed to meet customer needs. The project manager has asked your team to make a ten-minute presentation summarizing the report. Your team’s report and presentation provides the project manager with critical information to plan how to develop the product. YOUR DELIVERABLES 1. The project manager has asked your team to prepare a three-to-five-page prioritized bug/enhancement report. 2. The project manager has asked your team to present significant findings from the prioritized bug/enhancement report in a ten-to-fifteen-minute meeting. WHAT YOUR READER WILL DO WITH THE COMMUNICATIONS YOU PROVIDE The manager must develop a plan for completing the project. Therefore, the manager wants your team to answer the following technical questions: 1. What are the critical criteria that organize the development process? 2. How critical is each bug or enhancement to the development process? 3. What are the key features of each bug or enhancement? 4. What resources are required to fix each bug or implement each enhancement? You must provide answers to these questions in a manner that helps the manager develop a plan. The manager must evaluate your team to determine whether it is capable of completing the project. The manager will use your team’s report to answer the following questions: 1. Can your team synthesize the results of the Program Review Report and Customer Requirements Report to identify product development critical criteria? 2. Can your team organize a list of bug fixes and enhancements organized by the product development criteria? 3. Can your team estimate time and people needed to complete each bug fix and enhancement? 4. Are you and the other team members able to work together effectively?<br />
+<br />
+1<br />
+<br />
+CSC 225 – Introduction to Software Development You need to present your information in a way that persuades the manager that your team is technically proficient and effective at collaborating on a complex project. LEARNING OBJECTIVES FOR THIS ASSIGNMENT While working on this assignment, focus on developing your ability to perform these technical tasks: 1. Synthesize results from the Product Review Report and the Customer Requirements Report to develop critical criteria to organize the development process. 2. Prioritize bug fixes and enhancements using the critical organizing criteria. 3. Identify the key features of each bug fix and enhancement. 4. Estimate resources needed to implement each bug fix or enhancement. Focus also on developing your ability to perform these communication tasks: 1. Write a report that helps managers make practical decisions efficiently. [Writing] 2. Write a report that builds a manager’s confidence in your team’s technical and communication abilities. [Writing] 3. Write a report that persuades mangers to accept your recommendation. [Writing] 4. Select key information from written report useful to the project manager. [Speaking] 5. Create an informative and useful presentation for the project manager. [Speaking] 6. Demonstrate trustworthy technical expertise and communication skills. [Speaking &amp; Teaming] 7. Deliver your presentation in a professional manner that supports achievement of your goals. [Speaking &amp; Teaming] 8. Collaborate effectively on a software development team. [Teaming] 9. Organize and execute a meeting with the project manager and the software development team. [Teaming] 10. Develop knowledge of individual team member skills and trust among team members. [Teaming] ASSIGNMENT SCHEDULE Monday (9/10): Introduction to critical criteria, prioritization, and estimation. Friday (9/14): Submit your report and make your presentation. Peer review of presentations. GRADING CRITERIA The grading criteria for your team’s written report and presentation are presented in the attached rubrics<br />
+<br />
+2<br />
+<br />
+CSC 225 – Introduction to Software Development Prioritized Bug/Enhancement Report<br />
+<br />
+Technical Rubric<br />
+TECHNICAL ABILITIES Ability<br />
+Synthesize critical criteria to organize the development process.<br />
+<br />
+Details<br />
+Identify key results from the Product Review Report<br />
+<br />
+Report Section<br />
+Overview Section<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR TECHNICAL ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+List key results and each is clearly and concisely justified. Key features are not in a list or missing, or justification is missing or unclear. Key features are not listed or missing, or justification is missing or unclear. . List of results from each report with no synthesis or not supported by evidence. Bugs or enhancements in a list or missing<br />
+<br />
+Points<br />
+<br />
+Identify key results from the Customer Requirements Report<br />
+<br />
+List key results and each is clearly and concisely justified.<br />
+<br />
+Identify critical criteria for the development process<br />
+<br />
+Prioritize bug fixes and enhancements using the critical organizing criteria<br />
+<br />
+Create a list of bugs and enhancements from previous reports Prioritize list using the critical criteria for the development process<br />
+<br />
+Prioritized List Section<br />
+<br />
+Synthesize key results into a small list of critical criteria supported by evidence from supporting reports List bugs and enhancements<br />
+<br />
+Each item assigned a priority with clear and concise explanation using critical criteria<br />
+<br />
+Not all items are assigned a priority, or explanation is missing or unclear or too long, or explanation does not use critical criteria<br />
+<br />
+3<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+Identify the key features of each bug fix and enhancement Identify key features of each bug Prioritized List Section Clear and concise description of each bug with key features highlighted Clear and concise description of each enhancement with key features highlighted List an amount of time to fix each bug and a persuasive argument for its accuracy Key features missing or not highlighted, description is unclear or too long Key features missing or not highlighted, description is unclear or too long Time are not listed for each bug, or argument is missing or not persuasive Time are not listed for each enhancement, or argument is missing or not persuasive<br />
+<br />
+Identify key features of each enhancement<br />
+<br />
+Estimate resources needed to implement each bug fix or enhancement<br />
+<br />
+Estimate the amount of time needed to fix each bug<br />
+<br />
+Prioritized List Section<br />
+<br />
+Estimate the amount of time needed to fix implement each enhancement<br />
+<br />
+List an amount of time to implement each enhancement and a persuasive argument for its accuracy List the team members needed for each bug or enhancement and a persuasive argument for each.<br />
+<br />
+Estimate team members needed for each bug or enhancement<br />
+<br />
+Team members not listed for each bug or enhancement or argument is missing or not persuasive<br />
+<br />
+4<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+<br />
+Prioritized Bug/Enhancement Report<br />
+<br />
+COMMUNICATION RUBRIC<br />
+COMMUNICATION ABILITIES Ability<br />
+Report helps project manager make practical decisions efficiently<br />
+<br />
+Details<br />
+Provides critical information useful to the reader Critical information is easily accessible to the reader<br />
+<br />
+Comm Skill<br />
+Writing<br />
+<br />
+EVIDENCE EXAMINED TO EVALUATE YOUR COMMUNICATIONS ABILITIES (Note that your present your evidence in your report) Done Well Rating and Comments Needs Improvement<br />
+Contains all information useful to the reader and none that is not useful Uses text formatting, organization (e.g., headers), and graphic devices (e.g., lists and tables) that makes information easily accessible to the reader Uses style and tone appropriate for the workplace Useful information is missing or not useful information is included Fails to use formatting, organization, or graphics that makes information accessible to the reader<br />
+<br />
+Points<br />
+<br />
+Report builds project manager’s confidence in team’s technical and communicatio n abilities<br />
+<br />
+Concise and appropriate writing style for project manager Uses precise terms appropriate for the reader<br />
+<br />
+Writing<br />
+<br />
+Uses terms and concepts familiar to the reader, or explains unfamiliar terms or concepts<br />
+<br />
+Uses informal style and tone that is inappropriate for the workplace Misuses terms or concepts or uses terms or concepts unfamiliar to the reader without explanation Key findings are explained inaccurately or imprecisely Fails to used evidence<br />
+<br />
+Provides accurate and precise explanations<br />
+<br />
+Key findings are accurately and precisely explained Uses evidence from user<br />
+<br />
+Uses credible evidence<br />
+<br />
+5<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+to support explanations training to support key findings Uses correct spelling, grammar, etc. throughout report Writing Provides a summary that prioritizes and integrates individual findings and synthesizes an interpretation Provides a development plan that recommends actions that are supported by key findings Speaking Concisely and accurately demonstrates key features of user training Concisely and accurately demonstrates significant features of the user training sample from user training to support key findings Several spelling, grammar, etc. errors in report Summary lists without prioritizations or fails to synthesize individual findings<br />
+<br />
+Report persuades project manager to accept your recommendati on<br />
+<br />
+Uses correct and appropriate spelling, grammar, etc. Integrates and interprets findings<br />
+<br />
+Persuasively describes development plan<br />
+<br />
+Select key information from written report useful to the project manager<br />
+<br />
+Select information the demonstrates key features user training Select information that demonstrates significant features of the user training sample Select information that demonstrates significant factors affecting user experience Select information that recommends plans for program development Key information is<br />
+<br />
+Development plan that is does not recommend actions or is not supported by key findings Selected features are incomplete or redundant Significant features are missing, insignificant features are included, or irrelevant features<br />
+<br />
+Concisely and accurately demonstrates significant factors affecting user experience<br />
+<br />
+Significant factors are missing, insignificant factors are included, or irrelevant facctors<br />
+<br />
+Create and<br />
+<br />
+Speaking<br />
+<br />
+Concise and accurate recommendations for program development Succinctly presents key<br />
+<br />
+Significant recommendations missing Omits or inaccurately<br />
+<br />
+6<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+informative and useful presentation for the project manager presented information presents key information Uses verbose, inaccurate, or extraneous support materials that detract from or confuse the presentation Order does not relate to the order of the written report or does not support report understanding Lacks focus or is disorganized; not useful for the project manager<br />
+<br />
+Handouts, visuals, demonstrations, etc. support and complement the presentation<br />
+<br />
+Uses concise, accurate, and useful support materials to support and complement the presentation<br />
+<br />
+Report order is clear from the presentation<br />
+<br />
+Orders presentation to support the order and understanding of the written report Speaking and Teaming Demonstrates a clear understanding how to organize a presentation useful to the project manager Demonstrates careful planning, avoids firsttime problems, and anticipates potential problems Demonstrates a clearly defined role for each team member Attire for each team member is appropriate for the meeting Demonstrates a clear and accurate understanding of<br />
+<br />
+Demonstrate trustworthy technical expertise and communicatio n skills<br />
+<br />
+Focused and organized presentation<br />
+<br />
+Carefully planned and well-executed presentation<br />
+<br />
+Demonstrations lack of preparation and inadequate planning<br />
+<br />
+Each team member’s role is clearly defined<br />
+<br />
+Team member roles are unclear<br />
+<br />
+Each team member is properly attired for the meeting Questions are accurately, authoritatively, and respectfully answered<br />
+<br />
+Team members under dress or over dress for the meeting Demonstrates lack of understanding or the lack of ability to explain answers to<br />
+<br />
+7<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+questions, and accurately and respectfully answers each Each task is independent, clearly defined, and contributes to the overall software development task questions. Lack of respect for the questioner Tasks are not independent, are vague or unclear, or do not contribute to the software development task Some team assigned tasks that take too little or too much time, and teams are assigned tasks that fall short of or exceed the allotted time Individuals and small groups are unaware of the state of other individual or small group task Results of each task are not clear or are not easy to access No meeting announcement, missing information, or inadequate advanced notice One or more required attendees absent or late Omitted major topics,<br />
+<br />
+Collaborate effectively on a software development team<br />
+<br />
+Breakdown the software development project into small, independent task<br />
+<br />
+Teaming<br />
+<br />
+Effectively and equitable assign tasks to individuals or small groups of developers that can be completed in the allotted time<br />
+<br />
+Each team is assigned tasks that can be accomplished in the allotted time and tasks are evenly assigned<br />
+<br />
+Effectively coordinate task among individuals or small groups<br />
+<br />
+Each individual or small group is aware of the state of tasks assigned to other individuals or small groups Results of each tasks are collected in a uniform, easy to use document Meeting announcement is sent with date, time, and place in advance<br />
+<br />
+Organize and execute a meeting with the project manager and the software development team<br />
+<br />
+Effectively and efficiently coordinate results from each task Required attendees are notified of the meeting arrangement<br />
+<br />
+Teaming<br />
+<br />
+Required attendees are present on time<br />
+<br />
+All required attendees present on time<br />
+<br />
+Meeting is well-<br />
+<br />
+All major topics are<br />
+<br />
+8<br />
+<br />
+CSC 225 – Introduction to Software Development<br />
+organized and executed presented, no time is wasted, all questions are answered in the allotted time Team members are able to clearly state at least two strengths and weaknesses for each team member Team members complete assigned tasks and wait for others to complete assigned tasks time not on task, not enough time to answer all questions Team members cannot identify team member strengths or weaknesses<br />
+<br />
+Develop knowledge of individual team member skills and trust among team members<br />
+<br />
+Identify skills of each team member<br />
+<br />
+Teaming<br />
+<br />
+Develop trust among team members<br />
+<br />
+Team members do not complete assigned tasks or do tasks assigned to others<br />
+<br />
+9<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Bug Report</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Speaking, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Project Management, Continuous Quality Assurance </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The project manager has decided to continue development of the product begun but not completed by an acquired company.  The product manager has assigned your development team to develop a prioritized bug/enhancement list based on bugs identified in the Product Review Report and customer requirements identified in the Customer Requirements Report.   The project manager will use your list to advise upper management on the status of the project.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">4-6</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-additional-information" class="element">
+        <h3>Additional Information        </h3>
+                                    <div class="element-text">The course (CSC 225 – Introduction to Software Development) is a sophomore-level, experiential introduction to software development that focuses on learning basic software development principles and communications skills by developing an ongoing project.  The course project, Tank Wars, continues from the previous semester and is packaged for the next semester.  <br />
+<br />
+Over the course there are five set-up assignments<br />
+•	Program Review Report<br />
+•	Customer Requirements Report<br />
+•	Prioritized Bug/Enhancement Report<br />
+•	Project Management Tools Report<br />
+•	Preliminary Test Plan Report<br />
+that provide background for four two-week Scrum Cycles included in the Scrum Process Management assignment.<br />
+<br />
+Each assignment is a specific Technical Rubric.  <br />
+<br />
+The Communication Skills Rubric is the same for all six assignments.  Communication skills are assessed cumulatively from the rubric.  Communication skills that are to be assessed in this assignment are in red.  Communication skills assessed on in earlier assignments and that will continue to be assess in this assignment are in green.   Communication skills not assess are in black.  All communication skills are assessed for the Scrum Process Management assignment.<br />
+<br />
+</div>
+                    </div><!-- end element -->
+        </div><!-- end element-set -->
+<div class="item-file application-zip"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/2c0a74997cd5c69e59e12435c34bc54a.docx">CSC225BugEnhancementReport.docx</a></div><div class="item-file application-pdf"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/d88c522ae8eb1c707e9e39b1fa43b8cd.pdf">CSC225BugEnhancementReport.pdf</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:31:46 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/2c0a74997cd5c69e59e12435c34bc54a.jpg" type="application/zip" length="34265"/>
+    </item>
+  </channel>
+</rss>

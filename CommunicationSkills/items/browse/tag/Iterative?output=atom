@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/tag/Iterative?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:26:19-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Iterative?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Iterative/page/1?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/Iterative/page/1?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/18</id>
+    <title><![CDATA[Software Development Methodology Recommendation Memo]]></title>
+    <summary><![CDATA[Describe software development life-cycle and need for associated processes: the life-cycle phases, engineering and management processes, and relationships between the phases and processes.  Describe and compare alternative software process standards and presses (e.g. waterfall, incremental, spiral, prototyping, empirical and agile methods)]]></summary>
+    <updated>2012-07-25T17:18:11-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/18"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/2b9d46fac3fbdc8d38fcd89aa052af5e.docx" type="application/zip" length="23115"/>
+    <category term="Iterative"/>
+    <category term="Waterfall"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Software Development Methodology Recommendation Memo</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Software Engineering</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Describe software development life-cycle and need for associated processes: the life-cycle phases, engineering and management processes, and relationships between the phases and processes.  Describe and compare alternative software process standards and presses (e.g. waterfall, incremental, spiral, prototyping, empirical and agile methods)</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Douglas Troy</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Memo</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Less than a week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Researching software development methods and processes</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">You will likely be involved in some aspect of software development or acquisition in your internships and your career after graduation. This assignment will engage you in thinking about the way that software development projects are organized and managed. In addition, you likely will be asked to look for alternative problem solving approaches, summarize those to your supervisor, and make a recommendation. This is also a part of this assignment.<br />
+<br />
+For small programs such as those you have done in class you can probably conceptualize the entire solution in your mind and write your code without a lot of pre-planning. But for larger computer systems that you will encounter in an internship or in your career, the solution can’t be done by a single person. These systems require teams of people who maybe be separated by distance and time. To solve large problems, in a team environment, requires a structured or organized process. We call that organized process a software development methodology. These roadmaps are called Software Development Methodologies.  This seems like a straight-forward process, but many computer-systems have failed due to flaws in the process.<br />
+<br />
+This assignment introduces contrasting software development methodologies so that you are aware that there are choices to be made and for you to think about which process you believe would be most likely help you to successfully complete the class project on time while meeting the needs of our client.<br />
+<br />
+Write a memo to your supervisor in which you compare the waterfall approach with the iterative approach, and recommend an approach to use in our class project. </div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>

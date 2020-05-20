@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+    <link>http://cs-comm.lib.muohio.edu/items/browse/tag/Normalization?output=rss2</link>
+    <description><![CDATA[]]></description>
+    <pubDate>Mon, 18 May 2020 19:32:27 -0400</pubDate>
+    <managingEditor>millarj@muohio.edu (Incorporating Communication Outcomes into the Computer Science Curriculum)</managingEditor>
+    <generator>Zend_Feed</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[Problem Statement & Entity Relationship Diagram]]></title>
+      <link>http://cs-comm.lib.muohio.edu/items/show/30</link>
+      <description><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Problem Statement &amp; Entity Relationship Diagram</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">Databases</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is the first of many milestones associated with a 6 week project. You will refer back to the requirements and design developed in this assignment in future milestones to a) <a href="http://cs-comm.lib.muohio.edu/items/show/51"> Implement the design</a>, b) <a href="http://cs-comm.lib.muohio.edu/items/show/42">Analyze the design for privacy and security issues</a>, c) Design the software system and d) Develop and test the information system. This assignment has the following learning outcomes: ●To learn how to draft the requirements of an information system project using a problem statement. ●To learn how to draft a problem statement using the Function- Form&ndash;Economy-Time Model (FFET) ●To learn how to design an Entity-Relationship diagram, given the requirements of an information system. ●To learn how to explain the requirements of an information system, in a model that enables a software engineer to understand the capabilities of the system. ●To learn how to design an information system and rationalize said design in a manner that enables a software engineer to implement the design in a relational database system. ●To learn how to apply the practice of information modeling in a situation similar to those seen in the industry. ●To learn how to work within a team to resolve conflicts and accommodate varied design choices This is a team assignment and is ideally done in a team of 3 or 4 students.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Sriram Mohan</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">ER Diagram, Problem Statement, Requirements Specification</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing, Teaming</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Design,Requirements Specification, Normalization</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">As a software engineer, you will often be required to design information systems based on a client’s requirements. It is your responsibility to understand the needs behind the information system and develop a feature set based on the needs. Once you have captured the feature set, you will often be responsible for designing an information system that has the ability to store the required data in an efficient manner without any duplication.<br />
+<br />
+ The ER diagram is an industry standard and provides a visual representation of the database design. The ER diagram is the focal point of communication with the client and should be  easy to read, modify and capture all the constraints to be represented in the database.<br />
+<br />
+A critical ability while working within a team is to develop an ability to manage conflicts, accommodate different design decisions, and manage conflicting client requirements. This milestone helps you learn and apply these abilities in a real life situation.<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">3</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+<div class="item-file application-msword"><a class="download-file" href="http://cs-comm.lib.muohio.edu/archive/files/ad6e2aff03dcd12f7ac4a4001f897fd2.doc">333RHIT-ProjectAssignmentFramework3.doc</a></div>]]></description>
+      <pubDate>Tue, 24 Jul 2012 16:23:42 -0400</pubDate>
+      <enclosure url="http://cs-comm.lib.muohio.edu/archive/fullsize/ad6e2aff03dcd12f7ac4a4001f897fd2.jpg" type="application/msword" length="61440"/>
+    </item>
+  </channel>
+</rss>

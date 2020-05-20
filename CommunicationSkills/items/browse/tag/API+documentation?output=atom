@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://cs-comm.lib.muohio.edu/items/browse/tag/API+documentation?output=atom</id>
+  <title><![CDATA[Incorporating Communication Outcomes into the Computer Science Curriculum]]></title>
+  <subtitle><![CDATA[The CPATH-II project is a National Science Foundation funded project under the Division of Computer and Communication Foundation (CCF) that focuses on “Incorporating Communication Outcomes into the Computer Science Curriculum”. The project is a three year project that began in October, 2009 and will culminate at the end of September, 2012. 
+<p/>
+The dissemination of the project's research will come with the creation of a repository that allows CSE faculty members to access a web-based set of assignments. The goal of these assignments is to aid CSE faculty in redesigning their assignments, courses, and curricula in order to incorporate and enhance their students abilities to communicate and collaborate with a wide variety of audiences. The repository will be populated with assignments written and designed by both CSE and CAC faculty with the premise of integrating communication abilities while also enhancing the learning of the technical content being taught in their course and/or curriculum.
+<p/>]]></subtitle>
+  <author>
+    <name><![CDATA[jcg]]></name>
+  </author>
+  <updated>2020-05-18T19:23:34-04:00</updated>
+  <generator>Omeka</generator>
+  <link rel="self" href="http://cs-comm.lib.muohio.edu/items/browse/tag/API+documentation?output=atom"/>
+  <link rel="first" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/API+documentation/page/1?output=atom"/>
+  <link rel="last" type="application/atom+xml" href="http://cs-comm.lib.muohio.edu/items/browse/tag/API+documentation/page/1?output=atom"/>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/81</id>
+    <title><![CDATA[Using the Java API documentation to solve a problem]]></title>
+    <summary><![CDATA[This is an assignment focused on using Java API documentation to find methods that aid in solving a problem.  In it, students must write a program that parses text and &quot;cleans it up&quot; (in particular: a name, address, and phone number, entered in a sloppy way by a user).  <br />
+<br />
+This is best suited to students who have only a basic knowledge of Strings and their methods, as it then forces them to dig around in the API documentation for Strings in order to find methods that accomplish their goals.]]></summary>
+    <updated>2012-07-26T11:04:41-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/81"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/ac14bcdcae4c85d36d233df38353f1fd.docx" type="application/zip" length="63490"/>
+    <category term="API documentation"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Using the Java API documentation to solve a problem</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This is an assignment focused on using Java API documentation to find methods that aid in solving a problem.  In it, students must write a program that parses text and &quot;cleans it up&quot; (in particular: a name, address, and phone number, entered in a sloppy way by a user).  <br />
+<br />
+This is best suited to students who have only a basic knowledge of Strings and their methods, as it then forces them to dig around in the API documentation for Strings in order to find methods that accomplish their goals.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">API documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading, writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Programming language basics</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The software you will write almost always depends on making use of packages, classes, and methods that were developed by other programmers.  In order to use software written by others, it is necessary to be able to navigate and understand the documentation for that software.<br />
+<br />
+In this assignment, you will need to solve a programming problem that requires you to use methods you have not seen or used before.  You will produce a program that performs some fairly sophisticated parsing of Strings...parsing that is difficult to perform without first navigating the available methods in the String class.<br />
+<br />
+When you are finished, you will report to your instructor on the methods that you used to solve the problem.</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/67</id>
+    <title><![CDATA[Reading and Using API Documentation]]></title>
+    <summary><![CDATA[Effective programming involves being able to navigate API documentation for various packages and classes, in order to identify an appropriate class/method/constructor to solve the problem at hand.  This activity focuses on reading Java&#039;s API documentation to learn about classes that are unfamiliar to the student.  It contains questions that can only be answered by digging around in the documentation.  As they navigate the documentation, students will write short bits of code that demonstrate their understanding of that documentation.<br />
+<br />
+Many of the code-writing questions depend on using the Dr. Java to type out and test code.  Dr. Java&#039;s &quot;Interactions Pane&quot; allows quick testing of individual lines of code, without the need to write a class and method to test that code.<br />
+<br />
+Dr. Java is freely available from http://drjava.org.  Regardless of the IDE you prefer to use in your class, Dr. Java is easy to use, if only for this assignment.]]></summary>
+    <updated>2012-07-26T11:38:22-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/67"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/8ae082baa83bcc88ed448b4fcc45aa08.docx" type="application/zip" length="66296"/>
+    <category term="API documentation"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Reading and Using API Documentation</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">Effective programming involves being able to navigate API documentation for various packages and classes, in order to identify an appropriate class/method/constructor to solve the problem at hand.  This activity focuses on reading Java&#039;s API documentation to learn about classes that are unfamiliar to the student.  It contains questions that can only be answered by digging around in the documentation.  As they navigate the documentation, students will write short bits of code that demonstrate their understanding of that documentation.<br />
+<br />
+Many of the code-writing questions depend on using the Dr. Java to type out and test code.  Dr. Java&#039;s &quot;Interactions Pane&quot; allows quick testing of individual lines of code, without the need to write a class and method to test that code.<br />
+<br />
+Dr. Java is freely available from http://drjava.org.  Regardless of the IDE you prefer to use in your class, Dr. Java is easy to use, if only for this assignment.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Navigating API documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">Laboratory</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">reading</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Coding</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text">The software you will write almost always depends on making use of packages, classes, and methods that were developed by other programmers. In order to use software written by others, it is necessary to be able to navigate and understand the documentation for that software.<br />
+<br />
+In this assignment, you will navigate the Java API Documentation, and use it to learn about Java packages and classes you probably haven&#039;t seen before.  You will read about classes and methods, and then write short pieces of Java code that use those classes and methods.<br />
+<br />
+After completing this activity, you should be able to:<br />
+<br />
+•	Navigate through and read parts of Java&#039;s API documentation to find descriptions and specifications of classes, methods, and constructors.<br />
+<br />
+•	Solve small programming problems by using new classes, methods, and constructors that you learn about in the Java API documentation<br />
+</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+  <entry>
+    <id>http://cs-comm.lib.muohio.edu/items/show/17</id>
+    <title><![CDATA[Writing Javadoc Comments for a Class]]></title>
+    <summary><![CDATA[This assignment combines implementing a class definition (constructors, getters, setters for a Rectangle) with using Javadoc comments to document the class.  This assignment includes background information on the Javadoc tool, including information about technical requirements (such as the @param tag) and style guidelines for javadocs (guidelines nicely summarized on Oracle&#039;s website).  The rubric includes separate items for both the technical part of the assignment (writing the class) and the Javadoc part of the assignment.  This could be easily modified to incorporate Javadocs with some other programming assignment.<br />
+<br />
+This assignment assumes that students are able to implement a basic class definition in Java, with constructors, getters, and setters.]]></summary>
+    <updated>2012-07-26T11:08:16-04:00</updated>
+    <link rel="alternate" type="text/html" href="http://cs-comm.lib.muohio.edu/items/show/17"/>
+    <link rel="enclosure" href="http://cs-comm.lib.muohio.edu/archive/files/82d14752407d4b5e870de07d6f5c6175.docx" type="application/zip" length="63573"/>
+    <category term="API documentation"/>
+    <category term="comments"/>
+    <category term="javadoc"/>
+    <content type="html"><![CDATA[<div class="element-set">
+    <!--h2>Dublin Core</h2-->
+        <div id="dublin-core-title" class="element">
+        <h3>Title        </h3>
+                                    <div class="element-text">Writing Javadoc Comments for a Class</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-subject" class="element">
+        <h3>Course        </h3>
+                                    <div class="element-text">CS1</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-description" class="element">
+        <h3>Abstract        </h3>
+                                    <div class="element-text">This assignment combines implementing a class definition (constructors, getters, setters for a Rectangle) with using Javadoc comments to document the class.  This assignment includes background information on the Javadoc tool, including information about technical requirements (such as the @param tag) and style guidelines for javadocs (guidelines nicely summarized on Oracle&#039;s website).  The rubric includes separate items for both the technical part of the assignment (writing the class) and the Javadoc part of the assignment.  This could be easily modified to incorporate Javadocs with some other programming assignment.<br />
+<br />
+This assignment assumes that students are able to implement a basic class definition in Java, with constructors, getters, and setters.</div>
+                    </div><!-- end element -->
+            <div id="dublin-core-creator" class="element">
+        <h3>Author        </h3>
+                                    <div class="element-text">Norm Krumpe</div>
+                    </div><!-- end element -->
+                    </div><!-- end element-set -->
+<div class="element-set">
+    <!--h2>Assignment Item Type Metadata</h2-->
+        <div id="assignment-item-type-metadata-genre" class="element">
+        <h3>Genre        </h3>
+                                    <div class="element-text">Javadocs</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-duration-of-assignment" class="element">
+        <h3>Assignment Duration        </h3>
+                                    <div class="element-text">One Week</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-skill" class="element">
+        <h3>Communication Skill        </h3>
+                                    <div class="element-text">Writing</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-technical-skill" class="element">
+        <h3>Technical Skill        </h3>
+                                    <div class="element-text">Class creation, documentation</div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-workplace-scenario" class="element">
+        <h3>Workplace Scenario        </h3>
+                                    <div class="element-text"><p>Organizations write code that must be sufficiently documented in order for other team members (current and future) to use that code. Often, such documentation must be written using a given set of requirements (as defined by an employer or by some broader community).</p>
+<p>In this assignment, you will be writing code, along with the documentation for that code. There are two kinds of standards for that documentation:</p>
+<ol>
+<li>Technical standards: the documentation you write needs to be parsable by a piece of software that turns your comments into a web page. The Javadoc standards are documented on Oracle's web page, "How to Write Doc Comments for the Javadoc Tool"</li>
+<li>Human standards: the documentation you write needs to be written in a grammatic style that is consistent with how others write similar documentation. The community style for these standards is documented on the same Oracle web page, in the "Style Guide" section.</li>
+</ol></div>
+                    </div><!-- end element -->
+            <div id="assignment-item-type-metadata-team-size" class="element">
+        <h3>Team Size        </h3>
+                                    <div class="element-text">N/A</div>
+                    </div><!-- end element -->
+            </div><!-- end element-set -->
+]]></content>
+  </entry>
+</feed>
