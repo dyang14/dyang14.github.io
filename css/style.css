@@ -212,11 +212,11 @@ ul#navigation > li {
 	display: block;
 	float: none;
 	clear: both;
-	background: #303030;
+	background: #002366;
 	border-top: 1px solid #373737;
 	border-bottom: 1px solid #2B2B2B;
 	cursor: pointer;
-	background-color: rgba(48, 48, 48, 0.6) !important;
+	background-color: rgba(0, 0, 63, 0.75) !important;
 	border-top: 1px solid rgba(55, 55, 55, 0.4) !important;
 	border-bottom: 1px solid rgba(43, 43, 43, 0.4) !important;
 }
