@@ -216,9 +216,9 @@ ul#navigation > li {
 	border-top: 1px solid #373737;
 	border-bottom: 1px solid #2B2B2B;
 	cursor: pointer;
-	background-color: rgba(0, 0, 63, 0.75) !important;
-	border-top: 1px solid rgba(55, 55, 55, 0.4) !important;
-	border-bottom: 1px solid rgba(43, 43, 43, 0.4) !important;
+	background-color: rgba(34, 49, 63, 1) !important;
+	border-top: 1px solid rgba(36, 37, 42, 1) !important;
+	border-bottom: 1px solid rgba(36, 37, 42, 1) !important;
 }
 
 ul#navigation > li > a {
@@ -335,7 +335,7 @@ ul#navigation li .fa {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-color: rgba(8, 4, 13, 0);
+	border-color: rgba(36, 37, 42, 1);
 	border-top-color: #f3f3f3;
 	border-width: 30px;
 	left: 50%;
