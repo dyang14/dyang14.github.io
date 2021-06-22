@@ -571,7 +571,6 @@ ul.ul-dates div.dates span:first-child {
 	box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 	z-index: 3;
 	position: relative;
-	background-color: rgba(133,190,252,1.00);
 }
 
 ul.ul-dates div.content,ul.ul-dates-gray div.content {
