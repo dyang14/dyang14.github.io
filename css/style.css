@@ -281,49 +281,39 @@ ul#navigation li .fa {
 	overflow: hidden;
 }
 
-	
+.social-icons ul {
+	padding: 0 20p;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
 
-	.social-icons {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		background: #202020;
-		border-top: 1px solid #1A1A1A;
-		width: 250px;
-		z-index: 2;
-		height: 45px;
-	}
-	
+.social-icons li {
+	/* float: left; */
+    /* width: 33%; */
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+}
 
-	.social-icons ul {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	
+.social-icons a {
+	color: #ccc;
+}
 
-	.social-icons li {
-		float: left;
-		width: 33%;
-		padding: 10px;
-		text-align: center;
-	}
-	
+.social-icons a:hover,.social-icons a:focus {
+	color: #fff;
+}
 
-	.social-icons a {
-		color: #ccc;
-	}
-	
+.social-icons i {
+	font-size: 16px;
+}
 
-	.social-icons a:hover,.social-icons a:focus {
-		color: #fff;
-	}
-	
-
-	.social-icons i {
-		font-size: 16px;
-	}
+#copyright{
+	text-align:center;
+	font-size:0.7em;
+	color: #8E8E8E;
+	margin-bottom: 5px;
+}
 
 /* page specifics
  **************************************************/
