@@ -242,9 +242,9 @@ ul#navigation li.currentmenu a {
 	color: #fff;
 }
 
-/*ul#navigation li.external:hover .fa, ul#navigation li.currentmenu .fa{
-	color: #03cc85;
-}*/
+ul#navigation li.external:hover .fa, ul#navigation li.currentmenu .fa{
+	color: #4582ad;
+}
 
 ul#navigation li.currentmenu {
 	background: #363636;
@@ -547,9 +547,9 @@ ul.ul-dates-gray div.dates span {
 	background-color: #BBBBBB; !important
 }
 
-/*ul.ul-dates div.dates span:last-child {
-	background-color: #03bb7a;
-}*/
+ul.ul-dates div.dates span:last-child {
+	background-color: #32558a;
+}
 
 ul.ul-dates-gray div.dates span:last-child {
 	background-color: #979797; !important
