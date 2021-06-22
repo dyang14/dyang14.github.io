@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 #sidebar {
     position: fixed;
     width: 250px;
-    background: #2a6480;
+    background: #32688f;
     left: 0;
     top: 0;
     bottom: 0px;
@@ -280,6 +280,8 @@ ul#navigation li .fa {
 	text-align: center;
 	overflow: hidden;
 }
+
+	
 
 	.social-icons {
 		position: absolute;
@@ -543,16 +545,16 @@ ul.ul-dates div.dates,ul.ul-dates-gray div.dates {
 }
 
 ul.ul-dates div.dates span,ul.ul-dates-gray div.dates span {
+	background-color: #4582ad;
 	padding: 6px;
 	display: block;
 	text-align: center;
 	color: #fff;
 	position: relative;
-	background-color: rgba(133,190,252,1.00)
 }
 
 ul.ul-dates-gray div.dates span {
-	background-color: #BBBBBB; 
+	background-color: #BBBBBB; !important
 }
 
 ul.ul-dates div.dates span:last-child {
@@ -560,7 +562,7 @@ ul.ul-dates div.dates span:last-child {
 }
 
 ul.ul-dates-gray div.dates span:last-child {
-	background-color: #979797; 
+	background-color: #979797; !important
 }
 
 ul.ul-dates-gray div.dates span:first-child,
@@ -569,6 +571,7 @@ ul.ul-dates div.dates span:first-child {
 	box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 	z-index: 3;
 	position: relative;
+	background-color: rgba(133,190,252,1.00);
 }
 
 ul.ul-dates div.content,ul.ul-dates-gray div.content {
@@ -604,12 +607,12 @@ ul.timeline li .date {
 	font-size: 15px;
 	width: 110px;
 	text-align: center;
-	background-color: rgba(133,190,252,1.00);
+	background: #4582ad;
 	color: #fff;
 }
 
 ul.timeline li.open .data {
-	background-color: rgba(133,190,252,1.00);
+	background: #2a3f80;
 }
 
 ul.timeline li .circle {
@@ -624,7 +627,7 @@ ul.timeline li .circle {
 }
 
 ul.timeline li.open .circle {
-	background-color: rgba(133,190,252,1.00);
+	background-color: #2a3f80;
 	-webkit-box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 	box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 }
