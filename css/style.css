@@ -212,13 +212,13 @@ ul#navigation > li {
 	display: block;
 	float: none;
 	clear: both;
-	background: #303030;
+	background: #343d66;
 	border-top: 1px solid #373737;
-	border-bottom: 1px solid #2B2B2B;
+	border-bottom: 1px solid ##2f365e;
 	cursor: pointer;
 	background-color: rgba(34, 49, 63, 1) !important;
-	border-top: 1px solid rgba(34, 49, 63, 1) !important;
-	border-bottom: 1px solid rgba(34, 49, 63, 1) !important;
+        border-top: 1px solid rgba(55, 55, 55, 0.4) !important;
+	border-bottom: 1px solid rgba(43, 43, 43, 0.4) !important;
 }
 
 ul#navigation > li > a {
@@ -248,8 +248,8 @@ ul#navigation li.currentmenu a {
 
 ul#navigation li.currentmenu {
 	background: #363636;
-	border-top: 1px solid #3d3d3d;
-	border-bottom: 1px solid #252525;
+	border-top: 1px solid #2a2d4a;
+	border-bottom: 1px solid #2d3963;
 }
 
 
