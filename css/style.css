@@ -321,6 +321,16 @@ ul#navigation li .fa {
 	position: relative;
 }
 
+.main-header {
+	background-color: #3e789c;
+	color: #278ac6;
+	text-align: center;
+	font-size:large;
+	font-weight:400;
+	padding: 5px 0px 5px 0px;
+}
+
+
 .pageheader {
 	background: #f3f3f3;
 	position: relative;
@@ -561,6 +571,7 @@ ul.ul-dates div.dates span:first-child {
 	box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 	z-index: 3;
 	position: relative;
+	background-color: #537aa3; !important
 }
 
 ul.ul-dates div.content,ul.ul-dates-gray div.content {
@@ -1022,7 +1033,7 @@ ul.timeline li .data .text {
 }
 
 .pitems .pubmain .pubassets a:hover,.pitems .pubmain .pubassets a:focus,.pitems .pubmain .pubassets a.pubcollapse {
-	background: #4582ad;
+	background: #246491;
 	color: #fff;
 }
 
