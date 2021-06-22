@@ -1,4 +1,4 @@
-﻿/* General styles
+/* General styles
  **************************************************/
 @font-face {
 	font-family: 'Lato';
@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 #sidebar {
     position: fixed;
     width: 250px;
-    background: #2b2b2b;
+    background: #2f5182;
     left: 0;
     top: 0;
     bottom: 0px;
@@ -178,7 +178,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 
 #profile .portrate {
-	background-image: url("../img/deli.jpeg");
+	background-image: url("../img/personal/personal-image.jpg");
 	width: 125px;
 	margin: 0 auto;
 	height: 125px;
@@ -212,13 +212,13 @@ ul#navigation > li {
 	display: block;
 	float: none;
 	clear: both;
-	background: #002366;
+	background: #303030;
 	border-top: 1px solid #373737;
 	border-bottom: 1px solid #2B2B2B;
 	cursor: pointer;
 	background-color: rgba(34, 49, 63, 1) !important;
-	border-top: 1px solid rgba(36, 37, 42, 1) !important;
-	border-bottom: 1px solid rgba(36, 37, 42, 1) !important;
+	border-top: 1px solid rgba(34, 49, 63, 1) !important;
+	border-bottom: 1px solid rgba(34, 49, 63, 1) !important;
 }
 
 ul#navigation > li > a {
@@ -335,7 +335,7 @@ ul#navigation li .fa {
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-color: rgba(36, 37, 42, 1);
+	border-color: rgba(8, 4, 13, 0);
 	border-top-color: #f3f3f3;
 	border-width: 30px;
 	left: 50%;
