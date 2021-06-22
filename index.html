@@ -1,242 +1,498 @@
 <!DOCTYPE html>
-	<html lang="en">
-	    <head>
-			
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-185451445-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
+<html lang="en">
+    <head>
+        <title>Andrew Begel &mdash; Home Page</title>
+        <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="author" content="owwwlab.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <meta name="description" content="A theme for faculty profile page" />
+        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
 
-	  gtag('config', 'UA-185451445-1');
+        <!--<link rel="shortcut icon" href="../favicon.ico">-->
+
+        <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.5.1.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+	<style type="text/css">
+	  span.codedirection { unicode-bidi:bidi-override; direction: rtl; }
+        </style>
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <!--<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        
+        <script type="text/javascript" src="js/modernizr.2.8.3.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+
+        <script type="text/javascript" src="js/perfect-scrollbar-0.5.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+	<script type="text/javascript" src="js/doT.js"></script>
+	<script type="text/javascript" src="js/Parser.js"></script>
+	<script type="text/javascript" src="js/URI.js"></script>
+
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!--/Javascript files-->
+
+	<script id="pubtemplate" type="text/x-dot-template">
+          <div class="item mix {{=it.topicCode}}" data-yearMonth="{{=it.yearMonth}}">
+            <div class="pubmain">
+              <div class="pubassets">
+                {{? it.abstract}}<a href="#" class="pubcollapse tooltips" title="Abstract" onClick="stc(this, 1)">
+                  <i class="fa fa-info"></i>
+                </a>{{?}}
+                {{? it.url}}<a href="{{=it.url}}" class="tooltips" title="External link" target="_blank" onClick="stc(this, 2)">
+                  <i class="fa fa-external-link"></i>
+                </a>
+                {{?? true}}
+		{{? it.doi}}<a href="http://dx.doi.org/{{=it.doi}}"
+		class="tooltips" title="DOI link" target="_blank" onClick="stc(this, 3)">
+                  <i class="fa fa-cloud"></i>
+                </a>
+               {{?}}
+               {{?}}
+		   
+                {{? it.localurl}}<a href="{{=it.localurl}}"
+                class="tooltips" title="Local Download" target="_blank" onClick="stc(this, 4)">
+                  <i class="fa fa-download"></i>
+                </a>
+		{{?}}
+              </div>
+	      <h4 class="pubtitle">{{=it.title}}</h4>
+              <div class="pubauthor">{{? it.author}} {{=it.author}}
+              {{?? true}} Eds. {{=it.editor}} {{?}}</div>
+              <div class="pubcite">
+		{{? it.topics}}
+		{{~it.topics :topicAndLabel:index}}
+		<span class="label {{=topicAndLabel.label}}">{{=topicAndLabel.topic}}</span>
+		{{~}}
+		{{?}}
+		{{? it.booktitle}} {{=it.booktitle}}.
+		   {{?? true}} 
+                      {{? it.journal}}
+		         {{= it.journal}}, <b>{{= it.volume}}</b>
+		             ({{=it.number}}), {{= it.pages}}. 
+                      {{?}} 
+                {{?}} 
+		{{? it.location}} {{=it.location}}. {{?}} 
+		{{? it.month}} {{=it.month}} {{?}} {{=it.year}}.</div> 
+            </div>
+            {{? it.abstract}}
+            <div class="pubdetails">
+              <h4>Abstract</h4>
+              <p>{{~it.abstract :value:index}}{{=value}}{{~}}</p>
+            </div>
+            {{?}}
+          </div>
 	</script>
-	
 
-		        <title>Deli Yang &mdash; Home Page</title>
-		        <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
-		        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		        <meta name="author" content="owwwlab.com">
-		        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		        
-		        <meta name="description" content="A theme for faculty profile page" />
-		        <meta name="keywords" content="faculty profile, theme,css, html, jquery, transition, transform, 3d, css3" />
-		
-	
+    </head>
+    <body>
 
-		        <!--<link rel="shortcut icon" href="../favicon.ico">-->
-		
-	
+        <div id="wrapper">
+            <a href="#sidebar" class="mobilemenu" onClick="stc(this,
+            5)"><i class="fa fa-reorder"></i></a>
 
-		        <!--CSS styles-->
-		        <link rel="stylesheet" href="css/bootstrap.css">
-		        <link rel="stylesheet" href="css/font-awesome.min.css">  
-		        <link rel="stylesheet" href="css/perfect-scrollbar-0.5.1.min.css">
-		        <link rel="stylesheet" href="css/magnific-popup.css">
-		        <link rel="stylesheet" href="css/style.css">
-		        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
-			<style type="text/css">
-			  span.codedirection { unicode-bidi:bidi-override; direction: rtl; }
-		        </style>
-		        <!--/CSS styles-->
-		        <!--Javascript files-->
-		        <!--<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>-->
-			<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-			<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-		        <script type="text/javascript" src="js/TweenMax.min.js"></script>
-		        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-		        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-		        
-		        <script type="text/javascript" src="js/modernizr.2.8.3.custom.js"></script>
-		        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
-		
-	
+            <div id="sidebar">
+                <div id="sidebar-wrapper">
+                    <div id="sidebar-inner">
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Andrew Begel</h2>
+                                <h3>Microsoft Research</h3>
+                            </div>
+                            
+                        </div>
+                        <ul id="navigation">
+                            <li>
+                              <a href="#biography" onClick="stc(this, 6)">
+                                <i class="fa fa-user"></i>
+                                <div class="text">About Me</div>
+                              </a>
+                            </li>  
+                            <li>
+			      <a href="#colleagues" onClick="stc(this, 7)">
+                                <i class="fa fa-group"></i>
+                                <div class="text">Colleagues</div>
+                              </a>
+                            </li>  
+                            <li>
+                              <a href="#research" onClick="stc(this, 8)">
+                                <i class="fa fa-book"></i>
+                                <div class="text">Research</div>
+                              </a>
+                            </li> 
+                            
+                            <li>
+                              <a href="#publications" onClick="stc(this, 9)">
+                                <i class="fa fa-file-text"></i>
+                                <div class="text">Publications</div>
+                              </a>
+                            </li> 
 
-		        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
-		
-	
+                            <li>
+                              <a href="#teaching" onClick="stc(this, 10)">
+                                <i class="fa fa-pencil"></i>
+                                <div class="text">Teaching</div>
+                              </a>
+                            </li>
 
-		        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-		
-	
+                            <li>
+                              <a href="#contact" onClick="stc(this, 12)">
+                                  <div class="fa fa-calendar"></div>
+                                  <div class="text">Contact & Meet Me</div>
+                              </a>
+                            </li>
 
-		        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-		
-	
+                            <li class="external">
+                              <a href="cv.html" onClick="stc(this, 13)">
+                                  <i class="fa fa-download"></i>
+                                  <div class="text">Curriculum Vitae (CV)</div>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>        
+                    
+                    <!-- Sidebar footer -->
+		    <!-- Main navigation -->
+                    <div id="sidebar-footer">
+		      <div class="social-icons">
+			<ul>
+                          <li><a href="http://www.facebook.com/abegel"><i class="icon-facebook"></i></a></li>
+                          <li><a href="https://twitter.com/abegel"><i class="icon-twitter"></i></a></li>
+                          <li><a href="https://www.linkedin.com/in/andrewbegel/"><i class="icon-linkedin"></i></a></li>
+			</ul>
+                      </div>   
+		      <div id="copyright">Copyright 2019</div>
+		    </div>
+		    <!-- Sidebar footer -->
+		</div>
+	    </div>
+	    
+            <div id="main">
+            
+                <div id="biography" class="page home" data-pos="home">
+                    <div class="pageheader">
+                        <div class="headercontent">
+                            <div class="section-container">
+                                
+                                <div class="row">
+                                    <div class="col-sm-2 visible-sm"></div>
+                                    <div class="col-sm-8 col-md-5">
+                                        <div class="biothumb">
+                                            <img alt="image" src="img/personal/headshot-2018-lores.jpg" class="img-responsive">
+                                            <div class="overlay">
+                                                
+                                                <h1 class="">Andrew Begel</h1>
+                                                <ul class="list-unstyled">
+                                                    <li>Microsoft Research</li>
+                                                    <li>Redmond, WA, USA</li>
+                                                </ul>
+                                            </div> 
+                                            
+                                               
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="clearfix visible-sm visible-xs"></div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <h3 class="title">Andrew Begel</h3>
+                                        <p>I am a Principal Researcher in the <a
+                                    href="https://www.microsoft.com/en-us/research/group/ability/">Ability Group</a> at <a
+                                    href="http://research.microsoft.com">Microsoft Research</a> in <a
+                                    href="http://www.bing.com/maps/explore/#/td75yl16c7cvp7cy">Redmond, WA, USA</a>. I am also an
+                                    Affiliate Associate Professor at the <a href="https://ischool.uw.edu">Information School</a> at the <a href="http://www.washington.edu">University of Washington</a>.</p> 
 
-		        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-		
-	
+                               <p>My research looks at how technology and AI can play in a role in extending the capabilities and
+                           enhance the quality of life for people with disabilities. My current focus is on employment for autistic adults
+                            and programming for accessibility. Recently, I looked at applying HCI techniques to study and improve the
+                            software development process. I studied biometrics and affect-based software engineering, social media for
+                            software engineering, collaborative software development, Agile methodologies, developer-centric 
+                                knowledge management, flow and coordination, and K-16 and beyond programming education. </p>
+                                    
+                                    <p>I received a Ph.D. in <a href="http://www.eecs.berkeley.edu/" Computer Science</a> from the 
+														<a href="http://www.berkeley.edu/">University of California, Berkeley</a> in December 2005. I studied with
+														<a href="http://www.cs.berkeley.edu/~graham/">Susan L. Graham</a>. My 
+														dissertation was about 
+														voice-based programming, how to build a development 
+														environment that supports it, 
+														and how well programmers can 
+														use it. It is intended for 
+														programmers with repetitive 
+														strain and other injuries 
+														that make it difficult for 
+														them from using the keyboard 
+														and mouse in their daily 
+														work. For the quick 
+														punch-line, read my 
+														dissertation abstract below.</p>
+														
+														
+					<p>At MIT, I received a Master of Engineering degree in Computer Science in 1997 and a Bachelor of Science degree in Electrical Engineering and Computer Science in 1996. 
+					  I worked on <a href="http://web.mit.edu/mitstep/openstarlogo/index.html">StarLogo</a>, a programmable 
+					  modeling environment 
+					  designed to help students 
+					  learn about science. 
+					  StarLogo runs via Java on PCs, Macs 
+					  and Unix machines. A newer 
+					  version of StarLogo, called
+					  <a href="http://www.slnova.org/">
+					    					    StarLogo
+					  Nova</a>, incorporates
+					  graphical block-based
+					  programming and a 3D turtle
+					  world to teach programming
+					  by enabling kids to create
+					  their own games and
+					  simulations.</p>
+					<p>I grew up in southeastern New York, in Rockland County. I've lived
+					  in NY, Boston, San Francisco and now Seattle.</p>
+														
+																										
+														
+                                    </div>  
+                                    
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
 
-		        <script type="text/javascript" src="js/perfect-scrollbar-0.5.1.min.js"></script>
-			<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
-		        <script type="text/javascript" src="js/magnific-popup.js"></script>
-			<script type="text/javascript" src="js/doT.js"></script>
-			<script type="text/javascript" src="js/Parser.js"></script>
-			<script type="text/javascript" src="js/URI.js"></script>
-		
-	
+                    <div class="pagecontents">
+                        <div class="section color-1">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-5 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Employment</h3>
+                                        </div>
+                                        <ul class="ul-dates">
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Present</span>
+                                                    <span>2014</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Principal Researcher</h4>
+                                                    <p><em>Microsoft Research</em>, Redmond, WA USA</p>
+						</div>
+					<li>
+                                                <div class="dates">
+                                                    <span>Spring</span>
+                                                    <span>2018</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Affiliate
+                        Associate Professor</h4>
+                                                    <p><em>University of Washington</em>, Information School</p>
+                                                </div>
+                                            </li>
 
-		        <script type="text/javascript" src="js/custom.js"></script>
-		
-	
+                                            </li>
+											<li>
+                                                <div class="dates">
+                                                    <span>Winter</span>
+                                                    <span>2013</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Visiting Lecturer</h4>
+                                                    <p><em>University of Washington</em>, Information School</p>
+                                                </div>
+                                            </li>
 
-		        <!--/Javascript files-->
-		
-	
-
-			<script id="pubtemplate" type="text/x-dot-template">
-		          <div class="item mix {{=it.topicCode}}" data-yearMonth="{{=it.yearMonth}}">
-		            <div class="pubmain">
-		              <div class="pubassets">
-		                {{? it.abstract}}<a href="#" class="pubcollapse tooltips" title="Abstract" onClick="stc(this, 1)">
-		                  <i class="fa fa-info"></i>
-		                </a>{{?}}
-		                {{? it.url}}<a href="{{=it.url}}" class="tooltips" title="External link" target="_blank" onClick="stc(this, 2)">
-		                  <i class="fa fa-external-link"></i>
-		                </a>
-		                {{?? true}}
-				{{? it.doi}}<a href="http://dx.doi.org/{{=it.doi}}"
-				class="tooltips" title="DOI link" target="_blank" onClick="stc(this, 3)">
-		                  <i class="fa fa-cloud"></i>
-		                </a>
-		               {{?}}
-		               {{?}}
-				   
-		                {{? it.localurl}}<a href="{{=it.localurl}}"
-		                class="tooltips" title="Local Download" target="_blank" onClick="stc(this, 4)">
-		                  <i class="fa fa-download"></i>
-		                </a>
-				{{?}}
-		              </div>
-			      <h4 class="pubtitle">{{=it.title}}</h4>
-		              <div class="pubauthor">{{? it.author}} {{=it.author}}
-		              {{?? true}} Eds. {{=it.editor}} {{?}}</div>
-		              <div class="pubcite">
-				{{? it.topics}}
-				{{~it.topics :topicAndLabel:index}}
-				<span class="label {{=topicAndLabel.label}}">{{=topicAndLabel.topic}}</span>
-				{{~}}
-				{{?}}
-				{{? it.booktitle}} {{=it.booktitle}}.
-				   {{?? true}} 
-		                      {{? it.journal}}
-				         {{= it.journal}}, <b>{{= it.volume}}</b>
-				             ({{=it.number}}), {{= it.pages}}. 
-		                      {{?}} 
-		                {{?}} 
-				{{? it.location}} {{=it.location}}. {{?}} 
-				{{? it.month}} {{=it.month}} {{?}} {{=it.year}}.</div> 
-		            </div>
-		            {{? it.abstract}}
-		            <div class="pubdetails">
-		              <h4>Abstract</h4>
-		              <p>{{~it.abstract :value:index}}{{=value}}{{~}}</p>
-		            </div>
-		            {{?}}
-		          </div>
-			</script>
-		
-	
-
-		    </head>
-		    <body>
-		
-	
-
-	        <div id="wrapper">
-	            <a href="#sidebar" class="mobilemenu"><i class="icon-reorder"></i></a>
-	
-
-	            <div id="sidebar">
-	                <div id="main-nav">
-	                    <div id="nav-container">
-	                        <div id="profile" class="clearfix" >
-	                            <div class="title">
-	                                <img src="./img/deli.jpeg" width=80% />
-					<a href="index.html"><h2>Deli Yang</h2></a>
-	                                <h3>University of Illinois</h3>
-	                            </div>
-		                  </div>          
-		                        
-		                        <ul id="navigation">
-		                            <li>
-		                          <a href="#biography" onClick="stc(this, 6)">
-		                                <div class="text">About Me</div>
-		                              </a>
-		                            </li>  
-		                            
-		                            <li>
-		                             <a href="#research" onClick="stc(this, 8)">
-		                                <div class="text">Research</div>
-		                              </a>
-		                            </li> 
-	
-
-		                            <li>
-		                            <a href="#teaching" onClick="stc(this, 10)">
-		                                <div class="text">Teaching</div>
-		                              </a>
-		                            </li>
-		
-	
-
-		                            <li>
-	                                 <a href="#contact" onClick="stc(this, 12)">
-		                                  <div class="text">Contact</div>
-		                             </a>
-	                            </li>
-	                        </ul>
-	                    </div>        
-	                </div> 
-		                    
-		                    <!-- Sidebar footer -->
-			       <div id="sidebar-footer">
-	                            <div class="social-icons">
-	                                <ul>
-	                                    <li><a href="https://deliyang.github.io"><i class="fa fa-google"></i></a></li>
-	                                    <li><a href="https://www.linkedin.com/in/yangdeli"><i class="fa fa-linkedin"></i></a></li>
-	                                    <li><a href="https://twitter.com/deliyang_"><i class="fa fa-twitter"></i></a></li>
-	                                </ul>
-	                            </div>
-	                            </div>
-	                    
-	                        </div>
-	                        <!-- /Sidebar footer -->
-	                    </div>
-	
-
-	                </div>
-	            </div>
-				    <!-- Main navigation -->
-		                    
-		            <div id="main">
-		            
-		                <div id="biography" class="page home" data-pos="home">
-		                    <div class="pageheader">
-		                        <div class="headercontent">
-		                            <div class="section-container">
-		                              
-		                                    <div class="clearfix visible-sm visible-xs"></div>
-		                                    <div class="col-sm-9 col-md-9">
-		                                        <h3 class="title">Deli Yang</h3>   
-							<p><span style="font-size:large">I am a Ph.D. student in the <a
-		                                    href="https://pol.illinois.edu/">Department of Political Science</a> at the <a
-		                                    href="http://uiuc.edu">University of Illinois at Urbana-Champaign</a>.</span></p>
-		                                        <p><span style="font-size:large">My research looks at how .</span></p>
-	
-
-	
-
-	                              </div>  
-	                                </div>
-	                            </div>        
-	                        </div>
-	                    </div>
+											<li>
+                                                <div class="dates">
+                                                    <span>2014</span>
+                                                    <span>2006</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Researcher</h4>
+                                                    <p><em>Microsoft Research</em>, Redmond, WA USA</p>
+                                                </div>
+                                            </li>                                            
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Summer</span>
+                                                    <span>1997</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Intern</h4>
+                                                    <p><em>Xerox PARC Computer Science Laboratory</em>, Palo Alto, CA USA<br/>
+                                                    Supervisor: Michael Spreitzer</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>2001</span>
+                                                    <span>1993</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>UROP <p style="font-size:x-small">(Undergraduate Research Opportunities Program)</p></h4>
+                                                    <p><em>MIT Media Lab</em>, Cambridge, MA USA<br/>
+                                                    Supervisor: Mitchel Resnick</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Summer</span>
+                                                    <span>1992</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Research Intern</h4>
+                                                    <p><em>NYU Medical Center: Institute for Environmental Medicine</em>, Sterling Forest, NY USA<br/>
+                                                    Supervisor: Toby G. Rossman</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dates">
+                                                    <span>Summer</span>
+                                                    <span>1990</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>Intern</h4>
+                                                    <p><em>NY Medical College: Biochemistry and Molecular Biology</em>, Valhalla, NY USA<br/>
+                                                    Supervisor: Yuk-Ching Tse-Dinh</p>
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="dates">
+                                                    <span>1988</span>
+                                                    <span>1992</span>
+                                                </div>
+                                                <div class="content">
+                                                    <h4>SIGOp: Apple II Special Interest Group</h4>
+                                                    <p><em>Mnematics Videotex, Inc.</em>, Sparkill, NY USA</p>
+                                                </div>
+                                            </li>
 
 
-                   
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="title text-center">
+                                            <h3>Education</h3>
+                                        </div>
+                                        <ul class="ul-card">
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">Ph.D.</span>
+                                                    <span class="year">2005</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="what">Ph.D. in Computer Science</p>
+                                                    <p class="where">University of California at Berkeley</p>
+						    <p class="where">Advisor: <a href="http://www.cs.berkeley.edu/~graham" onClick="stc(this, 26)">Susan L. Graham</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">M.Eng.</span><span class="year">1997</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="what">Master of Engineering in Electrical Engineering and Computer Science</p>
+                                                    <p class="where">Massachusetts Institute of Technology</p>
+						    <p class="where">Advisor: <a href ="http://www.media.mit.edu/~mres">Mitchel Resnick</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">B.S.</span><span class="year">1996</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="what">Bachelor of Science in Computer Science and Engineering</p>
+                                                    <p class="where">Massachusetts Institute of Technology</p>
+						    <p class="where">Advisor: <a href="http://www.media.mit.edu/~mres" onClick="stc(this, 27)">Mitchel Resnick</a></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dy">
+                                                    <span class="degree">High School Regents Diploma</span><span class="year">1992</span>
+                                                </div>
+                                                <div class="description">
+                                                    <p class="what">Rank: 2 out of 443, Average 102.7</p>
+                                                    <p class="where"><a
+                                    href="https://www.ercsd.org/ramapo">
+						  Ramapo Senior High School</a>, Spring Valley, NY</p>
+                                                </div>
+                                            </li>
+
+                                            
+                                        </ul>
+
+                                    </div>    
+                                </div>    
+                            </div>
+                                
+                        </div>
+
+                        <div class="section color-2">
+                            <div class="section-container">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Honors and Awards</h3>
+                                        </div>
+                                        <ul class="timeline">
+                                          <li class="open">
+					    <div class="date">2019</div>
+					    <div class="circle"></div>
+					    <div class="data">
+					      <div class="subject">ACM Distinguished Member</div>
+					      </div>
+					    </li>
+                                            <li class="open">
+                                                <div class="date">2005</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                  <div class="subject">Demitri Angelakos Memorial Award</div>
+						  
+                                                    <!--<div class="text row">
+                                                        <div class="col-md-2">
+                                                            <img alt="image" class="thumbnail img-responsive" src="img/personal/awards100x100.png" >
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="date">1992</div>
+                                                <div class="circle"></div>
+                                                <div class="data">
+                                                    <div class="subject">National Merit Scholarship</div>
+                                                    <div class="subject">Salutatorian of High School Class of 1992</div>
+                                                    <div class="subject">Leo V. Dustman Award in Mathematics</div>
+                                                    <div class="subject">Mel Sobel Microscopes Scholarship Award</div>
+                                                    <div class="subject">New York State Science Supervisors Association Award</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
 
                 <div id="colleagues" class="page">
 		  <div class="pagecontainer">
@@ -1646,4 +1902,3 @@ function stc(e,linkIndex){if(document.images){var linkText;if(navigator.appName.
 </script>
 </body>
 </html>
-
