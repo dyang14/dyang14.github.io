@@ -281,19 +281,37 @@ ul#navigation li .fa {
 	overflow: hidden;
 }
 
+ul#navigation li .icon {
+	float: left;
+	line-height: 45px;
+	width: 50px;
+	text-align: center;
+	font-size: 27px;
+}
+
+.social-icons {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #202020;
+	border-top: 1px solid #1A1A1A;
+	width: 250px;
+	z-index: 2;
+	height: 45px;
+}
+
 .social-icons ul {
-	padding: 0 20p;
+	padding: 0;
 	margin: 0;
 	list-style: none;
-	text-align: center;
 }
 
 .social-icons li {
-	/* float: left; */
-    /* width: 33%; */
-	padding: 5px;
+	float: left;
+	width: 33%;
+	padding: 10px;
 	text-align: center;
-	display: inline-block;
 }
 
 .social-icons a {
@@ -306,13 +324,6 @@ ul#navigation li .fa {
 
 .social-icons i {
 	font-size: 16px;
-}
-
-#copyright{
-	text-align:center;
-	font-size:0.7em;
-	color: #8E8E8E;
-	margin-bottom: 5px;
 }
 
 /* page specifics
@@ -532,10 +543,11 @@ ul.ul-dates li,ul.ul-dates-gray li {
 ul.ul-dates div.dates,ul.ul-dates-gray div.dates {
 	float: left;
 	width: 75px;
+	background-color: #4582ad;!important
 }
 
 ul.ul-dates div.dates span,ul.ul-dates-gray div.dates span {
-	background-color: #4582ad;
+	background-color: #4582ad;!important
 	padding: 6px;
 	display: block;
 	text-align: center;
@@ -544,19 +556,18 @@ ul.ul-dates div.dates span,ul.ul-dates-gray div.dates span {
 }
 
 ul.ul-dates-gray div.dates span {
-	background-color: #BBBBBB; !important
+	background-color: #BBBBBB; 
 }
 
 ul.ul-dates div.dates span:last-child {
-	background-color: #32558a;
+	background-color: #32558a;!important
 }
 
 ul.ul-dates-gray div.dates span:last-child {
-	background-color: #979797; !important
+	background-color: #979797; 
 }
 
-ul.ul-dates-gray div.dates span:first-child,
-ul.ul-dates div.dates span:first-child {
+ul.ul-dates-gray div.dates span:first-child,ul.ul-dates div.dates span:first-child {
 	-webkit-box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 	box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 	z-index: 3;
@@ -597,12 +608,12 @@ ul.timeline li .date {
 	font-size: 15px;
 	width: 110px;
 	text-align: center;
-	background: #4582ad;
+	background: #4582ad;!important
 	color: #fff;
 }
 
 ul.timeline li.open .data {
-	background: #2a3f80;
+	background: #2a3f80;!important
 }
 
 ul.timeline li .circle {
@@ -617,7 +628,7 @@ ul.timeline li .circle {
 }
 
 ul.timeline li.open .circle {
-	background-color: #2a3f80;
+	background-color: #2a3f80;!important
 	-webkit-box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 	box-shadow: 0px 2px 6px -3px rgba(68, 68, 68, 0.5);
 }
@@ -635,7 +646,7 @@ ul.timeline li .data {
 }
 
 ul.timeline li.open .data {
-	border-color: #2a3f80;
+	border-color: #2a3f80;!important
 	background: #fff;
 }
 
@@ -678,7 +689,7 @@ ul.timeline li .data .text {
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	background: #2a3f80;
+	background: #2a3f80;!important
 	cursor: pointer;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	filter: alpha(opacity=70);
@@ -717,7 +728,7 @@ ul.timeline li .data .text {
  * lab partners
  **************************************************/
 #labp-heads-wrap-1,#labp-heads-wrap-2,#labp-heads-wrap-3 {
-	background-color: #4582ad;
+	background-color: #4582ad;!important
 	position: relative;
 	height: 180px; 
 }
@@ -731,7 +742,7 @@ ul.timeline li .data .text {
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(247, 103, 103, 0);
-	border-top-color: #4582ad;
+	border-top-color: #4582ad;!important
 	border-width: 15px;
 	left: 50%;
 	margin-left: -15px;
@@ -899,7 +910,7 @@ ul.timeline li .data .text {
 }
 
 .cd-active.cd-dropdown > span {
-	color: #4582ad;
+	color: #4582ad;!important
 }
 
 .cd-active.cd-dropdown > span,.cd-active.cd-dropdown ul li span {
@@ -916,7 +927,7 @@ ul.timeline li .data .text {
 }
 
 .cd-active.cd-dropdown ul li span:hover {
-	background: #4582ad;
+	background: #4582ad;!important
 	color: #fff;
 }
 
@@ -1023,7 +1034,7 @@ ul.timeline li .data .text {
 }
 
 .pitems .pubmain .pubassets a:hover,.pitems .pubmain .pubassets a:focus,.pitems .pubmain .pubassets a.pubcollapse {
-	background: #246491;
+	background: #246491;!important
 	color: #fff;
 }
 
@@ -1279,9 +1290,9 @@ ul.grid li a,ul.grid li img {
 	color: #fff;
 }
 
-/*.contact-office .icon-huge, .contact-lab .icon-huge{
-	color: #03cc85;
-}*/
+.contact-office .icon-huge, .contact-lab .icon-huge{
+	color: #4582ad;!important
+}
 
 
 .icon-huge {
@@ -1329,8 +1340,8 @@ ul.timeline .date {
 }
 
 .social-icons,#main-nav {
-	left: 0px;
-	z-index: 0;
+	left: -250px;
+	z-index: 3;
 }
 
 #main {
