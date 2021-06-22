@@ -178,7 +178,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 
 #profile .portrate {
-	background-image: url("../img/personal/personal-image.jpg");
+	background-image: url("../img/deli.jpeg");
 	width: 125px;
 	margin: 0 auto;
 	height: 125px;
@@ -212,9 +212,9 @@ ul#navigation > li {
 	display: block;
 	float: none;
 	clear: both;
-	background: #343d66;
-	border-top: 1px solid #373737;
-	border-bottom: 1px solid ##2f365e;
+	background: #2b314f;
+	border-top: 1px solid #1d2440;
+	border-bottom: 1px solid #292e4a;
 	cursor: pointer;
 	background-color: rgba(34, 49, 63, 1) !important;
         border-top: 1px solid rgba(55, 55, 55, 0.4) !important;
