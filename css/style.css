@@ -248,7 +248,7 @@ ul#navigation li.external:hover .fa, ul#navigation li.currentmenu .fa{
 }
 
 ul#navigation li.currentmenu {
-	background: #363636;
+	background: #27465c;
 	border-top: 1px solid #2a2d4a;
 	border-bottom: 1px solid #2d3963;
 }
@@ -276,7 +276,7 @@ ul#navigation li .fa {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background: #202020;
+	background: #27465c;
 	border-top: 1px solid #1A1A1A;
 	text-align: center;
 	overflow: hidden;
@@ -292,8 +292,9 @@ ul#navigation li .fa {
 .social-icons li {
 	float: left;
 	width: 33%;
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
+	display: inline-block;
 }
 
 .social-icons a {
