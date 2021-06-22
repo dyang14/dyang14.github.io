@@ -73,7 +73,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 #sidebar {
     position: fixed;
     width: 250px;
-    background: #32688f;
+    background: #2a5370
+;
     left: 0;
     top: 0;
     bottom: 0px;
@@ -216,9 +217,9 @@ ul#navigation > li {
 	border-top: 1px solid #1d2440;
 	border-bottom: 1px solid #292e4a;
 	cursor: pointer;
-	background-color: rgba(34, 49, 63, 1) !important;
-        border-top: 1px solid rgba(55, 55, 55, 0.4) !important;
-	border-bottom: 1px solid rgba(43, 43, 43, 0.4) !important;
+	background-color: rgba(42, 72, 99, 1) !important;
+        border-top: 1px solid rgba(43, 79, 120, 0.4) !important;
+	border-bottom: 1px solid rgba(37, 66, 99, 0.4) !important;
 }
 
 ul#navigation > li > a {
@@ -227,7 +228,7 @@ ul#navigation > li > a {
 }
 
 ul#navigation li:hover,ul#navigation li:focus {
-	background-color: rgba(54, 54, 54, 0.1) !important;
+	background-color: rgba(37, 66, 99, 0.1) !important;
 }
 
 ul#navigation li:hover a,ul#navigation li:focus a {
@@ -289,11 +290,10 @@ ul#navigation li .fa {
 }
 
 .social-icons li {
-	/* float: left; */
-    /* width: 33%; */
-	padding: 5px;
+	float: left;
+	width: 33%;
+	padding: 10px;
 	text-align: center;
-	display: inline-block;
 }
 
 .social-icons a {
@@ -306,13 +306,6 @@ ul#navigation li .fa {
 
 .social-icons i {
 	font-size: 16px;
-}
-
-#copyright{
-	text-align:center;
-	font-size:0.7em;
-	color: #8E8E8E;
-	margin-bottom: 5px;
 }
 
 /* page specifics
