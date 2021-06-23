@@ -213,11 +213,11 @@ ul#navigation > li {
 	display: block;
 	float: none;
 	clear: both;
-	background: #3b4475;
+	background: #264069;
 	border-top: 1px solid #1d2440;
 	border-bottom: 1px solid #292e4a;
 	cursor: pointer;
-	background-color: rgba(42, 72, 99, 1) !important;
+	background-color: #264069 !important;
         border-top: 1px solid rgba(43, 79, 120, 0.4) !important;
 	border-bottom: 1px solid rgba(37, 66, 99, 0.4) !important;
 }
@@ -228,7 +228,7 @@ ul#navigation > li > a {
 }
 
 ul#navigation li:hover,ul#navigation li:focus {
-	background-color: rgba(37, 66, 99, 0.1) !important;
+	background-color: #0756a6 !important;
 }
 
 ul#navigation li:hover a,ul#navigation li:focus a {
@@ -248,7 +248,7 @@ ul#navigation li.external:hover .fa, ul#navigation li.currentmenu .fa{
 }
 
 ul#navigation li.currentmenu {
-	background: #264069;
+	background: #26426e;
 	border-top: 1px solid #2a2d4a;
 	border-bottom: 1px solid #2d3963;
 }
