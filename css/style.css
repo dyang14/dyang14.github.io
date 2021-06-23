@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 #sidebar {
     position: fixed;
     width: 250px;
-    background: #2a5370
+    background: #264069;
 ;
     left: 0;
     top: 0;
@@ -248,7 +248,7 @@ ul#navigation li.external:hover .fa, ul#navigation li.currentmenu .fa{
 }
 
 ul#navigation li.currentmenu {
-	background: #27465c;
+	background: #264069;
 	border-top: 1px solid #2a2d4a;
 	border-bottom: 1px solid #2d3963;
 }
